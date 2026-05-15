@@ -10,12 +10,12 @@ interface TimelineOverlayProps {
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
-  "rue-du-bac-1830": { label: "Our Lady of the Miraculous Medal", year: 1830, heightOffset: 40 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 65 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 50 },
-  "fatima": { label: "Our Lady of the Rosary", year: 1917, heightOffset: 45 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 70 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 55 }
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 40 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 95 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 60 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 45 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 105 },
+  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 75 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -81,15 +81,19 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
   return (
     <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
       position: 'absolute',
-      bottom: '30px',
-      left: '340px',
-      right: selectedApparition ? '420px' : '30px',
-      maxWidth: '1400px',
-      margin: '0 auto',
+      top: '80px',
+      right: '20px',
+      width: isExpanded ? '1000px' : '680px',
+      maxWidth: 'calc(100vw - 360px)',
+      backgroundColor: isExpanded ? 'rgba(15, 23, 42, 0.98)' : 'rgba(15, 23, 42, 0.85)',
+      border: isExpanded ? '1px solid rgba(255, 255, 255, 0.25)' : '1px solid rgba(255, 255, 255, 0.15)',
+      backdropFilter: 'blur(20px)',
+      boxShadow: isExpanded ? '0 25px 60px rgba(0,0,0,0.9)' : '0 8px 30px rgba(0,0,0,0.6)',
       padding: '16px 24px',
-      zIndex: 10,
+      zIndex: 25,
       boxSizing: 'border-box',
-      transition: 'all 0.3s ease'
+      transition: 'all 0.3s ease',
+      pointerEvents: 'auto'
     }}>
       {/* Header and Controls */}
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', position: 'relative', flexWrap: 'wrap', gap: '12px' }}>
@@ -319,13 +323,13 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                         fontWeight: 700,
                         color: '#ffffff',
                         whiteSpace: 'nowrap',
-                        backgroundColor: 'rgba(15, 23, 42, 0.95)',
-                        padding: '4px 10px',
-                        borderRadius: '6px',
-                        border: '1px solid rgba(255, 255, 255, 0.4)',
-                        backdropFilter: 'blur(4px)',
-                        boxShadow: '0 8px 25px rgba(0,0,0,0.8)',
-                        marginBottom: '3px'
+                        backgroundColor: 'rgba(15, 23, 42, 0.98)',
+                        padding: '5px 12px',
+                        borderRadius: '16px',
+                        border: '1px solid var(--accent-color)',
+                        backdropFilter: 'blur(8px)',
+                        boxShadow: '0 8px 25px rgba(0,0,0,0.9)',
+                        marginBottom: '4px'
                       }}>
                         {callout.label}
                       </div>
