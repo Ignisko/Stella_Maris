@@ -20,9 +20,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       bottom: '30px',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: 'calc(100% - 60px)',
-      maxWidth: '800px',
-      padding: '24px 40px',
+      width: 'calc(100% - 180px)',
+      maxWidth: '820px',
+      padding: '24px 30px',
       zIndex: 10,
       boxSizing: 'border-box'
     }}>
@@ -65,7 +65,10 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
           return (
             <div 
               key={app.id}
-              onClick={() => onSelectApparition(app)}
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelectApparition(app);
+              }}
               style={{
                 position: 'absolute',
                 left: `${leftPercent}%`,
@@ -77,6 +80,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 background: isSelected ? 'var(--gold-accent)' : 'var(--accent-color)',
                 border: '2px solid var(--bg-color)',
                 cursor: 'pointer',
+                pointerEvents: 'auto',
                 transition: 'all 0.2s ease',
                 boxShadow: isSelected ? '0 0 15px var(--gold-accent)' : '0 0 8px var(--accent-glow)',
                 zIndex: isSelected ? 3 : 2
@@ -87,8 +91,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 <div style={{
                   position: 'absolute',
                   bottom: '24px',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
+                  left: leftPercent > 78 ? 'auto' : leftPercent < 22 ? '0' : '50%',
+                  right: leftPercent > 78 ? '0' : 'auto',
+                  transform: leftPercent > 78 ? 'none' : leftPercent < 22 ? 'none' : 'translateX(-50%)',
                   fontSize: '13px',
                   fontWeight: 700,
                   color: 'var(--gold-accent)',

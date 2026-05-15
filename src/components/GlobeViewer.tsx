@@ -5,15 +5,26 @@ import { Play, Pause } from 'lucide-react';
 
 interface GlobeViewerProps {
   apparitions: Apparition[];
+  selectedApparition: Apparition | null;
   onSelectApparition: (apparition: Apparition | null) => void;
 }
 
-const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectApparition }) => {
+const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [isAutoRotate, setIsAutoRotate] = useState(true);
   const [lodThreshold, setLodThreshold] = useState<number>(2);
   const lodRef = useRef<number>(2);
+
+  useEffect(() => {
+    if (selectedApparition && globeEl.current) {
+      setIsAutoRotate(false);
+      if (globeEl.current.controls()) {
+        globeEl.current.controls().autoRotate = false;
+      }
+      globeEl.current.pointOfView({ lat: selectedApparition.lat, lng: selectedApparition.lng, altitude: 0.6 }, 1000);
+    }
+  }, [selectedApparition]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -31,7 +42,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
   }, []);
 
   useEffect(() => {
-    if (globeEl.current) {
+    if (globeEl.current && globeEl.current.controls()) {
       globeEl.current.controls().autoRotate = isAutoRotate;
     }
   }, [isAutoRotate]);
@@ -87,7 +98,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
     const app = point as Apparition;
     onSelectApparition(app);
     setIsAutoRotate(false); 
-    if (globeEl.current) {
+    if (globeEl.current && globeEl.current.controls()) {
       globeEl.current.controls().autoRotate = false;
       globeEl.current.pointOfView({ lat: app.lat, lng: app.lng, altitude: 0.6 }, 1000);
     }
@@ -98,7 +109,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
   };
 
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1 }}>
+    <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100vw', height: '100vh' }}>
       <Globe
         ref={globeEl}
         width={dimensions.width}
@@ -142,12 +153,16 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
 
       {/* Play/Pause Control Button */}
       <button
-        onClick={() => setIsAutoRotate(!isAutoRotate)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setIsAutoRotate(prev => !prev);
+        }}
         style={{
           position: 'absolute',
-          bottom: '120px', // Positioned above the timeline
-          right: '30px',
-          zIndex: 10,
+          bottom: '40px',
+          left: '25px',
+          zIndex: 50,
+          pointerEvents: 'auto',
           background: 'rgba(15, 23, 42, 0.6)',
           backdropFilter: 'blur(12px)',
           border: '1px solid rgba(255, 255, 255, 0.1)',

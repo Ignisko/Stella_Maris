@@ -13,10 +13,10 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
   return (
     <div className="glass-panel glass-panel-rounded animate-slide-in-right" style={{
       position: 'absolute',
-      top: '20px',
+      top: '80px',
       right: '20px',
       width: '380px',
-      maxHeight: 'calc(100vh - 40px)',
+      maxHeight: 'calc(100vh - 100px)',
       overflowY: 'auto',
       zIndex: 10,
       padding: '28px',

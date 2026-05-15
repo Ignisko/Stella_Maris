@@ -2,21 +2,24 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Filter, Clock, Award } from 'lucide-react';
 
 export const FILTER_CATEGORIES = [
-  "Vatican Approved",
-  "Traditionally Approved",
-  "Bishop Approved",
-  "Coptic Approved",
-  "Approved for Faith Expression",
-  "Apparitions to Saints",
-  "Unapproved Apparitions"
+  "Vatican approved",
+  "Traditionally approved",
+  "Bishop approved",
+  "Coptic approved",
+  "Approved for faith expression",
+  "Apparitions to saints",
+  "Unapproved apparitions"
 ];
 
 // Mapping for our current dataset phrasing
 export const categoryMapping: Record<string, string[]> = {
-  "Vatican Approved": ["Approved by the Holy See"],
-  "Traditionally Approved": ["Traditionally Approved"],
-  "Coptic Approved": ["Approved by the Coptic Orthodox Church"],
-  // Add others as needed if dataset expands
+  "Vatican approved": ["Approved by the Holy See", "Vatican Approved", "Vatican approved"],
+  "Traditionally approved": ["Traditionally Approved", "Traditionally approved"],
+  "Bishop approved": ["Bishop Approved", "Bishop approved", "Approved by local bishop", "Approval by Syrian Catholic Church", "Established as supernatural"],
+  "Coptic approved": ["Approved by the Coptic Orthodox Church", "Coptic Approved", "Coptic approved"],
+  "Approved for faith expression": ["Approved for Faith Expression", "Approved for faith expression", "Declared nihil obstat", "Nihil obstat", "Declared site of pilgrimage and prayer", "Place of prayer", "Recognized as place of prayer"],
+  "Apparitions to saints": ["Apparitions to Saints", "Apparitions to saints"],
+  "Unapproved apparitions": ["Unapproved Apparitions", "Unapproved apparitions", "No decision", "Negative decision", "Declared not supernatural", "Not established as supernatural", "Established as not supernatural", "Uninvestigated", "Negative", "Negative - Uninvestigated", "Negative judgment"]
 };
 
 export const CENTURY_FILTERS = [

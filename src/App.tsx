@@ -58,7 +58,7 @@ function App() {
           Stella Maris
         </h1>
         <p style={{ fontSize: '14px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
-          Marian Apparitions Map
+          Marian apparitions map
         </p>
       </div>
 
@@ -71,6 +71,7 @@ function App() {
 
       <GlobeViewer 
         apparitions={filteredApparitions} 
+        selectedApparition={selectedApparition}
         onSelectApparition={handleSelectApparition} 
       />
       
