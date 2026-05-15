@@ -183,7 +183,7 @@ export const century13and14Apparitions: Apparition[] = [
   },
   {
     id: "montserrat_1325",
-    title: "Our Lady of Montserrat (1325)",
+    title: "Our Lady of Montserrat",
     location: "Montserrat",
     country: "Spain",
     lat: 41.5934,

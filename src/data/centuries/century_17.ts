@@ -183,7 +183,7 @@ export const century17Apparitions: Apparition[] = [
   },
   {
     id: "lepuy_1605",
-    title: "Our Lady of Le Puy (1605)",
+    title: "Our Lady of Le Puy",
     location: "Le Puy-en-Velay",
     country: "France",
     lat: 45.0428,
@@ -1299,7 +1299,7 @@ export const century17Apparitions: Apparition[] = [
   },
   {
     id: "san_bartolomeo_1671",
-    title: "Nostra Signora della Rovere (1671)",
+    title: "Nostra Signora della Rovere",
     location: "San Bartolomeo al Mare",
     country: "Italy",
     lat: 43.9236,
@@ -1323,7 +1323,7 @@ export const century17Apparitions: Apparition[] = [
   },
   {
     id: "agnie_quebec",
-    title: "Our Lady in Quebec (1675)",
+    title: "Our Lady in Quebec",
     location: "Agnie, Quebec",
     country: "Canada",
     lat: 45.5000,

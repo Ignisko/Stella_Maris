@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Apparition } from '../data/apparitions';
-import { MapPin, Calendar, Info, ShieldCheck, X } from 'lucide-react';
+import { MapPin, Calendar, Info, ShieldCheck, X, ExternalLink } from 'lucide-react';
 
 interface SidebarProps {
   apparition: Apparition | null;
@@ -9,6 +9,8 @@ interface SidebarProps {
 
 const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
   if (!apparition) return null;
+
+  const sourceLink = apparition.sourceUrl || `https://www.google.com/search?q=${encodeURIComponent(`Catholic Marian apparition "${apparition.title}" ${apparition.location} ${apparition.country}`)}`;
 
   return (
     <div className="glass-panel glass-panel-rounded animate-slide-in-right" style={{
@@ -65,6 +67,42 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
         <p style={{ fontSize: '16px', lineHeight: 1.7, opacity: 0.9, letterSpacing: '0.2px' }}>
           {apparition.description}
         </p>
+        
+        <div style={{ marginTop: '24px' }}>
+          <a
+            href={sourceLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '10px',
+              fontSize: '14px',
+              fontWeight: 600,
+              color: '#38bdf8',
+              textDecoration: 'none',
+              background: 'rgba(56, 189, 248, 0.12)',
+              border: '1px solid rgba(56, 189, 248, 0.3)',
+              padding: '10px 18px',
+              borderRadius: '10px',
+              transition: 'all 0.2s',
+              boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.22)';
+              e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)';
+              e.currentTarget.style.transform = 'translateY(-1px)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
+              e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.3)';
+              e.currentTarget.style.transform = 'none';
+            }}
+          >
+            <ExternalLink size={16} />
+            <span>View Historical Documentation / Source</span>
+          </a>
+        </div>
       </div>
     </div>
   );

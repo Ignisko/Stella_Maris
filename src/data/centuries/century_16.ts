@@ -220,7 +220,7 @@ export const century16Apparitions: Apparition[] = [
   {
     id: "albendorf",
     title: "Our Lady of Albendorf / Wambierzyce",
-    location: "Albendorf",
+    location: "Wambierzyce",
     country: "Poland",
     lat: 50.4900,
     lng: 16.4556,
@@ -1479,7 +1479,7 @@ export const century16Apparitions: Apparition[] = [
   },
   {
     id: "lepuy_1598",
-    title: "Our Lady of Le Puy (1598)",
+    title: "Our Lady of Le Puy",
     location: "Le Puy-en-Velay",
     country: "France",
     lat: 45.0428,

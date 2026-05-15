@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Filter, Clock, Award } from 'lucide-react';
+import { STATUS_COLORS } from '../utils/colors';
 
 export const FILTER_CATEGORIES = [
   "Vatican approved",
@@ -19,7 +20,7 @@ export const categoryMapping: Record<string, string[]> = {
   "Coptic approved": ["Approved by the Coptic Orthodox Church", "Coptic Approved", "Coptic approved"],
   "Approved for faith expression": ["Approved for Faith Expression", "Approved for faith expression", "Declared nihil obstat", "Nihil obstat", "Declared site of pilgrimage and prayer", "Place of prayer", "Recognized as place of prayer"],
   "Apparitions to saints": ["Apparitions to Saints", "Apparitions to saints"],
-  "Unapproved apparitions": ["Unapproved Apparitions", "Unapproved apparitions", "No decision", "Negative decision", "Declared not supernatural", "Not established as supernatural", "Established as not supernatural", "Uninvestigated", "Negative", "Negative - Uninvestigated", "Negative judgment"]
+  "Unapproved apparitions": ["Unapproved Apparitions", "Unapproved apparitions", "Unapproved", "No decision", "Negative decision", "Declared not supernatural", "Not established as supernatural", "Established as not supernatural", "Uninvestigated", "Negative", "Negative - Uninvestigated", "Negative judgment"]
 };
 
 export const CENTURY_FILTERS = [
@@ -130,6 +131,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
             
             {activeTab === 'status' && FILTER_CATEGORIES.map(category => {
               const isActive = activeFilters.includes(category);
+              const color = STATUS_COLORS[category] || '#94a3b8';
               return (
                 <label key={category} style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', fontSize: '14px', opacity: isActive ? 1 : 0.6, transition: 'opacity 0.2s' }}>
                   <input 
@@ -138,7 +140,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
                     onChange={() => toggleFilter(category)}
                     style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '16px', height: '16px', flexShrink: 0 }}
                   />
-                  {category}
+                  <span style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: color, display: 'inline-block', flexShrink: 0, boxShadow: `0 0 8px ${color}` }} />
+                  <span style={{ textTransform: 'capitalize' }}>{category}</span>
                 </label>
               );
             })}

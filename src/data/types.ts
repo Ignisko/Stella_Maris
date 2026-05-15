@@ -9,4 +9,5 @@ export interface Apparition {
   description: string;
   approvalStatus: string;
   priority?: number; // 1 = highest (world shrines), 5 = lowest (historical details)
+  sourceUrl?: string;
 }

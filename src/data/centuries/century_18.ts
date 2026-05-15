@@ -147,7 +147,7 @@ export const century18Apparitions: Apparition[] = [
   },
   {
     id: "valverde_1711",
-    title: "Our Lady of Valverde (1711)",
+    title: "Our Lady of Valverde",
     location: "Rezzato, Brescia",
     country: "Italy",
     lat: 45.5167,
@@ -315,7 +315,7 @@ export const century18Apparitions: Apparition[] = [
   },
   {
     id: "pochayiv_1765",
-    title: "Our Lady of Pochayiv (1765)",
+    title: "Our Lady of Pochayiv",
     location: "Pochayiv Lavra",
     country: "Ukraine",
     lat: 50.0075,

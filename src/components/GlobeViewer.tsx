@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState, useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
 import { Play, Pause } from 'lucide-react';
+import { getStatusColor, hexToRgb } from '../utils/colors';
 
 interface GlobeViewerProps {
   apparitions: Apparition[];
@@ -139,7 +140,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         pointsData={visibleApparitions}
         pointLat="lat"
         pointLng="lng"
-        pointColor={() => '#fbbf24'}
+        pointColor={(d: any) => getStatusColor(d.approvalStatus)}
         pointAltitude={0.015}
         pointRadius={0.4}
         pointsMerge={false}
@@ -149,16 +150,18 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         htmlElement={(d: any) => {
           const isSelected = selectedApparition?.id === d.id;
           const safeTitle = escapeHtml(d.title || '');
+          const statusColor = getStatusColor(d.approvalStatus);
+          const rgb = hexToRgb(statusColor);
           const el = document.createElement('div');
           el.innerHTML = `<div style="
-            color: ${isSelected ? '#ffffff' : '#fbbf24'}; 
+            color: #ffffff; 
             font-size: ${isSelected ? '15px' : '13px'}; 
             font-weight: ${isSelected ? '700' : '600'}; 
             font-family: 'Outfit', sans-serif; 
-            background: ${isSelected ? 'rgba(251, 191, 36, 0.25)' : 'rgba(0,0,0,0.6)'}; 
+            background: ${isSelected ? `rgba(${rgb}, 0.4)` : 'rgba(255, 255, 255, 0.15)'}; 
             padding: ${isSelected ? '6px 12px' : '4px 8px'}; 
             border-radius: 8px; 
-            border: ${isSelected ? '2px solid #fbbf24' : '1px solid rgba(251, 191, 36, 0.4)'}; 
+            border: ${isSelected ? `2px solid ${statusColor}` : `1px solid rgba(255, 255, 255, 0.3)`}; 
             backdrop-filter: blur(8px); 
             transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
             opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
@@ -166,7 +169,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             pointer-events: auto; 
             cursor: pointer;
             white-space: nowrap; 
-            box-shadow: ${isSelected ? '0 0 20px rgba(251, 191, 36, 0.6)' : '0 4px 12px rgba(0,0,0,0.5)'};
+            box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : '0 4px 15px rgba(0,0,0,0.4)'};
             transition: all 0.2s ease-out;
           ">${safeTitle}</div>`;
 
