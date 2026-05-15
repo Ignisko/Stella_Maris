@@ -171,6 +171,10 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
 
           el.style.pointerEvents = 'auto';
           el.style.cursor = 'pointer';
+          el.onpointerdown = (e) => {
+            e.stopPropagation();
+            handlePointClick(d);
+          };
           el.onclick = (e) => {
             e.stopPropagation();
             handlePointClick(d);
