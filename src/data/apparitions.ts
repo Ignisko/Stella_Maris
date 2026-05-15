@@ -626,5 +626,126 @@ export const apparitionsData: Apparition[] = [
     year: 1099,
     description: "A blind man regained his sight through the Blessed Mother, who instructed him to unearth a lost portrait of her hidden since the Saracen invasions.",
     approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "reguengo",
+    title: "Our Lady of the Ferns",
+    location: "Reguengo do Fetal",
+    country: "Portugal",
+    lat: 39.6450,
+    lng: -8.7610,
+    year: 1100,
+    description: "A shepherdess found bread and a miraculous spring to which she was directed by the Blessed Mother.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "citeaux",
+    title: "Our Lady to St. Alberico",
+    location: "Citeaux",
+    country: "France",
+    lat: 47.1286,
+    lng: 5.0931,
+    year: 1101,
+    description: "Mary assured the Abbot of Citeaux of her permanent protection and inspired the white attire of the Cistercians.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "gargano_1120",
+    title: "Our Lady to St. John of Matera",
+    location: "Gargano",
+    country: "Italy",
+    lat: 41.7067,
+    lng: 15.9547,
+    year: 1120,
+    description: "While visiting the cave of St. Michael, the Virgin appeared to St. John of Matera and showed him where to raise a new abbey.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "liesse",
+    title: "Our Lady of Liesse",
+    location: "Cairo",
+    country: "Egypt",
+    lat: 30.0444,
+    lng: 31.2357,
+    year: 1134,
+    description: "Three imprisoned French knights received a miraculous, radiant statue from Mary in their dungeon, which converted the Sultan's daughter Ismenia.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "bingen",
+    title: "Our Lady to St. Hildegard",
+    location: "Bingen am Rhein",
+    country: "Germany",
+    lat: 49.9667,
+    lng: 7.9000,
+    year: 1138,
+    description: "St. Hildegard von Bingen experienced profound visions of the 'living light' and the Mother of God, leading to her incredible theological and scientific writings.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "becket",
+    title: "Our Lady to St. Thomas a Becket",
+    location: "London",
+    country: "England",
+    lat: 51.5074,
+    lng: -0.1278,
+    year: 1138,
+    description: "The Madonna showed the young Thomas a red cassock, symbolizing his future destiny as Archbishop of Canterbury and a martyr.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "schonau",
+    title: "Our Lady to St. Elizabeth",
+    location: "Schönau",
+    country: "Germany",
+    lat: 50.1500,
+    lng: 7.8833,
+    year: 1152,
+    description: "St. Elizabeth of Schönau was favored with ecstasies and visions of Christ and His Blessed Mother during Mass and Divine Office.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "mariazell",
+    title: "Madonna of Maria Zell",
+    location: "Mariazell",
+    country: "Austria",
+    lat: 47.7728,
+    lng: 15.3186,
+    year: 1157,
+    description: "A monk named Magnus took a small statue into the wilderness where the dense trees parted to make way for him. It became one of central Europe's most famous shrines.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "melrose",
+    title: "Our Lady of Melrose",
+    location: "Melrose",
+    country: "Scotland",
+    lat: 55.6989,
+    lng: -2.7196,
+    year: 1160,
+    description: "A Cistercian monk saw the Blessed Virgin Mary walking down the dormitory with an angel who wrote a list of the monks destined for heaven.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "tortosa",
+    title: "La Santa Cinta",
+    location: "Tortosa",
+    country: "Spain",
+    lat: 40.8125,
+    lng: 0.5216,
+    year: 1178,
+    description: "The Blessed Virgin left her holy ribbon or sash (La Santa Cinta) on the main altar of the cathedral in a night-time apparition.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "pochaiv",
+    title: "Our Lady of Pochaiv",
+    location: "Pochaiv",
+    country: "Ukraine",
+    lat: 50.0044,
+    lng: 25.4981,
+    year: 1198,
+    description: "The Blessed Virgin Mary appeared in all her glory, leaving a footprint in the rock and working a series of miracles, leading to the foundation of the Lavra.",
+    approvalStatus: "Traditionally Approved"
   }
 ];
