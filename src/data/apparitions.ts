@@ -747,5 +747,137 @@ export const apparitionsData: Apparition[] = [
     year: 1198,
     description: "The Blessed Virgin Mary appeared in all her glory, leaving a footprint in the rock and working a series of miracles, leading to the foundation of the Lavra.",
     approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "roverano",
+    title: "Our Lady of Roverano",
+    location: "Roverano",
+    country: "Italy",
+    lat: 44.2255,
+    lng: 9.7225,
+    year: 1300,
+    description: "The Virgin Mary appeared to two shepherdesses, healing one who was mute from birth, and left a miraculous Byzantine-style icon in an olive tree.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "bridget_sweden",
+    title: "Our Lady to St. Bridget",
+    location: "Vadstena",
+    country: "Sweden",
+    lat: 58.4485,
+    lng: 14.8893,
+    year: 1308,
+    description: "Mary accompanied St. Bridget of Sweden throughout her life with many revelations, guiding her to found the monastic Brigidine Order.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "avignon",
+    title: "Sabbatine Privilege",
+    location: "Avignon",
+    country: "France",
+    lat: 43.9493,
+    lng: 4.8055,
+    year: 1316,
+    description: "The Queen of Saints appeared to Pope John XXII, promising the speedy deliverance from Purgatory for children of Carmel (the Sabbatine Privilege).",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "constance",
+    title: "Our Lady to Bl. Henry Suso",
+    location: "Constance",
+    country: "Germany",
+    lat: 47.6592,
+    lng: 9.1732,
+    year: 1322,
+    description: "The German Dominican mystic received many apparitions of Mary and the Angels, shaping his famous 'Little Book of Eternal Wisdom'.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "guadalupe_spain",
+    title: "Our Lady of Guadalupe",
+    location: "Cáceres",
+    country: "Spain",
+    lat: 39.4526,
+    lng: -5.3275,
+    year: 1326,
+    description: "The Virgin Mary directed cowherd Gil Cordero to unearth a miraculous buried statue given to Spain by Pope Gregory the Great centuries prior.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "moscow_peter",
+    title: "Our Lady to St. Peter",
+    location: "Moscow",
+    country: "Russia",
+    lat: 55.7558,
+    lng: 37.6173,
+    year: 1326,
+    description: "The Holy Virgin appeared to an envious abbot who had stolen from Saint Peter of Moscow, leading him to repent and return the icon of Mary.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "bra",
+    title: "Madonna of the Flowers",
+    location: "Bra",
+    country: "Italy",
+    lat: 44.6975,
+    lng: 7.8542,
+    year: 1336,
+    description: "Our Lady appeared to save an expecting mother from mercenaries; the blackthorn bushes nearby miraculously bloomed in the dead of winter.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "tournai",
+    title: "Our Lady of Tournai",
+    location: "Tournai",
+    country: "Belgium",
+    lat: 50.6053,
+    lng: 3.3878,
+    year: 1340,
+    description: "During a siege, the people symbolically gave the keys of the city to Mary. Miraculous apparitions in the enemy camp caused the besieging soldiers to flee.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "montenero",
+    title: "Madonna di Montenero",
+    location: "Livorno",
+    country: "Italy",
+    lat: 43.4939,
+    lng: 10.3394,
+    year: 1345,
+    description: "A crippled shepherd boy found a miraculous image; after carrying it up the mountain as instructed, he was completely healed.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "pribram",
+    title: "Our Lady of Glatz",
+    location: "Pribram",
+    country: "Czech Republic",
+    lat: 49.6845,
+    lng: 14.0175,
+    year: 1363,
+    description: "As a youth, Archbishop Ernest Pardubitz saw the statue of Mary miraculously turn its head to show disapproval of his worldly life, sparking his conversion.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "mariastein",
+    title: "Our Lady of Mariastein",
+    location: "Mariastein",
+    country: "Switzerland",
+    lat: 47.4731,
+    lng: 7.4919,
+    year: 1384,
+    description: "A small child who fell from a steep cliff was miraculously caught and saved by a wonderful lady, leading to the construction of the famous abbey.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "candelaria",
+    title: "Virgen de la Candelaria",
+    location: "Tenerife",
+    country: "Spain",
+    lat: 28.3533,
+    lng: -16.3715,
+    year: 1392,
+    description: "Two aboriginal Guanche shepherds discovered a miraculous wooden image of Mary carrying a child and a golden bird, leading to the conversion of the island.",
+    approvalStatus: "Traditionally Approved"
   }
 ];
