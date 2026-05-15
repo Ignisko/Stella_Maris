@@ -55,11 +55,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       if (globeEl.current) {
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          let newThreshold = 2;
-          if (pov.altitude < 1.3) newThreshold = 5;
-          else if (pov.altitude < 1.9) newThreshold = 4;
-          else if (pov.altitude < 2.6) newThreshold = 3;
-          else newThreshold = 2;
+          let newThreshold = 1;
+          if (pov.altitude < 0.8) newThreshold = 5;
+          else if (pov.altitude < 1.4) newThreshold = 3;
+          else if (pov.altitude < 2.2) newThreshold = 2;
+          else newThreshold = 1;
 
           if (newThreshold !== lodRef.current) {
             lodRef.current = newThreshold;
@@ -95,10 +95,17 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, [apparitions, lodThreshold]);
 
   const visibleHtmlLabels = useMemo(() => {
-    if (selectedApparition) {
-      return [selectedApparition];
-    }
-    return apparitions.filter(app => (app.priority || 3) <= lodThreshold);
+    const famousKeywords = ['guadalupe', 'fatima', 'lourdes', 'medjugorje', 'miraculous medal', 'kibeho', 'banneux', 'knock', 'aparecida', 'akita', 'czestochowa', 'pilar', 'loreto', 'carmel'];
+    
+    return apparitions.filter(app => {
+      if (selectedApparition?.id === app.id) return true;
+      const isFamous = (app.priority === 1) || famousKeywords.some(kw => app.title.toLowerCase().includes(kw) || app.id.includes(kw));
+      
+      if (lodThreshold === 1) {
+        return isFamous;
+      }
+      return (app.priority || 3) <= lodThreshold;
+    });
   }, [apparitions, lodThreshold, selectedApparition]);
 
   const handlePointClick = (point: object) => {
@@ -158,18 +165,19 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             font-size: ${isSelected ? '15px' : '13px'}; 
             font-weight: ${isSelected ? '700' : '600'}; 
             font-family: 'Outfit', sans-serif; 
-            background: ${isSelected ? `rgba(${rgb}, 0.4)` : 'rgba(255, 255, 255, 0.15)'}; 
-            padding: ${isSelected ? '6px 12px' : '4px 8px'}; 
+            background: ${isSelected ? `rgba(${rgb}, 0.4)` : 'transparent'}; 
+            padding: ${isSelected ? '6px 12px' : '2px 6px'}; 
             border-radius: 8px; 
-            border: ${isSelected ? `2px solid ${statusColor}` : `1px solid rgba(255, 255, 255, 0.3)`}; 
-            backdrop-filter: blur(8px); 
+            border: ${isSelected ? `2px solid ${statusColor}` : 'none'}; 
+            backdrop-filter: ${isSelected ? 'blur(8px)' : 'none'}; 
             transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
             opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
             transform-origin: bottom center;
             pointer-events: auto; 
             cursor: pointer;
             white-space: nowrap; 
-            box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : '0 4px 15px rgba(0,0,0,0.4)'};
+            text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
+            box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};
             transition: all 0.2s ease-out;
           ">${safeTitle}</div>`;
 
