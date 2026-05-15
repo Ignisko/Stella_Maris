@@ -116,15 +116,25 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     onSelectApparition(null);
   };
 
+  // HTML sanitization helper to prevent DOM-based XSS vulnerabilities
+  const escapeHtml = (str: string): string => {
+    return str
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#039;");
+  };
+
   return (
     <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100vw', height: '100vh' }}>
       <Globe
         ref={globeEl}
         width={dimensions.width}
         height={dimensions.height}
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
-        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-        backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
+        globeImageUrl="https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
+        bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
+        backgroundImageUrl="https://unpkg.com/three-globe/example/img/night-sky.png"
         pointsData={visibleApparitions}
         pointLat="lat"
         pointLng="lng"
@@ -137,6 +147,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         htmlElementsData={visibleHtmlLabels}
         htmlElement={(d: any) => {
           const isSelected = selectedApparition?.id === d.id;
+          const safeTitle = escapeHtml(d.title || '');
           const el = document.createElement('div');
           el.innerHTML = `<div style="
             color: ${isSelected ? '#ffffff' : '#fbbf24'}; 
@@ -156,7 +167,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             white-space: nowrap; 
             box-shadow: ${isSelected ? '0 0 20px rgba(251, 191, 36, 0.6)' : '0 4px 12px rgba(0,0,0,0.5)'};
             transition: all 0.2s ease-out;
-          ">${d.title}</div>`;
+          ">${safeTitle}</div>`;
 
           el.style.pointerEvents = 'auto';
           el.style.cursor = 'pointer';
