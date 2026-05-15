@@ -15,6 +15,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   const [isAutoRotate, setIsAutoRotate] = useState(true);
   const [lodThreshold, setLodThreshold] = useState<number>(2);
   const lodRef = useRef<number>(2);
+  const lastClickTimeRef = useRef<number>(0);
 
   useEffect(() => {
     if (selectedApparition && globeEl.current) {
@@ -53,12 +54,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       if (globeEl.current) {
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          // Update LOD Threshold based on altitude
           let newThreshold = 2;
-          if (pov.altitude < 1.3) newThreshold = 5;      // closest zoom - show all
-          else if (pov.altitude < 1.9) newThreshold = 4; // close zoom - show priority 1-4
-          else if (pov.altitude < 2.6) newThreshold = 3; // medium zoom - show priority 1-3
-          else newThreshold = 2;                         // high zoom - show priority 1-2
+          if (pov.altitude < 1.3) newThreshold = 5;
+          else if (pov.altitude < 1.9) newThreshold = 4;
+          else if (pov.altitude < 2.6) newThreshold = 3;
+          else newThreshold = 2;
 
           if (newThreshold !== lodRef.current) {
             lodRef.current = newThreshold;
@@ -89,12 +89,10 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
-  // Filter visible points based on LOD zoom threshold
   const visibleApparitions = useMemo(() => {
     return apparitions.filter(app => (app.priority || 3) <= lodThreshold);
   }, [apparitions, lodThreshold]);
 
-  // When an apparition is selected, hide all other text labels to prevent clutter
   const visibleHtmlLabels = useMemo(() => {
     if (selectedApparition) {
       return [selectedApparition];
@@ -103,6 +101,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, [apparitions, lodThreshold, selectedApparition]);
 
   const handlePointClick = (point: object) => {
+    lastClickTimeRef.current = Date.now();
     const app = point as Apparition;
     onSelectApparition(app);
     setIsAutoRotate(false); 
@@ -113,10 +112,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   };
 
   const handleGlobeClick = () => {
+    if (Date.now() - lastClickTimeRef.current < 400) {
+      return;
+    }
     onSelectApparition(null);
   };
 
-  // HTML sanitization helper to prevent DOM-based XSS vulnerabilities
   const escapeHtml = (str: string): string => {
     return str
       .replace(/&/g, "&amp;")
@@ -173,10 +174,15 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           el.style.cursor = 'pointer';
           el.onpointerdown = (e) => {
             e.stopPropagation();
+            lastClickTimeRef.current = Date.now();
             handlePointClick(d);
+          };
+          el.onpointerup = (e) => {
+            e.stopPropagation();
           };
           el.onclick = (e) => {
             e.stopPropagation();
+            lastClickTimeRef.current = Date.now();
             handlePointClick(d);
           };
           return el;
