@@ -1,16 +1,36 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
+import FilterMenu, { FILTER_CATEGORIES, categoryMapping } from './components/FilterMenu';
 import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
 
 function App() {
   const [selectedApparition, setSelectedApparition] = useState<Apparition | null>(null);
+  const [activeFilters, setActiveFilters] = useState<string[]>([...FILTER_CATEGORIES]);
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
   };
+
+  // Filter the data
+  const filteredApparitions = useMemo(() => {
+    return apparitionsData.filter(app => {
+      // Find which filter category this apparition belongs to
+      for (const filter of activeFilters) {
+        const matchingStatuses = categoryMapping[filter];
+        if (matchingStatuses && matchingStatuses.includes(app.approvalStatus)) {
+          return true;
+        }
+        // Fallback for exact matches if they are added directly
+        if (app.approvalStatus === filter) {
+          return true;
+        }
+      }
+      return false;
+    });
+  }, [activeFilters]);
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -33,8 +53,10 @@ function App() {
         </p>
       </div>
 
+      <FilterMenu activeFilters={activeFilters} onChange={setActiveFilters} />
+
       <GlobeViewer 
-        apparitions={apparitionsData} 
+        apparitions={filteredApparitions} 
         onSelectApparition={handleSelectApparition} 
       />
       
@@ -43,11 +65,13 @@ function App() {
         onClose={() => setSelectedApparition(null)} 
       />
 
-      <TimelineOverlay
-        apparitions={apparitionsData}
-        selectedApparition={selectedApparition}
-        onSelectApparition={handleSelectApparition}
-      />
+      {filteredApparitions.length > 0 && (
+        <TimelineOverlay
+          apparitions={filteredApparitions}
+          selectedApparition={selectedApparition}
+          onSelectApparition={handleSelectApparition}
+        />
+      )}
     </div>
   );
 }
