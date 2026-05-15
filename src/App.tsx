@@ -2,13 +2,14 @@ import { useState, useMemo } from 'react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
-import FilterMenu, { FILTER_CATEGORIES, categoryMapping } from './components/FilterMenu';
+import FilterMenu, { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './components/FilterMenu';
 import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
 
 function App() {
   const [selectedApparition, setSelectedApparition] = useState<Apparition | null>(null);
   const [activeFilters, setActiveFilters] = useState<string[]>([...FILTER_CATEGORIES]);
+  const [activeCenturies, setActiveCenturies] = useState<string[]>(CENTURY_FILTERS.map(c => c.id));
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
@@ -17,7 +18,15 @@ function App() {
   // Filter the data
   const filteredApparitions = useMemo(() => {
     return apparitionsData.filter(app => {
-      // Find which filter category this apparition belongs to
+      // 1. Check if it matches active century filters
+      const matchesCentury = CENTURY_FILTERS.some(century => {
+        if (!activeCenturies.includes(century.id)) return false;
+        return app.year >= century.min && app.year <= century.max;
+      });
+
+      if (!matchesCentury) return false;
+
+      // 2. Check if it matches active status filters
       for (const filter of activeFilters) {
         const matchingStatuses = categoryMapping[filter];
         if (matchingStatuses && matchingStatuses.includes(app.approvalStatus)) {
@@ -30,7 +39,7 @@ function App() {
       }
       return false;
     });
-  }, [activeFilters]);
+  }, [activeFilters, activeCenturies]);
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -53,7 +62,12 @@ function App() {
         </p>
       </div>
 
-      <FilterMenu activeFilters={activeFilters} onChange={setActiveFilters} />
+      <FilterMenu 
+        activeFilters={activeFilters} 
+        onChange={setActiveFilters} 
+        activeCenturies={activeCenturies}
+        onChangeCenturies={setActiveCenturies}
+      />
 
       <GlobeViewer 
         apparitions={filteredApparitions} 
