@@ -151,11 +151,19 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
             opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
             transform-origin: bottom center;
-            pointer-events: none; 
+            pointer-events: auto; 
+            cursor: pointer;
             white-space: nowrap; 
             box-shadow: ${isSelected ? '0 0 20px rgba(251, 191, 36, 0.6)' : '0 4px 12px rgba(0,0,0,0.5)'};
             transition: all 0.2s ease-out;
           ">${d.title}</div>`;
+
+          el.style.pointerEvents = 'auto';
+          el.style.cursor = 'pointer';
+          el.onclick = (e) => {
+            e.stopPropagation();
+            handlePointClick(d);
+          };
           return el;
         }}
       />

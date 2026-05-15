@@ -3,6 +3,7 @@ import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
 import FilterMenu, { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './components/FilterMenu';
+import SearchBar from './components/SearchBar';
 import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
 
@@ -61,6 +62,11 @@ function App() {
           Marian apparitions map
         </p>
       </div>
+
+      <SearchBar 
+        apparitions={apparitionsData} 
+        onSelectApparition={handleSelectApparition} 
+      />
 
       <FilterMenu 
         activeFilters={activeFilters} 
