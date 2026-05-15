@@ -318,5 +318,181 @@ export const apparitionsData: Apparition[] = [
     year: 1900,
     description: "Mary appeared as a beautiful lady in the skies when Catholics implored Her to save them and their city from destruction during the Boxer Rebellion.",
     approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "ephesus",
+    title: "Our Lady in Ephesus",
+    location: "Ephesus",
+    country: "Turkey",
+    lat: 37.9398,
+    lng: 27.3400,
+    year: 48,
+    description: "According to legend, the Holy Virgin Mary appeared to the apostles, three days after her Assumption into heaven. Clad in a bright light, she promised: 'I'll stay with you in eternity.'",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "patmos",
+    title: "The Woman Clothed in the Sun",
+    location: "Patmos",
+    country: "Greece",
+    lat: 37.3253,
+    lng: 26.5451,
+    year: 81,
+    description: "According to legend, St. John the Evangelist received a vision of the Virgin Mary before he composed the Book of Revelation.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "kuravilangad",
+    title: "Our Lady of Kuravilangad",
+    location: "Kuravilangad",
+    country: "India",
+    lat: 9.7570,
+    lng: 76.5683,
+    year: 105,
+    description: "Our Lady appeared to children tending their flock, asking them to build a church where a miraculous perpetual spring sprouted.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "neocaesarea",
+    title: "Our Lady to St. Gregory",
+    location: "Neocaesarea",
+    country: "Turkey",
+    lat: 40.5898,
+    lng: 36.9507,
+    year: 231,
+    description: "The Virgin Mary and the Apostle John appeared to St. Gregory the Wonderworker to clarify theological mysteries regarding the Trinity.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "alexandria",
+    title: "Our Lady to St. Catherine",
+    location: "Alexandria",
+    country: "Egypt",
+    lat: 31.2001,
+    lng: 29.9187,
+    year: 305,
+    description: "St. Catherine was converted by a vision of Our Lady and the Holy Child, leading her to refuse marriage to an emperor.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "myra",
+    title: "Our Lady to St. Nicholas",
+    location: "Myra",
+    country: "Turkey",
+    lat: 36.2442,
+    lng: 29.9808,
+    year: 325,
+    description: "St. Nicholas of Bari received two apparitions urging him to fulfill his spiritual mission, the second occurring during the Council of Nicaea.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "caesarea",
+    title: "Sovereign Mediatrix",
+    location: "Caesarea",
+    country: "Turkey",
+    lat: 38.7205,
+    lng: 35.4826,
+    year: 363,
+    description: "Mary appeared to St. Basil promising to protect him from the Roman emperor Julian the Apostate's plan to destroy his church.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "tagaste",
+    title: "Our Lady to St. Monica",
+    location: "Tagaste",
+    country: "Algeria",
+    lat: 36.2847,
+    lng: 7.9502,
+    year: 380,
+    description: "The Virgin appeared to St. Monica, mother of St. Augustine, consoling her in her afflictions.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "saydnaya",
+    title: "Our Lady of Saydnaya",
+    location: "Saydnaya",
+    country: "Syria",
+    lat: 33.7011,
+    lng: 36.3758,
+    year: 540,
+    description: "Emperor Justinian I saw a vision of the Virgin Mary, who ordered him to build a convent on the high rock upon which she was standing.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "boulogne",
+    title: "Our Lady of Boulogne",
+    location: "Boulogne",
+    country: "France",
+    lat: 50.7252,
+    lng: 1.6111,
+    year: 636,
+    description: "A rudderless ship carrying a statue of Mary landed at Boulogne. Mary appeared to the crowd and announced she had chosen the city as a place of grace.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "toledo",
+    title: "Our Lady to St. Ildefonso",
+    location: "Toledo",
+    country: "Spain",
+    lat: 39.8628,
+    lng: -4.0273,
+    year: 660,
+    description: "Mary praised the religious fervor of Bishop Ildefonso and handed him a valuable garment as a symbol of her protection.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "benevento",
+    title: "Our Lady to St. Barabatus",
+    location: "Benevento",
+    country: "Italy",
+    lat: 41.1301,
+    lng: 14.7777,
+    year: 663,
+    description: "The Virgin appeared to St. Barabatus under the walls of the besieged city of Constantine II.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "mainz",
+    title: "Our Lady of the Oak",
+    location: "Mainz",
+    country: "Germany",
+    lat: 49.9929,
+    lng: 8.2473,
+    year: 754,
+    description: "St. Boniface heard Mary's voice from a miraculous icon hanging from an oak tree, saying: 'The trunk of this oak tree is to remain forever my portrait.'",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "einsiedeln",
+    title: "Our Lady of Einsiedeln",
+    location: "Einsiedeln",
+    country: "Switzerland",
+    lat: 47.1278,
+    lng: 8.7431,
+    year: 948,
+    description: "St. Konrad witnessed a magnificent procession of Angels and Christ Himself miraculously consecrating the Chapel of Our Lady of the Hermits.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "mtathos",
+    title: "Our Lady of Mt. Athos",
+    location: "Mt. Athos",
+    country: "Greece",
+    lat: 40.1583,
+    lng: 24.3275,
+    year: 963,
+    description: "The Virgin appeared to Athanasius, consoling him and exhorting him not to leave the Mount, inspiring him to establish the first monastery there.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "canterbury",
+    title: "Our Lady to St. Dustin",
+    location: "Canterbury",
+    country: "England",
+    lat: 51.2802,
+    lng: 1.0789,
+    year: 980,
+    description: "While St. Dustin prayed in the cathedral, the Virgin Mary appeared to him with a heavenly choir.",
+    approvalStatus: "Traditionally Approved"
   }
 ];
