@@ -94,6 +94,14 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     return apparitions.filter(app => (app.priority || 3) <= lodThreshold);
   }, [apparitions, lodThreshold]);
 
+  // When an apparition is selected, hide all other text labels to prevent clutter
+  const visibleHtmlLabels = useMemo(() => {
+    if (selectedApparition) {
+      return [selectedApparition];
+    }
+    return apparitions.filter(app => (app.priority || 3) <= lodThreshold);
+  }, [apparitions, lodThreshold, selectedApparition]);
+
   const handlePointClick = (point: object) => {
     const app = point as Apparition;
     onSelectApparition(app);
@@ -126,26 +134,27 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         pointsMerge={false}
         onPointClick={handlePointClick}
         onGlobeClick={handleGlobeClick}
-        htmlElementsData={visibleApparitions}
+        htmlElementsData={visibleHtmlLabels}
         htmlElement={(d: any) => {
+          const isSelected = selectedApparition?.id === d.id;
           const el = document.createElement('div');
           el.innerHTML = `<div style="
-            color: #fbbf24; 
-            font-size: 13px; 
-            font-weight: 600; 
+            color: ${isSelected ? '#ffffff' : '#fbbf24'}; 
+            font-size: ${isSelected ? '15px' : '13px'}; 
+            font-weight: ${isSelected ? '700' : '600'}; 
             font-family: 'Outfit', sans-serif; 
-            background: rgba(0,0,0,0.6); 
-            padding: 4px 8px; 
-            border-radius: 6px; 
-            border: 1px solid rgba(251, 191, 36, 0.4); 
-            backdrop-filter: blur(4px); 
-            transform: translate(-50%, -20px) scale(var(--globe-label-scale, 1)); 
-            opacity: var(--globe-label-opacity, 1);
+            background: ${isSelected ? 'rgba(251, 191, 36, 0.25)' : 'rgba(0,0,0,0.6)'}; 
+            padding: ${isSelected ? '6px 12px' : '4px 8px'}; 
+            border-radius: 8px; 
+            border: ${isSelected ? '2px solid #fbbf24' : '1px solid rgba(251, 191, 36, 0.4)'}; 
+            backdrop-filter: blur(8px); 
+            transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
+            opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
             transform-origin: bottom center;
             pointer-events: none; 
             white-space: nowrap; 
-            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-            transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+            box-shadow: ${isSelected ? '0 0 20px rgba(251, 191, 36, 0.6)' : '0 4px 12px rgba(0,0,0,0.5)'};
+            transition: all 0.2s ease-out;
           ">${d.title}</div>`;
           return el;
         }}
