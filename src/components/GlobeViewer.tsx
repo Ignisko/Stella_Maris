@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
 import { Play, Pause } from 'lucide-react';
@@ -12,6 +12,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [isAutoRotate, setIsAutoRotate] = useState(true);
+  const [lodThreshold, setLodThreshold] = useState<number>(2);
+  const lodRef = useRef<number>(2);
 
   useEffect(() => {
     const handleResize = () => {
@@ -23,7 +25,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
 
   useEffect(() => {
     if (globeEl.current) {
-      // Made rotation significantly slower
       globeEl.current.controls().autoRotateSpeed = 0.15;
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
@@ -41,18 +42,26 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
       if (globeEl.current) {
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          // altitude is roughly 0.1 to 4.0+
+          // Update LOD Threshold based on altitude
+          let newThreshold = 2;
+          if (pov.altitude < 1.3) newThreshold = 5;      // closest zoom - show all
+          else if (pov.altitude < 1.9) newThreshold = 4; // close zoom - show priority 1-4
+          else if (pov.altitude < 2.6) newThreshold = 3; // medium zoom - show priority 1-3
+          else newThreshold = 2;                         // high zoom - show priority 1-2
+
+          if (newThreshold !== lodRef.current) {
+            lodRef.current = newThreshold;
+            setLodThreshold(newThreshold);
+          }
+
           let targetScale = 1;
           let targetOpacity = 1;
 
           if (pov.altitude < 2.2) {
-             // zoomed in - keep it readable, shrink slightly to 0.85 minimum
              targetScale = 0.85 + (pov.altitude / 2.2) * 0.15;
              targetOpacity = 1;
           } else {
-             // zoomed out - shrink more to avoid chaos, and fade out
              targetScale = 1.0 - ((pov.altitude - 2.2) / 2.8) * 0.4;
-             // fade out completely by altitude 3.5
              targetOpacity = 1.0 - ((pov.altitude - 2.2) / 1.3);
           }
           
@@ -69,10 +78,14 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
 
+  // Filter visible points based on LOD zoom threshold
+  const visibleApparitions = useMemo(() => {
+    return apparitions.filter(app => (app.priority || 3) <= lodThreshold);
+  }, [apparitions, lodThreshold]);
+
   const handlePointClick = (point: object) => {
     const app = point as Apparition;
     onSelectApparition(app);
-    // Pause rotation when a user clicks a specific point
     setIsAutoRotate(false); 
     if (globeEl.current) {
       globeEl.current.controls().autoRotate = false;
@@ -93,7 +106,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
         globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
         bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
         backgroundImageUrl="//unpkg.com/three-globe/example/img/night-sky.png"
-        pointsData={apparitions}
+        pointsData={visibleApparitions}
         pointLat="lat"
         pointLng="lng"
         pointColor={() => '#fbbf24'}
@@ -102,7 +115,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
         pointsMerge={false}
         onPointClick={handlePointClick}
         onGlobeClick={handleGlobeClick}
-        htmlElementsData={apparitions}
+        htmlElementsData={visibleApparitions}
         htmlElement={(d: any) => {
           const el = document.createElement('div');
           el.innerHTML = `<div style="
