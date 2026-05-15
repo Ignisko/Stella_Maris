@@ -77,7 +77,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
   return (
     <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
       position: 'absolute',
-      top: '110px',
+      top: '130px',
       left: '20px',
       zIndex: 10,
       width: '290px',

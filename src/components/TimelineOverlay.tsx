@@ -18,9 +18,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
     <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
       position: 'absolute',
       bottom: '30px',
-      left: '50%',
-      transform: 'translateX(-50%)',
-      width: 'calc(100% - 180px)',
+      left: '100px',
+      right: '100px',
+      margin: '0 auto',
       maxWidth: '820px',
       padding: '24px 30px',
       zIndex: 10,
