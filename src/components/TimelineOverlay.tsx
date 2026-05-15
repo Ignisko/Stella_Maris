@@ -20,10 +20,11 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       bottom: '30px',
       left: '50%',
       transform: 'translateX(-50%)',
-      width: '80%',
+      width: 'calc(100% - 60px)',
       maxWidth: '800px',
       padding: '24px 40px',
       zIndex: 10,
+      boxSizing: 'border-box'
     }}>
       <h3 style={{ fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.5px', opacity: 0.6, marginBottom: '24px', textAlign: 'center', fontWeight: 600 }}>
         Timeline of Apparitions
@@ -33,6 +34,29 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
         {/* Main Line */}
         <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '2px', background: 'rgba(255,255,255,0.15)', transform: 'translateY(-50%)' }}></div>
         
+        {/* Century Ticks */}
+        {Array.from({ length: Math.ceil(range / 100) + 1 }).map((_, i) => {
+          const year = Math.floor(minYear / 100) * 100 + i * 100;
+          if (year < minYear || year > maxYear) return null;
+          const leftPercent = ((year - minYear) / range) * 100;
+          return (
+            <div key={`tick-${year}`} style={{
+              position: 'absolute',
+              left: `${leftPercent}%`,
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              height: '10px',
+              width: '1px',
+              background: 'rgba(255,255,255,0.3)',
+              pointerEvents: 'none'
+            }}>
+              <div style={{ position: 'absolute', top: '12px', left: '50%', transform: 'translateX(-50%)', fontSize: '10px', color: 'rgba(255,255,255,0.4)', fontWeight: 600 }}>
+                {year}
+              </div>
+            </div>
+          );
+        })}
+
         {/* Markers */}
         {sorted.map(app => {
           const leftPercent = ((app.year - minYear) / range) * 100;
@@ -47,32 +71,38 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 left: `${leftPercent}%`,
                 top: '50%',
                 transform: 'translate(-50%, -50%)',
-                width: isSelected ? '18px' : '14px',
-                height: isSelected ? '18px' : '14px',
+                width: isSelected ? '18px' : '12px',
+                height: isSelected ? '18px' : '12px',
                 borderRadius: '50%',
                 background: isSelected ? 'var(--gold-accent)' : 'var(--accent-color)',
                 border: '2px solid var(--bg-color)',
                 cursor: 'pointer',
                 transition: 'all 0.2s ease',
                 boxShadow: isSelected ? '0 0 15px var(--gold-accent)' : '0 0 8px var(--accent-glow)',
-                zIndex: isSelected ? 2 : 1
+                zIndex: isSelected ? 3 : 2
               }}
               title={`${app.title} (${app.year})`}
             >
-              <div style={{
-                position: 'absolute',
-                bottom: '24px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                fontSize: '13px',
-                fontWeight: isSelected ? 700 : 500,
-                color: isSelected ? 'var(--gold-accent)' : 'var(--text-color)',
-                opacity: isSelected ? 1 : 0.6,
-                whiteSpace: 'nowrap',
-                transition: 'all 0.2s ease',
-              }}>
-                {app.year}
-              </div>
+              {isSelected && (
+                <div style={{
+                  position: 'absolute',
+                  bottom: '24px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  color: 'var(--gold-accent)',
+                  whiteSpace: 'nowrap',
+                  background: 'rgba(0,0,0,0.6)',
+                  padding: '2px 8px',
+                  borderRadius: '4px',
+                  border: '1px solid rgba(251, 191, 36, 0.3)',
+                  backdropFilter: 'blur(4px)',
+                  pointerEvents: 'none'
+                }}>
+                  {app.year}: {app.title}
+                </div>
+              )}
             </div>
           );
         })}

@@ -42,17 +42,25 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
           // altitude is roughly 0.1 to 4.0+
-          // user wants smaller when zoomed in (low altitude), larger when zoomed out (high altitude)
           let targetScale = 1;
+          let targetOpacity = 1;
+
           if (pov.altitude < 2.2) {
-             targetScale = 0.5 + (pov.altitude / 2.2) * 0.5; // Maps to 0.5 -> 1.0
+             // zoomed in - keep it readable, shrink slightly to 0.85 minimum
+             targetScale = 0.85 + (pov.altitude / 2.2) * 0.15;
+             targetOpacity = 1;
           } else {
-             targetScale = 1.0 + ((pov.altitude - 2.2) / 2.8) * 0.8; // Maps to 1.0 -> 1.8
+             // zoomed out - shrink more to avoid chaos, and fade out
+             targetScale = 1.0 - ((pov.altitude - 2.2) / 2.8) * 0.4;
+             // fade out completely by altitude 3.5
+             targetOpacity = 1.0 - ((pov.altitude - 2.2) / 1.3);
           }
-          // Enforce limits so it doesn't get too big or too small
-          targetScale = Math.max(0.4, Math.min(targetScale, 1.8));
+          
+          targetScale = Math.max(0.7, Math.min(targetScale, 1.0));
+          targetOpacity = Math.max(0, Math.min(targetOpacity, 1));
           
           document.documentElement.style.setProperty('--globe-label-scale', targetScale.toString());
+          document.documentElement.style.setProperty('--globe-label-opacity', targetOpacity.toString());
         }
       }
       animationFrameId = requestAnimationFrame(updateScale);
@@ -89,8 +97,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
         pointLat="lat"
         pointLng="lng"
         pointColor={() => '#fbbf24'}
-        pointAltitude={0.05}
-        pointRadius={1}
+        pointAltitude={0.015}
+        pointRadius={0.4}
         pointsMerge={false}
         onPointClick={handlePointClick}
         onGlobeClick={handleGlobeClick}
@@ -108,11 +116,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
             border: 1px solid rgba(251, 191, 36, 0.4); 
             backdrop-filter: blur(4px); 
             transform: translate(-50%, -20px) scale(var(--globe-label-scale, 1)); 
+            opacity: var(--globe-label-opacity, 1);
             transform-origin: bottom center;
             pointer-events: none; 
             white-space: nowrap; 
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-            transition: transform 0.1s ease-out;
+            transition: transform 0.1s ease-out, opacity 0.1s ease-out;
           ">${d.title}</div>`;
           return el;
         }}
