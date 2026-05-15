@@ -43,10 +43,10 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
     if (decadeBuckets.length === 0) return '';
     const points = decadeBuckets.map(b => {
       const x = ((b.decade + 5 - minYear) / range) * 100;
-      const y = 110 - (b.count / maxCount) * 95;
+      const y = 80 - (b.count / maxCount) * 70;
       return `${x} ${y}`;
     });
-    return `M 0 110 L ${points.map(p => `${p}`).join(' L ')} L 100 110 Z`;
+    return `M 0 80 L ${points.map(p => `${p}`).join(' L ')} L 100 80 Z`;
   }, [decadeBuckets, minYear, range, maxCount]);
 
   return (
@@ -54,17 +54,17 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       position: 'absolute',
       bottom: '30px',
       left: '340px',
-      right: '30px',
+      right: selectedApparition ? '420px' : '30px',
       maxWidth: '1200px',
       margin: '0 auto',
-      padding: '24px 30px',
+      padding: '16px 24px',
       zIndex: 10,
       boxSizing: 'border-box',
       transition: 'all 0.3s ease'
     }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px', position: 'relative' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', position: 'relative' }}>
         <h3 style={{ fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.5px', opacity: 0.8, margin: 0, fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-          <BarChart2 size={16} color="var(--accent-color)" /> Timeline & Activity Graph
+          <BarChart2 size={16} color="var(--accent-color)" /> Timeline
         </h3>
 
         {hoveredDecade && (
@@ -113,8 +113,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       </div>
 
       {isExpanded && (
-        <div style={{ width: '100%', height: '110px', marginBottom: '16px', position: 'relative' }}>
-          <svg viewBox="0 0 100 110" preserveAspectRatio="none" style={{ width: '100%', height: '110px', overflow: 'visible' }}>
+        <div style={{ width: '100%', height: '80px', marginBottom: '16px', position: 'relative' }}>
+          <svg viewBox="0 0 100 80" preserveAspectRatio="none" style={{ width: '100%', height: '80px', overflow: 'visible' }}>
             <defs>
               <linearGradient id="graphGrad" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.7" />
@@ -124,7 +124,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             <path d={svgPath} fill="url(#graphGrad)" opacity="0.5" stroke="#fbbf24" strokeWidth="0.8" />
             {decadeBuckets.filter(b => b.count > 0).map(b => {
               const x = ((b.decade + 5 - minYear) / range) * 100;
-              const y = 110 - (b.count / maxCount) * 95;
+              const y = 80 - (b.count / maxCount) * 70;
               return (
                 <circle
                   key={b.decade}
