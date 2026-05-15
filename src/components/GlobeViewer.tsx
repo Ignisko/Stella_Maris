@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
+import { Play, Pause } from 'lucide-react';
 
 interface GlobeViewerProps {
   apparitions: Apparition[];
@@ -10,6 +11,7 @@ interface GlobeViewerProps {
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectApparition }) => {
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [isAutoRotate, setIsAutoRotate] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -20,19 +22,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
   }, []);
 
   useEffect(() => {
-    // Auto-rotate the globe slightly
     if (globeEl.current) {
-      globeEl.current.controls().autoRotate = true;
-      globeEl.current.controls().autoRotateSpeed = 0.5;
-      // Start focused on Europe/Africa
+      // Made rotation significantly slower
+      globeEl.current.controls().autoRotateSpeed = 0.15;
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
   }, []);
 
+  useEffect(() => {
+    if (globeEl.current) {
+      globeEl.current.controls().autoRotate = isAutoRotate;
+    }
+  }, [isAutoRotate]);
+
   const handlePointClick = (point: object) => {
     const app = point as Apparition;
     onSelectApparition(app);
-    // Zoom to point
+    // Pause rotation when a user clicks a specific point
+    setIsAutoRotate(false); 
     if (globeEl.current) {
       globeEl.current.controls().autoRotate = false;
       globeEl.current.pointOfView({ lat: app.lat, lng: app.lng, altitude: 0.6 }, 1000);
@@ -41,10 +48,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
 
   const handleGlobeClick = () => {
     onSelectApparition(null);
-    if (globeEl.current) {
-      globeEl.current.controls().autoRotate = true;
-    }
-  }
+  };
 
   return (
     <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1 }}>
@@ -71,6 +75,35 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
           return el;
         }}
       />
+
+      {/* Play/Pause Control Button */}
+      <button
+        onClick={() => setIsAutoRotate(!isAutoRotate)}
+        style={{
+          position: 'absolute',
+          bottom: '120px', // Positioned above the timeline
+          right: '30px',
+          zIndex: 10,
+          background: 'rgba(15, 23, 42, 0.6)',
+          backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          borderRadius: '50%',
+          width: '48px',
+          height: '48px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          color: 'var(--text-color)',
+          cursor: 'pointer',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          transition: 'all 0.2s ease'
+        }}
+        onMouseOver={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)'}
+        onMouseOut={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.6)'}
+        title={isAutoRotate ? "Pause Rotation" : "Play Rotation"}
+      >
+        {isAutoRotate ? <Pause size={20} /> : <Play size={20} style={{ marginLeft: '2px' }} />}
+      </button>
     </div>
   );
 };
