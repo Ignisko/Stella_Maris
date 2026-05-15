@@ -494,5 +494,137 @@ export const apparitionsData: Apparition[] = [
     year: 980,
     description: "While St. Dustin prayed in the cathedral, the Virgin Mary appeared to him with a heavenly choir.",
     approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "montefortino",
+    title: "Our Lady of the Free",
+    location: "Montefortino",
+    country: "Italy",
+    lat: 42.9431,
+    lng: 13.3392,
+    year: 1000,
+    description: "The Blessed Virgin appeared to Santina, a mute shepherdess, who was miraculously given the gift of speech upon seeing the heavenly Mother.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "incoronata",
+    title: "Mother of God Crowned",
+    location: "Borgo Incoronata",
+    country: "Italy",
+    lat: 41.3833,
+    lng: 15.6167,
+    year: 1001,
+    description: "The Virgin appeared on an oak tree in the forest of Cervaro to Count Irpino and a shepherd, asking them to build a church.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "valenciennes",
+    title: "Our Lady of the Cord",
+    location: "Valenciennes",
+    country: "France",
+    lat: 50.3570,
+    lng: 3.5234,
+    year: 1008,
+    description: "Mary appeared with many Angels who stretched a cord around the city to stop a plague, asking the residents to hold a procession.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "montserrat",
+    title: "Our Lady of Montserrat",
+    location: "Montserrat",
+    country: "Spain",
+    lat: 41.5933,
+    lng: 1.8375,
+    year: 1025,
+    description: "A prominent early Marian apparition to a mother at the site that would later become the famous sanctuary of Montserrat.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "chartres",
+    title: "Our Lady to St. Fulbert",
+    location: "Chartres",
+    country: "France",
+    lat: 48.4438,
+    lng: 1.4890,
+    year: 1026,
+    description: "St. Fulbert was healed from a serious illness after an apparition of the Holy Virgin. In gratitude, he founded the famous cathedral of Chartres.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "nocera",
+    title: "Santa Maria di Materdomini",
+    location: "Nocera Superiore",
+    country: "Italy",
+    lat: 40.7420,
+    lng: 14.6750,
+    year: 1041,
+    description: "The Virgin ordered a peasant woman to convince villagers to dig beneath an oak tree, where they found a precious Byzantine icon.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "palermo",
+    title: "Our Lady of Remedies",
+    location: "Palermo",
+    country: "Italy",
+    lat: 38.1157,
+    lng: 13.3615,
+    year: 1064,
+    description: "During a long siege where disease spread among his troops, Roger I of the Normans saw an apparition of the Madonna who provided a remedy.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "conche",
+    title: "Maddona di Conche",
+    location: "Conche",
+    country: "Italy",
+    lat: 45.5898,
+    lng: 10.2798,
+    year: 1080,
+    description: "St. Constantius saw a Lady with the Child in her arms lifted up on a building perimeter miraculously marked by a white dove.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "liege",
+    title: "Our Lady to Abbot Rupert",
+    location: "Liege",
+    country: "Belgium",
+    lat: 50.6326,
+    lng: 5.5697,
+    year: 1085,
+    description: "Our Lady appeared to the struggling student Rupert de Deutz and promised him the gift of knowledge to be dedicated in honor of God.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "oudenburg",
+    title: "Our Lady to St. Arnulfo",
+    location: "Oudenburg",
+    country: "Belgium",
+    lat: 51.1834,
+    lng: 3.0039,
+    year: 1087,
+    description: "The Mother of God appeared to Saint Arnulfo Arnold announcing his death and granting his wish to pass away on the eve of the Assumption.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "arras",
+    title: "Our Lady of the Ardents",
+    location: "Arras",
+    country: "France",
+    lat: 50.2910,
+    lng: 2.7775,
+    year: 1095,
+    description: "Mary appeared on the clouds as 'Queen of the Universe' to the inhabitants, asking them to do penance and establishing a miraculous fountain.",
+    approvalStatus: "Traditionally Approved"
+  },
+  {
+    id: "turin",
+    title: "Maria Consolata",
+    location: "Turin",
+    country: "Italy",
+    lat: 45.0703,
+    lng: 7.6869,
+    year: 1099,
+    description: "A blind man regained his sight through the Blessed Mother, who instructed him to unearth a lost portrait of her hidden since the Saracen invasions.",
+    approvalStatus: "Traditionally Approved"
   }
 ];
