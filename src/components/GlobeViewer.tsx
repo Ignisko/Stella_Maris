@@ -35,6 +35,32 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
     }
   }, [isAutoRotate]);
 
+  useEffect(() => {
+    let animationFrameId: number;
+    const updateScale = () => {
+      if (globeEl.current) {
+        const pov = globeEl.current.pointOfView();
+        if (pov && pov.altitude !== undefined) {
+          // altitude is roughly 0.1 to 4.0+
+          // user wants smaller when zoomed in (low altitude), larger when zoomed out (high altitude)
+          let targetScale = 1;
+          if (pov.altitude < 2.2) {
+             targetScale = 0.5 + (pov.altitude / 2.2) * 0.5; // Maps to 0.5 -> 1.0
+          } else {
+             targetScale = 1.0 + ((pov.altitude - 2.2) / 2.8) * 0.8; // Maps to 1.0 -> 1.8
+          }
+          // Enforce limits so it doesn't get too big or too small
+          targetScale = Math.max(0.4, Math.min(targetScale, 1.8));
+          
+          document.documentElement.style.setProperty('--globe-label-scale', targetScale.toString());
+        }
+      }
+      animationFrameId = requestAnimationFrame(updateScale);
+    };
+    updateScale();
+    return () => cancelAnimationFrame(animationFrameId);
+  }, []);
+
   const handlePointClick = (point: object) => {
     const app = point as Apparition;
     onSelectApparition(app);
@@ -71,7 +97,23 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, onSelectAppariti
         htmlElementsData={apparitions}
         htmlElement={(d: any) => {
           const el = document.createElement('div');
-          el.innerHTML = `<div style="color: #fbbf24; font-size: 13px; font-weight: 600; font-family: 'Outfit', sans-serif; background: rgba(0,0,0,0.6); padding: 4px 8px; border-radius: 6px; border: 1px solid rgba(251, 191, 36, 0.4); backdrop-filter: blur(4px); transform: translate(-50%, -20px); pointer-events: none; white-space: nowrap; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">${d.title}</div>`;
+          el.innerHTML = `<div style="
+            color: #fbbf24; 
+            font-size: 13px; 
+            font-weight: 600; 
+            font-family: 'Outfit', sans-serif; 
+            background: rgba(0,0,0,0.6); 
+            padding: 4px 8px; 
+            border-radius: 6px; 
+            border: 1px solid rgba(251, 191, 36, 0.4); 
+            backdrop-filter: blur(4px); 
+            transform: translate(-50%, -20px) scale(var(--globe-label-scale, 1)); 
+            transform-origin: bottom center;
+            pointer-events: none; 
+            white-space: nowrap; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+            transition: transform 0.1s ease-out;
+          ">${d.title}</div>`;
           return el;
         }}
       />
