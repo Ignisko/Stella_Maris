@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, ChevronUp, ChevronDown, Clock } from 'lucide-react';
+import { BarChart2, ChevronUp, ChevronDown, Clock, X } from 'lucide-react';
 import { getStatusColor, STATUS_COLORS } from '../utils/colors';
 
 interface TimelineOverlayProps {
@@ -19,7 +19,7 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffse
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
-  const [isExpanded, setIsExpanded] = useState(true);
+  const [isExpanded, setIsExpanded] = useState(false);
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
 
@@ -187,13 +187,13 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           style={{
-            background: 'rgba(255,255,255,0.1)',
-            border: '1px solid rgba(255,255,255,0.2)',
-            color: '#f1f5f9',
-            padding: '4px 12px',
+            background: isExpanded ? 'rgba(239, 68, 68, 0.2)' : 'rgba(56, 189, 248, 0.15)',
+            border: isExpanded ? '1px solid rgba(239, 68, 68, 0.4)' : '1px solid rgba(56, 189, 248, 0.3)',
+            color: isExpanded ? '#fca5a5' : '#38bdf8',
+            padding: '6px 14px',
             borderRadius: '12px',
             fontSize: '12px',
-            fontWeight: 600,
+            fontWeight: 700,
             cursor: 'pointer',
             pointerEvents: 'auto',
             display: 'flex',
@@ -201,10 +201,14 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             gap: '6px',
             transition: 'all 0.2s'
           }}
-          onMouseOver={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
-          onMouseOut={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+          onMouseOver={(e) => {
+            e.currentTarget.style.background = isExpanded ? 'rgba(239, 68, 68, 0.3)' : 'rgba(56, 189, 248, 0.25)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.background = isExpanded ? 'rgba(239, 68, 68, 0.2)' : 'rgba(56, 189, 248, 0.15)';
+          }}
         >
-          {isExpanded ? <>Collapse Chart <ChevronDown size={14} /></> : <>Expand Histogram <ChevronUp size={14} /></>}
+          {isExpanded ? <>Close Graph <X size={14} /><ChevronDown size={14} /></> : <>Expand Graph <ChevronUp size={14} /></>}
         </button>
       </div>
 
@@ -335,7 +339,11 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       )}
 
       {/* Horizontal Axis & Ticks */}
-      <div style={{ position: 'relative', height: '24px', width: '100%', marginTop: '4px' }}>
+      <div 
+        onClick={() => { if (!isExpanded) setIsExpanded(true); }}
+        style={{ position: 'relative', height: '28px', width: '100%', marginTop: '4px', cursor: isExpanded ? 'default' : 'pointer' }}
+        title={!isExpanded ? "Click to expand activity graph" : ""}
+      >
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255, 255, 255, 0.3)' }} />
         
         {Array.from({ length: Math.ceil(range / tickStep) + 1 }).map((_, i) => {
