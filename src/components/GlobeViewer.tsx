@@ -82,6 +82,68 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           
           document.documentElement.style.setProperty('--globe-label-scale', targetScale.toString());
           document.documentElement.style.setProperty('--globe-label-opacity', targetOpacity.toString());
+
+          // =========================================================================
+          // REAL-TIME SCREEN-SPACE COLLISION DETECTION & PRIORITY RANKING ALGORITHM
+          // =========================================================================
+          const labelWrappers = Array.from(document.querySelectorAll('.globe-html-label')) as HTMLElement[];
+          
+          // Sort by priority rank (Rank 0 for active selection, then 1 to 5)
+          labelWrappers.sort((a, b) => {
+            const rankA = parseInt(a.dataset.priority || '3', 10);
+            const rankB = parseInt(b.dataset.priority || '3', 10);
+            return rankA - rankB;
+          });
+
+          const renderedBoxes: { left: number; top: number; right: number; bottom: number }[] = [];
+          const padding = 6; // Screen-space padding buffer in pixels
+
+          for (const wrapper of labelWrappers) {
+            const innerContent = wrapper.querySelector('.label-content') as HTMLElement | null;
+            if (!innerContent) continue;
+
+            // If ThreeGlobe hides the parent wrapper (e.g., when behind the globe's horizon), skip
+            if (wrapper.style.display === 'none' || !wrapper.offsetParent) {
+              innerContent.style.opacity = '0';
+              innerContent.style.pointerEvents = 'none';
+              continue;
+            }
+
+            const rect = innerContent.getBoundingClientRect();
+            // If bounding rect has zero area, it's not visible on screen
+            if (rect.width === 0 || rect.height === 0) {
+              innerContent.style.opacity = '0';
+              innerContent.style.pointerEvents = 'none';
+              continue;
+            }
+
+            const isSelected = wrapper.dataset.selected === 'true';
+            const box = {
+              left: rect.left - padding,
+              top: rect.top - padding,
+              right: rect.right + padding,
+              bottom: rect.bottom + padding
+            };
+
+            let hasCollision = false;
+            if (!isSelected) {
+              for (const r of renderedBoxes) {
+                if (!(box.right <= r.left || box.left >= r.right || box.bottom <= r.top || box.top >= r.bottom)) {
+                  hasCollision = true;
+                  break;
+                }
+              }
+            }
+
+            if (hasCollision) {
+              innerContent.style.opacity = '0';
+              innerContent.style.pointerEvents = 'none';
+            } else {
+              renderedBoxes.push(box);
+              innerContent.style.opacity = isSelected ? '1' : targetOpacity.toString();
+              innerContent.style.pointerEvents = 'auto';
+            }
+          }
         }
       }
       animationFrameId = requestAnimationFrame(updateScale);
@@ -160,7 +222,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           const statusColor = getStatusColor(d.approvalStatus);
           const rgb = hexToRgb(statusColor);
           const el = document.createElement('div');
-          el.innerHTML = `<div style="
+          el.className = 'globe-html-label';
+          el.dataset.id = d.id;
+          el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
+          el.dataset.selected = isSelected ? 'true' : 'false';
+          el.style.pointerEvents = 'none';
+
+          el.innerHTML = `<div class="label-content" style="
             color: #ffffff; 
             font-size: ${isSelected ? '15px' : '13px'}; 
             font-weight: ${isSelected ? '700' : '600'}; 
@@ -171,31 +239,28 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             border: ${isSelected ? `2px solid ${statusColor}` : 'none'}; 
             backdrop-filter: ${isSelected ? 'blur(8px)' : 'none'}; 
             transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
-            opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
+            opacity: ${isSelected ? '1' : '0'};
             transform-origin: bottom center;
-            pointer-events: auto; 
-            cursor: pointer;
+            pointer-events: none; 
             white-space: nowrap; 
             text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
             box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};
-            transition: all 0.2s ease-out;
+            transition: opacity 0.3s ease-out, transform 0.2s ease-out;
           ">${safeTitle}</div>`;
 
-          el.style.pointerEvents = 'auto';
-          el.style.cursor = 'pointer';
-          el.onpointerdown = (e) => {
-            e.stopPropagation();
-            lastClickTimeRef.current = Date.now();
-            handlePointClick(d);
-          };
-          el.onpointerup = (e) => {
-            e.stopPropagation();
-          };
-          el.onclick = (e) => {
-            e.stopPropagation();
-            lastClickTimeRef.current = Date.now();
-            handlePointClick(d);
-          };
+          const content = el.querySelector('.label-content') as HTMLElement;
+          if (content) {
+            content.onpointerdown = (e) => {
+              e.stopPropagation();
+              lastClickTimeRef.current = Date.now();
+              handlePointClick(d);
+            };
+            content.onclick = (e) => {
+              e.stopPropagation();
+              lastClickTimeRef.current = Date.now();
+              handlePointClick(d);
+            };
+          }
           return el;
         }}
       />

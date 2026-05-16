@@ -20,12 +20,12 @@ interface TimelineOverlayProps {
 // fullHistoryOffset uses taller stair-stepped heights (25px -> 70px -> 115px) to prevent overlap.
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
   "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 25 },
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: 25 },
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: -1 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 65, fullHistoryOffset: -1 },
   "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 60, fullHistoryOffset: 70 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 15, fullHistoryOffset: 115 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 40, fullHistoryOffset: 45 },
-  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 25 }
+  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 15, fullHistoryOffset: 75 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 40, fullHistoryOffset: -25 },
+  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 40 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
