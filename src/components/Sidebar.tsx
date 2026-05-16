@@ -10,7 +10,8 @@ interface SidebarProps {
 const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
   if (!apparition) return null;
 
-  const sourceLink = apparition.sourceUrl || `https://www.google.com/search?q=${encodeURIComponent(`Catholic Marian apparition "${apparition.title}" ${apparition.location} ${apparition.country}`)}`;
+  const querySlug = apparition.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  const sourceLink = apparition.sourceUrl || `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`;
 
   return (
     <div className="glass-panel glass-panel-rounded animate-slide-in-right" style={{
@@ -103,7 +104,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
             }}
           >
             <ExternalLink size={16} />
-            <span>View Historical Documentation / Source</span>
+            <span>View source</span>
           </a>
         </div>
       </div>
