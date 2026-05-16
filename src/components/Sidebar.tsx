@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Apparition } from '../data/apparitions';
 import { MapPin, Calendar, Info, ShieldCheck, X, ExternalLink } from 'lucide-react';
+import { getApparitionStatusCategory } from '../utils/colors';
 
 interface SidebarProps {
   apparition: Apparition | null;
@@ -57,7 +58,9 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
 
         <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', fontSize: '15px', marginTop: '6px', background: 'rgba(16, 185, 129, 0.1)', padding: '12px', borderRadius: '8px', border: '1px solid rgba(16, 185, 129, 0.2)' }}>
           <ShieldCheck size={20} color="#34d399" style={{ flexShrink: 0 }} />
-          <span style={{ color: '#6ee7b7', fontWeight: 500, lineHeight: 1.4 }}>{apparition.approvalStatus}</span>
+          <span style={{ color: '#6ee7b7', fontWeight: 500, lineHeight: 1.4 }}>
+            {getApparitionStatusCategory(apparition.approvalStatus) === "Approved for faith expression" ? "Faith expression" : getApparitionStatusCategory(apparition.approvalStatus)}
+          </span>
         </div>
       </div>
 

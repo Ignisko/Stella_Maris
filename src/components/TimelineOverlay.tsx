@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { BarChart2, ChevronUp, ChevronDown, Clock } from 'lucide-react';
-import { getStatusColor, STATUS_COLORS } from '../utils/colors';
+import { getStatusColor, STATUS_COLORS, getApparitionStatusCategory } from '../utils/colors';
 
 interface TimelineOverlayProps {
   apparitions: Apparition[];
@@ -151,8 +151,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
               {Object.entries(STATUS_COLORS).map(([label, color]) => (
                 <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
                   <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 6px ${color}` }} />
-                  <span style={{ textTransform: 'capitalize' }}>
-                    {label.replace(' approved', '').replace(' apparitions', '').replace('Approved for ', '')}
+                  <span>
+                    {label === "Approved for faith expression" ? "Faith expression" : label === "Apparitions to saints" ? "Apparitions to saints" : label === "Unapproved apparitions" ? "Unapproved" : label.replace(" approved", "")}
                   </span>
                 </div>
               ))}
@@ -186,7 +186,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             <div style={{ fontSize: '12px', opacity: 0.8 }}>{hoveredApp.location}, {hoveredApp.country}</div>
             <div style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}>
               <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: getStatusColor(hoveredApp.approvalStatus) }} />
-              <span style={{ fontWeight: 600 }}>{hoveredApp.approvalStatus}</span>
+              <span style={{ fontWeight: 600 }}>
+                {getApparitionStatusCategory(hoveredApp.approvalStatus) === "Approved for faith expression" ? "Faith expression" : getApparitionStatusCategory(hoveredApp.approvalStatus)}
+              </span>
             </div>
           </div>
         )}

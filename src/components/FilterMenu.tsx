@@ -141,7 +141,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
                     style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '16px', height: '16px', flexShrink: 0 }}
                   />
                   <span style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: color, display: 'inline-block', flexShrink: 0, boxShadow: `0 0 8px ${color}` }} />
-                  <span style={{ textTransform: 'capitalize' }}>{category}</span>
+                  <span>{category === "Approved for faith expression" ? "Faith expression" : category}</span>
                 </label>
               );
             })}
