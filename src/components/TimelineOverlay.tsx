@@ -10,12 +10,12 @@ interface TimelineOverlayProps {
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 15 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 70 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 60 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 15 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 55 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 150 }
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 25 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 65 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 55 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 30 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 30 },
+  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 35 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
