@@ -19,12 +19,13 @@ interface TimelineOverlayProps {
 // Because Full History compresses recent centuries into the far right side of the screen,
 // fullHistoryOffset uses taller stair-stepped heights (25px -> 70px -> 115px) to prevent overlap.
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
+  "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 25 },
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: 25 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 65, fullHistoryOffset: 70 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 60, fullHistoryOffset: 115 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 15, fullHistoryOffset: 25 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 40, fullHistoryOffset: 70 },
-  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 115 }
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 65, fullHistoryOffset: -1 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 60, fullHistoryOffset: 70 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 15, fullHistoryOffset: 115 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 40, fullHistoryOffset: 45 },
+  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 25 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -330,7 +331,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             {/* Rendered outside the flex columns in an absolute container (zIndex 100) */}
             {/* Guaranteeing complete z-index superiority over all colorful histogram tiles. */}
             <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
-              
+
               {/* Layer 1: White Pinning Lines */}
               {/* Rendered first so they stay in the background behind the title pills */}
               {buckets.map((b) => {
@@ -340,6 +341,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
                 // Pick active offset based on selected time mode
                 const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
+                // If offset is negative (e.g. -1), completely hide this callout in the current view
+                if (offset < 0) return null;
+
                 // Center the line perfectly above the active temporal bucket
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
                 // Start exactly at the top edge of the stacked colorful tiles
@@ -371,6 +375,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
                 // Pick active offset based on selected time mode
                 const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
+                // If offset is negative (e.g. -1), completely hide this pill in the current view
+                if (offset < 0) return null;
+
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
                 // Position pill exactly at the top of the pinning line
                 const bottomOffset = (b.apps.length * (tileHeight + 2)) + offset;
