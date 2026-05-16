@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, ChevronUp, ChevronDown, Clock } from 'lucide-react';
+import { BarChart2, ChevronUp, ChevronDown, Clock, Play, Pause } from 'lucide-react';
 import { getStatusColor, STATUS_COLORS, getApparitionStatusCategory } from '../utils/colors';
 
 interface TimelineOverlayProps {
@@ -32,6 +32,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
   const [isExpanded, setIsExpanded] = useState(false);
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
 
   // Filter based on selected time mode
   const activeApparitions = useMemo(() => {
@@ -43,6 +44,21 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
   // Sort active apparitions by year
   const sorted = useMemo(() => [...activeApparitions].sort((a, b) => a.year - b.year), [activeApparitions]);
+
+  useEffect(() => {
+    if (!isPlaying || sorted.length === 0) return;
+    
+    let currentIndex = selectedApparition ? sorted.findIndex(a => a.id === selectedApparition.id) : -1;
+    if (currentIndex === -1) currentIndex = 0;
+
+    const interval = setInterval(() => {
+      currentIndex = (currentIndex + 1) % sorted.length;
+      const nextApp = sorted[currentIndex];
+      onSelectApparition(nextApp);
+    }, 2800);
+
+    return () => clearInterval(interval);
+  }, [isPlaying, sorted, selectedApparition, onSelectApparition]);
 
   const minYear = useMemo(() => {
     if (timeMode === 'modern') return 1800;
@@ -154,6 +170,29 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
               <Clock size={12} /> Full history (40 AD-Present)
             </button>
           </div>
+
+          {/* Play/Pause Button */}
+          <button
+            onClick={() => setIsPlaying(!isPlaying)}
+            style={{
+              background: isPlaying ? '#ef4444' : 'var(--accent-color)',
+              color: '#ffffff',
+              border: 'none',
+              padding: '5px 16px',
+              borderRadius: '20px',
+              fontSize: '11px',
+              fontWeight: 700,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              boxShadow: isPlaying ? '0 0 15px rgba(239, 68, 68, 0.8)' : '0 0 15px rgba(56, 189, 248, 0.6)',
+              transition: 'all 0.2s'
+            }}
+          >
+            {isPlaying ? <Pause size={12} /> : <Play size={12} />}
+            <span>{isPlaying ? `Playing: ${selectedApparition?.year || minYear}` : 'Play Timeline'}</span>
+          </button>
 
           {/* Status Legend (Only visible when expanded) */}
           {isExpanded && (
@@ -331,6 +370,45 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             {/* Rendered outside the flex columns in an absolute container (zIndex 100) */}
             {/* Guaranteeing complete z-index superiority over all colorful histogram tiles. */}
             <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
+
+              {/* Playback Laser Scrubber */}
+              {selectedApparition && isPlaying && (() => {
+                const selectedBucketIndex = buckets.findIndex(b => b.apps.some(a => a.id === selectedApparition.id));
+                if (selectedBucketIndex === -1) return null;
+                const selectedLeftPercent = ((selectedBucketIndex + 0.5) / buckets.length) * 100;
+                return (
+                  <div style={{
+                    position: 'absolute',
+                    left: `${selectedLeftPercent}%`,
+                    bottom: 0,
+                    top: isExpanded ? '-60px' : '-20px',
+                    width: '2px',
+                    backgroundColor: '#38bdf8',
+                    boxShadow: '0 0 15px #38bdf8, 0 0 8px #ffffff',
+                    zIndex: 110,
+                    transform: 'translateX(-50%)',
+                    transition: 'left 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                    pointerEvents: 'none'
+                  }}>
+                    <div style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: '50%',
+                      transform: 'translate(-50%, -100%)',
+                      backgroundColor: '#38bdf8',
+                      color: '#0f172a',
+                      padding: '3px 10px',
+                      borderRadius: '12px',
+                      fontSize: '11px',
+                      fontWeight: 800,
+                      whiteSpace: 'nowrap',
+                      boxShadow: '0 0 15px #38bdf8'
+                    }}>
+                      {selectedApparition.year}: {selectedApparition.title}
+                    </div>
+                  </div>
+                );
+              })()}
 
               {/* Layer 1: White Pinning Lines */}
               {/* Rendered first so they stay in the background behind the title pills */}

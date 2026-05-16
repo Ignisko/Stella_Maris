@@ -242,6 +242,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         pointAltitude={0.015}
         pointRadius={0.4}
         pointsMerge={false}
+        ringsData={selectedApparition ? [selectedApparition] : []}
+        ringLat="lat"
+        ringLng="lng"
+        ringColor={(d: any) => getStatusColor(d.approvalStatus)}
+        ringMaxRadius={6}
+        ringPropagationSpeed={4}
+        ringRepeatPeriod={700}
         onPointClick={handlePointClick}
         onGlobeClick={handleGlobeClick}
         htmlElementsData={visibleHtmlLabels}
