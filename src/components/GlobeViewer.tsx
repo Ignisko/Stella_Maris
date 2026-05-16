@@ -153,13 +153,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, []);
 
   const visibleApparitions = useMemo(() => {
-    return apparitions.filter(app => (app.priority || 3) <= lodThreshold);
+    const raw = apparitions.filter(app => (app.priority || 3) <= lodThreshold);
+    const clusters: Apparition[] = [];
+    const threshold = 0.03; // ~3km radius
+    for (const app of raw) {
+      const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
+      if (!existing) {
+        clusters.push({ ...app });
+      } else if ((app.priority || 3) < (existing.priority || 3)) {
+        Object.assign(existing, app);
+      }
+    }
+    return clusters;
   }, [apparitions, lodThreshold]);
 
   const visibleHtmlLabels = useMemo(() => {
     const famousKeywords = ['guadalupe', 'fatima', 'lourdes', 'medjugorje', 'miraculous medal', 'kibeho', 'banneux', 'knock', 'aparecida', 'akita', 'czestochowa', 'pilar', 'loreto', 'carmel'];
     
-    return apparitions.filter(app => {
+    const raw = apparitions.filter(app => {
       if (selectedApparition?.id === app.id) return true;
       const isFamous = (app.priority === 1) || famousKeywords.some(kw => app.title.toLowerCase().includes(kw) || app.id.includes(kw));
       
@@ -168,6 +179,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       }
       return (app.priority || 3) <= lodThreshold;
     });
+
+    const clusters: (Apparition & { clusterCount?: number })[] = [];
+    const threshold = 0.03; // ~3km
+    for (const app of raw) {
+      const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
+      if (!existing) {
+        clusters.push({ ...app, clusterCount: 1 });
+      } else {
+        existing.clusterCount = (existing.clusterCount || 1) + 1;
+        if ((app.priority || 3) < (existing.priority || 3) || selectedApparition?.id === app.id) {
+          existing.id = app.id;
+          existing.title = app.title;
+          existing.approvalStatus = app.approvalStatus;
+          existing.priority = app.priority;
+        }
+      }
+    }
+    return clusters;
   }, [apparitions, lodThreshold, selectedApparition]);
 
   const handlePointClick = (point: object) => {
@@ -219,6 +248,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         htmlElement={(d: any) => {
           const isSelected = selectedApparition?.id === d.id;
           const safeTitle = escapeHtml(d.title || '');
+          const count = d.clusterCount || 1;
+          const badge = count > 1 ? `<span style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700;">+${count - 1}</span>` : '';
           const statusColor = getStatusColor(d.approvalStatus);
           const rgb = hexToRgb(statusColor);
           const el = document.createElement('div');
@@ -246,7 +277,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
             box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};
             transition: opacity 0.3s ease-out, transform 0.2s ease-out;
-          ">${safeTitle}</div>`;
+          ">${safeTitle}${badge}</div>`;
 
           const content = el.querySelector('.label-content') as HTMLElement;
           if (content) {

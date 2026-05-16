@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { MapPin, Calendar, Info, ShieldCheck, X, ExternalLink } from 'lucide-react';
-import { getApparitionStatusCategory } from '../utils/colors';
+import { getApparitionStatusCategory, getStatusColor, hexToRgb } from '../utils/colors';
 
 interface SidebarProps {
   apparition: Apparition | null;
   onClose: () => void;
+  allActiveApparitions?: Apparition[];
+  onSelectApparition?: (apparition: Apparition) => void;
 }
 
-const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
+const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparitions = [], onSelectApparition }) => {
   if (!apparition) return null;
+
+  const clusteredApps = useMemo(() => {
+    if (!apparition || !allActiveApparitions.length) return [];
+    const threshold = 0.05; // ~5km radius
+    return allActiveApparitions.filter(a => 
+      Math.abs(a.lat - apparition.lat) < threshold && Math.abs(a.lng - apparition.lng) < threshold
+    ).sort((a, b) => a.year - b.year);
+  }, [apparition, allActiveApparitions]);
 
   const querySlug = apparition.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
   const sourceLink = apparition.sourceUrl || `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`;
@@ -44,6 +54,41 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
           <X size={24} />
         </button>
       </div>
+
+      {clusteredApps.length > 1 && onSelectApparition && (
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', background: 'rgba(255, 255, 255, 0.03)', padding: '14px', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
+          <span style={{ fontSize: '13px', opacity: 0.7, fontWeight: 500 }}>Apparitions at this location ({clusteredApps.length}):</span>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+            {clusteredApps.map(app => {
+              const isCurrent = app.id === apparition.id;
+              const color = getStatusColor(app.approvalStatus);
+              return (
+                <button
+                  key={app.id}
+                  onClick={() => onSelectApparition(app)}
+                  style={{
+                    padding: '6px 12px',
+                    borderRadius: '8px',
+                    background: isCurrent ? `rgba(${hexToRgb(color)}, 0.3)` : 'rgba(255, 255, 255, 0.05)',
+                    border: `1px solid ${isCurrent ? color : 'rgba(255, 255, 255, 0.1)'}`,
+                    color: isCurrent ? '#ffffff' : 'rgba(255, 255, 255, 0.7)',
+                    fontSize: '13px',
+                    fontWeight: isCurrent ? 700 : 500,
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    transition: 'all 0.2s'
+                  }}
+                >
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color }} />
+                  {app.year}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '16px' }}>

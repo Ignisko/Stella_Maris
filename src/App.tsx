@@ -84,6 +84,8 @@ function App() {
       <Sidebar 
         apparition={selectedApparition} 
         onClose={() => setSelectedApparition(null)} 
+        allActiveApparitions={filteredApparitions}
+        onSelectApparition={handleSelectApparition}
       />
 
       {filteredApparitions.length > 0 && (
