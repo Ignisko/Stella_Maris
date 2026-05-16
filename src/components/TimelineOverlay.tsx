@@ -12,10 +12,10 @@ interface TimelineOverlayProps {
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 12 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 48 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 12 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 35 },
   "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 12 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 26 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 96 }
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 25 },
+  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 55 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -264,9 +264,6 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             paddingBottom: '2px'
           }}>
             {buckets.map(b => {
-              const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
-              const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
-
               return (
                 <div
                   key={b.index}
@@ -313,56 +310,86 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                       />
                     );
                   })}
-
-                  {/* Callout Label & Line for Famous Apparitions */}
-                  {callout && b.apps.length > 0 && (
-                    <div style={{
-                      position: 'absolute',
-                      bottom: `${b.apps.length * (tileHeight + 2)}px`,
-                      left: '50%',
-                      transform: 'translateX(-50%)',
-                      display: 'flex',
-                      flexDirection: 'column-reverse',
-                      alignItems: 'center',
-                      pointerEvents: 'none'
-                    }}>
-                      <div style={{ position: 'relative', zIndex: 1, width: '1px', height: `${callout.heightOffset}px`, background: 'linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.95))' }} />
-                      <div
-                        onClick={(e) => { e.stopPropagation(); onSelectApparition(famousAppInBucket!); }}
-                        style={{
-                          position: 'relative',
-                          zIndex: 50,
-                          fontSize: '11px',
-                          fontWeight: 700,
-                          color: '#ffffff',
-                          whiteSpace: 'nowrap',
-                          backgroundColor: 'rgba(15, 23, 42, 0.98)',
-                          padding: '5px 12px',
-                          borderRadius: '16px',
-                          border: '1px solid var(--accent-color)',
-                          backdropFilter: 'blur(8px)',
-                          boxShadow: '0 8px 25px rgba(0,0,0,0.9)',
-                          marginBottom: '4px',
-                          pointerEvents: 'auto',
-                          cursor: 'pointer',
-                          transition: 'all 0.2s ease'
-                        }}
-                        onMouseOver={(e) => {
-                          e.currentTarget.style.backgroundColor = 'var(--accent-color)';
-                          e.currentTarget.style.transform = 'scale(1.05)';
-                        }}
-                        onMouseOut={(e) => {
-                          e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
-                          e.currentTarget.style.transform = 'none';
-                        }}
-                      >
-                        {callout.label}
-                      </div>
-                    </div>
-                  )}
                 </div>
               );
             })}
+
+            {/* Sibling Overlay for Famous Callouts (Guaranteed by CSS DOM rendering order to sit completely in front of all colorful tiles!) */}
+            <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
+              {/* Layer 1: All white pinning lines */}
+              {buckets.map((b) => {
+                const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
+                const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
+                if (!callout || b.apps.length === 0) return null;
+
+                const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
+                const bottomOffset = 30 + (b.apps.length * (tileHeight + 2));
+
+                return (
+                  <div
+                    key={`line-${b.index}`}
+                    style={{
+                      position: 'absolute',
+                      left: `${leftPercent}%`,
+                      bottom: `${bottomOffset}px`,
+                      transform: 'translateX(-50%)',
+                      width: '1px',
+                      height: `${callout.heightOffset}px`,
+                      background: 'linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.95))',
+                      zIndex: 1
+                    }}
+                  />
+                );
+              })}
+
+              {/* Layer 2: All text title pills (Rendered AFTER all white lines, so guaranteed to sit over all white lines!) */}
+              {buckets.map((b) => {
+                const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
+                const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
+                if (!callout || b.apps.length === 0) return null;
+
+                const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
+                const bottomOffset = 30 + (b.apps.length * (tileHeight + 2)) + callout.heightOffset;
+
+                return (
+                  <div
+                    key={`pill-${b.index}`}
+                    onClick={(e) => { e.stopPropagation(); onSelectApparition(famousAppInBucket!); }}
+                    style={{
+                      position: 'absolute',
+                      left: `${leftPercent}%`,
+                      bottom: `${bottomOffset}px`,
+                      transform: 'translateX(-50%)',
+                      zIndex: 50,
+                      fontSize: '11px',
+                      fontWeight: 700,
+                      color: '#ffffff',
+                      whiteSpace: 'nowrap',
+                      backgroundColor: 'rgba(15, 23, 42, 0.98)',
+                      padding: '5px 12px',
+                      borderRadius: '16px',
+                      border: '1px solid var(--accent-color)',
+                      backdropFilter: 'blur(8px)',
+                      boxShadow: '0 8px 25px rgba(0,0,0,0.9)',
+                      marginBottom: '4px',
+                      pointerEvents: 'auto',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease'
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.backgroundColor = 'var(--accent-color)';
+                      e.currentTarget.style.transform = 'translateX(-50%) scale(1.05)';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
+                      e.currentTarget.style.transform = 'translateX(-50%)';
+                    }}
+                  >
+                    {callout.label}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       )}
