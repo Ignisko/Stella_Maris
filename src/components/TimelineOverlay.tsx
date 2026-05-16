@@ -9,6 +9,15 @@ interface TimelineOverlayProps {
   onSelectApparition: (apparition: Apparition) => void;
 }
 
+// ==========================================
+// FAMOUS APPARITION CALLOUTS CONFIGURATION
+// ==========================================
+// Each famous apparition has two independent height settings (in pixels):
+// 1. modernOffset: Used when viewing the 'Modern era (1800-Present)' timeline.
+// 2. fullHistoryOffset: Used when viewing the 'Full history (40 AD-Present)' timeline.
+//
+// Because Full History compresses recent centuries into the far right side of the screen,
+// fullHistoryOffset uses taller stair-stepped heights (25px -> 70px -> 115px) to prevent overlap.
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: 25 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 65, fullHistoryOffset: 70 },
@@ -252,6 +261,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
           )}
 
           {/* Stacked Histogram Bars */}
+          {/* Note: paddingBottom controls how high the colorful tiles sit above the bottom edge of this container */}
           <div style={{
             display: 'flex',
             alignItems: 'flex-end',
@@ -397,6 +407,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       )}
 
       {/* Horizontal Axis & Ticks */}
+      {/* Note: marginTop controls the vertical distance between the axis line and the bottom of the histogram tiles container */}
       <div
         onClick={() => { if (!isExpanded) setIsExpanded(true); }}
         style={{ position: 'relative', height: '28px', width: '100%', marginTop: '2px', cursor: isExpanded ? 'default' : 'pointer' }}
