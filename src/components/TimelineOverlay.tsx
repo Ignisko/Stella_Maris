@@ -12,9 +12,9 @@ interface TimelineOverlayProps {
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 12 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 65 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 45 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 12 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 30 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 60 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 15 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 40 },
   "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 12 }
 };
 
