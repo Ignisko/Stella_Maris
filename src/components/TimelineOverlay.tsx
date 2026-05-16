@@ -324,16 +324,25 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
               );
             })}
 
-            {/* Sibling Overlay for Famous Callouts (Guaranteed by CSS DOM rendering order to sit completely in front of all colorful tiles!) */}
+            {/* ========================================== */}
+            {/* FAMOUS EVENT CALLOUT OVERLAYS              */}
+            {/* ========================================== */}
+            {/* Rendered outside the flex columns in an absolute container (zIndex 100) */}
+            {/* Guaranteeing complete z-index superiority over all colorful histogram tiles. */}
             <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
-              {/* Layer 1: All white pinning lines */}
+              
+              {/* Layer 1: White Pinning Lines */}
+              {/* Rendered first so they stay in the background behind the title pills */}
               {buckets.map((b) => {
                 const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
                 const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
                 if (!callout || b.apps.length === 0) return null;
 
+                // Pick active offset based on selected time mode
                 const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
+                // Center the line perfectly above the active temporal bucket
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
+                // Start exactly at the top edge of the stacked colorful tiles
                 const bottomOffset = b.apps.length * (tileHeight + 2);
 
                 return (
@@ -353,14 +362,17 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 );
               })}
 
-              {/* Layer 2: All text title pills (Rendered AFTER all white lines, so guaranteed to sit over all white lines!) */}
+              {/* Layer 2: Interactive Title Pills */}
+              {/* Rendered second (zIndex 50) so they float on top of any pinning lines passing behind them */}
               {buckets.map((b) => {
                 const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
                 const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
                 if (!callout || b.apps.length === 0) return null;
 
+                // Pick active offset based on selected time mode
                 const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
+                // Position pill exactly at the top of the pinning line
                 const bottomOffset = (b.apps.length * (tileHeight + 2)) + offset;
 
                 return (
