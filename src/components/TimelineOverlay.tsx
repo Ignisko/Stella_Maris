@@ -10,12 +10,12 @@ interface TimelineOverlayProps {
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 40 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 95 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 60 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 45 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 105 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 75 }
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 45 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 125 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 80 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 50 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 130 },
+  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 85 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -122,7 +122,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 gap: '6px'
               }}
             >
-              <Clock size={12} /> Modern Era (1800-Present)
+              <Clock size={12} /> Modern era (1800-Present)
             </button>
             <button
               onClick={() => setTimeMode('all')}
@@ -141,7 +141,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 gap: '6px'
               }}
             >
-              <Clock size={12} /> Full History (40 AD-Present)
+              <Clock size={12} /> Full history (40 AD-Present)
             </button>
           </div>
           
@@ -270,7 +270,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                   key={b.index}
                   style={{
                     flex: 1,
-                    margin: '0 1px',
+                    minWidth: 0,
+                    margin: '0 0.5px',
                     display: 'flex',
                     flexDirection: 'column-reverse',
                     alignItems: 'center',
@@ -294,7 +295,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                         style={{
                           width: '100%',
                           maxWidth: '10px',
-                          minWidth: '4px',
+                          minWidth: '1.5px',
                           height: `${tileHeight}px`,
                           backgroundColor: statusColor,
                           borderRadius: '1px',
@@ -325,19 +326,33 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                       zIndex: 35
                     }}>
                       <div style={{ width: '1px', height: `${callout.heightOffset}px`, background: 'linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.95))' }} />
-                      <div style={{
-                        fontSize: '11px',
-                        fontWeight: 700,
-                        color: '#ffffff',
-                        whiteSpace: 'nowrap',
-                        backgroundColor: 'rgba(15, 23, 42, 0.98)',
-                        padding: '5px 12px',
-                        borderRadius: '16px',
-                        border: '1px solid var(--accent-color)',
-                        backdropFilter: 'blur(8px)',
-                        boxShadow: '0 8px 25px rgba(0,0,0,0.9)',
-                        marginBottom: '4px'
-                      }}>
+                      <div
+                        onClick={(e) => { e.stopPropagation(); onSelectApparition(famousAppInBucket!); }}
+                        style={{
+                          fontSize: '11px',
+                          fontWeight: 700,
+                          color: '#ffffff',
+                          whiteSpace: 'nowrap',
+                          backgroundColor: 'rgba(15, 23, 42, 0.98)',
+                          padding: '5px 12px',
+                          borderRadius: '16px',
+                          border: '1px solid var(--accent-color)',
+                          backdropFilter: 'blur(8px)',
+                          boxShadow: '0 8px 25px rgba(0,0,0,0.9)',
+                          marginBottom: '4px',
+                          pointerEvents: 'auto',
+                          cursor: 'pointer',
+                          transition: 'all 0.2s ease'
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.backgroundColor = 'var(--accent-color)';
+                          e.currentTarget.style.transform = 'scale(1.05)';
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
+                          e.currentTarget.style.transform = 'none';
+                        }}
+                      >
                         {callout.label}
                       </div>
                     </div>

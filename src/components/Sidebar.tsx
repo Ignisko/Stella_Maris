@@ -22,6 +22,9 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose }) => {
       overflowY: 'auto',
       zIndex: 10,
       padding: '28px',
+      backgroundColor: 'rgba(15, 23, 42, 0.95)',
+      backdropFilter: 'blur(25px)',
+      boxShadow: '0 20px 50px rgba(0,0,0,0.8)',
       display: 'flex',
       flexDirection: 'column',
       gap: '24px'
