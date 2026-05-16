@@ -226,7 +226,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       </div>
 
       {isExpanded && (
-        <div style={{ position: 'relative', width: '100%', height: '250px', marginBottom: '8px' }}>
+        <div style={{ position: 'relative', width: '100%', height: '250px', marginBottom: 0 }}>
 
           {/* Era Overlays (Visible in Modern view when no apparition is selected) */}
           {timeMode === 'modern' && !selectedApparition && (
@@ -261,7 +261,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             position: 'absolute',
             bottom: 0,
             left: 0,
-            paddingBottom: '2px'
+            paddingBottom: '1px'
           }}>
             {buckets.map(b => {
               return (
@@ -397,7 +397,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       {/* Horizontal Axis & Ticks */}
       <div
         onClick={() => { if (!isExpanded) setIsExpanded(true); }}
-        style={{ position: 'relative', height: '28px', width: '100%', marginTop: '4px', cursor: isExpanded ? 'default' : 'pointer' }}
+        style={{ position: 'relative', height: '28px', width: '100%', marginTop: '2px', cursor: isExpanded ? 'default' : 'pointer' }}
         title={!isExpanded ? "Click to expand activity graph" : ""}
       >
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255, 255, 255, 0.3)' }} />
