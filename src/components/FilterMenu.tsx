@@ -9,7 +9,7 @@ export const FILTER_CATEGORIES = [
   "Coptic approved",
   "Approved for faith expression",
   "Apparitions to saints",
-  "Unapproved apparitions"
+  "Dismissed"
 ];
 
 // Mapping for our current dataset phrasing
@@ -20,7 +20,7 @@ export const categoryMapping: Record<string, string[]> = {
   "Coptic approved": ["Approved by the Coptic Orthodox Church", "Coptic Approved", "Coptic approved"],
   "Approved for faith expression": ["Approved for Faith Expression", "Approved for faith expression", "Declared nihil obstat", "Nihil obstat", "Declared site of pilgrimage and prayer", "Place of prayer", "Recognized as place of prayer"],
   "Apparitions to saints": ["Apparitions to Saints", "Apparitions to saints"],
-  "Unapproved apparitions": ["Unapproved Apparitions", "Unapproved apparitions", "Unapproved", "No decision", "Negative decision", "Declared not supernatural", "Not established as supernatural", "Established as not supernatural", "Uninvestigated", "Negative", "Negative - Uninvestigated", "Negative judgment"]
+  "Dismissed": ["Unapproved Apparitions", "Unapproved apparitions", "Unapproved", "No decision", "Negative decision", "Declared not supernatural", "Not established as supernatural", "Established as not supernatural", "Uninvestigated", "Negative", "Negative - Uninvestigated", "Negative judgment"]
 };
 
 export const CENTURY_FILTERS = [
@@ -123,7 +123,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
             </button>
           </div>
 
-          <div style={{ padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '14px', maxHeight: '40vh', overflowY: 'auto' }}>
+          <div style={{ padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '14px', maxHeight: 'calc(100vh - 220px)', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
               <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '13px', cursor: 'pointer', fontWeight: 500 }}>Select All</button>
               <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '13px', cursor: 'pointer' }}>Clear All</button>

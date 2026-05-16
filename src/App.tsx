@@ -9,7 +9,7 @@ import type { Apparition } from './data/apparitions';
 
 function App() {
   const [selectedApparition, setSelectedApparition] = useState<Apparition | null>(null);
-  const [activeFilters, setActiveFilters] = useState<string[]>([...FILTER_CATEGORIES]);
+  const [activeFilters, setActiveFilters] = useState<string[]>(FILTER_CATEGORIES.filter(c => c !== "Dismissed"));
   const [activeCenturies, setActiveCenturies] = useState<string[]>(CENTURY_FILTERS.map(c => c.id));
 
   const handleSelectApparition = (apparition: Apparition | null) => {
