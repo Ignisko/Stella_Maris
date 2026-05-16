@@ -10,12 +10,12 @@ interface TimelineOverlayProps {
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 12 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 48 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 35 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 12 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 25 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 55 }
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 25 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 70 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 45 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 25 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 55 },
+  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 120 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -323,7 +323,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 if (!callout || b.apps.length === 0) return null;
 
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
-                const bottomOffset = 30 + (b.apps.length * (tileHeight + 2));
+                const bottomOffset = b.apps.length * (tileHeight + 2);
 
                 return (
                   <div
@@ -349,7 +349,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 if (!callout || b.apps.length === 0) return null;
 
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
-                const bottomOffset = 30 + (b.apps.length * (tileHeight + 2)) + callout.heightOffset;
+                const bottomOffset = (b.apps.length * (tileHeight + 2)) + callout.heightOffset;
 
                 return (
                   <div
