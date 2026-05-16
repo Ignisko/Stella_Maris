@@ -191,7 +191,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             }}
           >
             {isPlaying ? <Pause size={12} /> : <Play size={12} />}
-            <span>{isPlaying ? `Playing: ${selectedApparition?.year || minYear}` : 'Play Timeline'}</span>
+            <span>{isPlaying ? `Playing (${selectedApparition?.year || minYear}) — ${sorted.length} events` : `Play Timeline (${sorted.length} events)`}</span>
           </button>
 
           {/* Status Legend (Only visible when expanded) */}
