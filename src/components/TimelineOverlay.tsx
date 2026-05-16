@@ -226,8 +226,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       {isExpanded && (
         <div style={{ position: 'relative', width: '100%', height: '220px', marginBottom: '8px' }}>
           
-          {/* Era Overlays (Visible in Modern view) */}
-          {timeMode === 'modern' && (
+          {/* Era Overlays (Visible in Modern view when no apparition is selected) */}
+          {timeMode === 'modern' && !selectedApparition && (
             <div style={{
               position: 'absolute',
               top: 0,
