@@ -81,22 +81,23 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
   return (
     <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
       position: 'absolute',
-      top: '80px',
-      right: '20px',
-      width: isExpanded ? '1000px' : '680px',
-      maxWidth: 'calc(100vw - 360px)',
+      bottom: '30px',
+      left: '340px',
+      right: selectedApparition ? '420px' : '30px',
+      maxWidth: '1400px',
+      margin: '0 auto',
       backgroundColor: isExpanded ? 'rgba(15, 23, 42, 0.98)' : 'rgba(15, 23, 42, 0.85)',
       border: isExpanded ? '1px solid rgba(255, 255, 255, 0.25)' : '1px solid rgba(255, 255, 255, 0.15)',
       backdropFilter: 'blur(20px)',
       boxShadow: isExpanded ? '0 25px 60px rgba(0,0,0,0.9)' : '0 8px 30px rgba(0,0,0,0.6)',
-      padding: '16px 24px',
+      padding: isExpanded ? '20px 28px' : '12px 24px',
       zIndex: 25,
       boxSizing: 'border-box',
       transition: 'all 0.3s ease',
       pointerEvents: 'auto'
     }}>
       {/* Header and Controls */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', position: 'relative', flexWrap: 'wrap', gap: '12px' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: isExpanded ? '16px' : '4px', position: 'relative', flexWrap: 'wrap', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
           <h3 style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1.5px', opacity: 0.9, margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
             <BarChart2 size={18} color="var(--accent-color)" /> Timeline
@@ -144,17 +145,19 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             </button>
           </div>
           
-          {/* Status Legend */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
-            {Object.entries(STATUS_COLORS).map(([label, color]) => (
-              <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
-                <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 6px ${color}` }} />
-                <span style={{ textTransform: 'capitalize' }}>
-                  {label.replace(' approved', '').replace(' apparitions', '').replace('Approved for ', '')}
-                </span>
-              </div>
-            ))}
-          </div>
+          {/* Status Legend (Only visible when expanded) */}
+          {isExpanded && (
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
+              {Object.entries(STATUS_COLORS).map(([label, color]) => (
+                <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 6px ${color}` }} />
+                  <span style={{ textTransform: 'capitalize' }}>
+                    {label.replace(' approved', '').replace(' apparitions', '').replace('Approved for ', '')}
+                  </span>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         {hoveredApp && (
