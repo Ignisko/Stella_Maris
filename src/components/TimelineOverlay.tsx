@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, ChevronUp, ChevronDown, Clock, X } from 'lucide-react';
+import { BarChart2, ChevronUp, ChevronDown, Clock } from 'lucide-react';
 import { getStatusColor, STATUS_COLORS } from '../utils/colors';
 
 interface TimelineOverlayProps {
@@ -97,8 +97,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       pointerEvents: 'auto'
     }}>
       {/* Header and Controls */}
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: isExpanded ? '16px' : '4px', position: 'relative', flexWrap: 'wrap', gap: '12px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap' }}>
+      <div style={{ position: 'relative', minHeight: '30px', marginBottom: isExpanded ? '16px' : '4px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap', paddingRight: '110px' }}>
           <h3 style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1.5px', opacity: 0.9, margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
             <BarChart2 size={18} color="var(--accent-color)" /> Timeline
           </h3>
@@ -194,6 +194,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
         <button
           onClick={() => setIsExpanded(!isExpanded)}
           style={{
+            position: 'absolute',
+            top: 0,
+            right: 0,
             background: isExpanded ? 'rgba(239, 68, 68, 0.2)' : 'rgba(56, 189, 248, 0.15)',
             border: isExpanded ? '1px solid rgba(239, 68, 68, 0.4)' : '1px solid rgba(56, 189, 248, 0.3)',
             color: isExpanded ? '#fca5a5' : '#38bdf8',
@@ -206,6 +209,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             display: 'flex',
             alignItems: 'center',
             gap: '6px',
+            zIndex: 30,
             transition: 'all 0.2s'
           }}
           onMouseOver={(e) => {
@@ -215,7 +219,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
             e.currentTarget.style.background = isExpanded ? 'rgba(239, 68, 68, 0.2)' : 'rgba(56, 189, 248, 0.15)';
           }}
         >
-          {isExpanded ? <>Close Graph <X size={14} /><ChevronDown size={14} /></> : <>Expand Graph <ChevronUp size={14} /></>}
+          {isExpanded ? <>Close <ChevronDown size={14} /></> : <>Expand <ChevronUp size={14} /></>}
         </button>
       </div>
 
