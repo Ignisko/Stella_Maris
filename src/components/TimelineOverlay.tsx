@@ -12,7 +12,7 @@ interface TimelineOverlayProps {
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 12 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 65 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 75 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 45 },
   "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 12 },
   "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 30 },
   "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 12 }
@@ -33,7 +33,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
   // Sort active apparitions by year
   const sorted = useMemo(() => [...activeApparitions].sort((a, b) => a.year - b.year), [activeApparitions]);
-  
+
   const minYear = useMemo(() => {
     if (timeMode === 'modern') return 1800;
     return sorted.length > 0 ? sorted[0].year : 1500;
@@ -144,7 +144,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
               <Clock size={12} /> Full history (40 AD-Present)
             </button>
           </div>
-          
+
           {/* Status Legend (Only visible when expanded) */}
           {isExpanded && (
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
@@ -227,7 +227,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
       {isExpanded && (
         <div style={{ position: 'relative', width: '100%', height: '250px', marginBottom: '8px' }}>
-          
+
           {/* Era Overlays (Visible in Modern view when no apparition is selected) */}
           {timeMode === 'modern' && !selectedApparition && (
             <div style={{
@@ -395,18 +395,18 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       )}
 
       {/* Horizontal Axis & Ticks */}
-      <div 
+      <div
         onClick={() => { if (!isExpanded) setIsExpanded(true); }}
         style={{ position: 'relative', height: '28px', width: '100%', marginTop: '4px', cursor: isExpanded ? 'default' : 'pointer' }}
         title={!isExpanded ? "Click to expand activity graph" : ""}
       >
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255, 255, 255, 0.3)' }} />
-        
+
         {Array.from({ length: Math.ceil(range / tickStep) + 1 }).map((_, i) => {
           const tickYear = Math.floor(startY / tickStep) * tickStep + i * tickStep;
           if (tickYear < startY || tickYear > endY) return null;
           const leftPercent = ((tickYear - startY) / range) * 100;
-          
+
           return (
             <div key={`tick-${tickYear}`} style={{
               position: 'absolute',
