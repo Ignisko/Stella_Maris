@@ -10,12 +10,12 @@ interface TimelineOverlayProps {
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 45 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 125 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 80 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 50 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 130 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 85 }
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 25 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 65 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 35 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 55 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 95 },
+  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 65 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -224,17 +224,17 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       </div>
 
       {isExpanded && (
-        <div style={{ position: 'relative', width: '100%', height: '220px', marginBottom: '8px' }}>
+        <div style={{ position: 'relative', width: '100%', height: '250px', marginBottom: '8px' }}>
           
           {/* Era Overlays (Visible in Modern view when no apparition is selected) */}
           {timeMode === 'modern' && !selectedApparition && (
             <div style={{
               position: 'absolute',
               top: 0,
-              left: '10%',
-              right: '10%',
+              left: '3%',
+              right: '3%',
               display: 'flex',
-              justifyContent: 'space-around',
+              justifyContent: 'space-between',
               pointerEvents: 'none',
               zIndex: 15
             }}>
