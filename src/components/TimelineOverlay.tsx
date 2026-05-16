@@ -9,13 +9,13 @@ interface TimelineOverlayProps {
   onSelectApparition: (apparition: Apparition) => void;
 }
 
-const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; heightOffset: number }> = {
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, heightOffset: 12 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, heightOffset: 65 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, heightOffset: 60 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, heightOffset: 15 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, heightOffset: 40 },
-  "kibeho": { label: "Mother of the Word", year: 1981, heightOffset: 12 }
+const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: 25 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 65, fullHistoryOffset: 70 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 60, fullHistoryOffset: 115 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 15, fullHistoryOffset: 25 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 40, fullHistoryOffset: 70 },
+  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 115 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
@@ -322,6 +322,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
                 if (!callout || b.apps.length === 0) return null;
 
+                const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
                 const bottomOffset = b.apps.length * (tileHeight + 2);
 
@@ -334,7 +335,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                       bottom: `${bottomOffset}px`,
                       transform: 'translateX(-50%)',
                       width: '1px',
-                      height: `${callout.heightOffset}px`,
+                      height: `${offset}px`,
                       background: 'linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.95))',
                       zIndex: 1
                     }}
@@ -348,8 +349,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
                 if (!callout || b.apps.length === 0) return null;
 
+                const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
                 const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
-                const bottomOffset = (b.apps.length * (tileHeight + 2)) + callout.heightOffset;
+                const bottomOffset = (b.apps.length * (tileHeight + 2)) + offset;
 
                 return (
                   <div
