@@ -64,32 +64,45 @@ function App() {
         <p style={{ fontSize: '14px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
           Marian apparitions map
         </p>
-        <button
-          onClick={() => setIsDirectoryOpen(true)}
-          style={{
-            marginTop: '10px',
-            padding: '8px 16px',
-            borderRadius: '20px',
-            background: 'var(--accent-color)',
-            color: '#0f172a',
-            border: 'none',
-            fontSize: '13px',
-            fontWeight: 600,
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '8px',
-            boxShadow: '0 4px 12px rgba(56, 189, 248, 0.3)',
-            transition: 'all 0.2s'
-          }}
-          onMouseOver={e => e.currentTarget.style.transform = 'scale(1.03)'}
-          onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
-        >
-          <List size={15} />
-          <span>Browse List ({filteredApparitions.length})</span>
-        </button>
       </div>
+
+      {/* Top Right Browse Directory Button */}
+      <button
+        onClick={() => setIsDirectoryOpen(true)}
+        className="glass-panel glass-panel-rounded animate-fade-in"
+        style={{
+          position: 'absolute',
+          top: '20px',
+          right: '355px',
+          zIndex: 30,
+          height: '45px',
+          padding: '0 20px',
+          background: 'rgba(15, 23, 42, 0.8)',
+          color: 'var(--text-color)',
+          border: '1px solid var(--glass-border)',
+          fontSize: '14px',
+          fontWeight: 600,
+          cursor: 'pointer',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '10px',
+          pointerEvents: 'auto',
+          boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+          transition: 'all 0.2s ease'
+        }}
+        onMouseOver={e => {
+          e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
+          e.currentTarget.style.borderColor = 'var(--accent-color)';
+        }}
+        onMouseOut={e => {
+          e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+          e.currentTarget.style.borderColor = 'var(--glass-border)';
+        }}
+      >
+        <List size={16} color="var(--accent-color)" />
+        <span>Browse directory ({filteredApparitions.length})</span>
+      </button>
 
       <DirectoryModal
         isOpen={isDirectoryOpen}
