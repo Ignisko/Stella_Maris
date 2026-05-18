@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { List } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -14,9 +14,14 @@ function App() {
   const [activeFilters, setActiveFilters] = useState<string[]>(FILTER_CATEGORIES.filter(c => c !== "Dismissed"));
   const [activeCenturies, setActiveCenturies] = useState<string[]>(CENTURY_FILTERS.map(c => c.id));
   const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
+  const [isPlayingTimeline, setIsPlayingTimeline] = useState(false);
+  const [playbackIndex, setPlaybackIndex] = useState(0);
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
+    if (isPlayingTimeline) {
+      setIsPlayingTimeline(false);
+    }
   };
 
   // Filter the data
@@ -44,6 +49,53 @@ function App() {
       return false;
     });
   }, [activeFilters, activeCenturies]);
+
+  // Sort filtered data chronologically
+  const sortedFilteredApparitions = useMemo(() => {
+    return [...filteredApparitions].sort((a, b) => a.year - b.year);
+  }, [filteredApparitions]);
+
+  // Interval loop for timeline playback
+  useEffect(() => {
+    if (!isPlayingTimeline || sortedFilteredApparitions.length === 0) return;
+
+    const interval = setInterval(() => {
+      setPlaybackIndex(prev => {
+        const next = prev + 1;
+        if (next >= sortedFilteredApparitions.length) {
+          return 0; // Loop back to start
+        }
+        return next;
+      });
+    }, 2800);
+
+    return () => clearInterval(interval);
+  }, [isPlayingTimeline, sortedFilteredApparitions]);
+
+  // Auto-select apparition when playbackIndex ticks
+  useEffect(() => {
+    if (isPlayingTimeline && sortedFilteredApparitions[playbackIndex]) {
+      setSelectedApparition(sortedFilteredApparitions[playbackIndex]);
+    }
+  }, [isPlayingTimeline, playbackIndex, sortedFilteredApparitions]);
+
+  const togglePlayTimeline = () => {
+    if (!isPlayingTimeline) {
+      setIsPlayingTimeline(true);
+      setPlaybackIndex(0);
+      if (sortedFilteredApparitions.length > 0) {
+        setSelectedApparition(sortedFilteredApparitions[0]);
+      }
+    } else {
+      setIsPlayingTimeline(false);
+    }
+  };
+
+  // Sliced data for GlobeViewer during playback
+  const displayedApparitions = useMemo(() => {
+    if (!isPlayingTimeline || !selectedApparition) return filteredApparitions;
+    return filteredApparitions.filter(a => a.year <= selectedApparition.year);
+  }, [isPlayingTimeline, selectedApparition, filteredApparitions]);
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -124,7 +176,7 @@ function App() {
       />
 
       <GlobeViewer 
-        apparitions={filteredApparitions} 
+        apparitions={displayedApparitions} 
         selectedApparition={selectedApparition}
         onSelectApparition={handleSelectApparition} 
       />
@@ -141,6 +193,8 @@ function App() {
           apparitions={filteredApparitions}
           selectedApparition={selectedApparition}
           onSelectApparition={handleSelectApparition}
+          isPlaying={isPlayingTimeline}
+          onTogglePlay={togglePlayTimeline}
         />
       )}
     </div>

@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { BarChart2, ChevronUp, ChevronDown, Clock, Play, Pause } from 'lucide-react';
 import { getStatusColor, STATUS_COLORS, getApparitionStatusCategory } from '../utils/colors';
@@ -7,6 +7,8 @@ interface TimelineOverlayProps {
   apparitions: Apparition[];
   selectedApparition: Apparition | null;
   onSelectApparition: (apparition: Apparition) => void;
+  isPlaying: boolean;
+  onTogglePlay: () => void;
 }
 
 // ==========================================
@@ -28,11 +30,10 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 40 }
 };
 
-const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
+const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   // Filter based on selected time mode
   const activeApparitions = useMemo(() => {
@@ -44,21 +45,6 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
   // Sort active apparitions by year
   const sorted = useMemo(() => [...activeApparitions].sort((a, b) => a.year - b.year), [activeApparitions]);
-
-  useEffect(() => {
-    if (!isPlaying || sorted.length === 0) return;
-    
-    let currentIndex = selectedApparition ? sorted.findIndex(a => a.id === selectedApparition.id) : -1;
-    if (currentIndex === -1) currentIndex = 0;
-
-    const interval = setInterval(() => {
-      currentIndex = (currentIndex + 1) % sorted.length;
-      const nextApp = sorted[currentIndex];
-      onSelectApparition(nextApp);
-    }, 2800);
-
-    return () => clearInterval(interval);
-  }, [isPlaying, sorted, selectedApparition, onSelectApparition]);
 
   const minYear = useMemo(() => {
     if (timeMode === 'modern') return 1800;
@@ -173,7 +159,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
 
           {/* Play/Pause Button */}
           <button
-            onClick={() => setIsPlaying(!isPlaying)}
+            onClick={onTogglePlay}
             style={{
               background: isPlaying ? '#ef4444' : 'var(--accent-color)',
               color: '#ffffff',
@@ -332,6 +318,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
                 >
                   {/* The stacked tiles */}
                   {b.apps.map(app => {
+                    const isFuture = isPlaying && selectedApparition && app.year > selectedApparition.year;
+                    if (isFuture) return null;
+
                     const isSelected = selectedApparition?.id === app.id;
                     const statusColor = getStatusColor(app.approvalStatus);
 
