@@ -78,7 +78,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
   return (
     <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
       position: 'absolute',
-      top: '130px',
+      top: '155px',
       left: '20px',
       zIndex: 10,
       width: '290px',
@@ -125,8 +125,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
 
           <div style={{ padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '14px', maxHeight: 'calc(100vh - 220px)', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '13px', cursor: 'pointer', fontWeight: 500 }}>Select All</button>
-              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '13px', cursor: 'pointer' }}>Clear All</button>
+              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '13px', cursor: 'pointer', fontWeight: 500, fontFamily: 'inherit' }}>Select all</button>
+              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '13px', cursor: 'pointer', fontFamily: 'inherit' }}>Clear all</button>
             </div>
             
             {activeTab === 'status' && FILTER_CATEGORIES.map(category => {

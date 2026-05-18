@@ -34,7 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
 
   const clusteredApps = useMemo(() => {
     if (!apparition || !allActiveApparitions.length) return [];
-    const threshold = 0.05; // ~5km radius
+    const threshold = 0.45; // ~50km radius matching map clustering
     return allActiveApparitions.filter(a => 
       Math.abs(a.lat - apparition.lat) < threshold && Math.abs(a.lng - apparition.lng) < threshold
     ).sort((a, b) => a.year - b.year);
@@ -99,9 +99,10 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
                     gap: '6px',
                     transition: 'all 0.2s'
                   }}
+                  title={app.title}
                 >
-                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color }} />
-                  {app.year}
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, flexShrink: 0 }} />
+                  <span>{app.year} • {app.title.replace('Our Lady of ', '').replace('The Virgin Mary in ', '')}</span>
                 </button>
               );
             })}

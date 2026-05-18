@@ -9,7 +9,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.9333,
     lng: 7.9333,
     year: 1803,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "The Virgin Mary appeared to 18-year-old Maria Baj while tending cattle, saying 'The Mother of the Son of God decided to be honored in this place.' Reports of healings followed, especially from malaria fevers. The miraculous valley spring was named 'Water of the Virgin'."
   },
@@ -21,7 +21,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.9028,
     lng: 12.4964,
     year: 1807,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "The Virgin with baby Jesus appeared to Blessed Elizabeth Canori Mora in Rome. On Christmas 1816, Our Lady appeared extremely sad, warning of great ungodliness and apostasy. Her writings were rigorously examined by the Holy See and found completely free of doctrinal error."
   },
@@ -33,7 +33,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.5000,
     lng: 23.6000,
     year: 1806,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "Mary appeared in Grushev under unusual circumstances, validated by multiple eyewitnesses. A beautiful memorial shrine was erected at the holy site in 1856."
   },
@@ -45,7 +45,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 52.3236,
     lng: 18.3564,
     year: 1813,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "During the Battle of Leipzig, wounded Polish soldier Tomasz Klossowski prayed to Mary. She appeared in a golden robe with a crown and white eagle, promising his healing and asking him to find a portrait of her. He returned to Lichen and hung the miraculous portrait in a forest chapel."
   },
@@ -57,7 +57,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.1611,
     lng: -3.2289,
     year: 1820,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "Seventeen-year-old shepherd Jean Poulli heard a voice and saw the Blessed Virgin Mary, who asked for a chapel to be built. The parish priest investigated, heard heavenly singing, and discovered a miraculous spring. Approved by Bishop De La Romagère in 1829."
   },
@@ -69,7 +69,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 37.5383,
     lng: 25.1610,
     year: 1821,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2,
     description: "The Virgin Mary appeared in intense divine light to St. Pelagia and her brother in a dream, guiding excavations that unearthed the miraculous icon of Megalochare (Full of Grace). Tinos became the sacred national Marian shrine of Greece."
   },
@@ -81,7 +81,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.4500,
     lng: 13.4000,
     year: 1821,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "The Blessed Mother appeared to young Maria looking back at her from inside a mirror. Our Lady miraculously taught her how to read so she could study spiritual books, guiding her to dedicate her life to God and found the Sisters Adorers of the Blood of Christ."
   },
@@ -93,7 +93,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.8239,
     lng: 1.8953,
     year: 1829,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "St. Anthony Mary Claret experienced repeated apparitions of Mary and was miraculously cured of a serious illness. He went on to found the world-renowned Missionary Sons of the Immaculate Heart of Mary (Claretians)."
   },
@@ -105,7 +105,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.6500,
     lng: -0.9667,
     year: 1830,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Mystic Marie Lataste received numerous apparitions of the Blessed Virgin Mary and the Sacred Heart, inspiring her heroic virtue as a lay sister in the Convent of the Sacred Heart of Rennes."
   },
@@ -117,7 +117,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.8510,
     lng: 2.3234,
     year: 1830,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "In the chapel of the Daughters of Charity, Mary appeared to novice Catherine Labouré standing upon a globe with rays of light streaming from her gem-ringed hands. She commissioned the Miraculous Medal, promising immense graces to all who wear it with confidence."
   },
@@ -129,7 +129,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 39.2667,
     lng: 16.2500,
     year: 1831,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "Fra Benedetto Falcone arrived at the solitary hermitage of Laurignano. After several apparitions of the Virgin Mary, he revived the devotion to Madonna della Catena and built a beautiful sanctuary now cared for by Passionist Missionaries."
   },
@@ -141,7 +141,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 40.6333,
     lng: -3.1667,
     year: 1831,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Virgin Mary appeared to Dolores Quiroga, Franciscan foundress of thirty convents throughout Spain who bore the holy stigmata. St. Anthony Mary Claret served as her spiritual director."
   },
@@ -153,7 +153,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.6833,
     lng: 5.8667,
     year: 1833,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 4,
     description: "Mary appeared to mystic Anna Moes during her childhood in Bous. Despite enduring years of skepticism and slander with profound humility, a bishop's court fully vindicated her supernatural visions in 1884."
   },
@@ -165,7 +165,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.2667,
     lng: 11.3333,
     year: 1833,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The majestic figure of the Holy Virgin appeared to 18-year-old Domenica Lazzeri while working in the fields. She subsequently received the holy stigmata and endured her expiatory suffering with immense patience until her death in 1848."
   },
@@ -177,7 +177,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.5458,
     lng: 7.3458,
     year: 1834,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Five young shepherds saw a beautiful Lady standing on a stone slab wearing a long reddish dress with a blue veil held by a gold button. She appeared in tears with open hands over 50 days. Officially crowned by the Bishop of Saluzzo."
   },
@@ -189,7 +189,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.3500,
     lng: 16.0833,
     year: 1835,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Most Holy Virgin Mary miraculously saved 6-year-old Joseph Leone when he fell into a deep pit, inspiring him to the devout life. Later in the seminary, Mary appeared to him saying, 'You belong to me.'"
   },
@@ -201,7 +201,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.8667,
     lng: 2.3417,
     year: 1836,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Fr. Desgenettes, despairing over his fruitless ministry at Our Lady of Victories in Paris, received a profound interior locution from the Virgin Mary instructing him to consecrate his parish to her Immaculate Heart. The resulting Archconfraternity sparked miraculous world-wide conversions."
   },
@@ -213,7 +213,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.3186,
     lng: 11.3305,
     year: 1836,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "Blessed Anna Maria Taigi, a devoted mother and mystic in Rome and Siena, experienced supernatural apparitions and saw a miraculous sun globe in which she foresaw major world historical events."
   },
@@ -225,7 +225,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.9000,
     lng: 12.4833,
     year: 1837,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "Apostle of the Precious Blood St. Gaspar del Bufalo experienced profound Marian inspiration and mystical guidance throughout his arduous missionary travels across Italy, founding the Missionaries of the Precious Blood."
   },
@@ -237,7 +237,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.8167,
     lng: 9.8667,
     year: 1839,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "During a violent storm, a young boy seeking shelter was welcomed by the Madonna into a securely locked barn where she provided him with bread and a warm bed. Investigated and officially approved in 1873 by the Bishop of Bergamo."
   },
@@ -249,7 +249,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.8014,
     lng: 2.1301,
     year: 1840,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Mary appeared to Vincentian sister Justine Bisqueyburu holding her Immaculate Heart pierced by a sword and aflame with divine light. She entrusted her with the Green Scapular, promising miraculous physical healings and deathbed conversions for all who wear it."
   },
@@ -261,7 +261,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.9931,
     lng: 4.8233,
     year: 1840,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Mme. Durie entered St. John Vianney's room and witnessed the Most Holy Virgin Mary clad in dazzling white with golden roses and a crown of shining stars, gently conversing with the holy Curé regarding miraculous healings."
   },
@@ -273,7 +273,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.2184,
     lng: -1.5536,
     year: 1840,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Marie Ardouin suffered excruciating pain from terminal cancer for five years. When her final moments seemed near, the Virgin Mary appeared to her in dazzling light and instantly and completely healed her."
   },
@@ -297,7 +297,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.5100,
     lng: -114.0950,
     year: 1841,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "An 11-year-old Salish orphan boy saw the Virgin Mary hovering above the earth in garments white as snow with a star over her head and rays of light streaming from her heart. Fr. Pierre De Smet investigated and erected a statue dedicated to Our Lady of Prayer."
   },
@@ -309,7 +309,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.9033,
     lng: 12.4839,
     year: 1842,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "Anti-Catholic Jewish banker Marie-Alphonse Ratisbonne stood inside Sant'Andrea delle Fratte wearing the Miraculous Medal as a test. The Blessed Virgin appeared to him in radiant majesty; he instantly converted, became a priest, and founded the Congregation of Our Lady of Zion."
   },
@@ -321,7 +321,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 50.7117,
     lng: 3.4561,
     year: 1842,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Virgin Mary appeared to Visitandine Mother Marie-Stanislas inside the 'Hall of the Poor', imparting sublime spiritual teachings. The apparition room was later transformed into the holy convent chapel."
   },
@@ -333,7 +333,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.3941,
     lng: 0.6848,
     year: 1844,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Carmelite nun Sister Marie of St. Peter experienced profound visions of Jesus and Mary, receiving the Golden Arrow Act of Reparation to the Holy Face of Jesus to atone for blasphemy and sacrilege."
   },
@@ -345,7 +345,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.8572,
     lng: 5.9795,
     year: 1846,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "High in the French Alps, the Blessed Virgin appeared in brilliant light weeping intensely before two young shepherds, Maximin and Mélanie. Wearing a crucifix with a hammer and pincers, she warned of famine and urged heartfelt penance, prayer, and observance of the Lord's Day."
   },
@@ -357,7 +357,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.0806,
     lng: 7.6789,
     year: 1846,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "Guided by mystical dreams and direct visions of the Blessed Virgin Mary, St. John Bosco founded the Salesian Order to rescue and educate abandoned street youth. He erected the magnificent Basilica of Mary Help of Christians in Turin, attributing every single triumph to Our Lady."
   },
@@ -393,7 +393,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.4500,
     lng: 11.1333,
     year: 1848,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Mary appeared on a green pasture dressed in pink with a white veil and golden crown, weeping sorrowfully over the lack of faith in the world. She subsequently manifested in celestial splendor before crowds of up to forty-eight witnesses."
   },
@@ -405,7 +405,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.0667,
     lng: 0.4167,
     year: 1848,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Blessed Virgin Mary appeared near the ancient chapel ruins of Nouillan to three young children, followed by repeated supernatural manifestations that drew immense crowds of devout pilgrims."
   },
@@ -417,7 +417,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.5667,
     lng: 5.9333,
     year: 1849,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "Visitandine nun Sr. Marie-Marthe Chambon received profound visions of Jesus and the Blessed Virgin Mary, initiating the devotion to the Holy Wounds of Christ."
   },
@@ -429,7 +429,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.6500,
     lng: 14.4500,
     year: 1849,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "The Blessed Virgin Mary appeared as the Immaculate Conception in a forest meadow to three young shepherdesses, preparing the faithful for the solemn papal dogma definition of 1854. A wooden chapel and miraculous painting were erected."
   },
@@ -441,7 +441,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 32.9278,
     lng: 35.0817,
     year: 1850,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Habeiche Hassan, Christian convert and imprisoned son of a Lebanese emir, saw the Virgin Mary in a dream promising his miraculous liberation if he erected a beautiful shrine in her honor."
   },
@@ -453,7 +453,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 52.3236,
     lng: 18.3564,
     year: 1850,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "Mary appeared in a red robe and white mantle with a magnificent crown before humble shepherd Mikołaj Sikatka in the Grąblin forest. She urged daily Rosary prayer and foretold a devastating cholera epidemic. When the plague struck exactly as foretold, her miraculous intercession healed thousands. Today, the Sanctuary of Our Lady of Licheń is Poland's largest church."
   },
@@ -465,7 +465,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.9029,
     lng: 12.4534,
     year: 1850,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "A skeptical French Protestant woman attending a papal audience in the Vatican witnessed a radiant beam of light materializing into the figure of the Blessed Virgin Mary three separate times, prompting her complete conversion to the Catholic faith."
   },
@@ -477,7 +477,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.3167,
     lng: 9.4333,
     year: 1851,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "On the day of his First Communion, 9-year-old Luigi Guanella saw a beautiful Lady who revealed to him exactly what he must do to rescue and cherish the poor and handicapped, inspiring his worldwide charitable religious orders."
   },
@@ -489,7 +489,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 42.6333,
     lng: 11.6667,
     year: 1853,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "While tending sheep, 12-year-old Veronica Nucci saw a kneeling Lady wearing a white dress with red flowers and a blue mantle. Weeping over the multitude of sins in the world, Mary asked for prayers of reparation and a chapel. A miraculous spring emerged, producing remarkable healings."
   },
@@ -501,7 +501,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.6833,
     lng: 6.9167,
     year: 1854,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "Humble seamstress Marguerite Bays suffered terminal bowel cancer. On December 8, 1854, the exact day Pope Pius IX proclaimed the dogma of the Immaculate Conception, Our Lady miraculously and instantly healed her. She subsequently received the holy stigmata."
   },
@@ -513,7 +513,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.1833,
     lng: 13.3333,
     year: 1855,
-    approvalStatus: "Approved for Faith Expression",
+    approvalStatus: "Approved for faith expression",
     priority: 2,
     description: "The Blessed Virgin Mary appeared in a beautiful mountain sinkhole to 10-year-old Teresa Dush, gently conversing in the local Slovenian dialect. Our Lady imprinted a radiant golden cross upon the child's hand that remained visible until her death."
   },
@@ -525,7 +525,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.8378,
     lng: -0.5792,
     year: 1855,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Virgin Mary appeared on a white cloud with a royal crown and open arms inside the ancient Carmelite cloister where St. Simon Stock died, deeply touching the hearts of all the assembled brothers."
   },
@@ -537,7 +537,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 15.5833,
     lng: 108.4833,
     year: 1855,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2,
     description: "During violent royal persecutions, the Madonna appeared in shining glory over the church roof before 4,000 besieging soldiers. Utterly terrified by the celestial Lady protecting the Catholic faithful, the entire army retreated."
   },
@@ -549,7 +549,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 42.7333,
     lng: 12.7333,
     year: 1856,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "An icon of the Virgin Mary miraculously came alive before Jesuit student Francesco Possenti in Spoleto, saying 'Francesco, the world is not for you; you must enter the religious life.' He joined the Passionists, achieving sublime sanctity before dying at age 24."
   },
@@ -561,7 +561,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.0586,
     lng: 12.5844,
     year: 1856,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Dying from a mortal thirty-year illness at midnight, M. de Bray heard the voice of the divine Mother instructing him to make a vow to go on pilgrimage to Our Lady of Angels at Assisi. Upon making the vow, he was instantly and radically cured."
   },
@@ -573,7 +573,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.4000,
     lng: 9.2500,
     year: 1856,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Mary appeared twice to twenty-year-old Rosa Carbone, lamenting moral neglect and recommending the fervent recitation of the Our Father and Hail Holy Queen."
   },
@@ -585,7 +585,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.2167,
     lng: 7.9667,
     year: 1857,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Two young girls witnessed the Most Holy Lady appearing from clouds of glory in a white dress and blue cloak, holding the Child Jesus tight to her breast."
   },
@@ -597,7 +597,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 31.2000,
     lng: 29.9167,
     year: 1858,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Young Mariam Baouardy was nearly martyred for refusing to renounce the Catholic faith. Left for dead with a slashed throat in an Alexandria alley, a beautiful Lady in blue appeared, miraculously healing her and foretelling her glorious Carmelite destiny in Bethlehem."
   },
@@ -609,7 +609,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.0975,
     lng: -0.0583,
     year: 1858,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "At the damp Massabielle grotto, the beautiful Virgin Mary appeared 18 times to 14-year-old peasant girl Bernadette Soubirous. Revealing her identity as 'The Immaculate Conception', she uncovered a miraculous healing spring that has since cured countless incurable pilgrims. Today Lourdes is one of the premier holy shrines on Earth."
   },
@@ -621,7 +621,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.1417,
     lng: 0.8958,
     year: 1859,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 3,
     description: "Four young children experienced repeated apparitions and messages. In 2007, the Archbishop of Toulouse officially approved the Marian cult and pilgrimages at the holy Picheloup sanctuary."
   },
@@ -633,7 +633,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.5914,
     lng: -87.7947,
     year: 1859,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "The Blessed Mother appeared in dazzling white between two trees to 28-year-old Adele Brise, saying 'I am the Queen of Heaven who prays for the conversion of sinners... teach the children what they should know for salvation.' When the catastrophic 1871 Peshtigo Fire engulfed the entire region, the sanctuary grounds were miraculously spared."
   },
@@ -645,7 +645,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.9500,
     lng: 14.2833,
     year: 1859,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Three-year-old Johann Brunnsteiner was blinded by severe illness. When his parents bathed his eyes in the holy spring at the Red Cross chapel, the Mother of God appeared crowned with the Child Jesus and instantly restored his sight."
   },
@@ -657,7 +657,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.3875,
     lng: 7.4153,
     year: 1860,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5,
     description: "The Blessed Virgin Mary appeared to Françoise Barthel in Andlau, Alsace, bringing spiritual consolation and deep devotional renewal to the local parish."
   },
@@ -669,7 +669,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.5458,
     lng: 1.4875,
     year: 1860,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "In the church of Francoulès, mystic Pauline Périé saw Our Lady adorned in a starry robe with a golden crown, holding small flowers. Accompanied by angels, Mary urged heartfelt prayers of atonement."
   },
@@ -681,7 +681,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 42.8917,
     lng: 12.6500,
     year: 1861,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Mary appeared among the ancient chapel ruins of St. Bartholomew to 4-year-old Righetto Cionchi. When a young man dying of tuberculosis was miraculously cured by invoking Mary under this title, the local bishop officially recognized the apparitions and erected the magnificent Sanctuary of Madonna della Stella."
   },
@@ -693,7 +693,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.4833,
     lng: -1.5167,
     year: 1863,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "The Blessed Virgin Mary appeared as 'Queen of Angels' to foundling priest Fr. Cestac, instructing him in the powerful prayer 'August Queen of Heaven' to dispatch legions of angels to vanquish demonic darkness across the world."
   },
@@ -705,7 +705,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 50.0500,
     lng: 4.5333,
     year: 1865,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Housewife Marie Jalhay suffered from severe, debilitating spinal disease. Our Lady appeared in supernatural light wrapped in a white cloak, saying 'Now you are healed! Get up and show your family.' She was instantly cured."
   },
@@ -717,7 +717,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.1742,
     lng: 19.1039,
     year: 1865,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "A local farmer discovered a miraculous water spring where the Virgin Mary repeatedly appeared before crowds of witnesses. Following numerous documented physical healings, the diocesan bishop authorized the construction of the famous pilgrimage sanctuary."
   },
@@ -729,7 +729,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 50.9833,
     lng: 14.5833,
     year: 1866,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "Magdalena Kade lay bedridden and dying from painful incurable diseases. At 4:00 AM, the Blessed Virgin Mary appeared in dazzling white with a golden tiara, whispering 'My daughter, now you are healed!' She instantly rose in perfect health. Pope Leo XIII officially recognized the miracle and elevated the sanctuary to a minor basilica."
   },
@@ -741,7 +741,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.9000,
     lng: 14.1167,
     year: 1867,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Mary appeared six times to Teresa Steindl, delivering urgent warnings that if humanity resisted conversion, catastrophic storms and spiritual darkness would fall upon the earth."
   },
@@ -753,7 +753,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 50.5000,
     lng: 4.2333,
     year: 1868,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "Young Louise Lateau, who heroically nursed plague victims, received apparitions of Jesus and Mary. She subsequently bore the holy stigmata every Friday and lived for twelve years consuming absolutely nothing but the Holy Eucharist."
   },
@@ -765,7 +765,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 34.4667,
     lng: 131.7667,
     year: 1869,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2,
     description: "During the cruel Meiji persecutions, 153 hidden Christians from Nagasaki were imprisoned in freezing outdoor cages at Otome Toge pass. The Blessed Virgin Mary appeared night after night in radiant warmth, consoling and blessing the freezing martyrs."
   },
@@ -777,7 +777,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.1230,
     lng: 1.7610,
     year: 1870,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "During the bloody Franco-Prussian War battle at Loigny, Papal Zouave commander General de Sonis lay severely wounded in freezing snow. The Blessed Virgin Mary appeared before him on the battlefield, imparting sublime peace and miraculous fortitude."
   },
@@ -789,7 +789,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.1193,
     lng: 6.1727,
     year: 1870,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5,
     description: "An 8-year-old boy in Metz experienced a clear apparition of Our Lady in the exact weeping guise of La Salette during the siege of the city."
   },
@@ -801,7 +801,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.6921,
     lng: 6.1844,
     year: 1870,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Blessed Virgin Mary appeared silently in celestial majesty before numerous assembled faithful inside the Maison de Secours chapel across several years."
   },
@@ -813,7 +813,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.1500,
     lng: 7.4833,
     year: 1870,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Nine-year-old Barbara Conrad suffered from severe terminal illness. On Palm Sunday, Mary appeared in radiant glory and instantly and completely healed the young child."
   },
@@ -825,7 +825,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 50.6333,
     lng: 6.0333,
     year: 1870,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "A girl born completely mute prayed a novena before a statue of Mary at the Capuchin church. On the ninth day, Mary appeared in heavenly light next to the statue and healed her silently with a gesture. The child spoke perfectly for the first time in her life."
   },
@@ -837,7 +837,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.4397,
     lng: -1.0583,
     year: 1871,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "As advancing Prussian armies threatened Brittany, the beautiful Virgin Mary appeared in the starry night sky wearing a dark blue robe adorned with golden stars. A golden banner unfurled reading: 'But pray my children. God will hear you in a short time. My Son allows Himself to be moved by compassion.' Within hours, the Prussian general ordered a total retreat, sparing the entire region."
   },
@@ -849,7 +849,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.3000,
     lng: 10.9667,
     year: 1871,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Maria Kalb suffered bedridden agony for seven years from an incurable disease. Carried to a holy mountain cave before a miraculous picture of Mary, the Virgin appeared and instantly restored her health. A magnificent neo-Gothic sanctuary was erected."
   },
@@ -861,7 +861,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.6667,
     lng: 6.7500,
     year: 1871,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Mary appeared to severely ill Marie-Françoise Decotterd, inspiring her to dedicate her life to expiatory sacrifice for the salvation of souls."
   },
@@ -873,7 +873,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.8566,
     lng: 2.3522,
     year: 1871,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Blessed Virgin Mary appeared to Assumptionist co-foundress Sr. Thérèse-Emmanuel, revealing a profound vision of a spiritual Marian army bearing the banner of the Immaculate Conception."
   },
@@ -885,7 +885,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 38.6270,
     lng: -90.1994,
     year: 1871,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Madonna appeared in a shining white robe with a golden crown of stars before bedridden Therese Schaffer, instantly healing her and guiding her to enter the religious life."
   },
@@ -897,7 +897,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.3075,
     lng: 7.3353,
     year: 1872,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2,
     description: "Mary appeared on the wooded slopes of Frankenbourg wearing a crown and golden mantle with a black cross. Frequently appearing before crowds of over one hundred witnesses as 'Mother of Mercy', she inspired immense devotional pilgrimages."
   },
@@ -909,7 +909,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.4550,
     lng: -1.1631,
     year: 1872,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Virgin Mary appeared before the Marian altar in a white robe with blue and pink ribbons and a crown of flowers, urging the fervent recitation of the Ave Maris Stella."
   },
@@ -921,7 +921,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.8880,
     lng: 2.3190,
     year: 1873,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5,
     description: "Young Armand Wallet and Alfred Fontes experienced clear supernatural apparitions of the Blessed Virgin Mary in the Batignolles quarter of Paris."
   },
@@ -933,7 +933,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.4764,
     lng: -1.7633,
     year: 1873,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Bedridden 23-year-old Marie-Julie Jahenny saw Our Lady in black bearing a large white cross. Miraculously healed exactly on May 2 as promised before two thousand witnesses, she received the holy stigmata and profound prophetic visions confirming La Salette and Fatima."
   },
@@ -945,7 +945,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.0667,
     lng: 6.7833,
     year: 1873,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Mary appeared repeatedly in a blue vest and white mantle to mystic Catherine Filljung, inspiring her to found a Dominican orphanage and lead a life of profound expiation."
   },
@@ -957,7 +957,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.0667,
     lng: 7.2167,
     year: 1873,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Most Blessed Virgin appeared as Our Beloved Lady of Cavezzale, urging prayer and penance for France. Paralytic Theresa Kaufmann was subsequently and miraculously cured."
   },
@@ -969,7 +969,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.4500,
     lng: 2.7500,
     year: 1873,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "The Blessed Virgin Mary with the Child Jesus in her arms appeared in broad daylight to an entire class of 25 school children in the school garden for nearly two hours."
   },
@@ -981,7 +981,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.6167,
     lng: 3.5500,
     year: 1873,
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "While winemaker Auguste Arnaud worked in his vineyard on Trinity Sunday, Mary appeared in brilliant golden light, urging observance of Sunday rest and the erection of a grand cross. Exactly one month later she reappeared before crowds, saying: 'You must never work on Sunday! Blessed are those who believe.'"
   },
@@ -993,7 +993,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.5889,
     lng: -2.4564,
     year: 1874,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Diligent young farmer Jean-Pierre Le Boterff saw a beautiful figure in a starry blue robe and golden cloak at the forest edge. Mary urged a pilgrimage to St. Anne d'Auray and lifelong prayers for Brittany."
   },
@@ -1005,7 +1005,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 31.7767,
     lng: 35.2345,
     year: 1874,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "The Blessed Virgin Mary appeared in radiant glory surrounded by angels to Palestinian nun Marie-Alphonsine Danil Ghattas in Jerusalem and Bethlehem, inspiring her to establish the Dominican Sisters of the Holy Rosary."
   },
@@ -1017,7 +1017,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 44.4286,
     lng: 8.7850,
     year: 1874,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "Young shepherds Angela Berruti and Vincenzo Scossiera saw a beautiful Lady on a luminous cloud who asked for a hilltop chapel to be erected in her honor. Despite civil opposition, a magnificent sanctuary was constructed."
   },
@@ -1029,7 +1029,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.3083,
     lng: 7.9792,
     year: 1875,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Young housemaid Rosina Ferro saw the Mother of Sorrows standing silently by the roadside surrounded by angels throughout July and August. She subsequently bore the holy stigmata."
   },
@@ -1041,7 +1041,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 47.4250,
     lng: 2.8889,
     year: 1875,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Suffering excruciating terminal agony, Joséphine Reverdy experienced a glorious apparition of the Blessed Virgin Mary who instantly healed her. She devoted the rest of her life to expiatory sacrifice as a victim soul."
   },
@@ -1053,7 +1053,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 46.9833,
     lng: 1.4167,
     year: 1876,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "Dying from terminal tuberculosis in her bedroom, 33-year-old Estelle Faguette witnessed 15 apparitions of the Blessed Virgin Mary. Saying 'I am all-merciful and the mistress of my Son', Mary instantly and totally healed her and entrusted her with the Scapular of the Sacred Heart."
   },
@@ -1065,7 +1065,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 48.8500,
     lng: 12.8667,
     year: 1876,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "During the intense Kulturkampf persecutions, young children witnessed glorious apparitions of the Virgin Mary, the Child Jesus, and choirs of angels in a wooded ravine near Metten Abbey. Miraculous spring water produced remarkable documented healings."
   },
@@ -1077,7 +1077,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 53.7500,
     lng: 20.2333,
     year: 1877,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "Mary appeared repeatedly in a bright golden cloud above a maple tree before two young girls, speaking in the native Polish tongue during the harsh Prussian partition. When asked who she was, she replied: 'I am the Blessed Virgin Mary, the Immaculate Conception... I wish you to pray the Rosary every day.' The miraculous spring she blessed continues to heal countless pilgrims."
   },
@@ -1089,7 +1089,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 53.7919,
     lng: -8.9152,
     year: 1879,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1,
     description: "During pouring rain at twilight, the glowing figures of the Blessed Virgin Mary, St. Joseph, and St. John the Evangelist appeared alongside the Lamb of God upon an altar surrounded by angels on the outer south wall of the village chapel. For two hours, fifteen official witnesses stood in silent adoration. Today Knock is Ireland's National Marian Shrine."
   },
@@ -1101,7 +1101,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.5889,
     lng: 5.0964,
     year: 1882,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "Hospital patient Anne-Marie Coste, suffering severe terminal tuberculosis, saw Mary wearing a magnificent crown holding the Child Jesus who held a globe with a broken cross. Miraculously healed, she promoted the medal of the Mother of Solitude."
   },
@@ -1113,7 +1113,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.0667,
     lng: 11.7833,
     year: 1883,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4,
     description: "Young seamstress Maria Inglese experienced several sublime visions of the Most Holy Virgin in her room, inspiring the establishment of the Guard of Honor of the Immaculate Heart of Mary."
   },
@@ -1125,7 +1125,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.1433,
     lng: 0.2283,
     year: 1883,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "Suffering horrific fever and demonic attacks that left her delirious and near death at age 10, little Thérèse Martin turned toward the family statue of Mary. Suddenly the statue came alive in celestial beauty and smiled at her with ineffable maternal tenderness. Every single symptom instantly vanished in complete joy. Thérèse went on to become the Little Flower, one of the greatest modern Catholic saints."
   },
@@ -1137,7 +1137,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 36.0617,
     lng: 14.2150,
     year: 1883,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "Passing an isolated countryside chapel, 45-year-old Karmni Grima heard a gentle maternal voice calling from inside: 'Come, come... recite three Hail Marys in honor of the three days my body rested in the tomb.' Remarkable miraculous healings followed, transforming Ta' Pinu into the magnificent National Marian Shrine of Malta."
   },
@@ -1149,7 +1149,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 40.7500,
     lng: 14.5000,
     year: 1884,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "Suffering terminal epilepsy and cramps, 21-year-old Fortuna Agrelli prayed the Rosary novena before an image of Our Lady of Pompeii. The Virgin Mary appeared seated upon a throne of flowers, saying: 'Whoever desires graces from me should pray three novenas of the Rosary.' She was instantly and totally cured on May 8. Blessed Bartolo Longo erected the world-famous Pontifical Shrine of Pompeii."
   },
@@ -1161,7 +1161,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 41.5583,
     lng: 14.3125,
     year: 1888,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "In a rugged mountain crevice on Monte Patalecchia, two peasant women saw the glorious Virgin Mary kneeling in profound grief with outstretched arms before the bleeding body of Jesus. Over one thousand witnesses, including the diocesan bishop, subsequently witnessed the celestial light and apparitions. A miraculous spring emerged, and a breathtaking neo-Gothic basilica was constructed."
   },
@@ -1173,7 +1173,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.0458,
     lng: 4.0375,
     year: 1886,
-    approvalStatus: "Approved for Faith Expression",
+    approvalStatus: "Approved for faith expression",
     priority: 3,
     description: "Two young girls witnessed nineteen silent apparitions of the Blessed Virgin Mary wearing a dark veil in the Blachées woods. The local bishop officially approved the construction of a beautiful memorial shrine where Our Lady is invoked."
   },
@@ -1185,7 +1185,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 49.1758,
     lng: -0.6272,
     year: 1896,
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3,
     description: "On the Feast of St. Gabriel, fifty assembled school children and Marie Martel witnessed the glowing, radiant figure of the Blessed Virgin Mary in the sky above the elm trees, surrounded by angels and holding a magnificent Rosary."
   },
@@ -1197,7 +1197,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 45.7067,
     lng: 9.4450,
     year: 1896,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 2,
     description: "Teresa Secomandi, a peasant woman who had lost her faith and stopped attending church, encountered the levitating Virgin Mary in the forest. Mary gently handed her a Rosary and walked alongside her to the door of the Sanctuary of Our Lady of the Wood."
   },
@@ -1209,7 +1209,7 @@ export const century19Apparitions: Apparition[] = [
     lat: 43.8417,
     lng: 10.5028,
     year: 1899,
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Bishop approved",
     priority: 1,
     description: "On the vigil of the Feast of the Sacred Heart, 21-year-old mystic Gemma Galgani experienced profound sorrow for her sins. The Blessed Virgin Mary appeared in heavenly majesty alongside her guardian angel, saying 'I will be a mother to you.' Opening her mantle, Mary enveloped Gemma in her maternal embrace as Jesus appeared, imparting the holy stigmata with divine flames of fire."
   }

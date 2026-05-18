@@ -242,6 +242,18 @@ export const century20and21Apparitions: Apparition[] = [
     priority: 2
   },
   {
+    id: "amsterdam_all_nations",
+    title: "The Lady of All Nations",
+    location: "Amsterdam",
+    country: "Netherlands",
+    lat: 52.3676,
+    lng: 4.9041,
+    year: 1945,
+    description: "Between 1945 and 1959, Ida Peerdeman reported 56 visions of the Virgin Mary under the title 'The Lady of All Nations'. Following comprehensive theological evaluations, the Congregation for the Doctrine of the Faith confirmed in 2020 that the reported apparitions did not have a supernatural origin (Constat de non supernaturalitate).",
+    approvalStatus: "Unapproved apparitions",
+    priority: 4
+  },
+  {
     id: "marienfried",
     title: "Great Mediatrix of Graces",
     location: "Marienfried, Pfaffenhofen",

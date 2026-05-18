@@ -10,7 +10,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -3.8767,
     year: 1500,
     description: "The Virgin appeared asking that a sanctuary be built in Almonacid de Toledo.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -22,7 +22,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.4533,
     year: 1500,
     description: "Mary appeared to shepherds atop a rock that split. Clarissan nuns built the church of St. Mary of the Snow over the Holy Stone. After decades of Communist destruction, international believers restored the sanctuary.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -34,7 +34,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.2713,
     year: 1500,
     description: "During a severe plague epidemic, people fled to the woods but the scourge overtook them. The Madonna appeared on a tree holding the comforting Child, and the fever quickly disappeared.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -46,7 +46,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.1350,
     year: 1500,
     description: "The Blessed Virgin appeared in the woodlands of Lumarzo, inspiring devotion among the local villagers.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -58,7 +58,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 16.0355,
     year: 1500,
     description: "In the spring of 1500, a deaf-mute shepherd named Felice Olcese saw the Virgin who asked him to tell a priest to build a church in her honor.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -70,7 +70,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.1008,
     year: 1500,
     description: "A devout farmer and hermit saw Mary as the Queen of the Sky circled by numerous angels. Miracles verified the Marian apparition, leading to the consecration of a chapel.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -82,7 +82,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -6.6053,
     year: 1503,
     description: "On December 18, 1503, the Virgin of Remedies appeared, establishing a prominent regional feast and sanctuary in Huelva.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -94,7 +94,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.2958,
     year: 1503,
     description: "Blessed Maddalena Panattieri saw the Virgin in 1503 shortly before her holy passing. She was later beatified by Pope Leo XII.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -106,7 +106,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.1572,
     year: 1504,
     description: "A young man prayed fervently for his sick brother. Mary appeared on September 29, promising his cure. In gratitude, he erected the famous Sanctuary of Madonna di Tirano.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -118,7 +118,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.4239,
     year: 1505,
     description: "On June 9, 1505, Our Lady appeared to a woman named Giovanna near a walnut tree.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -130,7 +130,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -5.6353,
     year: 1505,
     description: "On July 2, 1505, Mary appeared radiant with light to shepherd Alvar Simón Fernández on the Camino de Santiago pilgrim road. She launched a stone with his slingshot that miraculously grew to mark the sanctuary site.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -142,7 +142,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.2783,
     year: 1508,
     description: "Our Lady appeared to Carlo Baldissera Zanon on the shores of Chioggia, becoming the protector of local mariners and fishing vessels.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -154,7 +154,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 2.0353,
     year: 1509,
     description: "On March 19, 1509, Our Lady of Thirteen Stones appeared, establishing a lasting sanctuary in Aveyron.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -166,7 +166,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.6083,
     year: 1510,
     description: "On March 9, 1510, Mary appeared sitting quietly on the green wheat to old farmer Giovanni Cigana, ordering fasting and repentance for the forgiveness of sins.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -178,7 +178,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.6773,
     year: 1510,
     description: "On April 28, 1510, Mary appeared to a father and son collecting leaves. To confirm her real presence and desire for a sanctuary, a large chestnut tree suddenly produced fully ripe fruit out of season.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -190,7 +190,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.5850,
     year: 1510,
     description: "On September 8, 1510, Our Lady appeared on the mountainside to Antonio Zampara.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -202,7 +202,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.7608,
     year: 1511,
     description: "In May 1511, Mary appeared to grape harvester Domenica Zanenga, urging the construction of a sanctuary that was later entrusted to Augustinian friars.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -214,7 +214,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.2450,
     year: 1511,
     description: "Imprisoned in a fortress dungeon, St. Jerome Emiliani prayed to Mary. She appeared in light, miraculously released him from his heavy iron chains, and led him safely through enemy battle lines to her shrine in Treviso.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -226,7 +226,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 16.4556,
     year: 1512,
     description: "A blind man prayed before a wooden statue carved by a knight after an apparition and miraculously regained his sight. The sanctuary expanded into a magnificent basilica known as the 'Silesian Jerusalem'.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -238,7 +238,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.8164,
     year: 1512,
     description: "On July 2, 1512, Our Lady appeared to Petruccia Carobbio near an ash tree.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -250,7 +250,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.6033,
     year: 1512,
     description: "On August 14, 1512, Mary appeared to watchmen Piero Zagabria and Giovanni Grandi at the gates of Strunjan.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -262,7 +262,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.3093,
     year: 1513,
     description: "City councilor Maurice von Mettenwyl saw the Virgin Mary surrounded by a heavenly light and promised to rebuild a chapel in her honor.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -274,7 +274,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.5636,
     year: 1514,
     description: "On April 12, 1514, Mary appeared to young peasant Autilia Scala, instructing her to lead Count Orsini to unearth a buried 13th-century Byzantine icon and bell under a bush.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -286,7 +286,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 0.5000,
     year: 1515,
     description: "The Virgin visited young shepherdess Angleze Sagazan three times near the source of the Cier, requesting: 'I want a chapel to be built here.'",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -298,7 +298,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.4922,
     year: 1516,
     description: "On Christmas night in Santa Maria Maggiore, St. Cajetan of Thiene experienced a sublime vision where Mary placed the Infant Jesus directly into his arms.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -310,7 +310,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.1558,
     year: 1518,
     description: "On July 2, 1518, Mary appeared to Angela Schiaffino, asking for a church and convent on the mountain overlooking the Ligurian sea.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -322,7 +322,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.9608,
     year: 1519,
     description: "Mary appeared to Battista Comino Bajoni, a deaf-mute shepherd, giving him speech and a message calling the region away from vice. As a sign, she gave him a rock that miraculously changed color.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -334,7 +334,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 6.1489,
     year: 1519,
     description: "On August 10 and 11, Mary appeared with the Child Jesus, St. Michael, and St. Bernard to woodcutter Jean de la Baume. The sanctuary later gained renown for the miraculous birth of King Louis XIV.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -346,7 +346,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -2.0943,
     year: 1520,
     description: "While praying before her icon, Mary appeared to Bishop Gavan Dumbar, foretelling that despite widespread religious turmoil, his fidelity would be preserved.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -358,7 +358,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 0.0833,
     year: 1520,
     description: "Mary appeared to a young shepherdess asking for a church. When the girl asked Mary to guard her flock while she fetched her father, Mary miraculously watched over the sheep.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -370,7 +370,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.9114,
     year: 1521,
     description: "During a violent storm, Mary rescued three-year-old Oliva Lannese. The town went in procession to the mountain and unearthed an ancient fresco of the Virgin on her throne.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -382,7 +382,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 1.8267,
     year: 1522,
     description: "While recovering from battle wounds at Loyola, St. Ignatius experienced a profound night-time vision of the Virgin Mary and Child, initiating his total conversion and the foundation of the Jesuits.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -394,7 +394,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -2.9469,
     year: 1523,
     description: "Francisca la Brava reported seeing the Virgin surrounded by angels and receiving a candle. She was subsequently examined and condemned by the Inquisition.",
-    approvalStatus: "Unapproved Apparitions",
+    approvalStatus: "Unapproved apparitions",
     priority: 5
   },
   {
@@ -406,7 +406,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.2736,
     year: 1527,
     description: "Mary appeared to 22-year-old orphan Maria Amadini, calling for fasting and repentance to avert impending calamities. She confirmed her presence by healing Maria's brother.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -418,7 +418,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 3.2833,
     year: 1529,
     description: "During a devastating plague epidemic, Mary appeared in an intense blue light during Holy Mass. Soon after, the epidemic miraculously stopped.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -430,7 +430,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.5639,
     year: 1529,
     description: "On October 11 and 23, Mary appeared to Catholic soldiers on Mount Gubel, inspiring their defense and leading to a miraculous victory despite being vastly outnumbered.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -442,7 +442,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.2681,
     year: 1529,
     description: "Our Lady appeared to an elderly woman in Naples during June of 1529.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -454,7 +454,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -99.1179,
     year: 1531,
     description: "Mary appeared on Tepeyac Hill to St. Juan Diego, leaving her miraculous, unfading image imprinted directly on his tilma cloak. It is the most visited Marian shrine in the world.",
-    approvalStatus: "Vatican Approved",
+    approvalStatus: "Vatican approved",
     priority: 1
   },
   {
@@ -466,7 +466,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.3986,
     year: 1532,
     description: "In August 1532, Mary appeared to deaf-mute peasant boy Filippo Viotti, miraculously healing him and requesting a sanctuary on the mountain.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -478,7 +478,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 1.1482,
     year: 1532,
     description: "Anne Wentworth, suffering from terrible demonic seizures, was miraculously and instantly restored before the image of Our Lady of Grace, an event documented by St. Thomas More.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -490,7 +490,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -77.0428,
     year: 1535,
     description: "Prominent early colonial apparitions and Marian devotion established in Lima.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -502,7 +502,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 7.2389,
     year: 1535,
     description: "The Virgin appeared above the city bastion to protect the inhabitants during regional religious conflicts.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -514,7 +514,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.4811,
     year: 1536,
     description: "On March 18, 1536, Mary appeared in dazzling light to farmer Antonio Botta in a stream, calling for prayer, mercy, and conversion. She is the official patroness of Savona.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -526,7 +526,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -71.9673,
     year: 1536,
     description: "On May 23, 1536, Mary appeared over the roof to Christians besieged by arsonist fires. The flames miraculously went out, saving the community.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -538,7 +538,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.5167,
     year: 1536,
     description: "On May 31, 1536, Mary appeared to Antonio de' Antoni on Monte Stella.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -550,7 +550,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.8167,
     year: 1536,
     description: "Mary appeared to a 12-year-old shepherdess, leading to the construction of a beautiful Renaissance Carmelite sanctuary by grand-ducal architects.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -562,7 +562,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 7.9167,
     year: 1537,
     description: "Apparition of the Virgin of Graces on May 20, 1537 in Piedmont.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -574,7 +574,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.6558,
     year: 1539,
     description: "Mary appeared on Mount Skalnica to shepherdess Ursula Ferligoj: 'Tell the people to build a temple here and ask for my grace.' Despite being imprisoned by skeptical authorities, Ursula miraculously escaped every time.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -586,7 +586,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.6217,
     year: 1539,
     description: "Mary appeared to a shepherdess calling the people to prayer and reconciliation.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -598,7 +598,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -98.2255,
     year: 1541,
     description: "Our Lady appeared to Juan Diego Bernardino during an epidemic, leading him to a healing spring of water and revealing a miraculous wooden statue inside a burning pine tree.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -610,7 +610,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 4.7005,
     year: 1543,
     description: "Mary appeared to Cornelius Wischaven, guiding him to join St. Peter Faber and St. Ignatius of Loyola as the first Flemish Jesuit.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -622,7 +622,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.4208,
     year: 1543,
     description: "On May 28, 1543, Mary appeared in a blooming blackthorn bush to deaf-mute shepherdess Giulia Manfredi, giving her speech and asking for the observance of Sabbath rest.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -634,7 +634,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.1283,
     year: 1543,
     description: "Marian apparition recorded in Cantu during May of 1543.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -646,7 +646,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -71.0853,
     year: 1544,
     description: "Indigenous miners discovered a miraculous statue of Mary in the mountains of Chile, establishing one of South America's most revered national sanctuaries.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -658,7 +658,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.6889,
     year: 1548,
     description: "On June 25, 1548, the Blessed Virgin of Graces appeared in the hills of Rimini.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -670,7 +670,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.5861,
     year: 1550,
     description: "On February 22, 1550, Mary appeared to blind beggar Antonia Bedini, promising her cupboard would provide bread for the rest of her life.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -682,7 +682,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -3.5986,
     year: 1550,
     description: "Mary appeared as a simple peasant woman to help and heal St. John of God after a severe fall from his horse, initiating his lifelong hospital apostolate.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -694,7 +694,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -9.1393,
     year: 1550,
     description: "Mary appeared to Sebastian Barradda, exhorting him to enter the Jesuit order.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -706,7 +706,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.4167,
     year: 1553,
     description: "Mary appeared to Leonhard Weissensteiner in the Dolomite forests, curing his illness and leading him to unearth a miraculous Pietà statue. The sanctuary was visited by Pope John Paul I and St. John Paul II.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -718,7 +718,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 79.8436,
     year: 1580,
     description: "Mary appeared to a shepherd boy offering milk for the Child Jesus, and later miraculously healed a crippled boy selling buttermilk. Highly revered by millions as the 'Lourdes of the East'.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -730,7 +730,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -0.3486,
     year: 1550,
     description: "On September 8, 1550, Mary appeared to widow Louise Estivalle as she knelt on the road, granting her a miraculous vision across the miles of the Holy Sacrifice of the Mass.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -742,7 +742,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.9167,
     year: 1555,
     description: "On April 17, 1555, the Child Jesus in a fresco miraculously stepped down to play with three children before Mary called Him back.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -754,7 +754,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.6833,
     year: 1556,
     description: "Apparition to 10-year-old Pasquino da Vignale in 1556.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -766,7 +766,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.8886,
     year: 1556,
     description: "On May 21, 1556, the five Fiamberti sisters saw Mary surrounded by angels while praying the rosary in the olive groves.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -778,7 +778,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.9575,
     year: 1557,
     description: "On April 22, 1557, Mary appeared in dazzling light to farmer Bertolino near an olive tree. When skeptics beat him, Mary paralyzed their arms until they repented, and caused a miraculous spring to flow.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -790,7 +790,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.2292,
     year: 1557,
     description: "On July 2, 1557, Mary appeared to peasant Giovanni Chichizola, leaving a miraculous Byzantine icon of her Dormition that mysteriously returned to the mountain whenever moved.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -802,7 +802,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.2167,
     year: 1557,
     description: "Mary appeared with St. Mary Magdalene and St. Catherine to Jesuit theologian Giacomo Ledesma, promising her protection during spiritual trials.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -814,7 +814,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.5714,
     year: 1558,
     description: "On July 2, 1558, Mary appeared to two shepherdesses dying of thirst in the pastures, opening a miraculous spring of pure water under their feet.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -826,7 +826,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 31.0335,
     year: 1559,
     description: "When Jesuit missionary Fr. Gonçalo da Silveira gave the Emperor of Monomotapa an icon of Mary, the night skies were miraculously illuminated by the Queen of Heaven for five consecutive nights.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -838,7 +838,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -4.7794,
     year: 1560,
     description: "Mary appeared to a despondent workman, directing him to a hidden wooden statue near a healing spring.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -850,7 +850,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.1667,
     year: 1562,
     description: "On May 31, 1562, Mary appeared to a woman named Persiana.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -862,7 +862,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 7.9833,
     year: 1562,
     description: "On June 26, 1562, Mary appeared to Domenica di Miglianotto, healing her infirmity.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -874,7 +874,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -5.0883,
     year: 1562,
     description: "Mary appeared to St. Peter of Alcantara, the great Franciscan ascetic and reformer, foretelling his heavenly passing.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -886,7 +886,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -4.6816,
     year: 1563,
     description: "St. Teresa of Ávila, the great Doctor of the Church and Carmelite reformer, experienced sublime mystical visions where Mary clothed her in a garment of immaculate purity.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -898,7 +898,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -2.1500,
     year: 1564,
     description: "Mary appeared with St. Francis and St. Clare to St. Paschal Baylón while he tended sheep, urging him to enter the Franciscan Order.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -910,7 +910,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.0408,
     year: 1566,
     description: "Mary appeared in radiant light to Capuchin friar Jerome, predicting his exact transition to heaven while the Angelus bells tolled.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -922,7 +922,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 16.3738,
     year: 1567,
     description: "When young St. Stanislaus Kostka lay gravely ill in Vienna, Mary appeared with angels and placed the Infant Jesus in his arms, miraculously restoring his health.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -934,7 +934,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 16.5817,
     year: 1568,
     description: "Friar Giuliano di Camerino experienced a glorious vision of the Queen of Heaven shortly before his holy passing.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -946,7 +946,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.5167,
     year: 1568,
     description: "A Capuchin novice enduring demonic temptations experienced an apparition of Mary that restored profound peace to his soul.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -958,7 +958,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.8833,
     year: 1569,
     description: "Capuchin friar Alexander of Butrium prayed fervently during spiritual trials. Mary appeared and crowned him with a wreath of victory.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -970,7 +970,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 18.2711,
     year: 1569,
     description: "When Calvinists seized the historic shrine, Mary appeared in the church window to Thomas Mathinicz and later on the portal. Informed of the miracle, Emperor Leopold I returned the sanctuary to Catholics.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -982,7 +982,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.9167,
     year: 1570,
     description: "Mary appeared multiple times to Capuchin monk Jerome, once predicting his death, and another time miraculously guiding him when lost on rural roads at night.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -994,7 +994,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -5.9845,
     year: 1570,
     description: "St. Alphonsus Rodriguez, Jesuit master of novices in Seville, spoke with Mary in prayer with the tender intimacy of a child with his mother.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1006,7 +1006,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -1.2500,
     year: 1569,
     description: "On April 7, 1569, a miraculous apparition and discovery of Our Lady of Sancho Abarca occurred in Aragon.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1018,7 +1018,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -70.4333,
     year: 1570,
     description: "A mysterious radiant maiden walked the mountain markets saying she walked 'with God, the sun, and the stars' before disappearing into a sparkling rock cave. Today, a colossal 154-foot monument marks the holy sanctuary.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -1030,7 +1030,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.5125,
     year: 1572,
     description: "On August 15, 1572, Mary appeared to a deaf-mute girl on the bridge, miraculously restoring her hearing and voice.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1042,7 +1042,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.8167,
     year: 1573,
     description: "On June 9, 1573, shepherdess Jacopina Mariotti prayed before a wayside icon and experienced an apparition of Mary. During Holy Mass in 1602, a miraculous healing fountain surged from the dry ground.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1054,7 +1054,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 3.2500,
     year: 1573,
     description: "Jesuit Fr. Martin Gutierrez saw Mary in a snow-white mantle sheltering the Society of Jesus. While visiting a rural chapel in Languedoc, Mary foretold his impending martyrdom.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1066,7 +1066,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.6517,
     year: 1574,
     description: "In May 1574, a mass apparition of the Virgin Mary occurred before 4,000 gathered faithful.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1078,7 +1078,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.5764,
     year: 1576,
     description: "On the Feast of the Immaculate Conception, Capuchin friar Pacifico saw Mary in the choir, revealing the profound mystery of her Immaculate Conception amidst the fragrance of roses.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1090,7 +1090,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.5833,
     year: 1576,
     description: "In May 1576, Mary appeared to peasant Alessandro Muzio after a severe hailstorm, preserving his fields from destruction.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1102,8 +1102,20 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.0936,
     year: 1576,
     description: "Capuchin monk Giacomo experienced a joyful apparition of Mary on his deathbed: 'The Triumphant Queen of Heaven is here! She is coming to get me.'",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
+  },
+  {
+    id: "lezajsk_1578",
+    title: "Our Lady of Leżajsk",
+    location: "Leżajsk",
+    country: "Poland",
+    lat: 50.2639,
+    lng: 22.4206,
+    year: 1578,
+    description: "Mary appeared in dazzling light to humble woodcutter Tomasz Michałek in the forest, asking for a church where faithful would receive divine graces. Following official canonical investigations and documented miraculous healings, the Vatican approved the magnificent pilgrimage basilica.",
+    approvalStatus: "Vatican approved",
+    priority: 1
   },
   {
     id: "conflenti",
@@ -1114,7 +1126,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 16.2842,
     year: 1578,
     description: "On June 7, Mary appeared atop a grand oak tree to shepherd Lorenzo Folino, asking for a sanctuary in Visora. She confirmed her presence by miraculously healing a boy blind and lame from birth.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1126,7 +1138,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.3667,
     year: 1578,
     description: "In December 1578, Mary appeared to shepherd Felice Calcagno, guiding him to discover her miraculous wooden icon in the snow.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1138,7 +1150,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -3.7038,
     year: 1578,
     description: "The Virgin appeared to Jesuit Fr. Didacus Mendoza on his deathbed, filling his soul with heavenly comfort.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1150,7 +1162,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 49.1089,
     year: 1579,
     description: "On July 8, 1579, Mary appeared in a vision to 8-year-old Matrona, revealing the exact location of her ancient holy icon buried under the ash and rubble of a burned house. It became the holy palladium of Russia.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -1162,7 +1174,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.5528,
     year: 1580,
     description: "Two Capuchin friars caught in a violent storm were sheltered in a mysterious cottage by a mother of indescribable beauty. When they departed and looked back, the house vanished.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -1174,7 +1186,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.5167,
     year: 1580,
     description: "On July 16, Mary appeared on the high mountain pastures to 18-year-old shepherdess Dietegen Giategen, calling for regional repentance. At 2,434 meters, it is the highest Marian sanctuary in Europe.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -1186,7 +1198,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 4.7005,
     year: 1581,
     description: "Dominican Fr. Henry Calstro was blessed with numerous encounters with Mary, who consoled him during trials and strengthened him at his holy passing.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1198,7 +1210,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 10.3547,
     year: 1582,
     description: "On June 30, 1582, Mary appeared in a luminous glow to 10-year-old William Wintzerer who lay gravely ill in a cornfield, instantly curing him and urging a devout Christian life.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1210,7 +1222,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -4.5036,
     year: 1582,
     description: "The renowned Breton missionary Fr. Michel Le Nobletz was guided by Mary from childhood, when she opened locked chapel doors for him, to his holy death.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1222,7 +1234,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -3.7038,
     year: 1583,
     description: "On the Feast of the Assumption in the Jesuit church of Madrid, young St. Aloysius Gonzaga heard Mary's voice clearly in contemplation: 'Come into the Order entitled to my Son.'",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -1234,7 +1246,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.2558,
     year: 1584,
     description: "The great Carmelite mystic experienced profound ecstasies where she beheld Mary in Paradise dispensing fountains of milk and the precious blood of Jesus upon humanity.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -1246,7 +1258,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.8833,
     year: 1585,
     description: "On May 24, 1585, Mary appeared to deaf-mute peasant Francesco Zamboni, instantly restoring his speech and asking Count Barbò to erect a beautiful circular sanctuary.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1258,7 +1270,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.5678,
     year: 1585,
     description: "On August 29, 1585, miraculous apparitions of St. Mary at the Lily occurred before multiple witnesses.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1270,7 +1282,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.6500,
     year: 1586,
     description: "On July 12, 1586, Mary appeared as a woman in black with a white veil reading a small book to 10-year-old Bartolomea Bucanelli and 11-year-old Dorotea Battistoni.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1282,7 +1294,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 13.2344,
     year: 1587,
     description: "During battle against overwhelming forces, Mary appeared with a flaming sword to defend the Christian troops.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1294,7 +1306,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 6.9603,
     year: 1587,
     description: "A young artist in the Jesuit college who lovingly painted icons of Mary was comforted by her apparition and his guardian angel at his deathbed.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1306,7 +1318,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.4922,
     year: 1587,
     description: "St. Felix of Cantalice, the beloved Capuchin almoner known as 'Brother Deo Gratias', was favored with apparitions where Mary placed the Infant Jesus into his arms.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1318,7 +1330,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.4922,
     year: 1587,
     description: "The 'Saint of Joy' and founder of the Oratory experienced multiple apparitions of Mary who comforted him during illness and shielded him from danger.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -1330,7 +1342,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 0.1492,
     year: 1587,
     description: "Mary appeared to Domenge Liloye near a miraculous spring, protecting the community from a devastating plague epidemic.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1342,7 +1354,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 14.2681,
     year: 1588,
     description: "A prominent Neapolitan lady gravely ill turned to Mary in prayer and experienced an apparition where Mary took away her illness.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -1354,7 +1366,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.1833,
     year: 1588,
     description: "In January 1588, Mary appeared at 1,230 meters altitude to monk Pietro dal Dosso. In 1955, Pope Pius XII proclaimed Our Lady of Grace at Costa the official patroness of all skiers in Italy.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1366,7 +1378,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -58.2444,
     year: 1589,
     description: "Miraculous apparitions and preservation of the wooden statue of Our Lady among indigenous Guarani converts, establishing one of Argentina's greatest pilgrimage basilicas.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -1378,7 +1390,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -77.0428,
     year: 1590,
     description: "Jesuit missionary Ruys de Portyllo was guided by visions of Our Lady throughout his arduous colonial apostolate.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1390,7 +1402,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 11.8894,
     year: 1591,
     description: "The renowned Augustinian mystic and court preacher in Madrid experienced sublime visions of Mary that inspired his spiritual treatises.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1402,7 +1414,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 9.0153,
     year: 1594,
     description: "On July 29, 1594, Mary appeared on the hillside to two young girls suffering from demonic possession and completely cured them, requesting a sanctuary on the border with Italy.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1414,7 +1426,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 12.5469,
     year: 1594,
     description: "Capuchin historian Bernardino di Colpetrazzo saw Mary descending from heaven with a magnificent crown of flowers as a reward for his pure soul and diligent monastic history.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1426,7 +1438,7 @@ export const century16Apparitions: Apparition[] = [
     lng: -78.5249,
     year: 1594,
     description: "Mary appeared to Mother Mariana de Jesus Torres at her Conceptionist convent in Quito, ordering a miraculous statue and foretelling crises of faith and vocations in the 20th century.",
-    approvalStatus: "Bishop Approved",
+    approvalStatus: "Bishop approved",
     priority: 1
   },
   {
@@ -1438,7 +1450,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 5.0415,
     year: 1595,
     description: "A young sick girl bedridden for years was visited by Mary and angels at her holy transition to eternity.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -1450,7 +1462,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.7000,
     year: 1595,
     description: "On September 11, 1595, Mary appeared over the mountain to the feuding inhabitants of Campo Ligure and Masone after they finally signed a peace treaty, cementing their reconciliation.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -1462,7 +1474,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.5583,
     year: 1596,
     description: "Mary appeared multiple times to Portuguese Jesuit moral theologian Fr. Emmanuel Sa, once accompanied by St. Ignatius of Loyola to predict the day of his holy passing.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1474,7 +1486,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 7.1620,
     year: 1597,
     description: "The great Doctor of the Church and 'Second Apostle of Germany' was favored with frequent ecstasies and Marian apparitions throughout his life and at his holy deathbed in Fribourg.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -1486,7 +1498,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 3.8828,
     year: 1598,
     description: "A young man whose faith had grown lukewarm experienced an apparition of Mary that roused his soul to profound devotion and charity.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -1498,7 +1510,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 8.6019,
     year: 1599,
     description: "Mary appeared to Clarice among the rocks at Molare at the turn of the century.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   }
 ];

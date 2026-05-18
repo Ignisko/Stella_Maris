@@ -10,7 +10,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 2.1734,
     year: 1218,
     description: "The Blessed Virgin appeared to three men who established the Mercedarian religious order to redeem Christian captives from Moorish imprisonment.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -22,7 +22,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 0.4789,
     year: 1251,
     description: "In answer to St. Simon Stock's appeal for help, the Virgin Mary appeared to him with a scapular in her hand and the promise of safety from Hell.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -34,7 +34,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 43.4667,
     year: 1300,
     description: "The Virgin appeared to the Russian hermit St. Abraham de Gorodetsk and demanded that he construct a hermitage in the wilderness.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -46,7 +46,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 9.7225,
     year: 1300,
     description: "The Virgin Mary appeared to two shepherdesses, healing one who was mute from birth, and left a miraculous Byzantine-style icon in an olive tree.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -58,7 +58,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 16.2514,
     year: 1301,
     description: "Simone Adami, a blind beggar, washed in a nearby fount after Mary spoke to him in a dream: 'Wash in the fount and see.' His sight was restored.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -70,7 +70,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 11.8894,
     year: 1306,
     description: "St. Agnes of Montepulciano received three small stones from Mary with instructions to build a church and Dominican convent in her honor.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -82,7 +82,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 12.3086,
     year: 1306,
     description: "A young mother shouted at her child in anger; when a demon appeared, a radiant woman saved the boy. The shrine became famous for regional pilgrimages.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -94,7 +94,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 12.7333,
     year: 1308,
     description: "St. Clare of Montefalco received a magnificent apparition of Holy Mary preceded by Angels shortly before her death. Her heart and body remain incorrupt.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -106,7 +106,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 14.8893,
     year: 1308,
     description: "Mary accompanied St. Bridget of Sweden throughout her life with many revelations, guiding her to found the monastic Brigidine Order.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -118,7 +118,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 9.6773,
     year: 1310,
     description: "Our Lady appeared to a peasant in the chestnut groves around Bergamo.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -130,7 +130,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 11.2558,
     year: 1310,
     description: "Alexis and his companions were favored with an apparition of the Mother of God, inspiring them to found the Servite Order.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -142,7 +142,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 10.4000,
     year: 1311,
     description: "The famous Dominican preacher Bl. Jordan was favored with a vision of Our Lady entering the friars' refectory and serving them at table.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -154,7 +154,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 4.8055,
     year: 1311,
     description: "Carthusian monk Peter Favier was terrified of death until Mary appeared, comforting him: 'Do you not think my compassion will rescue you?'",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -166,7 +166,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 4.8056,
     year: 1316,
     description: "The Queen of Saints appeared to Pope John XXII, promising the speedy deliverance from Purgatory for children of Carmel (the Sabbatine Privilege).",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -178,7 +178,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 9.1732,
     year: 1322,
     description: "The German Dominican mystic received many apparitions of Mary and the Angels, shaping his famous 'Little Book of Eternal Wisdom'.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -190,7 +190,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 1.8376,
     year: 1325,
     description: "A mother weeping over her captive son saw Mary who promised his release; days later the boy returned, his chains miraculously dissolved.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -202,7 +202,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 8.2069,
     year: 1326,
     description: "The Madonna appeared miraculously to Bishop Guido of Asti, known for his relentless peacemaking efforts among the feudal lords.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -214,7 +214,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -5.3275,
     year: 1326,
     description: "Cowherd Gil Cordero experienced an apparition of Mary directing him to unearth a miraculous statue given by Pope Gregory the Great 600 years prior.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -226,7 +226,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 37.6173,
     year: 1326,
     description: "The Holy Virgin appeared to an envious abbot who had stolen from Saint Peter of Moscow, leading him to repent and return the icon of Mary.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -238,7 +238,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 11.2928,
     year: 1328,
     description: "On his ordination day, Mary said: 'I chose you as my servant.' Years later she appeared on Christmas night to foretell his heavenly passing on Epiphany.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -250,7 +250,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 0.4833,
     year: 1328,
     description: "Mary appeared to St. Peter Thomasius encouraging his intense apostolic activity and peace mediation between the Greek and Roman churches.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -262,7 +262,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -7.5858,
     year: 1336,
     description: "Shortly before her death, the widowed Queen Elizabeth of Portugal saw Mary as the wonderful 'Queen of Heaven' preparing her for a holy departure.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -274,7 +274,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 10.9167,
     year: 1336,
     description: "Mary appeared to a sick girl asking her to tell an Augustinian priest to spread her message in Lenten sermons; her image was miraculously imprinted on the wall.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -286,7 +286,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 7.8542,
     year: 1336,
     description: "Our Lady appeared to save an expecting mother from mercenaries; the blackthorn bushes nearby miraculously bloomed in the dead of winter.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -298,7 +298,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 2.3522,
     year: 1338,
     description: "On the feast of the Annunciation, Our Lady appeared with the Child Jesus during Holy Mass before an entire Franciscan monastic community.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -310,7 +310,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 38.1300,
     year: 1340,
     description: "Mary appeared with Apostles Peter and John to St. Sergius of Radonezh, reassuring him of her perpetual patronage over his monastery.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -322,7 +322,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 3.3878,
     year: 1340,
     description: "During a siege, the people symbolically gave the keys of the city to Mary. Miraculous apparitions in the enemy camp caused the besieging soldiers to flee.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -334,7 +334,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 31.2358,
     year: 1344,
     description: "Mary appeared to Franciscan missionary Livini: 'Bring your work to completion, so you will see Jesus.' He achieved martyrdom later that year.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -346,7 +346,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 10.3394,
     year: 1345,
     description: "A crippled shepherd boy found a miraculous image; after carrying it up the mountain as instructed, he was completely healed.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -358,7 +358,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 11.3306,
     year: 1345,
     description: "St. Catherine of Siena experienced profound mystical visions where the Blessed Virgin presented her to Jesus for her mystical espousal.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -370,7 +370,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 9.7200,
     year: 1356,
     description: "The Queen of Heaven with baby Jesus in her arms appeared to 15-year-old Marina Cassone, prompting the bishop to construct a grand sanctuary.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -382,7 +382,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 14.2681,
     year: 1359,
     description: "Count Charles of Verona was imprisoned by Turks; after desperate prayer to Mary, he was miraculously transported to a Carmelite church in Naples.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -394,7 +394,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 9.5333,
     year: 1386,
     description: "The Virgin Mary appeared to a young deaf-mute shepherdess in Lombardy.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -406,7 +406,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 14.0175,
     year: 1363,
     description: "Archbishop Ernest Pardubitz saw Mary's statue miraculously turn its head in disapproval of his worldly life, sparking his profound conversion.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -418,7 +418,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -0.3763,
     year: 1363,
     description: "Confused by spiritual doubts, young Vincent asked Mary for understanding. She appeared to reassure him, empowering his historic preaching.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -430,7 +430,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -8.9333,
     year: 1380,
     description: "A poor woman named Catarina Anes was guided by Mary to uncover a miraculous healing spring on the mountain Valle de Deus.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -442,7 +442,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 7.4919,
     year: 1384,
     description: "A small child who fell from a steep cliff was miraculously caught and saved by a wonderful lady, leading to the construction of the famous abbey.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -454,7 +454,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -4.1184,
     year: 1392,
     description: "Mary appeared to a shepherd directing the bishop to unearth a buried first-century wooden icon of the Mother of God on a throne.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -466,7 +466,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -16.3715,
     year: 1392,
     description: "Two aboriginal Guanche shepherds discovered a miraculous wooden image of Mary carrying a child and a golden bird, leading to the conversion of the island.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -478,7 +478,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -1.3833,
     year: 1395,
     description: "On Ascension Eve, a young shepherd saw a bright light illuminating a tree and discovered a beautiful statue of Mary among the branches.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -490,7 +490,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: 10.3167,
     year: 1399,
     description: "Our Lady appeared to a peasant during July of 1399.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -502,7 +502,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -3.0667,
     year: 1399,
     description: "Two shepherds discovered a bush shining brighter than the sun with Our Lady standing above it, recorded by the town notary.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -514,7 +514,7 @@ export const century13and14Apparitions: Apparition[] = [
     lng: -4.6816,
     year: 1399,
     description: "Historical accounts record an apparition of the Virgin Mary outside the medieval walls of Avila at the turn of the century.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   }
 ];

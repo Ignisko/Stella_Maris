@@ -1,9 +1,11 @@
 import { useState, useMemo } from 'react';
+import { List } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
 import FilterMenu, { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './components/FilterMenu';
 import SearchBar from './components/SearchBar';
+import DirectoryModal from './components/DirectoryModal';
 import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
 
@@ -11,6 +13,7 @@ function App() {
   const [selectedApparition, setSelectedApparition] = useState<Apparition | null>(null);
   const [activeFilters, setActiveFilters] = useState<string[]>(FILTER_CATEGORIES.filter(c => c !== "Dismissed"));
   const [activeCenturies, setActiveCenturies] = useState<string[]>(CENTURY_FILTERS.map(c => c.id));
+  const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
@@ -61,7 +64,39 @@ function App() {
         <p style={{ fontSize: '14px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
           Marian apparitions map
         </p>
+        <button
+          onClick={() => setIsDirectoryOpen(true)}
+          style={{
+            marginTop: '10px',
+            padding: '8px 16px',
+            borderRadius: '20px',
+            background: 'var(--accent-color)',
+            color: '#0f172a',
+            border: 'none',
+            fontSize: '13px',
+            fontWeight: 600,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            boxShadow: '0 4px 12px rgba(56, 189, 248, 0.3)',
+            transition: 'all 0.2s'
+          }}
+          onMouseOver={e => e.currentTarget.style.transform = 'scale(1.03)'}
+          onMouseOut={e => e.currentTarget.style.transform = 'scale(1)'}
+        >
+          <List size={15} />
+          <span>Browse List ({filteredApparitions.length})</span>
+        </button>
       </div>
+
+      <DirectoryModal
+        isOpen={isDirectoryOpen}
+        onClose={() => setIsDirectoryOpen(false)}
+        apparitions={filteredApparitions}
+        onSelectApparition={handleSelectApparition}
+      />
 
       <SearchBar 
         apparitions={apparitionsData} 

@@ -10,7 +10,7 @@ export const earlyApparitions: Apparition[] = [
     lng: -0.8891,
     year: 40,
     description: "According to legend, the Apostle James the Greater was proclaiming the Gospel when he saw Mary miraculously appearing in the flesh on a pillar calling him to return to Jerusalem. This is considered the first Marian apparition.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -22,7 +22,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 27.3400,
     year: 48,
     description: "According to legend, the Holy Virgin Mary appeared to the apostles, three days after her Assumption into heaven. Clad in a bright light, she promised: 'I'll stay with you in eternity.'",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -34,7 +34,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 26.5451,
     year: 81,
     description: "According to legend, St. John the Evangelist received a vision of the Virgin Mary before he composed the Book of Revelation.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -46,7 +46,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 76.5683,
     year: 105,
     description: "Our Lady appeared to children tending their flock, asking them to build a church where a miraculous perpetual spring sprouted.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -58,7 +58,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 36.9507,
     year: 231,
     description: "The Virgin Mary and the Apostle John appeared to St. Gregory the Wonderworker to clarify theological mysteries regarding the Trinity.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -70,7 +70,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 3.8829,
     year: 250,
     description: "Our Lady appeared to a recent convert named Vila, who had been plagued by a serious illness. She was completely cured and built a small chapel on the site.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -82,7 +82,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 29.9187,
     year: 305,
     description: "St. Catherine was converted by a vision of Our Lady and the Holy Child, leading her to refuse marriage to an emperor.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -94,7 +94,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 29.9808,
     year: 325,
     description: "St. Nicholas of Bari received two apparitions urging him to fulfill his spiritual mission, the second occurring during the Council of Nicaea.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -106,7 +106,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 12.4964,
     year: 352,
     description: "The Virgin Mary miraculously left snow in the middle of the hot month of August on Esquiline Hill, indicating the exact area where she wanted the St. Mary Major Basilica built.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -118,7 +118,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 35.4826,
     year: 363,
     description: "Mary appeared to St. Basil promising to protect him from the Roman emperor Julian the Apostate's plan to destroy his church.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -130,7 +130,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 7.9502,
     year: 380,
     description: "The Virgin appeared to St. Monica, mother of St. Augustine, consoling her in her afflictions.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -142,7 +142,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 36.3758,
     year: 540,
     description: "Emperor Justinian I saw a vision of the Virgin Mary, who ordered him to build a convent on the high rock upon which she was standing.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -154,7 +154,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 1.6111,
     year: 636,
     description: "A rudderless ship carrying a statue of Mary landed at Boulogne. Mary appeared to the crowd and announced she had chosen the city as a place of grace.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -166,7 +166,7 @@ export const earlyApparitions: Apparition[] = [
     lng: -4.0273,
     year: 660,
     description: "Mary praised the religious fervor of Bishop Ildefonso and handed him a valuable garment as a symbol of her protection.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -178,7 +178,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 14.7777,
     year: 663,
     description: "The Virgin appeared to St. Barabatus under the walls of the besieged city of Constantine II.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -190,7 +190,7 @@ export const earlyApparitions: Apparition[] = [
     lng: -5.0560,
     year: 722,
     description: "Our Lady appeared to Dom Pelayo, first King of the Asturias, leaving behind a statue. The Christians subsequently defeated the Moors against incredible odds.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -202,7 +202,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 8.2473,
     year: 754,
     description: "St. Boniface heard Mary's voice from a miraculous icon hanging from an oak tree, saying: 'The trunk of this oak tree is to remain forever my portrait.'",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -214,7 +214,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 8.7431,
     year: 948,
     description: "St. Konrad witnessed a magnificent procession of Angels and Christ Himself miraculously consecrating the Chapel of Our Lady of the Hermits.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -226,7 +226,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 24.3275,
     year: 963,
     description: "The Virgin appeared to Athanasius, consoling him and exhorting him not to leave the Mount, inspiring him to establish the first monastery there.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -238,7 +238,7 @@ export const earlyApparitions: Apparition[] = [
     lng: 1.0789,
     year: 980,
     description: "While St. Dustin prayed in the cathedral, the Virgin Mary appeared to him with a heavenly choir.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   }
 ];

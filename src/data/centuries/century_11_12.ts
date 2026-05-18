@@ -10,7 +10,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 13.3392,
     year: 1000,
     description: "The Blessed Virgin appeared to Santina, a mute shepherdess, who was miraculously given the gift of speech upon seeing the heavenly Mother.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -22,7 +22,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 15.6167,
     year: 1001,
     description: "The Virgin appeared on an oak tree in the forest of Cervaro to Count Irpino and a shepherd, asking them to build a church.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -34,7 +34,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 3.5234,
     year: 1008,
     description: "Mary appeared with many Angels who stretched a cord around the city to stop a plague, asking the residents to hold a procession.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -46,7 +46,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 1.8375,
     year: 1025,
     description: "A prominent early Marian apparition to a mother at the site that would later become the famous sanctuary of Montserrat.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -58,7 +58,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 1.4890,
     year: 1026,
     description: "St. Fulbert was healed from a serious illness after an apparition of the Holy Virgin. In gratitude, he founded the famous cathedral of Chartres.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -70,7 +70,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 14.6750,
     year: 1041,
     description: "The Virgin ordered a peasant woman to convince villagers to dig beneath an oak tree, where they found a precious Byzantine icon.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -82,7 +82,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 0.8741,
     year: 1061,
     description: "Our Lady appeared to Richeldis de Faverches, presenting her with the plans of the Holy House of the Holy Family in Nazareth and asking her to build a replica as a shrine.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -94,7 +94,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 13.3615,
     year: 1064,
     description: "During a long siege where disease spread among his troops, Roger I of the Normans saw an apparition of the Madonna who provided a remedy.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -106,7 +106,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 10.2798,
     year: 1080,
     description: "St. Constantius saw a Lady with the Child in her arms lifted up on a building perimeter miraculously marked by a white dove.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -118,7 +118,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 5.5697,
     year: 1085,
     description: "Our Lady appeared to the struggling student Rupert de Deutz and promised him the gift of knowledge to be dedicated in honor of God.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -130,7 +130,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 3.0039,
     year: 1087,
     description: "The Mother of God appeared to Saint Arnulfo Arnold announcing his death and granting his wish to pass away on the eve of the Assumption.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 5
   },
   {
@@ -142,7 +142,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 2.7775,
     year: 1095,
     description: "Mary appeared on the clouds as 'Queen of the Universe' to the inhabitants, asking them to do penance and establishing a miraculous fountain.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -154,7 +154,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 7.6869,
     year: 1099,
     description: "A blind man regained his sight through the Blessed Mother, who instructed him to unearth a lost portrait of her hidden since the Saracen invasions.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -166,7 +166,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: -8.7610,
     year: 1100,
     description: "A shepherdess found bread and a miraculous spring to which she was directed by the Blessed Mother.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -178,7 +178,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 5.0931,
     year: 1101,
     description: "Mary assured the Abbot of Citeaux of her permanent protection and inspired the white attire of the Cistercians.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -190,7 +190,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 15.9547,
     year: 1120,
     description: "While visiting the cave of St. Michael, the Virgin appeared to St. John of Matera and showed him where to raise a new abbey.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -202,7 +202,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 31.2357,
     year: 1134,
     description: "Three imprisoned French knights received a miraculous, radiant statue from Mary in their dungeon, which converted the Sultan's daughter Ismenia.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -214,7 +214,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 7.9000,
     year: 1138,
     description: "St. Hildegard von Bingen experienced profound visions of the 'living light' and the Mother of God, leading to her incredible theological and scientific writings.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   },
   {
@@ -226,7 +226,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: -0.1278,
     year: 1138,
     description: "The Madonna showed the young Thomas a red cassock, symbolizing his future destiny as Archbishop of Canterbury and a martyr.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -238,7 +238,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 7.8833,
     year: 1152,
     description: "St. Elizabeth of Schönau was favored with ecstasies and visions of Christ and His Blessed Mother during Mass and Divine Office.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -250,7 +250,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 15.3186,
     year: 1157,
     description: "A monk named Magnus took a small statue into the wilderness where the dense trees parted to make way for him. It became one of central Europe's most famous shrines.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 1
   },
   {
@@ -262,7 +262,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: -2.7196,
     year: 1160,
     description: "A Cistercian monk saw the Blessed Virgin Mary walking down the dormitory with an angel who wrote a list of the monks destined for heaven.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 4
   },
   {
@@ -274,7 +274,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 0.5216,
     year: 1178,
     description: "The Blessed Virgin left her holy ribbon or sash (La Santa Cinta) on the main altar of the cathedral in a night-time apparition.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 3
   },
   {
@@ -286,7 +286,7 @@ export const century11and12Apparitions: Apparition[] = [
     lng: 25.4981,
     year: 1198,
     description: "The Blessed Virgin Mary appeared in all her glory, leaving a footprint in the rock and working a series of miracles, leading to the foundation of the Lavra.",
-    approvalStatus: "Traditionally Approved",
+    approvalStatus: "Traditionally approved",
     priority: 2
   }
 ];

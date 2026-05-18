@@ -17,19 +17,38 @@
   padding: 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--bg-color);
   color: var(--text-color);
-  overflow: hidden; /* Hide scrollbars for full-screen map */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+
 #root {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 }
 
 /* Glassmorphism Utilities */

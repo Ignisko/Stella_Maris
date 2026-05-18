@@ -124,7 +124,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
     }}>
       {/* Header and Controls */}
       <div style={{ position: 'relative', minHeight: '30px', marginBottom: isExpanded ? '16px' : '4px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexWrap: 'wrap', paddingRight: '110px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', paddingRight: '80px' }}>
           <h3 style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1.5px', opacity: 0.9, margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
             <BarChart2 size={18} color="var(--accent-color)" /> Timeline
           </h3>

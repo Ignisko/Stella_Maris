@@ -37,8 +37,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, []);
 
   useEffect(() => {
-    if (globeEl.current) {
-      globeEl.current.controls().autoRotateSpeed = 0.15;
+    if (globeEl.current && globeEl.current.controls()) {
+      const controls = globeEl.current.controls();
+      controls.autoRotateSpeed = 0.15;
+      controls.minDistance = 120; // Radius is 100, min altitude 0.2 (stops camera from clipping inside the earth)
+      controls.maxDistance = 400; // max altitude 3.0 (stops camera from flying too far out)
+      controls.zoomSpeed = 0.8;
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
   }, []);
@@ -51,14 +55,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
 
   useEffect(() => {
     let animationFrameId: number;
+    let controlsConfigured = false;
     const updateScale = () => {
       if (globeEl.current) {
+        if (!controlsConfigured && globeEl.current.controls()) {
+          const controls = globeEl.current.controls();
+          controls.minDistance = 120;
+          controls.maxDistance = 400;
+          controls.zoomSpeed = 0.8;
+          controlsConfigured = true;
+        }
+
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
+          const altitude = Math.max(0.2, pov.altitude);
           let newThreshold = 1;
-          if (pov.altitude < 0.8) newThreshold = 5;
-          else if (pov.altitude < 1.4) newThreshold = 3;
-          else if (pov.altitude < 2.2) newThreshold = 2;
+          if (altitude < 0.8) newThreshold = 5;
+          else if (altitude < 1.4) newThreshold = 3;
+          else if (altitude < 2.2) newThreshold = 2;
           else newThreshold = 1;
 
           if (newThreshold !== lodRef.current) {
@@ -69,12 +83,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           let targetScale = 1;
           let targetOpacity = 1;
 
-          if (pov.altitude < 2.2) {
-             targetScale = 0.85 + (pov.altitude / 2.2) * 0.15;
+          if (altitude < 2.2) {
+             targetScale = 0.85 + (altitude / 2.2) * 0.15;
              targetOpacity = 1;
           } else {
-             targetScale = 1.0 - ((pov.altitude - 2.2) / 2.8) * 0.4;
-             targetOpacity = 1.0 - ((pov.altitude - 2.2) / 1.3);
+             targetScale = 1.0 - ((altitude - 2.2) / 2.8) * 0.4;
+             targetOpacity = 1.0 - ((altitude - 2.2) / 1.3);
           }
           
           targetScale = Math.max(0.7, Math.min(targetScale, 1.0));
@@ -82,68 +96,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           
           document.documentElement.style.setProperty('--globe-label-scale', targetScale.toString());
           document.documentElement.style.setProperty('--globe-label-opacity', targetOpacity.toString());
-
-          // =========================================================================
-          // REAL-TIME SCREEN-SPACE COLLISION DETECTION & PRIORITY RANKING ALGORITHM
-          // =========================================================================
-          const labelWrappers = Array.from(document.querySelectorAll('.globe-html-label')) as HTMLElement[];
-          
-          // Sort by priority rank (Rank 0 for active selection, then 1 to 5)
-          labelWrappers.sort((a, b) => {
-            const rankA = parseInt(a.dataset.priority || '3', 10);
-            const rankB = parseInt(b.dataset.priority || '3', 10);
-            return rankA - rankB;
-          });
-
-          const renderedBoxes: { left: number; top: number; right: number; bottom: number }[] = [];
-          const padding = 6; // Screen-space padding buffer in pixels
-
-          for (const wrapper of labelWrappers) {
-            const innerContent = wrapper.querySelector('.label-content') as HTMLElement | null;
-            if (!innerContent) continue;
-
-            // If ThreeGlobe hides the parent wrapper (e.g., when behind the globe's horizon), skip
-            if (wrapper.style.display === 'none' || !wrapper.offsetParent) {
-              innerContent.style.opacity = '0';
-              innerContent.style.pointerEvents = 'none';
-              continue;
-            }
-
-            const rect = innerContent.getBoundingClientRect();
-            // If bounding rect has zero area, it's not visible on screen
-            if (rect.width === 0 || rect.height === 0) {
-              innerContent.style.opacity = '0';
-              innerContent.style.pointerEvents = 'none';
-              continue;
-            }
-
-            const isSelected = wrapper.dataset.selected === 'true';
-            const box = {
-              left: rect.left - padding,
-              top: rect.top - padding,
-              right: rect.right + padding,
-              bottom: rect.bottom + padding
-            };
-
-            let hasCollision = false;
-            if (!isSelected) {
-              for (const r of renderedBoxes) {
-                if (!(box.right <= r.left || box.left >= r.right || box.bottom <= r.top || box.top >= r.bottom)) {
-                  hasCollision = true;
-                  break;
-                }
-              }
-            }
-
-            if (hasCollision) {
-              innerContent.style.opacity = '0';
-              innerContent.style.pointerEvents = 'none';
-            } else {
-              renderedBoxes.push(box);
-              innerContent.style.opacity = isSelected ? '1' : targetOpacity.toString();
-              innerContent.style.pointerEvents = 'auto';
-            }
-          }
         }
       }
       animationFrameId = requestAnimationFrame(updateScale);
@@ -155,17 +107,17 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   const visibleApparitions = useMemo(() => {
     const raw = apparitions.filter(app => (app.priority || 3) <= lodThreshold);
     const clusters: Apparition[] = [];
-    const threshold = 0.03; // ~3km radius
+    const threshold = 0.45; // ~50km radius matching 3D cylinder diameter (0.4 radius)
     for (const app of raw) {
       const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
       if (!existing) {
         clusters.push({ ...app });
-      } else if ((app.priority || 3) < (existing.priority || 3)) {
+      } else if ((app.priority || 3) < (existing.priority || 3) || selectedApparition?.id === app.id) {
         Object.assign(existing, app);
       }
     }
     return clusters;
-  }, [apparitions, lodThreshold]);
+  }, [apparitions, lodThreshold, selectedApparition]);
 
   const visibleHtmlLabels = useMemo(() => {
     const famousKeywords = ['guadalupe', 'fatima', 'lourdes', 'medjugorje', 'miraculous medal', 'kibeho', 'banneux', 'knock', 'aparecida', 'akita', 'czestochowa', 'pilar', 'loreto', 'carmel'];
@@ -181,7 +133,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     });
 
     const clusters: (Apparition & { clusterCount?: number })[] = [];
-    const threshold = 0.03; // ~3km
+    const threshold = 0.45; // ~50km matching 3D cylinder diameter
     for (const app of raw) {
       const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
       if (!existing) {
@@ -193,6 +145,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           existing.title = app.title;
           existing.approvalStatus = app.approvalStatus;
           existing.priority = app.priority;
+          existing.lat = app.lat;
+          existing.lng = app.lng;
         }
       }
     }
@@ -227,7 +181,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   };
 
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100vw', height: '100vh' }}>
+    <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%' }}>
       <Globe
         ref={globeEl}
         width={dimensions.width}
@@ -270,16 +224,16 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             color: #ffffff; 
             font-size: ${isSelected ? '15px' : '13px'}; 
             font-weight: ${isSelected ? '700' : '600'}; 
-            font-family: 'Outfit', sans-serif; 
+            font-family: inherit; 
             background: ${isSelected ? `rgba(${rgb}, 0.4)` : 'transparent'}; 
             padding: ${isSelected ? '6px 12px' : '2px 6px'}; 
             border-radius: 8px; 
             border: ${isSelected ? `2px solid ${statusColor}` : 'none'}; 
             backdrop-filter: ${isSelected ? 'blur(8px)' : 'none'}; 
             transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
-            opacity: ${isSelected ? '1' : '0'};
+            opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
             transform-origin: bottom center;
-            pointer-events: none; 
+            pointer-events: auto; 
             white-space: nowrap; 
             text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
             box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};

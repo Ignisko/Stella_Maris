@@ -44,7 +44,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition }
             fontSize: '14px', 
             width: '100%', 
             outline: 'none', 
-            fontFamily: 'var(--font-family)',
+            fontFamily: 'inherit',
             fontWeight: 500
           }}
         />
