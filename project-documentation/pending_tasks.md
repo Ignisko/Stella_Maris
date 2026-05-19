@@ -10,10 +10,13 @@ This document tracks completed visual, spatial, and functional improvements, alo
 - **Solid Connecting Lines**: Replaced dashed/striped connecting lines with solid vertical gradient lines that rise directly up from the timeline bars ("pushed on line").
 - **Compact Panel Height**: Scaled the timeline chart container down to `120px` to increase the visible vertical field of view of the 3D globe.
 - **Clamped Pill Offsets**: Handled boundaries to prevent text container clipping for right-aligned famous callouts (e.g., "Mother of the Word").
+- **Upward Chevron Symbol**: Changed the collapsed timeline button icon from a downward arrow ("v" / ChevronDown) to an upward arrow ("^" / ChevronUp) to clearly indicate that clicking expands the timeline panel upward.
 
 ### 2. Camera Controls & Floating Alignment
 - **Centered Camera Offsets**: Introduced responsive camera latitude offsets (`selectedLat - 14` when the timeline is open) so selected pins fly to the upper viewport area, avoiding obstruction by the bottom overlay.
-- **Aligned Pause/Play Controls**: Positioned the globe auto-rotate control button at the same bottom height (`20px`) as the collapsed timeline button, and programmed it to dynamically slide up to `210px` when the timeline panel expands.
+- **Aligned Pause/Play Controls**: Positioned the globe auto-rotate control button at the same bottom height (`20px`) as the collapsed timeline button, and programmed it to dynamically slide up to `268px` when the timeline panel expands to rest perfectly above its top edge.
+- **Stacking Context Isolation Fix**: Extracted the rotation play/pause button out of the Three-Globe canvas container's stacking context wrapper, resolving the issue where it was occluded and rendered un-clickable beneath the glassmorphism backdrop of the expanded timeline.
+
 
 ### 3. Globe Label Proximity & Density
 - **Altitude-Based Spacing**: Linked geographical label cluster spacing (`CLUSTER_DEG` from `1.2` to `12.0` degrees) directly to the zoom/altitude state (`lodThreshold`), ensuring labels dynamically show up when dataset density is low but never overlap when zoomed out.

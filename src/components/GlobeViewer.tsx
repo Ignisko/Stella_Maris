@@ -270,83 +270,85 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   };
 
   return (
-    <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%' }}>
-      <Globe
-        ref={globeEl}
-        width={dimensions.width}
-        height={dimensions.height}
-        globeImageUrl="https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
-        bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
-        backgroundImageUrl="https://unpkg.com/three-globe/example/img/night-sky.png"
-        pointsData={visibleApparitions}
-        pointLat="lat"
-        pointLng="lng"
-        pointColor={(d: any) => getStatusColor(d.approvalStatus)}
-        pointAltitude={lodThreshold <= 2 ? 0.005 : lodThreshold === 3 ? 0.008 : 0.013}
-        pointRadius={lodThreshold <= 1 ? 0.08 : lodThreshold === 2 ? 0.13 : lodThreshold === 3 ? 0.2 : lodThreshold === 4 ? 0.28 : 0.36}
-        pointsMerge={false}
-        ringsData={selectedApparition ? [selectedApparition] : []}
-        ringLat="lat"
-        ringLng="lng"
-        ringColor={(d: any) => getStatusColor(d.approvalStatus)}
-        ringMaxRadius={6}
-        ringPropagationSpeed={4}
-        ringRepeatPeriod={700}
-        onPointClick={handlePointClick}
-        onGlobeClick={handleGlobeClick}
-        htmlElementsData={visibleHtmlLabels}
-        htmlElement={(d: any) => {
-          const isSelected = selectedApparition?.id === d.id;
-          const safeTitle = escapeHtml(d.title || '');
-          const count = d.clusterCount || 1;
-          const badge = count > 1 ? `<span style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700;">+${count - 1}</span>` : '';
-          const statusColor = getStatusColor(d.approvalStatus);
-          const rgb = hexToRgb(statusColor);
-          const el = document.createElement('div');
-          el.className = 'globe-html-label';
-          el.dataset.id = d.id;
-          el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
-          el.dataset.selected = isSelected ? 'true' : 'false';
-          el.style.pointerEvents = 'none';
-          el.style.zIndex = isSelected ? '9999' : '1';
+    <>
+      <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%' }}>
+        <Globe
+          ref={globeEl}
+          width={dimensions.width}
+          height={dimensions.height}
+          globeImageUrl="https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
+          bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
+          backgroundImageUrl="https://unpkg.com/three-globe/example/img/night-sky.png"
+          pointsData={visibleApparitions}
+          pointLat="lat"
+          pointLng="lng"
+          pointColor={(d: any) => getStatusColor(d.approvalStatus)}
+          pointAltitude={lodThreshold <= 2 ? 0.005 : lodThreshold === 3 ? 0.008 : 0.013}
+          pointRadius={lodThreshold <= 1 ? 0.08 : lodThreshold === 2 ? 0.13 : lodThreshold === 3 ? 0.2 : lodThreshold === 4 ? 0.28 : 0.36}
+          pointsMerge={false}
+          ringsData={selectedApparition ? [selectedApparition] : []}
+          ringLat="lat"
+          ringLng="lng"
+          ringColor={(d: any) => getStatusColor(d.approvalStatus)}
+          ringMaxRadius={6}
+          ringPropagationSpeed={4}
+          ringRepeatPeriod={700}
+          onPointClick={handlePointClick}
+          onGlobeClick={handleGlobeClick}
+          htmlElementsData={visibleHtmlLabels}
+          htmlElement={(d: any) => {
+            const isSelected = selectedApparition?.id === d.id;
+            const safeTitle = escapeHtml(d.title || '');
+            const count = d.clusterCount || 1;
+            const badge = count > 1 ? `<span style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700;">+${count - 1}</span>` : '';
+            const statusColor = getStatusColor(d.approvalStatus);
+            const rgb = hexToRgb(statusColor);
+            const el = document.createElement('div');
+            el.className = 'globe-html-label';
+            el.dataset.id = d.id;
+            el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
+            el.dataset.selected = isSelected ? 'true' : 'false';
+            el.style.pointerEvents = 'none';
+            el.style.zIndex = isSelected ? '9999' : '1';
 
-          el.innerHTML = `<div class="label-content" style="
-            color: #ffffff; 
-            font-size: ${isSelected ? '15px' : '13px'}; 
-            font-weight: ${isSelected ? '700' : '600'}; 
-            font-family: inherit; 
-            background: ${isSelected ? `rgba(${rgb}, 0.4)` : 'transparent'}; 
-            padding: ${isSelected ? '6px 12px' : '2px 6px'}; 
-            border-radius: 8px; 
-            border: ${isSelected ? `2px solid ${statusColor}` : 'none'}; 
-            backdrop-filter: ${isSelected ? 'blur(8px)' : 'none'}; 
-            transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
-            opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
-            transform-origin: bottom center;
-            pointer-events: auto; 
-            white-space: nowrap; 
-            z-index: ${isSelected ? 9999 : 1};
-            text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
-            box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};
-            transition: opacity 0.3s ease-out, transform 0.2s ease-out;
-          ">${safeTitle}${badge}</div>`;
+            el.innerHTML = `<div class="label-content" style="
+              color: #ffffff; 
+              font-size: ${isSelected ? '15px' : '13px'}; 
+              font-weight: ${isSelected ? '700' : '600'}; 
+              font-family: inherit; 
+              background: ${isSelected ? `rgba(${rgb}, 0.4)` : 'transparent'}; 
+              padding: ${isSelected ? '6px 12px' : '2px 6px'}; 
+              border-radius: 8px; 
+              border: ${isSelected ? `2px solid ${statusColor}` : 'none'}; 
+              backdrop-filter: ${isSelected ? 'blur(8px)' : 'none'}; 
+              transform: translate(-50%, -20px) scale(${isSelected ? '1.15' : 'var(--globe-label-scale, 1)'}); 
+              opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
+              transform-origin: bottom center;
+              pointer-events: auto; 
+              white-space: nowrap; 
+              z-index: ${isSelected ? 9999 : 1};
+              text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
+              box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};
+              transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+            ">${safeTitle}${badge}</div>`;
 
-          const content = el.querySelector('.label-content') as HTMLElement;
-          if (content) {
-            content.onpointerdown = (e) => {
-              e.stopPropagation();
-              lastClickTimeRef.current = Date.now();
-              handlePointClick(d);
-            };
-            content.onclick = (e) => {
-              e.stopPropagation();
-              lastClickTimeRef.current = Date.now();
-              handlePointClick(d);
-            };
-          }
-          return el;
-        }}
-      />
+            const content = el.querySelector('.label-content') as HTMLElement;
+            if (content) {
+              content.onpointerdown = (e) => {
+                e.stopPropagation();
+                lastClickTimeRef.current = Date.now();
+                handlePointClick(d);
+              };
+              content.onclick = (e) => {
+                e.stopPropagation();
+                lastClickTimeRef.current = Date.now();
+                handlePointClick(d);
+              };
+            }
+            return el;
+          }}
+        />
+      </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
       <button
@@ -356,7 +358,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         }}
         style={{
           position: 'fixed',
-          bottom: isTimelineOpen ? '210px' : '20px',
+          bottom: isTimelineOpen ? '268px' : '20px',
           left: '20px',
           zIndex: 200,
           pointerEvents: 'auto',
@@ -380,7 +382,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       >
         {isAutoRotate ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: '2px' }} />}
       </button>
-    </div>
+    </>
   );
 };
 
