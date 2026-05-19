@@ -334,7 +334,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                       cursor: 'pointer', transition: 'all 0.2s ease',
                       opacity: selectedApparition ? (isSelected ? 1 : 0.4) : 0.9,
                       zIndex: isSelected ? 30 : 1,
-                      transform: isSelected ? 'scale(1.25)' : undefined
+                      transform: isSelected ? 'scale(1.25)' : undefined,
+                      flexShrink: 0
                     }}
                   />
                 );
