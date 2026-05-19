@@ -63,7 +63,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   }, [sorted, startY, bucketSpan, numBuckets]);
 
   const maxCount = useMemo(() => Math.max(1, ...buckets.map(b => b.apps.length)), [buckets]);
-  const tileHeight = maxCount > 25 ? 4 : maxCount > 18 ? 6 : maxCount > 12 ? 8 : 10;
+  const tileHeight = maxCount > 25 ? 4.5 : maxCount > 18 ? 6.5 : maxCount > 12 ? 9 : 12;
+  const tileWidth = maxCount > 25 ? 3 : maxCount > 18 ? 4.5 : maxCount > 12 ? 6 : 7.5;
+  const tileGap = maxCount > 25 ? 0.75 : maxCount > 18 ? 1 : 1.5;
   const tickStep = timeMode === 'modern' ? 20 : 100;
 
   const callouts = useMemo(() => {
@@ -85,7 +87,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       if (offset < 0) return;
 
       const leftPct = ((b.index + 0.5) / buckets.length) * 100;
-      const bottomPx = b.apps.length * (tileHeight + 2);
+      const bottomPx = b.apps.length * (tileHeight + tileGap);
       const clampedLeft = Math.max(6, Math.min(94, leftPct));
 
       list.push({
@@ -312,7 +314,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             <div key={b.index} style={{
               flex: 1, minWidth: 0, margin: '0 0.5px',
               display: 'flex', flexDirection: 'column-reverse', alignItems: 'center',
-              gap: '2px', height: '100%', justifyContent: 'flex-start', position: 'relative'
+              gap: `${tileGap}px`, height: '100%', justifyContent: 'flex-start', position: 'relative'
             }}>
               {b.apps.map(app => {
                 const isFuture = isPlaying && selectedApparition && app.year > selectedApparition.year;
@@ -326,9 +328,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                     onMouseEnter={() => setHoveredApp(app)}
                     onMouseLeave={() => setHoveredApp(null)}
                     style={{
-                      width: '100%', maxWidth: '10px', minWidth: '1.5px',
+                      width: '100%', maxWidth: `${tileWidth}px`, minWidth: '1.5px',
                       height: `${tileHeight}px`, backgroundColor: statusColor,
-                      borderRadius: '1px', borderTop: '1px solid rgba(255,255,255,0.3)',
+                      borderRadius: '1.5px', borderTop: '1px solid rgba(255,255,255,0.3)',
                       border: isSelected ? '2px solid #ffffff' : undefined,
                       boxShadow: isSelected ? `0 0 12px #ffffff, 0 0 8px ${statusColor}` : undefined,
                       cursor: 'pointer', transition: 'all 0.2s ease',
