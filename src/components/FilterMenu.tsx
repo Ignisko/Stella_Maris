@@ -75,47 +75,81 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
     else onChangeCenturies([]);
   };
 
+  const activeCount = activeFilters.length + activeCenturies.length;
+  const totalPossible = FILTER_CATEGORIES.length + CENTURY_FILTERS.length;
+  const hasFiltered = activeCount < totalPossible;
+
   return (
-    <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
+    <div style={{
       position: 'absolute',
       top: '130px',
       left: '20px',
       zIndex: 10,
-      width: '290px',
-      overflow: 'hidden',
-      transition: 'all 0.3s ease',
     }}>
-      <div 
+      {/* Small trigger button */}
+      <button
         onClick={() => setIsExpanded(!isExpanded)}
+        title="Filters"
         style={{
-          padding: '16px 24px',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'space-between',
+          gap: '8px',
+          padding: '10px 16px',
+          background: isExpanded
+            ? 'rgba(56,189,248,0.15)'
+            : 'rgba(15, 23, 42, 0.8)',
+          border: `1px solid ${isExpanded ? 'rgba(56,189,248,0.5)' : 'var(--glass-border)'}`,
+          borderRadius: '12px',
+          backdropFilter: 'blur(12px)',
+          boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
           cursor: 'pointer',
-          background: isExpanded ? 'rgba(255,255,255,0.05)' : 'transparent',
-          borderBottom: isExpanded ? '1px solid var(--glass-border)' : 'none'
+          color: 'var(--text-color)',
+          fontSize: '13px',
+          fontWeight: 600,
+          transition: 'all 0.2s ease',
+          whiteSpace: 'nowrap',
+        }}
+        onMouseOver={e => {
+          if (!isExpanded) {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
+            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
+          }
+        }}
+        onMouseOut={e => {
+          if (!isExpanded) {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+          }
         }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-          <Filter size={18} color="var(--accent-color)" />
-          <h3 style={{ fontSize: '15px', fontWeight: 600, margin: 0, letterSpacing: '0.5px' }}>Filters</h3>
-        </div>
-        {isExpanded ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-      </div>
+        <Filter size={15} color="var(--accent-color)" />
+        <span>Filters</span>
+        {isExpanded ? <ChevronUp size={13} style={{ opacity: 0.7 }} /> : <ChevronDown size={13} style={{ opacity: 0.7 }} />}
+      </button>
 
+      {/* Dropdown panel */}
       {isExpanded && (
-        <div style={{ display: 'flex', flexDirection: 'column' }}>
-          
+        <div
+          className="glass-panel glass-panel-rounded animate-fade-in"
+          style={{
+            position: 'absolute',
+            top: 'calc(100% + 8px)',
+            left: 0,
+            width: '280px',
+            overflow: 'hidden',
+            boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
+            zIndex: 11,
+          }}
+        >
           {/* Tabs */}
           <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)' }}>
-            <button 
+            <button
               onClick={() => setActiveTab('time')}
               style={{ flex: 1, padding: '12px 0', background: activeTab === 'time' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'time' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
             >
               <Clock size={15} /> Centuries
             </button>
-            <button 
+            <button
               onClick={() => setActiveTab('status')}
               style={{ flex: 1, padding: '12px 0', background: activeTab === 'status' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'status' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
             >
@@ -123,24 +157,24 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
             </button>
           </div>
 
-          <div style={{ padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '14px', maxHeight: 'calc(100vh - 220px)', overflowY: 'auto' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '4px' }}>
-              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '13px', cursor: 'pointer', fontWeight: 500, fontFamily: 'inherit' }}>Select all</button>
-              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '13px', cursor: 'pointer', fontFamily: 'inherit' }}>Clear all</button>
+          <div style={{ padding: '14px 20px', display: 'flex', flexDirection: 'column', gap: '12px', maxHeight: 'calc(100vh - 260px)', overflowY: 'auto' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
+              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '12px', cursor: 'pointer', fontWeight: 500, fontFamily: 'inherit' }}>Select all</button>
+              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '12px', cursor: 'pointer', fontFamily: 'inherit' }}>Clear all</button>
             </div>
-            
+
             {activeTab === 'status' && FILTER_CATEGORIES.map(category => {
               const isActive = activeFilters.includes(category);
               const color = STATUS_COLORS[category] || '#94a3b8';
               return (
-                <label key={category} style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', fontSize: '14px', opacity: isActive ? 1 : 0.6, transition: 'opacity 0.2s' }}>
-                  <input 
-                    type="checkbox" 
+                <label key={category} style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '13px', opacity: isActive ? 1 : 0.5, transition: 'opacity 0.2s' }}>
+                  <input
+                    type="checkbox"
                     checked={isActive}
                     onChange={() => toggleFilter(category)}
-                    style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '16px', height: '16px', flexShrink: 0 }}
+                    style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
                   />
-                  <span style={{ width: '12px', height: '12px', borderRadius: '50%', backgroundColor: color, display: 'inline-block', flexShrink: 0, boxShadow: `0 0 8px ${color}` }} />
+                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: color, display: 'inline-block', flexShrink: 0, boxShadow: `0 0 6px ${color}` }} />
                   <span>{category === "Approved for faith expression" ? "Faith expression" : category}</span>
                 </label>
               );
@@ -149,12 +183,12 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
             {activeTab === 'time' && CENTURY_FILTERS.map(century => {
               const isActive = activeCenturies.includes(century.id);
               return (
-                <label key={century.id} style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', fontSize: '14px', opacity: isActive ? 1 : 0.6, transition: 'opacity 0.2s' }}>
-                  <input 
-                    type="checkbox" 
+                <label key={century.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '13px', opacity: isActive ? 1 : 0.5, transition: 'opacity 0.2s' }}>
+                  <input
+                    type="checkbox"
                     checked={isActive}
                     onChange={() => toggleCentury(century.id)}
-                    style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '16px', height: '16px', flexShrink: 0 }}
+                    style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
                   />
                   {century.label}
                 </label>

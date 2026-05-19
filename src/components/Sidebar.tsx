@@ -34,7 +34,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
 
   const clusteredApps = useMemo(() => {
     if (!apparition || !allActiveApparitions.length) return [];
-    const threshold = 0.45; // ~50km radius matching map clustering
+    const threshold = 0.02; // Close distance to group only within same city/shrine
     return allActiveApparitions.filter(a => 
       Math.abs(a.lat - apparition.lat) < threshold && Math.abs(a.lng - apparition.lng) < threshold
     ).sort((a, b) => a.year - b.year);

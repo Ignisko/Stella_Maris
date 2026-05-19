@@ -9,30 +9,30 @@ interface TimelineOverlayProps {
   onSelectApparition: (apparition: Apparition) => void;
   isPlaying: boolean;
   onTogglePlay: () => void;
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
-  "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 25 },
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: -1 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 65, fullHistoryOffset: -1 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 60, fullHistoryOffset: 70 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 15, fullHistoryOffset: 75 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 40, fullHistoryOffset: -25 },
-  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 40 }
+  "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 30 },
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 15, fullHistoryOffset: -1 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 60, fullHistoryOffset: -1 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 20, fullHistoryOffset: 70 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
+  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -25 },
+  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: 75 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
-  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay
+  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isOpen, setIsOpen
 }) => {
-  // Start collapsed — expand only when user clicks or playback starts
-  const [isOpen, setIsOpen] = useState(false);
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
 
   // Auto-open when playing, auto-close when stopped (but only if user didn't manually open)
   useEffect(() => {
     if (isPlaying) setIsOpen(true);
-  }, [isPlaying]);
+  }, [isPlaying, setIsOpen]);
 
   const activeApparitions = useMemo(() => {
     if (timeMode === 'modern') return apparitions.filter(a => a.year >= 1800);
@@ -66,6 +66,42 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   const tileHeight = maxCount > 25 ? 4 : maxCount > 18 ? 6 : maxCount > 12 ? 8 : 10;
   const tickStep = timeMode === 'modern' ? 20 : 100;
 
+  const callouts = useMemo(() => {
+    const list: {
+      id: string;
+      famous: Apparition;
+      label: string;
+      originalLeft: number;
+      bottomPx: number;
+      offset: number;
+      left: number;
+    }[] = [];
+
+    buckets.forEach(b => {
+      const famous = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
+      const callout = famous ? FAMOUS_CALLOUTS[famous.id] : null;
+      if (!callout || b.apps.length === 0) return;
+      const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
+      if (offset < 0) return;
+
+      const leftPct = ((b.index + 0.5) / buckets.length) * 100;
+      const bottomPx = b.apps.length * (tileHeight + 2);
+      const clampedLeft = Math.max(6, Math.min(94, leftPct));
+
+      list.push({
+        id: famous.id,
+        famous,
+        label: callout.label,
+        originalLeft: leftPct,
+        bottomPx,
+        offset,
+        left: clampedLeft
+      });
+    });
+
+    return list;
+  }, [buckets, timeMode, tileHeight]);
+
   // ── Collapsed pill ──────────────────────────────────────────────────────────
   if (!isOpen) {
     return (
@@ -74,36 +110,41 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         onClick={() => setIsOpen(true)}
         style={{
           position: 'fixed',
-          bottom: '30px',
-          left: '340px',
+          bottom: '20px',
+          right: selectedApparition ? '420px' : '20px',
           zIndex: 25,
           pointerEvents: 'auto',
-          background: 'rgba(15, 23, 42, 0.85)',
-          border: '1px solid rgba(255, 255, 255, 0.15)',
+          background: 'linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,41,59,0.95))',
+          border: '1px solid rgba(56,189,248,0.35)',
           backdropFilter: 'blur(20px)',
-          padding: '10px 20px',
+          padding: '14px 28px',
           display: 'flex',
           alignItems: 'center',
-          gap: '10px',
+          gap: '12px',
           cursor: 'pointer',
           color: 'var(--text-color)',
-          fontSize: '13px',
-          fontWeight: 600,
-          boxShadow: '0 8px 30px rgba(0,0,0,0.5)',
-          transition: 'all 0.2s ease'
+          fontSize: '15px',
+          fontWeight: 700,
+          boxShadow: '0 8px 32px rgba(0,0,0,0.6), 0 0 20px rgba(56,189,248,0.1)',
+          transition: 'all 0.25s ease',
+          letterSpacing: '0.3px'
         }}
         onMouseOver={e => {
-          e.currentTarget.style.background = 'rgba(15, 23, 42, 0.98)';
-          e.currentTarget.style.borderColor = 'rgba(56,189,248,0.4)';
+          e.currentTarget.style.background = 'linear-gradient(135deg, rgba(56,189,248,0.2), rgba(59,130,246,0.2))';
+          e.currentTarget.style.borderColor = 'rgba(56,189,248,0.7)';
+          e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.6), 0 0 30px rgba(56,189,248,0.25)';
+          e.currentTarget.style.transform = 'translateY(-2px)';
         }}
         onMouseOut={e => {
-          e.currentTarget.style.background = 'rgba(15, 23, 42, 0.85)';
-          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)';
+          e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,41,59,0.95))';
+          e.currentTarget.style.borderColor = 'rgba(56,189,248,0.35)';
+          e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.6), 0 0 20px rgba(56,189,248,0.1)';
+          e.currentTarget.style.transform = 'translateY(0)';
         }}
       >
-        <BarChart2 size={16} color="var(--accent-color)" />
+        <BarChart2 size={20} color="var(--accent-color)" />
         <span>Timeline</span>
-        <ChevronDown size={14} style={{ opacity: 0.6 }} />
+        <ChevronDown size={16} style={{ opacity: 0.7, color: 'var(--accent-color)' }} />
       </button>
     );
   }
@@ -114,23 +155,51 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       className="glass-panel glass-panel-rounded animate-fade-in"
       style={{
         position: 'fixed',
-        bottom: '30px',
-        left: '340px',
+        bottom: '12px',
+        left: '20px',
         right: selectedApparition ? '420px' : '30px',
         maxWidth: '1400px',
         backgroundColor: 'rgba(15, 23, 42, 0.98)',
         border: '1px solid rgba(255, 255, 255, 0.2)',
         backdropFilter: 'blur(20px)',
         boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
-        padding: '16px 24px',
+        padding: '10px 20px',
         zIndex: 25,
         boxSizing: 'border-box',
         transition: 'all 0.3s ease',
         pointerEvents: 'auto'
       }}
     >
-      {/* ── Top bar: title + controls + close ─────────────────────────────── */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '12px' }}>
+      {/* Close button in top-right */}
+      <button
+        onClick={() => { setIsOpen(false); if (isPlaying) onTogglePlay(); }}
+        style={{
+          position: 'absolute',
+          top: '10px',
+          right: '20px',
+          background: 'rgba(255,255,255,0.06)',
+          border: '1px solid rgba(255,255,255,0.15)',
+          borderRadius: '16px',
+          padding: '6px 12px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '6px',
+          color: '#e2e8f0',
+          cursor: 'pointer',
+          fontSize: '12px',
+          fontWeight: 600,
+          transition: 'all 0.2s',
+          zIndex: 35
+        }}
+        onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
+        onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
+      >
+        <span>Close</span>
+        <X size={13} />
+      </button>
+
+      {/* ── Top bar: title + controls ─────────────────────────────── */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '8px', paddingRight: '100px' }}>
 
         {/* Title */}
         <h3 style={{
@@ -183,32 +252,25 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               : `Play timeline (${sorted.length} events)`}
           </span>
         </button>
+      </div>
 
-        {/* Status legend */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginLeft: 'auto' }}>
-          {Object.entries(STATUS_COLORS).map(([label, color]) => (
-            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.75, fontWeight: 500 }}>
-              <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
-              <span>{label === 'Approved for faith expression' ? 'Faith expression' : label.replace(' approved', '')}</span>
-            </div>
-          ))}
-        </div>
-
-        {/* Close / collapse button */}
-        <button
-          onClick={() => { setIsOpen(false); if (isPlaying) onTogglePlay(); }}
-          style={{
-            background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)',
-            borderRadius: '50%', width: '28px', height: '28px',
-            display: 'flex', alignItems: 'center', justifyContent: 'center',
-            color: '#94a3b8', cursor: 'pointer', flexShrink: 0, transition: 'all 0.2s'
-          }}
-          onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; }}
-          onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.color = '#94a3b8'; }}
-          title="Collapse timeline"
-        >
-          <X size={14} />
-        </button>
+      {/* ── Status legend under the controls ── */}
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '12px',
+        flexWrap: 'wrap',
+        marginBottom: '16px',
+        paddingTop: '6px',
+        borderTop: '1px solid rgba(255, 255, 255, 0.06)'
+      }}>
+        <span style={{ fontSize: '10px', opacity: 0.5, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700, marginRight: '4px' }}>Legend:</span>
+        {Object.entries(STATUS_COLORS).map(([label, color]) => (
+          <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
+            <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
+            <span>{label === 'Approved for faith expression' ? 'Faith expression' : label.replace(' approved', '')}</span>
+          </div>
+        ))}
       </div>
 
       {/* ── Hover tooltip ─────────────────────────────────────────────────── */}
@@ -239,7 +301,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       )}
 
       {/* ── Histogram ─────────────────────────────────────────────────────── */}
-      <div style={{ position: 'relative', width: '100%', height: '200px' }}>
+      <div style={{ position: 'relative', width: '100%', height: '120px' }}>
 
         {/* Stacked bars */}
         <div style={{
@@ -279,84 +341,91 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               })}
             </div>
           ))}
+        </div>
 
-          {/* Callout overlays */}
-          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
+        {/* Callout overlays */}
+        <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
 
-            {/* Playback laser */}
-            {selectedApparition && isPlaying && (() => {
-              const idx = buckets.findIndex(b => b.apps.some(a => a.id === selectedApparition.id));
-              if (idx === -1) return null;
-              const leftPct = ((idx + 0.5) / buckets.length) * 100;
-              return (
+          {/* Playback laser */}
+          {selectedApparition && isPlaying && (() => {
+            const idx = buckets.findIndex(b => b.apps.some(a => a.id === selectedApparition.id));
+            if (idx === -1) return null;
+            const leftPct = ((idx + 0.5) / buckets.length) * 100;
+            return (
+              <div style={{
+                position: 'absolute', left: `${leftPct}%`, bottom: 0, top: '-45px',
+                width: '2px', backgroundColor: '#38bdf8',
+                boxShadow: '0 0 12px #38bdf8', zIndex: 110,
+                transform: 'translateX(-50%)', transition: 'left 0.5s cubic-bezier(0.4,0,0.2,1)',
+                pointerEvents: 'none'
+              }}>
                 <div style={{
-                  position: 'absolute', left: `${leftPct}%`, bottom: 0, top: '-40px',
-                  width: '2px', backgroundColor: '#38bdf8',
-                  boxShadow: '0 0 12px #38bdf8', zIndex: 110,
-                  transform: 'translateX(-50%)', transition: 'left 0.5s cubic-bezier(0.4,0,0.2,1)',
-                  pointerEvents: 'none'
+                  position: 'absolute', top: 0, left: '50%',
+                  transform: 'translate(-50%, -100%)',
+                  backgroundColor: '#38bdf8', color: '#0f172a',
+                  padding: '2px 8px', borderRadius: '10px',
+                  fontSize: '11px', fontWeight: 800, whiteSpace: 'nowrap'
                 }}>
-                  <div style={{
-                    position: 'absolute', top: 0, left: '50%',
-                    transform: 'translate(-50%, -100%)',
-                    backgroundColor: '#38bdf8', color: '#0f172a',
-                    padding: '2px 8px', borderRadius: '10px',
-                    fontSize: '11px', fontWeight: 800, whiteSpace: 'nowrap'
-                  }}>
-                    {selectedApparition.year}: {selectedApparition.title}
-                  </div>
+                  {selectedApparition.year}: {selectedApparition.title}
                 </div>
-              );
-            })()}
+              </div>
+            );
+          })()}
 
-            {/* Callout lines */}
-            {buckets.map(b => {
-              const famous = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
-              const callout = famous ? FAMOUS_CALLOUTS[famous.id] : null;
-              if (!callout || b.apps.length === 0) return null;
-              const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
-              if (offset < 0) return null;
-              const leftPct = ((b.index + 0.5) / buckets.length) * 100;
-              const bottomPx = b.apps.length * (tileHeight + 2);
-              return (
-                <div key={`line-${b.index}`} style={{
-                  position: 'absolute', left: `${leftPct}%`, bottom: `${bottomPx}px`,
-                  transform: 'translateX(-50%)', width: '1px', height: `${offset}px`,
-                  background: 'linear-gradient(to top, rgba(255,255,255,0.15), rgba(255,255,255,0.9))', zIndex: 1
-                }} />
-              );
-            })}
+          {/* Callout lines (solid gradients straight up) */}
+          {callouts.map(c => {
+            const bottomPx = c.bottomPx;
+            return (
+              <div
+                key={`line-${c.id}`}
+                style={{
+                  position: 'absolute',
+                  left: `${c.left}%`,
+                  bottom: `${bottomPx}px`,
+                  transform: 'translateX(-50%)',
+                  width: '1.5px',
+                  height: `${c.offset}px`,
+                  background: 'linear-gradient(to top, rgba(255,255,255,0.15), rgba(255,255,255,0.75))',
+                  zIndex: 5
+                }}
+              />
+            );
+          })}
 
-            {/* Callout pills */}
-            {buckets.map(b => {
-              const famous = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
-              const callout = famous ? FAMOUS_CALLOUTS[famous.id] : null;
-              if (!callout || b.apps.length === 0) return null;
-              const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
-              if (offset < 0) return null;
-              const leftPct = ((b.index + 0.5) / buckets.length) * 100;
-              const bottomPx = (b.apps.length * (tileHeight + 2)) + offset;
-              return (
-                <div
-                  key={`pill-${b.index}`}
-                  onClick={e => { e.stopPropagation(); onSelectApparition(famous!); }}
-                  style={{
-                    position: 'absolute', left: `${leftPct}%`, bottom: `${bottomPx}px`,
-                    transform: 'translateX(-50%)', zIndex: 50,
-                    fontSize: '11px', fontWeight: 700, color: '#fff', whiteSpace: 'nowrap',
-                    backgroundColor: 'rgba(15,23,42,0.97)', padding: '4px 10px',
-                    borderRadius: '14px', border: '1px solid var(--accent-color)',
-                    backdropFilter: 'blur(8px)', boxShadow: '0 6px 20px rgba(0,0,0,0.8)',
-                    pointerEvents: 'auto', cursor: 'pointer', transition: 'all 0.2s ease'
-                  }}
-                  onMouseOver={e => { e.currentTarget.style.backgroundColor = 'var(--accent-color)'; }}
-                  onMouseOut={e => { e.currentTarget.style.backgroundColor = 'rgba(15,23,42,0.97)'; }}
-                >
-                  {callout.label}
-                </div>
-              );
-            })}
-          </div>
+          {/* Callout pills */}
+          {callouts.map(c => {
+            const bottomPx = c.bottomPx + c.offset;
+            return (
+              <div
+                key={`pill-${c.id}`}
+                onClick={e => { e.stopPropagation(); onSelectApparition(c.famous); }}
+                style={{
+                  position: 'absolute',
+                  left: `${c.left}%`,
+                  bottom: `${bottomPx}px`,
+                  transform: 'translateX(-50%)',
+                  zIndex: 50,
+                  fontSize: '11px',
+                  fontWeight: 700,
+                  color: '#fff',
+                  whiteSpace: 'nowrap',
+                  backgroundColor: 'rgba(15, 23, 42, 0.97)',
+                  padding: '4px 10px',
+                  borderRadius: '14px',
+                  border: '1px solid var(--accent-color)',
+                  backdropFilter: 'blur(8px)',
+                  boxShadow: '0 6px 20px rgba(0,0,0,0.8)',
+                  pointerEvents: 'auto',
+                  cursor: 'pointer',
+                  transition: 'all 0.2s ease'
+                }}
+                onMouseOver={e => { e.currentTarget.style.backgroundColor = 'var(--accent-color)'; }}
+                onMouseOut={e => { e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.97)'; }}
+              >
+                {c.label}
+              </div>
+            );
+          })}
         </div>
       </div>
 

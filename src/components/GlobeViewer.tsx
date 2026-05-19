@@ -8,9 +8,10 @@ interface GlobeViewerProps {
   apparitions: Apparition[];
   selectedApparition: Apparition | null;
   onSelectApparition: (apparition: Apparition | null) => void;
+  isTimelineOpen: boolean;
 }
 
-const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedApparition, onSelectApparition }) => {
+const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedApparition, onSelectApparition, isTimelineOpen }) => {
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [isAutoRotate, setIsAutoRotate] = useState(true);
@@ -24,9 +25,10 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = false;
       }
-      globeEl.current.pointOfView({ lat: selectedApparition.lat, lng: selectedApparition.lng, altitude: 0.6 }, 1000);
+      const latOffset = isTimelineOpen ? 14 : 4;
+      globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: 0.6 }, 1000);
     }
-  }, [selectedApparition]);
+  }, [selectedApparition, isTimelineOpen]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -105,7 +107,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   const visibleApparitions = useMemo(() => {
     // Show all pins always (dots are lightweight), only labels are LOD-gated
     const clusters: Apparition[] = [];
-    const threshold = 0.45;
+    const threshold = 0.02;
     for (const app of apparitions) {
       const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
       if (!existing) {
@@ -118,58 +120,121 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, [apparitions, selectedApparition]);
 
   const visibleHtmlLabels = useMemo(() => {
-    // ── Per-zone label caps (matches the 5-zone RAF system above) ────────────
-    // Only entries with an EXPLICIT priority field are eligible as labels.
-    // Entries without priority are never labelled (until selected by the user).
+    // ── Per-zone label caps ───────────────────────────────────────────────────
+    // Zone 1 (very close): selected only
+    // Zone 2 (close):      max 2 per region, priority ≤ 1
+    // Zone 3 (mid):        max 3 per region, priority ≤ 1
+    // Zone 4 (mid-far):    max 2 per region, priority ≤ 1
+    // Zone 5 (far):        max 1 per region, priority ≤ 1
     //
-    // Zone 1 (very close): selected only → 0 candidates
-    // Zone 2 (close):      max 6,  priority ≤ 1
-    // Zone 3 (mid):        max 12, priority ≤ 1
-    // Zone 4 (mid-far):    max 8,  priority ≤ 1
-    // Zone 5 (far):        max 5,  priority ≤ 1
+    // GEOGRAPHIC DISTRIBUTION: Labels are picked per continental region so the
+    // globe always looks populated globally as it rotates, not just over Europe.
     // ────────────────────────────────────────────────────────────────────────
-    const ZONE_CONFIG: Record<number, { maxLabels: number; maxPriority: number }> = {
-      1: { maxLabels: 0,  maxPriority: 0 },
-      2: { maxLabels: 6,  maxPriority: 1 },
-      3: { maxLabels: 12, maxPriority: 1 },
-      4: { maxLabels: 8,  maxPriority: 1 },
-      5: { maxLabels: 5,  maxPriority: 1 },
+    const ZONE_CONFIG: Record<number, { perRegion: number; maxPriority: number }> = {
+      1: { perRegion: 0, maxPriority: 0 },
+      2: { perRegion: 2, maxPriority: 1 },
+      3: { perRegion: 3, maxPriority: 1 },
+      4: { perRegion: 2, maxPriority: 1 },
+      5: { perRegion: 1, maxPriority: 1 },
     };
-    const { maxLabels, maxPriority } = ZONE_CONFIG[lodThreshold] ?? { maxLabels: 5, maxPriority: 1 };
+    const { perRegion, maxPriority } = ZONE_CONFIG[lodThreshold] ?? { perRegion: 1, maxPriority: 1 };
 
-    // Build candidate list — only EXPLICIT priorities, sorted best-first
+    // Dynamic scale-up when user filters down the dataset (e.g. Vatican-approved only)
+    const totalItems = apparitions.length;
+    let effectivePerRegion = perRegion;
+    let effectiveMaxPriority = maxPriority;
+
+    if (totalItems < 35) {
+      effectivePerRegion = 15; // Allow many more labels when dataset is sparse
+      effectiveMaxPriority = 999; // Allow all priorities
+    } else if (totalItems < 75) {
+      effectivePerRegion = Math.max(perRegion, 5);
+      effectiveMaxPriority = Math.max(maxPriority, 2);
+    }
+
+    // Geographic regions: [name, latMin, latMax, lngMin, lngMax]
+    const REGIONS: [string, number, number, number, number][] = [
+      ['western-europe',  35,  72,  -12,  30],
+      ['eastern-europe',  40,  70,   30,  60],
+      ['middle-east',     15,  42,   25,  65],
+      ['africa',         -40,  38,  -18,  55],
+      ['north-america',   15,  75, -170, -50],
+      ['central-america',  5,  25, -120, -60],
+      ['south-america',  -55,   5,  -82, -34],
+      ['asia-south',      -5,  40,   60, 145],
+      ['asia-east',       20,  55,  100, 150],
+      ['oceania',        -55,  -5,  100, 180],
+    ];
+
+    const getRegion = (lat: number, lng: number): string => {
+      for (const [name, latMin, latMax, lngMin, lngMax] of REGIONS) {
+        if (lat >= latMin && lat <= latMax && lng >= lngMin && lng <= lngMax) return name;
+      }
+      return 'other';
+    };
+
+    if (effectivePerRegion === 0) {
+      const result: (Apparition & { clusterCount?: number })[] = [];
+      if (selectedApparition) result.push({ ...selectedApparition, clusterCount: 1 });
+      return result;
+    }
+
+    // Build candidate list — handle adaptive priority relaxation
     const candidates = apparitions
       .filter(app => {
         if (selectedApparition?.id === app.id) return true;
+        if (effectiveMaxPriority >= 999) return true;
         if (app.priority === undefined || app.priority === null) return false;
-        return app.priority <= maxPriority;
+        return app.priority <= effectiveMaxPriority;
       })
       .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
 
-    // Cluster nearby candidates — larger radius = less clutter in dense regions
-    const CLUSTER_DEG = 1.2; // ~130 km
-    const clusters: (Apparition & { clusterCount?: number })[] = [];
-    for (const app of candidates) {
-      if (selectedApparition?.id !== app.id && clusters.length >= maxLabels) break;
-      const existing = clusters.find(
-        c => Math.abs(c.lat - app.lat) < CLUSTER_DEG && Math.abs(c.lng - app.lng) < CLUSTER_DEG
-      );
-      if (!existing) {
-        clusters.push({ ...app, clusterCount: 1 });
-      } else {
-        existing.clusterCount = (existing.clusterCount || 1) + 1;
-        if (selectedApparition?.id === app.id || (app.priority ?? 99) < (existing.priority ?? 99)) {
-          existing.id = app.id;
-          existing.title = app.title;
-          existing.approvalStatus = app.approvalStatus;
-          existing.priority = app.priority;
-          existing.lat = app.lat;
-          existing.lng = app.lng;
-        }
-      }
+    // Adaptive spacing based on lodThreshold (zoom/altitude) and dataset size
+    let spacingBase = 2.5;
+    if (lodThreshold === 5) {
+      spacingBase = 12.0; // Far out: labels must be very far apart geographically to not overlap on screen
+    } else if (lodThreshold === 4) {
+      spacingBase = 7.5;  // Mid-far
+    } else if (lodThreshold === 3) {
+      spacingBase = 4.5;  // Mid
+    } else if (lodThreshold === 2) {
+      spacingBase = 2.5;  // Close
+    } else {
+      spacingBase = 1.2;  // Very close
     }
 
-    // Always show selected apparition regardless of priority
+    // Slightly compress spacing margin if dataset is small, but keep safety bounds
+    const CLUSTER_DEG = totalItems < 35 ? spacingBase * 0.7 : spacingBase;
+
+    const regionCounts: Record<string, number> = {};
+    const clusters: (Apparition & { clusterCount?: number })[] = [];
+
+    for (const app of candidates) {
+      if (selectedApparition?.id === app.id) continue; // handled at end
+
+      // Avoid showing other labels near the selected apparition to prevent overlap
+      if (selectedApparition) {
+        const distLat = Math.abs(selectedApparition.lat - app.lat);
+        const distLng = Math.abs(selectedApparition.lng - app.lng);
+        const minSelectedDist = lodThreshold === 5 ? 12.0 : (lodThreshold === 4 ? 8.0 : (lodThreshold === 3 ? 5.0 : 2.8));
+        if (distLat < minSelectedDist && distLng < minSelectedDist) continue;
+      }
+
+      const region = getRegion(app.lat, app.lng);
+      const count = regionCounts[region] ?? 0;
+      if (count >= effectivePerRegion) continue;
+
+      // Within same region, avoid placing labels too close together
+      const tooClose = clusters.some(
+        c => Math.abs(c.lat - app.lat) < CLUSTER_DEG && Math.abs(c.lng - app.lng) < CLUSTER_DEG
+      );
+      if (tooClose) continue;
+
+      clusters.push({ ...app, clusterCount: 1 });
+      regionCounts[region] = count + 1;
+    }
+
+    // Always show selected apparition
     if (selectedApparition && !clusters.find(c => c.id === selectedApparition.id)) {
       clusters.push({ ...selectedApparition, clusterCount: 1 });
     }
@@ -243,6 +308,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
           el.dataset.selected = isSelected ? 'true' : 'false';
           el.style.pointerEvents = 'none';
+          el.style.zIndex = isSelected ? '9999' : '1';
 
           el.innerHTML = `<div class="label-content" style="
             color: #ffffff; 
@@ -259,6 +325,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
             transform-origin: bottom center;
             pointer-events: auto; 
             white-space: nowrap; 
+            z-index: ${isSelected ? 9999 : 1};
             text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
             box-shadow: ${isSelected ? `0 0 20px rgba(${rgb}, 0.8)` : 'none'};
             transition: opacity 0.3s ease-out, transform 0.2s ease-out;
@@ -289,8 +356,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         }}
         style={{
           position: 'fixed',
-          bottom: '100px',
-          left: '25px',
+          bottom: isTimelineOpen ? '210px' : '20px',
+          left: '20px',
           zIndex: 200,
           pointerEvents: 'auto',
           background: 'rgba(15, 23, 42, 0.75)',

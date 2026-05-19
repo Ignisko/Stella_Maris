@@ -16,6 +16,7 @@ function App() {
   const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
   const [isPlayingTimeline, setIsPlayingTimeline] = useState(false);
   const [playbackIndex, setPlaybackIndex] = useState(0);
+  const [isTimelineOpen, setIsTimelineOpen] = useState(false);
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
@@ -179,6 +180,7 @@ function App() {
         apparitions={displayedApparitions} 
         selectedApparition={selectedApparition}
         onSelectApparition={handleSelectApparition} 
+        isTimelineOpen={isTimelineOpen}
       />
       
       <Sidebar 
@@ -195,6 +197,8 @@ function App() {
           onSelectApparition={handleSelectApparition}
           isPlaying={isPlayingTimeline}
           onTogglePlay={togglePlayTimeline}
+          isOpen={isTimelineOpen}
+          setIsOpen={setIsTimelineOpen}
         />
       )}
     </div>

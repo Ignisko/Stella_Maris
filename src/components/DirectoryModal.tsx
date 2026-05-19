@@ -62,7 +62,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
         }}>
           <div>
             <h2 style={{ fontSize: '20px', fontWeight: 700, margin: 0, color: 'var(--gold-accent)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span>Marian Apparitions Directory</span>
+              <span>Marian apparitions directory</span>
               <span style={{ fontSize: '13px', padding: '2px 8px', borderRadius: '12px', background: 'rgba(255, 255, 255, 0.1)', color: 'var(--text-color)', fontWeight: 500 }}>
                 {filteredList.length} listed
               </span>
