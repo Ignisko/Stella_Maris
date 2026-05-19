@@ -69,14 +69,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
           // LOD: FEWER labels when close (zoomed in), MORE when far out
-          // altitude < 0.5 → only selected (priority 1)
-          // altitude < 1.2 → priority 1 only
-          // altitude < 2.0 → priority 1-2
-          // altitude >= 2.0 → priority 1-3 (everything)
+          // But "more" is still capped by MAX_LABELS in visibleHtmlLabels.
+          // alt < 1.0  → threshold 1  → max 1 label  (just selected)
+          // alt < 2.0  → threshold 2  → max 20 labels (explicitly priority-1&2)
+          // alt >= 2.0 → threshold 3  → max 12 labels (world-famous only, priority-1)
           const altitude = Math.max(0.1, pov.altitude);
           let newThreshold: number;
-          if (altitude < 0.5) newThreshold = 1;
-          else if (altitude < 1.2) newThreshold = 1;
+          if (altitude < 1.0) newThreshold = 1;
           else if (altitude < 2.0) newThreshold = 2;
           else newThreshold = 3;
 
@@ -118,22 +117,42 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, [apparitions, selectedApparition]);
 
   const visibleHtmlLabels = useMemo(() => {
-    // Only show labels for apparitions matching the current LOD threshold
-    // Lower lodThreshold = fewer labels (only most famous/priority-1)
-    const raw = apparitions.filter(app => {
-      if (selectedApparition?.id === app.id) return true; // Always show selected
-      return (app.priority || 3) <= lodThreshold;
-    });
+    // ──────────────────────────────────────────────────────────────────────────
+    // LABEL LOD RULES  (lodThreshold set by altitude in the RAF loop)
+    //   threshold 1 (zoomed in, alt < 1.2) → only the selected item
+    //   threshold 2 (mid,        alt < 2.0) → top 20 by explicit priority
+    //   threshold 3 (zoomed out, alt ≥ 2.0) → top 12 world-famous only
+    //
+    // "Explicit priority" means the field is actually set in the data file.
+    // Entries without a priority field are treated as priority 99 (unlabelled)
+    // unless they are the currently selected apparition.
+    // ──────────────────────────────────────────────────────────────────────────
+    const MAX_LABELS: Record<number, number> = { 1: 1, 2: 20, 3: 12 };
+    const maxLabels = MAX_LABELS[lodThreshold] ?? 12;
 
+    // Build candidate list — only use EXPLICIT priorities (not the default fallback)
+    const candidates = apparitions
+      .filter(app => {
+        if (selectedApparition?.id === app.id) return true; // always keep selected
+        if (app.priority === undefined || app.priority === null) return false; // skip unlabelled
+        return app.priority <= Math.min(lodThreshold + 1, 3); // use explicit rank only
+      })
+      .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
+
+    // Cluster nearby candidates so Europe doesn't get wall-to-wall text
+    const CLUSTER_DEG = 0.8; // ~90 km — larger cluster radius reduces overlap
     const clusters: (Apparition & { clusterCount?: number })[] = [];
-    const threshold = 0.45;
-    for (const app of raw) {
-      const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
+    for (const app of candidates) {
+      if (selectedApparition?.id !== app.id && clusters.length >= maxLabels) break;
+      const existing = clusters.find(
+        c => Math.abs(c.lat - app.lat) < CLUSTER_DEG && Math.abs(c.lng - app.lng) < CLUSTER_DEG
+      );
       if (!existing) {
         clusters.push({ ...app, clusterCount: 1 });
       } else {
         existing.clusterCount = (existing.clusterCount || 1) + 1;
-        if ((app.priority || 3) < (existing.priority || 3) || selectedApparition?.id === app.id) {
+        // Prefer the selected apparition or the higher-priority one
+        if (selectedApparition?.id === app.id || (app.priority ?? 99) < (existing.priority ?? 99)) {
           existing.id = app.id;
           existing.title = app.title;
           existing.approvalStatus = app.approvalStatus;
@@ -143,6 +162,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         }
       }
     }
+
+    // Always include selected apparition even if it has no explicit priority
+    if (selectedApparition && !clusters.find(c => c.id === selectedApparition.id)) {
+      clusters.push({ ...selectedApparition, clusterCount: 1 });
+    }
+
     return clusters;
   }, [apparitions, lodThreshold, selectedApparition]);
 
