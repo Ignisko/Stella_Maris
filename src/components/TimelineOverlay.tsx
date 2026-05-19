@@ -1,7 +1,7 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, ChevronUp, ChevronDown, Clock, Play, Pause } from 'lucide-react';
-import { getStatusColor, STATUS_COLORS, getApparitionStatusCategory } from '../utils/colors';
+import { BarChart2, Clock, Play, Pause, ChevronDown, X } from 'lucide-react';
+import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 
 interface TimelineOverlayProps {
   apparitions: Apparition[];
@@ -11,15 +11,6 @@ interface TimelineOverlayProps {
   onTogglePlay: () => void;
 }
 
-// ==========================================
-// FAMOUS APPARITION CALLOUTS CONFIGURATION
-// ==========================================
-// Each famous apparition has two independent height settings (in pixels):
-// 1. modernOffset: Used when viewing the 'Modern era (1800-Present)' timeline.
-// 2. fullHistoryOffset: Used when viewing the 'Full history (40 AD-Present)' timeline.
-//
-// Because Full History compresses recent centuries into the far right side of the screen,
-// fullHistoryOffset uses taller stair-stepped heights (25px -> 70px -> 115px) to prevent overlap.
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
   "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 25 },
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 12, fullHistoryOffset: -1 },
@@ -30,38 +21,32 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 12, fullHistoryOffset: 40 }
 };
 
-const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
+  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay
+}) => {
+  // Start collapsed — expand only when user clicks or playback starts
+  const [isOpen, setIsOpen] = useState(false);
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
 
-  // Filter based on selected time mode
+  // Auto-open when playing, auto-close when stopped (but only if user didn't manually open)
+  useEffect(() => {
+    if (isPlaying) setIsOpen(true);
+  }, [isPlaying]);
+
   const activeApparitions = useMemo(() => {
-    if (timeMode === 'modern') {
-      return apparitions.filter(a => a.year >= 1800);
-    }
+    if (timeMode === 'modern') return apparitions.filter(a => a.year >= 1800);
     return apparitions;
   }, [apparitions, timeMode]);
 
-  // Sort active apparitions by year
   const sorted = useMemo(() => [...activeApparitions].sort((a, b) => a.year - b.year), [activeApparitions]);
 
-  const minYear = useMemo(() => {
-    if (timeMode === 'modern') return 1800;
-    return sorted.length > 0 ? sorted[0].year : 1500;
-  }, [sorted, timeMode]);
-
-  const maxYear = useMemo(() => {
-    if (timeMode === 'modern') return 2025;
-    return sorted.length > 0 ? sorted[sorted.length - 1].year : 2025;
-  }, [sorted, timeMode]);
-
-  // Pad the range slightly
+  const minYear = useMemo(() => timeMode === 'modern' ? 1800 : (sorted[0]?.year ?? 1500), [sorted, timeMode]);
+  const maxYear = useMemo(() => timeMode === 'modern' ? 2025 : (sorted[sorted.length - 1]?.year ?? 2025), [sorted, timeMode]);
   const startY = minYear;
   const endY = maxYear;
   const range = endY - startY;
 
-  // Group into columns (approx 115 columns across timeline width)
   const bucketSpan = Math.max(1, Math.round(range / 115));
   const numBuckets = Math.ceil(range / bucketSpan);
 
@@ -72,453 +57,324 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({ apparitions, selected
       const yStart = startY + i * bucketSpan;
       const yEnd = yStart + bucketSpan - 1;
       const apps = sorted.filter(app => app.year >= yStart && app.year <= yEnd);
-      bList.push({
-        index: i,
-        startYear: yStart,
-        endYear: yEnd,
-        apps
-      });
+      bList.push({ index: i, startYear: yStart, endYear: yEnd, apps });
     }
     return bList;
   }, [sorted, startY, bucketSpan, numBuckets]);
 
-  const maxCount = useMemo(() => {
-    return Math.max(1, ...buckets.map(b => b.apps.length));
-  }, [buckets]);
-
-  // Precise tile height to prevent container overflow
+  const maxCount = useMemo(() => Math.max(1, ...buckets.map(b => b.apps.length)), [buckets]);
   const tileHeight = maxCount > 25 ? 4 : maxCount > 18 ? 6 : maxCount > 12 ? 8 : 10;
   const tickStep = timeMode === 'modern' ? 20 : 100;
 
+  // ── Collapsed pill ──────────────────────────────────────────────────────────
+  if (!isOpen) {
+    return (
+      <button
+        className="glass-panel glass-panel-rounded animate-fade-in"
+        onClick={() => setIsOpen(true)}
+        style={{
+          position: 'fixed',
+          bottom: '30px',
+          left: '340px',
+          zIndex: 25,
+          pointerEvents: 'auto',
+          background: 'rgba(15, 23, 42, 0.85)',
+          border: '1px solid rgba(255, 255, 255, 0.15)',
+          backdropFilter: 'blur(20px)',
+          padding: '10px 20px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '10px',
+          cursor: 'pointer',
+          color: 'var(--text-color)',
+          fontSize: '13px',
+          fontWeight: 600,
+          boxShadow: '0 8px 30px rgba(0,0,0,0.5)',
+          transition: 'all 0.2s ease'
+        }}
+        onMouseOver={e => {
+          e.currentTarget.style.background = 'rgba(15, 23, 42, 0.98)';
+          e.currentTarget.style.borderColor = 'rgba(56,189,248,0.4)';
+        }}
+        onMouseOut={e => {
+          e.currentTarget.style.background = 'rgba(15, 23, 42, 0.85)';
+          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)';
+        }}
+      >
+        <BarChart2 size={16} color="var(--accent-color)" />
+        <span>Timeline</span>
+        <ChevronDown size={14} style={{ opacity: 0.6 }} />
+      </button>
+    );
+  }
+
+  // ── Expanded panel ──────────────────────────────────────────────────────────
   return (
-    <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
-      position: 'absolute',
-      bottom: '30px',
-      left: '340px',
-      right: selectedApparition ? '420px' : '30px',
-      maxWidth: '1400px',
-      margin: '0 auto',
-      backgroundColor: isExpanded ? 'rgba(15, 23, 42, 0.98)' : 'rgba(15, 23, 42, 0.85)',
-      border: isExpanded ? '1px solid rgba(255, 255, 255, 0.25)' : '1px solid rgba(255, 255, 255, 0.15)',
-      backdropFilter: 'blur(20px)',
-      boxShadow: isExpanded ? '0 25px 60px rgba(0,0,0,0.9)' : '0 8px 30px rgba(0,0,0,0.6)',
-      padding: isExpanded ? '20px 28px' : '12px 24px',
-      zIndex: 25,
-      boxSizing: 'border-box',
-      transition: 'all 0.3s ease',
-      pointerEvents: 'auto'
-    }}>
-      {/* Header and Controls */}
-      <div style={{ position: 'relative', minHeight: '30px', marginBottom: isExpanded ? '16px' : '4px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap', paddingRight: '80px' }}>
-          <h3 style={{ fontSize: '14px', textTransform: 'uppercase', letterSpacing: '1.5px', opacity: 0.9, margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <BarChart2 size={18} color="var(--accent-color)" /> Timeline
-          </h3>
+    <div
+      className="glass-panel glass-panel-rounded animate-fade-in"
+      style={{
+        position: 'fixed',
+        bottom: '30px',
+        left: '340px',
+        right: selectedApparition ? '420px' : '30px',
+        maxWidth: '1400px',
+        backgroundColor: 'rgba(15, 23, 42, 0.98)',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(20px)',
+        boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
+        padding: '16px 24px',
+        zIndex: 25,
+        boxSizing: 'border-box',
+        transition: 'all 0.3s ease',
+        pointerEvents: 'auto'
+      }}
+    >
+      {/* ── Top bar: title + controls + close ─────────────────────────────── */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginBottom: '12px' }}>
 
-          {/* Time Mode Pill Toggle */}
-          <div style={{ display: 'flex', background: 'rgba(0, 0, 0, 0.4)', padding: '3px', borderRadius: '20px', border: '1px solid rgba(255, 255, 255, 0.15)' }}>
+        {/* Title */}
+        <h3 style={{
+          fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.5px',
+          opacity: 0.85, margin: 0, fontWeight: 700,
+          display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0
+        }}>
+          <BarChart2 size={16} color="var(--accent-color)" /> Timeline
+        </h3>
+
+        {/* Time mode toggle */}
+        <div style={{
+          display: 'flex', background: 'rgba(0,0,0,0.4)', padding: '3px',
+          borderRadius: '20px', border: '1px solid rgba(255,255,255,0.12)'
+        }}>
+          {(['modern', 'all'] as const).map(mode => (
             <button
-              onClick={() => setTimeMode('modern')}
+              key={mode}
+              onClick={() => setTimeMode(mode)}
               style={{
-                background: timeMode === 'modern' ? 'var(--accent-color)' : 'transparent',
-                color: timeMode === 'modern' ? '#ffffff' : '#94a3b8',
-                border: 'none',
-                padding: '4px 14px',
-                borderRadius: '18px',
-                fontSize: '11px',
-                fontWeight: 700,
-                cursor: 'pointer',
-                transition: 'all 0.2s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
+                background: timeMode === mode ? 'var(--accent-color)' : 'transparent',
+                color: timeMode === mode ? '#ffffff' : '#94a3b8',
+                border: 'none', padding: '4px 14px', borderRadius: '18px',
+                fontSize: '11px', fontWeight: 700, cursor: 'pointer',
+                transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '5px'
               }}
             >
-              <Clock size={12} /> Modern era (1800-Present)
+              <Clock size={11} />
+              {mode === 'modern' ? 'Modern era (1800–Present)' : 'Full history (40 AD–Present)'}
             </button>
-            <button
-              onClick={() => setTimeMode('all')}
-              style={{
-                background: timeMode === 'all' ? 'var(--accent-color)' : 'transparent',
-                color: timeMode === 'all' ? '#ffffff' : '#94a3b8',
-                border: 'none',
-                padding: '4px 14px',
-                borderRadius: '18px',
-                fontSize: '11px',
-                fontWeight: 700,
-                cursor: 'pointer',
-                transition: 'all 0.2s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}
-            >
-              <Clock size={12} /> Full history (40 AD-Present)
-            </button>
-          </div>
-
-          {/* Play/Pause Button */}
-          <button
-            onClick={onTogglePlay}
-            style={{
-              background: isPlaying ? '#ef4444' : 'var(--accent-color)',
-              color: '#ffffff',
-              border: 'none',
-              padding: '5px 16px',
-              borderRadius: '20px',
-              fontSize: '11px',
-              fontWeight: 700,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '6px',
-              boxShadow: isPlaying ? '0 0 15px rgba(239, 68, 68, 0.8)' : '0 0 15px rgba(56, 189, 248, 0.6)',
-              transition: 'all 0.2s'
-            }}
-          >
-            {isPlaying ? <Pause size={12} /> : <Play size={12} />}
-            <span>{isPlaying ? `Playing (${selectedApparition?.year || minYear}) — ${sorted.length} events` : `Play Timeline (${sorted.length} events)`}</span>
-          </button>
-
-          {/* Status Legend (Only visible when expanded) */}
-          {isExpanded && (
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flexWrap: 'wrap' }}>
-              {Object.entries(STATUS_COLORS).map(([label, color]) => (
-                <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
-                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 6px ${color}` }} />
-                  <span>
-                    {label === "Approved for faith expression" ? "Faith expression" : label === "Apparitions to saints" ? "Apparitions to saints" : label === "Unapproved apparitions" ? "Unapproved" : label.replace(" approved", "")}
-                  </span>
-                </div>
-              ))}
-            </div>
-          )}
+          ))}
         </div>
 
-        {hoveredApp && (
-          <div style={{
-            position: 'absolute',
-            top: '-75px',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            backgroundColor: 'rgba(15, 23, 42, 0.95)',
-            border: `1px solid ${getStatusColor(hoveredApp.approvalStatus)}`,
-            padding: '8px 16px',
-            borderRadius: '10px',
-            color: '#ffffff',
-            zIndex: 100,
-            boxShadow: '0 8px 30px rgba(0,0,0,0.7)',
-            pointerEvents: 'none',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: '4px',
-            minWidth: '220px'
-          }}>
-            <div style={{ fontSize: '14px', fontWeight: 700, display: 'flex', justifyContent: 'space-between', gap: '16px' }}>
-              <span>{hoveredApp.title}</span>
-              <span style={{ color: '#fbbf24' }}>{hoveredApp.year}</span>
-            </div>
-            <div style={{ fontSize: '12px', opacity: 0.8 }}>{hoveredApp.location}, {hoveredApp.country}</div>
-            <div style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}>
-              <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: getStatusColor(hoveredApp.approvalStatus) }} />
-              <span style={{ fontWeight: 600 }}>
-                {getApparitionStatusCategory(hoveredApp.approvalStatus) === "Approved for faith expression" ? "Faith expression" : getApparitionStatusCategory(hoveredApp.approvalStatus)}
-              </span>
-            </div>
-          </div>
-        )}
-
+        {/* Play / Pause */}
         <button
-          onClick={() => setIsExpanded(!isExpanded)}
+          onClick={onTogglePlay}
           style={{
-            position: 'absolute',
-            top: 0,
-            right: 0,
-            background: isExpanded ? 'rgba(239, 68, 68, 0.2)' : 'rgba(56, 189, 248, 0.15)',
-            border: isExpanded ? '1px solid rgba(239, 68, 68, 0.4)' : '1px solid rgba(56, 189, 248, 0.3)',
-            color: isExpanded ? '#fca5a5' : '#38bdf8',
-            padding: '6px 14px',
-            borderRadius: '12px',
-            fontSize: '12px',
-            fontWeight: 700,
-            cursor: 'pointer',
-            pointerEvents: 'auto',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-            zIndex: 30,
+            background: isPlaying ? '#ef4444' : 'var(--accent-color)',
+            color: '#fff', border: 'none', padding: '5px 16px',
+            borderRadius: '20px', fontSize: '11px', fontWeight: 700,
+            cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px',
+            boxShadow: isPlaying ? '0 0 15px rgba(239,68,68,0.8)' : '0 0 15px rgba(56,189,248,0.6)',
             transition: 'all 0.2s'
           }}
-          onMouseOver={(e) => {
-            e.currentTarget.style.background = isExpanded ? 'rgba(239, 68, 68, 0.3)' : 'rgba(56, 189, 248, 0.25)';
-          }}
-          onMouseOut={(e) => {
-            e.currentTarget.style.background = isExpanded ? 'rgba(239, 68, 68, 0.2)' : 'rgba(56, 189, 248, 0.15)';
-          }}
         >
-          {isExpanded ? <>Close <ChevronDown size={14} /></> : <>Expand <ChevronUp size={14} /></>}
+          {isPlaying ? <Pause size={12} /> : <Play size={12} />}
+          <span>
+            {isPlaying
+              ? `Playing (${selectedApparition?.year ?? minYear}) — ${sorted.length} events`
+              : `Play timeline (${sorted.length} events)`}
+          </span>
+        </button>
+
+        {/* Status legend */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap', marginLeft: 'auto' }}>
+          {Object.entries(STATUS_COLORS).map(([label, color]) => (
+            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.75, fontWeight: 500 }}>
+              <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
+              <span>{label === 'Approved for faith expression' ? 'Faith expression' : label.replace(' approved', '')}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Close / collapse button */}
+        <button
+          onClick={() => { setIsOpen(false); if (isPlaying) onTogglePlay(); }}
+          style={{
+            background: 'rgba(255,255,255,0.07)', border: '1px solid rgba(255,255,255,0.15)',
+            borderRadius: '50%', width: '28px', height: '28px',
+            display: 'flex', alignItems: 'center', justifyContent: 'center',
+            color: '#94a3b8', cursor: 'pointer', flexShrink: 0, transition: 'all 0.2s'
+          }}
+          onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; }}
+          onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.07)'; e.currentTarget.style.color = '#94a3b8'; }}
+          title="Collapse timeline"
+        >
+          <X size={14} />
         </button>
       </div>
 
-      {isExpanded && (
-        <div style={{ position: 'relative', width: '100%', height: '250px', marginBottom: 0 }}>
-
-          {/* Era Overlays (Visible in Modern view when no apparition is selected) */}
-          {timeMode === 'modern' && !selectedApparition && (
-            <div style={{
-              position: 'absolute',
-              top: 0,
-              left: '3%',
-              right: '3%',
-              display: 'flex',
-              justifyContent: 'space-between',
-              pointerEvents: 'none',
-              zIndex: 15
-            }}>
-              <div style={{ maxWidth: '280px', background: 'rgba(15, 23, 42, 0.7)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-                <div style={{ fontSize: '12px', fontWeight: 800, letterSpacing: '1px', color: '#fbbf24', marginBottom: '4px' }}>GOLDEN AGE (1830-1933)</div>
-                <div style={{ fontSize: '11px', lineHeight: 1.35, color: '#e2e8f0', opacity: 0.9 }}>Wars, famine, and changing attitudes toward religion contributed to a surge in apparitions and church approvals between 1830 and 1933.</div>
-              </div>
-              <div style={{ maxWidth: '280px', background: 'rgba(15, 23, 42, 0.7)', padding: '10px 14px', borderRadius: '10px', border: '1px solid rgba(255,255,255,0.15)', backdropFilter: 'blur(8px)', boxShadow: '0 4px 20px rgba(0,0,0,0.5)' }}>
-                <div style={{ fontSize: '12px', fontWeight: 800, letterSpacing: '1px', color: '#38bdf8', marginBottom: '4px' }}>MODERN ERA</div>
-                <div style={{ fontSize: '11px', lineHeight: 1.35, color: '#e2e8f0', opacity: 0.9 }}>Travelers who visited revered sites reported having visions. Millennial fervor stoked by apocalyptic fears may also have led people to report visions.</div>
-              </div>
-            </div>
-          )}
-
-          {/* Stacked Histogram Bars */}
-          {/* Note: paddingBottom controls how high the colorful tiles sit above the bottom edge of this container */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'flex-end',
-            justifyContent: 'space-between',
-            width: '100%',
-            height: '100%',
-            position: 'absolute',
-            bottom: 0,
-            left: 0,
-            paddingBottom: '1px'
-          }}>
-            {buckets.map(b => {
-              return (
-                <div
-                  key={b.index}
-                  style={{
-                    flex: 1,
-                    minWidth: 0,
-                    margin: '0 0.5px',
-                    display: 'flex',
-                    flexDirection: 'column-reverse',
-                    alignItems: 'center',
-                    gap: '2px',
-                    height: '100%',
-                    justifyContent: 'flex-start',
-                    position: 'relative'
-                  }}
-                >
-                  {/* The stacked tiles */}
-                  {b.apps.map(app => {
-                    const isFuture = isPlaying && selectedApparition && app.year > selectedApparition.year;
-                    if (isFuture) return null;
-
-                    const isSelected = selectedApparition?.id === app.id;
-                    const statusColor = getStatusColor(app.approvalStatus);
-
-                    return (
-                      <div
-                        key={app.id}
-                        onClick={(e) => { e.stopPropagation(); onSelectApparition(app); }}
-                        onMouseEnter={() => setHoveredApp(app)}
-                        onMouseLeave={() => setHoveredApp(null)}
-                        style={{
-                          width: '100%',
-                          maxWidth: '10px',
-                          minWidth: '1.5px',
-                          height: `${tileHeight}px`,
-                          backgroundColor: statusColor,
-                          borderRadius: '1px',
-                          borderTop: '1px solid rgba(255, 255, 255, 0.35)',
-                          border: isSelected ? '2px solid #ffffff' : 'none',
-                          boxShadow: isSelected ? `0 0 15px #ffffff, 0 0 10px ${statusColor}` : 'none',
-                          cursor: 'pointer',
-                          transition: 'all 0.2s ease',
-                          opacity: selectedApparition ? (isSelected ? 1 : 0.4) : 0.95,
-                          zIndex: isSelected ? 30 : 1,
-                          transform: isSelected ? 'scale(1.25)' : 'none'
-                        }}
-                      />
-                    );
-                  })}
-                </div>
-              );
-            })}
-
-            {/* ========================================== */}
-            {/* FAMOUS EVENT CALLOUT OVERLAYS              */}
-            {/* ========================================== */}
-            {/* Rendered outside the flex columns in an absolute container (zIndex 100) */}
-            {/* Guaranteeing complete z-index superiority over all colorful histogram tiles. */}
-            <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
-
-              {/* Playback Laser Scrubber */}
-              {selectedApparition && isPlaying && (() => {
-                const selectedBucketIndex = buckets.findIndex(b => b.apps.some(a => a.id === selectedApparition.id));
-                if (selectedBucketIndex === -1) return null;
-                const selectedLeftPercent = ((selectedBucketIndex + 0.5) / buckets.length) * 100;
-                return (
-                  <div style={{
-                    position: 'absolute',
-                    left: `${selectedLeftPercent}%`,
-                    bottom: 0,
-                    top: isExpanded ? '-60px' : '-20px',
-                    width: '2px',
-                    backgroundColor: '#38bdf8',
-                    boxShadow: '0 0 15px #38bdf8, 0 0 8px #ffffff',
-                    zIndex: 110,
-                    transform: 'translateX(-50%)',
-                    transition: 'left 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
-                    pointerEvents: 'none'
-                  }}>
-                    <div style={{
-                      position: 'absolute',
-                      top: 0,
-                      left: '50%',
-                      transform: 'translate(-50%, -100%)',
-                      backgroundColor: '#38bdf8',
-                      color: '#0f172a',
-                      padding: '3px 10px',
-                      borderRadius: '12px',
-                      fontSize: '11px',
-                      fontWeight: 800,
-                      whiteSpace: 'nowrap',
-                      boxShadow: '0 0 15px #38bdf8'
-                    }}>
-                      {selectedApparition.year}: {selectedApparition.title}
-                    </div>
-                  </div>
-                );
-              })()}
-
-              {/* Layer 1: White Pinning Lines */}
-              {/* Rendered first so they stay in the background behind the title pills */}
-              {buckets.map((b) => {
-                const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
-                const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
-                if (!callout || b.apps.length === 0) return null;
-
-                // Pick active offset based on selected time mode
-                const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
-                // If offset is negative (e.g. -1), completely hide this callout in the current view
-                if (offset < 0) return null;
-
-                // Center the line perfectly above the active temporal bucket
-                const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
-                // Start exactly at the top edge of the stacked colorful tiles
-                const bottomOffset = b.apps.length * (tileHeight + 2);
-
-                return (
-                  <div
-                    key={`line-${b.index}`}
-                    style={{
-                      position: 'absolute',
-                      left: `${leftPercent}%`,
-                      bottom: `${bottomOffset}px`,
-                      transform: 'translateX(-50%)',
-                      width: '1px',
-                      height: `${offset}px`,
-                      background: 'linear-gradient(to top, rgba(255,255,255,0.2), rgba(255,255,255,0.95))',
-                      zIndex: 1
-                    }}
-                  />
-                );
-              })}
-
-              {/* Layer 2: Interactive Title Pills */}
-              {/* Rendered second (zIndex 50) so they float on top of any pinning lines passing behind them */}
-              {buckets.map((b) => {
-                const famousAppInBucket = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
-                const callout = famousAppInBucket ? FAMOUS_CALLOUTS[famousAppInBucket.id] : null;
-                if (!callout || b.apps.length === 0) return null;
-
-                // Pick active offset based on selected time mode
-                const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
-                // If offset is negative (e.g. -1), completely hide this pill in the current view
-                if (offset < 0) return null;
-
-                const leftPercent = ((b.index + 0.5) / buckets.length) * 100;
-                // Position pill exactly at the top of the pinning line
-                const bottomOffset = (b.apps.length * (tileHeight + 2)) + offset;
-
-                return (
-                  <div
-                    key={`pill-${b.index}`}
-                    onClick={(e) => { e.stopPropagation(); onSelectApparition(famousAppInBucket!); }}
-                    style={{
-                      position: 'absolute',
-                      left: `${leftPercent}%`,
-                      bottom: `${bottomOffset}px`,
-                      transform: 'translateX(-50%)',
-                      zIndex: 50,
-                      fontSize: '11px',
-                      fontWeight: 700,
-                      color: '#ffffff',
-                      whiteSpace: 'nowrap',
-                      backgroundColor: 'rgba(15, 23, 42, 0.98)',
-                      padding: '5px 12px',
-                      borderRadius: '16px',
-                      border: '1px solid var(--accent-color)',
-                      backdropFilter: 'blur(8px)',
-                      boxShadow: '0 8px 25px rgba(0,0,0,0.9)',
-                      marginBottom: '4px',
-                      pointerEvents: 'auto',
-                      cursor: 'pointer',
-                      transition: 'all 0.2s ease'
-                    }}
-                    onMouseOver={(e) => {
-                      e.currentTarget.style.backgroundColor = 'var(--accent-color)';
-                      e.currentTarget.style.transform = 'translateX(-50%) scale(1.05)';
-                    }}
-                    onMouseOut={(e) => {
-                      e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.98)';
-                      e.currentTarget.style.transform = 'translateX(-50%)';
-                    }}
-                  >
-                    {callout.label}
-                  </div>
-                );
-              })}
-            </div>
+      {/* ── Hover tooltip ─────────────────────────────────────────────────── */}
+      {hoveredApp && (
+        <div style={{
+          position: 'absolute', bottom: '100%', left: '50%',
+          transform: 'translateX(-50%) translateY(-8px)',
+          backgroundColor: 'rgba(15,23,42,0.97)',
+          border: `1px solid ${getStatusColor(hoveredApp.approvalStatus)}`,
+          padding: '8px 14px', borderRadius: '10px', color: '#fff',
+          zIndex: 100, boxShadow: '0 8px 30px rgba(0,0,0,0.7)',
+          pointerEvents: 'none', display: 'flex', flexDirection: 'column', gap: '3px', minWidth: '200px'
+        }}>
+          <div style={{ fontSize: '13px', fontWeight: 700, display: 'flex', justifyContent: 'space-between', gap: '16px' }}>
+            <span>{hoveredApp.title}</span>
+            <span style={{ color: '#fbbf24' }}>{hoveredApp.year}</span>
+          </div>
+          <div style={{ fontSize: '11px', opacity: 0.8 }}>{hoveredApp.location}, {hoveredApp.country}</div>
+          <div style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '5px', marginTop: '2px' }}>
+            <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: getStatusColor(hoveredApp.approvalStatus) }} />
+            <span style={{ fontWeight: 600 }}>
+              {getApparitionStatusCategory(hoveredApp.approvalStatus) === 'Approved for faith expression'
+                ? 'Faith expression'
+                : getApparitionStatusCategory(hoveredApp.approvalStatus)}
+            </span>
           </div>
         </div>
       )}
 
-      {/* Horizontal Axis & Ticks */}
-      {/* Note: marginTop controls the vertical distance between the axis line and the bottom of the histogram tiles container */}
-      <div
-        onClick={() => { if (!isExpanded) setIsExpanded(true); }}
-        style={{ position: 'relative', height: '28px', width: '100%', marginTop: '2px', cursor: isExpanded ? 'default' : 'pointer' }}
-        title={!isExpanded ? "Click to expand activity graph" : ""}
-      >
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255, 255, 255, 0.3)' }} />
+      {/* ── Histogram ─────────────────────────────────────────────────────── */}
+      <div style={{ position: 'relative', width: '100%', height: '200px' }}>
 
+        {/* Stacked bars */}
+        <div style={{
+          display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between',
+          width: '100%', height: '100%', position: 'absolute', bottom: 0, left: 0, paddingBottom: '1px'
+        }}>
+          {buckets.map(b => (
+            <div key={b.index} style={{
+              flex: 1, minWidth: 0, margin: '0 0.5px',
+              display: 'flex', flexDirection: 'column-reverse', alignItems: 'center',
+              gap: '2px', height: '100%', justifyContent: 'flex-start', position: 'relative'
+            }}>
+              {b.apps.map(app => {
+                const isFuture = isPlaying && selectedApparition && app.year > selectedApparition.year;
+                if (isFuture) return null;
+                const isSelected = selectedApparition?.id === app.id;
+                const statusColor = getStatusColor(app.approvalStatus);
+                return (
+                  <div
+                    key={app.id}
+                    onClick={e => { e.stopPropagation(); onSelectApparition(app); }}
+                    onMouseEnter={() => setHoveredApp(app)}
+                    onMouseLeave={() => setHoveredApp(null)}
+                    style={{
+                      width: '100%', maxWidth: '10px', minWidth: '1.5px',
+                      height: `${tileHeight}px`, backgroundColor: statusColor,
+                      borderRadius: '1px', borderTop: '1px solid rgba(255,255,255,0.3)',
+                      border: isSelected ? '2px solid #ffffff' : undefined,
+                      boxShadow: isSelected ? `0 0 12px #ffffff, 0 0 8px ${statusColor}` : undefined,
+                      cursor: 'pointer', transition: 'all 0.2s ease',
+                      opacity: selectedApparition ? (isSelected ? 1 : 0.4) : 0.9,
+                      zIndex: isSelected ? 30 : 1,
+                      transform: isSelected ? 'scale(1.25)' : undefined
+                    }}
+                  />
+                );
+              })}
+            </div>
+          ))}
+
+          {/* Callout overlays */}
+          <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
+
+            {/* Playback laser */}
+            {selectedApparition && isPlaying && (() => {
+              const idx = buckets.findIndex(b => b.apps.some(a => a.id === selectedApparition.id));
+              if (idx === -1) return null;
+              const leftPct = ((idx + 0.5) / buckets.length) * 100;
+              return (
+                <div style={{
+                  position: 'absolute', left: `${leftPct}%`, bottom: 0, top: '-40px',
+                  width: '2px', backgroundColor: '#38bdf8',
+                  boxShadow: '0 0 12px #38bdf8', zIndex: 110,
+                  transform: 'translateX(-50%)', transition: 'left 0.5s cubic-bezier(0.4,0,0.2,1)',
+                  pointerEvents: 'none'
+                }}>
+                  <div style={{
+                    position: 'absolute', top: 0, left: '50%',
+                    transform: 'translate(-50%, -100%)',
+                    backgroundColor: '#38bdf8', color: '#0f172a',
+                    padding: '2px 8px', borderRadius: '10px',
+                    fontSize: '11px', fontWeight: 800, whiteSpace: 'nowrap'
+                  }}>
+                    {selectedApparition.year}: {selectedApparition.title}
+                  </div>
+                </div>
+              );
+            })()}
+
+            {/* Callout lines */}
+            {buckets.map(b => {
+              const famous = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
+              const callout = famous ? FAMOUS_CALLOUTS[famous.id] : null;
+              if (!callout || b.apps.length === 0) return null;
+              const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
+              if (offset < 0) return null;
+              const leftPct = ((b.index + 0.5) / buckets.length) * 100;
+              const bottomPx = b.apps.length * (tileHeight + 2);
+              return (
+                <div key={`line-${b.index}`} style={{
+                  position: 'absolute', left: `${leftPct}%`, bottom: `${bottomPx}px`,
+                  transform: 'translateX(-50%)', width: '1px', height: `${offset}px`,
+                  background: 'linear-gradient(to top, rgba(255,255,255,0.15), rgba(255,255,255,0.9))', zIndex: 1
+                }} />
+              );
+            })}
+
+            {/* Callout pills */}
+            {buckets.map(b => {
+              const famous = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
+              const callout = famous ? FAMOUS_CALLOUTS[famous.id] : null;
+              if (!callout || b.apps.length === 0) return null;
+              const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
+              if (offset < 0) return null;
+              const leftPct = ((b.index + 0.5) / buckets.length) * 100;
+              const bottomPx = (b.apps.length * (tileHeight + 2)) + offset;
+              return (
+                <div
+                  key={`pill-${b.index}`}
+                  onClick={e => { e.stopPropagation(); onSelectApparition(famous!); }}
+                  style={{
+                    position: 'absolute', left: `${leftPct}%`, bottom: `${bottomPx}px`,
+                    transform: 'translateX(-50%)', zIndex: 50,
+                    fontSize: '11px', fontWeight: 700, color: '#fff', whiteSpace: 'nowrap',
+                    backgroundColor: 'rgba(15,23,42,0.97)', padding: '4px 10px',
+                    borderRadius: '14px', border: '1px solid var(--accent-color)',
+                    backdropFilter: 'blur(8px)', boxShadow: '0 6px 20px rgba(0,0,0,0.8)',
+                    pointerEvents: 'auto', cursor: 'pointer', transition: 'all 0.2s ease'
+                  }}
+                  onMouseOver={e => { e.currentTarget.style.backgroundColor = 'var(--accent-color)'; }}
+                  onMouseOut={e => { e.currentTarget.style.backgroundColor = 'rgba(15,23,42,0.97)'; }}
+                >
+                  {callout.label}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+
+      {/* ── Year axis ─────────────────────────────────────────────────────── */}
+      <div style={{ position: 'relative', height: '26px', width: '100%', marginTop: '2px' }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255,255,255,0.25)' }} />
         {Array.from({ length: Math.ceil(range / tickStep) + 1 }).map((_, i) => {
           const tickYear = Math.floor(startY / tickStep) * tickStep + i * tickStep;
           if (tickYear < startY || tickYear > endY) return null;
-          const leftPercent = ((tickYear - startY) / range) * 100;
-
+          const leftPct = ((tickYear - startY) / range) * 100;
           return (
-            <div key={`tick-${tickYear}`} style={{
-              position: 'absolute',
-              left: `${leftPercent}%`,
-              top: 0,
-              transform: 'translateX(-50%)',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              pointerEvents: 'none'
+            <div key={tickYear} style={{
+              position: 'absolute', left: `${leftPct}%`, top: 0,
+              transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column',
+              alignItems: 'center', pointerEvents: 'none'
             }}>
-              <div style={{ width: '2px', height: '6px', background: 'rgba(255, 255, 255, 0.5)' }} />
-              <div style={{ fontSize: '11px', color: 'rgba(255, 255, 255, 0.75)', fontWeight: 600, marginTop: '2px' }}>
+              <div style={{ width: '2px', height: '5px', background: 'rgba(255,255,255,0.45)' }} />
+              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.65)', fontWeight: 600, marginTop: '2px' }}>
                 {tickYear}
               </div>
             </div>
