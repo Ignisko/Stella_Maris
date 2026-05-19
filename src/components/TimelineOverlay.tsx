@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, Clock, Play, Pause, ChevronDown, X } from 'lucide-react';
+import { BarChart2, Clock, Play, Pause, ChevronUp, ChevronDown, X } from 'lucide-react';
 import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 
 interface TimelineOverlayProps {
@@ -146,7 +146,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       >
         <BarChart2 size={20} color="var(--accent-color)" />
         <span>Timeline</span>
-        <ChevronDown size={16} style={{ opacity: 0.7, color: 'var(--accent-color)' }} />
+        <ChevronUp size={16} style={{ opacity: 0.7, color: 'var(--accent-color)' }} />
       </button>
     );
   }
