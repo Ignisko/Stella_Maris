@@ -68,29 +68,30 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
 
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          // LOD: FEWER labels when close (zoomed in), MORE when far out
-          // But "more" is still capped by MAX_LABELS in visibleHtmlLabels.
-          // alt < 1.0  → threshold 1  → max 1 label  (just selected)
-          // alt < 2.0  → threshold 2  → max 20 labels (explicitly priority-1&2)
-          // alt >= 2.0 → threshold 3  → max 12 labels (world-famous only, priority-1)
+          // ── 5-zone LOD ──────────────────────────────────────────────────────
+          // Zone 1 (very close, alt < 0.4) → 0 extra labels (selected only)
+          // Zone 2 (close,     alt < 0.9) → max 6,  priority-1 only
+          // Zone 3 (mid,       alt < 1.6) → max 12, priority-1 only
+          // Zone 4 (mid-far,   alt < 2.4) → max 8,  priority-1 only
+          // Zone 5 (far,       alt ≥ 2.4) → max 5,  priority-1 only
+          // ────────────────────────────────────────────────────────────────────
           const altitude = Math.max(0.1, pov.altitude);
           let newThreshold: number;
-          if (altitude < 1.0) newThreshold = 1;
-          else if (altitude < 2.0) newThreshold = 2;
-          else newThreshold = 3;
+          if (altitude < 0.4) newThreshold = 1;
+          else if (altitude < 0.9) newThreshold = 2;
+          else if (altitude < 1.6) newThreshold = 3;
+          else if (altitude < 2.4) newThreshold = 4;
+          else newThreshold = 5;
 
           if (newThreshold !== lodRef.current) {
             lodRef.current = newThreshold;
             setLodThreshold(newThreshold);
           }
 
-          // Label opacity: fully visible when zoomed in, fades when very far out
-          let targetOpacity = 1;
-          if (altitude > 2.5) {
-            targetOpacity = Math.max(0, 1.0 - ((altitude - 2.5) / 1.0));
-          }
-          targetOpacity = Math.max(0, Math.min(targetOpacity, 1));
-
+          // Labels fade slightly when very far out
+          const targetOpacity = altitude > 3.0
+            ? Math.max(0, 1.0 - ((altitude - 3.0) / 0.8))
+            : 1;
           document.documentElement.style.setProperty('--globe-label-opacity', targetOpacity.toString());
           document.documentElement.style.setProperty('--globe-label-scale', '1');
         }
@@ -117,30 +118,36 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, [apparitions, selectedApparition]);
 
   const visibleHtmlLabels = useMemo(() => {
-    // ──────────────────────────────────────────────────────────────────────────
-    // LABEL LOD RULES  (lodThreshold set by altitude in the RAF loop)
-    //   threshold 1 (zoomed in, alt < 1.2) → only the selected item
-    //   threshold 2 (mid,        alt < 2.0) → top 20 by explicit priority
-    //   threshold 3 (zoomed out, alt ≥ 2.0) → top 12 world-famous only
+    // ── Per-zone label caps (matches the 5-zone RAF system above) ────────────
+    // Only entries with an EXPLICIT priority field are eligible as labels.
+    // Entries without priority are never labelled (until selected by the user).
     //
-    // "Explicit priority" means the field is actually set in the data file.
-    // Entries without a priority field are treated as priority 99 (unlabelled)
-    // unless they are the currently selected apparition.
-    // ──────────────────────────────────────────────────────────────────────────
-    const MAX_LABELS: Record<number, number> = { 1: 1, 2: 20, 3: 12 };
-    const maxLabels = MAX_LABELS[lodThreshold] ?? 12;
+    // Zone 1 (very close): selected only → 0 candidates
+    // Zone 2 (close):      max 6,  priority ≤ 1
+    // Zone 3 (mid):        max 12, priority ≤ 1
+    // Zone 4 (mid-far):    max 8,  priority ≤ 1
+    // Zone 5 (far):        max 5,  priority ≤ 1
+    // ────────────────────────────────────────────────────────────────────────
+    const ZONE_CONFIG: Record<number, { maxLabels: number; maxPriority: number }> = {
+      1: { maxLabels: 0,  maxPriority: 0 },
+      2: { maxLabels: 6,  maxPriority: 1 },
+      3: { maxLabels: 12, maxPriority: 1 },
+      4: { maxLabels: 8,  maxPriority: 1 },
+      5: { maxLabels: 5,  maxPriority: 1 },
+    };
+    const { maxLabels, maxPriority } = ZONE_CONFIG[lodThreshold] ?? { maxLabels: 5, maxPriority: 1 };
 
-    // Build candidate list — only use EXPLICIT priorities (not the default fallback)
+    // Build candidate list — only EXPLICIT priorities, sorted best-first
     const candidates = apparitions
       .filter(app => {
-        if (selectedApparition?.id === app.id) return true; // always keep selected
-        if (app.priority === undefined || app.priority === null) return false; // skip unlabelled
-        return app.priority <= Math.min(lodThreshold + 1, 3); // use explicit rank only
+        if (selectedApparition?.id === app.id) return true;
+        if (app.priority === undefined || app.priority === null) return false;
+        return app.priority <= maxPriority;
       })
       .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
 
-    // Cluster nearby candidates so Europe doesn't get wall-to-wall text
-    const CLUSTER_DEG = 0.8; // ~90 km — larger cluster radius reduces overlap
+    // Cluster nearby candidates — larger radius = less clutter in dense regions
+    const CLUSTER_DEG = 1.2; // ~130 km
     const clusters: (Apparition & { clusterCount?: number })[] = [];
     for (const app of candidates) {
       if (selectedApparition?.id !== app.id && clusters.length >= maxLabels) break;
@@ -151,7 +158,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         clusters.push({ ...app, clusterCount: 1 });
       } else {
         existing.clusterCount = (existing.clusterCount || 1) + 1;
-        // Prefer the selected apparition or the higher-priority one
         if (selectedApparition?.id === app.id || (app.priority ?? 99) < (existing.priority ?? 99)) {
           existing.id = app.id;
           existing.title = app.title;
@@ -163,7 +169,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       }
     }
 
-    // Always include selected apparition even if it has no explicit priority
+    // Always show selected apparition regardless of priority
     if (selectedApparition && !clusters.find(c => c.id === selectedApparition.id)) {
       clusters.push({ ...selectedApparition, clusterCount: 1 });
     }
@@ -211,8 +217,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         pointLat="lat"
         pointLng="lng"
         pointColor={(d: any) => getStatusColor(d.approvalStatus)}
-        pointAltitude={0.015}
-        pointRadius={0.4}
+        pointAltitude={lodThreshold <= 2 ? 0.005 : lodThreshold === 3 ? 0.008 : 0.013}
+        pointRadius={lodThreshold <= 1 ? 0.08 : lodThreshold === 2 ? 0.13 : lodThreshold === 3 ? 0.2 : lodThreshold === 4 ? 0.28 : 0.36}
         pointsMerge={false}
         ringsData={selectedApparition ? [selectedApparition] : []}
         ringLat="lat"
