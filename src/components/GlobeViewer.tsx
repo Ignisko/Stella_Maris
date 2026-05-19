@@ -40,9 +40,9 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     if (globeEl.current && globeEl.current.controls()) {
       const controls = globeEl.current.controls();
       controls.autoRotateSpeed = 0.15;
-      controls.minDistance = 120; // Radius is 100, min altitude 0.2 (stops camera from clipping inside the earth)
-      controls.maxDistance = 400; // max altitude 3.0 (stops camera from flying too far out)
-      controls.zoomSpeed = 0.8;
+      controls.minDistance = 155; // Globe radius ~100. 155 keeps camera safely outside globe surface
+      controls.maxDistance = 400;
+      controls.zoomSpeed = 0.6;
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
   }, []);
@@ -60,42 +60,40 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       if (globeEl.current) {
         if (!controlsConfigured && globeEl.current.controls()) {
           const controls = globeEl.current.controls();
-          controls.minDistance = 120;
+          controls.minDistance = 155;
           controls.maxDistance = 400;
-          controls.zoomSpeed = 0.8;
+          controls.zoomSpeed = 0.6;
           controlsConfigured = true;
         }
 
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          const altitude = Math.max(0.2, pov.altitude);
-          let newThreshold = 1;
-          if (altitude < 0.8) newThreshold = 5;
-          else if (altitude < 1.4) newThreshold = 3;
-          else if (altitude < 2.2) newThreshold = 2;
-          else newThreshold = 1;
+          // LOD: FEWER labels when close (zoomed in), MORE when far out
+          // altitude < 0.5 → only selected (priority 1)
+          // altitude < 1.2 → priority 1 only
+          // altitude < 2.0 → priority 1-2
+          // altitude >= 2.0 → priority 1-3 (everything)
+          const altitude = Math.max(0.1, pov.altitude);
+          let newThreshold: number;
+          if (altitude < 0.5) newThreshold = 1;
+          else if (altitude < 1.2) newThreshold = 1;
+          else if (altitude < 2.0) newThreshold = 2;
+          else newThreshold = 3;
 
           if (newThreshold !== lodRef.current) {
             lodRef.current = newThreshold;
             setLodThreshold(newThreshold);
           }
 
-          let targetScale = 1;
+          // Label opacity: fully visible when zoomed in, fades when very far out
           let targetOpacity = 1;
-
-          if (altitude < 2.2) {
-             targetScale = 0.85 + (altitude / 2.2) * 0.15;
-             targetOpacity = 1;
-          } else {
-             targetScale = 1.0 - ((altitude - 2.2) / 2.8) * 0.4;
-             targetOpacity = 1.0 - ((altitude - 2.2) / 1.3);
+          if (altitude > 2.5) {
+            targetOpacity = Math.max(0, 1.0 - ((altitude - 2.5) / 1.0));
           }
-          
-          targetScale = Math.max(0.7, Math.min(targetScale, 1.0));
           targetOpacity = Math.max(0, Math.min(targetOpacity, 1));
-          
-          document.documentElement.style.setProperty('--globe-label-scale', targetScale.toString());
+
           document.documentElement.style.setProperty('--globe-label-opacity', targetOpacity.toString());
+          document.documentElement.style.setProperty('--globe-label-scale', '1');
         }
       }
       animationFrameId = requestAnimationFrame(updateScale);
@@ -105,10 +103,10 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, []);
 
   const visibleApparitions = useMemo(() => {
-    const raw = apparitions.filter(app => (app.priority || 3) <= lodThreshold);
+    // Show all pins always (dots are lightweight), only labels are LOD-gated
     const clusters: Apparition[] = [];
-    const threshold = 0.45; // ~50km radius matching 3D cylinder diameter (0.4 radius)
-    for (const app of raw) {
+    const threshold = 0.45;
+    for (const app of apparitions) {
       const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
       if (!existing) {
         clusters.push({ ...app });
@@ -117,23 +115,18 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       }
     }
     return clusters;
-  }, [apparitions, lodThreshold, selectedApparition]);
+  }, [apparitions, selectedApparition]);
 
   const visibleHtmlLabels = useMemo(() => {
-    const famousKeywords = ['guadalupe', 'fatima', 'lourdes', 'medjugorje', 'miraculous medal', 'kibeho', 'banneux', 'knock', 'aparecida', 'akita', 'czestochowa', 'pilar', 'loreto', 'carmel'];
-    
+    // Only show labels for apparitions matching the current LOD threshold
+    // Lower lodThreshold = fewer labels (only most famous/priority-1)
     const raw = apparitions.filter(app => {
-      if (selectedApparition?.id === app.id) return true;
-      const isFamous = (app.priority === 1) || famousKeywords.some(kw => app.title.toLowerCase().includes(kw) || app.id.includes(kw));
-      
-      if (lodThreshold === 1) {
-        return isFamous;
-      }
+      if (selectedApparition?.id === app.id) return true; // Always show selected
       return (app.priority || 3) <= lodThreshold;
     });
 
     const clusters: (Apparition & { clusterCount?: number })[] = [];
-    const threshold = 0.45; // ~50km matching 3D cylinder diameter
+    const threshold = 0.45;
     for (const app of raw) {
       const existing = clusters.find(c => Math.abs(c.lat - app.lat) < threshold && Math.abs(c.lng - app.lng) < threshold);
       if (!existing) {
@@ -257,37 +250,37 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
         }}
       />
 
-      {/* Play/Pause Control Button */}
+      {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
       <button
         onClick={(e) => {
           e.stopPropagation();
           setIsAutoRotate(prev => !prev);
         }}
         style={{
-          position: 'absolute',
-          bottom: '40px',
+          position: 'fixed',
+          bottom: '100px',
           left: '25px',
-          zIndex: 50,
+          zIndex: 200,
           pointerEvents: 'auto',
-          background: 'rgba(15, 23, 42, 0.6)',
+          background: 'rgba(15, 23, 42, 0.75)',
           backdropFilter: 'blur(12px)',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
+          border: '1px solid rgba(255, 255, 255, 0.15)',
           borderRadius: '50%',
-          width: '48px',
-          height: '48px',
+          width: '44px',
+          height: '44px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           color: 'var(--text-color)',
           cursor: 'pointer',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
+          boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
           transition: 'all 0.2s ease'
         }}
-        onMouseOver={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)'}
-        onMouseOut={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.6)'}
-        title={isAutoRotate ? "Pause Rotation" : "Play Rotation"}
+        onMouseOver={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)'}
+        onMouseOut={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.75)'}
+        title={isAutoRotate ? "Pause rotation" : "Resume rotation"}
       >
-        {isAutoRotate ? <Pause size={20} /> : <Play size={20} style={{ marginLeft: '2px' }} />}
+        {isAutoRotate ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: '2px' }} />}
       </button>
     </div>
   );
