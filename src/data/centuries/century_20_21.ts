@@ -780,5 +780,17 @@ export const century20and21Apparitions: Apparition[] = [
     description: "Angelik Caruana claimed messages and visions at a hill in Borg in-Nadur. In 2016, Archbishop Charles Scicluna issued a definitive decree establishing that the alleged phenomena were not supernatural.",
     approvalStatus: "Unapproved apparitions",
     priority: 4
+  },
+  {
+    id: "durunka_assiut",
+    title: "Our Lady of Durunka",
+    location: "Assiut",
+    country: "Egypt",
+    lat: 27.1350,
+    lng: 31.1711,
+    year: 2023,
+    description: "Honoring the historic final stop of the Holy Family's flight into Egypt. Hundreds of thousands gather annually at the ancient Cave Monastery of Durunka, where Egypt's largest bronze statue of Mary was erected in 2023 to celebrate her birthday, supported by official commemorative minting by the Egyptian government.",
+    approvalStatus: "Coptic approved",
+    priority: 2
   }
 ];
