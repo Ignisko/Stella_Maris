@@ -86,7 +86,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     if (globeEl.current && globeEl.current.controls()) {
       const controls = globeEl.current.controls();
       controls.autoRotateSpeed = 0.15;
-      controls.minDistance = 155; // Globe radius ~100. 155 keeps camera safely outside globe surface
+      controls.minDistance = 112; // Globe radius ~100. 112 keeps camera safely outside globe surface but allows closer zoom
       controls.maxDistance = 400;
       controls.zoomSpeed = 0.6;
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
@@ -106,7 +106,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       if (globeEl.current) {
         if (!controlsConfigured && globeEl.current.controls()) {
           const controls = globeEl.current.controls();
-          controls.minDistance = 155;
+          controls.minDistance = 112;
           controls.maxDistance = 400;
           controls.zoomSpeed = 0.6;
           controlsConfigured = true;
@@ -372,6 +372,9 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           ringPropagationSpeed={4}
           ringRepeatPeriod={700}
           onPointClick={handlePointClick}
+          onPointHover={(point) => {
+            document.body.style.cursor = point ? 'pointer' : 'default';
+          }}
           onGlobeClick={handleGlobeClick}
           htmlElementsData={visibleHtmlLabels}
           htmlElement={(dRaw: unknown) => {
@@ -404,6 +407,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
               opacity: ${isSelected ? '1' : 'var(--globe-label-opacity, 1)'};
               transform-origin: bottom center;
               pointer-events: auto; 
+              cursor: pointer;
               white-space: nowrap; 
               z-index: ${isSelected ? 9999 : 1};
               text-shadow: ${isSelected ? 'none' : '0 2px 8px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.8)'};
