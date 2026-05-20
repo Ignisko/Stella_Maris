@@ -2,15 +2,18 @@ import React, { useState } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { X, MapPin, Calendar, ChevronRight, Search } from 'lucide-react';
 import { getStatusColor, getApparitionStatusCategory } from '../utils/colors';
+import { t } from '../utils/i18n';
+import type { Language } from '../utils/i18n';
 
 interface DirectoryModalProps {
   isOpen: boolean;
   onClose: () => void;
   apparitions: Apparition[];
   onSelectApparition: (app: Apparition) => void;
+  lang: Language;
 }
 
-const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, apparitions, onSelectApparition }) => {
+const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, apparitions, onSelectApparition, lang }) => {
   const [localQuery, setLocalQuery] = useState('');
 
   if (!isOpen) return null;
@@ -62,13 +65,13 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
         }}>
           <div>
             <h2 style={{ fontSize: '20px', fontWeight: 700, margin: 0, color: 'var(--gold-accent)', display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span>Marian apparitions directory</span>
+              <span>{t('directoryTitle', lang)}</span>
               <span style={{ fontSize: '13px', padding: '2px 8px', borderRadius: '12px', background: 'rgba(255, 255, 255, 0.1)', color: 'var(--text-color)', fontWeight: 500 }}>
-                {filteredList.length} listed
+                {t('directoryListed', lang, { count: filteredList.length })}
               </span>
             </h2>
             <p style={{ fontSize: '13px', opacity: 0.7, margin: '4px 0 0 0', color: 'var(--text-color)' }}>
-              Complete chronological overview of filtered shrines and apparitions
+              {t('directorySubtitle', lang)}
             </p>
           </div>
           <button
@@ -98,7 +101,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
           <Search size={16} color="var(--accent-color)" />
           <input
             type="text"
-            placeholder="Quick filter by title, city, country, year, or status..."
+            placeholder={t('directoryQuickFilter', lang)}
             value={localQuery}
             onChange={e => setLocalQuery(e.target.value)}
             style={{
@@ -114,7 +117,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
           />
           {localQuery && (
             <button onClick={() => setLocalQuery('')} style={{ background: 'none', border: 'none', color: '#f1f5f9', opacity: 0.6, cursor: 'pointer', fontSize: '13px' }}>
-              Clear
+              {t('directoryClear', lang)}
             </button>
           )}
         </div>
@@ -123,7 +126,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
         <div style={{ flex: 1, overflowY: 'auto', padding: '10px 20px' }}>
           {filteredList.length === 0 ? (
             <div style={{ padding: '60px 20px', textAlign: 'center', opacity: 0.6, fontSize: '15px' }}>
-              No apparitions match your current search criteria.
+              {t('directoryNoResults', lang)}
             </div>
           ) : (
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
@@ -195,7 +198,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
                       }}>
                         <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 8px ${color}` }} />
                         <span style={{ fontSize: '12px', fontWeight: 600, color: '#f1f5f9' }}>
-                          {category === "Approved for faith expression" ? "Faith expression" : category}
+                          {t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}
                         </span>
                       </div>
                       <ChevronRight size={16} opacity={0.5} />

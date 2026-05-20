@@ -1,0 +1,3248 @@
+{
+  "ephesus": {
+    "title": "Nossa Senhora em Éfeso",
+    "location": "Éfeso",
+    "country": "Turquia",
+    "description": "Segundo a lenda, a Santa Virgem Maria apareceu aos apóstolos, três dias após a sua Assunção ao céu. Vestida com uma luz brilhante, ela prometeu: 'Ficarei com você na eternidade.'"
+  },
+  "boulogne": {
+    "title": "Nossa Senhora de Bolonha",
+    "location": "Bolonha",
+    "country": "França",
+    "description": "Um navio sem leme carregando uma estátua de Maria pousou em Boulogne. Maria apareceu à multidão e anunciou que havia escolhido a cidade como lugar de graça."
+  },
+  "myra": {
+    "title": "Nossa Senhora de São Nicolau",
+    "location": "Mira",
+    "country": "Turquia",
+    "description": "São Nicolau de Bari recebeu duas aparições instando-o a cumprir sua missão espiritual, a segunda ocorrendo durante o Concílio de Nicéia."
+  },
+  "alexandria": {
+    "title": "Nossa Senhora de Santa Catarina",
+    "location": "Alexandria",
+    "country": "Egito",
+    "description": "Santa Catarina foi convertida por uma visão de Nossa Senhora e do Santo Menino, levando-a a recusar o casamento com um imperador."
+  },
+  "lepuy": {
+    "title": "Nossa Senhora do Puy",
+    "location": "Le Puy en Velay",
+    "country": "França",
+    "description": "Nossa Senhora apareceu a um recém-convertido chamado Vila, que sofria de uma doença grave. Ela ficou completamente curada e construiu uma pequena capela no local."
+  },
+  "kuravilangad": {
+    "title": "Nossa Senhora de Kuravilangad",
+    "location": "Kuravilangad",
+    "country": "Índia",
+    "description": "Nossa Senhora apareceu às crianças que cuidavam do seu rebanho, pedindo-lhes que construíssem uma igreja onde brotasse uma fonte milagrosa e perpétua."
+  },
+  "patmos": {
+    "title": "A Mulher Vestida de Sol",
+    "location": "Patmos",
+    "country": "Grécia",
+    "description": "Segundo a lenda, São João Evangelista recebeu uma visão da Virgem Maria antes de compor o Livro do Apocalipse."
+  },
+  "toledo": {
+    "title": "Nossa Senhora de Santo Ildefonso",
+    "location": "Toledo",
+    "country": "Espanha",
+    "description": "Maria elogiou o fervor religioso do Bispo Ildefonso e entregou-lhe uma valiosa vestimenta como símbolo da sua proteção."
+  },
+  "benevento": {
+    "title": "Nossa Senhora a São Barabato",
+    "location": "Benevento",
+    "country": "Itália",
+    "description": "A Virgem apareceu a São Barabato sob os muros da cidade sitiada de Constantino II."
+  },
+  "neocaesarea": {
+    "title": "Nossa Senhora a São Gregório",
+    "location": "Neocesaréia",
+    "country": "Turquia",
+    "description": "A Virgem Maria e o Apóstolo João apareceram a São Gregório, o Maravilhas, para esclarecer os mistérios teológicos relativos à Trindade."
+  },
+  "snows": {
+    "title": "Nossa Senhora das Neves",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "A Virgem Maria deixou milagrosamente neve em meados do quente mês de agosto no Monte Esquilino, indicando a área exata onde ela queria que fosse construída a Basílica de Santa Maria Maior."
+  },
+  "pillar": {
+    "title": "Nossa Senhora do Pilar",
+    "location": "Saragoça",
+    "country": "Espanha",
+    "description": "Segundo a lenda, o apóstolo Tiago, o Maior, estava proclamando o Evangelho quando viu Maria aparecer milagrosamente em carne e osso sobre uma coluna, chamando-o a retornar a Jerusalém. Esta é considerada a primeira aparição mariana."
+  },
+  "tagaste": {
+    "title": "Nossa Senhora a Santa Mônica",
+    "location": "Tagaste",
+    "country": "Argélia",
+    "description": "A Virgem apareceu a Santa Mônica, mãe de Santo Agostinho, consolando-a em suas aflições."
+  },
+  "caesarea": {
+    "title": "Soberana Medianeira",
+    "location": "Cesaréia",
+    "country": "Turquia",
+    "description": "Maria apareceu a São Basílio prometendo protegê-lo do plano do imperador romano Juliano, o Apóstata, de destruir sua igreja."
+  },
+  "saydnaya": {
+    "title": "Nossa Senhora de Saydnaya",
+    "location": "Saydnaya",
+    "country": "Síria",
+    "description": "O imperador Justiniano I teve uma visão da Virgem Maria, que lhe ordenou que construísse um convento na rocha alta sobre a qual ela estava."
+  },
+  "valenciennes": {
+    "title": "Nossa Senhora do Cordão",
+    "location": "Valenciennes",
+    "country": "França",
+    "description": "Maria apareceu com muitos Anjos que estenderam uma corda pela cidade para deter uma praga, pedindo aos moradores que fizessem uma procissão."
+  },
+  "einsiedeln": {
+    "title": "Nossa Senhora de Einsiedeln",
+    "location": "Einsiedeln",
+    "country": "Suíça",
+    "description": "São Conrado testemunhou uma magnífica procissão de Anjos e do próprio Cristo consagrando milagrosamente a Capela de Nossa Senhora dos Eremitas."
+  },
+  "nocera": {
+    "title": "Santa Maria di Materdomini",
+    "location": "Nocera Superiore",
+    "country": "Itália",
+    "description": "A Virgem ordenou a uma camponesa que convencesse os aldeões a cavar debaixo de um carvalho, onde encontraram um precioso ícone bizantino."
+  },
+  "covadonga": {
+    "title": "Nossa Senhora de Covadonga",
+    "location": "Covadonga",
+    "country": "Espanha",
+    "description": "Nossa Senhora apareceu a Dom Pelayo, primeiro Rei das Astúrias, deixando uma estátua. Os cristãos posteriormente derrotaram os mouros contra probabilidades incríveis."
+  },
+  "incoronata": {
+    "title": "Mãe de Deus Coroada",
+    "location": "Borgo Incoronata",
+    "country": "Itália",
+    "description": "A Virgem apareceu num carvalho da floresta de Cervaro ao conde Irpino e a um pastor, pedindo-lhes que construíssem uma igreja."
+  },
+  "chartres": {
+    "title": "Nossa Senhora a São Fulberto",
+    "location": "Cartas",
+    "country": "França",
+    "description": "São Fulberto foi curado de uma doença grave após uma aparição da Santíssima Virgem. Em agradecimento, fundou a famosa catedral de Chartres."
+  },
+  "montefortino": {
+    "title": "Nossa Senhora dos Livres",
+    "location": "Montefortino",
+    "country": "Itália",
+    "description": "A Santíssima Virgem apareceu a Santina, uma pastora muda, que milagrosamente recebeu o dom da fala ao ver a Mãe Celestial."
+  },
+  "conche": {
+    "title": "Maddona di Conche",
+    "location": "Concha",
+    "country": "Itália",
+    "description": "São Constâncio viu uma Senhora com o Menino nos braços erguida no perímetro de um edifício milagrosamente marcado por uma pomba branca."
+  },
+  "mtathos": {
+    "title": "Nossa Senhora do Monte Athos",
+    "location": "Monte Athos",
+    "country": "Grécia",
+    "description": "A Virgem apareceu a Atanásio, consolando-o e exortando-o a não sair do Monte, inspirando-o a estabelecer ali o primeiro mosteiro."
+  },
+  "canterbury": {
+    "title": "Nossa Senhora a São Dustin",
+    "location": "Cantuária",
+    "country": "Inglaterra",
+    "description": "Enquanto São Dustin orava na catedral, a Virgem Maria apareceu-lhe com um coro celestial."
+  },
+  "palermo": {
+    "title": "Nossa Senhora dos Remédios",
+    "location": "Palermo",
+    "country": "Itália",
+    "description": "Durante um longo cerco onde a doença se espalhou entre suas tropas, Rogério I dos Normandos viu uma aparição de Nossa Senhora que forneceu um remédio."
+  },
+  "liege": {
+    "title": "Nossa Senhora ao Abade Rupert",
+    "location": "Liège",
+    "country": "Bélgica",
+    "description": "Nossa Senhora apareceu ao estudante Rupert de Deutz e prometeu-lhe o dom do conhecimento para ser dedicado em honra de Deus."
+  },
+  "walsingham": {
+    "title": "Nossa Senhora de Walsingham",
+    "location": "Walsingham",
+    "country": "Inglaterra",
+    "description": "Nossa Senhora apareceu a Richeldis de Faverches, apresentando-lhe a planta da Santa Casa da Sagrada Família em Nazaré e pedindo-lhe que construísse uma réplica como santuário."
+  },
+  "montserrat": {
+    "title": "Nossa Senhora de Montserrat",
+    "location": "Montserrate",
+    "country": "Espanha",
+    "description": "Uma proeminente aparição mariana a uma mãe no local que mais tarde se tornaria o famoso santuário de Montserrat."
+  },
+  "mainz": {
+    "title": "Nossa Senhora do Carvalho",
+    "location": "Mogúncia",
+    "country": "Alemanha",
+    "description": "São Bonifácio ouviu a voz de Maria vinda de um ícone milagroso pendurado em um carvalho, dizendo: 'O tronco deste carvalho permanecerá para sempre meu retrato.'"
+  },
+  "liesse": {
+    "title": "Nossa Senhora de Liesse",
+    "location": "Cairo",
+    "country": "Egito",
+    "description": "Três cavaleiros franceses presos receberam uma estátua milagrosa e radiante de Maria em sua masmorra, que converteu a filha do sultão, Ismenia."
+  },
+  "oudenburg": {
+    "title": "Nossa Senhora a Santo Arnulfo",
+    "location": "Oudenburg",
+    "country": "Bélgica",
+    "description": "A Mãe de Deus apareceu a Santo Arnulfo Arnaldo anunciando a sua morte e concedendo-lhe o desejo de falecer na véspera da Assunção."
+  },
+  "arras": {
+    "title": "Nossa Senhora dos Ardentes",
+    "location": "Arras",
+    "country": "França",
+    "description": "Maria apareceu nas nuvens como 'Rainha do Universo' aos habitantes, pedindo-lhes que fizessem penitência e estabelecendo uma fonte milagrosa."
+  },
+  "gargano_1120": {
+    "title": "Nossa Senhora a São João de Matera",
+    "location": "Gargano",
+    "country": "Itália",
+    "description": "Ao visitar a gruta de São Miguel, a Virgem apareceu a São João de Matera e mostrou-lhe onde construir uma nova abadia."
+  },
+  "reguengo": {
+    "title": "Nossa Senhora das Samambaias",
+    "location": "Reguengo do Fetal",
+    "country": "Portugal",
+    "description": "Uma pastora encontrou pão e uma fonte milagrosa para a qual foi encaminhada pela Mãe Santíssima."
+  },
+  "citeaux": {
+    "title": "Nossa Senhora de Santo Albérico",
+    "location": "Citações",
+    "country": "França",
+    "description": "Maria garantiu ao Abade de Citeaux sua proteção permanente e inspirou o traje branco dos cistercienses."
+  },
+  "turin": {
+    "title": "Maria Consolata",
+    "location": "Turim",
+    "country": "Itália",
+    "description": "Um cego recuperou a visão através da Mãe Santíssima, que o instruiu a desenterrar um retrato dela perdido, escondido desde as invasões sarracenas."
+  },
+  "bingen": {
+    "title": "Nossa Senhora a Santa Hildegarda",
+    "location": "Bingen am Rhein",
+    "country": "Alemanha",
+    "description": "Santa Hildegard von Bingen teve visões profundas da 'luz viva' e da Mãe de Deus, o que levou a seus incríveis escritos teológicos e científicos."
+  },
+  "pochaiv": {
+    "title": "Nossa Senhora de Pochaiv",
+    "location": "Pochaiv",
+    "country": "Ucrânia",
+    "description": "A Bem-Aventurada Virgem Maria apareceu em toda a sua glória, deixando uma pegada na rocha e realizando uma série de milagres, que levaram à fundação da Lavra."
+  },
+  "becket": {
+    "title": "Nossa Senhora de São Tomé Becket",
+    "location": "Londres",
+    "country": "Inglaterra",
+    "description": "A Madonna mostrou ao jovem Thomas uma batina vermelha, simbolizando seu futuro destino como arcebispo de Canterbury e mártir."
+  },
+  "mariazell": {
+    "title": "Madona de Maria Zell",
+    "location": "Mariazell",
+    "country": "Áustria",
+    "description": "Um monge chamado Magnus levou uma pequena estátua para o deserto, onde as árvores densas se separaram para abrir caminho para ele. Tornou-se um dos santuários mais famosos da Europa Central."
+  },
+  "schonau": {
+    "title": "Nossa Senhora a Santa Isabel",
+    "location": "Schönau",
+    "country": "Alemanha",
+    "description": "Santa Isabel de Schönau foi agraciada com êxtases e visões de Cristo e de Sua Santíssima Mãe durante a Missa e o Ofício Divino."
+  },
+  "ransom": {
+    "title": "Nossa Senhora do Resgate/Misericórdia",
+    "location": "Barcelona",
+    "country": "Espanha",
+    "description": "A Santíssima Virgem apareceu a três homens que estabeleceram a ordem religiosa mercedária para resgatar os cativos cristãos da prisão moura."
+  },
+  "tortosa": {
+    "title": "La Santa Cinta",
+    "location": "Tortosa",
+    "country": "Espanha",
+    "description": "A Santíssima Virgem deixou a sua fita ou faixa sagrada (La Santa Cinta) no altar-mor da catedral numa aparição noturna."
+  },
+  "melrose": {
+    "title": "Nossa Senhora de Melrose",
+    "location": "Melrose",
+    "country": "Escócia",
+    "description": "Um monge cisterciense viu a Santíssima Virgem Maria caminhando pelo dormitório com um anjo que escreveu uma lista dos monges destinados ao céu."
+  },
+  "roverano": {
+    "title": "Nossa Senhora de Roverano",
+    "location": "Roverano",
+    "country": "Itália",
+    "description": "A Virgem Maria apareceu a duas pastoras, curando uma que era muda de nascença, e deixou um ícone milagroso de estilo bizantino numa oliveira."
+  },
+  "proceno_agnes": {
+    "title": "Nossa Senhora de Santa Inês",
+    "location": "Proceno",
+    "country": "Itália",
+    "description": "Santa Inês de Montepulciano recebeu de Maria três pequenas pedras com instruções para construir uma igreja e um convento dominicano em sua homenagem."
+  },
+  "spoleto_clare": {
+    "title": "Nossa Senhora de Santa Clara",
+    "location": "Espoleto",
+    "country": "Itália",
+    "description": "Santa Clara de Montefalco recebeu uma magnífica aparição de Maria Santíssima precedida por Anjos pouco antes de sua morte. Seu coração e corpo permanecem incorruptos."
+  },
+  "bergamo_castagno": {
+    "title": "Madona das Castanhas",
+    "location": "Bérgamo",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu a um camponês nos castanheiros ao redor de Bérgamo."
+  },
+  "gorodetsk": {
+    "title": "Nossa Senhora a São Abraão",
+    "location": "Gorodetsk",
+    "country": "Rússia",
+    "description": "A Virgem apareceu ao eremita russo São Abraão de Gorodetsk e exigiu que ele construísse um eremitério no deserto."
+  },
+  "carmel": {
+    "title": "Nossa Senhora do Carmo",
+    "location": "Aylesford",
+    "country": "Inglaterra",
+    "description": "Em resposta ao apelo de São Simão Stock por ajuda, a Virgem Maria apareceu-lhe com um escapulário na mão e a promessa de segurança do Inferno."
+  },
+  "laurignano": {
+    "title": "Nossa Senhora de Laurignano",
+    "location": "Laurignano",
+    "country": "Itália",
+    "description": "Simone Adami, uma mendiga cega, lavou-se em uma fonte próxima depois que Maria lhe falou em sonho: 'Lave-se na fonte e veja.' Sua visão foi restaurada."
+  },
+  "santagata": {
+    "title": "Madonna del Socorro",
+    "location": "Sant'Agata Feltria",
+    "country": "Itália",
+    "description": "Uma jovem mãe gritou com raiva para o filho; quando um demônio apareceu, uma mulher radiante salvou o menino. O santuário tornou-se famoso pelas peregrinações regionais."
+  },
+  "avignon_favier": {
+    "title": "Refúgio dos Pecadores",
+    "location": "Avinhão",
+    "country": "França",
+    "description": "O monge cartuxo Peter Favier estava com medo da morte até que Maria apareceu, confortando-o: 'Você não acha que minha compaixão irá resgatá-lo?'"
+  },
+  "constance": {
+    "title": "Nossa Senhora ao Beato. Henrique Suso",
+    "location": "Constança",
+    "country": "Alemanha",
+    "description": "O místico dominicano alemão recebeu muitas aparições de Maria e dos Anjos, dando forma ao seu famoso 'Pequeno Livro da Sabedoria Eterna'."
+  },
+  "montserrat_1325": {
+    "title": "Nossa Senhora de Montserrat",
+    "location": "Montserrate",
+    "country": "Espanha",
+    "description": "Uma mãe chorando pelo filho cativo viu Maria, que prometeu sua libertação; dias depois, o menino voltou, com suas correntes milagrosamente dissolvidas."
+  },
+  "bridget_sweden": {
+    "title": "Nossa Senhora a Santa Brígida",
+    "location": "Vadstena",
+    "country": "Suécia",
+    "description": "Maria acompanhou Santa Brígida da Suécia ao longo de sua vida com muitas revelações, guiando-a para fundar a Ordem Monástica Brigidina."
+  },
+  "pisa_jordan": {
+    "title": "Nossa Senhora ao Beato. Jordão de Pisa",
+    "location": "Pisa",
+    "country": "Itália",
+    "description": "O famoso pregador dominicano Bl. Jordan foi favorecido com a visão de Nossa Senhora entrando no refeitório dos frades e servindo-os à mesa."
+  },
+  "florence_servites": {
+    "title": "Nossa Senhora a Santo Alexis Falconieri",
+    "location": "Florença",
+    "country": "Itália",
+    "description": "Alexis e seus companheiros foram favorecidos com uma aparição da Mãe de Deus, inspirando-os a fundar a Ordem Servita."
+  },
+  "avignon_john22": {
+    "title": "Privilégio Sabatino",
+    "location": "Avinhão",
+    "country": "França",
+    "description": "A Rainha dos Santos apareceu ao Papa João XXII, prometendo a rápida libertação do Purgatório para os filhos do Carmelo (o Privilégio Sabatino)."
+  },
+  "pistoia": {
+    "title": "Nossa Senhora de Pistoia",
+    "location": "Pistóia",
+    "country": "Itália",
+    "description": "Maria apareceu a uma menina doente pedindo-lhe que dissesse a um padre agostiniano para espalhar a sua mensagem nos sermões da Quaresma; sua imagem foi milagrosamente impressa na parede."
+  },
+  "asti": {
+    "title": "Nossa Senhora ao Bispo Guido",
+    "location": "Asti",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu milagrosamente ao Bispo Guido de Asti, conhecido pelos seus incansáveis ​​esforços de pacificação entre os senhores feudais."
+  },
+  "bergerac": {
+    "title": "Nossa Senhora a São Pedro Tomé",
+    "location": "Bergerac",
+    "country": "França",
+    "description": "Maria apareceu a São Pedro Tomé incentivando sua intensa atividade apostólica e de mediação de paz entre as igrejas grega e romana."
+  },
+  "moscow_peter": {
+    "title": "Nossa Senhora a São Pedro",
+    "location": "Moscou",
+    "country": "Rússia",
+    "description": "A Santíssima Virgem apareceu a um abade invejoso que havia roubado São Pedro de Moscou, levando-o a arrepender-se e a devolver o ícone de Maria."
+  },
+  "bra": {
+    "title": "Madona das Flores",
+    "location": "Sutiã",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu para salvar uma futura mãe dos mercenários; os arbustos de abrunheiros próximos floresceram milagrosamente no auge do inverno."
+  },
+  "montenero": {
+    "title": "Madonna di Montenero",
+    "location": "Livorno",
+    "country": "Itália",
+    "description": "Um pastor aleijado encontrou uma imagem milagrosa; depois de carregá-lo montanha acima conforme as instruções, ele foi completamente curado."
+  },
+  "tournai": {
+    "title": "Nossa Senhora de Tournai",
+    "location": "Tournaí",
+    "country": "Bélgica",
+    "description": "Durante um cerco, o povo deu simbolicamente as chaves da cidade a Maria. Aparições milagrosas no campo inimigo fizeram com que os soldados sitiantes fugissem."
+  },
+  "siena_catherine": {
+    "title": "Nossa Senhora de Santa Catarina",
+    "location": "Siena",
+    "country": "Itália",
+    "description": "Santa Catarina de Sena teve profundas visões místicas onde a Santíssima Virgem a apresentou a Jesus para seu casamento místico."
+  },
+  "paris_franciscans": {
+    "title": "Nossa Senhora aos Franciscanos",
+    "location": "Paris",
+    "country": "França",
+    "description": "Na festa da Anunciação, Nossa Senhora apareceu com o Menino Jesus durante a Santa Missa diante de toda uma comunidade monástica franciscana."
+  },
+  "fiesole_corsini": {
+    "title": "Nossa Senhora a Santo André Corsini",
+    "location": "Fiesole",
+    "country": "Itália",
+    "description": "No dia da sua ordenação, Maria disse: 'Eu escolhi você como meu servo.' Anos mais tarde, ela apareceu na noite de Natal para predizer sua morte celestial na Epifania."
+  },
+  "basella": {
+    "title": "Madona da Oliveira",
+    "location": "Basileia",
+    "country": "Itália",
+    "description": "A Rainha do Céu com o menino Jesus nos braços apareceu a Marina Cassone, de 15 anos, levando o bispo a construir um grande santuário."
+  },
+  "radonezh": {
+    "title": "Nossa Senhora a São Sérgio",
+    "location": "Radonej",
+    "country": "Rússia",
+    "description": "Maria apareceu com os apóstolos Pedro e João a São Sérgio de Radonej, assegurando-lhe seu patrocínio perpétuo sobre seu mosteiro."
+  },
+  "cairo_livini": {
+    "title": "Nossa Senhora ao Beato. Livini",
+    "location": "Cairo",
+    "country": "Egito",
+    "description": "Maria apareceu ao missionário franciscano Livini: 'Termine o seu trabalho e verá Jesus'. Ele alcançou o martírio no final daquele ano."
+  },
+  "guadalupe_spain": {
+    "title": "Nossa Senhora de Guadalupe (Espanha)",
+    "location": "Cáceres",
+    "country": "Espanha",
+    "description": "Cowherd Gil Cordero experimentou uma aparição de Maria orientando-o a desenterrar uma estátua milagrosa dada pelo Papa Gregório, o Grande, 600 anos antes."
+  },
+  "estremoz": {
+    "title": "Nossa Senhora a Santa Isabel",
+    "location": "Estremoz",
+    "country": "Portugal",
+    "description": "Pouco antes da sua morte, a viúva Rainha Isabel de Portugal viu Maria como a maravilhosa 'Rainha do Céu' preparando-a para uma santa partida."
+  },
+  "segovia": {
+    "title": "Nossa Senhora de Segóvia",
+    "location": "Segóvia",
+    "country": "Espanha",
+    "description": "Maria apareceu a um pastor orientando o bispo a desenterrar um ícone de madeira da Mãe de Deus, enterrado no século I, num trono."
+  },
+  "pribram": {
+    "title": "Nossa Senhora de Glatz / Svatá Hora",
+    "location": "Pribram",
+    "country": "República Checa",
+    "description": "O Arcebispo Ernest Pardubitz viu a estátua de Maria milagrosamente virar a cabeça em desaprovação à sua vida mundana, desencadeando a sua profunda conversão."
+  },
+  "santagadea": {
+    "title": "Virgen del Espino",
+    "location": "Santa Gadea del Cid",
+    "country": "Espanha",
+    "description": "Dois pastores descobriram um arbusto brilhando mais que o sol com Nossa Senhora acima dele, registrado pelo notário da cidade."
+  },
+  "naples_prisoners": {
+    "title": "Libertador de Prisioneiros",
+    "location": "Nápoles",
+    "country": "Itália",
+    "description": "O conde Carlos de Verona foi preso pelos turcos; após uma oração desesperada a Maria, ele foi milagrosamente transportado para uma igreja carmelita em Nápoles."
+  },
+  "almonacid": {
+    "title": "Nossa Senhora de Almonacid",
+    "location": "Almonaácido de Toledo",
+    "country": "Espanha",
+    "description": "A Virgem apareceu pedindo que fosse construído um santuário em Almonacid de Toledo."
+  },
+  "valverde": {
+    "title": "Nossa Senhora de Valverde",
+    "location": "Valverde",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu a um camponês em julho de 1399."
+  },
+  "valencia_vincent": {
+    "title": "Nossa Senhora de São Vicente Ferrer",
+    "location": "Valência",
+    "country": "Espanha",
+    "description": "Confuso com dúvidas espirituais, o jovem Vicente pediu compreensão a Maria. Ela pareceu tranquilizá-lo, fortalecendo sua pregação histórica."
+  },
+  "garaballa": {
+    "title": "Nossa Senhora de Garaballa",
+    "location": "Garaballa",
+    "country": "Espanha",
+    "description": "Na véspera da Ascensão, um jovem pastor viu uma luz brilhante iluminando uma árvore e descobriu uma bela estátua de Maria entre os galhos."
+  },
+  "dovera": {
+    "title": "Beata Vergine del Pilastrello",
+    "location": "Dôvera",
+    "country": "Itália",
+    "description": "A Virgem Maria apareceu a uma jovem pastora surda-muda na Lombardia."
+  },
+  "aljubarrota": {
+    "title": "Nossa Senhora de Aljubarrota",
+    "location": "Aljubarrota",
+    "country": "Portugal",
+    "description": "Uma pobre mulher chamada Catarina Anes foi guiada por Maria para descobrir uma fonte de cura milagrosa na montanha Valle de Deus."
+  },
+  "avila": {
+    "title": "Nossa Senhora de Ávila",
+    "location": "Ávila",
+    "country": "Espanha",
+    "description": "Relatos históricos registram uma aparição da Virgem Maria fora das muralhas medievais de Ávila na virada do século."
+  },
+  "dolni_dvoriste": {
+    "title": "Nossa Senhora das Neves na Pedra Sagrada",
+    "location": "Dolní Dvořiště",
+    "country": "República Checa",
+    "description": "Maria apareceu aos pastores no topo de uma rocha que se partiu. As freiras Clarissas construíram a igreja de Santa Maria das Neves sobre a Pedra Sagrada. Após décadas de destruição comunista, os crentes internacionais restauraram o santuário."
+  },
+  "vedano": {
+    "title": "Nossa Senhora da Misericórdia",
+    "location": "Vedano al Lambro",
+    "country": "Itália",
+    "description": "Durante uma grave epidemia de peste, as pessoas fugiram para as florestas, mas o flagelo as alcançou. Nossa Senhora apareceu em uma árvore segurando o Menino reconfortante e a febre desapareceu rapidamente."
+  },
+  "candelaria": {
+    "title": "Virgem da Candelária",
+    "location": "Tenerife",
+    "country": "Espanha",
+    "description": "Dois pastores indígenas Guanche descobriram uma imagem milagrosa de madeira de Maria carregando uma criança e um pássaro dourado, levando à conversão da ilha."
+  },
+  "mariastein": {
+    "title": "Nossa Senhora de Mariastein",
+    "location": "Mariastein",
+    "country": "Suíça",
+    "description": "Uma criança pequena que caiu de um penhasco íngreme foi milagrosamente capturada e salva por uma senhora maravilhosa, levando à construção da famosa abadia."
+  },
+  "bergamo_chestnuts": {
+    "title": "Madona das Castanhas",
+    "location": "Bérgamo",
+    "country": "Itália",
+    "description": "Em 28 de abril de 1510, Maria apareceu a pai e filho coletando folhas. Para confirmar a sua presença real e o desejo de um santuário, um grande castanheiro de repente produziu frutos totalmente maduros fora da época."
+  },
+  "tirano": {
+    "title": "Madonna di Tirano",
+    "location": "Tirano",
+    "country": "Itália",
+    "description": "Um jovem orou fervorosamente por seu irmão doente. Maria apareceu no dia 29 de setembro, prometendo sua cura. Em agradecimento, ele ergueu o famoso Santuário de Madonna di Tirano."
+  },
+  "virgendelcamino": {
+    "title": "Virgem do Caminho",
+    "location": "Leão",
+    "country": "Espanha",
+    "description": "No dia 2 de julho de 1505, Maria apareceu radiante de luz para pastorear Alvar Simón Fernández na estrada de peregrinação do Caminho de Santiago. Ela lançou uma pedra com seu estilingue que milagrosamente cresceu para marcar o local do santuário."
+  },
+  "werthenstein": {
+    "title": "Rainha do Céu",
+    "location": "Wertenstein",
+    "country": "Suíça",
+    "description": "Um devoto fazendeiro e eremita viu Maria como a Rainha do Céu cercada por numerosos anjos. Milagres verificaram a aparição mariana, levando à consagração de uma capela."
+  },
+  "sansosti": {
+    "title": "Nossa Senhora do Pettoruto",
+    "location": "São Sosti",
+    "country": "Itália",
+    "description": "Na primavera de 1500, um pastor surdo-mudo chamado Felice Olcese viu a Virgem, que lhe pediu que dissesse a um padre que construísse uma igreja em sua homenagem."
+  },
+  "villarrasa": {
+    "title": "Virgem dos Remédios",
+    "location": "Vilarrasa",
+    "country": "Espanha",
+    "description": "Em 18 de dezembro de 1503, apareceu a Virgem dos Remédios, estabelecendo uma importante festa e santuário regional em Huelva."
+  },
+  "pannesi": {
+    "title": "Nossa Senhora do Bosque",
+    "location": "Pannesi di Lumarzo",
+    "country": "Itália",
+    "description": "A Santíssima Virgem apareceu nas florestas de Lumarzo, inspirando devoção entre os moradores locais."
+  },
+  "trino": {
+    "title": "Nossa Senhora ao Beato. Madalena",
+    "location": "Trino",
+    "country": "Itália",
+    "description": "A Beata Maddalena Panattieri viu a Virgem em 1503, pouco antes de seu santo falecimento. Mais tarde, ela foi beatificada pelo Papa Leão XII."
+  },
+  "aviano": {
+    "title": "Madonna da Montanha",
+    "location": "Aviano",
+    "country": "Itália",
+    "description": "No dia 8 de setembro de 1510, Nossa Senhora apareceu na encosta da montanha a Antonio Zampara."
+  },
+  "chioggia": {
+    "title": "Santíssima Virgem do Barquinho",
+    "location": "Chioggia",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu a Carlo Baldissera Zanon nas margens de Chioggia, tornando-se a protetora dos marinheiros e navios de pesca locais."
+  },
+  "villefranche": {
+    "title": "Notre-Dame de Treize-Pierres",
+    "location": "Villefranche-de-Rouergue",
+    "country": "França",
+    "description": "Em 19 de março de 1509, Nossa Senhora das Treze Pedras apareceu, estabelecendo um santuário duradouro em Aveyron."
+  },
+  "sanpolo": {
+    "title": "Nossa Senhora das Nogueiras",
+    "location": "São Pólo",
+    "country": "Itália",
+    "description": "No dia 9 de junho de 1505, Nossa Senhora apareceu a uma mulher chamada Giovanna perto de uma nogueira."
+  },
+  "motta_livenza": {
+    "title": "Madonna dos Milagres",
+    "location": "Mota de Livenza",
+    "country": "Itália",
+    "description": "No dia 9 de março de 1510, Maria apareceu sentada tranquilamente sobre o trigo verde ao velho fazendeiro Giovanni Cigana, ordenando jejum e arrependimento para o perdão dos pecados."
+  },
+  "treviso_jerome": {
+    "title": "Libertação de Prisioneiros",
+    "location": "Treviso",
+    "country": "Itália",
+    "description": "Preso na masmorra de uma fortaleza, São Jerônimo Emiliani rezou a Maria. Ela apareceu na luz, libertou-o milagrosamente de suas pesadas correntes de ferro e conduziu-o com segurança através das linhas de batalha inimigas até seu santuário em Treviso."
+  },
+  "castelleone": {
+    "title": "Santa Maria da Misericórdia",
+    "location": "Castellone",
+    "country": "Itália",
+    "description": "Em maio de 1511, Maria apareceu ao vindimador Domenica Zanenga, instando-a a construir um santuário que mais tarde foi confiado aos frades agostinianos."
+  },
+  "cotignac": {
+    "title": "Nossa Senhora das Graças",
+    "location": "Cotignac",
+    "country": "França",
+    "description": "Nos dias 10 e 11 de agosto, Maria apareceu com o Menino Jesus, São Miguel e São Bernardo ao lenhador Jean de la Baume. O santuário mais tarde ganhou fama pelo nascimento milagroso do rei Luís XIV."
+  },
+  "oneta": {
+    "title": "Nossa Senhora das Cinzas",
+    "location": "Oneta",
+    "country": "Itália",
+    "description": "No dia 2 de julho de 1512, Nossa Senhora apareceu a Petruccia Carobbio perto de um freixo."
+  },
+  "camogli": {
+    "title": "Madonna da Montanha",
+    "location": "Camogli",
+    "country": "Itália",
+    "description": "Em 2 de julho de 1518, Maria apareceu a Angela Schiaffino, pedindo uma igreja e um convento na montanha com vista para o mar da Ligúria."
+  },
+  "adro": {
+    "title": "Advogado dos Pecadores",
+    "location": "Adro",
+    "country": "Itália",
+    "description": "Maria apareceu a Battista Comino Bajoni, um pastor surdo-mudo, dando-lhe um discurso e uma mensagem chamando a região para longe do vício. Como sinal, ela lhe deu uma pedra que milagrosamente mudou de cor."
+  },
+  "quintanar": {
+    "title": "Francisca La Brava",
+    "location": "Quintanar da Ordem",
+    "country": "Espanha",
+    "description": "Francisca la Brava relatou ter visto a Virgem rodeada de anjos e recebido uma vela. Ela foi posteriormente examinada e condenada pela Inquisição."
+  },
+  "albendorf": {
+    "title": "Nossa Senhora de Albendorf / Wambierzyce",
+    "location": "Wambierzyce",
+    "country": "Polónia",
+    "description": "Um cego rezou diante de uma estátua de madeira esculpida por um cavaleiro após uma aparição e milagrosamente recuperou a visão. O santuário expandiu-se para uma magnífica basílica conhecida como “Jerusalém da Silésia”."
+  },
+  "garaison": {
+    "title": "Notre Dame de Garaison",
+    "location": "Garaison",
+    "country": "França",
+    "description": "A Virgem visitou três vezes a jovem pastora Angleze Sagazan perto da nascente do Cier, solicitando: 'Quero que uma capela seja construída aqui.'"
+  },
+  "strugnano": {
+    "title": "Madonna da Visão",
+    "location": "Strunjan",
+    "country": "Eslovénia",
+    "description": "Em 14 de agosto de 1512, Maria apareceu aos vigias Piero Zagabria e Giovanni Grandi nas portas de Strunjan."
+  },
+  "angels_lucerne": {
+    "title": "Nossa Senhora dos Anjos",
+    "location": "Lucerna",
+    "country": "Suíça",
+    "description": "O vereador Maurice von Mettenwyl viu a Virgem Maria rodeada por uma luz celestial e prometeu reconstruir uma capela em sua homenagem."
+  },
+  "cori": {
+    "title": "Nossa Senhora da Salvação/Vassoura",
+    "location": "Cori",
+    "country": "Itália",
+    "description": "Durante uma violenta tempestade, Mary resgatou Oliva Lannese, de três anos. A cidade foi em procissão até a montanha e desenterrou um antigo afresco da Virgem em seu trono."
+  },
+  "tarbes": {
+    "title": "Nossa Senhora do Amor Curador",
+    "location": "Tarbes",
+    "country": "França",
+    "description": "Maria apareceu a uma jovem pastora pedindo uma igreja. Quando a menina pediu a Maria que guardasse seu rebanho enquanto ela buscava seu pai, Maria milagrosamente cuidou das ovelhas."
+  },
+  "aberdeen": {
+    "title": "Nossa Senhora ao Bispo Dumbar",
+    "location": "Aberdeen",
+    "country": "Escócia",
+    "description": "Enquanto rezava diante do seu ícone, Maria apareceu ao Bispo Gavan Dumbar, prevendo que, apesar da agitação religiosa generalizada, a sua fidelidade seria preservada."
+  },
+  "liveri": {
+    "title": "Santa Maria a Parete",
+    "location": "Liveri de Nola",
+    "country": "Itália",
+    "description": "Em 12 de abril de 1514, Maria apareceu à jovem camponesa Autilia Scala, instruindo-a a liderar o conde Orsini para desenterrar um ícone e um sino bizantino do século XIII enterrados sob um arbusto."
+  },
+  "loyola": {
+    "title": "Nossa Senhora a Santo Inácio",
+    "location": "Manresa/Loyola",
+    "country": "Espanha",
+    "description": "Enquanto se recuperava dos ferimentos da batalha em Loyola, Santo Inácio teve uma profunda visão noturna da Virgem Maria com o Menino, iniciando sua conversão total e a fundação dos Jesuítas."
+  },
+  "rome_cajetan": {
+    "title": "Nossa Senhora a São Caetano",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "Na noite de Natal em Santa Maria Maggiore, São Caetano de Thiene teve uma visão sublime onde Maria colocou o Menino Jesus diretamente em seus braços."
+  },
+  "paitone": {
+    "title": "Madonna di Paitone",
+    "location": "Paitone",
+    "country": "Itália",
+    "description": "Em agosto de 1532, Maria apareceu ao camponês surdo-mudo Filippo Viotti, curando-o milagrosamente e solicitando um santuário na montanha."
+  },
+  "bovegno": {
+    "title": "Nossa Senhora da Misericórdia",
+    "location": "Bovegno",
+    "country": "Itália",
+    "description": "Maria apareceu à órfã Maria Amadini, de 22 anos, pedindo jejum e arrependimento para evitar calamidades iminentes. Ela confirmou sua presença curando o irmão de Maria."
+  },
+  "guadalupe_mexico": {
+    "title": "Nossa Senhora de Guadalupe",
+    "location": "Cidade do México",
+    "country": "México",
+    "description": "Maria apareceu no Monte Tepeyac para São Juan Diego, deixando sua imagem milagrosa e imorredoura impressa diretamente em seu manto de tilma. É o santuário mariano mais visitado do mundo."
+  },
+  "naples_constantinople": {
+    "title": "Santa Maria de Constantinopla",
+    "location": "Nápoles",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu a uma senhora idosa em Nápoles em junho de 1529."
+  },
+  "farigliano": {
+    "title": "Vergine delle Grazie",
+    "location": "Farigliano",
+    "country": "Itália",
+    "description": "Aparição da Virgem das Graças em 20 de maio de 1537 no Piemonte."
+  },
+  "cuzco": {
+    "title": "Nossa Senhora da Descida",
+    "location": "Cusco",
+    "country": "Perú",
+    "description": "Em 23 de maio de 1536, Maria apareceu sobre o telhado aos cristãos sitiados por incêndios incendiários. As chamas se apagaram milagrosamente, salvando a comunidade."
+  },
+  "montestella": {
+    "title": "Madona da Estrela",
+    "location": "Monte Estela",
+    "country": "Itália",
+    "description": "Em 31 de maio de 1536, Maria apareceu a Antonio de'Antoni no Monte Stella."
+  },
+  "peru_rosary": {
+    "title": "Nossa Senhora do Rosário",
+    "location": "Lima",
+    "country": "Perú",
+    "description": "Proeminentes primeiras aparições coloniais e devoção mariana estabelecidas em Lima."
+  },
+  "altkirch": {
+    "title": "Nossa Senhora de Altkirch",
+    "location": "Altkirch",
+    "country": "França",
+    "description": "A Virgem apareceu acima do bastião da cidade para proteger os habitantes durante conflitos religiosos regionais."
+  },
+  "svetagora": {
+    "title": "Nossa Senhora de Sveta Gora",
+    "location": "Sveta Gora",
+    "country": "Eslovénia",
+    "description": "Maria apareceu no Monte Skalnica à pastora Ursula Ferligoj: 'Diga ao povo para construir um templo aqui e peça minha graça.' Apesar de ter sido presa por autoridades céticas, Ursula escapou milagrosamente todas as vezes."
+  },
+  "savona": {
+    "title": "Mãe da Misericórdia",
+    "location": "Sabona",
+    "country": "Itália",
+    "description": "Em 18 de março de 1536, Maria apareceu sob uma luz ofuscante ao fazendeiro Antonio Botta em um riacho, pedindo oração, misericórdia e conversão. Ela é a padroeira oficial de Savona."
+  },
+  "sens": {
+    "title": "Nossa Senhora dos Sens",
+    "location": "Sens",
+    "country": "França",
+    "description": "Durante uma devastadora epidemia de peste, Maria apareceu sob uma intensa luz azul durante a Santa Missa. Logo depois, a epidemia parou milagrosamente."
+  },
+  "gubel": {
+    "title": "Nossa Senhora de Gubel",
+    "location": "Gubel",
+    "country": "Suíça",
+    "description": "Nos dias 11 e 23 de outubro, Maria apareceu aos soldados católicos no Monte Gubel, inspirando a sua defesa e levando a uma vitória milagrosa, apesar de estar em grande desvantagem numérica."
+  },
+  "combarbio": {
+    "title": "Madonna do Monte Carmelo",
+    "location": "Combarbio",
+    "country": "Itália",
+    "description": "Maria apareceu a uma pastora de 12 anos, levando à construção de um belo santuário carmelita renascentista por arquitetos grão-ducais."
+  },
+  "ipswich": {
+    "title": "Nossa Senhora das Graças em Ipswich",
+    "location": "Ipswich",
+    "country": "Inglaterra",
+    "description": "Anne Wentworth, sofrendo de terríveis ataques demoníacos, foi milagrosamente e instantaneamente restaurada diante da imagem de Nossa Senhora das Graças, um evento documentado por São Tomás More."
+  },
+  "leuven_wischaven": {
+    "title": "Nossa Senhora ao Pe. Wischaveven",
+    "location": "Lovaina",
+    "country": "Bélgica",
+    "description": "Maria apareceu a Cornélio Wischaven, guiando-o a se juntar a São Pedro Fabro e Santo Inácio de Loyola como o primeiro jesuíta flamengo."
+  },
+  "gorizia": {
+    "title": "Nossa Senhora de Gorizia",
+    "location": "Gorizia",
+    "country": "Itália",
+    "description": "Maria apareceu a uma pastora chamando o povo à oração e à reconciliação."
+  },
+  "vailankanni_1580": {
+    "title": "Nossa Senhora da Saúde",
+    "location": "Vailankanni",
+    "country": "Índia",
+    "description": "Maria apareceu a um pastor oferecendo leite ao Menino Jesus e, mais tarde, curou milagrosamente um menino aleijado que vendia leitelho. Altamente reverenciada por milhões de pessoas como a “Lourdes do Oriente”."
+  },
+  "poggio_bologna": {
+    "title": "Beata Vergine di Poggio",
+    "location": "Castelo San Pietro Terme",
+    "country": "Itália",
+    "description": "Em 22 de fevereiro de 1550, Maria apareceu à mendiga cega Antonia Bedini, prometendo que seu armário forneceria pão para o resto de sua vida."
+  },
+  "cantu": {
+    "title": "Nossa Senhora de Andacollo",
+    "location": "Cantu",
+    "country": "Itália",
+    "description": "Aparição mariana registrada em Cantu em maio de 1543."
+  },
+  "montegridolfo": {
+    "title": "Beata Vergine delle Grazie",
+    "location": "Montegridolfo",
+    "country": "Itália",
+    "description": "No dia 25 de junho de 1548, a Santíssima Virgem das Graças apareceu nas colinas de Rimini."
+  },
+  "lisbon_barradda": {
+    "title": "Nossa Senhora a Sebastião Barradda",
+    "location": "Lisboa",
+    "country": "Portugal",
+    "description": "Maria apareceu a Sebastião Barradda, exortando-o a ingressar na ordem jesuíta."
+  },
+  "granada_john": {
+    "title": "Nossa Senhora de São João de Deus",
+    "location": "Granada",
+    "country": "Espanha",
+    "description": "Maria apareceu como uma simples camponesa para ajudar e curar São João de Deus após uma grave queda do cavalo, iniciando seu apostolado hospitalar ao longo da vida."
+  },
+  "ocotlan_1541": {
+    "title": "Nossa Senhora de Ocotlán",
+    "location": "Tlaxcalá",
+    "country": "México",
+    "description": "Nossa Senhora apareceu a Juan Diego Bernardino durante uma epidemia, levando-o a uma fonte de água curativa e revelando uma milagrosa estátua de madeira dentro de um pinheiro em chamas."
+  },
+  "andacollo": {
+    "title": "Nossa Senhora de Andacollo",
+    "location": "Andacolo",
+    "country": "Chile",
+    "description": "Mineiros indígenas descobriram uma estátua milagrosa de Maria nas montanhas do Chile, estabelecendo um dos santuários nacionais mais venerados da América do Sul."
+  },
+  "ameno": {
+    "title": "Madonna della Bocciola",
+    "location": "Amém",
+    "country": "Itália",
+    "description": "Em 28 de maio de 1543, Maria apareceu em um arbusto florido de espinheiro-bravo para a pastora surda-muda Giulia Manfredi, fazendo seu discurso e pedindo a observância do descanso sabático."
+  },
+  "azay": {
+    "title": "Nossa Senhora do Joelho",
+    "location": "Azay-sur-Thouet",
+    "country": "França",
+    "description": "Em 8 de setembro de 1550, Maria apareceu à viúva Louise Estivalle enquanto ela se ajoelhava na estrada, concedendo-lhe uma visão milagrosa através dos quilômetros do Santo Sacrifício da Missa."
+  },
+  "corbetta": {
+    "title": "Santíssima Virgem dos Milagres",
+    "location": "Corbeta",
+    "country": "Itália",
+    "description": "Em 17 de abril de 1555, o Menino Jesus num afresco desceu milagrosamente para brincar com três crianças antes que Maria o chamasse de volta."
+  },
+  "weissenstein": {
+    "title": "Madona de Pietralba",
+    "location": "Monte São Pedro",
+    "country": "Itália",
+    "description": "Maria apareceu a Leonhard Weissensteiner nas florestas Dolomitas, curando sua doença e levando-o a desenterrar uma estátua milagrosa de Pietà. O santuário foi visitado pelo Papa João Paulo I e São João Paulo II."
+  },
+  "civitella": {
+    "title": "Nossa Senhora do Pasquino",
+    "location": "Civitela",
+    "country": "Itália",
+    "description": "Aparição a Pasquino da Vignale, de 10 anos, em 1556."
+  },
+  "arcola": {
+    "title": "Rainha dos Anjos",
+    "location": "Arcola",
+    "country": "Itália",
+    "description": "No dia 21 de maio de 1556, as cinco irmãs Fiamberti viram Maria rodeada de anjos enquanto rezavam o terço nos olivais."
+  },
+  "gerosa": {
+    "title": "Madonna della Foppa",
+    "location": "Gerosa",
+    "country": "Itália",
+    "description": "No dia 2 de julho de 1558, Maria apareceu a duas pastoras que morriam de sede nas pastagens, abrindo sob seus pés uma fonte milagrosa de água pura."
+  },
+  "moncrivello": {
+    "title": "Vergine del Trompone",
+    "location": "Moncrivello",
+    "country": "Itália",
+    "description": "No dia 26 de junho de 1562, Maria apareceu a Domenica di Miglianotto, curando sua enfermidade."
+  },
+  "cordoba_font": {
+    "title": "Nossa Senhora da Fonte",
+    "location": "Córdova",
+    "country": "Espanha",
+    "description": "Maria apareceu a um trabalhador desanimado, direcionando-o para uma estátua de madeira escondida perto de uma fonte de cura."
+  },
+  "brescia_ledesma": {
+    "title": "Nossa Senhora ao Pe. Ledesma",
+    "location": "Bréscia",
+    "country": "Itália",
+    "description": "Maria apareceu com Santa Maria Madalena e Santa Catarina ao teólogo jesuíta Giacomo Ledesma, prometendo-lhe proteção durante as provações espirituais."
+  },
+  "petrella": {
+    "title": "Nossa Senhora de Petrella",
+    "location": "Petrela",
+    "country": "Itália",
+    "description": "Em 31 de maio de 1562, Maria apareceu a uma mulher chamada Persiana."
+  },
+  "amendolara": {
+    "title": "Nossa Senhora da Amendolara",
+    "location": "Amendolara",
+    "country": "Itália",
+    "description": "Frei Giuliano di Camerino teve uma visão gloriosa da Rainha dos Céus pouco antes de seu santo falecimento."
+  },
+  "giulianova": {
+    "title": "Madonna do Esplendor",
+    "location": "Juliananova",
+    "country": "Itália",
+    "description": "Em 22 de abril de 1557, Maria apareceu sob uma luz ofuscante ao fazendeiro Bertolino perto de uma oliveira. Quando os céticos o espancaram, Maria paralisou seus braços até que se arrependeram e fez fluir uma fonte milagrosa."
+  },
+  "torrehermosa": {
+    "title": "Nossa Senhora de São Pascoal",
+    "location": "Torrehermosa",
+    "country": "Espanha",
+    "description": "Maria apareceu com São Francisco e Santa Clara a São Pascoal Baylón enquanto ele cuidava de ovelhas, instando-o a ingressar na Ordem Franciscana."
+  },
+  "monomotapa": {
+    "title": "Nossa Senhora na Rodésia",
+    "location": "Monomotapa",
+    "country": "Zimbabué",
+    "description": "Quando o missionário jesuíta Pe. Gonçalo da Silveira entregou ao Imperador de Monomotapa um ícone de Maria, os céus noturnos foram milagrosamente iluminados pela Rainha dos Céus durante cinco noites consecutivas."
+  },
+  "rapallo": {
+    "title": "Nossa Senhora de Montallegro",
+    "location": "Rapallo",
+    "country": "Itália",
+    "description": "Em 2 de julho de 1557, Maria apareceu ao camponês Giovanni Chichizola, deixando um milagroso ícone bizantino de sua Dormição que retornava misteriosamente à montanha sempre que era movido."
+  },
+  "avila_teresa": {
+    "title": "Nossa Senhora a Santa Teresa",
+    "location": "Ávila",
+    "country": "Espanha",
+    "description": "Santa Teresa de Ávila, a grande Doutora da Igreja e reformadora carmelita, teve sublimes visões místicas onde Maria a vestiu com uma vestimenta de pureza imaculada."
+  },
+  "forli_jerome": {
+    "title": "Nossa Senhora ao Pe. Jerônimo",
+    "location": "Forli",
+    "country": "Itália",
+    "description": "Maria apareceu em luz radiante ao frade capuchinho Jerônimo, prevendo sua transição exata para o céu enquanto os sinos do Angelus dobravam."
+  },
+  "vienna_stanislaus": {
+    "title": "Nossa Senhora a Santo Estanislau",
+    "location": "Viena",
+    "country": "Áustria",
+    "description": "Quando o jovem Santo Estanislau Kostka estava gravemente doente em Viena, Maria apareceu com anjos e colocou o Menino Jesus em seus braços, restaurando milagrosamente sua saúde."
+  },
+  "arenas_alcantara": {
+    "title": "Nossa Senhora a São Pedro",
+    "location": "Arenas de São Pedro",
+    "country": "Espanha",
+    "description": "Maria apareceu a São Pedro de Alcântara, o grande asceta e reformador franciscano, prenunciando sua passagem celestial."
+  },
+  "faenza_alexander": {
+    "title": "Nossa Senhora de Faenza",
+    "location": "Faenza",
+    "country": "Itália",
+    "description": "O frade capuchinho Alexandre de Butrium rezou fervorosamente durante as provações espirituais. Maria apareceu e o coroou com uma coroa de vitória."
+  },
+  "monsummano": {
+    "title": "Santíssima Maria de Fontenuova",
+    "location": "Monsummano Terme",
+    "country": "Itália",
+    "description": "Em 9 de junho de 1573, a pastora Jacopina Mariotti rezou diante de um ícone à beira da estrada e experimentou uma aparição de Maria. Durante a Santa Missa em 1602, uma fonte de cura milagrosa surgiu do solo seco."
+  },
+  "seville_rodriguez": {
+    "title": "Nossa Senhora a Santo Afonso",
+    "location": "Sevilha",
+    "country": "Espanha",
+    "description": "Santo Afonso Rodríguez, jesuíta mestre de noviços em Sevilha, falou com Maria em oração com a terna intimidade de uma criança com sua mãe."
+  },
+  "casalbordino": {
+    "title": "Madonna dos Milagres",
+    "location": "Casalbordino",
+    "country": "Itália",
+    "description": "Em maio de 1576, Maria apareceu ao camponês Alessandro Muzio após uma forte tempestade de granizo, preservando seus campos da destruição."
+  },
+  "mariagyud": {
+    "title": "Nossa Senhora de Máriagyűd",
+    "location": "Mariagyűd",
+    "country": "Hungria",
+    "description": "Quando os calvinistas tomaram o santuário histórico, Maria apareceu na janela da igreja para Thomas Mathinicz e mais tarde no portal. Informado do milagre, o imperador Leopoldo I devolveu o santuário aos católicos."
+  },
+  "ancona_novice": {
+    "title": "Nossa Senhora de Ancona",
+    "location": "Ancona",
+    "country": "Itália",
+    "description": "Um noviço capuchinho que enfrentava tentações demoníacas experimentou uma aparição de Maria que devolveu à sua alma uma paz profunda."
+  },
+  "languedoc_gutierrez": {
+    "title": "Nossa Senhora ao Pe. Gutiérrez",
+    "location": "Languedoque",
+    "country": "França",
+    "description": "Jesuíta Pe. Martin Gutierrez viu Maria com um manto branco como a neve protegendo a Companhia de Jesus. Ao visitar uma capela rural em Languedoc, Maria predisse seu martírio iminente."
+  },
+  "norcia_giacomo": {
+    "title": "Nossa Senhora de Nórcia",
+    "location": "Nórcia",
+    "country": "Itália",
+    "description": "O monge capuchinho Giacomo experimentou uma alegre aparição de Maria em seu leito de morte: 'A Rainha Triunfante do Céu está aqui! Ela está vindo me buscar."
+  },
+  "caltagirone": {
+    "title": "Santa Maria da Ponte",
+    "location": "Caltagirone",
+    "country": "Itália",
+    "description": "Em 15 de agosto de 1572, Maria apareceu a uma menina surda-muda na ponte, restaurando milagrosamente sua audição e voz."
+  },
+  "casalpusterlengo": {
+    "title": "Nossa Senhora dos Capuchinhos",
+    "location": "Casalpusterlengo",
+    "country": "Itália",
+    "description": "Em maio de 1574, uma aparição em massa da Virgem Maria ocorreu diante de 4.000 fiéis reunidos."
+  },
+  "sancho_abarca": {
+    "title": "Nossa Senhora de Sancho Abarca",
+    "location": "Gosto",
+    "country": "Espanha",
+    "description": "Em 7 de abril de 1569, ocorreu em Aragão uma aparição milagrosa e descoberta de Nossa Senhora de Sancho Abarca."
+  },
+  "pistoia_jerome": {
+    "title": "Nossa Senhora de Pistoia",
+    "location": "Pistóia",
+    "country": "Itália",
+    "description": "Maria apareceu várias vezes ao monge capuchinho Jerônimo, uma vez prevendo sua morte, e outra vez guiando-o milagrosamente quando se perdeu em estradas rurais à noite."
+  },
+  "lezajsk_1578": {
+    "title": "Nossa Senhora de Leżajsk",
+    "location": "Leżajsk",
+    "country": "Polónia",
+    "description": "Maria apareceu sob uma luz ofuscante ao humilde lenhador Tomasz Michałek na floresta, pedindo uma igreja onde os fiéis recebessem as graças divinas. Após investigações canônicas oficiais e curas milagrosas documentadas, o Vaticano aprovou a magnífica basílica de peregrinação."
+  },
+  "virgendelapaz": {
+    "title": "Virgem da Paz",
+    "location": "Trujillo",
+    "country": "Venezuela",
+    "description": "Uma misteriosa donzela radiante caminhou pelos mercados nas montanhas dizendo que caminhava “com Deus, o sol e as estrelas” antes de desaparecer em uma caverna rochosa cintilante. Hoje, um monumento colossal de 154 pés marca o santuário sagrado."
+  },
+  "gubbio_pacifico": {
+    "title": "Nossa Senhora ao Pe. Pacífico",
+    "location": "Gúbio",
+    "country": "Itália",
+    "description": "Na Festa da Imaculada Conceição, o frade capuchinho Pacífico viu Maria no coro, revelando o profundo mistério da sua Imaculada Conceição em meio à fragrância das rosas."
+  },
+  "ziteil": {
+    "title": "Nossa Senhora do Ziteil",
+    "location": "Ziteil",
+    "country": "Suíça",
+    "description": "Em 16 de julho, Maria apareceu nas pastagens das altas montanhas à pastora Dietegen Giategen, de 18 anos, pedindo arrependimento regional. Com 2.434 metros, é o santuário mariano mais alto da Europa."
+  },
+  "conflenti": {
+    "title": "Madonna della Quercia",
+    "location": "Conflenti",
+    "country": "Itália",
+    "description": "No dia 7 de junho, Maria apareceu no topo de um grande carvalho para pastorear Lorenzo Folino, pedindo um santuário em Visora. Ela confirmou sua presença curando milagrosamente um menino cego e coxo de nascença."
+  },
+  "madrid_mendoza": {
+    "title": "Nossa Senhora ao Pe. Mendonça",
+    "location": "Madri",
+    "country": "Espanha",
+    "description": "A Virgem apareceu ao jesuíta Pe. Didacus Mendoza em seu leito de morte, enchendo sua alma de conforto celestial."
+  },
+  "trivento": {
+    "title": "Nossa Senhora do Trivento",
+    "location": "Trivento",
+    "country": "Itália",
+    "description": "Dois frades capuchinhos apanhados por uma violenta tempestade foram abrigados numa misteriosa cabana por uma mãe de beleza indescritível. Quando eles partiram e olharam para trás, a casa desapareceu."
+  },
+  "leuven_calstro": {
+    "title": "Nossa Senhora ao Pe. Calstro",
+    "location": "Lovaina",
+    "country": "Bélgica",
+    "description": "Padre Dominicano. Henry Calstro foi abençoado com numerosos encontros com Maria, que o consolou durante as provações e o fortaleceu em seu santo falecimento."
+  },
+  "florence_pazzi": {
+    "title": "Nossa Senhora de Santa Maria Madalena de' Pazzi",
+    "location": "Florença",
+    "country": "Itália",
+    "description": "A grande mística carmelita experimentou profundos êxtases ao contemplar Maria no Paraíso distribuindo fontes de leite e do precioso sangue de Jesus sobre a humanidade."
+  },
+  "flochberg": {
+    "title": "Nossa Senhora de Flochberg",
+    "location": "Bopfingen",
+    "country": "Alemanha",
+    "description": "Em 30 de junho de 1582, Maria apareceu em um brilho luminoso para William Wintzerer, de 10 anos, que estava gravemente doente em um milharal, curando-o instantaneamente e incentivando-o a uma vida cristã devota."
+  },
+  "stezzano": {
+    "title": "Santíssima Virgem dos Campos",
+    "location": "Estezzano",
+    "country": "Itália",
+    "description": "Em 12 de julho de 1586, Maria apareceu como uma mulher vestida de preto com um véu branco lendo um pequeno livro para Bartolomea Bucanelli, de 10 anos, e Dorotea Battistoni, de 11 anos."
+  },
+  "pumenengo": {
+    "title": "Madonna della Rotonda",
+    "location": "Pumenengo",
+    "country": "Itália",
+    "description": "Em 24 de maio de 1585, Maria apareceu ao camponês surdo-mudo Francesco Zamboni, restaurando instantaneamente sua fala e pedindo ao Conde Barbò que erigisse um belo santuário circular."
+  },
+  "kazan": {
+    "title": "Nossa Senhora de Kazan",
+    "location": "Cazã",
+    "country": "Rússia",
+    "description": "Em 8 de julho de 1579, Maria apareceu em uma visão para Matrona, de 8 anos, revelando a localização exata de seu antigo ícone sagrado enterrado sob as cinzas e os escombros de uma casa queimada. Tornou-se o paládio sagrado da Rússia."
+  },
+  "angola": {
+    "title": "Nossa Senhora em Angola",
+    "location": "Luanda",
+    "country": "Angola",
+    "description": "Durante a batalha contra forças esmagadoras, Maria apareceu com uma espada flamejante para defender as tropas cristãs."
+  },
+  "madrid_gonzaga": {
+    "title": "Nossa Senhora a São Luís",
+    "location": "Madri",
+    "country": "Espanha",
+    "description": "Na festa da Assunção, na igreja jesuíta de Madrid, o jovem São Luís Gonzaga ouviu claramente a voz de Maria em contemplação: 'Entra na Ordem que tem direito a meu Filho'."
+  },
+  "montevarchi": {
+    "title": "Santa Maria al Giglio",
+    "location": "Montevarchi",
+    "country": "Itália",
+    "description": "Em 29 de agosto de 1585, aparições milagrosas de Santa Maria no Lírio ocorreram diante de múltiplas testemunhas."
+  },
+  "plouguerneau": {
+    "title": "Nossa Senhora ao Pe. Le Nobletz",
+    "location": "Plouguerneau",
+    "country": "França",
+    "description": "O renomado missionário bretão Pe. Michel Le Nobletz foi guiado por Maria desde a infância, quando ela lhe abriu as portas trancadas da capela, até sua santa morte."
+  },
+  "poggio_roio": {
+    "title": "Santa Maria da Cruz",
+    "location": "Poggio di Roio",
+    "country": "Itália",
+    "description": "Em dezembro de 1578, Maria apareceu para pastorear Felice Calcagno, guiando-o para descobrir seu milagroso ícone de madeira na neve."
+  },
+  "naples_1588": {
+    "title": "Nossa Senhora de Nápoles",
+    "location": "Nápoles",
+    "country": "Itália",
+    "description": "Uma proeminente senhora napolitana gravemente doente voltou-se para Maria em oração e experimentou uma aparição onde Maria curava sua doença."
+  },
+  "medous": {
+    "title": "Notre-Dame de Médoux",
+    "location": "Bagnères-de-Bigorre",
+    "country": "França",
+    "description": "Maria apareceu a Domenge Liloye perto de uma fonte milagrosa, protegendo a comunidade de uma devastadora epidemia de peste."
+  },
+  "cologne": {
+    "title": "Nossa Senhora de Colônia",
+    "location": "Colônia",
+    "country": "Alemanha",
+    "description": "Um jovem artista do colégio jesuíta que pintou com amor ícones de Maria foi consolado pela aparição dela e por seu anjo da guarda em seu leito de morte."
+  },
+  "proceno_orozco": {
+    "title": "Nossa Senhora ao Beato. Afonso de Orozco",
+    "location": "Proceno",
+    "country": "Itália",
+    "description": "O renomado místico agostiniano e pregador da corte em Madri teve visões sublimes de Maria que inspiraram seus tratados espirituais."
+  },
+  "lima_portyllo": {
+    "title": "Nossa Senhora ao Pe. Portillo",
+    "location": "Lima",
+    "country": "Perú",
+    "description": "O missionário jesuíta Ruys de Portyllo foi guiado pelas visões de Nossa Senhora ao longo de seu árduo apostolado colonial."
+  },
+  "costa_folgaria": {
+    "title": "Nossa Senhora das Graças na Costa",
+    "location": "Folgaria",
+    "country": "Itália",
+    "description": "Em janeiro de 1588, Maria apareceu a 1.230 metros de altitude ao monge Pietro dal Dosso. Em 1955, o Papa Pio XII proclamou Nossa Senhora das Graças da Costa a padroeira oficial de todos os esquiadores na Itália."
+  },
+  "acquasparta": {
+    "title": "Nossa Senhora de Acquasparta",
+    "location": "Aquasparta",
+    "country": "Itália",
+    "description": "O historiador capuchinho Bernardino di Colpetrazzo viu Maria descer do céu com uma magnífica coroa de flores como recompensa por sua alma pura e diligente história monástica."
+  },
+  "rome_philip": {
+    "title": "Nossa Senhora a São Filipe Néri",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "O 'Santo da Alegria' e fundador do Oratório experimentou múltiplas aparições de Maria que o confortou durante a doença e o protegeu do perigo."
+  },
+  "quito": {
+    "title": "Nossa Senhora do Bom Sucesso",
+    "location": "Quito",
+    "country": "Equador",
+    "description": "Maria apareceu à Madre Mariana de Jesus Torres em seu convento Concepcionista em Quito, encomendando uma estátua milagrosa e prevendo crises de fé e vocações no século XX."
+  },
+  "morbio": {
+    "title": "Santa Maria dos Milagres",
+    "location": "Mórbio Inferior",
+    "country": "Suíça",
+    "description": "Em 29 de julho de 1594, Maria apareceu na encosta de uma colina para duas jovens que sofriam de possessão demoníaca e as curou completamente, solicitando um santuário na fronteira com a Itália."
+  },
+  "rome_felix": {
+    "title": "Nossa Senhora de São Félix",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "São Félix de Cantalice, o querido esmoler capuchinho conhecido como 'Irmão Deo Gratias', foi favorecido com aparições onde Maria colocava o Menino Jesus em seus braços."
+  },
+  "monte_bonicca": {
+    "title": "Nossa Senhora do Monte Bonicca",
+    "location": "Campo Ligure",
+    "country": "Itália",
+    "description": "Em 11 de setembro de 1595, Maria apareceu do outro lado da montanha aos habitantes rivais de Campo Ligure e Masone depois que eles finalmente assinaram um tratado de paz, cimentando sua reconciliação."
+  },
+  "itati": {
+    "title": "Virgem de Itatí",
+    "location": "Itati",
+    "country": "Argentina",
+    "description": "Aparições milagrosas e preservação da estátua de madeira de Nossa Senhora entre os indígenas Guarani convertidos, estabelecendo uma das maiores basílicas de peregrinação da Argentina."
+  },
+  "dijon": {
+    "title": "Nossa Senhora de Dijon",
+    "location": "Dijon",
+    "country": "França",
+    "description": "Uma jovem doente, acamada durante anos, foi visitada por Maria e anjos em sua santa transição para a eternidade."
+  },
+  "arona_sa": {
+    "title": "Nossa Senhora ao Pe. Emmanuel Sá",
+    "location": "Arona",
+    "country": "Itália",
+    "description": "Maria apareceu várias vezes ao teólogo moral jesuíta português Pe. Emmanuel Sa, uma vez acompanhado por Santo Inácio de Loyola para prever o dia do seu santo falecimento."
+  },
+  "bruges_greef": {
+    "title": "Nossa Senhora ao Pe. de Greef",
+    "location": "Bruges",
+    "country": "Bélgica",
+    "description": "Anton de Greef, SJ, fez voto vocacional diante de um retrato de Maria no Céu. Na noite seguinte, uma aparição maravilhosa confirmou a sua vocação vocacional. Em 1636, ele deu a vida cuidando das vítimas da peste em Nijmegen."
+  },
+  "molare": {
+    "title": "Nossa Senhora das Rochas",
+    "location": "Molares",
+    "country": "Itália",
+    "description": "Maria apareceu para Clarice entre as rochas de Molare na virada do século."
+  },
+  "mariahilf_passau": {
+    "title": "Mariahilf em Passau",
+    "location": "Passau",
+    "country": "Alemanha",
+    "description": "O Barão Marquard von Schwendi viu uma luz radiante iluminando as majestosas colinas que assumiam os traços da Mãe de Deus. Ele construiu a famosa igreja de peregrinação Mariahilf em 1620, venerando o ícone milagroso de 1363."
+  },
+  "verdun_youth": {
+    "title": "Nossa Senhora de Verdun",
+    "location": "Verdão",
+    "country": "França",
+    "description": "Maria mostrou a um jovem uma preciosa coroa celestial para inspirar a sua vocação religiosa. Mais tarde, ela apareceu novamente para infundir-lhe coragem renovada durante as provações."
+  },
+  "lepuy_1598": {
+    "title": "Nossa Senhora de Le Puy",
+    "location": "Puy-en-Velay",
+    "country": "França",
+    "description": "Um jovem cuja fé se tornara morna experimentou uma aparição de Maria que despertou a sua alma para uma profunda devoção e caridade."
+  },
+  "beaune_jesuit": {
+    "title": "Nossa Senhora a um Padre Jesuíta",
+    "location": "Beaune",
+    "country": "França",
+    "description": "A Virgem Maria, acompanhada por São Tiago e São João Batista, apareceu em visão a um jovem padre jesuíta."
+  },
+  "palma_rodriguez": {
+    "title": "Nossa Senhora a Santo Afonso",
+    "location": "Palma de Maiorca",
+    "country": "Espanha",
+    "description": "Santo Afonso Rodriguez, humilde zelador jesuíta do Mount Zion College, desfrutava de frequentes aparições alegres de Maria. Certa vez, ela lhe disse: 'O amor de todas as mães não pode ser comparado ao meu!'"
+  },
+  "san_severino": {
+    "title": "Nossa Senhora de São Severino",
+    "location": "São Severino",
+    "country": "Itália",
+    "description": "Em 16 de outubro de 1601, foram observadas luzes milagrosas ao redor de uma ermida dedicada à Virgem."
+  },
+  "rome_benedict": {
+    "title": "Nossa Senhora ao Frei Benedito",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "Pouco antes de sua santa morte, o frade capuchinho Bento experimentou uma terna aparição onde Maria colocou o Divino Menino em seus braços."
+  },
+  "lampedusa": {
+    "title": "Nossa Senhora de Lampedusa",
+    "location": "Castellaro",
+    "country": "Itália",
+    "description": "Escravizado por piratas turcos em Lampedusa, Andrea Anfossi descobriu uma milagrosa pintura mariana sob uma luz ofuscante. Usando a lona como vela em um tronco oco de árvore, ele navegou em mar aberto até a Ligúria. O santuário de Castellaro foi concluído em 1619."
+  },
+  "aljubarrota_light": {
+    "title": "Nossa Senhora da Luz",
+    "location": "Aljubarrota",
+    "country": "Portugal",
+    "description": "Maria apareceu com Santa Marta à idosa Catarina Anes enquanto ela apanhava lenha. A Virgem milagrosamente devolveu-lhe uma chave perdida e ajudou a cavar uma fonte curativa de água cristalina."
+  },
+  "concepcion_araucani": {
+    "title": "Nossa Senhora da Conceição",
+    "location": "Conceição",
+    "country": "Chile",
+    "description": "Durante um cerco hostil de guerreiros araucanos ao redor de Concepción, Nossa Senhora saiu milagrosamente da pintura de sua capela e caminhou sobre uma nuvem sobre os acampamentos, dispersando os sitiantes com raios de luz celestial."
+  },
+  "fribourg_canisius": {
+    "title": "Nossa Senhora a São Pedro Canísio",
+    "location": "Friburgo",
+    "country": "Suíça",
+    "description": "O grande Doutor da Igreja e “Segundo Apóstolo da Alemanha” foi favorecido com frequentes êxtases e aparições marianas ao longo da sua vida e no seu santo leito de morte em Friburgo."
+  },
+  "monsummano_fontenova": {
+    "title": "Maria Santíssima della Fontenova",
+    "location": "Monsummano Terme",
+    "country": "Itália",
+    "description": "Em 10 de junho de 1602, ocorreu uma manifestação perante o reitor da cidade. Após uma seca severa, uma fonte milagrosa começou repentinamente a fluir durante a Santa Missa, levando o Grão-Duque Ferdinando I de' Medici a construir o grande santuário."
+  },
+  "aleth_youth": {
+    "title": "Nossa Senhora de Aleth",
+    "location": "Aleth",
+    "country": "França",
+    "description": "Após uma angustiante visão demoníaca, Maria apareceu em plena luz do dia vestida de branco para um jovem, alertando-o para mudar seu comportamento e ingressar na vida religiosa."
+  },
+  "florence_medici": {
+    "title": "Nossa Senhora a Alessandro de' Medici",
+    "location": "Florença",
+    "country": "Itália",
+    "description": "O jovem Alessandro de' Medici recebeu aparições marianas acompanhado de anjos. No seu leito de morte, aos quinze anos, Maria e Santa Maria Madalena de' Pazzi estavam visivelmente ao seu lado."
+  },
+  "sanlucar": {
+    "title": "Nossa Senhora de Sanlúcar",
+    "location": "Sanlúcar de Barrameda",
+    "country": "Espanha",
+    "description": "Aparição ao soldado napolitano Pedro Rivera em 1608."
+  },
+  "siluva": {
+    "title": "Nossa Senhora de Šiluva",
+    "location": "Šiluva",
+    "country": "Lituânia",
+    "description": "Maria apareceu numa rocha segurando o Menino Jesus e chorando amargamente pela perda da fé católica na região. A sua aparição restaurou a fé de toda a comunidade, tornando-se um dos primeiros santuários da Europa reconhecidos pelo Vaticano."
+  },
+  "heiligwasser": {
+    "title": "Nossa Senhora de Heiligwasser",
+    "location": "Insbruque",
+    "country": "Áustria",
+    "description": "Maria apareceu com uma túnica azul aos jovens pastores irmãos Johann e Paulus Mayr perto de uma fonte alpina, pedindo uma igreja. Anos mais tarde, o filho mudo de Johann recebeu seu discurso na primavera, cumprindo a promessa."
+  },
+  "rome_benevolence": {
+    "title": "Nossa Amada Senhora da Benevolência",
+    "location": "Roma / Viena",
+    "country": "Itália",
+    "description": "Carmelita Pe. Domenico Maria Ruzzola descobriu um ícone enterrado sob os escombros. Maria apareceu várias vezes, pedindo oração pelas almas do Purgatório. O ícone foi posteriormente consagrado pelo Imperador em Viena."
+  },
+  "argenta_celletta": {
+    "title": "Madonna della Celletta",
+    "location": "Argentina",
+    "country": "Itália",
+    "description": "Em 5 de junho de 1606, Maria apareceu à camponesa Sigismonda Conti, prometendo respostas às orações para quem jejuasse e pedisse com fé. Em 1619, o santuário continha mais de 150.000 ofertas votivas de ouro e prata."
+  },
+  "ingolstadt_rem": {
+    "title": "Mãe Três Vezes Admirável",
+    "location": "Ingolstadt",
+    "country": "Alemanha",
+    "description": "Em 6 de abril de 1604, Maria apareceu em esplendor radiante ao padre jesuíta. Jakob Rem enquanto cantava a Ladainha de Loreto. Quando ele lhe perguntou o título mais bem-vindo, ela revelou 'Mater admirabilis', dando origem à famosa devoção Três Vezes Admirável."
+  },
+  "bordeaux_healing": {
+    "title": "Nossa Senhora de Bordéus",
+    "location": "Bordéus",
+    "country": "França",
+    "description": "Maria apareceu a um membro da congregação gravemente doente, curando-o depois que ele prometeu dedicar sua vida a espalhar a devoção à sua Imaculada Conceição."
+  },
+  "san_bartolomeo_rovere": {
+    "title": "Nostra Signora della Rovere",
+    "location": "São Bartolomeo al Mare",
+    "country": "Itália",
+    "description": "Em julho de 1608, Maria apareceu na janela da torre sineira recém-erguida do santuário de carvalho, evento formalmente investigado e documentado pelo Bispo Luca Fieschi."
+  },
+  "lenola": {
+    "title": "Madonna del Colle",
+    "location": "Lenola",
+    "country": "Itália",
+    "description": "Em 15 de setembro de 1602, Maria apareceu a Gabriele Mattei na encosta da colina, convertendo-o e levando à fundação do proeminente Santuário de Nossa Senhora da Colina."
+  },
+  "bamberg_guttrie": {
+    "title": "Nossa Senhora a Frederick Guttrie",
+    "location": "Bamberg",
+    "country": "Alemanha",
+    "description": "Maria apareceu a Frederick Guttrie, instando-o a retornar à fé católica e prevendo a data exata de seu santo falecimento na véspera de Natal de 1608."
+  },
+  "paris_berulle": {
+    "title": "Nossa Senhora ao Cardeal Bérulle",
+    "location": "Paris",
+    "country": "França",
+    "description": "O Cardeal Pierre de Bérulle, fundador do Oratório Francês, experimentou uma aparição durante a Santa Missa onde Maria o instruiu a estabelecer a ordem dos Carmelitas Descalços na França."
+  },
+  "bergamo_sorrows": {
+    "title": "Mãe das Dores",
+    "location": "Bérgamo",
+    "country": "Itália",
+    "description": "Em 18 de agosto de 1602, os habitantes da cidade de Borgo Santa Caterina viram uma estrela brilhante em plena luz do dia, da qual Maria apareceu com um rosto triste cercado por flechas brilhantes, inspirando profundo arrependimento."
+  },
+  "ardesio_graces": {
+    "title": "Santíssima Virgem das Graças",
+    "location": "Ardésio",
+    "country": "Itália",
+    "description": "Em 23 de junho de 1607, quando uma tempestade sinistra se aproximava, as jovens irmãs Maria (11) e Caterina Salerno (7) viram uma pintura mural da Crucificação iluminar-se brilhantemente antes de Maria aparecer sentada em uma cadeira dourada com o Menino Jesus."
+  },
+  "lepuy_1605": {
+    "title": "Nossa Senhora de Le Puy",
+    "location": "Puy-en-Velay",
+    "country": "França",
+    "description": "Quando um membro idoso de uma congregação mariana enfrentou uma guerra espiritual em seu leito de morte, Maria apareceu e expulsou a escuridão com sua presença triunfante."
+  },
+  "manaoag": {
+    "title": "Nossa Senhora de Manaoag",
+    "location": "Manaoag",
+    "country": "Filipinas",
+    "description": "Um homem local ouviu uma voz misteriosa e viu Maria parada em uma nuvem sobre o topo de uma árvore segurando o Rosário e o Menino. A cidade que floresceu em torno da mundialmente famosa basílica menor chamava-se Manaoag (“Ela Chama”)."
+  },
+  "caysasay": {
+    "title": "Nossa Senhora de Caysasay / Misericórdia",
+    "location": "Taal, Batangas",
+    "country": "Filipinas",
+    "description": "A primeira aparição mariana registrada nas Filipinas. Maria apareceu sob uma luz radiante de uma depressão rochosa perto de um riacho para Juana Tangui e Catalina Talayn. Águas curativas milagrosas continuam a fluir no santuário."
+  },
+  "lepuy_ponceot": {
+    "title": "Nossa Senhora ao Pe. Ponceot",
+    "location": "Puy-en-Velay",
+    "country": "França",
+    "description": "O Reitor Jesuíta Pe. Cláudio Ponceot foi consolado em seu leito de morte por três anjos, seguido por uma aparição de Maria acompanhada por Santo Cláudio e Santo Inácio."
+  },
+  "philippines_otazo": {
+    "title": "Nossa Senhora ao Pe. Otazo",
+    "location": "Manila",
+    "country": "Filipinas",
+    "description": "O missionário jesuíta Pe. Francisco Otazo foi consolado durante a perseguição por uma aparição de Maria que lhe garantiu: 'Francisco, não se preocupe, eu te protegerei!' Mais tarde, ela mostrou-lhe o Livro da Vida."
+  },
+  "chioggia_donkey": {
+    "title": "Nossa Senhora do Burrinho",
+    "location": "Chioggia",
+    "country": "Itália",
+    "description": "No dia 5 de julho de 1615, Nossa Senhora apareceu ao Irmão Adam perto de Chioggia."
+  },
+  "rome_calasanzio": {
+    "title": "Nossa Senhora a São José Calasanz",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "A Virgem Maria apareceu várias vezes para abençoar e guiar São José Calasanz no estabelecimento da Ordem Escolápia e das primeiras escolas públicas gratuitas para crianças pobres na Europa."
+  },
+  "berzo_inferiore": {
+    "title": "Nossa Senhora do Berzo",
+    "location": "Berzo Inferior",
+    "country": "Itália",
+    "description": "No dia 24 de setembro de 1616, Maria apareceu no ar com lágrimas nos olhos a Marta Damioli Polentini, libertando-a da opressão espiritual e pedindo uma igreja."
+  },
+  "saragossa_agnes": {
+    "title": "Nossa Senhora à Irmã Inês de Jesus",
+    "location": "Saragoça",
+    "country": "Espanha",
+    "description": "A noviça carmelita descalça Agnes de Casanate recebeu numerosos êxtases e aparições de Maria ao compartilhar a Paixão de Cristo."
+  },
+  "paris_acarie": {
+    "title": "Rainha dos Céus",
+    "location": "Paris",
+    "country": "França",
+    "description": "A Beata Bárbara Acarie (Irmã Maria da Encarnação), cofundadora do Carmelo francês, teve frequentes visões sublimes de Maria como a Rainha do Céu."
+  },
+  "nuremberg_girl": {
+    "title": "Nossa Senhora de Nuremberga",
+    "location": "Nuremberga",
+    "country": "Alemanha",
+    "description": "Uma jovem protestante que recitava fielmente a Ave Maria experimentou uma aparição onde Nossa Senhora a guiou a Bamberg para entrar na Igreja Católica."
+  },
+  "naples_benincasa": {
+    "title": "Aparição do Escapulário Azul",
+    "location": "Nápoles",
+    "country": "Itália",
+    "description": "Em 2 de fevereiro de 1617, o Ven. Orsola Benincasa contemplou Maria e Jesus, recebendo a revelação e promessa de graças extraordinárias para o Escapulário Azul da Imaculada Conceição."
+  },
+  "fribourg_youth": {
+    "title": "Nossa Senhora de Friburgo",
+    "location": "Friburgo",
+    "country": "Suíça",
+    "description": "Após sua conversão sincera no leito de doença, um jovem foi abençoado com uma aparição noturna de Maria, São Pedro Canísio e Santo Inácio."
+  },
+  "malta_conversion": {
+    "title": "Nossa Senhora em Malta",
+    "location": "Malta",
+    "country": "Malta",
+    "description": "Um pecador arrependido que passou meses em preparação e oração experimentou uma aparição transformadora da Virgem Maria, levando à sua alegre absolvição."
+  },
+  "stans_nocker": {
+    "title": "Nossa Senhora dos Stans",
+    "location": "Estações",
+    "country": "Suíça",
+    "description": "Maria apareceu perto de uma grande rocha alpina para Georg Nocker, pedindo a construção de uma capela que mais tarde foi consagrada pelo Príncipe-Bispo de Bressanone."
+  },
+  "lublin_lutheran": {
+    "title": "Nossa Senhora de Lublin",
+    "location": "Lublim",
+    "country": "Polónia",
+    "description": "Maria apareceu envolta em luz azul celestial para um ilustre estudioso luterano húngaro, indicando sua desaprovação aos tratados protestantes e motivando sua conversão à Igreja Católica."
+  },
+  "castel_san_pietro_1623": {
+    "title": "Santíssima Virgem de Lato di Monte Calderaro",
+    "location": "Castelo San Pietro Terme",
+    "country": "Itália",
+    "description": "Em fevereiro de 1623, Maria apareceu à jovem pastora Zenóbia."
+  },
+  "imbersago_bosco": {
+    "title": "Madona do Bosco",
+    "location": "Imbersago",
+    "country": "Itália",
+    "description": "Em 9 de maio de 1617, três pastores viram Maria pairando sob a luz sobre um castanheiro que milagrosamente produzia frutos maduros fora da estação. Consagrado em uma bela basílica visitada pelo Papa São João XXIII."
+  },
+  "ozegna": {
+    "title": "Santíssima Virgem da Floresta",
+    "location": "Ozegna",
+    "country": "Itália",
+    "description": "Em 21 de junho de 1623, Maria apareceu a Giovanni Petro, surdo-mudo, de 15 anos, durante a ceifa ao longo do rio Orco, fazendo-lhe instantaneamente seu discurso."
+  },
+  "bosentino_feles": {
+    "title": "Madona de Feles",
+    "location": "Bosentino",
+    "country": "Itália",
+    "description": "Em 21 de junho de 1623, Maria apareceu a um jovem camponês chamado Janesel."
+  },
+  "quimper_danielou": {
+    "title": "Nossa Senhora a Catarina Danielou",
+    "location": "Quimper",
+    "country": "França",
+    "description": "Maria apareceu a Catarina Danielou perto de uma estátua à beira da estrada: 'Catarina, você é pobre, eu também sou... moro no céu, mas sou uma sem-teto na Terra.' Catherine tornou-se uma renomada mística estigmatizada."
+  },
+  "goa_andrade": {
+    "title": "Nossa Senhora ao Pe. Andrade",
+    "location": "Goa",
+    "country": "Índia",
+    "description": "O missionário jesuíta Pe. Antonio Andrade, primeiro explorador europeu do Tibete, foi envenenado no seu navio. Maria apareceu em seu leito de morte e o curou milagrosamente para continuar sua missão na Ásia."
+  },
+  "paris_maunoir": {
+    "title": "Nossa Senhora ao Pe. Maunoir",
+    "location": "Paris",
+    "country": "França",
+    "description": "O renomado missionário bretão Pe. Giuliano Maunoir recebeu frequentes aparições de Maria que o protegeu dos perigos e orientou o seu profundo apostolado penitencial."
+  },
+  "alcoy_nun": {
+    "title": "Nossa Senhora à Ir. Maria de Jesus",
+    "location": "Alcoi",
+    "country": "Espanha",
+    "description": "Entre 1620 e 1630, a freira agostiniana de clausura Maria de Jesus Martin experimentou profundas aparições marianas em seu mosteiro."
+  },
+  "paris_catherine": {
+    "title": "Manto de Proteção",
+    "location": "Paris",
+    "country": "França",
+    "description": "A freira carmelita Catarina de Jesus viu Maria abrigando a ordem carmelita sob seu imaculado manto branco como a neve."
+  },
+  "santa_fe_conquistadora": {
+    "title": "Nossa Senhora da Paz / La Conquistadora",
+    "location": "Santa Fé, Novo México",
+    "country": "EUA",
+    "description": "Consagrado na Catedral Basílica de São Francisco de Assis, La Conquistadora é a estátua de madeira mais antiga da Virgem Maria nos Estados Unidos, profundamente venerada ao longo de séculos de história do sudoeste."
+  },
+  "langeac_agnes": {
+    "title": "Nossa Senhora ao Ven. Inês",
+    "location": "Langéac",
+    "country": "França",
+    "description": "Prioresa dominicana e estigmática Ven. Madre Inês de Jesus recebeu aparições onde Maria a conectou com Jean-Jacques Olier, tornando-a a padroeira espiritual da reforma do seminário Sulpiciano."
+  },
+  "lima_rose": {
+    "title": "Rainha do Rosário",
+    "location": "Lima",
+    "country": "Perú",
+    "description": "Santa Rosa de Lima, a primeira santa canonizada das Américas, experimentou frequentes comunicações sublimes com Maria antes de sua pintura na igreja do Rosário, costurando magníficas vestes bordadas para a Mãe de Deus."
+  },
+  "ribordone_prascondu": {
+    "title": "Madonna di Prascondù",
+    "location": "Ribordone, Turim",
+    "country": "Itália",
+    "description": "Em 27 de agosto de 1619, o jovem Giovannino Berrardi recuperou a fala perdida após uma radiante aparição de Nossa Senhora nas pastagens alpinas de Loreto, inspirando o grande santuário."
+  },
+  "maria_bildstein": {
+    "title": "Nossa Senhora de Maria Bildstein",
+    "location": "Maria Bildstein",
+    "country": "Áustria",
+    "description": "Maria apareceu a Martin e John Hofle, filhos de um fazendeiro que havia negligenciado uma promessa feita durante a peste, o que levou à construção do belo santuário austríaco."
+  },
+  "alessandria_rocca": {
+    "title": "Madonna della Rocca",
+    "location": "Alexandria della Rocca",
+    "country": "Itália",
+    "description": "Maria apareceu para cegar Angelina e sua mãe Rosa, dando à menina a visão e levando os habitantes da cidade a desenterrar uma antiga estátua do século VI escondida na rocha."
+  },
+  "leini_grazie": {
+    "title": "Madonna delle Grazie",
+    "location": "Leini, Turim",
+    "country": "Itália",
+    "description": "Em 1º de junho de 1630, Maria apareceu a um surdo-mudo, entregando-lhe um rosário e anunciando o fim completo da epidemia de peste."
+  },
+  "lure_shepherd": {
+    "title": "Nossa Senhora da Atração",
+    "location": "Atração",
+    "country": "França",
+    "description": "Maria apareceu a um pastor pedindo que fosse reconstruída uma igreja sobre as ruínas de uma antiga abadia beneditina."
+  },
+  "forno_alpi_graie": {
+    "title": "Nossa Senhora do Loreto no Forno",
+    "location": "Forno Alpi Graie",
+    "country": "Itália",
+    "description": "Em 30 de setembro de 1630, Maria apareceu em uma grande pedra para Pietro Garino, prometendo o fim da peste caso a região se arrependesse. Duas pinturas sagradas desaparecidas foram milagrosamente descobertas sob a rocha."
+  },
+  "constance_loreto": {
+    "title": "Nossa Senhora de Constança",
+    "location": "Constança",
+    "country": "Alemanha",
+    "description": "Maria apareceu na torre sineira da igreja agostiniana, inspirando os cidadãos durante um cerco militar hostil. Em agradecimento, a cidade ergueu uma capela de Loreto."
+  },
+  "cavite_porta_vaga": {
+    "title": "Rainha de Cavite / Porta Vaga",
+    "location": "Cidade de Cavite",
+    "country": "Filipinas",
+    "description": "Uma sentinela espanhola interrompeu um halo de luz instável na baía durante uma tempestade e ouviu uma voz doce: 'Soldadozinho... dê-me passagem. Você não reconhece Maria?' O ícone milagroso, datado de 1692, é a mais antiga pintura mariana existente nas Filipinas e Padroeira do Galeão."
+  },
+  "aljubarrota_sands": {
+    "title": "Nossa Senhora das Areias",
+    "location": "São Vicente de Aljubarrota",
+    "country": "Portugal",
+    "description": "Maria apareceu sentada em uma pedra para uma mulher chorosa da aldeia, encontrando suas chaves perdidas e pedindo uma igreja. Quando o bispo cético trancou a pedra na sala do seu palácio, ela desapareceu milagrosamente e voltou ao campo duas vezes."
+  },
+  "guiclan_picard": {
+    "title": "Nossa Senhora a Marie-Amice Picard",
+    "location": "Guiclán",
+    "country": "França",
+    "description": "Em 19 de maio de 1634, Mary e St. John apareceram para resgatar Marie-Amice Picard de um agressor. Ela se tornou uma alma vítima profundamente estigmatizada."
+  },
+  "quito_1634": {
+    "title": "Nossa Senhora do Bom Sucesso",
+    "location": "Quito",
+    "country": "Equador",
+    "description": "No dia 2 de fevereiro de 1634, Nossa Senhora do Bom Sucesso apareceu à Madre Mariana de Jesus Torres no Real Convento Real, alertando sobre profundas crises morais e perda de fé no século XX."
+  },
+  "gandos_galleno": {
+    "title": "Nossa Senhora do Galleno",
+    "location": "Gandos di Galleno",
+    "country": "Itália",
+    "description": "Maria apareceu com um anjo para a surda-muda Margherita Lazzaroni, fazendo seu discurso e instruindo a aldeia a rezar o rosário para deter a peste. A cidade foi milagrosamente preservada."
+  },
+  "lake_huron_brebeuf": {
+    "title": "Nossa Senhora de São João de Brébeuf",
+    "location": "Midland, Ontário",
+    "country": "Canadá",
+    "description": "O grande mártir jesuíta norte-americano teve uma visão majestosa de Maria com o coração trespassado por três flechas, preparando-o para o seu heróico martírio entre os Hurons."
+  },
+  "bargemon": {
+    "title": "Notre Dame de Bargemon",
+    "location": "Bargemon",
+    "country": "França",
+    "description": "Em 17 de março de 1635, Maria apareceu em uma visão noturna para Elizabeth Caille, acamada, como uma bela peregrina vestida de veludo verde com uma coroa de ouro, curando-a milagrosamente e pedindo um santuário."
+  },
+  "naples_vesuvius": {
+    "title": "Nossa Senhora em Nápoles",
+    "location": "Nápoles",
+    "country": "Itália",
+    "description": "Durante uma terrível erupção vulcânica no Monte Vesúvio, Maria apareceu sobre a cidade em meio à chuva de cinzas, salvando da destruição os fiéis invocadores."
+  },
+  "sinopoli_lactans": {
+    "title": "Maria Lactanos",
+    "location": "Sinopoli",
+    "country": "Itália",
+    "description": "Santa Maria apareceu duas vezes pedindo a veneração do seu ícone como 'Maria Lactans' (Mãe de Deus que amamenta o Menino)."
+  },
+  "ajaccio_peace": {
+    "title": "Nossa Senhora na Córsega",
+    "location": "Ajácio",
+    "country": "França",
+    "description": "Dois inimigos rivais receberam uma aparição milagrosa e uma mensagem da Virgem Maria ordenando-lhes que fizessem as pazes."
+  },
+  "japan_martyr": {
+    "title": "Nossa Senhora no Japão",
+    "location": "Nagasaki",
+    "country": "Japão",
+    "description": "Maria apareceu para confortar o mártir cristão japonês Kegan Fucinanga Nicholas durante severa tortura sob as perseguições anti-cristãs."
+  },
+  "savigliano": {
+    "title": "Nossa Senhora de Savigliano",
+    "location": "Savigliano",
+    "country": "Itália",
+    "description": "Aparição mariana registrada a Tesio Petrina em 1639."
+  },
+  "prague_infant": {
+    "title": "Nossa Senhora da Vitória / Praga",
+    "location": "Praga",
+    "country": "República Checa",
+    "description": "Na véspera da Imaculada Conceição, Maria apareceu do coro da igreja ao Pe. Cirilo, apontando o local exato para restaurar e entronizar a mundialmente famosa estátua milagrosa do Menino Jesus de Praga."
+  },
+  "montagnolo_pinocchio": {
+    "title": "Nossa Senhora de Montagnolo",
+    "location": "Ancona",
+    "country": "Itália",
+    "description": "Em 1640, a Virgem Maria apareceu para evitar que uma terrível epidemia assolasse a região."
+  },
+  "corigliano_schiavonea": {
+    "title": "Santa Maria ad Nives / Schiavonea",
+    "location": "Corigliano Calabro",
+    "country": "Itália",
+    "description": "Em 23 de agosto de 1648, após uma aparição milagrosa, foi erguido o grande santuário da Madona Negra de Schiavonea."
+  },
+  "maria_taferl": {
+    "title": "Nossa Senhora de Maria Taferl",
+    "location": "Maria Taferl",
+    "country": "Áustria",
+    "description": "Alexander Schinnagl colocou uma Pietà de madeira em uma cavidade de carvalho e foi curada. Entre 1658 e 1661, cinquenta e sete testemunhas sob juramento confirmaram ter visto figuras angelicais brilhantes e luzes celestiais ao redor da árvore. É um dos maiores santuários nacionais da Áustria."
+  },
+  "palizi_moscow": {
+    "title": "Nossa Senhora das Dores / Strastnaya",
+    "location": "Moscou",
+    "country": "Rússia",
+    "description": "Maria apareceu a uma mulher inválida, curando-a e instruindo-a a pintar um ícone. A imagem milagrosa foi transportada solenemente em procissão até Moscou."
+  },
+  "kevelaer": {
+    "title": "Consolador dos Aflitos",
+    "location": "Kevelaer",
+    "country": "Alemanha",
+    "description": "No Natal de 1641, Hendrik Busman ouviu a voz de Maria nas charnecas: 'Neste lugar preciso que você dedique uma capela.' Consagrando a Virgem Milagrosa do Luxemburgo, é o maior santuário mariano da Alemanha, visitado anualmente por 600.000 peregrinos."
+  },
+  "beaune_infant": {
+    "title": "Rei da Graça",
+    "location": "Beaune",
+    "country": "França",
+    "description": "Carmelita Ven. Margarida do Santíssimo Sacramento foi orientada por Maria no estabelecimento da Confraria do Menino Jesus, posteriormente elevada pelo Papa Pio IX."
+  },
+  "ponzano_magra": {
+    "title": "Nossa Senhora de Schiavonea em Ponzano",
+    "location": "Ponzano Magra",
+    "country": "Itália",
+    "description": "No dia 10 de julho de 1647, Maria apareceu a Antonio Ruffio."
+  },
+  "buenos_aires_1647": {
+    "title": "Nossa Senhora em Buenos Aires",
+    "location": "Buenos Aires",
+    "country": "Argentina",
+    "description": "Maria apareceu a uma jovem camponesa e a um irmão leigo, chamando o povo à penitência sincera."
+  },
+  "lake_huron_hurons": {
+    "title": "Nossa Senhora no Lago Huron",
+    "location": "Lago Huron",
+    "country": "Canadá",
+    "description": "Dois convertidos cristãos Huron amarrados à estaca por iroqueses hostis voltaram-se para Maria em oração e foram milagrosamente libertados de suas correntes para escapar."
+  },
+  "frejus_cotignac": {
+    "title": "Nossa Senhora ao Irmão Fiacre",
+    "location": "Cotignac",
+    "country": "França",
+    "description": "Em 3 de novembro de 1637, Maria apareceu em vestes azuis estreladas ao irmão Fiacre em sua cela monástica, mostrando-lhe seu santuário em Cotignac e prometendo o nascimento milagroso do futuro rei Luís XIV após três novenas."
+  },
+  "cast_le_goff": {
+    "title": "Nossa Senhora a Yves Le Goff",
+    "location": "Elenco, Bretanha",
+    "country": "França",
+    "description": "Maria apareceu ao agricultor Yves Le Goff, imprimindo uma cruz vermelha em sua mão direita e pedindo-lhe que fizesse um rigoroso jejum quaresmal de quinze anos, sem líquidos, para a conversão dos pecadores."
+  },
+  "uruguay_reduction": {
+    "title": "Nossa Senhora da Anunciação",
+    "location": "Redução do Uruguai",
+    "country": "Uruguai",
+    "description": "Na redução missionária jesuíta, Maria apareceu duas vezes a uma devota menina indígena de dez anos para prepará-la para sua alegre transição para a eternidade."
+  },
+  "cursi_abbondanza": {
+    "title": "Santa Maria dell'Abbondanza",
+    "location": "Cursi, Apúlia",
+    "country": "Itália",
+    "description": "Na primavera de 1641, Maria apareceu ao jovem pastor Biagio Orlando Natali: 'Eu sou a Rainha dos Céus e sofro pela condição miserável dos homens.' Ela pediu capela e procissão."
+  },
+  "turin_1651": {
+    "title": "Nossa Senhora em Turim",
+    "location": "Turim",
+    "country": "Itália",
+    "description": "Em 20 de março de 1651, Maria apareceu a Andreeta Pendigliona, restaurando milagrosamente os membros aleijados de um homem no santuário."
+  },
+  "paris_olier": {
+    "title": "Nossa Senhora ao Pe. Oleiro",
+    "location": "Paris",
+    "country": "França",
+    "description": "Jean-Jacques Olier, fundador da reforma do seminário Sulpiciano, foi milagrosamente curado da cegueira por Maria em sua juventude. Em 1649, ela apareceu novamente para revigorar sua profunda espiritualidade sacerdotal."
+  },
+  "notre_dame_osier": {
+    "title": "Notre Dame de l'Osier",
+    "location": "Les Plantées, Vinay",
+    "country": "França",
+    "description": "Em 25 de março de 1649, galhos de vime cortados por Pierre Port-Combet sangraram milagrosamente. Em 1657, Maria apareceu-lhe enquanto arava, levando à sua sincera conversão do protestantismo e à fundação da grande basílica."
+  },
+  "plounevez_quintin": {
+    "title": "Nossa Senhora de Plounévez",
+    "location": "Plounévez-Quintin",
+    "country": "França",
+    "description": "Maria apareceu a Louise Le Comec enquanto rezava o rosário por uma boa morte, prevendo a hora exata de sua transição celestial."
+  },
+  "colere_fontane": {
+    "title": "Madonna delle Fontane",
+    "location": "Colere, Val di Scalve",
+    "country": "Itália",
+    "description": "Em 2 de julho de 1654, morrendo de tuberculose, o pastor Bartolomeo Burat desmaiou tossindo sangue perto de uma fonte à beira da estrada. Maria saiu do afresco da capela, tocou sua testa com água e o curou instantaneamente: 'Tenha coragem, querido filho, você está curado.'"
+  },
+  "ancienne_lorette": {
+    "title": "Nossa Senhora em Quebec",
+    "location": "Ancienne Lorette, Quebec",
+    "country": "Canadá",
+    "description": "A Virgem Maria apareceu a Christian Huron, de 14 anos, convertida Jeanne Ouendite."
+  },
+  "querrien_courtel": {
+    "title": "Nossa Senhora do Eterno Socorro",
+    "location": "La Prénessaye, Querrien",
+    "country": "França",
+    "description": "Em 15 de agosto de 1652, Maria apareceu à pastora surda-muda Jeanne Courtel, de 12 anos, restaurando instantaneamente sua audição e voz. Ela a guiou para desenterrar uma antiga estátua enterrada. Oficialmente reconhecida pelo Bispo de St. Brieuc como a 'Pequena Bretã Lourdes'."
+  },
+  "campeneac_nicolas": {
+    "title": "Nossa Senhora a Armelle Nicolas",
+    "location": "Campénéac",
+    "country": "França",
+    "description": "Em 15 de agosto de 1652, o humilde servo 'Bom Armelle' recebeu uma visão gloriosa da Assunção de Maria ao Céu."
+  },
+  "naples_carafa": {
+    "title": "Nossa Senhora ao Pe. Carafa",
+    "location": "Nápoles",
+    "country": "Itália",
+    "description": "Maria apareceu ao General Jesuíta Pe. Vincenzo Carafa, iluminando seus escritos ascéticos e místicos."
+  },
+  "malta_sultan": {
+    "title": "Nossa Senhora ao Sultão",
+    "location": "Malta",
+    "country": "Malta",
+    "description": "Um Sultão de Marrocos capturado pelos Cavaleiros de Malta experimentou uma aparição de Maria na prisão. Após sua libertação, ele se converteu ao catolicismo, foi batizado em Roma e caminhou em peregrinação a Loreto."
+  },
+  "mariahilfberg_gutenstein": {
+    "title": "Nossa Senhora da Ajuda",
+    "location": "Gutenstein",
+    "country": "Áustria",
+    "description": "Maria apareceu seis vezes para Sebastian Schmid Schlager, curando-o e pintando sua imagem em um lençol pendurado em uma faia. O Papa Clemente IX autorizou formalmente a veneração e o santuário."
+  },
+  "trun_light": {
+    "title": "Senhora da Luz",
+    "location": "Trun, Grisões",
+    "country": "Suíça",
+    "description": "O pároco e a comunidade viram uma luz milagrosa brilhando no monte onde Maria deu a conhecer a sua presença, pedindo um santuário. Muitos enfermos recuperaram a saúde na igreja consagrada."
+  },
+  "birkenstein": {
+    "title": "Nossa Senhora de Birkenstein",
+    "location": "Fischbachau, Baviera",
+    "country": "Alemanha",
+    "description": "O Vigário Geral Johann Stiglmaier construiu uma capela em Loreto depois que Maria apareceu em sonho: 'Nesta capela... quero oferecer minha gratidão àqueles que me invocam.' O belo santuário alpino apresenta uma estátua coroada rodeada por 92 anjos."
+  },
+  "pieve_di_rosa": {
+    "title": "Santa Maria de Pieve di Rosa",
+    "location": "San Vito al Tagliamento",
+    "country": "Itália",
+    "description": "Em 2 de fevereiro de 1655, a epiléptica Maria Giacomuzzi, de 8 anos, foi curada em êxtase diante de um afresco de Maria na parede. Quando os bois que puxavam o afresco para San Vito travaram as pernas e se recusaram a se mover na igreja de São Nicolau, o grande santuário foi estabelecido ali."
+  },
+  "coromoto_venezuela": {
+    "title": "Nossa Senhora de Coromoto",
+    "location": "Guanare",
+    "country": "Venezuela",
+    "description": "Em 8 de setembro de 1652, Maria apareceu na floresta virgem ao cacique Coromoto da tribo Cospes: 'Vá até a casa branca e peça que despejem água em sua cabeça para ir para o céu'. Ela deixou sua imagem milagrosa impressa em fibras de madeira. Padroeira Oficial da Venezuela."
+  },
+  "paray_le_monial": {
+    "title": "Nossa Senhora a Santa Margarida Maria",
+    "location": "Paray-le-Monial",
+    "country": "França",
+    "description": "Santa Margarida Maria Alacoque, acamada com reumatismo severo em sua juventude, foi curada instantaneamente após prometer se tornar uma das filhas de Maria. Ela entrou no convento da Visitação, onde recebeu as revelações transformadoras do Sagrado Coração de Jesus."
+  },
+  "san_vito_casalbuttano": {
+    "title": "Nossa Senhora de Casalbuttano",
+    "location": "São Vito de Casalbuttano",
+    "country": "Itália",
+    "description": "Aparição mariana registrada em San Vito di Casalbuttano em 1668."
+  },
+  "mary_tax_stams": {
+    "title": "Imposto Nossa Senhora de Maria",
+    "location": "Stams, Tirol",
+    "country": "Áustria",
+    "description": "Maria apareceu a um proprietário de terras no Tirol pedindo uma capela na floresta. Em 1667, o abade Nicola Kraus construiu o santuário que se tornou um refúgio para viajantes e peregrinos."
+  },
+  "agnie_quebec": {
+    "title": "Nossa Senhora em Quebec",
+    "location": "Agnie, Quebeque",
+    "country": "Canadá",
+    "description": "Maria apareceu ao jovem cristão indígena Mohawk convertido Martin Kandegonrhaksen."
+  },
+  "san_bartolomeo_1671": {
+    "title": "Nostra Signora della Rovere",
+    "location": "São Bartolomeo al Mare",
+    "country": "Itália",
+    "description": "Em 18 de abril de 1671, Maria apareceu ao fazendeiro Giacinto Perato, paralisado de um braço, aconselhando-o a não atrasar sua peregrinação ao seu santuário de carvalho. Ele foi curado instantaneamente durante a missa do dia seguinte."
+  },
+  "bianzone_piano": {
+    "title": "Madonna del Piano",
+    "location": "Bianzona",
+    "country": "Itália",
+    "description": "Em 26 de março de 1675, Maria apareceu a um homem local pedindo-lhe que erguesse um altar e um templo na planície."
+  },
+  "celles_ariege": {
+    "title": "Nossa Senhora de Celles",
+    "location": "Celles, Ariège",
+    "country": "França",
+    "description": "Em 28 de maio de 1686, o menino camponês John Courdil, de 10 anos, viu uma pomba branca se transformar em uma jovem vestida de branco em uma fonte: 'Eu sou a Virgem Santa. Avise as pessoas para mudarem suas vidas. Quando ele voltou para pegar sua pá, três folhas de carvalho em forma de cruz brotaram milagrosamente de seu cabo."
+  },
+  "citta_di_castello": {
+    "title": "Nossa Senhora a Santa Verônica Giuliani",
+    "location": "Cidade de Castello",
+    "country": "Itália",
+    "description": "Santa Verônica Giuliani, uma das maiores místicas estigmáticas da época barroca, ingressou no mosteiro capuchinho após uma profunda visão de Maria. Ela carregava os estigmas e a coroa de espinhos."
+  },
+  "torre_di_ruggiero": {
+    "title": "Santíssima Maria das Graças",
+    "location": "Torre de Ruggiero",
+    "country": "Itália",
+    "description": "No dia 17 de abril de 1677, as jovens Isabella Cristello e Antonia De Luca viram Maria numa visão de sublime doçura, curando Isabella. Depois que o terremoto de 1783 enterrou o santuário, Maria apareceu em sonho a Pascale Luna para inspirar sua reconstrução. Em 1858, uma fonte milagrosa surgiu para curar o fazendeiro Francesco Arone."
+  },
+  "saint_carr": {
+    "title": "Nossa Senhora de Saint-Carr",
+    "location": "Saint-Carr, Bretanha",
+    "country": "França",
+    "description": "O simples trabalhador Jean Bizier sonhou que Mary lhe mostrasse exatamente onde cavar perto de sua aldeia. No dia seguinte, ele desenterrou uma magnífica estátua de madeira de Nossa Senhora. Consagrado em capela consagrada em 1696."
+  },
+  "pochayiv": {
+    "title": "Nossa Senhora de Pochayiv",
+    "location": "Pochayiv",
+    "country": "Ucrânia",
+    "description": "Durante a Guerra Zbarazh, o exército turco que sitiava Pochayiv Lavra fugiu aterrorizado ao ver uma aparição gloriosa da Theotokos nos céus acompanhada por anjos e São Jó de Pochayiv. Numerosos sitiantes se converteram ao cristianismo."
+  },
+  "agreda_mystic": {
+    "title": "Nossa Senhora ao Ven. Maria de Ágreda",
+    "location": "Ágreda",
+    "country": "Espanha",
+    "description": "Ven. A Abadessa Maria de Jesus de Ágreda teve sublimes visões internas de Nossa Senhora, gravando a monumental obra-prima de 4 volumes 'Cidade Mística de Deus'. Seu corpo permanece incorrupto."
+  },
+  "alcobendas_paz": {
+    "title": "Virgem da Paz",
+    "location": "Alcobendas, Madri",
+    "country": "Espanha",
+    "description": "Maria apareceu numa figueira a uma pastora aleijada em Fuentiduña, restaurando milagrosamente a sua mão aleijada e enchendo o peito da sua mãe com pão fresco."
+  },
+  "pancole_providence": {
+    "title": "Mãe da Divina Providência",
+    "location": "Pancole, San Gimignano",
+    "country": "Itália",
+    "description": "Em abril de 1668, chorando na pobreza, a pastora surda-muda Bartolomea Ghini viu uma bela senhora que recuperou a voz e encheu a despensa dos pais com pão, azeite e vinho. Quando os aldeões cortaram arbustos no campo, descobriram o seu santuário."
+  },
+  "le_laus": {
+    "title": "Nossa Senhora de Le Laus",
+    "location": "Saint-Étienne-le-Laus",
+    "country": "França",
+    "description": "Maria apareceu à humilde pastora Benoîte Rencurel durante um período de 54 anos, pedindo oração contínua e penitência pelos pecadores nas perfumadas lamparinas de óleo da montanha. Aprovado oficialmente pela Igreja em 2008."
+  },
+  "castenaso": {
+    "title": "Nossa Senhora de Castenaso",
+    "location": "Castenaso",
+    "country": "Itália",
+    "description": "No dia 27 de janeiro de 1699, a jovem Maria Maddalena ouviu uma voz chamando-a à igreja. Quando se ajoelhou diante da imagem de Maria, Nossa Senhora estendeu amorosamente a mão."
+  },
+  "giaudet_lanrivain": {
+    "title": "Nossa Senhora de Lanrivain",
+    "location": "Lanrivain, Bretanha",
+    "country": "França",
+    "description": "Maria apareceu a um camponês pobre, pai de 12 filhos, e multiplicou milagrosamente o pão em sua mesa. Quando o cético pároco ficou cego, ele recuperou a visão depois de orar diante de uma estátua de Maria recém-descoberta."
+  },
+  "messina_lettera": {
+    "title": "Madonna da Letra",
+    "location": "Messina, Sicília",
+    "country": "Itália",
+    "description": "Durante os catastróficos terremotos de janeiro de 1693, Maria apareceu à doente Paola Pesce vestida de branco com um manto azul: 'Não temas.' Ela prometeu proteção aos reunidos na Catedral diante do ícone de Nossa Senhora da Letra. A cidade foi poupada do impacto do desastre. Consagrado com um colossal monumento dourado do porto."
+  },
+  "sumeg_sorrows": {
+    "title": "Nossa Senhora das Dores",
+    "location": "Sumeg",
+    "country": "Hungria",
+    "description": "Sophia Feilheim, que sofria de uma doença incurável em Viena, viu num sonho uma Pietà que falava com ela. Ela viajou para a Hungria, onde encontrou a estátua exata em Sümeg. Ao tocá-lo, ela foi instantaneamente curada."
+  },
+  "urkupina_bolivia": {
+    "title": "Virgem de Urkupiña",
+    "location": "Quillacollo, Cochabamba",
+    "country": "Bolívia",
+    "description": "Uma bela senhora carregando uma criança apareceu a uma humilde pastora no morro da Cota, conversando em fluente quíchua. Quando as pessoas da cidade correram para ver, a menina apontou: 'Jaqaypiña orqopiña' ('Ela já está na colina!'). O grande santuário nacional é venerado em toda a América do Sul como a Padroeira da Integração Nacional."
+  },
+  "capurso_pozzo": {
+    "title": "Nossa Senhora do Poço",
+    "location": "Capurso, Apúlia",
+    "country": "Itália",
+    "description": "Em agosto de 1705, morrendo de uma doença incurável, Pe. Dominic Tanzella contemplou Nossa Senhora numa visão noturna. Ela prometeu cura instantânea se ele bebesse água do antigo poço de 'Santa Maria' e construísse uma igreja. Ele bebeu, foi imediatamente restaurado e ergueu a magnífica basílica."
+  },
+  "kotschach": {
+    "title": "Nossa Senhora de Kötschach",
+    "location": "Kötschach-Mauthen",
+    "country": "Áustria",
+    "description": "Maria testou um jovem sacristão ajoelhando-se em sua casa por doze horas antes de assegurar-lhe sua proteção sobre o santuário e os peregrinos. No dia 29 de abril, os sinos tocaram espontaneamente durante a noite, enquanto toda a igreja era milagrosamente iluminada por uma luz sobrenatural."
+  },
+  "poponguine": {
+    "title": "Nossa Senhora de Poponguine",
+    "location": "Poponguine",
+    "country": "Senegal",
+    "description": "Um xamã local testemunhou uma imagem de Nossa Senhora cair na areia do breviário de um jovem missionário francês. Reconhecendo-a como a mulher radiante que conhecera no dia anterior nos campos, ele e toda a aldeia converteram-se alegremente ao cristianismo. Principal santuário nacional do Senegal."
+  },
+  "ellwangen_jeningen": {
+    "title": "Nossa Senhora de Schönenberg",
+    "location": "Elwangen",
+    "country": "Alemanha",
+    "description": "O missionário jesuíta Pe. Philip Jeningen, renomado místico e guia espiritual, recebeu os santos estigmas de uma aparição de Jesus e Maria, levando-o a promover o belo santuário no topo da colina de Schönenberg."
+  },
+  "santa_rosa_ambato": {
+    "title": "Virgem da Elevação",
+    "location": "Santa Rosa, Ambato",
+    "country": "Equador",
+    "description": "Em 13 de novembro de 1695, durante a seca e os tremores, Maria apareceu sob uma luz ofuscante ao servo indígena Juan Chacarin sob uma rocha a 3.419m de altitude: 'Eu sou Maria, a Virgem sem mancha... faça penitência pela misericórdia.' Consagrado em um importante santuário diocesano."
+  },
+  "florida_cuipa": {
+    "title": "Nossa Senhora a Antonio Cuipa",
+    "location": "La Concepción de Ayubale, Flórida",
+    "country": "EUA",
+    "description": "Em 25 de janeiro de 1704, o chefe Apalachee, catequista e flautista Antonio Cuipa foi amarrado a uma cruz e martirizado durante ataques ingleses. Torturado pelo fogo sob os pés, António viu a Virgem Maria aparecer ao seu lado, dando-lhe coragem serena para suportar o seu glorioso martírio."
+  },
+  "san_severino_pollino": {
+    "title": "Madonna del Pollino",
+    "location": "São Severino Lucano",
+    "country": "Itália",
+    "description": "Nossa Senhora apareceu “banhada de luz, bela como o sol” na encosta norte do Monte Pollino a um pastor e a uma mulher local, apontando para uma gruta com uma estátua escondida. Os devotos sobem até o belo santuário montanhoso a 1.537 m de altitude em uma colorida procissão primaveril."
+  },
+  "quito_nube": {
+    "title": "Nossa Senhora da Nuvem",
+    "location": "Quito",
+    "country": "Equador",
+    "description": "No dia 30 de dezembro de 1696, durante uma grande procissão em homenagem ao Bispo enfermo, 500 fiéis reunidos viram Nossa Senhora repousando sobre uma nuvem segurando um lírio e o Menino Jesus. A gloriosa aparição durou toda a recitação do Gloria Patri."
+  },
+  "germany_holzhauser": {
+    "title": "Nossa Senhora ao Ven. Holzhauser",
+    "location": "Bingen / Baviera",
+    "country": "Alemanha",
+    "description": "Venerável Bartolomeo Holzhauser, renomado sacerdote, profeta e fundador da União Apostólica dos Padres Seculares, desfrutou de sublimes visões e aparições da Bem-Aventurada Virgem Maria que iluminaram seus profundos comentários bíblicos."
+  },
+  "quito_guapulo": {
+    "title": "Nossa Senhora de Guápulo",
+    "location": "Quito",
+    "country": "Equador",
+    "description": "Durante uma solene procissão de Nossa Senhora de Guadalupe, a Rainha do Céu apareceu visivelmente ao Bispo de Quito, que foi instantaneamente curado de uma grave doença."
+  },
+  "sinj_croatia": {
+    "title": "Nossa Senhora do Sinj",
+    "location": "Sinj",
+    "country": "Croácia",
+    "description": "Em 14 de agosto de 1715, enquanto 70 mil forças otomanas sitiavam Sinj em sua marcha em direção a Viena, os habitantes da cidade oravam diante do ícone milagroso. Na Festa da Assunção, a figura de Maria apareceu no céu, fazendo com que o exército invasor fugisse. Principal santuário nacional da Croácia."
+  },
+  "maserada_vittorie": {
+    "title": "Madonna delle Vittorie",
+    "location": "Maserada sul Piave",
+    "country": "Itália",
+    "description": "Em 9 de julho de 1722, manifestações milagrosas levaram à veneração de Nossa Senhora das Vitórias ao longo do rio Piave, no Vêneto."
+  },
+  "lescure_paille": {
+    "title": "Nossa Senhora da Visitação",
+    "location": "Lescure, Cantal",
+    "country": "França",
+    "description": "Em 2 de julho de 1717, Maria apareceu três vezes ao pastor Jean Paillé, de 13 anos, guiando-o para desenterrar uma estátua subterrânea escondida. O bispo de Saint-Flour autorizou formalmente o santuário após minuciosa investigação canônica."
+  },
+  "ovada_passion": {
+    "title": "Nossa Senhora da Paixão",
+    "location": "Ovada / Castellazzo Bormida",
+    "country": "Itália",
+    "description": "São Paulo da Cruz, salvo do afogamento por Maria na juventude, recebeu uma visão monumental de Nossa Senhora com um hábito negro de luto e uma cruz branca no peito. Ela o instruiu a estabelecer a mundialmente famosa Ordem Passionista."
+  },
+  "rubiana_sorrows": {
+    "title": "Nossa Senhora das Dores / Nossa Senhora das Baixas",
+    "location": "Rubiana / Val della Torre",
+    "country": "Itália",
+    "description": "Em 18 de agosto de 1713, Lorenzo Nicol quebrou a perna na cordilheira alpina e foi curado instantaneamente após jurar um poste. Esquecendo-se de seu voto, ele o quebrou novamente exatamente um ano depois, em 20 de agosto de 1714. Arrependido, foi novamente curado por Maria e erigiu o grande santuário."
+  },
+  "valverde_1711": {
+    "title": "Nossa Senhora de Valverde",
+    "location": "Rezzato, Bréscia",
+    "country": "Itália",
+    "description": "Em 1º de outubro de 1711, durante uma devastadora praga de gado, Nossa Senhora apareceu perto do lago do santuário a Paolo Ogna (8) e Francesco Pellizzari (11) enquanto colhiam castanhas, prometendo o fim imediato da epidemia."
+  },
+  "foret_montfort": {
+    "title": "Nossa Senhora de São Luís de Montfort",
+    "location": "Floresta da Madeleine, Poitiers",
+    "country": "França",
+    "description": "São Luís Maria Grignion de Montfort, apóstolo extraordinário da Consagração Total a Jesus através de Maria, foi frequentemente acompanhado durante as suas árduas viagens missionárias pela França por uma radiante “Senhora vestida de branco”, testemunhada por vários fiéis."
+  },
+  "peterwardein_snow": {
+    "title": "Nossa Senhora das Neves",
+    "location": "Peterwardein/Novi Sad",
+    "country": "Sérvia/Eslováquia",
+    "description": "Maria estendeu o seu manto protetor sobre as forças cristãs do Príncipe Eugênio de Sabóia durante a batalha decisiva contra o poder otomano em 5 de agosto de 1716. O Papa Clemente XI instituiu a festa universal do Santo Rosário em eterna gratidão."
+  },
+  "aparecida_brazil": {
+    "title": "Nossa Senhora Aparecida",
+    "location": "Aparecida, São Paulo",
+    "country": "Brasil",
+    "description": "Em outubro de 1717, depois de orar a Maria durante uma noite infrutífera no rio Paraíba, três pescadores pescaram primeiro o corpo e depois a cabeça de uma bela estátua de terracota da Imaculada Conceição. Lançando as redes novamente, foram inundados de peixes. Padroeira Principal do Brasil, consagrada na segunda maior basílica católica do planeta."
+  },
+  "altenhohenau_weigl": {
+    "title": "Nossa Senhora a Columba Weigl",
+    "location": "Altenhohenau, Baviera",
+    "country": "Alemanha",
+    "description": "A prioresa dominicana Columba Weigl desfrutou de visões infantis consistentes e quase diárias de Maria e Jesus, recebendo os santos estigmas em 19 de agosto de 1731."
+  },
+  "pellestrina_venice": {
+    "title": "Nossa Senhora da Aparição",
+    "location": "Pellestrina, Veneza",
+    "country": "Itália",
+    "description": "No dia 4 de agosto de 1716, Natalino Scarpa, de 14 anos, avistou uma majestosa senhora com um vestido azul estrelado do lado de fora da igreja fechada: 'Venha aqui, filho... diga ao pároco para celebrar missas pelas almas do Purgatório se quisermos vencer a guerra.' Ela gentilmente tocou seu pulso para confirmar o milagre."
+  },
+  "solovetsky_golgotha": {
+    "title": "Nossa Senhora no Monte Gólgota",
+    "location": "Ilha Anzersky, Solovki",
+    "country": "Rússia",
+    "description": "Em 18 de junho de 1712, Maria apareceu ao monge Jó (Lova) no mosteiro Solovetsky: 'Esta montanha se chamará Gólgota... um lugar de tormento indescritível.' Exatamente dois séculos depois, a ilha tornou-se o local de um trágico campo de prisioneiros do Gulag."
+  },
+  "bischwind_mittnacht": {
+    "title": "Maria Auxiliadora dos Cristãos",
+    "location": "Bischwind, Baviera",
+    "country": "Alemanha",
+    "description": "O soldado George Mittnacht, capturado pelas forças otomanas e condenado a óleo fervente, rezou fervorosamente a Maria, prometendo uma capela se voltasse a ver sua terra natal. Na manhã seguinte, ele acordou milagrosamente transportado para um gramado na Francônia. Ele construiu a capela com as próprias mãos."
+  },
+  "persquen_morbihan": {
+    "title": "Nossa Senhora do Persquen",
+    "location": "Persquen, Morbihan",
+    "country": "França",
+    "description": "Após manifestações milagrosas em 1722, uma grande capela foi erguida onde centenas de devotos se reúnem todo dia 1º de agosto para o tradicional perdão bretão e a procissão solene."
+  },
+  "mercatello_giuliani": {
+    "title": "Nossa Senhora a Santa Verônica Giuliani",
+    "location": "Mercatello sul Metauro",
+    "country": "Itália",
+    "description": "Santa Verônica Giuliani, extraordinária mística e estigmática capuchinha, experimentou comunicações profundas e contínuas com Maria e Jesus ao longo de sua vida enclausurada."
+  },
+  "france_lenormand": {
+    "title": "Nossa Senhora a Marie Lenormand",
+    "location": "Paris",
+    "country": "França",
+    "description": "Manifestações marianas registradas para Marie Lenormand na França em 1769."
+  },
+  "rome_divino_amore": {
+    "title": "Madonna del Divino Amore",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "Um viajante perdido a caminho de São Pedro foi atacado por uma matilha de cães vadios raivosos em Castel di Leva. Ele gritou diante de um afresco na torre da Virgem com o Menino, e os cães se dispersaram instantaneamente. Creditado pelo Papa Pio XII por salvar Roma da destruição na Segunda Guerra Mundial."
+  },
+  "montagnaga_pine": {
+    "title": "Madonna di Montagnaga / Piné",
+    "location": "Montagnaga di Piné, Trento",
+    "country": "Itália",
+    "description": "Em 14 de maio de 1729, Maria apareceu em luz dourada para a vaqueira Domenica Targa, de 30 anos, quando seu gado debandou: 'Escolhi este lugar como o trono da minha Misericórdia. Aqueles que oram com fé não voltarão de mãos vazias.' Aprovado formalmente pelo Bispo em 1730."
+  },
+  "bois_de_la_roche": {
+    "title": "Nossa Senhora a Madeleine Morice",
+    "location": "Néant-sur-Yvel, Bretanha",
+    "country": "França",
+    "description": "Maria apareceu em vestes azuis estreladas para Madeleine-Marie Morice, de 11 anos, explicando a profunda profundidade mística da Oração do Pai Nosso (“Venha o teu reino”) e pedindo a fundação de um orfanato da Casa da Providência."
+  },
+  "bocca_pignone_ghianda": {
+    "title": "Madonna della Ghianda",
+    "location": "Bocca Pignone di Ripalta, La Spezia",
+    "country": "Itália",
+    "description": "Em 1778 e 1779, Maria apareceu no galho de um castanheiro perto das ruínas de uma igreja do século XII para três pastorinhos, instando ao arrependimento e à profunda meditação bíblica."
+  },
+  "las_lajas_colombia": {
+    "title": "Nossa Senhora das Lajas",
+    "location": "Cânion Guáitara, Nariño",
+    "country": "Colômbia",
+    "description": "Durante uma tempestade no cânion, a indígena Maria Mueses e sua filha surda-muda Rosa contemplaram uma magnífica imagem de Nossa Senhora segurando o Rosário com São Domingos e São Francisco impressos diretamente na falésia de ardósia. Rosa instantaneamente ganhou seu discurso. Maravilha arquitetônica gótica mundialmente famosa construída sobre o desfiladeiro."
+  },
+  "bordeaux_chaminade": {
+    "title": "Nossa Senhora ao Beato. Chaminade",
+    "location": "Bordéus",
+    "country": "França",
+    "description": "O Beato Guillaume-Joseph Chaminade, recusando-se a prestar o juramento revolucionário francês, foi repetidamente protegido da descoberta de soldados pelas aparições de Maria. Em 1817, fundou a mundialmente famosa Ordem Marianista."
+  },
+  "pochayiv_1765": {
+    "title": "Nossa Senhora de Pochayiv",
+    "location": "Pochayiv Lavra",
+    "country": "Ucrânia",
+    "description": "Uma majestosa aparição de Maria sob uma luz brilhante salvou o histórico mosteiro de Lavra da destruição militar otomana. Em 1772, o ícone milagroso foi coroado diante de 100 mil fiéis."
+  },
+  "dulmen_emmerich": {
+    "title": "Nossa Senhora ao Beato. Ana Emmerich",
+    "location": "Dülmen, Vestfália",
+    "country": "Alemanha",
+    "description": "A Beata Ana Catarina Emmerich, agostiniana estigmática e mística, recebeu visões monumentais e detalhadas da vida terrena de Maria e da dolorosa Paixão de Jesus, registradas pelo poeta Clemens Brentano. As suas visões enriquecem profundamente o nosso conhecimento da história da salvação."
+  },
+  "neunkirchen_locatelli": {
+    "title": "Nossa Senhora a José Locatelli",
+    "location": "Neunkirchen",
+    "country": "Áustria",
+    "description": "A Santa Virgem apareceu a Joseph Locatelli, sofrendo de grave hidropisia, e milagrosamente restaurou-o à saúde perfeita."
+  },
+  "gimigliano_porto": {
+    "title": "Madonna do Porto",
+    "location": "Gimigliano, Calábria",
+    "country": "Itália",
+    "description": "Em outubro de 1753, Maria apareceu em sonho ao ladrão arrependido Pietro Gatto, pedindo uma ermida. Em 1807, um general francês que saqueou o ícone milagroso devolveu-o em procissão solene depois de irradiar uma luz ofuscante na sua tenda. Coroado pelo Papa São João Paulo II em 1984."
+  },
+  "chaguaya_bolivia": {
+    "title": "Virgen de Chaguaya",
+    "location": "Chaguaya, Tarija",
+    "country": "Bolívia",
+    "description": "Durante uma forte seca em 1750, dois pastores viram raios de luz multicoloridos emanando de uma árvore Molle, revelando uma bela imagem de Maria. Quando levada para sua casa, a imagem milagrosamente retornou à árvore, dando origem à grande basílica."
+  },
+  "sarov_seraphim": {
+    "title": "Nossa Senhora de São Serafim",
+    "location": "Sarov",
+    "country": "Rússia",
+    "description": "São Serafim de Sarov, um dos monges mais reverenciados da história ortodoxa russa, recebeu numerosas aparições gloriosas da Mãe de Deus durante seus 15 anos em absoluto isolamento no deserto."
+  },
+  "valley_forge_washington": {
+    "title": "A visão de George Washington",
+    "location": "Valley Forge, Pensilvânia",
+    "country": "EUA",
+    "description": "De acordo com relatos históricos publicados em 1859, o General George Washington viu uma senhora misteriosa em Valley Forge que revelou três grandes perigos que a República Americana enfrentaria, concluindo: 'Neste maior conflito, o mundo inteiro unido não prevalecerá contra ela... enquanto durar a União.'"
+  },
+  "mariabesnyo_hungary": {
+    "title": "Nossa Senhora de Máriabesnyő",
+    "location": "Gödöllő",
+    "country": "Hungria",
+    "description": "Em 19 de abril de 1759, o pedreiro John Fiedler sonhou que Mary lhe disse que descobriria um tesouro nas ruínas da igreja. No dia seguinte, ele desenterrou uma bela estátua da Virgem em marfim do século XIV. Confirmado formalmente pelo Cardeal Migazzi como um dos maiores santuários nacionais da Hungria."
+  },
+  "grushev-1806": {
+    "title": "Nossa Senhora de Grushev",
+    "location": "Grushev",
+    "country": "Ucrânia",
+    "description": "Mary apareceu em Grushev em circunstâncias incomuns, validadas por múltiplas testemunhas oculares. Um belo santuário memorial foi erguido no local sagrado em 1856."
+  },
+  "lescouet-1820": {
+    "title": "Nossa Senhora de Lescouët",
+    "location": "Lescouët-Gouarec",
+    "country": "França",
+    "description": "O pastor Jean Poulli, de dezessete anos, ouviu uma voz e viu a Bem-Aventurada Virgem Maria, que pediu a construção de uma capela. O pároco investigou, ouviu cantos celestiais e descobriu uma fonte milagrosa. Aprovado pelo Bispo De La Romagère em 1829."
+  },
+  "rome-canori-mora-1807": {
+    "title": "Nossa Senhora à Beata Isabel Canori Mora",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "A Virgem com o menino Jesus apareceu à Beata Isabel Canori Mora em Roma. No Natal de 1816, Nossa Senhora apareceu extremamente triste, alertando para uma grande impiedade e apostasia. Os seus escritos foram rigorosamente examinados pela Santa Sé e considerados completamente isentos de erros doutrinários."
+  },
+  "leipzig-lichen-1813": {
+    "title": "Nossa Senhora do Líquen (Batalha de Leipzig)",
+    "location": "Leipzig / Líquen",
+    "country": "Polónia",
+    "description": "Durante a Batalha de Leipzig, o soldado polonês ferido Tomasz Klossowski orou a Maria. Ela apareceu com um manto dourado com uma coroa e uma águia branca, prometendo sua cura e pedindo-lhe que encontrasse um retrato dela. Ele voltou para Lichen e pendurou o retrato milagroso em uma capela na floresta."
+  },
+  "sallent-1829": {
+    "title": "Nossa Senhora a Santo Antônio Maria Claret",
+    "location": "Sallent",
+    "country": "Espanha",
+    "description": "Santo Antônio Maria Claret experimentou repetidas aparições de Maria e foi milagrosamente curado de uma doença grave. Ele fundou os mundialmente renomados Filhos Missionários do Imaculado Coração de Maria (Claretianos)."
+  },
+  "doroszlo_hungary": {
+    "title": "Nossa Senhora de Doroszló",
+    "location": "Doroszló, Voivodina",
+    "country": "Sérvia / Hungria Histórica",
+    "description": "Janos Zavloczki, cego em um acidente, foi instruído por Maria a lavar os olhos em uma fonte sagrada. Ele imediatamente recuperou a visão, estabelecendo uma das basílicas de peregrinação mais proeminentes na bacia do Danúbio."
+  },
+  "tinos-1821": {
+    "title": "Panagia Megalochare",
+    "location": "Ilha de Tinos",
+    "country": "Grécia",
+    "description": "A Virgem Maria apareceu em intensa luz divina a Santa Pelagia e seu irmão em sonho, guiando as escavações que desenterraram o ícone milagroso de Megalochare (Cheia de Graça). Tinos tornou-se o sagrado santuário mariano nacional da Grécia."
+  },
+  "matemblewo_gdansk": {
+    "title": "Nossa Senhora de Matemblewo",
+    "location": "Matemblewo, Gdańsk",
+    "country": "Polónia",
+    "description": "Durante um inverno gelado em 1790, Maria apareceu na floresta para Rosina Puechner, de 18 anos, enquanto ela caminhava pela neve, entregando uma profunda mensagem de paz, penitência e oração. Santuário florestal profundamente venerado em Gdańsk."
+  },
+  "vallecorsa-1821": {
+    "title": "Nossa Senhora de Santa Maria De Mattias",
+    "location": "Vallecorsa",
+    "country": "Itália",
+    "description": "A Mãe Santíssima apareceu à jovem Maria olhando-a de dentro de um espelho. Nossa Senhora lhe ensinou milagrosamente a ler para que pudesse estudar os livros espirituais, orientando-a a dedicar sua vida a Deus e a fundar as Irmãs Adoradoras do Sangue de Cristo."
+  },
+  "mimbaste-1830": {
+    "title": "Nossa Senhora a Maria Lataste",
+    "location": "Mimbaste",
+    "country": "França",
+    "description": "A mística Marie Lataste recebeu numerosas aparições da Bem-Aventurada Virgem Maria e do Sagrado Coração, inspirando sua virtude heróica como irmã leiga no Convento do Sagrado Coração de Rennes."
+  },
+  "la_vang_vietnam": {
+    "title": "Nossa Senhora de La Vang",
+    "location": "Quảng Trị, Huế",
+    "country": "Vietname",
+    "description": "Enquanto os cristãos vietnamitas perseguidos enfrentavam a fome e as feras selvagens na selva, Nossa Senhora apareceu em pura luz branca segurando o Menino Jesus com dois anjos. Ela lhes mostrou como ferver folhas para fazer remédio e prometeu proteção. Santuário Mariano Nacional do Vietnã."
+  },
+  "villanova-d-asti-1803": {
+    "title": "Madonna dos Baluartes",
+    "location": "Villanova d’Asti",
+    "country": "Itália",
+    "description": "A Virgem Maria apareceu a Maria Baj, de 18 anos, enquanto cuidava do gado, dizendo: 'A Mãe do Filho de Deus decidiu ser homenageada neste lugar'. Seguiram-se relatos de curas, especialmente de febres de malária. A milagrosa nascente do vale foi chamada de 'Água da Virgem'."
+  },
+  "rue-du-bac-1830": {
+    "title": "Nossa Senhora da Medalha Milagrosa",
+    "location": "Rua du Bac, Paris",
+    "country": "França",
+    "description": "Na capela das Filhas da Caridade, Maria apareceu à noviça Catarina Labouré em pé sobre um globo com raios de luz saindo de suas mãos cheias de anéis de pedras preciosas. Ela encomendou a Medalha Milagrosa, prometendo graças imensas a todos que a usassem com confiança."
+  },
+  "guadalajara-1831": {
+    "title": "Nossa Senhora à Irmã Patrocínio",
+    "location": "Guadalajara",
+    "country": "Espanha",
+    "description": "A Virgem Maria apareceu a Dolores Quiroga, franciscana fundadora de trinta conventos em toda a Espanha que carregava os santos estigmas. Santo Antônio Maria Claret serviu como seu diretor espiritual."
+  },
+  "laurignano-1831": {
+    "title": "Nossa Senhora da Corrente (Madonna della Catena)",
+    "location": "Laurignano",
+    "country": "Itália",
+    "description": "Frei Benedetto Falcone chegou à ermida solitária de Laurignano. Após várias aparições da Virgem Maria, ele reavivou a devoção a Madonna della Catena e construiu um belo santuário hoje cuidado por Missionários Passionistas."
+  },
+  "rome-ratisbonne-1842": {
+    "title": "Nossa Senhora de Sião (Madona do Milagre)",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "A banqueira judia anticatólica Marie-Alphonse Ratisbonne estava dentro de Sant'Andrea delle Fratte usando a Medalha Milagrosa como teste. A Santíssima Virgem apareceu-lhe em radiante majestade; ele se converteu instantaneamente, tornou-se sacerdote e fundou a Congregação de Nossa Senhora de Sião."
+  },
+  "capriana-1833": {
+    "title": "Nossa Senhora a Domenica Lazzeri",
+    "location": "Capriana, Trentino",
+    "country": "Itália",
+    "description": "A majestosa figura da Virgem Santa apareceu a Domenica Lazzeri, de 18 anos, enquanto trabalhava no campo. Posteriormente, ela recebeu os santos estigmas e suportou o sofrimento expiatório com imensa paciência até sua morte em 1848."
+  },
+  "bous-1833": {
+    "title": "Nossa Senhora à Madre Marie Claire Dominic",
+    "location": "Bous-Septfontaines",
+    "country": "França",
+    "description": "Mary apareceu para a mística Anna Moes durante sua infância em Bous. Apesar de suportar anos de ceticismo e calúnia com profunda humildade, a corte de um bispo justificou plenamente as suas visões sobrenaturais em 1884."
+  },
+  "versailles-green-scapular-1840": {
+    "title": "Nossa Senhora do Escapulário Verde",
+    "location": "Blangy / Versalhes",
+    "country": "França",
+    "description": "Maria apareceu à irmã vicentina Justine Bisqueyburu segurando seu Imaculado Coração trespassado por uma espada e inflamado pela luz divina. Ela confiou-lhe o Escapulário Verde, prometendo curas físicas milagrosas e conversões no leito de morte para todos que o usassem."
+  },
+  "nantes-ardouin-1840": {
+    "title": "Nossa Senhora a Maria Ardouin",
+    "location": "Nantes",
+    "country": "França",
+    "description": "Marie Ardouin sofreu dores terríveis devido a um câncer terminal durante cinco anos. Quando seus momentos finais pareciam próximos, a Virgem Maria apareceu para ela em uma luz ofuscante e a curou instantânea e completamente."
+  },
+  "trinitapoli-1835": {
+    "title": "Nossa Senhora a Giuseppe Maria Leone",
+    "location": "Trinitápoli, Apúlia",
+    "country": "Itália",
+    "description": "A Santíssima Virgem Maria salvou milagrosamente Joseph Leone, de 6 anos, quando ele caiu em um buraco profundo, inspirando-o à vida devota. Mais tarde, no seminário, Maria apareceu-lhe dizendo: 'Você me pertence.'"
+  },
+  "celles-1842": {
+    "title": "Nossa Senhora à Madre Marie-Stanislas Deprez",
+    "location": "Células",
+    "country": "Bélgica",
+    "description": "A Virgem Maria apareceu à Madre Visitandina Marie-Stanislas dentro do 'Salão dos Pobres', transmitindo sublimes ensinamentos espirituais. A sala das aparições foi posteriormente transformada na capela do santo convento."
+  },
+  "valmala-1834": {
+    "title": "Mãe da Misericórdia (Nossa Senhora de Valmala)",
+    "location": "Valmala, Piemonte",
+    "country": "Itália",
+    "description": "Cinco jovens pastores viram uma bela Senhora de pé sobre uma laje de pedra, com um vestido longo avermelhado e um véu azul preso por um botão dourado. Ela apareceu em lágrimas com as mãos abertas durante 50 dias. Oficialmente coroado pelo Bispo de Saluzzo."
+  },
+  "graz-lorber-1840": {
+    "title": "Nossa Senhora a Jakob Lorber",
+    "location": "Graz",
+    "country": "Áustria",
+    "description": "O escritor místico Jakob Lorber experimentou profundas locuções interiores e visões místicas da vida celestial e da Bem-Aventurada Virgem Maria."
+  },
+  "montana-little-paul-1841": {
+    "title": "Nossa Senhora da Oração (Missão de Santa Maria)",
+    "location": "Vale Bitterroot, Montana",
+    "country": "EUA",
+    "description": "Um menino órfão Salish de 11 anos viu a Virgem Maria pairando sobre a terra em roupas brancas como a neve, com uma estrela sobre a cabeça e raios de luz fluindo de seu coração. Pe. Pierre De Smet investigou e ergueu uma estátua dedicada a Nossa Senhora da Oração."
+  },
+  "ars-vianney-1840": {
+    "title": "Nossa Senhora a São João Vianney",
+    "location": "Ars-sur-Formans",
+    "country": "França",
+    "description": "Sra. Durie entrou no quarto de São João Vianney e testemunhou a Santíssima Virgem Maria vestida de branco deslumbrante com rosas douradas e uma coroa de estrelas brilhantes, conversando gentilmente com o Santo Cura sobre curas milagrosas."
+  },
+  "rome-del-bufalo-1837": {
+    "title": "Nossa Senhora a São Gaspar del Búfalo",
+    "location": "Roma",
+    "country": "Itália",
+    "description": "Apóstolo do Preciosíssimo Sangue São Gaspar del Búfalo experimentou profunda inspiração mariana e orientação mística ao longo de suas árduas viagens missionárias pela Itália, fundando os Missionários do Preciosíssimo Sangue."
+  },
+  "paris-victories-1836": {
+    "title": "Nossa Senhora das Vitórias",
+    "location": "Paris",
+    "country": "França",
+    "description": "Pe. Desgenettes, desesperado pelo seu ministério infrutífero em Nossa Senhora das Vitórias em Paris, recebeu uma profunda locução interior da Virgem Maria instruindo-o a consagrar a sua paróquia ao seu Imaculado Coração. A arquiconfraria resultante provocou conversões milagrosas em todo o mundo."
+  },
+  "siena-taigi-1836": {
+    "title": "Nossa Senhora à Beata Anna Maria Taigi",
+    "location": "Siena / Roma",
+    "country": "Itália",
+    "description": "A Beata Anna Maria Taigi, mãe devotada e mística em Roma e Siena, experimentou aparições sobrenaturais e viu um globo solar milagroso no qual previu grandes acontecimentos históricos mundiais."
+  },
+  "casnigo-1839": {
+    "title": "Nossa Senhora da Érbia",
+    "location": "Casnigo",
+    "country": "Itália",
+    "description": "Durante uma violenta tempestade, um menino em busca de abrigo foi recebido por Nossa Senhora em um celeiro bem trancado, onde ela lhe forneceu pão e uma cama quente. Investigado e aprovado oficialmente em 1873 pelo Bispo de Bérgamo."
+  },
+  "la-salette-1846": {
+    "title": "Nossa Senhora de La Salette (Conciliadora dos Pecadores)",
+    "location": "La Salette, Alpes Franceses",
+    "country": "França",
+    "description": "No alto dos Alpes franceses, a Santíssima Virgem apareceu sob uma luz brilhante, chorando intensamente diante de dois jovens pastores, Maximin e Mélanie. Usando um crucifixo com martelo e pinça, ela alertou sobre a fome e pediu penitência sincera, oração e observância do Dia do Senhor."
+  },
+  "obermauerbach-1848": {
+    "title": "Nossa Senhora de Obermauerbach",
+    "location": "Obermauerbach, Baviera",
+    "country": "Alemanha",
+    "description": "Maria apareceu num pasto verde vestida de rosa com véu branco e coroa de ouro, chorando tristemente pela falta de fé no mundo. Posteriormente, ela se manifestou em esplendor celestial diante de multidões de até quarenta e oito testemunhas."
+  },
+  "lichen-stary-1850": {
+    "title": "Nossa Senhora do Líquen (Mikołaj Sikatka)",
+    "location": "Líquen Stary",
+    "country": "Polónia",
+    "description": "Maria apareceu com uma túnica vermelha e um manto branco com uma coroa magnífica diante do humilde pastor Mikołaj Sikatka na floresta de Grąblin. Ela pediu a oração diária do Rosário e predisse uma devastadora epidemia de cólera. Quando a praga ocorreu exatamente como predito, sua intercessão milagrosa curou milhares de pessoas. Hoje, o Santuário de Nossa Senhora de Licheń é a maior igreja da Polónia."
+  },
+  "brette-1848": {
+    "title": "Nossa Senhora de Brette",
+    "location": "Brete",
+    "country": "França",
+    "description": "A Virgem Maria apareceu em Brette fazendo apelos urgentes à renovação espiritual e à conversão moral em toda a França durante as convulsões revolucionárias de 1848."
+  },
+  "akko-1850": {
+    "title": "Nossa Senhora de Akko",
+    "location": "Akko (São João do Acre)",
+    "country": "Israel",
+    "description": "Habeiche Hassan, cristão convertido e preso filho de um emir libanês, viu a Virgem Maria em um sonho prometendo sua libertação milagrosa se erigisse um belo santuário em sua homenagem."
+  },
+  "montousse-1848": {
+    "title": "Nossa Senhora de Nouillan",
+    "location": "Montoussé, Altos Pirenéus",
+    "country": "França",
+    "description": "A Bem-Aventurada Virgem Maria apareceu perto das antigas ruínas da capela de Nouillan a três crianças, seguida de repetidas manifestações sobrenaturais que atraíram imensas multidões de peregrinos devotos."
+  },
+  "la-chaudiere-1848": {
+    "title": "Nossa Senhora de Véronique e Augustin Eymieux",
+    "location": "La Chaudière",
+    "country": "França",
+    "description": "Nossa Senhora apareceu aos jovens pastores Véronique e Augustin Eymieux sob a forma exata de Nossa Senhora de La Salette, repetindo as suas urgentes advertências maternais sobre a conversão e os julgamentos divinos."
+  },
+  "maria-dolina-1849": {
+    "title": "A Imaculada Conceição (Madona del Bosco)",
+    "location": "Maria Dolina, Poggersdorf",
+    "country": "Áustria",
+    "description": "A Bem-Aventurada Virgem Maria apareceu como a Imaculada Conceição num prado florestal a três jovens pastoras, preparando os fiéis para a solene definição do dogma papal de 1854. Uma capela de madeira e uma pintura milagrosa foram erguidas."
+  },
+  "chambery-1849": {
+    "title": "Nossa Senhora a Ir. Marie-Marthe Chambon",
+    "location": "Chambéry",
+    "country": "França",
+    "description": "A freira Visitandina Irmã Marie-Marthe Chambon recebeu visões profundas de Jesus e da Bem-Aventurada Virgem Maria, iniciando a devoção às Santas Chagas de Cristo."
+  },
+  "tours-holy-face-1844": {
+    "title": "Nossa Senhora à Irmã Maria de São Pedro",
+    "location": "Passeios",
+    "country": "França",
+    "description": "A freira carmelita Irmã Maria de São Pedro teve visões profundas de Jesus e Maria, recebendo o Ato de Reparação da Flecha Dourada à Sagrada Face de Jesus para expiar a blasfêmia e o sacrilégio."
+  },
+  "turin-bosco-1846": {
+    "title": "Maria Auxiliadora dos Cristãos",
+    "location": "Valdocco, Turim",
+    "country": "Itália",
+    "description": "Guiado por sonhos místicos e visões diretas da Bem-Aventurada Virgem Maria, São João Bosco fundou a Ordem Salesiana para resgatar e educar jovens abandonados nas ruas. Ergueu em Turim a magnífica Basílica de Maria Auxiliadora, atribuindo a Nossa Senhora cada triunfo."
+  },
+  "la-pierraz-1854": {
+    "title": "Nossa Senhora da Beata Marguerite Bays",
+    "location": "La Pierraz, Friburgo",
+    "country": "Suíça",
+    "description": "A humilde costureira Marguerite Bays sofreu câncer terminal de intestino. Em 8 de dezembro de 1854, o dia exato em que o Papa Pio IX proclamou o dogma da Imaculada Conceição, Nossa Senhora a curou milagrosamente e instantaneamente. Posteriormente, ela recebeu os estigmas sagrados."
+  },
+  "vatican-city-1850": {
+    "title": "Audiência Nossa Senhora do Vaticano",
+    "location": "Cidade do Vaticano",
+    "country": "Cidade do Vaticano",
+    "description": "Uma cética mulher protestante francesa que assistia a uma audiência papal no Vaticano testemunhou um raio de luz radiante materializando-se na figura da Bem-Aventurada Virgem Maria três vezes distintas, levando à sua conversão completa à fé católica."
+  },
+  "cerreto-1853": {
+    "title": "Nossa Senhora das Dores do Cerreto",
+    "location": "Cerreto, Toscana",
+    "country": "Itália",
+    "description": "Enquanto cuidava de ovelhas, Veronica Nucci, de 12 anos, viu uma senhora ajoelhada com um vestido branco com flores vermelhas e um manto azul. Chorando pela multidão de pecados do mundo, Maria pediu orações de reparação e uma capela. Uma fonte milagrosa surgiu, produzindo curas notáveis."
+  },
+  "savogno-guanella-1851": {
+    "title": "Nossa Senhora a São Luís Guanella",
+    "location": "Savogno",
+    "country": "Itália",
+    "description": "No dia da sua Primeira Comunhão, Luigi Guanella, de 9 anos, viu uma bela Senhora que lhe revelou exatamente o que deve fazer para resgatar e cuidar dos pobres e deficientes, inspirando as suas ordens religiosas de caridade em todo o mundo."
+  },
+  "orero-1856": {
+    "title": "Nossa Senhora de Orero",
+    "location": "Orero, Ligúria",
+    "country": "Itália",
+    "description": "Maria apareceu duas vezes a Rosa Carbone, de vinte anos, lamentando a negligência moral e recomendando a recitação fervorosa do Pai Nosso e da Salve Rainha."
+  },
+  "assisi-de-bray-1856": {
+    "title": "Nossa Senhora Rainha dos Anjos",
+    "location": "Assis",
+    "country": "Itália",
+    "description": "Morrendo à meia-noite de uma doença mortal de trinta anos, o Sr. de Bray ouviu a voz da Mãe divina instruindo-o a fazer o voto de ir em peregrinação a Nossa Senhora dos Anjos em Assis. Ao fazer o voto, ele foi curado instantânea e radicalmente."
+  },
+  "lourdes-1858": {
+    "title": "Nossa Senhora de Lourdes (A Imaculada Conceição)",
+    "location": "Lourdes",
+    "country": "França",
+    "description": "Na úmida gruta de Massabielle, a bela Virgem Maria apareceu 18 vezes à camponesa Bernadette Soubirous, de 14 anos. Revelando a sua identidade como “A Imaculada Conceição”, ela descobriu uma fonte de cura milagrosa que desde então curou inúmeros peregrinos incuráveis. Hoje Lourdes é um dos principais santuários sagrados da Terra."
+  },
+  "torrazza-1857": {
+    "title": "Nossa Senhora da Torrazza",
+    "location": "Torrezza",
+    "country": "Itália",
+    "description": "Duas jovens testemunharam a Santíssima Senhora surgir das nuvens de glória com vestido branco e manto azul, segurando o Menino Jesus bem apertado ao peito."
+  },
+  "spoleto-possenti-1856": {
+    "title": "Nossa Senhora a São Gabriel Possenti",
+    "location": "Espoleto",
+    "country": "Itália",
+    "description": "Um ícone da Virgem Maria milagrosamente ganhou vida diante do estudante jesuíta Francesco Possenti em Spoleto, dizendo 'Francesco, o mundo não é para você; você deve entrar na vida religiosa.' Juntou-se aos Passionistas, alcançando sublime santidade antes de morrer aos 24 anos."
+  },
+  "andlau-1860": {
+    "title": "Nossa Senhora do Andlau",
+    "location": "Andlau, Alsácia",
+    "country": "França",
+    "description": "A Bem-Aventurada Virgem Maria apareceu a Françoise Barthel em Andlau, Alsácia, trazendo consolo espiritual e profunda renovação devocional à paróquia local."
+  },
+  "rosenau-1859": {
+    "title": "Nossa Senhora de Rosenau",
+    "location": "Rosenau",
+    "country": "Áustria",
+    "description": "Johann Brunnsteiner, de três anos, ficou cego devido a uma doença grave. Quando seus pais banharam seus olhos na fonte sagrada da capela da Cruz Vermelha, a Mãe de Deus apareceu coroada com o Menino Jesus e imediatamente lhe restaurou a visão."
+  },
+  "montefalco-1861": {
+    "title": "Madonna da Estrela (Madonna della Stella)",
+    "location": "São Lucas de Montefalco",
+    "country": "Itália",
+    "description": "Maria apareceu entre as antigas ruínas da capela de São Bartolomeu para Righetto Cionchi, de 4 anos. Quando um jovem que estava morrendo de tuberculose foi milagrosamente curado pela invocação de Maria sob este título, o bispo local reconheceu oficialmente as aparições e ergueu o magnífico Santuário de Madonna della Stella."
+  },
+  "alexandria-baouardy-1858": {
+    "title": "Nossa Senhora a Santa Mariam Baouardy",
+    "location": "Alexandria / Ibillin",
+    "country": "Egito",
+    "description": "A jovem Mariam Baouardy quase foi martirizada por se recusar a renunciar à fé católica. Deixada para morrer com a garganta cortada num beco de Alexandria, uma bela Senhora vestida de azul apareceu, curando-a milagrosamente e prevendo seu glorioso destino carmelita em Belém."
+  },
+  "bordeaux-1855": {
+    "title": "Nossa Senhora do Carmo",
+    "location": "Bordéus",
+    "country": "França",
+    "description": "A Virgem Maria apareceu numa nuvem branca com coroa real e braços abertos no interior do antigo claustro carmelita onde faleceu São Simão Stock, tocando profundamente o coração de todos os irmãos reunidos."
+  },
+  "francoules-1860": {
+    "title": "Nossa Senhora a Pauline Périé",
+    "location": "François",
+    "country": "França",
+    "description": "Na igreja de Francoulès, a mística Pauline Périé viu Nossa Senhora adornada com um manto estrelado com uma coroa de ouro, segurando pequenas flores. Acompanhada por anjos, Maria pediu orações sinceras de expiação."
+  },
+  "buu-chau-1855": {
+    "title": "Nossa Senhora de Buu Chau (Tra Kieu)",
+    "location": "Buu Chau, Quang Nam",
+    "country": "Vietname",
+    "description": "Durante violentas perseguições reais, Nossa Senhora apareceu em glória brilhante sobre o telhado da igreja diante de 4.000 soldados sitiantes. Totalmente aterrorizado pela Senhora celestial que protegia os fiéis católicos, todo o exército recuou."
+  },
+  "champion-1859": {
+    "title": "Nossa Senhora do Bom Socorro (Campeã)",
+    "location": "Campeão, Wisconsin",
+    "country": "EUA",
+    "description": "A Mãe Santíssima apareceu em um branco deslumbrante entre duas árvores para Adele Brise, de 28 anos, dizendo: 'Eu sou a Rainha do Céu que reza pela conversão dos pecadores... ensine às crianças o que elas devem saber para a salvação.' Quando o catastrófico incêndio de Peshtigo em 1871 engolfou toda a região, os terrenos do santuário foram milagrosamente poupados."
+  },
+  "arnaud-guilhem-1859": {
+    "title": "Nossa Senhora de Picheloup",
+    "location": "Arnaud-Guilhem, Alto Garona",
+    "country": "França",
+    "description": "Quatro crianças pequenas experimentaram repetidas aparições e mensagens. Em 2007, o Arcebispo de Toulouse aprovou oficialmente o culto mariano e as peregrinações no santuário sagrado de Picheloup."
+  },
+  "porzus-1855": {
+    "title": "Nossa Senhora de Sesule (Madone de Sesule)",
+    "location": "Porzus, Friul",
+    "country": "Itália",
+    "description": "A Santíssima Virgem Maria apareceu num lindo buraco na montanha para Teresa Dush, de 10 anos, conversando gentilmente no dialeto esloveno local. Nossa Senhora imprimiu uma cruz dourada radiante na mão da criança que permaneceu visível até a sua morte."
+  },
+  "loigny-1870": {
+    "title": "Nossa Senhora de Patay",
+    "location": "Loigny-la-Bataille",
+    "country": "França",
+    "description": "Durante a sangrenta batalha da Guerra Franco-Prussiana em Loigny, o comandante papal Zouave, General de Sonis, ficou gravemente ferido na neve gelada. A Bem-Aventurada Virgem Maria apareceu diante dele no campo de batalha, transmitindo-lhe uma paz sublime e uma fortaleza milagrosa."
+  },
+  "bois-d-haine-1868": {
+    "title": "Nossa Senhora a Luísa Lateau",
+    "location": "Bois-d'Haine",
+    "country": "Bélgica",
+    "description": "A jovem Louise Lateau, que heroicamente cuidou das vítimas da peste, recebeu aparições de Jesus e Maria. Posteriormente, ela carregou os santos estigmas todas as sextas-feiras e viveu durante doze anos consumindo absolutamente nada além da Sagrada Eucaristia."
+  },
+  "petigny-1865": {
+    "title": "Nossa Senhora a Marie Jalhay",
+    "location": "Petigny",
+    "country": "Bélgica",
+    "description": "A dona de casa Marie Jalhay sofria de uma doença espinhal grave e debilitante. Nossa Senhora apareceu em luz sobrenatural envolta em um manto branco, dizendo 'Agora você está curado! Levante-se e mostre para sua família. Ela foi curada instantaneamente."
+  },
+  "ilaca-1865": {
+    "title": "Nossa Senhora de Ilača (Lourdes Croata)",
+    "location": "Ilača",
+    "country": "Croácia",
+    "description": "Um fazendeiro local descobriu uma fonte de água milagrosa onde a Virgem Maria apareceu repetidamente diante de multidões de testemunhas. Após inúmeras curas físicas documentadas, o bispo diocesano autorizou a construção do famoso santuário de peregrinação."
+  },
+  "philippsdorf-1866": {
+    "title": "Maria Auxiliadora (Filipov)",
+    "location": "Filipov / Philippsdorf",
+    "country": "República Checa",
+    "description": "Magdalena Kade estava acamada e morrendo de doenças dolorosas e incuráveis. Às 4 horas da manhã, a Santíssima Virgem Maria apareceu vestida de um branco deslumbrante com uma tiara dourada, sussurrando 'Minha filha, agora você está curada!' Ela instantaneamente ressuscitou com perfeita saúde. O Papa Leão XIII reconheceu oficialmente o milagre e elevou o santuário a basílica menor."
+  },
+  "tsuwano-1869": {
+    "title": "Nossa Senhora de Tsuwano (Maria Seido)",
+    "location": "Tsuwano",
+    "country": "Japão",
+    "description": "Durante as cruéis perseguições Meiji, 153 cristãos escondidos de Nagasaki foram presos em jaulas geladas ao ar livre na passagem de Otome Toge. A Bem-Aventurada Virgem Maria apareceu noite após noite em calor radiante, consolando e abençoando os mártires gelados."
+  },
+  "metz-1870": {
+    "title": "Nossa Senhora de La Salette (Metz)",
+    "location": "Metz",
+    "country": "França",
+    "description": "Um menino de 8 anos em Metz experimentou uma aparição clara de Nossa Senhora exatamente na forma chorosa de La Salette durante o cerco da cidade."
+  },
+  "walschbronn-1870": {
+    "title": "Nossa Senhora de Walschbronn",
+    "location": "Walschbronn",
+    "country": "França",
+    "description": "Barbara Conrad, de nove anos, sofria de uma grave doença terminal. No Domingo de Ramos, Maria apareceu em glória radiante e curou instantânea e completamente a criança."
+  },
+  "anglet-1863": {
+    "title": "Nossa Senhora Rainha dos Anjos",
+    "location": "Anguleta",
+    "country": "França",
+    "description": "A Bem-Aventurada Virgem Maria apareceu como 'Rainha dos Anjos' ao padre enjeitado Pe. Cestac, instruindo-o na poderosa oração 'August Queen of Heaven' para enviar legiões de anjos para derrotar as trevas demoníacas em todo o mundo."
+  },
+  "nancy-1870": {
+    "title": "Nossa Senhora de Nancy (Maison de Secours)",
+    "location": "Nanci",
+    "country": "França",
+    "description": "A Bem-Aventurada Virgem Maria apareceu silenciosamente em majestade celestial diante de numerosos fiéis reunidos dentro da capela da Maison de Secours ao longo de vários anos."
+  },
+  "pontmain-1871": {
+    "title": "Nossa Senhora da Esperança de Pontmain",
+    "location": "Pontmain",
+    "country": "França",
+    "description": "Enquanto o avanço dos exércitos prussianos ameaçava a Bretanha, a bela Virgem Maria apareceu no céu noturno estrelado vestindo um manto azul escuro adornado com estrelas douradas. Uma faixa dourada desfraldada dizia: 'Mas orem, meus filhos. Deus te ouvirá em pouco tempo. Meu Filho se deixa mover pela compaixão”. Em poucas horas, o general prussiano ordenou uma retirada total, poupando toda a região."
+  },
+  "kirchdorf-1867": {
+    "title": "Nossa Senhora a Teresa Steindl",
+    "location": "Kirchdorf",
+    "country": "Áustria",
+    "description": "Maria apareceu seis vezes a Teresa Steindl, entregando avisos urgentes de que se a humanidade resistisse à conversão, tempestades catastróficas e trevas espirituais cairiam sobre a terra."
+  },
+  "eupen-1870": {
+    "title": "Nossa Senhora de Eupen",
+    "location": "Eupen",
+    "country": "Bélgica",
+    "description": "Uma menina que nasceu completamente muda rezou uma novena diante de uma estátua de Maria na igreja dos Capuchinhos. No nono dia, Maria apareceu na luz celestial ao lado da estátua e curou-a silenciosamente com um gesto. A criança falou perfeitamente pela primeira vez na vida."
+  },
+  "lausanne-1871": {
+    "title": "Nossa Senhora a Marie-Françoise Decotterd",
+    "location": "Lausana",
+    "country": "Suíça",
+    "description": "Maria apareceu a Marie-Françoise Decotterd, gravemente doente, inspirando-a a dedicar a sua vida ao sacrifício expiatório pela salvação das almas."
+  },
+  "locherboden-1871": {
+    "title": "Nossa Senhora da Salvação (Maria Locherboden)",
+    "location": "Mötz/Locherboden",
+    "country": "Áustria",
+    "description": "Maria Kalb sofreu agonia acamada durante sete anos devido a uma doença incurável. Levada para uma caverna sagrada na montanha diante de uma imagem milagrosa de Maria, a Virgem apareceu e instantaneamente restaurou sua saúde. Um magnífico santuário neogótico foi erguido."
+  },
+  "neubois-1872": {
+    "title": "Mãe da Misericórdia (Nossa Senhora de Neubois)",
+    "location": "Neubois/Frankenbourg",
+    "country": "França",
+    "description": "Maria apareceu nas encostas arborizadas de Frankenbourg usando uma coroa e um manto dourado com uma cruz preta. Aparecendo frequentemente diante de multidões de mais de cem testemunhas como “Mãe da Misericórdia”, ela inspirou imensas peregrinações devocionais."
+  },
+  "noyal-muzillac-1874": {
+    "title": "Nossa Senhora a Jean-Pierre Le Boterff",
+    "location": "Noyal-Muzillac",
+    "country": "França",
+    "description": "O jovem e diligente agricultor Jean-Pierre Le Boterff viu uma bela figura com um manto azul estrelado e um manto dourado na orla da floresta. Maria incentivou uma peregrinação a Santa Ana d'Auray e orações vitalícias pela Bretanha."
+  },
+  "paris-truffault-1873": {
+    "title": "Nossa Senhora da Rua Truffault",
+    "location": "Batignolles, Paris",
+    "country": "França",
+    "description": "Os jovens Armand Wallet e Alfred Fontes experimentaram claras aparições sobrenaturais da Bem-Aventurada Virgem Maria no bairro Batignolles de Paris."
+  },
+  "walbach-1873": {
+    "title": "Nossa Senhora do Reno",
+    "location": "Walbach, Alsácia",
+    "country": "França",
+    "description": "A Santíssima Virgem apareceu como Nossa Amada Senhora de Cavezzale, pedindo oração e penitência pela França. A paralítica Theresa Kaufmann foi posteriormente e milagrosamente curada."
+  },
+  "boulleret-1875": {
+    "title": "Nossa Senhora de Boulleret (Rainha dos Mártires)",
+    "location": "Boulleret",
+    "country": "França",
+    "description": "Sofrendo uma agonia terminal excruciante, Joséphine Reverdy experimentou uma aparição gloriosa da Bem-Aventurada Virgem Maria que a curou instantaneamente. Ela dedicou o resto de sua vida ao sacrifício expiatório como alma vítima."
+  },
+  "villareggia-1875": {
+    "title": "Mãe das Dores de Villareggia",
+    "location": "Villareggia, Piemonte",
+    "country": "Itália",
+    "description": "A jovem empregada Rosina Ferro viu a Mãe das Dores parada em silêncio à beira da estrada, rodeada de anjos durante os meses de julho e agosto. Posteriormente, ela carregou os estigmas sagrados."
+  },
+  "samois-1873": {
+    "title": "Nossa Senhora dos Samois",
+    "location": "Samois-sur-Seine",
+    "country": "França",
+    "description": "A Bem-Aventurada Virgem Maria com o Menino Jesus nos braços apareceu em plena luz do dia para uma turma inteira de 25 alunos na horta da escola durante quase duas horas."
+  },
+  "jerusalem-ghattas-1874": {
+    "title": "Nossa Senhora do Santo Rosário (Jerusalém)",
+    "location": "Jerusalém",
+    "country": "Israel",
+    "description": "A Bem-Aventurada Virgem Maria apareceu em glória radiante rodeada de anjos à freira palestina Marie-Alphonsine Danil Ghattas em Jerusalém e Belém, inspirando-a a estabelecer as Irmãs Dominicanas do Santo Rosário."
+  },
+  "biding-1873": {
+    "title": "Nossa Senhora a Catarina Filljung",
+    "location": "Licitação",
+    "country": "França",
+    "description": "Maria apareceu repetidamente com um colete azul e manto branco para a mística Catherine Filljung, inspirando-a a fundar um orfanato dominicano e a levar uma vida de profunda expiação."
+  },
+  "saint-bauzille-1873": {
+    "title": "Nossa Senhora de Saint-Bauzille",
+    "location": "Saint-Bauzille-de-la-Sylve",
+    "country": "França",
+    "description": "Enquanto o enólogo Auguste Arnaud trabalhava em seu vinhedo no Domingo da Trindade, Maria apareceu sob uma luz dourada brilhante, instando à observância do descanso dominical e à ereção de uma grande cruz. Exatamente um mês depois, ela reapareceu diante da multidão, dizendo: 'Você nunca deve trabalhar no domingo! Bem-aventurados aqueles que acreditam.'"
+  },
+  "st-louis-1871": {
+    "title": "Nossa Senhora a Teresa Schaffer",
+    "location": "São Luís, Missouri",
+    "country": "EUA",
+    "description": "Nossa Senhora apareceu com um manto branco brilhante com uma coroa dourada de estrelas diante da acamada Therese Schaffer, curando-a instantaneamente e guiando-a para entrar na vida religiosa."
+  },
+  "blain-jahenny-1873": {
+    "title": "Nossa Senhora do Escapulário do Sagrado Coração",
+    "location": "Blain/La Fraudais",
+    "country": "França",
+    "description": "Marie-Julie Jahenny, de 23 anos, acamada, viu Nossa Senhora vestida de preto carregando uma grande cruz branca. Curada milagrosamente exatamente no dia 2 de maio, conforme prometido diante de duas mil testemunhas, ela recebeu os santos estigmas e profundas visões proféticas confirmando La Salette e Fátima."
+  },
+  "pra-genoa-1874": {
+    "title": "Maria Auxiliadora (Prà)",
+    "location": "Prà, Gênova",
+    "country": "Itália",
+    "description": "Os jovens pastores Angela Berruti e Vincenzo Scossiera viram uma bela Senhora numa nuvem luminosa que pediu que fosse erguida uma capela no topo de uma colina em sua homenagem. Apesar da oposição civil, um magnífico santuário foi construído."
+  },
+  "paris-assumption-1871": {
+    "title": "Nossa Senhora à Madre Marie-Eugénie e Ir. Thérèse-Emmanuel",
+    "location": "Paris",
+    "country": "França",
+    "description": "A Bem-Aventurada Virgem Maria apareceu à co-fundadora Assuncionista Irmã Thérèse-Emmanuel, revelando uma visão profunda de um exército espiritual mariano carregando a bandeira da Imaculada Conceição."
+  },
+  "pouille-1872": {
+    "title": "Nossa Senhora de Pouillé",
+    "location": "Pouillé-les-Côteaux",
+    "country": "França",
+    "description": "A Virgem Maria apareceu diante do altar mariano com uma túnica branca com fitas azuis e rosa e uma coroa de flores, instando à recitação fervorosa da Ave Maris Stella."
+  },
+  "saint-pierre-eynac-1886": {
+    "title": "Nossa Senhora de Saint-Pierre-Eynac",
+    "location": "Saint-Pierre-Eynac",
+    "country": "França",
+    "description": "Duas jovens testemunharam dezenove aparições silenciosas da Bem-Aventurada Virgem Maria usando um véu escuro nos bosques de Blachées. O bispo local aprovou oficialmente a construção de um belo santuário memorial onde Nossa Senhora é invocada."
+  },
+  "imbersago-1896": {
+    "title": "Santíssima Virgem dos Bosques (Madonna del Bosco)",
+    "location": "Imbersago, Lombardia",
+    "country": "Itália",
+    "description": "Teresa Secomandi, uma camponesa que havia perdido a fé e parado de frequentar a igreja, encontrou a Virgem Maria levitando na floresta. Maria entregou-lhe gentilmente um Rosário e caminhou ao lado dela até a porta do Santuário de Nossa Senhora do Bosque."
+  },
+  "pompeii-1884": {
+    "title": "Rainha do Santíssimo Rosário (Pompéia)",
+    "location": "Pompéia",
+    "country": "Itália",
+    "description": "Sofrendo de epilepsia terminal e cólicas, Fortuna Agrelli, de 21 anos, rezou a novena do Rosário diante de uma imagem de Nossa Senhora de Pompéia. A Virgem Maria apareceu sentada num trono de flores, dizendo: 'Quem desejar de mim graças deve rezar três novenas do Rosário.' Ela foi curada instantânea e totalmente no dia 8 de maio. O Beato Bartolo Longo ergueu o mundialmente famoso Santuário Pontifício de Pompéia."
+  },
+  "mettenbuch-1876": {
+    "title": "Consolador dos Aflitos (Mettenbuch)",
+    "location": "Metten/Deggendorf",
+    "country": "Alemanha",
+    "description": "Durante as intensas perseguições de Kulturkampf, crianças testemunharam aparições gloriosas da Virgem Maria, do Menino Jesus e de coros de anjos em uma ravina arborizada perto da Abadia de Metten. A água de nascente milagrosa produziu curas documentadas notáveis."
+  },
+  "pellevoisin-1876": {
+    "title": "Mãe Todo-Misericordiosa (Pellevoisin)",
+    "location": "Pellevoisina",
+    "country": "França",
+    "description": "Morrendo de tuberculose terminal em seu quarto, Estelle Faguette, de 33 anos, testemunhou 15 aparições da Bem-Aventurada Virgem Maria. Dizendo “Eu sou toda misericordiosa e senhora do meu Filho”, Maria curou-a instantânea e totalmente e confiou-lhe o Escapulário do Sagrado Coração."
+  },
+  "lyon-diemoz-1882": {
+    "title": "Mãe da Solidão (Notre-Dame de la Solitude)",
+    "location": "Diémoz / Lyon",
+    "country": "França",
+    "description": "A paciente do hospital Anne-Marie Coste, sofrendo de tuberculose terminal grave, viu Maria usando uma magnífica coroa segurando o Menino Jesus que segurava um globo com uma cruz quebrada. Milagrosamente curada, ela promoveu a medalha da Mãe da Solidão."
+  },
+  "lisieux-therese-1883": {
+    "title": "Virgem do Sorriso (Vierge du Sourire)",
+    "location": "Lisieux",
+    "country": "França",
+    "description": "Sofrendo de febre horrível e ataques demoníacos que a deixaram delirante e à beira da morte aos 10 anos, a pequena Thérèse Martin voltou-se para a estátua familiar de Maria. De repente, a estátua ganhou vida em beleza celestial e sorriu para ela com inefável ternura maternal. Cada sintoma desapareceu instantaneamente em completa alegria. Teresa tornou-se a Pequena Flor, uma das maiores santas católicas modernas."
+  },
+  "gietrzwald-1877": {
+    "title": "Nossa Senhora de Gietrzwald (A Fátima Polaca)",
+    "location": "Gietrzwald",
+    "country": "Polónia",
+    "description": "Maria apareceu repetidamente em uma nuvem dourada brilhante acima de um bordo diante de duas meninas, falando na língua nativa polonesa durante a dura divisão da Prússia. Quando questionada sobre quem ela era, ela respondeu: 'Eu sou a Bem-Aventurada Virgem Maria, a Imaculada Conceição... Desejo que você reze o Rosário todos os dias'. A fonte milagrosa que ela abençoou continua a curar inúmeros peregrinos."
+  },
+  "rovigo-1883": {
+    "title": "Nossa Senhora a Maria Inglese",
+    "location": "Rovigo",
+    "country": "Itália",
+    "description": "A jovem costureira Maria Inglese teve em seu quarto diversas visões sublimes da Santíssima Virgem, inspirando a criação da Guarda de Honra do Imaculado Coração de Maria."
+  },
+  "lucca-galgani-1899": {
+    "title": "Nossa Senhora a Santa Gemma Galgani",
+    "location": "Lucca, Toscana",
+    "country": "Itália",
+    "description": "Na vigília da Festa do Sagrado Coração, a mística Gemma Galgani, de 21 anos, sentiu profunda tristeza por seus pecados. A Bem-Aventurada Virgem Maria apareceu em majestade celestial ao lado de seu anjo da guarda, dizendo 'Eu serei uma mãe para você'. Abrindo seu manto, Maria envolveu Gemma em seu abraço maternal quando Jesus apareceu, transmitindo aos santos estigmas chamas divinas de fogo."
+  },
+  "ta-pinu-gozo-1883": {
+    "title": "Nossa Senhora de Ta' Pinu",
+    "location": "Gharb, Gozo",
+    "country": "Malta",
+    "description": "Ao passar por uma capela isolada no interior, Karmni Grima, de 45 anos, ouviu uma voz gentil e maternal chamando lá de dentro: 'Venha, venha... recite três Ave-Marias em homenagem aos três dias em que meu corpo descansou no túmulo.' Seguiram-se notáveis ​​curas milagrosas, transformando Ta' Pinu no magnífico Santuário Mariano Nacional de Malta."
+  },
+  "castelpetroso-1888": {
+    "title": "Nossa Senhora das Dores de Castelpetroso",
+    "location": "Castelpetroso, Isérnia",
+    "country": "Itália",
+    "description": "Numa fenda acidentada da montanha no Monte Patalecchia, duas camponesas viram a gloriosa Virgem Maria ajoelhada em profunda dor com os braços estendidos diante do corpo ensanguentado de Jesus. Mais de mil testemunhas, incluindo o bispo diocesano, testemunharam posteriormente a luz celestial e as aparições. Uma fonte milagrosa surgiu e uma impressionante basílica neogótica foi construída."
+  },
+  "tilly-1896": {
+    "title": "Nossa Senhora de Tilly",
+    "location": "Tilly-sur-Seulles, Normandia",
+    "country": "França",
+    "description": "Na Festa de São Gabriel, cinquenta crianças em idade escolar reunidas e Maria Martel testemunharam a figura brilhante e radiante da Bem-Aventurada Virgem Maria no céu acima dos olmos, rodeada por anjos e segurando um magnífico Rosário."
+  },
+  "gemma_galgani": {
+    "title": "Santa Gema Galgani",
+    "location": "Lucca, Toscana",
+    "country": "Itália",
+    "description": "Santa Gemma Galgani teve profundas visões místicas de Jesus, da Virgem Maria e de seu Anjo da Guarda, recebendo os estigmas e participando profundamente da Paixão de Cristo."
+  },
+  "knock-1879": {
+    "title": "Nossa Senhora de Knock (Rainha da Irlanda)",
+    "location": "Bata, Condado de Mayo",
+    "country": "Irlanda",
+    "description": "Durante a chuva torrencial ao entardecer, as figuras brilhantes da Bem-Aventurada Virgem Maria, de São José e de São João Evangelista apareceram ao lado do Cordeiro de Deus sobre um altar cercado por anjos na parede externa sul da capela da aldeia. Durante duas horas, quinze testemunhas oficiais permaneceram em adoração silenciosa. Hoje Knock é o Santuário Mariano Nacional da Irlanda."
+  },
+  "natuzza_evolo": {
+    "title": "Natuzza Evolo",
+    "location": "Paravati, Mileto",
+    "country": "Itália",
+    "description": "A amada mística e estigmática italiana Natuzza Evolo teve visões ao longo da vida de Jesus, Maria, anjos e almas santas. Um santuário monumental aprovado pela diocese foi construído no local."
+  },
+  "elena_aiello": {
+    "title": "Bl. Elena Aiello",
+    "location": "Cosenza, Calábria",
+    "country": "Itália",
+    "description": "Mística, estigmática e fundadora Bl. Elena Aiello recebeu visões sobrenaturais e advertências de Jesus e Maria sobre os acontecimentos mundiais e a necessidade de penitência e reparação."
+  },
+  "wigratzbad": {
+    "title": "Antonie Rädler / Imaculada Conceição",
+    "location": "Wigratzbad, Baviera",
+    "country": "Alemanha",
+    "description": "Antonie Rädler experimentou proteção milagrosa durante a perseguição nazista através de visões de Nossa Senhora. O local é hoje um importante santuário de peregrinação diocesana e um seminário internacional."
+  },
+  "maria_pierina": {
+    "title": "Bl. Maria Pierina De Micheli",
+    "location": "Milão",
+    "country": "Itália",
+    "description": "Favorecido com visões de Jesus e Maria, o Beato. Maria Pierina recebeu a incumbência de difundir a devoção à Sagrada Face de Jesus e a criação da Medalha da Sagrada Face."
+  },
+  "faustina_divine_mercy": {
+    "title": "Santa Faustina Kowalska",
+    "location": "Varsóvia / Cracóvia",
+    "country": "Polónia",
+    "description": "Junto com as revelações monumentais da Divina Misericórdia de Jesus, Santa Faustina teve numerosas visões íntimas da Bem-Aventurada Virgem Maria, que a instruiu na vida interior oculta, na pureza e no profundo amor de Deus."
+  },
+  "berthe_petit": {
+    "title": "Berthe Petit / Coração Doloroso e Imaculado",
+    "location": "Enghien / Bruxelas",
+    "country": "Bélgica",
+    "description": "A terciária franciscana Berthe Petit recebeu locuções interiores e visões clamando pela devoção mundial ao Coração Doloroso e Imaculado de Maria. Suas mensagens receberam imprimatur e sua causa de beatificação está aberta."
+  },
+  "amalia_tears": {
+    "title": "Nossa Senhora das Lágrimas",
+    "location": "Campinas, São Paulo",
+    "country": "Brasil",
+    "description": "Irmã Amália Aguirre, cofundadora das Irmãs Missionárias de Jesus Crucificado, recebeu aparições de Jesus e Maria revelando o Terço de Nossa Senhora das Lágrimas. Bispo Francisco de Campos Barreto concedeu aprovação diocesana oficial em 1931."
+  },
+  "heede": {
+    "title": "Nossa Senhora de Heede / Rainha do Universo",
+    "location": "Heede, Baixa Saxônia",
+    "country": "Alemanha",
+    "description": "Quatro jovens vivenciaram mais de 100 aparições de Nossa Senhora no cemitério de Heede, pedindo penitência, o Rosário e a devoção ao Sagrado Coração. O bispo local autorizou o culto público e a devoção no local."
+  },
+  "maximilian_kolbe": {
+    "title": "São Maximiliano Kolbe",
+    "location": "Zduńska Wola / Pabianice",
+    "country": "Polónia",
+    "description": "Quando era um menino de cerca de 10 anos, Raymond Kolbe teve uma visão fundamental da Virgem Maria oferecendo-lhe duas coroas: branca para pureza e vermelha para martírio. Ele aceitou ambos, inspirando seu apostolado franciscano ao longo da vida e seu martírio final em Auschwitz."
+  },
+  "fatima": {
+    "title": "Nossa Senhora de Fátima",
+    "location": "Fátima",
+    "country": "Portugal",
+    "description": "A Bem-Aventurada Virgem Maria apareceu seis vezes aos pastorinhos Lúcia dos Santos e aos santos Jacinta e Francisco Marto na Cova da Iria, entregando três segredos, um apelo à penitência e o Rosário, culminando no milagroso Milagre do Sol testemunhado por 70.000 pessoas."
+  },
+  "beauraing": {
+    "title": "Virgem com o Coração de Ouro",
+    "location": "Beauraing",
+    "country": "Bélgica",
+    "description": "Maria apareceu 33 vezes a cinco crianças perto do viaduto ferroviário do jardim de um convento, revelando seu Imaculado Coração de Ouro e pedindo uma capela e oração contínua pelos pecadores."
+  },
+  "padre_pio": {
+    "title": "São Padre Pio de Pietrelcina",
+    "location": "São João Rotondo",
+    "country": "Itália",
+    "description": "Padre Capuchinho e estigmático São Padre Pio experimentou comunicações celestes ao longo da vida, recebendo visões profundas e conforto de Nossa Senhora, a quem ele carinhosamente chamava de sua 'Querida Mãe'."
+  },
+  "annibale_di_francia": {
+    "title": "Santo Aníbal Maria di Francia",
+    "location": "Messina, Sicília",
+    "country": "Itália",
+    "description": "Apóstolo da oração pelas vocações e pai dos órfãos, Santo Aníbal foi agraciado com graças místicas e orientação profunda da Mãe Santíssima ao longo de suas obras fundacionais."
+  },
+  "divine_tears_cernusco": {
+    "title": "Madonna das Lágrimas Divinas",
+    "location": "Cernusco sul Naviglio",
+    "country": "Itália",
+    "description": "Irmã Elisabetta Redaelli, gravemente doente na casa mãe das Irmãs Marcelinas, foi milagrosamente curada após uma aparição de Nossa Senhora chorando pelos pecados do mundo."
+  },
+  "banneux": {
+    "title": "Virgem dos Pobres",
+    "location": "Banneux",
+    "country": "Bélgica",
+    "description": "A Mãe Santíssima apareceu oito vezes a Mariette Beco, de 11 anos, guiando-a até uma fonte reservada a todas as nações e aos enfermos, declarando-se a 'Virgem dos Pobres'."
+  },
+  "kallikulam": {
+    "title": "Nossa Senhora das Neves",
+    "location": "Kallikulam, Tamil Nadu",
+    "country": "Índia",
+    "description": "Seis jovens testemunharam uma aparição milagrosa da Bem-Aventurada Virgem Maria numa colina rochosa perto da igreja local. O local tornou-se um célebre santuário regional com total apoio episcopal."
+  },
+  "ghiaie_di_bonate": {
+    "title": "Nossa Senhora de Ghiaie di Bonate / Rainha da Família",
+    "location": "Ghiaie di Bonate, Bérgamo",
+    "country": "Itália",
+    "description": "Durante a Segunda Guerra Mundial, Adelaide Roncalli, de 7 anos, experimentou 13 aparições da Sagrada Família, enfatizando a unidade familiar e a oração. Dom Roberto Amadei autorizou orações litúrgicas a Nossa Senhora de Ghiaie em 2002."
+  },
+  "chandavila": {
+    "title": "Nossa Senhora das Dores de Chandavila",
+    "location": "La Codosera, Badajoz",
+    "country": "Espanha",
+    "description": "Duas jovens, Marcelina Baroso e Afra Blanco, testemunharam aparições da Virgem das Dores perto de um castanheiro. Em 2024, o Vaticano DDF concedeu o estatuto canónico oficial de 'Nihil obstat'."
+  },
+  "marienfried": {
+    "title": "Grande Medianeira das Graças",
+    "location": "Marienfried, Pfaffenhofen",
+    "country": "Alemanha",
+    "description": "Bärbel Ruess presenciou aparições de Nossa Senhora declarando-se a Grande Medianeira das Graças. O bispo de Augsburg ergueu um santuário oficial e concedeu permissão para a devoção pública."
+  },
+  "turzovka": {
+    "title": "Nossa Senhora de Turzovka",
+    "location": "Turzovka",
+    "country": "Eslováquia",
+    "description": "O Forester Matúš Lašut testemunhou Nossa Senhora de Lourdes no Monte Zivcakova. Em 2008, Dom Tomáš Galis elevou oficialmente o local a santuário de peregrinação mariana."
+  },
+  "san_damiano": {
+    "title": "Nossa Senhora das Rosas Milagrosas",
+    "location": "São Damião, Piacenza",
+    "country": "Itália",
+    "description": "Rosa Quattrini ('Mamma Rosa') relatou aparições da Virgem Maria. Os bispos diocesanos e a Santa Sé emitiram notificações oficiais declarando as reivindicações desprovidas de autenticidade sobrenatural."
+  },
+  "balestrino": {
+    "title": "Nossa Senhora de Balestrino",
+    "location": "Balestrino, Ligúria",
+    "country": "Itália",
+    "description": "Caterina Richero vivenciou aparições de Nossa Senhora em Monte Croce. O bispo local estabeleceu o local como centro diocesano oficial de devoção mariana e peregrinação em 1991."
+  },
+  "lipa": {
+    "title": "Maria, Medianeira de Todas as Graças",
+    "location": "Cidade de Lipa, Batangas",
+    "country": "Filipinas",
+    "description": "A postulante carmelita Teresita Castillo relatou aparições acompanhadas de chuvas de pétalas de rosa. Após investigações, a Santa Sé confirmou o decreto de que os fenômenos não eram sobrenaturais."
+  },
+  "alexandrina_balasar": {
+    "title": "Bl. Alexandrina Maria da Costa",
+    "location": "Balasar",
+    "country": "Portugal",
+    "description": "Místico acamado e alma de vítima Bl. Alexandrina viveu exclusivamente da Sagrada Eucaristia durante 13 anos, experimentando profundas comunicações extáticas de Cristo e da Bem-Aventurada Virgem Maria."
+  },
+  "amsterdam_all_nations": {
+    "title": "A Senhora de Todas as Nações",
+    "location": "Amsterdã",
+    "country": "Holanda",
+    "description": "Entre 1945 e 1959, Ida Peerdeman relatou 56 visões da Virgem Maria sob o título “A Senhora de Todas as Nações”. Após avaliações teológicas abrangentes, a Congregação para a Doutrina da Fé confirmou em 2020 que as aparições relatadas não tinham origem sobrenatural (Constat de nonnaturalitate)."
+  },
+  "necedah": {
+    "title": "Necedah Aparições",
+    "location": "Necedah, Wisconsin",
+    "country": "Estados Unidos",
+    "description": "As alegações de aparições marianas feitas por Mary Ann Van Hoof foram minuciosamente investigadas e oficialmente rejeitadas pela Diocese de La Crosse e pela Santa Sé."
+  },
+  "ile_bouchard": {
+    "title": "Nossa Senhora da Oração",
+    "location": "L'Île-Bouchard, Touraine",
+    "country": "França",
+    "description": "Quatro jovens testemunharam a Virgem Maria e o Anjo Gabriel na igreja paroquial de St. Giles durante a crise nacional do pós-guerra, salvando a França da guerra civil. O Arcebispo André Vingt-Trois autorizou peregrinações oficiais em 2001."
+  },
+  "tre_fontane": {
+    "title": "Virgem do Apocalipse",
+    "location": "Tre Fontane, Roma",
+    "country": "Itália",
+    "description": "O trabalhador de trânsito anticlerical Bruno Cornacchiola planejava assassinar o Papa Pio XII quando a Virgem Maria apareceu para ele e seus filhos em uma gruta, convertendo-o instantaneamente. O Vicariato de Roma aprovou o santuário."
+  },
+  "montichiari_rosa_mystica": {
+    "title": "Rosa Mystica / Mãe da Igreja",
+    "location": "Montichiari & Fontanelle",
+    "country": "Itália",
+    "description": "A enfermeira Pierina Gilli testemunhou aparições de Maria com três rosas no peito (branca, vermelha e dourada, representando oração, sacrifício e penitência). A DDF do Vaticano emitiu uma carta positiva em 2024 reconhecendo os frutos espirituais do santuário diocesano."
+  },
+  "heroldsbach": {
+    "title": "Aparições de Heroldsbach",
+    "location": "Heroldsbach, Baviera",
+    "country": "Alemanha",
+    "description": "Quatro meninas relataram visões da Virgem Maria. Embora originalmente julgado negativamente, o Arcebispo Ludwig Schick estabeleceu o local como um local diocesano oficial de oração e adoração eucarística em 1998."
+  },
+  "akita": {
+    "title": "Nossa Senhora de Akita",
+    "location": "Yuzawadai, Akita",
+    "country": "Japão",
+    "description": "Uma estátua de madeira da Virgem Maria chorou lágrimas milagrosas 101 vezes e entregou graves advertências proféticas à Irmã Agnes Sasagawa. O Bispo John Shojiro Ito concedeu a aprovação episcopal oficial em 1984."
+  },
+  "litmanova": {
+    "title": "Pureza Imaculada",
+    "location": "Litmanová, Zvir",
+    "country": "Eslováquia",
+    "description": "Duas jovens, Ivetka e Katka, vivenciaram aparições na montanha Zvir. Em 2004, o Bispo Ján Babjak declarou oficialmente a montanha um lugar sagrado de peregrinação e oração mariana."
+  },
+  "soufanieh": {
+    "title": "Nossa Senhora de Soufanieh",
+    "location": "Damasco",
+    "country": "Síria",
+    "description": "Myrna Nazzour experimentou aparições luminosas e óleo milagroso exalando de um ícone de Maria. Apoiado e aprovado exclusivamente pelos hierarcas católicos e ortodoxos orientais como um sinal profundo da unidade cristã."
+  },
+  "betania": {
+    "title": "Virgem e Mãe Reconciliadora de todos os povos",
+    "location": "Cua, Miranda",
+    "country": "Venezuela",
+    "description": "A mística Maria Esperanza de Bianchini e 150 testemunhas viram a Virgem Maria em uma exuberante gruta tropical. O Bispo Pío Bello Ricardo aprovou oficialmente as aparições como sobrenaturais em 1987."
+  },
+  "el_cajas_cuenca": {
+    "title": "Mãe Guardiã da Fé",
+    "location": "El Cajas, Cuenca",
+    "country": "Equador",
+    "description": "A adolescente Patricia Talbot recebeu mensagens da Mãe Santíssima pedindo pureza e conversão. O Arcebispo Vicente Cisneros estabeleceu canonicamente o santuário de grande altitude como local oficial de peregrinação diocesana."
+  },
+  "bayside": {
+    "title": "Nossa Senhora das Rosas",
+    "location": "Bayside, Queens, Nova York",
+    "country": "Estados Unidos",
+    "description": "Veronica Lueken relatou visões de Jesus e Maria. O Bispo de Brooklyn emitiu declarações oficiais confirmando que as alegações careciam de autenticidade sobrenatural."
+  },
+  "placanica_scoglio": {
+    "title": "Nossa Senhora da Rocha (Madonna dello Scoglio)",
+    "location": "Santa Domingas de Placanica",
+    "country": "Itália",
+    "description": "O humilde agricultor Irmão Cosimo Fragomeni testemunhou a Santíssima Virgem numa rocha. O Bispo Giuseppe Fiorini Morosini elevou oficialmente o local a santuário diocesano em 2016."
+  },
+  "san_nicolas": {
+    "title": "Nossa Senhora do Rosário de São Nicolau",
+    "location": "San Nicolás de los Arroyos",
+    "country": "Argentina",
+    "description": "Gladys Quiroga de Motta recebeu mensagens profundas e visões de Nossa Senhora segurando o Menino Jesus. O bispo Héctor Sabatino Cardelli decretou oficialmente o caráter sobrenatural das aparições em 2016."
+  },
+  "kibeho": {
+    "title": "Mãe da Palavra",
+    "location": "Kibeho",
+    "country": "Ruanda",
+    "description": "A Bem-Aventurada Virgem Maria apareceu a três estudantes (Alphonsine, Anathalie e Marie Claire), pedindo uma conversão sincera e profetizando a tragédia ruandesa. Aprovado pelo Bispo Augustin Misago e pela Santa Sé em 2001."
+  },
+  "garabandal": {
+    "title": "Nossa Senhora do Carmo de Garabandal",
+    "location": "São Sebastião de Garabandal",
+    "country": "Espanha",
+    "description": "Quatro estudantes relataram aparições de São Miguel e da Virgem Maria com advertências profundas sobre a Eucaristia, uma advertência mundial iminente e um grande milagre. Sucessivos bispos declararam que a natureza sobrenatural não estava estabelecida."
+  },
+  "medjugorje": {
+    "title": "Rainha da Paz de Medjugorje",
+    "location": "Medjugorje",
+    "country": "Bósnia e Herzegovina",
+    "description": "Seis videntes relatam mensagens contínuas de paz, conversão, jejum e oração. Em Setembro de 2024, a FDUC do Vaticano concedeu oficialmente o estatuto canónico de 'Nihil obstat', reconhecendo os imensos frutos espirituais mundiais e autorizando a devoção pública."
+  },
+  "scottsdale": {
+    "title": "Aparições em Scottsdale",
+    "location": "Scottsdale, Arizona",
+    "country": "Estados Unidos",
+    "description": "Supostas locuções e visões numa paróquia local foram investigadas pela Diocese de Phoenix, que concluiu que os acontecimentos não tinham fundamento sobrenatural."
+  },
+  "zeitoun": {
+    "title": "Nossa Senhora de Zeitoun / Nossa Senhora da Luz",
+    "location": "Zeitoun, Cairo",
+    "country": "Egito",
+    "description": "Aparições silenciosas e luminosas da Bem-Aventurada Virgem Maria no topo da Igreja Copta de São Marcos foram testemunhadas por milhões de cristãos e muçulmanos, transmitidas pela televisão nacional e oficialmente aprovadas pelo Papa copta Kyrillos VI."
+  },
+  "salta": {
+    "title": "Mãe Imaculada do Divino Coração Eucarístico",
+    "location": "Salta",
+    "country": "Argentina",
+    "description": "Maria Lívia Galiano relata locuções interiores e visões de Nossa Senhora no topo de uma colina onde dezenas de milhares de pessoas se reúnem semanalmente para oração e intercessão milagrosa."
+  },
+  "el_escorial": {
+    "title": "Nossa Senhora das Dores do Prado Nuevo",
+    "location": "El Escorial, Madri",
+    "country": "Espanha",
+    "description": "Luz Amparo Cuevas relatou visões de Nossa Senhora. O cardeal Antonio María Rouco Varela autorizou celebrações litúrgicas, adoração eucarística e a construção de uma capela no local em 2010."
+  },
+  "aokpe": {
+    "title": "Medianeira de Todas as Graças",
+    "location": "Aokpe, estado de Benue",
+    "country": "Nigéria",
+    "description": "Christiana Agbo teve visões profundas de Nossa Senhora acompanhadas de milagres solares. O Bispo Michael Apochi autorizou peregrinações oficiais e concedeu um imprimatur às orações."
+  },
+  "our_lady_of_america": {
+    "title": "Nossa Senhora da América",
+    "location": "Cidade de Roma, Indiana",
+    "country": "Estados Unidos",
+    "description": "Irmã Mildred Mary Neuzil relatou aparições de Maria sob o título de 'Nossa Senhora da América'. O Arcebispo Paul F. Leibold concedeu imprimatur oficial e promoção ativa à devoção."
+  },
+  "mosul_iraq": {
+    "title": "Nossa Senhora de Mossul",
+    "location": "Mossul",
+    "country": "Iraque",
+    "description": "A jovem Dina Basher testemunhou aparições luminosas e curas milagrosas na Igreja de Santo Efrém. O Patriarca Ortodoxo Sírio Inácio Zakka I confirmou oficialmente as ocorrências milagrosas em 1992."
+  },
+  "ngome": {
+    "title": "Nossa Senhora do Tabernáculo",
+    "location": "Ngome, KwaZulu-Natal",
+    "country": "África do Sul",
+    "description": "A Irmã Beneditina Reinolda May experimentou aparições de Maria segurando uma hóstia e um cálice, enfatizando a adoração eucarística. O Bispo Mansuet Biyase aprovou o santuário como local oficial de peregrinação em 1989."
+  },
+  "itapiranga": {
+    "title": "Nossa Senhora de Itapiranga / Rainha do Rosário e da Paz",
+    "location": "Itapiranga, Amazonas",
+    "country": "Brasil",
+    "description": "Edson Glauber relatou visões da Sagrada Família. Em 2017, a DDF do Vaticano e o Ordinário local publicaram notificações declarando que os fenómenos não eram sobrenaturais."
+  },
+  "enugu_precious_blood": {
+    "title": "Barnabas Nwoye / Sangue Precioso",
+    "location": "Olo, Enugu",
+    "country": "Nigéria",
+    "description": "Barnabas Nwoye recebeu visões de Jesus e Maria enfatizando a devoção ao Preciosíssimo Sangue. O bispo local concedeu imprimatur oficial e nihil obstat para as orações."
+  },
+  "sievernich": {
+    "title": "Mãe Suprema no Coração Imaculado",
+    "location": "Sievernich",
+    "country": "Alemanha",
+    "description": "Manuela Strack relata aparições contínuas e mensagens eucarísticas. O Bispo de Aachen autorizou reuniões de oração no local sob supervisão pastoral."
+  },
+  "cefala_diana": {
+    "title": "Nossa Senhora das Dores de Cefalà Diana",
+    "location": "Cefalà Diana, Sicília",
+    "country": "Itália",
+    "description": "Quatro jovens testemunharam aparições milagrosas de Nossa Senhora das Dores. Após investigações positivas, o Cardeal Francesco Carpino consagrou um belo santuário construído diretamente no local das aparições."
+  },
+  "naju": {
+    "title": "Virgem Chorosa de Naju",
+    "location": "Naju",
+    "country": "Coreia do Sul",
+    "description": "Julia Kim relatou estátuas de Maria chorando e sangrando e milagres eucarísticos. O Arcebispo Victorinus Yoon Kong-hi emitiu declarações oficiais confirmando que os fenômenos não eram sobrenaturais."
+  },
+  "zaro_ischia": {
+    "title": "Nossa Senhora do Zaro",
+    "location": "Zaro, Ísquia",
+    "country": "Itália",
+    "description": "Simona e Angela relatam aparições e mensagens em andamento em uma área arborizada na ilha de Ischia. Dom Pietro Lagnese estabeleceu uma comissão diocesana oficial para discernir os frutos e fenômenos espirituais."
+  },
+  "dozule": {
+    "title": "Cruz Gloriosa de Dozulé",
+    "location": "Dozulé, Normandia",
+    "country": "França",
+    "description": "Madeleine Aumont relatou visões de Cristo e Maria exigindo a construção de uma gigantesca cruz luminosa. A diocese local e a Santa Sé emitiram notificações declarando que as alegações não eram sobrenaturais."
+  },
+  "schio": {
+    "title": "Rainha do Amor",
+    "location": "Schio, Vicenza",
+    "country": "Itália",
+    "description": "Renato Baron relatou locuções e visões em uma pequena igreja em San Martino. Após comissões diocesanas de inquérito, os bispos emitiram notificações concluindo que os acontecimentos careciam de autenticidade sobrenatural."
+  },
+  "hrushiv": {
+    "title": "Nossa Senhora de Hrushiv",
+    "location": "Hrushiv, região de Lviv",
+    "country": "Ucrânia",
+    "description": "No 70º aniversário de Fátima, dezenas de milhares de ucranianos reuniram-se em torno de uma capela abandonada onde aparições luminosas de Maria foram testemunhadas dia e noite durante semanas, desafiando os bloqueios da KGB."
+  },
+  "trevignano": {
+    "title": "Madona de Trevignano Romano",
+    "location": "Trevignano Romano",
+    "country": "Itália",
+    "description": "Gisella Cardia reivindicou mensagens e estátuas chorosas. Em 2024, o Bispo Marco Salvi e a DDF do Vaticano emitiram decretos oficiais declarando os eventos 'Constat de nonnaturalitate' (confirmado como não sobrenatural)."
+  },
+  "zarvanytsia": {
+    "title": "Nossa Senhora de Zarvanytsia",
+    "location": "Zarvanytsia, Ternopil",
+    "country": "Ucrânia",
+    "description": "Durante a perseguição subterrânea soviética, numerosos peregrinos e jovens testemunharam aparições luminosas milagrosas da Bem-Aventurada Virgem Maria sobre a antiga fonte milagrosa e o santuário em ruínas."
+  },
+  "borg_in_nadur": {
+    "title": "Aparições Borg in-Nadur",
+    "location": "Birżebbuġa",
+    "country": "Malta",
+    "description": "Angelik Caruana reivindicou mensagens e visões numa colina em Borg in-Nadur. Em 2016, o Arcebispo Charles Scicluna emitiu um decreto definitivo estabelecendo que os alegados fenómenos não eram sobrenaturais."
+  }
+}

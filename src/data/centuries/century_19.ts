@@ -455,7 +455,15 @@ export const century19Apparitions: Apparition[] = [
     year: 1850,
     approvalStatus: "Bishop approved",
     priority: 1,
-    description: "Mary appeared in a red robe and white mantle with a magnificent crown before humble shepherd Mikołaj Sikatka in the Grąblin forest. She urged daily Rosary prayer and foretold a devastating cholera epidemic. When the plague struck exactly as foretold, her miraculous intercession healed thousands. Today, the Sanctuary of Our Lady of Licheń is Poland's largest church."
+    description: "Mary appeared in a red robe and white mantle with a magnificent crown before humble shepherd Mikołaj Sikatka in the Grąblin forest. She urged daily Rosary prayer and foretold a devastating cholera epidemic. When the plague struck exactly as foretold, her miraculous intercession healed thousands. Today, the Sanctuary of Our Lady of Licheń is Poland's largest church.",
+    translations: {
+      pl: {
+        title: "Matka Boża Licheńska (Mikołaj Sikatka)",
+        location: "Licheń Stary",
+        country: "Polska",
+        description: "Maryja ukazała się w czerwonej szacie i białym płaszczu z wspaniałą koroną ubogiemu pasterzowi Mikołajowi Sikatce w lesie grąblińskim. Wzywała do codziennej modlitwy różańcowej i przepowiedziała wyniszczającą epidemię cholery. Gdy zaraza wybuchła dokładnie według przepowiedni, jej cudowne wstawiennictwo uzdrowiło tysiące ludzi. Dziś Sanktuarium Matki Bożej Licheńskiej jest największą świątynią w Polsce."
+      }
+    }
   },
   {
     id: "vatican-city-1850",
@@ -611,7 +619,15 @@ export const century19Apparitions: Apparition[] = [
     year: 1858,
     approvalStatus: "Vatican approved",
     priority: 1,
-    description: "At the damp Massabielle grotto, the beautiful Virgin Mary appeared 18 times to 14-year-old peasant girl Bernadette Soubirous. Revealing her identity as 'The Immaculate Conception', she uncovered a miraculous healing spring that has since cured countless incurable pilgrims. Today Lourdes is one of the premier holy shrines on Earth."
+    description: "At the damp Massabielle grotto, the beautiful Virgin Mary appeared 18 times to 14-year-old peasant girl Bernadette Soubirous. Revealing her identity as 'The Immaculate Conception', she uncovered a miraculous healing spring that has since cured countless incurable pilgrims. Today Lourdes is one of the premier holy shrines on Earth.",
+    translations: {
+      pl: {
+        title: "Matka Boża z Lourdes (Niepokalane Poczęcie)",
+        location: "Lourdes",
+        country: "Francja",
+        description: "W wilgotnej grocie Massabielle piękna Maryja Dziewica ukazała się 18 razy 14-letniej wiejskiej dziewczynie Bernadecie Soubirous. Wyjawiając swoją tożsamość jako „Niepokalane Poczęcie”, wskazała cudowne źródło uzdrawiające, które od tamtej pory wyleczyło niezliczonych nieuleczalnie chorych pielgrzymów. Dziś Lourdes jest jednym z najważniejszych sanktuariów maryjnych na Ziemi."
+      }
+    }
   },
   {
     id: "arnaud-guilhem-1859",
@@ -1079,7 +1095,16 @@ export const century19Apparitions: Apparition[] = [
     year: 1877,
     approvalStatus: "Vatican approved",
     priority: 1,
-    description: "Mary appeared repeatedly in a bright golden cloud above a maple tree before two young girls, speaking in the native Polish tongue during the harsh Prussian partition. When asked who she was, she replied: 'I am the Blessed Virgin Mary, the Immaculate Conception... I wish you to pray the Rosary every day.' The miraculous spring she blessed continues to heal countless pilgrims."
+    sourceUrl: "https://sanktuariummaryjne.pl/page/24/historia",
+    description: "Mary appeared repeatedly in a bright golden cloud above a maple tree before two young girls, speaking in the native Polish tongue during the harsh Prussian partition. When asked who she was, she replied: 'I am the Blessed Virgin Mary, the Immaculate Conception... I wish you to pray the Rosary every day.' The miraculous spring she blessed continues to heal countless pilgrims.",
+    translations: {
+      pl: {
+        title: "Matka Boża Gietrzwałdzka",
+        location: "Gietrzwałd",
+        country: "Polska",
+        description: "Maryja objawiła się wielokrotnie w jasnej złotej chmurze nad klonem dwóm młodym dziewczętom, mówiąc w języku polskim pod zaborami pruskimi. Zapytana kim jest, odpowiedziała: „Jestem Najświętsza Maryja Panna Niepokalanie Poczęta... Życzę sobie, abyście codziennie odmawiali różaniec”. Cudowne źródło, które pobłogosławiła, do dziś uzdrawia rzesze pielgrzymów."
+      }
+    }
   },
   {
     id: "knock-1879",

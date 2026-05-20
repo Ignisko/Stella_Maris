@@ -1,13 +1,16 @@
 import React, { useState, useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { Search, X } from 'lucide-react';
+import { t } from '../utils/i18n';
+import type { Language } from '../utils/i18n';
 
 interface SearchBarProps {
   apparitions: Apparition[];
   onSelectApparition: (app: Apparition) => void;
+  lang: Language;
 }
 
-const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition, lang }) => {
   const [query, setQuery] = useState('');
 
   const filtered = useMemo(() => {
@@ -22,26 +25,29 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition }
   }, [query, apparitions]);
 
   return (
-    <div style={{ position: 'absolute', top: '20px', right: '20px', zIndex: 30, width: '320px' }}>
+    <div style={{ position: 'relative', width: '100%', zIndex: 35 }}>
       <div className="glass-panel glass-panel-rounded" style={{ 
         display: 'flex', 
         alignItems: 'center', 
-        padding: '12px 18px', 
-        gap: '12px', 
+        padding: '10px 16px', 
+        gap: '10px', 
         background: 'rgba(15, 23, 42, 0.8)',
-        pointerEvents: 'auto'
+        border: '1px solid var(--glass-border)',
+        pointerEvents: 'auto',
+        height: '42px',
+        borderRadius: '12px'
       }}>
-        <Search size={18} color="var(--accent-color)" />
+        <Search size={16} color="var(--accent-color)" />
         <input
           type="text"
-          placeholder="Search shrine, country, year..."
+          placeholder={t('searchPlaceholder', lang)}
           value={query}
           onChange={e => setQuery(e.target.value)}
           style={{ 
             background: 'transparent', 
             border: 'none', 
             color: '#f1f5f9', 
-            fontSize: '14px', 
+            fontSize: '13px', 
             width: '100%', 
             outline: 'none', 
             fontFamily: 'inherit',
@@ -62,22 +68,28 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition }
               justifyContent: 'center'
             }}
           >
-            <X size={16} />
+            <X size={15} />
           </button>
         )}
       </div>
 
       {filtered.length > 0 && (
         <div className="glass-panel glass-panel-rounded animate-fade-in" style={{ 
+          position: 'absolute',
+          top: '100%',
+          left: 0,
+          right: 0,
           marginTop: '8px', 
-          maxHeight: '340px', 
+          maxHeight: '280px', 
           overflowY: 'auto', 
           display: 'flex', 
           flexDirection: 'column', 
-          padding: '8px 0', 
-          background: 'rgba(15, 23, 42, 0.95)',
+          padding: '6px 0', 
+          background: 'rgba(15, 23, 42, 0.98)',
           pointerEvents: 'auto',
-          border: '1px solid var(--glass-border)'
+          border: '1px solid var(--glass-border)',
+          zIndex: 50,
+          boxShadow: '0 10px 30px rgba(0,0,0,0.6)'
         }}>
           {filtered.map(app => (
             <div
@@ -87,20 +99,20 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition }
                 setQuery('');
               }}
               style={{ 
-                padding: '12px 18px', 
+                padding: '10px 16px', 
                 cursor: 'pointer', 
                 display: 'flex', 
                 flexDirection: 'column', 
-                gap: '4px', 
+                gap: '2px', 
                 transition: 'background 0.2s' 
               }}
-              onMouseOver={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'}
+              onMouseOver={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'}
               onMouseOut={e => e.currentTarget.style.background = 'transparent'}
             >
-              <div style={{ fontSize: '14px', fontWeight: 600, color: 'var(--gold-accent)' }}>
+              <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--gold-accent)' }}>
                 {app.title}
               </div>
-              <div style={{ fontSize: '12px', opacity: 0.8, color: 'var(--text-color)' }}>
+              <div style={{ fontSize: '11px', opacity: 0.8, color: 'var(--text-color)' }}>
                 {app.location}, {app.country} ({app.year})
               </div>
             </div>

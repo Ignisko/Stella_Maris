@@ -3,13 +3,35 @@ import { List } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
-import FilterMenu, { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './components/FilterMenu';
+import FilterMenu from './components/FilterMenu';
+import { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './data/filters';
 import SearchBar from './components/SearchBar';
 import DirectoryModal from './components/DirectoryModal';
+import LanguagePicker from './components/LanguagePicker';
 import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
+import { t, translateApparitionsList, loadLanguageTranslations } from './utils/i18n';
+import type { Language } from './utils/i18n';
 
 function App() {
+  const [lang, setLang] = useState<Language>(() => {
+    const saved = localStorage.getItem('stellamaris_lang') as Language;
+    return saved || 'en';
+  });
+
+  const [langTranslations, setLangTranslations] = useState<Record<string, { title: string; location: string; country: string; description: string }>>({});
+
+  useEffect(() => {
+    localStorage.setItem('stellamaris_lang', lang);
+    loadLanguageTranslations(lang).then(data => {
+      setLangTranslations(data);
+    });
+  }, [lang]);
+
+  const translatedApparitionsData = useMemo(() => {
+    return translateApparitionsList(apparitionsData, lang, langTranslations);
+  }, [lang, langTranslations]);
+
   const [selectedApparition, setSelectedApparition] = useState<Apparition | null>(null);
   const [activeFilters, setActiveFilters] = useState<string[]>(FILTER_CATEGORIES.filter(c => c !== "Dismissed"));
   const [activeCenturies, setActiveCenturies] = useState<string[]>(CENTURY_FILTERS.map(c => c.id));
@@ -17,6 +39,12 @@ function App() {
   const [isPlayingTimeline, setIsPlayingTimeline] = useState(false);
   const [playbackIndex, setPlaybackIndex] = useState(0);
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
+
+  // Dynamically translate the selected apparition object
+  const currentSelectedApparition = useMemo(() => {
+    if (!selectedApparition) return null;
+    return translatedApparitionsData.find(app => app.id === selectedApparition.id) || selectedApparition;
+  }, [selectedApparition, translatedApparitionsData]);
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
@@ -27,7 +55,7 @@ function App() {
 
   // Filter the data
   const filteredApparitions = useMemo(() => {
-    return apparitionsData.filter(app => {
+    return translatedApparitionsData.filter(app => {
       // 1. Check if it matches active century filters
       const matchesCentury = CENTURY_FILTERS.some(century => {
         if (!activeCenturies.includes(century.id)) return false;
@@ -49,7 +77,7 @@ function App() {
       }
       return false;
     });
-  }, [activeFilters, activeCenturies]);
+  }, [translatedApparitionsData, activeFilters, activeCenturies]);
 
   // Sort filtered data chronologically
   const sortedFilteredApparitions = useMemo(() => {
@@ -76,6 +104,8 @@ function App() {
   // Auto-select apparition when playbackIndex ticks
   useEffect(() => {
     if (isPlayingTimeline && sortedFilteredApparitions[playbackIndex]) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      // Note: we're disabling warnings because setting state in this interval effect is intentional
       setSelectedApparition(sortedFilteredApparitions[playbackIndex]);
     }
   }, [isPlayingTimeline, playbackIndex, sortedFilteredApparitions]);
@@ -94,111 +124,142 @@ function App() {
 
   // Sliced data for GlobeViewer during playback
   const displayedApparitions = useMemo(() => {
-    if (!isPlayingTimeline || !selectedApparition) return filteredApparitions;
-    return filteredApparitions.filter(a => a.year <= selectedApparition.year);
-  }, [isPlayingTimeline, selectedApparition, filteredApparitions]);
+    if (!isPlayingTimeline || !currentSelectedApparition) return filteredApparitions;
+    return filteredApparitions.filter(a => a.year <= currentSelectedApparition.year);
+  }, [isPlayingTimeline, currentSelectedApparition, filteredApparitions]);
+
+  const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-      {/* Header Overlay */}
-      <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
+      {/* Left Control Panel */}
+      <div style={{
         position: 'absolute',
         top: '20px',
         left: '20px',
-        zIndex: 10,
-        padding: '18px 28px',
+        zIndex: 30,
+        width: '320px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '6px'
+        gap: '10px',
+        pointerEvents: 'none',
+        transform: hasPopups ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
+        transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
       }}>
-        <h1 style={{ fontSize: '24px', fontWeight: 700, margin: 0, letterSpacing: '0.5px', color: 'var(--text-color)' }}>
-          Stella Maris
-        </h1>
-        <p style={{ fontSize: '14px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
-          Marian apparitions map
-        </p>
+        {/* Title Card */}
+        <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
+          padding: '20px 24px',
+          background: 'rgba(15, 23, 42, 0.85)',
+          border: '1px solid var(--glass-border)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '6px',
+          pointerEvents: 'auto'
+        }}>
+          <h1 style={{ fontSize: '24px', fontWeight: 700, margin: 0, letterSpacing: '0.5px', color: 'var(--text-color)' }}>
+            Stella Maris
+          </h1>
+          <p style={{ fontSize: '13px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
+            {t('subtitle', lang)}
+          </p>
+        </div>
+
+        {/* Quick Search */}
+        <div style={{ pointerEvents: 'auto' }}>
+          <SearchBar 
+            apparitions={translatedApparitionsData} 
+            onSelectApparition={handleSelectApparition} 
+            lang={lang}
+          />
+        </div>
+
+        {/* Action Row: Filters and Browse Directory */}
+        <div style={{ display: 'flex', gap: '8px', pointerEvents: 'auto' }}>
+          <FilterMenu 
+            activeFilters={activeFilters} 
+            onChange={setActiveFilters} 
+            activeCenturies={activeCenturies}
+            onChangeCenturies={setActiveCenturies}
+            lang={lang}
+          />
+
+          <button
+            onClick={() => setIsDirectoryOpen(true)}
+            className="glass-panel glass-panel-rounded animate-fade-in"
+            style={{
+              flex: 1,
+              height: '42px',
+              padding: '0 12px',
+              background: 'rgba(15, 23, 42, 0.8)',
+              color: 'var(--text-color)',
+              border: '1px solid var(--glass-border)',
+              fontSize: '13px',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: '8px',
+              boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+              transition: 'all 0.2s ease',
+              whiteSpace: 'nowrap'
+            }}
+            onMouseOver={e => {
+              e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
+              e.currentTarget.style.borderColor = 'var(--accent-color)';
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+              e.currentTarget.style.borderColor = 'var(--glass-border)';
+            }}
+          >
+            <List size={15} color="var(--accent-color)" />
+            <span>{t('browseDirectory', lang, { count: filteredApparitions.length })}</span>
+          </button>
+        </div>
       </div>
 
-      {/* Top Right Browse Directory Button */}
-      <button
-        onClick={() => setIsDirectoryOpen(true)}
-        className="glass-panel glass-panel-rounded animate-fade-in"
-        style={{
-          position: 'absolute',
-          top: '20px',
-          right: '355px',
-          zIndex: 30,
-          height: '45px',
-          padding: '0 20px',
-          background: 'rgba(15, 23, 42, 0.8)',
-          color: 'var(--text-color)',
-          border: '1px solid var(--glass-border)',
-          fontSize: '14px',
-          fontWeight: 600,
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '10px',
-          pointerEvents: 'auto',
-          boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-          transition: 'all 0.2s ease'
-        }}
-        onMouseOver={e => {
-          e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
-          e.currentTarget.style.borderColor = 'var(--accent-color)';
-        }}
-        onMouseOut={e => {
-          e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
-          e.currentTarget.style.borderColor = 'var(--glass-border)';
-        }}
-      >
-        <List size={16} color="var(--accent-color)" />
-        <span>Browse directory ({filteredApparitions.length})</span>
-      </button>
+      {/* Top Right Language Switcher */}
+      <LanguagePicker 
+        currentLang={lang} 
+        onLanguageChange={setLang} 
+      />
 
       <DirectoryModal
         isOpen={isDirectoryOpen}
         onClose={() => setIsDirectoryOpen(false)}
         apparitions={filteredApparitions}
         onSelectApparition={handleSelectApparition}
-      />
-
-      <SearchBar 
-        apparitions={apparitionsData} 
-        onSelectApparition={handleSelectApparition} 
-      />
-
-      <FilterMenu 
-        activeFilters={activeFilters} 
-        onChange={setActiveFilters} 
-        activeCenturies={activeCenturies}
-        onChangeCenturies={setActiveCenturies}
+        lang={lang}
       />
 
       <GlobeViewer 
         apparitions={displayedApparitions} 
-        selectedApparition={selectedApparition}
+        selectedApparition={currentSelectedApparition}
         onSelectApparition={handleSelectApparition} 
         isTimelineOpen={isTimelineOpen}
+        lang={lang}
+        hidePlayPause={hasPopups}
       />
       
       <Sidebar 
-        apparition={selectedApparition} 
+        apparition={currentSelectedApparition} 
         onClose={() => setSelectedApparition(null)} 
         allActiveApparitions={filteredApparitions}
         onSelectApparition={handleSelectApparition}
+        lang={lang}
       />
 
       {filteredApparitions.length > 0 && (
         <TimelineOverlay
           apparitions={filteredApparitions}
-          selectedApparition={selectedApparition}
+          selectedApparition={currentSelectedApparition}
           onSelectApparition={handleSelectApparition}
           isPlaying={isPlayingTimeline}
           onTogglePlay={togglePlayTimeline}
           isOpen={isTimelineOpen}
           setIsOpen={setIsTimelineOpen}
+          lang={lang}
         />
       )}
     </div>

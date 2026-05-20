@@ -23,7 +23,15 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1904,
     description: "As a young boy around age 10, Raymond Kolbe had a pivotal vision of the Virgin Mary offering him two crowns: white for purity and red for martyrdom. He accepted both, inspiring his lifelong Franciscan apostolate and ultimate martyrdom at Auschwitz.",
     approvalStatus: "Apparitions to saints",
-    priority: 2
+    priority: 2,
+    translations: {
+      pl: {
+        title: "Św. Maksymilian Kolbe",
+        location: "Zduńska Wola / Pabianice",
+        country: "Polska",
+        description: "Jako mały chłopiec (około 10 lat), Rajmund Kolbe miał przełomową wizję Najświętszej Maryi Panny, która zaoferowała mu dwie korony: białą za czystość i czerwoną za męczeństwo. Przyjął obie, co zainspirowało jego trwające całe życie apostolstwo franciszkańskie i męczeńską śmierć w Auschwitz."
+      }
+    }
   },
   {
     id: "berthe_petit",
@@ -38,6 +46,18 @@ export const century20and21Apparitions: Apparition[] = [
     priority: 3
   },
   {
+    id: "coogee-eileen-1911",
+    title: "Our Lady to Eileen O'Connor",
+    location: "Coogee, New South Wales",
+    country: "Australia",
+    lat: -33.9200,
+    lng: 151.2583,
+    year: 1911,
+    approvalStatus: "Traditionally approved",
+    priority: 3,
+    description: "Bedridden with a severe spinal condition, Irish-Australian Eileen O'Connor experienced a series of Marian visions. Her deep devotion led her to co-found the Catholic religious order 'Our Lady's Nurses for the Poor' (the 'Brown Nurses'). She is currently a Servant of God with her canonization cause underway."
+  },
+  {
     id: "fatima",
     title: "Our Lady of Fátima",
     location: "Fátima",
@@ -47,7 +67,15 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1917,
     description: "The Blessed Virgin Mary appeared six times to shepherd children Lúcia dos Santos and saints Jacinta and Francisco Marto at Cova da Iria, delivering three secrets, a call for penance and the Rosary, culminating in the miraculous Miracle of the Sun witnessed by 70,000 people.",
     approvalStatus: "Vatican approved",
-    priority: 1
+    priority: 1,
+    translations: {
+      pl: {
+        title: "Matka Boża Fatimska",
+        location: "Fatima",
+        country: "Portugalia",
+        description: "Najświętsza Maryja Panna objawiła się sześć razy dzieciom pasterskim Łucji dos Santos oraz świętym Jacyncie i Franciszkowi Marto w Cova da Iria, przekazując trzy tajemnice fatimskie oraz wezwanie do pokuty i modlitwy różańcowej. Objawienia zwieńczył spektakularny Cud Słońca, którego świadkiem było 70 000 ludzi."
+      }
+    }
   },
   {
     id: "padre_pio",
@@ -95,7 +123,15 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1926,
     description: "Along with the monumental Divine Mercy revelations from Jesus, St. Faustina experienced numerous intimate visions of the Blessed Virgin Mary, who instructed her in interior hidden life, purity, and profound love of God.",
     approvalStatus: "Apparitions to saints",
-    priority: 1
+    priority: 1,
+    translations: {
+      pl: {
+        title: "Św. Faustyna Kowalska",
+        location: "Warszawa / Kraków",
+        country: "Polska",
+        description: "Obok fundamentalnych objawień Miłosierdzia Bożego od Pana Jezusa, św. Faustyna doświadczyła wielu intymnych wizji Matki Bożej, która pouczała ją o ukrytym życiu wewnętrznym, czystości i głębokiej miłości do Boga."
+      }
+    }
   },
   {
     id: "annibale_di_francia",

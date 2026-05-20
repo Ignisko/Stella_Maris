@@ -1,53 +1,21 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Filter, Clock, Award } from 'lucide-react';
 import { STATUS_COLORS } from '../utils/colors';
-
-export const FILTER_CATEGORIES = [
-  "Vatican approved",
-  "Traditionally approved",
-  "Bishop approved",
-  "Coptic approved",
-  "Approved for faith expression",
-  "Apparitions to saints",
-  "Dismissed"
-];
-
-// Mapping for our current dataset phrasing
-export const categoryMapping: Record<string, string[]> = {
-  "Vatican approved": ["Approved by the Holy See", "Vatican Approved", "Vatican approved"],
-  "Traditionally approved": ["Traditionally Approved", "Traditionally approved"],
-  "Bishop approved": ["Bishop Approved", "Bishop approved", "Approved by local bishop", "Approval by Syrian Catholic Church", "Established as supernatural"],
-  "Coptic approved": ["Approved by the Coptic Orthodox Church", "Coptic Approved", "Coptic approved"],
-  "Approved for faith expression": ["Approved for Faith Expression", "Approved for faith expression", "Declared nihil obstat", "Nihil obstat", "Declared site of pilgrimage and prayer", "Place of prayer", "Recognized as place of prayer"],
-  "Apparitions to saints": ["Apparitions to Saints", "Apparitions to saints"],
-  "Dismissed": ["Unapproved Apparitions", "Unapproved apparitions", "Unapproved", "No decision", "Negative decision", "Declared not supernatural", "Not established as supernatural", "Established as not supernatural", "Uninvestigated", "Negative", "Negative - Uninvestigated", "Negative judgment"]
-};
-
-export const CENTURY_FILTERS = [
-  { id: "c_early", label: "Early (40 - 999)", min: 0, max: 999 },
-  { id: "c_11", label: "11th Century (1000s)", min: 1000, max: 1099 },
-  { id: "c_12", label: "12th Century (1100s)", min: 1100, max: 1199 },
-  { id: "c_13", label: "13th Century (1200s)", min: 1200, max: 1299 },
-  { id: "c_14", label: "14th Century (1300s)", min: 1300, max: 1399 },
-  { id: "c_15", label: "15th Century (1400s)", min: 1400, max: 1499 },
-  { id: "c_16", label: "16th Century (1500s)", min: 1500, max: 1599 },
-  { id: "c_17", label: "17th Century (1600s)", min: 1600, max: 1699 },
-  { id: "c_18", label: "18th Century (1700s)", min: 1700, max: 1799 },
-  { id: "c_19", label: "19th Century (1800s)", min: 1800, max: 1899 },
-  { id: "c_20", label: "20th Century (1900s)", min: 1900, max: 1999 },
-  { id: "c_21", label: "21st Century (2000s)", min: 2000, max: 2100 },
-];
+import { t } from '../utils/i18n';
+import type { Language } from '../utils/i18n';
+import { FILTER_CATEGORIES, CENTURY_FILTERS } from '../data/filters';
 
 interface FilterMenuProps {
   activeFilters: string[];
   onChange: (filters: string[]) => void;
   activeCenturies: string[];
   onChangeCenturies: (centuries: string[]) => void;
+  lang: Language;
 }
 
-const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, activeCenturies, onChangeCenturies }) => {
+const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, activeCenturies, onChangeCenturies, lang }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const [activeTab, setActiveTab] = useState<'status' | 'time'>('time');
+  const [activeTab, setActiveTab] = useState<'status' | 'time'>('status');
 
   const toggleFilter = (category: string) => {
     if (activeFilters.includes(category)) {
@@ -74,16 +42,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
     if (activeTab === 'status') onChange([]);
     else onChangeCenturies([]);
   };
-
-  const activeCount = activeFilters.length + activeCenturies.length;
-  const totalPossible = FILTER_CATEGORIES.length + CENTURY_FILTERS.length;
-  const hasFiltered = activeCount < totalPossible;
-
   return (
     <div style={{
-      position: 'absolute',
-      top: '130px',
-      left: '20px',
+      position: 'relative',
       zIndex: 10,
     }}>
       {/* Small trigger button */}
@@ -123,7 +84,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
         }}
       >
         <Filter size={15} color="var(--accent-color)" />
-        <span>Filters</span>
+        <span>{t('filters', lang)}</span>
         {isExpanded ? <ChevronUp size={13} style={{ opacity: 0.7 }} /> : <ChevronDown size={13} style={{ opacity: 0.7 }} />}
       </button>
 
@@ -144,23 +105,23 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
           {/* Tabs */}
           <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)' }}>
             <button
-              onClick={() => setActiveTab('time')}
-              style={{ flex: 1, padding: '12px 0', background: activeTab === 'time' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'time' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
-            >
-              <Clock size={15} /> Centuries
-            </button>
-            <button
               onClick={() => setActiveTab('status')}
               style={{ flex: 1, padding: '12px 0', background: activeTab === 'status' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'status' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
             >
-              <Award size={15} /> Status
+              <Award size={15} /> {t('status', lang)}
+            </button>
+            <button
+              onClick={() => setActiveTab('time')}
+              style={{ flex: 1, padding: '12px 0', background: activeTab === 'time' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'time' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
+            >
+              <Clock size={15} /> {t('centuries', lang)}
             </button>
           </div>
 
           <div style={{ padding: '14px 20px', display: 'flex', flexDirection: 'column', gap: '12px', maxHeight: 'calc(100vh - 260px)', overflowY: 'auto' }}>
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
-              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '12px', cursor: 'pointer', fontWeight: 500, fontFamily: 'inherit' }}>Select all</button>
-              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '12px', cursor: 'pointer', fontFamily: 'inherit' }}>Clear all</button>
+              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '12px', cursor: 'pointer', fontWeight: 500, fontFamily: 'inherit' }}>{t('selectAll', lang)}</button>
+              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '12px', cursor: 'pointer', fontFamily: 'inherit' }}>{t('clearAll', lang)}</button>
             </div>
 
             {activeTab === 'status' && FILTER_CATEGORIES.map(category => {
@@ -175,7 +136,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
                     style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
                   />
                   <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: color, display: 'inline-block', flexShrink: 0, boxShadow: `0 0 6px ${color}` }} />
-                  <span>{category === "Approved for faith expression" ? "Faith expression" : category}</span>
+                  <span>{t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
                 </label>
               );
             })}
@@ -190,7 +151,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
                     onChange={() => toggleCentury(century.id)}
                     style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
                   />
-                  {century.label}
+                  {t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}
                 </label>
               );
             })}

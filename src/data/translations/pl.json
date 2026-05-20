@@ -1,0 +1,3248 @@
+{
+  "alexandria": {
+    "title": "Matka Boża do św. Katarzyny",
+    "location": "Aleksandria",
+    "country": "Egipt",
+    "description": "Św. Katarzyna nawróciła się dzięki wizji Matki Bożej z Dzieciątkiem, co doprowadziło ją do odmowy zawarcia małżeństwa z cesarzem."
+  },
+  "ephesus": {
+    "title": "Matka Boża w Efezie",
+    "location": "Efez",
+    "country": "Turcja",
+    "description": "Według legendy Najświętsza Maryja Panna ukazała się apostołom trzy dni po Wniebowzięciu. Ubrana w jasne światło obiecała: „Zostanę z tobą na zawsze”."
+  },
+  "myra": {
+    "title": "Matka Boża do św. Mikołaja",
+    "location": "Myra",
+    "country": "Turcja",
+    "description": "Św. Mikołaj z Bari miał dwa objawienia wzywające go do wypełnienia swojej duchowej misji, drugie miało miejsce podczas Soboru Nicejskiego."
+  },
+  "kuravilangad": {
+    "title": "Matka Boża z Kuravilangad",
+    "location": "Kuravilangad",
+    "country": "Indie",
+    "description": "Matka Boża ukazała się dzieciom pasącym swoją trzodę i poprosiła je o zbudowanie kościoła, w którym wytrysnęło cudowne, wieczne źródło."
+  },
+  "patmos": {
+    "title": "Kobieta obleczona w słońce",
+    "location": "Patmos",
+    "country": "Grecja",
+    "description": "Według legendy św. Jan Ewangelista miał wizję Najświętszej Maryi Panny, zanim skomponował Apokalipsę."
+  },
+  "boulogne": {
+    "title": "Matka Boża z Boulogne",
+    "location": "Boulogne",
+    "country": "Francja",
+    "description": "Statek bez steru, przewożący posąg Marii, wylądował w Boulogne. Maryja ukazała się tłumowi i oznajmiła, że ​​wybrała to miasto na miejsce łaski."
+  },
+  "caesarea": {
+    "title": "Suwerenna Pośredniczka",
+    "location": "Cezarea",
+    "country": "Turcja",
+    "description": "Maryja ukazała się św. Bazylemu, obiecując go chronić przed planem cesarza rzymskiego Juliana Apostaty mającego na celu zniszczenie jego kościoła."
+  },
+  "saydnaya": {
+    "title": "Matka Boża z Saydnaya",
+    "location": "Saydnaya",
+    "country": "Syria",
+    "description": "Cesarz Justynian Miałem wizję Dziewicy Marii, która nakazała mu zbudować klasztor na wysokiej skale, na której stała."
+  },
+  "tagaste": {
+    "title": "Matka Boża do św. Moniki",
+    "location": "Tagasta",
+    "country": "Algieria",
+    "description": "Dziewica ukazała się św. Monice, matce św. Augustyna, pocieszając ją w cierpieniach."
+  },
+  "benevento": {
+    "title": "Matka Boża do św. Barabatusa",
+    "location": "Benevento",
+    "country": "Włochy",
+    "description": "Dziewica objawiła się św. Barabatowi pod murami oblężonego miasta Konstantyna II."
+  },
+  "neocaesarea": {
+    "title": "Matka Boża do św. Grzegorza",
+    "location": "Neocezarea",
+    "country": "Turcja",
+    "description": "Dziewica Maryja i apostoł Jan ukazali się św. Grzegorzowi Cudotwórcy, aby wyjaśnić tajemnice teologiczne dotyczące Trójcy."
+  },
+  "toledo": {
+    "title": "Matka Boża do św. Ildefonsa",
+    "location": "Toledo",
+    "country": "Hiszpania",
+    "description": "Maryja pochwaliła zapał religijny biskupa Ildefonsa i jako symbol swej opieki wręczyła mu cenną szatę."
+  },
+  "lepuy": {
+    "title": "Matka Boża z Le Puy",
+    "location": "Le Puy en Velay",
+    "country": "Francja",
+    "description": "Matka Boża ukazała się niedawno nawróconemu o imieniu Vila, który cierpiał na poważną chorobę. Została całkowicie wyleczona i zbudowała na tym miejscu małą kaplicę."
+  },
+  "snows": {
+    "title": "Matki Bożej Śnieżnej",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Matka Boska w cudowny sposób pozostawiła śnieg w środku gorącego miesiąca sierpnia na wzgórzu Eskwilin, wskazując dokładnie miejsce, w którym chciała wybudować Bazylikę Najświętszej Marii Panny."
+  },
+  "pillar": {
+    "title": "Matka Boża z Kolumny",
+    "location": "Saragossa",
+    "country": "Hiszpania",
+    "description": "Legenda głosi, że apostoł Jakub Większy głosząc Ewangelię, ujrzał Maryję cudownie objawioną w ciele na słupie, wzywającą go do powrotu do Jerozolimy. Uważa się to za pierwsze objawienie maryjne."
+  },
+  "einsiedeln": {
+    "title": "Matka Boża z Einsiedeln",
+    "location": "Einsiedeln",
+    "country": "Szwajcaria",
+    "description": "Św. Konrad był świadkiem wspaniałej procesji Aniołów i samego Chrystusa dokonujących cudownego poświęcenia kaplicy Matki Bożej Pustelniczej."
+  },
+  "mtathos": {
+    "title": "Matka Boża z Góry Athos",
+    "location": "Góra Athos",
+    "country": "Grecja",
+    "description": "Dziewica ukazała się Atanazemu, pocieszając go i napominając, aby nie opuszczał Góry, inspirując go do założenia tam pierwszego klasztoru."
+  },
+  "valenciennes": {
+    "title": "Matka Boża Sznurkowa",
+    "location": "Valenciennes",
+    "country": "Francja",
+    "description": "Maryja ukazała się wraz z wieloma aniołami, którzy rozciągnęli sznur wokół miasta, aby powstrzymać zarazę, prosząc mieszkańców o odprawienie procesji."
+  },
+  "covadonga": {
+    "title": "Matka Boża z Covadonga",
+    "location": "Covadonga",
+    "country": "Hiszpania",
+    "description": "Matka Boża ukazała się Domowi Pelayo, pierwszemu królowi Asturii, pozostawiając po sobie posąg. Następnie chrześcijanie pokonali Maurów wbrew niewiarygodnym przeciwnościom losu."
+  },
+  "nocera": {
+    "title": "Santa Maria di Materdomini",
+    "location": "Nocera Superiore",
+    "country": "Włochy",
+    "description": "Dziewica nakazała wieśniaczce przekonać mieszkańców wioski, aby kopali pod dębem, gdzie znaleźli cenną bizantyjską ikonę."
+  },
+  "chartres": {
+    "title": "Matka Boża do św. Fulberta",
+    "location": "Chartres",
+    "country": "Francja",
+    "description": "Św. Fulbert został uzdrowiony z ciężkiej choroby po objawieniu Najświętszej Maryi Panny. W dowód wdzięczności ufundował słynną katedrę w Chartres."
+  },
+  "canterbury": {
+    "title": "Matka Boża do św. Dustina",
+    "location": "Canterbury",
+    "country": "Anglia",
+    "description": "Podczas gdy św. Dustin modlił się w katedrze, ukazała mu się Dziewica Maryja z niebiańskim chórem."
+  },
+  "montserrat": {
+    "title": "Matka Boża z Montserrat",
+    "location": "Montserrat",
+    "country": "Hiszpania",
+    "description": "Wybitne wczesne objawienie maryjne matce w miejscu, które później stało się słynnym sanktuarium w Montserrat."
+  },
+  "montefortino": {
+    "title": "Matka Boża Wolna",
+    "location": "Montefortino",
+    "country": "Włochy",
+    "description": "Najświętsza Dziewica ukazała się Santinie, niemej pasterce, która w cudowny sposób otrzymała dar mówienia, gdy ujrzała Niebiańską Matkę."
+  },
+  "conche": {
+    "title": "Maddona di Conche",
+    "location": "Koncha",
+    "country": "Włochy",
+    "description": "Św. Konstancjusz ujrzał Panią z Dzieciątkiem na rękach uniesioną na obwodzie budynku cudownie oznaczonym białą gołębicą."
+  },
+  "liege": {
+    "title": "Matka Boża do opata Ruperta",
+    "location": "Liège",
+    "country": "Belgia",
+    "description": "Matka Boża ukazała się borykającemu się z trudnościami uczniowi Rupertowi de Deutz i obiecała mu dar wiedzy, który ma być poświęcony na cześć Boga."
+  },
+  "palermo": {
+    "title": "Matka Boża Lekarska",
+    "location": "Palermo",
+    "country": "Włochy",
+    "description": "Podczas długiego oblężenia, podczas którego wśród jego żołnierzy szerzyły się choroby, Roger I z Normanów widział objawienie Madonny, która zapewniła lekarstwo."
+  },
+  "incoronata": {
+    "title": "Matka Boża Koronowana",
+    "location": "Borgo Incoronata",
+    "country": "Włochy",
+    "description": "Dziewica ukazała się na dębie w lesie Cervaro hrabiemu Irpino i pasterzowi, prosząc ich o budowę kościoła."
+  },
+  "mainz": {
+    "title": "Matki Bożej Dębowej",
+    "location": "Moguncja",
+    "country": "Niemcy",
+    "description": "Św. Bonifacy usłyszał głos Maryi z cudownej ikony wiszącej na dębie, która mówiła: „Pień tego dębu ma pozostać na zawsze moim portretem”."
+  },
+  "walsingham": {
+    "title": "Matki Bożej z Walsingham",
+    "location": "Walsinghama",
+    "country": "Anglia",
+    "description": "Matka Boża ukazała się Richeldisowi de Faverches, przedstawiając jej plany Świętego Domu Świętej Rodziny w Nazarecie i prosząc o zbudowanie jego repliki jako sanktuarium."
+  },
+  "arras": {
+    "title": "Matka Boża Ardentów",
+    "location": "Arras",
+    "country": "Francja",
+    "description": "Maryja ukazała się mieszkańcom na obłokach jako „Królowa Wszechświata”, prosząc ich o pokutę i założenie cudownego źródła."
+  },
+  "gargano_1120": {
+    "title": "Matka Boża do św. Jana z Matery",
+    "location": "Gargano",
+    "country": "Włochy",
+    "description": "Podczas wizyty w jaskini św. Michała Dziewica ukazała się św. Janowi z Matery i pokazała mu, gdzie ma wznieść nowe opactwo."
+  },
+  "schonau": {
+    "title": "Matka Boża do św. Elżbiety",
+    "location": "Schönau",
+    "country": "Niemcy",
+    "description": "Św. Elżbietę z Schönau obdarzały ekstazą i wizjami Chrystusa i Jego Najświętszej Matki podczas Mszy św. i Oficjum."
+  },
+  "oudenburg": {
+    "title": "Matka Boża do św. Arnulfo",
+    "location": "Oudenburg",
+    "country": "Belgia",
+    "description": "Matka Boża objawiła się św. Arnulfo Arnoldowi, ogłaszając jego śmierć i spełniając jego życzenie w wigilię Wniebowzięcia."
+  },
+  "citeaux": {
+    "title": "Matka Boża do św. Alberico",
+    "location": "Cytaty",
+    "country": "Francja",
+    "description": "Maryja zapewniła opata z Citeaux o swojej stałej opiece i zainspirowała biały strój cystersów."
+  },
+  "mariazell": {
+    "title": "Madonna Marii Zell",
+    "location": "Mariazell",
+    "country": "Austrii",
+    "description": "Mnich o imieniu Magnus zabrał mały posąg na pustynię, gdzie gęste drzewa rozstąpiły się, aby zrobić mu miejsce. Stało się jednym z najsłynniejszych sanktuariów w Europie Środkowej."
+  },
+  "liesse": {
+    "title": "Matka Boża z Liesse",
+    "location": "Kair",
+    "country": "Egipt",
+    "description": "Trzej uwięzieni francuscy rycerze otrzymali od Marii w swoim lochu cudowny, promieniujący posąg, który nawrócił córkę sułtana Ismenię."
+  },
+  "melrose": {
+    "title": "Matka Boża z Melrose",
+    "location": "Melroza",
+    "country": "Szkocja",
+    "description": "Cysterski mnich widział Najświętszą Maryję Pannę spacerującą po dormitorium z aniołem, który spisał listę mnichów przeznaczonych do nieba."
+  },
+  "reguengo": {
+    "title": "Matka Boża Paprociowa",
+    "location": "Reguengo do Fetal",
+    "country": "Portugalia",
+    "description": "Pasterka znalazła chleb i cudowne źródło, do którego została skierowana przez Matkę Najświętszą."
+  },
+  "tortosa": {
+    "title": "La Santa Cinta",
+    "location": "Tortosa",
+    "country": "Hiszpania",
+    "description": "Najświętsza Dziewica pozostawiła swoją świętą wstążkę lub szarfę (La Santa Cinta) na ołtarzu głównym katedry podczas nocnego objawienia."
+  },
+  "ransom": {
+    "title": "Matka Boża Okupowa / Miłosierdzie",
+    "location": "Barcelonie",
+    "country": "Hiszpania",
+    "description": "Najświętsza Dziewica ukazała się trzem mężczyznom, którzy założyli zakon Mercedarian, aby wykupić jeńców chrześcijańskich z mauretańskich więzień."
+  },
+  "becket": {
+    "title": "Matka Boża do św. Tomasza Becketa",
+    "location": "Londyn",
+    "country": "Anglia",
+    "description": "Madonna pokazała młodemu Tomaszowi czerwoną sutannę, symbolizującą jego przyszłe przeznaczenie jako arcybiskupa Canterbury i męczennika."
+  },
+  "pochaiv": {
+    "title": "Matka Boża Poczajowska",
+    "location": "Poczajów",
+    "country": "Ukraina",
+    "description": "Najświętsza Maryja Panna ukazała się w całej swojej chwale, pozostawiając ślad w skale i dokonując szeregu cudów, które doprowadziły do ​​założenia Ławry."
+  },
+  "turin": {
+    "title": "Maria Konsolata",
+    "location": "Turyn",
+    "country": "Włochy",
+    "description": "Niewidomy mężczyzna odzyskał wzrok dzięki Matce Najświętszej, która poleciła mu odkopać zaginiony portret Jej ukryty od czasu najazdów Saracenów."
+  },
+  "bingen": {
+    "title": "Matka Boża do św. Hildegardy",
+    "location": "Bingen nad Renem",
+    "country": "Niemcy",
+    "description": "Św. Hildegarda von Bingen doświadczyła głębokich wizji „żywego światła” i Matki Bożej, które doprowadziły do ​​jej niesamowitych pism teologicznych i naukowych."
+  },
+  "carmel": {
+    "title": "Matka Boża z Góry Karmel",
+    "location": "Aylesforda",
+    "country": "Anglia",
+    "description": "W odpowiedzi na wołanie św. Szymona Stocka o pomoc ukazała mu się Matka Boża ze szkaplerzem w dłoni i obietnicą zbawienia od piekła."
+  },
+  "pisa_jordan": {
+    "title": "Matki Bożej do Bł. Jordan z Pizy",
+    "location": "Piza",
+    "country": "Włochy",
+    "description": "Słynny dominikański kaznodzieja bł. Jordana zachwyciła wizja Matki Bożej wchodzącej do refektarza braci i obsługującej ich przy stole."
+  },
+  "roverano": {
+    "title": "Matka Boża z Roverano",
+    "location": "Roverano",
+    "country": "Włochy",
+    "description": "Dziewica Maryja ukazała się dwóm pasterzom, uzdrowiła jedną niemą od urodzenia i pozostawiła cudowną ikonę w stylu bizantyjskim na drzewie oliwnym."
+  },
+  "proceno_agnes": {
+    "title": "Matka Boża do św. Agnieszki",
+    "location": "Proceno",
+    "country": "Włochy",
+    "description": "Św. Agnieszka z Montepulciano otrzymała od Maryi trzy małe kamienie z poleceniem budowy kościoła i klasztoru dominikanów na jej cześć."
+  },
+  "bergamo_castagno": {
+    "title": "Madonna Kasztanowa",
+    "location": "Bergamo",
+    "country": "Włochy",
+    "description": "Matka Boża objawiła się chłopowi w gajach kasztanowych wokół Bergamo."
+  },
+  "avignon_favier": {
+    "title": "Schronienie Grzeszników",
+    "location": "Awinion",
+    "country": "Francja",
+    "description": "Kartuz, mnich Peter Favier, był przerażony śmiercią, dopóki nie pojawiła się Maria, pocieszając go: „Czy nie myślisz, że moje współczucie cię uratuje?”"
+  },
+  "santagata": {
+    "title": "Madonna del Soccorso",
+    "location": "Sant'Agata Feltria",
+    "country": "Włochy",
+    "description": "Młoda matka w gniewie krzyknęła na swoje dziecko; kiedy pojawił się demon, promienna kobieta uratowała chłopca. Sanktuarium zasłynęło dzięki regionalnym pielgrzymkom."
+  },
+  "laurignano": {
+    "title": "Matka Boża z Laurignano",
+    "location": "Laurignano",
+    "country": "Włochy",
+    "description": "Simone Adami, niewidomy żebrak, umył się w pobliskim źródle, po tym jak Maryja powiedziała do niego we śnie: „Obmyj się w źródle i zobacz”. Przywrócono mu wzrok."
+  },
+  "florence_servites": {
+    "title": "Matka Boża do św. Aleksego Falconieri",
+    "location": "Florencja",
+    "country": "Włochy",
+    "description": "Aleksy i jego towarzysze zostali obdarzeni objawieniem Matki Bożej, co zainspirowało ich do założenia Zakonu Serwitów."
+  },
+  "gorodetsk": {
+    "title": "Matka Boża do św. Abrahama",
+    "location": "Gorodeck",
+    "country": "Rosja",
+    "description": "Dziewica ukazała się rosyjskiemu pustelnikowi św. Abrahamowi z Gorodiecka i zażądała, aby wybudował pustelnię na pustyni."
+  },
+  "bridget_sweden": {
+    "title": "Matka Boża do św. Brygidy",
+    "location": "Vadstena",
+    "country": "Szwecja",
+    "description": "Maryja towarzyszyła św. Brygidzie Szwedzkiej przez całe jej życie, przekazując wiele objawień, prowadząc ją do założenia klasztornego Zakonu Brygidynek."
+  },
+  "montserrat_1325": {
+    "title": "Matka Boża z Montserrat",
+    "location": "Montserrat",
+    "country": "Hiszpania",
+    "description": "Matka płacząca nad swoim uwięzionym synem zobaczyła Marię, która obiecała jego uwolnienie; kilka dni później chłopiec wrócił, a jego łańcuchy w cudowny sposób się rozpuściły."
+  },
+  "spoleto_clare": {
+    "title": "Matka Boża do św. Klary",
+    "location": "Spoleto",
+    "country": "Włochy",
+    "description": "Św. Klara z Montefalco na krótko przed śmiercią doświadczyła wspaniałego objawienia Najświętszej Maryi Panny, poprzedzonego obecnością aniołów. Jej serce i ciało pozostają nieskażone."
+  },
+  "constance": {
+    "title": "Matki Bożej do Bł. Henryk Suso",
+    "location": "Konstancja",
+    "country": "Niemcy",
+    "description": "Niemiecki mistyk dominikański miał wiele objawień Maryi i Aniołów, co ukształtowało jego słynną „Małą Księgę Wiecznej Mądrości”."
+  },
+  "avignon_john22": {
+    "title": "Przywilej Sabatu",
+    "location": "Awinion",
+    "country": "Francja",
+    "description": "Królowa Świętych ukazała się papieżowi Janowi XXII, obiecując rychłe wybawienie z czyśćca dla dzieci z Karmelu (przywilej sabatowy)."
+  },
+  "pistoia": {
+    "title": "Matka Boża z Pistoi",
+    "location": "Pistoia",
+    "country": "Włochy",
+    "description": "Maryja ukazała się chorej dziewczynie, prosząc ją, aby poleciła księdzu augustianom, aby rozpowszechniał jej przesłanie w kazaniach wielkopostnych; jej wizerunek został w cudowny sposób odciśnięty na ścianie."
+  },
+  "asti": {
+    "title": "Matka Boża do biskupa Guido",
+    "location": "Asti",
+    "country": "Włochy",
+    "description": "Madonna w cudowny sposób ukazała się biskupowi Guido z Asti, znanemu z nieustannych wysiłków na rzecz zaprowadzenia pokoju wśród feudalnych panów."
+  },
+  "moscow_peter": {
+    "title": "Matka Boża do św. Piotra",
+    "location": "Moskwa",
+    "country": "Rosja",
+    "description": "Najświętsza Dziewica ukazała się zazdrosnemu opatowi, który ukradł św. Piotrowi z Moskwy, co skłoniło go do pokuty i zwrotu ikony Maryi."
+  },
+  "fiesole_corsini": {
+    "title": "Matka Boża do św. Andrzeja Corsiniego",
+    "location": "Fiesole",
+    "country": "Włochy",
+    "description": "W dniu jego święceń Maryja powiedziała: „Wybrałam Cię na moją służebnicę”. Wiele lat później pojawiła się w noc Bożego Narodzenia, aby przepowiedzieć jego niebiańskie odejście w dniu Trzech Króli."
+  },
+  "siena_catherine": {
+    "title": "Matka Boża do św. Katarzyny",
+    "location": "Siena",
+    "country": "Włochy",
+    "description": "Św. Katarzyna ze Sieny doświadczyła głębokich mistycznych wizji, podczas których Najświętsza Dziewica przedstawiła ją Jezusowi w celu jej mistycznego zaślubin."
+  },
+  "tournai": {
+    "title": "Matka Boża z Tournai",
+    "location": "Turnieje",
+    "country": "Belgia",
+    "description": "Podczas oblężenia lud symbolicznie przekazał klucze do miasta Marii. Cudowne objawienia w obozie wroga spowodowały ucieczkę oblegających żołnierzy."
+  },
+  "basella": {
+    "title": "Madonna Oliwna",
+    "location": "Basia",
+    "country": "Włochy",
+    "description": "Królowa Niebios z Dzieciątkiem Jezus na rękach ukazała się 15-letniej Marinie Cassone, co skłoniło biskupa do wzniesienia wielkiego sanktuarium."
+  },
+  "montenero": {
+    "title": "Madonna z Montenero",
+    "location": "Livorno",
+    "country": "Włochy",
+    "description": "Kaleki pasterz znalazł cudowny obraz; po wniesieniu go na górę zgodnie z instrukcją został całkowicie uzdrowiony."
+  },
+  "estremoz": {
+    "title": "Matka Boża do św. Elżbiety",
+    "location": "Estremoz",
+    "country": "Portugalia",
+    "description": "Krótko przed śmiercią owdowiała królowa Portugalii Elżbieta ujrzała w Maryi cudowną „Królową Niebios”, przygotowującą ją do świętego odejścia."
+  },
+  "bra": {
+    "title": "Madonna Kwiatów",
+    "location": "Biustonosz",
+    "country": "Włochy",
+    "description": "Matka Boża objawiła się, aby ocalić oczekującą matkę przed najemnikami; pobliskie krzaki tarniny cudownie zakwitły w środku zimy."
+  },
+  "radonezh": {
+    "title": "Matka Boża do św. Sergiusza",
+    "location": "Radoneż",
+    "country": "Rosja",
+    "description": "Maryja wraz z apostołami Piotrem i Janem objawiła się św. Sergiuszowi z Radoneża, zapewniając go o swojej nieustannej opiece nad jego klasztorem."
+  },
+  "guadalupe_spain": {
+    "title": "Matka Boża z Guadalupe (Hiszpania)",
+    "location": "Cáceres",
+    "country": "Hiszpania",
+    "description": "Pasterz Gil Cordero doświadczył objawienia Marii, która poleciła mu odkopać cudowny posąg podarowany przez papieża Grzegorza Wielkiego 600 lat wcześniej."
+  },
+  "cairo_livini": {
+    "title": "Matki Bożej do Bł. Livini",
+    "location": "Kair",
+    "country": "Egipt",
+    "description": "Maryja ukazała się franciszkańskiemu misjonarzowi Liviniemu: „Dokończ swoją pracę, a zobaczysz Jezusa”. Osiągnął męczeństwo jeszcze w tym samym roku."
+  },
+  "paris_franciscans": {
+    "title": "Matka Boża do franciszkanów",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "W uroczystość Zwiastowania Najświętsza Maryja Panna objawiła się z Dzieciątkiem Jezus podczas Mszy św. przed całą franciszkańską wspólnotą zakonną."
+  },
+  "bergerac": {
+    "title": "Matka Boża do św. Piotra Tomasza",
+    "location": "Bergerac",
+    "country": "Francja",
+    "description": "Maryja ukazała się św. Piotrowi Tomaszowi, zachęcając do jego intensywnej działalności apostolskiej i mediacji pokojowej między kościołami greckimi i rzymskimi."
+  },
+  "dovera": {
+    "title": "Beata Vergine del Pilastrello",
+    "location": "Dovera",
+    "country": "Włochy",
+    "description": "Dziewica Maryja ukazała się młodej głuchoniemej pasterce w Lombardii."
+  },
+  "naples_prisoners": {
+    "title": "Wyzwoliciel Więźniów",
+    "location": "Neapol",
+    "country": "Włochy",
+    "description": "Hrabia Karol z Werony został uwięziony przez Turków; po rozpaczliwej modlitwie do Maryi został cudownie przeniesiony do kościoła karmelitów w Neapolu."
+  },
+  "segovia": {
+    "title": "Matka Boża z Segowii",
+    "location": "Segowia",
+    "country": "Hiszpania",
+    "description": "Maria ukazała się pasterzowi i poleciła biskupowi odkopać zakopaną na tronie drewnianą ikonę Matki Bożej z I wieku n.e."
+  },
+  "pribram": {
+    "title": "Matka Boża z Glatz / Svatá Hora",
+    "location": "Pribrama",
+    "country": "Czechy",
+    "description": "Arcybiskup Ernest Pardubitz widział, jak posąg Marii w cudowny sposób odwrócił głowę z dezaprobatą dla jego światowego życia, co zapoczątkowało jego głębokie nawrócenie."
+  },
+  "santagadea": {
+    "title": "Virgen del Espino",
+    "location": "Santa Gadea del Cid",
+    "country": "Hiszpania",
+    "description": "Dwóch pasterzy odkryło krzak świecący jaśniej niż słońce, a nad nim stała Matka Boża, co odnotował miejski notariusz."
+  },
+  "avila": {
+    "title": "Matka Boża z Avila",
+    "location": "Avila",
+    "country": "Hiszpania",
+    "description": "Relacje historyczne odnotowują objawienie Matki Boskiej poza średniowiecznymi murami Avila na przełomie wieków."
+  },
+  "vedano": {
+    "title": "Matki Bożej Miłosierdzia",
+    "location": "Vedano al Lambro",
+    "country": "Włochy",
+    "description": "Podczas ciężkiej epidemii dżumy ludzie uciekli do lasów, ale dopadła ich plaga. Madonna pojawiła się na drzewie, trzymając pocieszające Dzieciątko, a gorączka szybko ustąpiła."
+  },
+  "valverde": {
+    "title": "Matka Boża z Valverde",
+    "location": "Valverde",
+    "country": "Włochy",
+    "description": "Matka Boża ukazała się chłopowi w lipcu 1399 r."
+  },
+  "garaballa": {
+    "title": "Matka Boża z Garaballi",
+    "location": "Garaballa",
+    "country": "Hiszpania",
+    "description": "W wigilię Wniebowstąpienia młody pasterz dostrzegł jasne światło oświetlające drzewo i odkrył wśród gałęzi piękną figurę Maryi."
+  },
+  "valencia_vincent": {
+    "title": "Matka Boża do św. Wincentego Ferrera",
+    "location": "Walencja",
+    "country": "Hiszpania",
+    "description": "Zdezorientowany duchowymi wątpliwościami młody Wincenty poprosił Maryję o zrozumienie. Wydawało się, że go uspokaja, wzmacniając jego historyczne głoszenie."
+  },
+  "aljubarrota": {
+    "title": "Matka Boża z Aljubarrota",
+    "location": "Aljubarrota",
+    "country": "Portugalia",
+    "description": "Uboga kobieta o imieniu Catarina Anes, pod przewodnictwem Marii, odkryła cudowne źródło lecznicze w górach Valle de Deus."
+  },
+  "dolni_dvoriste": {
+    "title": "Matki Bożej Śnieżnej w Holy Stone",
+    "location": "Dolní Dvořiště",
+    "country": "Czechy",
+    "description": "Maryja ukazała się pasterzom na szczycie pękającej skały. Na Świętym Kamieniu Klaryski zbudowały kościół Najświętszej Marii Panny Śnieżnej. Po dziesięcioleciach komunistycznego zniszczenia międzynarodowi wierzący przywrócili sanktuarium."
+  },
+  "almonacid": {
+    "title": "Matka Boża Almonacid",
+    "location": "Almonacid z Toledo",
+    "country": "Hiszpania",
+    "description": "Pojawiła się Dziewica prosząc o zbudowanie sanktuarium w Almonacid de Toledo."
+  },
+  "mariastein": {
+    "title": "Matka Boża Mariastein",
+    "location": "Mariasteina",
+    "country": "Szwajcaria",
+    "description": "Małe dziecko, które spadło ze stromego klifu, zostało cudownie schwytane i uratowane przez wspaniałą panią, co doprowadziło do budowy słynnego opactwa."
+  },
+  "candelaria": {
+    "title": "Virgen de la Candelaria",
+    "location": "Teneryfa",
+    "country": "Hiszpania",
+    "description": "Dwóch rdzennych pasterzy Guanczów odkryło cudowny drewniany wizerunek Marii niosącej dziecko i złotego ptaka, co doprowadziło do nawrócenia wyspy."
+  },
+  "villarrasa": {
+    "title": "Virgen de los Remedios",
+    "location": "Villarrasa",
+    "country": "Hiszpania",
+    "description": "18 grudnia 1503 roku objawiła się Dziewica Uzdrawiania, ustanawiając w Huelvie ważne regionalne święto i sanktuarium."
+  },
+  "pannesi": {
+    "title": "Matka Boża Leśna",
+    "location": "Pannesi di Lumarzo",
+    "country": "Włochy",
+    "description": "Najświętsza Dziewica objawiła się w lasach Lumarzo, wzbudzając pobożność wśród miejscowych mieszkańców."
+  },
+  "trino": {
+    "title": "Matki Bożej do Bł. Maddalena",
+    "location": "Trino",
+    "country": "Włochy",
+    "description": "Błogosławiona Maddalena Panattieri widziała Dziewicę w 1503 roku, na krótko przed Jej świętym odejściem. Później została beatyfikowana przez papieża Leona XII."
+  },
+  "werthenstein": {
+    "title": "Królowa Niebios",
+    "location": "Werthenstein",
+    "country": "Szwajcaria",
+    "description": "Pobożny rolnik i pustelnik widział w Maryi Królową Niebios otoczoną licznymi aniołami. Cuda zweryfikowały objawienie maryjne, co doprowadziło do poświęcenia kaplicy."
+  },
+  "aviano": {
+    "title": "Madonna z Góry",
+    "location": "Aviano",
+    "country": "Włochy",
+    "description": "8 września 1510 roku Matka Boża ukazała się Antoniowi Zamparze na zboczu góry."
+  },
+  "virgendelcamino": {
+    "title": "Dziewica Camino",
+    "location": "Leon",
+    "country": "Hiszpania",
+    "description": "2 lipca 1505 roku Maryja ukazała się promienna światłem pasterzowi Alvarowi Simónowi Fernándezowi na pielgrzymiej drodze Camino de Santiago. Wystrzeliła z jego procy kamień, który w cudowny sposób wyrósł, wyznaczając miejsce sanktuarium."
+  },
+  "tirano": {
+    "title": "Madonna z Tirano",
+    "location": "Tirano",
+    "country": "Włochy",
+    "description": "Młody człowiek modlił się żarliwie za swojego chorego brata. Maryja pojawiła się 29 września, obiecując jego uzdrowienie. W dowód wdzięczności wzniósł słynne Sanktuarium Madonny di Tirano."
+  },
+  "villefranche": {
+    "title": "Notre-Dame de Treize-Pierres",
+    "location": "Villefranche-de-Rouergue",
+    "country": "Francja",
+    "description": "19 marca 1509 roku objawiła się Matka Boża Trzynastu Kamieni, ustanawiając trwałe sanktuarium w Aveyron."
+  },
+  "sanpolo": {
+    "title": "Matki Bożej Orzechowej",
+    "location": "San Polo",
+    "country": "Włochy",
+    "description": "9 czerwca 1505 roku Matka Boża ukazała się kobiecie o imieniu Giovanna w pobliżu drzewa orzechowego."
+  },
+  "chioggia": {
+    "title": "Błogosławiona Dziewica Małego Statku",
+    "location": "Chiogia",
+    "country": "Włochy",
+    "description": "Matka Boża objawiła się Carlo Baldissera Zanonowi na brzegach Chioggi, stając się opiekunką lokalnych marynarzy i statków rybackich."
+  },
+  "bergamo_chestnuts": {
+    "title": "Madonna Kasztanowa",
+    "location": "Bergamo",
+    "country": "Włochy",
+    "description": "28 kwietnia 1510 roku Maryja ukazała się ojcu i synowi zbierając liście. Aby potwierdzić jej prawdziwą obecność i pragnienie sanktuarium, duży kasztanowiec nagle wydał poza sezonem w pełni dojrzałe owoce."
+  },
+  "sansosti": {
+    "title": "Matka Boża z Pettoruto",
+    "location": "San Sosti",
+    "country": "Włochy",
+    "description": "Wiosną 1500 roku głuchoniemy pasterz imieniem Felice Olcese zobaczył Dziewicę, która poprosiła go, aby polecił księdzu zbudować kościół na jej cześć."
+  },
+  "castelleone": {
+    "title": "Święta Maryjo Miłosierna",
+    "location": "Castelleone",
+    "country": "Włochy",
+    "description": "W maju 1511 roku Maria ukazała się zbieraczce winogron Domenice Zanengi i nalegała na budowę sanktuarium, które później powierzono braciom augustianom."
+  },
+  "treviso_jerome": {
+    "title": "Wyzwolenie więźniów",
+    "location": "Trewizo",
+    "country": "Włochy",
+    "description": "Uwięziony w lochach twierdzy św. Hieronim Emiliani modlił się do Maryi. Pojawiła się w świetle, w cudowny sposób uwolniła go z ciężkich żelaznych łańcuchów i bezpiecznie przeprowadziła przez linie bojowe wroga do swojej świątyni w Treviso."
+  },
+  "motta_livenza": {
+    "title": "Madonna dei Miracoli",
+    "location": "Motta di Livenza",
+    "country": "Włochy",
+    "description": "9 marca 1510 roku Maryja ukazała się siedząca spokojnie na zielonej pszenicy staremu rolnikowi Giovanniemu Ciganie, nakazując post i pokutę w zamian za odpuszczenie grzechów."
+  },
+  "cotignac": {
+    "title": "Matki Bożej Łaskawej",
+    "location": "Cotignac",
+    "country": "Francja",
+    "description": "10 i 11 sierpnia Maryja ukazała się z Dzieciątkiem Jezus, św. Michałem i św. Bernardem drwalowi Jeanowi de la Baume. Sanktuarium zyskało później sławę dzięki cudownym narodzinom króla Ludwika XIV."
+  },
+  "quintanar": {
+    "title": "Franciszka La Brava",
+    "location": "Quintanar de la Orden",
+    "country": "Hiszpania",
+    "description": "Francisca la Brava relacjonowała, że ​​widziała Dziewicę otoczoną aniołami i otrzymującą świecę. Następnie została zbadana i skazana przez Inkwizycję."
+  },
+  "garaison": {
+    "title": "Notre Dame w Garaison",
+    "location": "Garaison",
+    "country": "Francja",
+    "description": "Dziewica odwiedziła trzykrotnie młodą pasterkę Angleze Sagazan w pobliżu źródła Cier i prosiła: „Chcę, żeby tu wybudowano kaplicę”."
+  },
+  "oneta": {
+    "title": "Madonna Jesionowa",
+    "location": "Oneta",
+    "country": "Włochy",
+    "description": "2 lipca 1512 roku Matka Boża ukazała się Petruccii Carobbio w pobliżu jesionu."
+  },
+  "albendorf": {
+    "title": "Matki Bożej Albendorf / Wambierzyce",
+    "location": "Wambierzyce",
+    "country": "Polska",
+    "description": "Niewidomy mężczyzna modlił się przed drewnianą statuą wyrzeźbioną przez rycerza po objawieniu i cudownie odzyskał wzrok. Sanktuarium rozrosło się we wspaniałą bazylikę zwaną „Śląską Jerozolimą”."
+  },
+  "strugnano": {
+    "title": "Madonna Wizji",
+    "location": "Strunjan",
+    "country": "Słowenia",
+    "description": "14 sierpnia 1512 roku Maryja ukazała się stróżom Piero Zagabrii i Giovanniemu Grandiemu u bram Strunjan."
+  },
+  "camogli": {
+    "title": "Madonna z Góry",
+    "location": "Camogli",
+    "country": "Włochy",
+    "description": "2 lipca 1518 roku Maryja ukazała się Anieli Schiaffino, prosząc o kościół i klasztor na górze z widokiem na Morze Liguryjskie."
+  },
+  "angels_lucerne": {
+    "title": "Matki Bożej Anielskiej",
+    "location": "Lucerna",
+    "country": "Szwajcaria",
+    "description": "Radny miejski Maurice von Mettenwyl ujrzał Matkę Boską otoczoną niebiańskim światłem i obiecał odbudować kaplicę ku jej czci."
+  },
+  "adro": {
+    "title": "Orędownik Grzeszników",
+    "location": "Adro",
+    "country": "Włochy",
+    "description": "Maryja ukazała się Battiscie Comino Bajoniemu, głuchoniememu pasterzowi, wygłaszając mu przemówienie i przesłanie wzywające region do odwrócenia się od występków. Na znak dała mu kamień, który w cudowny sposób zmienił kolor."
+  },
+  "loyola": {
+    "title": "Matka Boża do św. Ignacego",
+    "location": "Manresa / Loyola",
+    "country": "Hiszpania",
+    "description": "Podczas rekonwalescencji po ranach bojowych w Loyoli, św. Ignacy doświadczył głębokiej nocnej wizji Dziewicy Marii z Dzieciątkiem, co zapoczątkowało jego całkowite nawrócenie i założenie jezuitów."
+  },
+  "rome_cajetan": {
+    "title": "Matka Boża do św. Kajetana",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "W noc Bożego Narodzenia w Santa Maria Maggiore św. Kajetan z Thiene doświadczył wzniosłej wizji, w której Maryja złożyła Dzieciątko Jezus bezpośrednio w Jego ramiona."
+  },
+  "liveri": {
+    "title": "Santa Maria w Parete",
+    "location": "Liveri di Nola",
+    "country": "Włochy",
+    "description": "12 kwietnia 1514 roku Maria ukazała się młodej wieśniaczce Autilii Scali, polecając jej, aby poprowadziła hrabiego Orsiniego do odkopania pod krzakiem zakopanej w XIII wieku bizantyjskiej ikony i dzwonu."
+  },
+  "tarbes": {
+    "title": "Matka Boża Uzdrawiającej Miłości",
+    "location": "Tarbes",
+    "country": "Francja",
+    "description": "Maryja ukazała się młodej pasterce prosząc o kościół. Kiedy dziewczyna poprosiła Marię, aby strzegła jej trzody podczas przyprowadzania ojca, Maria w cudowny sposób czuwała nad owcami."
+  },
+  "aberdeen": {
+    "title": "Matka Boża do biskupa Dumbara",
+    "location": "Aberdeen",
+    "country": "Szkocja",
+    "description": "Modląc się przed swoją ikoną, Maryja ukazała się biskupowi Gavanowi Dumbarowi, przepowiadając, że pomimo powszechnych zawirowań religijnych jego wierność zostanie zachowana."
+  },
+  "cori": {
+    "title": "Matka Boża Zbawienia / Miotła",
+    "location": "Cori",
+    "country": "Włochy",
+    "description": "Podczas gwałtownej burzy Mary uratowała trzyletnią Olivę Lannese. Miasto poszło w procesji na górę i odkryło starożytny fresk przedstawiający Dziewicę na jej tronie."
+  },
+  "sens": {
+    "title": "Matka Boża Sensu",
+    "location": "Sens",
+    "country": "Francja",
+    "description": "Podczas niszczycielskiej epidemii dżumy Maryja objawiła się w intensywnym niebieskim świetle podczas Mszy św. Wkrótce potem epidemia w cudowny sposób ustała."
+  },
+  "farigliano": {
+    "title": "Vergine delle Grazie",
+    "location": "Farigliano",
+    "country": "Włochy",
+    "description": "Objawienie Matki Bożej Łaskawej 20 maja 1537 roku w Piemoncie."
+  },
+  "naples_constantinople": {
+    "title": "Święta Maria Konstantynopolska",
+    "location": "Neapol",
+    "country": "Włochy",
+    "description": "Matka Boża ukazała się starszej kobiecie w Neapolu w czerwcu 1529 r."
+  },
+  "montestella": {
+    "title": "Madonna Gwiazdy",
+    "location": "Monte Stella",
+    "country": "Włochy",
+    "description": "31 maja 1536 roku Maryja ukazała się Antoniowi Antoniemu na Monte Stella."
+  },
+  "svetagora": {
+    "title": "Matki Bożej Świętogórskiej",
+    "location": "Święta Góra",
+    "country": "Słowenia",
+    "description": "Maryja ukazała się na Górze Skalnicy pasterce Urszuli Ferligoj: „Powiedz ludziom, żeby tu zbudowali świątynię i wyproś moją łaskę”. Mimo że była więziona przez sceptyczne władze, Ursula za każdym razem cudem uciekała."
+  },
+  "altkirch": {
+    "title": "Matka Boża z Altkirch",
+    "location": "Altkirch",
+    "country": "Francja",
+    "description": "Matka Boska pojawiła się nad bastionem miasta, aby chronić mieszkańców podczas regionalnych konfliktów religijnych."
+  },
+  "guadalupe_mexico": {
+    "title": "Matka Boża z Guadalupe",
+    "location": "Meksyk",
+    "country": "Meksyk",
+    "description": "Maryja ukazała się na wzgórzu Tepeyac św. Juanowi Diego, pozostawiając swój cudowny, nie blaknący obraz odciśnięty bezpośrednio na jego płaszczu tilma. Jest to najczęściej odwiedzane sanktuarium maryjne na świecie."
+  },
+  "paitone": {
+    "title": "Madonna z Paitone",
+    "location": "Paitone",
+    "country": "Włochy",
+    "description": "W sierpniu 1532 roku Maria ukazała się głuchoniememu chłopcu Filippo Viottiemu, cudownie go uzdrawiając i prosząc o schronienie w górach."
+  },
+  "cuzco": {
+    "title": "Matka Boża Pochodzenia",
+    "location": "Cuzco",
+    "country": "Peru",
+    "description": "23 maja 1536 roku Maryja ukazała się nad dachem chrześcijanom oblężonym przez podpalenia. Płomienie w cudowny sposób zgasły, ratując społeczność."
+  },
+  "peru_rosary": {
+    "title": "Matki Bożej Różańcowej",
+    "location": "Lima",
+    "country": "Peru",
+    "description": "Wybitne wczesne objawienia kolonialne i pobożność maryjna powstały w Limie."
+  },
+  "bovegno": {
+    "title": "Matki Bożej Miłosierdzia",
+    "location": "Bovegno",
+    "country": "Włochy",
+    "description": "Maryja ukazała się 22-letniej sierocie Marii Amadini, wzywając do postu i pokuty, aby zapobiec zbliżającym się nieszczęściom. Potwierdziła swoją obecność uzdrowieniem brata Marii."
+  },
+  "savona": {
+    "title": "Matka Miłosierdzia",
+    "location": "Savona",
+    "country": "Włochy",
+    "description": "18 marca 1536 roku Maryja ukazała się w oślepiającym świetle rolnikowi Antonio Botcie w strumieniu, wzywając do modlitwy, miłosierdzia i nawrócenia. Jest oficjalną patronką Savony."
+  },
+  "combarbio": {
+    "title": "Madonna z Góry Karmel",
+    "location": "Kombarbio",
+    "country": "Włochy",
+    "description": "Maryja objawiła się 12-letniej pasterce, co doprowadziło do wzniesienia przez architektów wielkoksiążęcych pięknego renesansowego sanktuarium karmelitów."
+  },
+  "ipswich": {
+    "title": "Matki Bożej Łaskawej w Ipswich",
+    "location": "Ipswich",
+    "country": "Anglia",
+    "description": "Anne Wentworth, cierpiąca na straszliwe ataki demonów, została w cudowny i natychmiastowy sposób przywrócona do życia przed obrazem Matki Bożej Łaskawej, co zostało udokumentowane przez św. Tomasza More’a."
+  },
+  "gubel": {
+    "title": "Matka Boża z Gubel",
+    "location": "Gubel",
+    "country": "Szwajcaria",
+    "description": "11 i 23 października Maryja ukazała się żołnierzom katolickim na górze Gubel, inspirując ich obronę i prowadząc do cudownego zwycięstwa pomimo ogromnej przewagi liczebnej."
+  },
+  "leuven_wischaven": {
+    "title": "Matki Bożej do ks. Wischaven",
+    "location": "Leuven",
+    "country": "Belgia",
+    "description": "Maryja ukazała się Korneliuszowi Wischavenowi, prowadząc go, aby dołączył do św. Piotra Fabera i św. Ignacego Loyoli jako pierwszy flamandzki jezuita."
+  },
+  "gorizia": {
+    "title": "Matka Boża z Gorizii",
+    "location": "Gorizia",
+    "country": "Włochy",
+    "description": "Maryja ukazała się pasterce wzywając lud do modlitwy i pojednania."
+  },
+  "civitella": {
+    "title": "Matka Boża do Pasquino",
+    "location": "Civitella",
+    "country": "Włochy",
+    "description": "Objawienie 10-letniemu Pasquino da Vignale w 1556 r."
+  },
+  "cantu": {
+    "title": "Matka Boża z Andacollo",
+    "location": "Cantu",
+    "country": "Włochy",
+    "description": "Objawienie maryjne zapisane w Cantu w maju 1543 r."
+  },
+  "poggio_bologna": {
+    "title": "Beata Vergine di Poggio",
+    "location": "Zamek San Pietro Terme",
+    "country": "Włochy",
+    "description": "22 lutego 1550 roku Maryja ukazała się niewidomej żebraczce Antonii Bedini, obiecując, że jej szafka zapewni jej chleb do końca życia."
+  },
+  "lisbon_barradda": {
+    "title": "Matka Boża do Sebastiana Barraddy",
+    "location": "Lizbona",
+    "country": "Portugalia",
+    "description": "Maryja ukazała się Sebastianowi Barraddzie, nawołując go do wstąpienia do zakonu jezuitów."
+  },
+  "montegridolfo": {
+    "title": "Beata Vergine delle Grazie",
+    "location": "Montegridolfo",
+    "country": "Włochy",
+    "description": "25 czerwca 1548 roku na wzgórzach Rimini objawiła się Matka Boża Łaskawa."
+  },
+  "weissenstein": {
+    "title": "Madonna z Pietralby",
+    "location": "Monte San Pietro",
+    "country": "Włochy",
+    "description": "Maryja ukazała się Leonhardowi Weissensteinerowi w lasach Dolomitów, lecząc jego chorobę i prowadząc go do odkrycia cudownego posągu Piety. Sanktuarium odwiedzali papieże Jan Paweł I i św. Jan Paweł II."
+  },
+  "vailankanni_1580": {
+    "title": "Matka Boża Dobrego Zdrowia",
+    "location": "Vailankanni",
+    "country": "Indie",
+    "description": "Maryja ukazała się pasterzowi oferującemu mleko dla Dzieciątka Jezus, a później w cudowny sposób uzdrowiła kalekiego chłopca sprzedającego maślankę. Bardzo czczone przez miliony jako „Lourdes Wschodu”."
+  },
+  "corbetta": {
+    "title": "Najświętsza Dziewica Cudów",
+    "location": "Corbeta",
+    "country": "Włochy",
+    "description": "17 kwietnia 1555 roku Dzieciątko Jezus na fresku w cudowny sposób zstąpiło na dół, aby bawić się z trójką dzieci, zanim Maryja Go zawołała."
+  },
+  "andacollo": {
+    "title": "Matka Boża z Andacollo",
+    "location": "Andacollo",
+    "country": "Chile",
+    "description": "Rdzenni górnicy odkryli cudowny posąg Marii w górach Chile, ustanawiając jedno z najbardziej szanowanych sanktuariów narodowych w Ameryce Południowej."
+  },
+  "ocotlan_1541": {
+    "title": "Matka Boża z Ocotlán",
+    "location": "Tlaxcala",
+    "country": "Meksyk",
+    "description": "Matka Boża ukazała się Juanowi Diego Bernardino podczas epidemii, prowadząc go do uzdrawiającego źródła wody i odsłaniając cudowną drewnianą figurę wewnątrz płonącej sosny."
+  },
+  "azay": {
+    "title": "Matka Boża Klęcząca",
+    "location": "Azay-sur-Thouet",
+    "country": "Francja",
+    "description": "8 września 1550 roku Maryja ukazała się wdowie Louise Estivalle, gdy klęczała na drodze, dając jej cudowną wizję przez wiele kilometrów Najświętszej Ofiary Mszy św."
+  },
+  "granada_john": {
+    "title": "Matka Boża do św. Jana Bożego",
+    "location": "Grenada",
+    "country": "Hiszpania",
+    "description": "Maryja pojawiła się jako prosta wieśniaczka, aby pomóc i uzdrowić św. Jana Bożego po poważnym upadku z konia, rozpoczynając jego trwający całe życie apostolat szpitalny."
+  },
+  "ameno": {
+    "title": "Madonna della Bocciola",
+    "location": "Ameno",
+    "country": "Włochy",
+    "description": "28 maja 1543 roku Maryja ukazała się w kwitnącym krzaku tarniny głuchoniemej pasterce Giulii Manfredi, wygłaszając przemówienie i prosząc o przestrzeganie odpoczynku szabatowego."
+  },
+  "gerosa": {
+    "title": "Madonna della Foppa",
+    "location": "Gerosa",
+    "country": "Włochy",
+    "description": "2 lipca 1558 roku Maryja ukazała się dwóm pasterzom umierającym z pragnienia na pastwiskach, otwierając pod ich stopami cudowne źródło czystej wody."
+  },
+  "cordoba_font": {
+    "title": "Matka Boża Czcionki",
+    "location": "Kordoba",
+    "country": "Hiszpania",
+    "description": "Maryja ukazała się przygnębionemu robotnikowi, wskazując mu ukryty drewniany posąg w pobliżu leczniczego źródła."
+  },
+  "arcola": {
+    "title": "Królowa Aniołów",
+    "location": "Arcola",
+    "country": "Włochy",
+    "description": "21 maja 1556 roku pięć sióstr Fiamberti ujrzało Maryję w otoczeniu aniołów podczas odmawiania różańca w gajach oliwnych."
+  },
+  "petrella": {
+    "title": "Matka Boża z Petrelli",
+    "location": "Petrella",
+    "country": "Włochy",
+    "description": "31 maja 1562 roku Maryja ukazała się kobiecie o imieniu Persiana."
+  },
+  "moncrivello": {
+    "title": "Vergine del Trompone",
+    "location": "Moncrivello",
+    "country": "Włochy",
+    "description": "26 czerwca 1562 roku Maryja ukazała się Domenice di Miglianotto i uzdrowiła jej chorobę."
+  },
+  "amendolara": {
+    "title": "Matka Boża z Amendolary",
+    "location": "Amendolara",
+    "country": "Włochy",
+    "description": "Na krótko przed swoim świętym odejściem fr. Giuliano di Camerino doświadczył chwalebnej wizji Królowej Niebios."
+  },
+  "arenas_alcantara": {
+    "title": "Matka Boża do św. Piotra",
+    "location": "Arenas de San Pedro",
+    "country": "Hiszpania",
+    "description": "Maryja ukazała się św. Piotrowi z Alkantary, wielkiemu franciszkańskiemu ascecie i reformatorowi, przepowiadając jego niebiańskie odejście."
+  },
+  "brescia_ledesma": {
+    "title": "Matki Bożej do ks. Ledesma",
+    "location": "Brescia",
+    "country": "Włochy",
+    "description": "Maryja ukazała się wraz ze św. Marią Magdaleną i św. Katarzyną jezuickiemu teologowi Giacomo Ledesmie, obiecując jej ochronę podczas prób duchowych."
+  },
+  "torrehermosa": {
+    "title": "Matka Boża do św. Paschalnego",
+    "location": "Torrehermosa",
+    "country": "Hiszpania",
+    "description": "Maryja wraz ze św. Franciszkiem i św. Klarą ukazała się św. Paschalowi Baylónowi, gdy ten pasał owce, i namawiała go, aby wstąpił do Zakonu Franciszkańskiego."
+  },
+  "forli_jerome": {
+    "title": "Matki Bożej do ks. Hieronim",
+    "location": "Forlì",
+    "country": "Włochy",
+    "description": "Maryja ukazała się w promieniującym świetle kapucyńskiemu bratu Hieronimowi, przepowiadając jego dokładne przejście do nieba w czasie bicia dzwonów Anioł Pański."
+  },
+  "giulianova": {
+    "title": "Madonna Przepychu",
+    "location": "Giulianova",
+    "country": "Włochy",
+    "description": "22 kwietnia 1557 roku Maryja ukazała się w oślepiającym świetle rolnikowi Bertolino w pobliżu drzewa oliwnego. Kiedy sceptycy go pobili, Maria sparaliżowała ich ramiona, aż pokutowali i sprawiła, że ​​wypłynęło cudowne źródło."
+  },
+  "monomotapa": {
+    "title": "Matka Boża w Rodezji",
+    "location": "Monomotapa",
+    "country": "Zimbabwe",
+    "description": "Kiedy misjonarz jezuicki ks. Gonçalo da Silveira podarował cesarzowi Monomotapy ikonę Marii, a nocne niebo zostało cudownie oświetlone przez Królową Niebios przez pięć kolejnych nocy."
+  },
+  "rapallo": {
+    "title": "Matka Boża z Montallegro",
+    "location": "Rapallo",
+    "country": "Włochy",
+    "description": "2 lipca 1557 roku Maryja ukazała się wieśniakowi Giovanni Chichizola, pozostawiając cudowną bizantyjską ikonę Jej Zaśnięcia, która w tajemniczy sposób powracała w górę przy każdym poruszeniu."
+  },
+  "avila_teresa": {
+    "title": "Matka Boża do św. Teresy",
+    "location": "Ávila",
+    "country": "Hiszpania",
+    "description": "Św. Teresa z Ávila, wielka Doktor Kościoła i reformatorka karmelitów, doświadczyła wzniosłych wizji mistycznych, podczas których Maryja przyodziała ją w szatę nieskazitelnej czystości."
+  },
+  "vienna_stanislaus": {
+    "title": "Matka Boża do św. Stanisława",
+    "location": "Wiedeń",
+    "country": "Austrii",
+    "description": "Kiedy młody św. Stanisław Kostka leżał ciężko chory w Wiedniu, Maryja ukazała się z aniołami i złożyła mu w ramionach Dzieciątko Jezus, cudownie przywracając mu zdrowie."
+  },
+  "casalbordino": {
+    "title": "Madonna dei Miracoli",
+    "location": "Casalbordino",
+    "country": "Włochy",
+    "description": "W maju 1576 roku Maryja ukazała się chłopowi Alessandro Muzio po silnym gradobiciu, chroniąc jego pola przed zniszczeniem."
+  },
+  "ancona_novice": {
+    "title": "Matka Boża z Ankony",
+    "location": "Ankona",
+    "country": "Włochy",
+    "description": "Nowicjusz kapucyński, który znosił demoniczne pokusy, doświadczył objawienia Maryi, które przywróciło jego duszy głęboki pokój."
+  },
+  "faenza_alexander": {
+    "title": "Matka Boża z Faenzy",
+    "location": "Faenza",
+    "country": "Włochy",
+    "description": "Kapucyn Aleksander z Butrium modlił się żarliwie w czasie prób duchowych. Maryja ukazała się i ukoronowała go wieńcem zwycięstwa."
+  },
+  "languedoc_gutierrez": {
+    "title": "Matki Bożej do ks. Gutierreza",
+    "location": "Langwedocja",
+    "country": "Francja",
+    "description": "Jezuita ks. Martin Gutierrez widział Maryję w śnieżnobiałym płaszczu osłaniającą Towarzystwo Jezusowe. Podczas wizyty w wiejskiej kaplicy w Langwedocji Maria przepowiedziała jego zbliżającą się męczeństwo."
+  },
+  "lezajsk_1578": {
+    "title": "Matka Boża Leżajska",
+    "location": "Leżajsk",
+    "country": "Polska",
+    "description": "Maryja ukazała się w olśniewającym świetle pokornemu drwalowi Tomaszowi Michałkowi w lesie, prosząc o kościół, w którym wierni mogliby otrzymać łaski Boże. Po oficjalnych dochodzeniach kanonicznych i udokumentowanych cudownych uzdrowieniach Watykan zatwierdził wspaniałą bazylikę pielgrzymkową."
+  },
+  "gubbio_pacifico": {
+    "title": "Matki Bożej do ks. Pacyfik",
+    "location": "Gubbio",
+    "country": "Włochy",
+    "description": "W święto Niepokalanego Poczęcia kapucyn, fra Pacifico, zobaczył Maryję w chórze, odkrywającą głęboką tajemnicę Jej Niepokalanego Poczęcia wśród woni róż."
+  },
+  "pistoia_jerome": {
+    "title": "Matka Boża z Pistoi",
+    "location": "Pistoia",
+    "country": "Włochy",
+    "description": "Maryja wielokrotnie ukazywała się mnichowi kapucyńskiemu Hieronimowi, raz przepowiadając jego śmierć, a innym razem w cudowny sposób prowadząc go, gdy zgubił się nocą na wiejskich drogach."
+  },
+  "virgendelapaz": {
+    "title": "Virgen de la Paz",
+    "location": "Trujillo",
+    "country": "Wenezuela",
+    "description": "Tajemnicza promienna dziewczyna spacerowała po górskich targach, mówiąc, że chodzi „z Bogiem, słońcem i gwiazdami”, po czym zniknęła w błyszczącej skalnej jaskini. Dziś święte sanktuarium wyznacza kolosalny pomnik o wysokości 54 stóp."
+  },
+  "sancho_abarca": {
+    "title": "Nuestra Señora de Sancho Abarca",
+    "location": "Smak",
+    "country": "Hiszpania",
+    "description": "7 kwietnia 1569 roku w Aragonii miało miejsce cudowne objawienie i odkrycie Matki Bożej z Sancho Abarca."
+  },
+  "monsummano": {
+    "title": "Najświętsza Maryja z Fontenuova",
+    "location": "Monsummano Terme",
+    "country": "Włochy",
+    "description": "9 czerwca 1573 roku pasterka Jacopina Mariotti modliła się przed przydrożną ikoną i doświadczyła objawienia Maryi. Podczas Mszy św. w 1602 r. z wyschniętej ziemi wytrysnęło cudowne źródło lecznicze."
+  },
+  "seville_rodriguez": {
+    "title": "Matka Boża do św. Alfonsa",
+    "location": "Sewilla",
+    "country": "Hiszpania",
+    "description": "Św. Alfons Rodriguez, jezuicki mistrz nowicjatu w Sewilli, rozmawiał z Maryją na modlitwie z czułą intymnością dziecka z matką."
+  },
+  "norcia_giacomo": {
+    "title": "Matka Boża z Nursji",
+    "location": "Norcia",
+    "country": "Włochy",
+    "description": "Kapucyn, mnich Giacomo, doświadczył radosnego objawienia Maryi na łożu śmierci: „Triumfująca Królowa Niebios jest tutaj!” Ona przyjdzie po mnie."
+  },
+  "mariagyud": {
+    "title": "Matka Boża Máriagyűd",
+    "location": "Máriagyűd",
+    "country": "Węgry",
+    "description": "Kiedy kalwini zajęli zabytkową kapliczkę, w oknie kościoła ukazała się Maryja Tomaszowi Mathiniczowi, a później na portalu. Poinformowany o cudzie cesarz Leopold I zwrócił sanktuarium katolikom."
+  },
+  "caltagirone": {
+    "title": "Święta Maria od Mostu",
+    "location": "Caltagirone",
+    "country": "Włochy",
+    "description": "15 sierpnia 1572 roku Maryja ukazała się na moście głuchoniemej dziewczynie, w cudowny sposób przywracając jej słuch i głos."
+  },
+  "casalpusterlengo": {
+    "title": "Matki Bożej Kapucynów",
+    "location": "Casalpusterlengo",
+    "country": "Włochy",
+    "description": "W maju 1574 r. miało miejsce masowe objawienie Najświętszej Maryi Panny przed 4000 zgromadzonych wiernych."
+  },
+  "trivento": {
+    "title": "Matka Boża z Trivento",
+    "location": "Trivento",
+    "country": "Włochy",
+    "description": "Dwóch braci kapucynów, porwanych przez gwałtowną burzę, zostało schronionych w tajemniczej chatce przez matkę o nieopisanej urodzie. Kiedy odeszli i obejrzeli się, dom zniknął."
+  },
+  "leuven_calstro": {
+    "title": "Matki Bożej do ks. Calstro",
+    "location": "Leuven",
+    "country": "Belgia",
+    "description": "Dominikanin ks. Henryk Calstro był obdarzony licznymi spotkaniami z Maryją, która go pocieszała w chwilach prób i umacniała w czasie świętego odejścia."
+  },
+  "conflenti": {
+    "title": "Madonna della Quercia",
+    "location": "Konflenti",
+    "country": "Włochy",
+    "description": "7 czerwca Maryja pojawiła się na szczycie wielkiego dębu, aby pasterzem Lorenzo Folino, prosząc o sanktuarium w Visorze. Potwierdziła swoją obecność cudownym uzdrowieniem niewidomego i kulawego od urodzenia chłopca."
+  },
+  "poggio_roio": {
+    "title": "Święta Maryjo od Krzyża",
+    "location": "Poggio di Roio",
+    "country": "Włochy",
+    "description": "W grudniu 1578 roku Maryja ukazała się jako pasterz Felice Calcagno, prowadząc go do odkrycia jej cudownej drewnianej ikony w śniegu."
+  },
+  "angola": {
+    "title": "Matka Boża w Angoli",
+    "location": "Luanda",
+    "country": "Angola",
+    "description": "Podczas bitwy z przeważającymi siłami Maryja pojawiła się z płonącym mieczem, aby bronić wojsk chrześcijańskich."
+  },
+  "ziteil": {
+    "title": "Matka Boża z Ziteil",
+    "location": "Ziteil",
+    "country": "Szwajcaria",
+    "description": "16 lipca Maryja ukazała się na wysokogórskich pastwiskach 18-letniej pasterce Dietegen Giategen, wzywając do regionalnej pokuty. Jest to najwyższe sanktuarium maryjne w Europie, liczące 2434 m n.p.m."
+  },
+  "plouguerneau": {
+    "title": "Matki Bożej do ks. Le Nobletz",
+    "location": "Plouguerneau",
+    "country": "Francja",
+    "description": "Znany misjonarz bretoński ks. Michel Le Nobletz był prowadzony przez Maryję od dzieciństwa, kiedy otworzyła mu zamknięte drzwi kaplicy, aż do jego świętej śmierci."
+  },
+  "montevarchi": {
+    "title": "Santa Maria al Giglio",
+    "location": "Montevarchi",
+    "country": "Włochy",
+    "description": "29 sierpnia 1585 r. w obecności wielu świadków miały miejsce cudowne objawienia Najświętszej Marii Panny nad Lilią."
+  },
+  "madrid_mendoza": {
+    "title": "Matki Bożej do ks. Mendoza",
+    "location": "Madryt",
+    "country": "Hiszpania",
+    "description": "Dziewica ukazała się jezuicie ks. Didacus Mendoza na łożu śmierci, napełniając jego duszę niebiańską pociechą."
+  },
+  "flochberg": {
+    "title": "Matka Boża z Flochbergu",
+    "location": "Bopfingen",
+    "country": "Niemcy",
+    "description": "30 czerwca 1582 roku Maryja ukazała się w świetlistym blasku 10-letniemu Williamowi Wintzererowi, który leżał ciężko chory na polu kukurydzy, natychmiast go uzdrowiwszy i zachęcając do pobożnego życia chrześcijańskiego."
+  },
+  "kazan": {
+    "title": "Matka Boża Kazańska",
+    "location": "Kazań",
+    "country": "Rosja",
+    "description": "8 lipca 1579 roku Maryja ukazała się w wizji 8-letniej Matronie, ujawniając dokładne położenie jej starożytnej świętej ikony zakopanej pod popiołem i gruzami spalonego domu. Stał się świętym palladem Rosji."
+  },
+  "florence_pazzi": {
+    "title": "Matka Boża do św. Marii Magdaleny de' Pazzi",
+    "location": "Florencja",
+    "country": "Włochy",
+    "description": "Wielka mistyka karmelitańska przeżyła głęboką ekstazę, gdy ujrzała Maryję w Raju rozlewającą na ludzkość źródła mleka i drogocennej krwi Jezusa."
+  },
+  "madrid_gonzaga": {
+    "title": "Matka Boża do św. Alojzego",
+    "location": "Madryt",
+    "country": "Hiszpania",
+    "description": "W święto Wniebowzięcia w madryckim kościele jezuickim młody św. Alojzy Gonzaga usłyszał wyraźnie w kontemplacji głos Maryi: „Przyjdź do Zakonu uprawnionego mojemu Synowi”."
+  },
+  "pumenengo": {
+    "title": "Madonna della Rotonda",
+    "location": "Pumenengo",
+    "country": "Włochy",
+    "description": "24 maja 1585 roku Maryja ukazała się głuchoniememu chłopowi Francesco Zamboniemu, natychmiast przywracając mu mowę i prosząc hrabiego Barbò o wzniesienie pięknego okrągłego sanktuarium."
+  },
+  "stezzano": {
+    "title": "Najświętsza Dziewica Polna",
+    "location": "Stezzano",
+    "country": "Włochy",
+    "description": "12 lipca 1586 roku Maryja objawiła się jako kobieta ubrana na czarno z białym welonem czytająca małą książeczkę 10-letniemu Bartolomei Bucanelli i 11-letniej Dorotei Battistoni."
+  },
+  "dijon": {
+    "title": "Matka Boża z Dijon",
+    "location": "Dijon",
+    "country": "Francja",
+    "description": "Młodą, chorą dziewczynę, od lat przykutą do łóżka, odwiedziła Maryja i aniołowie podczas jej świętego przejścia do wieczności."
+  },
+  "arona_sa": {
+    "title": "Matki Bożej do ks. Emmanuel Sa",
+    "location": "Arona",
+    "country": "Włochy",
+    "description": "Maryja wielokrotnie ukazywała się portugalskiemu jezuickiemu teologowi moralnemu, ks. Emmanuel Sa, któremu kiedyś towarzyszył św. Ignacy Loyola, aby przepowiadać dzień jego świętego odejścia."
+  },
+  "naples_1588": {
+    "title": "Matka Boża Neapolitańska",
+    "location": "Neapol",
+    "country": "Włochy",
+    "description": "Wybitna neapolitańska dama, ciężko chora, zwróciła się do Maryi z modlitwą i doświadczyła objawienia, w którym Maryja zabrała jej chorobę."
+  },
+  "lima_portyllo": {
+    "title": "Matki Bożej do ks. Portyllo",
+    "location": "Lima",
+    "country": "Peru",
+    "description": "Misjonarz jezuicki Ruys de Portyllo przez cały swój żmudny apostolat kolonialny kierował się wizjami Matki Bożej."
+  },
+  "cologne": {
+    "title": "Matka Boża Kolońska",
+    "location": "Kolonia",
+    "country": "Niemcy",
+    "description": "Młody artysta z kolegium jezuickiego, który z miłością malował ikony Maryi, pocieszył się Jej objawieniem i swoim aniołem stróżem na łożu śmierci."
+  },
+  "proceno_orozco": {
+    "title": "Matki Bożej do Bł. Alfonsa de Orozco",
+    "location": "Proceno",
+    "country": "Włochy",
+    "description": "Znany mistyk augustianów i nadworny kaznodzieja w Madrycie doświadczył wzniosłych wizji Maryi, które stały się inspiracją dla jego duchowych traktatów."
+  },
+  "medous": {
+    "title": "Notre-Dame de Médoux",
+    "location": "Bagnères-de-Bigorre",
+    "country": "Francja",
+    "description": "Maryja ukazała się Domenge Liloye w pobliżu cudownego źródła, chroniąc społeczność przed wyniszczającą epidemią dżumy."
+  },
+  "costa_folgaria": {
+    "title": "Matki Bożej Łaskawej na Costa",
+    "location": "Folgaria",
+    "country": "Włochy",
+    "description": "W styczniu 1588 roku Maryja ukazała się na wysokości 1230 metrów mnichowi Pietro dal Dosso. W 1955 roku papież Pius XII ogłosił Matkę Bożą Łaskawą na Costa oficjalną patronką wszystkich narciarzy we Włoszech."
+  },
+  "monte_bonicca": {
+    "title": "Matka Boża z Góry Bonickiej",
+    "location": "Campo Ligure",
+    "country": "Włochy",
+    "description": "11 września 1595 roku Maryja ukazała się za górą zwaśnionym mieszkańcom Campo Ligure i Masone, po tym jak w końcu podpisali traktat pokojowy, cementując ich pojednanie."
+  },
+  "acquasparta": {
+    "title": "Matka Boża z Acquasparta",
+    "location": "Acquasparta",
+    "country": "Włochy",
+    "description": "Historyk kapucyński Bernardino di Colpetrazzo widział Maryję zstępującą z nieba ze wspaniałą koroną z kwiatów jako nagrodę za jego czystą duszę i pracowitą historię monastyczną."
+  },
+  "itati": {
+    "title": "Dziewica z Itatí",
+    "location": "Ita",
+    "country": "Argentyna",
+    "description": "Cudowne objawienia i konserwacja drewnianej figury Matki Bożej wśród rdzennych nawróconych Guarani, ustanawiając jedną z największych bazylik pielgrzymkowych w Argentynie."
+  },
+  "rome_felix": {
+    "title": "Matka Boża do św. Feliksa",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Św. Feliks z Cantalice, ukochany jałmużnik kapucyński, znany jako „Brat Deo Gratias”, zaszczycony był objawieniami, podczas których Maryja złożyła mu w ramionach Dzieciątko Jezus."
+  },
+  "morbio": {
+    "title": "Santa Maria dei Miracoli",
+    "location": "Morbio gorsze",
+    "country": "Szwajcaria",
+    "description": "29 lipca 1594 roku Maryja ukazała się na wzgórzu dwóm młodym dziewczynom cierpiącym z powodu opętania i całkowicie je uzdrowiła, prosząc o schronienie na granicy z Włochami."
+  },
+  "rome_philip": {
+    "title": "Matka Boża do św. Filipa Neri",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "„Święty Radości” i założyciel Oratorium doświadczył wielokrotnych objawień Maryi, która pocieszała go w chorobie i chroniła przed niebezpieczeństwami."
+  },
+  "quito": {
+    "title": "Matka Boża Dobrego Sukcesu",
+    "location": "Quito",
+    "country": "Ekwador",
+    "description": "Maryja objawiła się Matce Marianie de Jesus Torres w jej klasztorze koncepcjonistów w Quito, zamawiając cudowną figurę i przepowiadając kryzysy wiary i powołań w XX wieku."
+  },
+  "lepuy_1598": {
+    "title": "Matka Boża z Le Puy",
+    "location": "Le Puy-en-Velay",
+    "country": "Francja",
+    "description": "Młody człowiek, którego wiara osłabła, doświadczył objawienia Maryi, które pobudziło jego duszę do głębokiej pobożności i miłości."
+  },
+  "bruges_greef": {
+    "title": "Matki Bożej do ks. de Greefa",
+    "location": "Brugia",
+    "country": "Belgia",
+    "description": "Anton de Greef SJ złożył ślub powołaniowy przed portretem Maryi w Niebie. Następnej nocy cudowne objawienie potwierdziło jego powołanie. W 1636 roku oddał życie opiekując się ofiarami zarazy w Nijmegen."
+  },
+  "palma_rodriguez": {
+    "title": "Matka Boża do św. Alfonsa",
+    "location": "Palma de Mallorca",
+    "country": "Hiszpania",
+    "description": "Św. Alfons Rodriguez, skromny jezuicki woźny w Mount Zion College, cieszył się częstymi radosnymi objawieniami Maryi. Powiedziała mu kiedyś: „Miłości wszystkich matek nie da się porównać z moją!”"
+  },
+  "mariahilf_passau": {
+    "title": "Mariahilf w Pasawie",
+    "location": "Pasawa",
+    "country": "Niemcy",
+    "description": "Baron Marquard von Schwendi ujrzał promienne światło oświetlające majestatyczne wzgórza, które nabrały cech Matki Bożej. Zbudował słynny kościół pielgrzymkowy Mariahilf w 1620 roku, czcząc cudowną ikonę z 1363 roku."
+  },
+  "aljubarrota_light": {
+    "title": "Matka Boża Światłości",
+    "location": "Aljubarrota",
+    "country": "Portugalia",
+    "description": "Maryja ukazała się wraz ze św. Martą starszej Catarinie Anes, gdy zbierała drewno na opał. Dziewica w cudowny sposób zwróciła jej zagubiony klucz i pomogła wykopać lecznicze źródło krystalicznej wody."
+  },
+  "beaune_jesuit": {
+    "title": "Matka Boża do jezuity",
+    "location": "Beaune",
+    "country": "Francja",
+    "description": "Dziewica Maryja w towarzystwie św. Jakuba i św. Jana Chrzciciela ukazała się w wizji młodemu jezuicie."
+  },
+  "molare": {
+    "title": "Matka Boża Skała",
+    "location": "Molar",
+    "country": "Włochy",
+    "description": "Maryja ukazała się Clarice wśród skał w Molare na przełomie wieków."
+  },
+  "san_severino": {
+    "title": "Matka Boża z San Severino",
+    "location": "San Severino",
+    "country": "Włochy",
+    "description": "16 października 1601 roku zaobserwowano cudowne światła otaczające przydrożną kapliczkę poświęconą Najświętszej Maryi Pannie."
+  },
+  "verdun_youth": {
+    "title": "Matka Boża z Verdun",
+    "location": "Verdun",
+    "country": "Francja",
+    "description": "Maryja pokazała młodemu człowiekowi cenną niebiańską koronę, aby zainspirować jego powołanie zakonne. Później pojawiła się ponownie, aby dodać mu nowej odwagi podczas prób."
+  },
+  "rome_benedict": {
+    "title": "Matka Boża do brata Benedykta",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Krótko przed swoją świętą śmiercią kapucyn, brat Benedykt, doświadczył czułego objawienia, podczas którego Maryja złożyła w jego ramionach Boskie Dzieciątko."
+  },
+  "lampedusa": {
+    "title": "Nostra Signora di Lampedusa",
+    "location": "Castellaro",
+    "country": "Włochy",
+    "description": "Zniewolony przez tureckich piratów na Lampedusie, Andrea Anfossi odkrył w oślepiającym świetle cudowny obraz maryjny. Używając płótna jako żagla na wydrążonym pniu drzewa, przepłynął otwarte morze do Ligurii. Sanktuarium w Castellaro zostało ukończone w 1619 roku."
+  },
+  "monsummano_fontenova": {
+    "title": "Maria Santissima della Fontenova",
+    "location": "Monsummano Terme",
+    "country": "Włochy",
+    "description": "Dnia 10 czerwca 1602 r. miała miejsce manifestacja przed proboszczem miasta. Po dotkliwej suszy podczas Mszy Świętej nagle wytrysnęło cudowne źródło, które skłoniło wielkiego księcia Ferdynanda I Medyceusza do budowy wielkiego sanktuarium."
+  },
+  "concepcion_araucani": {
+    "title": "Matka Boża Poczęta",
+    "location": "Koncepcja",
+    "country": "Chile",
+    "description": "Podczas wrogiego oblężenia Concepcion przez araukańskich wojowników, Madonna w cudowny sposób wyszła z obrazu w kaplicy i przeszła po chmurze nad obozami, rozpraszając oblegających snopami niebiańskiego światła."
+  },
+  "aleth_youth": {
+    "title": "Matka Boża z Aleth",
+    "location": "Ale",
+    "country": "Francja",
+    "description": "Po wstrząsającej wizji demonicznej Maryja ukazała się w biały dzień młodemu mężczyźnie, ostrzegając go, aby zmienił swoje zachowanie i wstąpił do życia zakonnego."
+  },
+  "fribourg_canisius": {
+    "title": "Matka Boża do św. Piotra Kanizjusza",
+    "location": "Fryburg",
+    "country": "Szwajcaria",
+    "description": "Wielki Doktor Kościoła i „Drugi Apostoł Niemiec” zaznawał łaski częstych ekstaz i objawień maryjnych przez całe swoje życie oraz na swoim świętym łożu śmierci we Fryburgu."
+  },
+  "ingolstadt_rem": {
+    "title": "Matka Trzykroć Godna Podziwu",
+    "location": "Ingolstadt",
+    "country": "Niemcy",
+    "description": "Dnia 6 kwietnia 1604 roku Maryja ukazała się w promieniującym blasku jezuicie ks. Jakob Rem podczas śpiewania Litanii Loretańskiej. Kiedy zapytał ją o najbardziej pożądany tytuł, ujawniła „Mater admirabilis”, co dało początek słynnemu nabożeństwu Trzykroć Przedziwne."
+  },
+  "argenta_celletta": {
+    "title": "Madonna della Celletta",
+    "location": "Argenta",
+    "country": "Włochy",
+    "description": "5 czerwca 1606 roku Maryja ukazała się wieśniaczce Sigismondzie Conti, obiecując odpowiedzi na modlitwy za tych, którzy poszczą i proszą z wiarą. Do 1619 r. w sanktuarium znajdowało się ponad 150 000 wotów ze złota i srebra."
+  },
+  "florence_medici": {
+    "title": "Matka Boża do Alessandro de' Medici",
+    "location": "Florencja",
+    "country": "Włochy",
+    "description": "Młody Alessandro de' Medici miał objawienia maryjne w towarzystwie aniołów. Na łożu śmierci, gdy miał piętnaście lat, Maria i św. Maria Magdalena de' Pazzi wyraźnie stanęły u jego boku."
+  },
+  "siluva": {
+    "title": "Matka Boża Szydłowa",
+    "location": "Szydłowa",
+    "country": "Litwa",
+    "description": "Maryja ukazała się na skale, trzymając Dzieciątko Jezus i gorzko płacząc z powodu utraty wiary katolickiej w tym regionie. Jej objawienie przywróciło wiarę całej społeczności, stając się jednym z najwcześniejszych sanktuariów w Europie uznanych przez Watykan."
+  },
+  "heiligwasser": {
+    "title": "Matka Boża z Heiligwasser",
+    "location": "Innsbruck",
+    "country": "Austrii",
+    "description": "Maryja ukazała się w niebieskiej szacie młodym braciom pasterzom Johannowi i Paulusowi Mayrom w pobliżu alpejskiego źródła, prosząc o kościół. Wiele lat później niemy syn Johanna wygłosił przemówienie u źródła, spełniając obietnicę."
+  },
+  "sanlucar": {
+    "title": "Matka Boża z Sanlúcar",
+    "location": "Sanlucar de Barrameda",
+    "country": "Hiszpania",
+    "description": "Objawienie żołnierzowi neapolitańskiemu Pedro Riverze w 1608 r."
+  },
+  "rome_benevolence": {
+    "title": "Nasza Ukochana Pani Łaskawości",
+    "location": "Rzym / Wiedeń",
+    "country": "Włochy",
+    "description": "Karmelita ks. Domenico Maria Ruzzola odkrył pod gruzami zakopaną ikonę. Maryja objawiała się wielokrotnie, wzywając do modlitwy za dusze czyśćcowe. Ikona została później umieszczona przez cesarza w Wiedniu."
+  },
+  "bamberg_guttrie": {
+    "title": "Matka Boża do Fryderyka Guttriego",
+    "location": "Bambergu",
+    "country": "Niemcy",
+    "description": "Maryja ukazała się Fryderykowi Guttriemu, namawiając go do powrotu do wiary katolickiej i przepowiadając dokładną datę jego świętego odejścia w Wigilię Bożego Narodzenia 1608 roku."
+  },
+  "bergamo_sorrows": {
+    "title": "Matka Bolesna",
+    "location": "Bergamo",
+    "country": "Włochy",
+    "description": "18 sierpnia 1602 roku mieszkańcy Borgo Santa Caterina ujrzeli w biały dzień świecącą gwiazdę, z której ukazała się Maryja ze smutną twarzą otoczoną jasnymi strzałami, budząc głęboką skruchę."
+  },
+  "san_bartolomeo_rovere": {
+    "title": "Nostra Signora della Rovere",
+    "location": "San Bartolomeo al Mare",
+    "country": "Włochy",
+    "description": "W lipcu 1608 roku Maryja ukazała się w oknie nowo wzniesionej dzwonnicy dębowej świątyni, co zostało formalnie zbadane i udokumentowane przez biskupa Lucę Fieschi."
+  },
+  "paris_berulle": {
+    "title": "Matka Boża do kardynała Bérulle",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Kardynał Pierre de Bérulle, założyciel Oratorium Francuskiego, podczas Mszy Świętej miał objawienie, podczas którego Maryja poleciła mu założyć Zakon Karmelitów Bosych we Francji."
+  },
+  "bordeaux_healing": {
+    "title": "Matka Boża z Bordeaux",
+    "location": "Bordeaux",
+    "country": "Francja",
+    "description": "Maryja ukazała się ciężko choremu członkowi sodalicji, uzdrawiając go po tym, jak obiecał poświęcić swoje życie szerzeniu kultu Jej Niepokalanego Poczęcia."
+  },
+  "lepuy_1605": {
+    "title": "Matka Boża z Le Puy",
+    "location": "Le Puy-en-Velay",
+    "country": "Francja",
+    "description": "Kiedy starszy członek sodalicji maryjnej na łożu śmierci stanął w obliczu walki duchowej, Maryja pojawiła się i swoją triumfalną obecnością rozproszyła ciemność."
+  },
+  "lenola": {
+    "title": "Madonna del Colle",
+    "location": "Lenola",
+    "country": "Włochy",
+    "description": "15 września 1602 roku Maryja ukazała się Gabriele Mattei na zboczu wzgórza, nawracając go i prowadząc do założenia znanego Sanktuarium Matki Bożej Górskiej."
+  },
+  "ardesio_graces": {
+    "title": "Najświętsza Dziewica Łaskawa",
+    "location": "Ardesio",
+    "country": "Włochy",
+    "description": "23 czerwca 1607 roku, gdy zbliżała się złowieszcza burza, młode siostry Maria (11 l.) i Caterina Salerno (7 l.) zobaczyły, jak malowidło ścienne przedstawiające Ukrzyżowanie jaśnieje, zanim pojawiła się Maryja, siedząca na złotym krześle z Dzieciątkiem Jezus."
+  },
+  "manaoag": {
+    "title": "Matka Boża z Manaoag",
+    "location": "Manaoag",
+    "country": "Filipiny",
+    "description": "Miejscowy mężczyzna usłyszał tajemniczy głos i ujrzał Maryję stojącą na obłoku nad wierzchołkiem drzewa, trzymającą Różaniec z Dzieciątkiem. Miasto, które rozkwitło wokół słynnej na całym świecie bazyliki mniejszej, otrzymało nazwę Manaoag („Ona wzywa”)."
+  },
+  "lepuy_ponceot": {
+    "title": "Matki Bożej do ks. Ponceot",
+    "location": "Le Puy-en-Velay",
+    "country": "Francja",
+    "description": "Proboszcz jezuicki ks. Claudio Ponceot został pocieszony na łożu śmierci przez trzech aniołów, po czym nastąpiło objawienie Maryi w towarzystwie św. Klaudiusza i św. Ignacego."
+  },
+  "chioggia_donkey": {
+    "title": "Madonna od Małego Osiołka",
+    "location": "Chiogia",
+    "country": "Włochy",
+    "description": "5 lipca 1615 roku Matka Boża ukazała się bratu Adamowi w pobliżu Chioggi."
+  },
+  "caysasay": {
+    "title": "Matka Boża z Caysasay / Misericordia",
+    "location": "Taal, Batangas",
+    "country": "Filipiny",
+    "description": "Pierwsze odnotowane objawienie maryjne na Filipinach. Maryja ukazała się w promieniującym świetle ze skalistego zagłębienia w pobliżu strumienia Juanie Tangui i Catalinie Talayn. W sanktuarium nadal płyną cudowne lecznicze wody."
+  },
+  "philippines_otazo": {
+    "title": "Matki Bożej do ks. Otazo",
+    "location": "Manila",
+    "country": "Filipiny",
+    "description": "Misjonarz jezuicki ks. Francis Otazo podczas prześladowań pocieszył się objawieniem Maryi, która zapewniła go: „Franciszek, nie martw się, będę cię chronić!” Później pokazała mu Księgę Życia."
+  },
+  "saragossa_agnes": {
+    "title": "Matka Boża do s. Agnieszki od Jezusa",
+    "location": "Saragossa",
+    "country": "Hiszpania",
+    "description": "Agnes de Casanate, mistrzyni nowicjuszy karmelitów bosych, doświadczyła licznych ekstaz i objawień Maryi, gdy uczestniczyła w Męce Chrystusa."
+  },
+  "stans_nocker": {
+    "title": "Matki Bożej Stans",
+    "location": "Stans",
+    "country": "Szwajcaria",
+    "description": "Maryja ukazała się Georgowi Nockerowi w pobliżu dużego alpejskiego głazu, nalegając na budowę kaplicy, która została później poświęcona przez księcia-biskupa Bressanone."
+  },
+  "rome_calasanzio": {
+    "title": "Matka Boża do św. Józefa Calasanz",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Dziewica Maryja objawiała się wielokrotnie, aby błogosławić i prowadzić św. Józefa Calasanza w procesie zakładania Zakonu Pijarów i pierwszych w Europie bezpłatnych szkół publicznych dla biednych dzieci."
+  },
+  "berzo_inferiore": {
+    "title": "Matka Boża z Berzo",
+    "location": "Berzo gorsze",
+    "country": "Włochy",
+    "description": "24 września 1616 roku Maryja ze łzami w oczach ukazała się w powietrzu Martie Damioli Polentini, uwalniając ją z duchowego ucisku i prosząc o kościół."
+  },
+  "lublin_lutheran": {
+    "title": "Matka Boża Lubelska",
+    "location": "Lublina",
+    "country": "Polska",
+    "description": "Wybitnemu węgierskiemu uczonemu luterańskiemu ukazała się Maria spowita w niebiańskie niebieskie światło, co wskazywało na jej dezaprobatę dla traktatów protestanckich i skłoniło go do nawrócenia się na Kościół katolicki."
+  },
+  "malta_conversion": {
+    "title": "Matka Boża na Malcie",
+    "location": "Malta",
+    "country": "Malta",
+    "description": "Skruszony grzesznik, który spędził miesiące na przygotowaniach i modlitwie, doświadczył przemieniającego objawienia Dziewicy Maryi, które doprowadziło do jego radosnego rozgrzeszenia."
+  },
+  "paris_acarie": {
+    "title": "Królowa Niebios",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Błogosławiona Barbara Acarie (S. Maria od Wcielenia), współzałożycielka francuskiego Karmelu, często doświadczała wzniosłych wizji Maryi jako Królowej Nieba."
+  },
+  "naples_benincasa": {
+    "title": "Objawienie Niebieskiego Szkaplerza",
+    "location": "Neapol",
+    "country": "Włochy",
+    "description": "W dniu 2 lutego 1617 r. Ven. Orsola Benincasa ujrzał Maryję i Jezusa, otrzymujących objawienie i obietnicę niezwykłych łask dla Błękitnego Szkaplerza Niepokalanego Poczęcia."
+  },
+  "fribourg_youth": {
+    "title": "Matka Boża Fryburska",
+    "location": "Fryburg",
+    "country": "Szwajcaria",
+    "description": "Po szczerym nawróceniu na łożu boleści, młody człowiek został pobłogosławiony nocnymi objawieniami Maryi, św. Piotra Kanizjusza i św. Ignacego."
+  },
+  "nuremberg_girl": {
+    "title": "Matka Boża Norymberska",
+    "location": "Norymberga",
+    "country": "Niemcy",
+    "description": "Młoda protestancka dziewczyna, która wiernie odmawiała Zdrowaś Maryjo, doświadczyła objawienia, podczas którego Matka Boża poprowadziła ją do Bambergu, aby mogła wejść do Kościoła katolickiego."
+  },
+  "imbersago_bosco": {
+    "title": "Madonna del Bosco",
+    "location": "Imbersago",
+    "country": "Włochy",
+    "description": "9 maja 1617 roku trzech pasterzy ujrzało Marię unoszącą się w świetle nad kasztanowcem, który w cudowny sposób wydał poza sezonem w pełni dojrzałe owoce. Zapisane w pięknej bazylice, którą odwiedził papież św. Jan XXIII."
+  },
+  "paris_catherine": {
+    "title": "Płaszcz Ochrony",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Karmelitanka Katarzyna od Jezusa widziała Maryję ukrywającą zakon karmelitów pod swoim nieskazitelnym, śnieżnobiałym płaszczem."
+  },
+  "alcoy_nun": {
+    "title": "Matka Boża do s. Marii de Jesus",
+    "location": "Alko",
+    "country": "Hiszpania",
+    "description": "W latach 1620-1630 klauzurowa mniszka augustianka Maria de Jesus Martin doświadczyła w swoim klasztorze głębokich objawień maryjnych."
+  },
+  "goa_andrade": {
+    "title": "Matki Bożej do ks. Andrade",
+    "location": "Goa",
+    "country": "Indie",
+    "description": "Misjonarz jezuicki ks. Antonio Andrade, pierwszy europejski odkrywca Tybetu, został otruty na swoim statku. Maryja pojawiła się na łożu śmierci i cudownie go uzdrowiła, aby mógł kontynuować misję w Azji."
+  },
+  "bosentino_feles": {
+    "title": "Madonna z Feles",
+    "location": "Bosentino",
+    "country": "Włochy",
+    "description": "21 czerwca 1623 roku Maryja ukazała się młodemu chłopowi imieniem Janesel."
+  },
+  "ribordone_prascondu": {
+    "title": "Madonna z Prascondù",
+    "location": "Ribordone, Turyn",
+    "country": "Włochy",
+    "description": "27 sierpnia 1619 roku młody Giovannino Berrardi odzyskał utraconą mowę po promieniującym objawieniu Matki Bożej na alpejskich pastwiskach Loreto, które zainspirowało wielkie sanktuarium."
+  },
+  "lima_rose": {
+    "title": "Królowa Różańca",
+    "location": "Lima",
+    "country": "Peru",
+    "description": "Św. Róża z Limy, pierwsza kanonizowana święta obu Ameryk, doświadczała częstych wzniosłych kontaktów z Maryją przed jej malowaniem kościoła Różańcowego, szyjąc wspaniałe haftowane szaty dla Matki Bożej."
+  },
+  "alessandria_rocca": {
+    "title": "Madonna della Rocca",
+    "location": "Alessandria della Rocca",
+    "country": "Włochy",
+    "description": "Mary pojawiła się, aby oślepić Angelinę i jej matkę Rosę, przywracając dziewczynie wzrok i prowadząc mieszkańców miasta do odkopania starożytnego posągu z VI wieku ukrytego w skale."
+  },
+  "ozegna": {
+    "title": "Błogosławiona Dziewica Leśna",
+    "location": "Ozegna",
+    "country": "Włochy",
+    "description": "21 czerwca 1623 roku Maria ukazała się głuchoniememu 15-letniemu Giovanniemu Petro podczas sianokosów nad rzeką Orco i natychmiast wygłosiła mu przemowę."
+  },
+  "maria_bildstein": {
+    "title": "Matki Bożej Marii Bildstein",
+    "location": "Maria Bildstein",
+    "country": "Austrii",
+    "description": "Maryja ukazała się Martinowi i Johnowi Hofle, młodym synom rolnika, który zlekceważył przysięgę złożoną podczas zarazy, co doprowadziło do budowy pięknego austriackiego sanktuarium."
+  },
+  "paris_maunoir": {
+    "title": "Matki Bożej do ks. Maunoira",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Znany misjonarz bretoński ks. Giuliano Maunoir miał częste objawienia Maryi, która chroniła go przed niebezpieczeństwami i kierowała jego głębokim apostolatem pokutnym."
+  },
+  "santa_fe_conquistadora": {
+    "title": "Matka Boża Pokoju / La Conquistadora",
+    "location": "Santa Fe, Nowy Meksyk",
+    "country": "USA",
+    "description": "Znajdująca się w Bazylice Katedralnej św. Franciszka z Asyżu La Conquistadora jest najstarszą drewnianą statuą Matki Boskiej w Stanach Zjednoczonych, głęboko czczoną przez wieki południowo-zachodniej historii."
+  },
+  "langeac_agnes": {
+    "title": "Matki Bożej do Ven. Agnieszka",
+    "location": "Langeaca",
+    "country": "Francja",
+    "description": "Dominikańska przeorysza i stygmatyczka Ven. Matka Agnieszka od Jezusa miała objawienia, podczas których Maryja połączyła ją z Jeanem-Jacques’em Olierem, czyniąc ją duchową patronką reformy seminarium Sulpicjusza."
+  },
+  "castel_san_pietro_1623": {
+    "title": "Błogosławiona Dziewica z Lato di Monte Calderaro",
+    "location": "Zamek San Pietro Terme",
+    "country": "Włochy",
+    "description": "W lutym 1623 roku Maryja ukazała się młodej pasterce Zenobii."
+  },
+  "quimper_danielou": {
+    "title": "Matka Boża do Katarzyny Danielou",
+    "location": "Quimper",
+    "country": "Francja",
+    "description": "Maryja ukazała się Katarzynie Danielou w pobliżu przydrożnego posągu: „Katarzyno, jesteś biedna, ja też… Mieszkam w niebie, ale jestem bezdomna na ziemi”. Katarzyna stała się znaną napiętnowaną mistyczką."
+  },
+  "japan_martyr": {
+    "title": "Matka Boża w Japonii",
+    "location": "Nagasaki",
+    "country": "Japonia",
+    "description": "Maryja zdawała się pocieszać japońskiego chrześcijańskiego męczennika Kegana Fucinangę Nicholasa podczas surowych tortur w ramach prześladowań antychrześcijańskich."
+  },
+  "constance_loreto": {
+    "title": "Matka Boża z Konstancji",
+    "location": "Konstancja",
+    "country": "Niemcy",
+    "description": "Maryja objawiła się na dzwonnicy kościoła augustianów, inspirując mieszkańców podczas wrogiego oblężenia wojskowego. W dowód wdzięczności miasto wzniosło kaplicę loretańską."
+  },
+  "lure_shepherd": {
+    "title": "Matka Boża Przynęty",
+    "location": "Przynęta",
+    "country": "Francja",
+    "description": "Maryja ukazała się pasterzowi, prosząc o odbudowę kościoła na ruinach starożytnego opactwa benedyktynów."
+  },
+  "aljubarrota_sands": {
+    "title": "Matka Boża Piaskowa",
+    "location": "São Vicente de Aljubarrota",
+    "country": "Portugalia",
+    "description": "Maryja ukazała się, siedząca na skale, płaczącej wiejskiej kobiecie, znajdując zgubione klucze i prosząc o kościół. Kiedy sceptyczny biskup zamknął kamień w swoim pałacowym pokoju, ten w cudowny sposób zniknął i dwukrotnie wrócił na pole."
+  },
+  "forno_alpi_graie": {
+    "title": "Matki Bożej Loretańskiej w Forno",
+    "location": "Forno Alpi Graie",
+    "country": "Włochy",
+    "description": "30 września 1630 roku Maryja ukazała się na wielkim głazie Pietro Garino, obiecując koniec zarazy, jeśli region okaże skruchę. Pod skałą w cudowny sposób odkryto dwa zaginione święte obrazy."
+  },
+  "leini_grazie": {
+    "title": "Madonna delle Grazie",
+    "location": "Leini, Turyn",
+    "country": "Włochy",
+    "description": "1 czerwca 1630 roku Maryja ukazała się głuchoniememu mężczyźnie, wręczając mu różaniec i ogłaszając całkowite ustanie epidemii dżumy."
+  },
+  "quito_1634": {
+    "title": "Matka Boża Dobrego Sukcesu",
+    "location": "Quito",
+    "country": "Ekwador",
+    "description": "2 lutego 1634 roku Matka Boża Dobrego Sukcesu ukazała się matce Marianie de Jesus Torres w Królewskim Klasztorze Królewskim, ostrzegając przed głębokim kryzysem moralnym i utratą wiary w XX wieku."
+  },
+  "gandos_galleno": {
+    "title": "Matka Boża z Galleno",
+    "location": "Gandos di Galleno",
+    "country": "Włochy",
+    "description": "Maryja ukazała się z aniołem głuchoniemej Marghericie Lazzaroni, wygłaszając przemówienie i polecając wiosce odmawianie różańca, aby powstrzymać zarazę. Miasto zostało cudownie ocalone."
+  },
+  "bargemon": {
+    "title": "Notre Dame de Bargemon",
+    "location": "Bargemon",
+    "country": "Francja",
+    "description": "17 marca 1635 roku Maryja ukazała się w nocnej wizji obłożnie chorej Elżbiecie Caille jako piękna pielgrzymka w zielonym aksamicie ze złotą koroną, cudownie ją uzdrawiając i prosząc o sanktuarium."
+  },
+  "naples_vesuvius": {
+    "title": "Matka Boża w Neapolu",
+    "location": "Neapol",
+    "country": "Włochy",
+    "description": "Podczas przerażającej erupcji wulkanu Wezuwiusza, Maryja pojawiła się nad miastem pośród deszczu popiołu, ratując wzywających wiernych przed zagładą."
+  },
+  "lake_huron_brebeuf": {
+    "title": "Matka Boża do św. Jana de Brébeuf",
+    "location": "Midland, Ontario",
+    "country": "Kanada",
+    "description": "Wielki męczennik jezuicki z Ameryki Północnej doświadczył majestatycznej wizji Maryi z sercem przebitym trzema strzałami, przygotowującej go do bohaterskiego męczeństwa wśród Huronów."
+  },
+  "guiclan_picard": {
+    "title": "Matka Boża do Marie-Amice Picard",
+    "location": "Guiclan",
+    "country": "Francja",
+    "description": "19 maja 1634 roku Maria i św. Jan pojawili się, aby uratować Marie-Amice Picard przed napastnikiem. Stała się głęboko napiętnowaną duszą ofiary."
+  },
+  "sinopoli_lactans": {
+    "title": "Maria Lactans",
+    "location": "Sinopoli",
+    "country": "Włochy",
+    "description": "Matka Boża objawiła się dwukrotnie prosząc o cześć swojej ikony jako „Maria Lactans” (Matka Boża karmiąca Dzieciątko)."
+  },
+  "ajaccio_peace": {
+    "title": "Matka Boża na Korsyce",
+    "location": "Ajaccio",
+    "country": "Francja",
+    "description": "Dwóch zwaśnionych wrogów otrzymało cudowne objawienie i przesłanie od Dziewicy Maryi nakazującej im zawarcie pokoju."
+  },
+  "cavite_porta_vaga": {
+    "title": "Reina de Cavite / Porta Vaga",
+    "location": "Miasto Cavite",
+    "country": "Filipiny",
+    "description": "Hiszpański wartownik zatrzymał podczas sztormu zmieniającą się aureolę światła nad zatoką i usłyszał słodki głos: „Mały Żołnierzu… daj mi przejście”. Czy nie poznajesz Marii? Cudowna ikona, datowana na rok 1692, jest najstarszym zachowanym obrazem maryjnym na Filipinach i patronką Galeonu."
+  },
+  "prague_infant": {
+    "title": "Matki Bożej Zwycięskiej / Praga",
+    "location": "Praga",
+    "country": "Czechy",
+    "description": "W wigilię Niepokalanego Poczęcia Maryja objawiła się z chóru kościelnego ks. Cyryla, wskazując dokładne miejsce renowacji i intronizacji słynnej na całym świecie cudownej figury Dzieciątka Jezus z Pragi."
+  },
+  "savigliano": {
+    "title": "Matka Boża z Savigliano",
+    "location": "Savigliano",
+    "country": "Włochy",
+    "description": "Objawienia maryjne zapisane Tesio Petrinie w 1639 r."
+  },
+  "cast_le_goff": {
+    "title": "Matka Boża do Yvesa Le Goffa",
+    "location": "Obsada, Bretania",
+    "country": "Francja",
+    "description": "Maryja ukazała się rolnikowi Yvesowi Le Goffowi, odciskając mu czerwony krzyż na prawej dłoni i prosząc go o odbycie rygorystycznego, piętnastoletniego postu wielkopostnego bez płynów w celu nawrócenia grzeszników."
+  },
+  "frejus_cotignac": {
+    "title": "Matka Boża do brata Fiacre",
+    "location": "Cotignac",
+    "country": "Francja",
+    "description": "3 listopada 1637 roku Maryja ukazała się bratu Fiacre w gwiaździstych niebieskich szatach w jego celi klasztornej, pokazując mu swoje sanktuarium w Cotignac i obiecując po trzech nowennach cudowne narodziny przyszłego króla Ludwika XIV."
+  },
+  "uruguay_reduction": {
+    "title": "Matka Boża Zwiastowania",
+    "location": "Urugwaj Redukcja",
+    "country": "Urugwaj",
+    "description": "Podczas redukcji misyjnej jezuitów Maryja dwukrotnie ukazała się pobożnej dziesięcioletniej dziewczynce z tubylczej ludności, aby przygotować ją na radosne przejście do wieczności."
+  },
+  "cursi_abbondanza": {
+    "title": "Santa Maria dell'Abbondanza",
+    "location": "Cursi, Apulia",
+    "country": "Włochy",
+    "description": "Wiosną 1641 roku Maryja ukazała się młodemu pasterzowi Biagio Orlando Natali: „Jestem Królową Nieba i cierpię z powodu nędznego stanu ludzi”. Poprosiła o kaplicę i procesję."
+  },
+  "lake_huron_hurons": {
+    "title": "Matka Boża nad jeziorem Huron",
+    "location": "Jezioro Huron",
+    "country": "Kanada",
+    "description": "Dwóch chrześcijańskich nawróconych Huronów, przywiązanych do stosu przez wrogich Irokezów, zwróciło się do Marii w modlitwie i w cudowny sposób zostało uwolnionych z łańcuchów i mogło uciec."
+  },
+  "montagnolo_pinocchio": {
+    "title": "Matka Boża z Montagnolo",
+    "location": "Ankona",
+    "country": "Włochy",
+    "description": "W 1640 roku objawiła się Matka Boska, która zapobiegła straszliwej epidemii, która opanowała region."
+  },
+  "corigliano_schiavonea": {
+    "title": "Santa Maria w Nives / Schiavonea",
+    "location": "Corigliano Calabro",
+    "country": "Włochy",
+    "description": "23 sierpnia 1648 roku, po cudownym objawieniu, wzniesiono wielkie sanktuarium Czarnej Madonny ze Schiavonea."
+  },
+  "palizi_moscow": {
+    "title": "Matki Bożej Bolesnej / Strastnaya",
+    "location": "Moskwa",
+    "country": "Rosja",
+    "description": "Maryja ukazała się niepełnosprawnej kobiecie, uzdrowiła ją i poleciła namalować ikonę. Cudowny Obraz został uroczyście zaniesiony w procesji do Moskwy."
+  },
+  "beaune_infant": {
+    "title": "Król Łaski",
+    "location": "Beaune",
+    "country": "Francja",
+    "description": "Karmelitów Ven. Małgorzata od Najświętszego Sakramentu pod przewodnictwem Maryi założyła Bractwo Dzieciątka Jezus, wyniesione później przez papieża Piusa IX."
+  },
+  "ponzano_magra": {
+    "title": "Matki Bożej Schiavonea w Ponzano",
+    "location": "Ponzano Magra",
+    "country": "Włochy",
+    "description": "10 lipca 1647 roku Maryja ukazała się Antoniowi Ruffio."
+  },
+  "kevelaer": {
+    "title": "Pocieszyciel Smutnych",
+    "location": "Kevelaera",
+    "country": "Niemcy",
+    "description": "W Boże Narodzenie 1641 r. Hendrik Busman usłyszał na wrzosowiskach głos Marii: „W tym miejscu potrzebuję, abyś poświęciła kaplicę”. Sanktuarium Cudownej Dziewicy Luksemburskiej jest największym sanktuarium maryjnym w Niemczech, które co roku odwiedza 600 000 pielgrzymów."
+  },
+  "buenos_aires_1647": {
+    "title": "Matka Boża w Buenos Aires",
+    "location": "Buenos Aires",
+    "country": "Argentyna",
+    "description": "Maryja ukazała się młodej wieśniaczce i świeckiemu bratu, wzywając lud do szczerej pokuty."
+  },
+  "maria_taferl": {
+    "title": "Matki Bożej Marii Taferl",
+    "location": "Maria Taferl",
+    "country": "Austrii",
+    "description": "Alexander Schinnagl umieścił drewnianą Pietę w dziupli dębowej i poddał się utwardzaniu. W latach 1658–1661 pięćdziesięciu siedmiu świadków pod przysięgą potwierdziło, że widziało świecące postacie aniołów i niebiańskie światła wokół drzewa. Jest to jedno z największych sanktuariów narodowych Austrii."
+  },
+  "naples_carafa": {
+    "title": "Matki Bożej do ks. Karafa",
+    "location": "Neapol",
+    "country": "Włochy",
+    "description": "Maryja ukazała się jezuickiemu generałowi ks. Vincenzo Carafa, oświetlając jego ascetyczne i mistyczne pisma."
+  },
+  "querrien_courtel": {
+    "title": "Matki Bożej Wiecznej Pomocy",
+    "location": "La Prénessaye, Querrien",
+    "country": "Francja",
+    "description": "15 sierpnia 1652 roku Maryja ukazała się 12-letniej głuchoniemej pasterce Jeanne Courtel, natychmiast przywracając jej słuch i głos. Poprowadziła ją, aby odkopała starożytny zakopany posąg. Oficjalnie uznane przez biskupa St. Brieuc za „Małe Bretońskie Lourdes”."
+  },
+  "plounevez_quintin": {
+    "title": "Matka Boża z Plounévez",
+    "location": "Plounévez-Quintin",
+    "country": "Francja",
+    "description": "Maryja ukazała się Louise Le Comec podczas modlitwy różańcowej o dobrą śmierć, przepowiadając dokładną godzinę jej niebiańskiego przejścia."
+  },
+  "campeneac_nicolas": {
+    "title": "Matka Boża do Armelle Nicolas",
+    "location": "Campénéac",
+    "country": "Francja",
+    "description": "15 sierpnia 1652 roku pokorna służebnica „Dobra Armelle” otrzymała chwalebną wizję Wniebowzięcia Maryi."
+  },
+  "colere_fontane": {
+    "title": "Madonna delle Fontane",
+    "location": "Colere, Val di Scalve",
+    "country": "Włochy",
+    "description": "2 lipca 1654 roku umierając na gruźlicę, pasterz Bartolomeo Burat upadł, kaszląc krwią w pobliżu przydrożnej fontanny. Maryja wyszła z fresku w kaplicy, dotknęła jego czoła wodą i natychmiast go uzdrowiła: „Odwagi, drogi synu, jesteś uzdrowiony”."
+  },
+  "mariahilfberg_gutenstein": {
+    "title": "Matka Boża Pomocy",
+    "location": "Gutensteina",
+    "country": "Austrii",
+    "description": "Maryja objawiła się Sebastianowi Schmidowi Schlagerowi sześciokrotnie, uzdrawiając go i malując swój wizerunek na prześcieradle zawieszonym na buku. Papież Klemens IX formalnie zatwierdził kult i sanktuarium."
+  },
+  "ancienne_lorette": {
+    "title": "Matka Boża w Quebecu",
+    "location": "Ancienne Lorette, Quebec",
+    "country": "Kanada",
+    "description": "Dziewica Maryja ukazała się 14-letniej chrześcijance Huron, nawróconej Jeanne Ouendite."
+  },
+  "malta_sultan": {
+    "title": "Matka Boża do sułtana",
+    "location": "Malta",
+    "country": "Malta",
+    "description": "Sułtan Maroka schwytany przez Rycerzy Maltańskich doświadczył objawienia Maryi w więzieniu. Po uwolnieniu przeszedł na katolicyzm, został ochrzczony w Rzymie i odbył pielgrzymkę do Loreto."
+  },
+  "turin_1651": {
+    "title": "Matka Boża w Turynie",
+    "location": "Turyn",
+    "country": "Włochy",
+    "description": "20 marca 1651 roku Maryja ukazała się Andreecie Pendiglionie i cudownie przywróciła w sanktuarium kalekie kończyny mężczyzny."
+  },
+  "notre_dame_osier": {
+    "title": "Notre Dame de l'Osier",
+    "location": "Les Plantées, Vinay",
+    "country": "Francja",
+    "description": "25 marca 1649 roku gałęzie wikliny ścięte przez Pierre'a Port-Combeta w cudowny sposób krwawiły. W 1657 roku podczas orki ukazała mu się Maryja, co doprowadziło do jego szczerego nawrócenia się z protestantyzmu i założenia wielkiej bazyliki."
+  },
+  "paris_olier": {
+    "title": "Matki Bożej do ks. Oliera",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Jean-Jacques Olier, twórca reformy seminarium sulpicjańskiego, został w młodości cudownie uzdrowiony ze ślepoty przez Maryję. W 1649 roku ukazała się ponownie, aby ożywić jego głęboką duchowość kapłańską."
+  },
+  "trun_light": {
+    "title": "Pani Światła",
+    "location": "Trun, Gryzonia",
+    "country": "Szwajcaria",
+    "description": "Pastor i wspólnota ujrzeli cudowne światło jaśniejące na wzgórzu, na którym Maryja dała znać o swojej obecności, prosząc o sanktuarium. Wielu chorych odzyskało zdrowie w konsekrowanym kościele."
+  },
+  "coromoto_venezuela": {
+    "title": "Matka Boża z Coromoto",
+    "location": "Guanara",
+    "country": "Wenezuela",
+    "description": "8 września 1652 roku Maryja ukazała się w dziewiczym lesie wodzowi Coromoto z plemienia Cospes: „Idź do białego domu i poproś, aby nalali ci wody na głowę, abyś mógł pójść do nieba”. Zostawiła swój cudowny obraz odciśnięty na włóknach drewnianych. Oficjalna patronka Wenezueli."
+  },
+  "pieve_di_rosa": {
+    "title": "Święta Maria z Pieve di Rosa",
+    "location": "San Vito al Tagliamento",
+    "country": "Włochy",
+    "description": "2 lutego 1655 roku 8-letnia epileptyk Maria Giacomuzzi została wyleczona z ekstazy przed freskiem przedstawiającym Marię na ścianie. Kiedy woły ciągnące fresk do San Vito spętały nogi i nie chciały ruszyć się pod kościołem św. Mikołaja, tam powstało wielkie sanktuarium."
+  },
+  "birkenstein": {
+    "title": "Matka Boża z Birkenstein",
+    "location": "Fischbachau, Bawaria",
+    "country": "Niemcy",
+    "description": "Wikariusz generalny Johann Stiglmaier zbudował kaplicę Loreto po objawieniu się Maryi we śnie: „W tej kaplicy... chcę wyrazić moją wdzięczność tym, którzy mnie wzywają”. W pięknym alpejskim sanktuarium znajduje się posąg w koronie otoczony 92 aniołami."
+  },
+  "san_vito_casalbuttano": {
+    "title": "Matka Boża z Casalbuttano",
+    "location": "San Vito w Casalbuttano",
+    "country": "Włochy",
+    "description": "Objawienia maryjne zapisane w San Vito di Casalbuttano w 1668 r."
+  },
+  "agnie_quebec": {
+    "title": "Matka Boża w Quebecu",
+    "location": "Agnie, Quebec",
+    "country": "Kanada",
+    "description": "Maryja ukazała się młodemu tubylczemu chrześcijaninowi, nawróconemu na wiarę Mohawk, Martinowi Kandegonrhaksenowi."
+  },
+  "citta_di_castello": {
+    "title": "Matka Boża do św. Weroniki Giuliani",
+    "location": "Città di Castello",
+    "country": "Włochy",
+    "description": "Św. Weronika Giuliani, jedna z największych stygmatyczek mistycznych epoki baroku, wstąpiła do klasztoru kapucynów po głębokim widzeniu Maryi. Nosiła stygmaty i koronę cierniową."
+  },
+  "san_bartolomeo_1671": {
+    "title": "Nostra Signora della Rovere",
+    "location": "San Bartolomeo al Mare",
+    "country": "Włochy",
+    "description": "18 kwietnia 1671 roku Maryja ukazała się rolnikowi Giacinto Perato, sparaliżowanemu w jednym ramieniu, radząc mu, aby nie opóźniał pielgrzymki do jej dębowej świątyni. Następnego dnia podczas Mszy św. został natychmiastowo uzdrowiony."
+  },
+  "mary_tax_stams": {
+    "title": "Podatek Matki Bożej Marii",
+    "location": "Stams, Tyrol",
+    "country": "Austrii",
+    "description": "Maryja ukazała się właścicielowi ziemskiemu w Tyrolu, prosząc o kaplicę w lesie. W 1667 roku opat Nicola Kraus zbudował sanktuarium, które stało się przystanią dla wędrowców i pielgrzymów."
+  },
+  "torre_di_ruggiero": {
+    "title": "Najświętsza Maryjo Łaskawa",
+    "location": "Torre di Ruggiero",
+    "country": "Włochy",
+    "description": "17 kwietnia 1677 roku młoda Isabella Cristello i Antonia De Luca ujrzały Maryję w wizji o wysublimowanej słodyczy, uzdrawiającą Izabelę. Po trzęsieniu ziemi w 1783 r., które pogrzebało sanktuarium, Maryja ukazała się we śnie Pascale Lunie, aby zainspirować do jej odbudowy. W 1858 roku wytrysnęło cudowne źródło, które uzdrowiło rolnika Francesco Arone."
+  },
+  "bianzone_piano": {
+    "title": "Madonna del Piano",
+    "location": "Bianzone",
+    "country": "Włochy",
+    "description": "26 marca 1675 roku Maryja ukazała się miejscowemu mężczyźnie, prosząc go o wzniesienie na równinie ołtarza i świątyni."
+  },
+  "paray_le_monial": {
+    "title": "Matka Boża do Św. Małgorzaty Marii",
+    "location": "Paray-le-Monial",
+    "country": "Francja",
+    "description": "Św. Małgorzata Maria Alacoque, w młodości przykuta do łóżka z powodu ciężkiego reumatyzmu, została natychmiast wyleczona po ślubowaniu, że zostanie jedną z córek Marii. Wstąpiła do klasztoru Wizytek, gdzie otrzymała przemieniające świat objawienia Najświętszego Serca Pana Jezusa."
+  },
+  "agreda_mystic": {
+    "title": "Matki Bożej do Ven. Maria z Agredy",
+    "location": "Agreda",
+    "country": "Hiszpania",
+    "description": "Ven. Przełożona Maria od Jezusa z Agredy doświadczyła wzniosłych wewnętrznych wizji Matki Bożej, nagrywając monumentalne 4-tomowe arcydzieło „Mistyczne Miasto Boga”. Jej ciało pozostaje nienaruszone."
+  },
+  "alcobendas_paz": {
+    "title": "Virgen de la Paz",
+    "location": "Alcobendas, Madryt",
+    "country": "Hiszpania",
+    "description": "Maryja ukazała się na drzewie figowym kalece pasterce w Fuentiduña, w cudowny sposób przywracając jej kaleką rękę i napełniając pierś matki świeżym chlebem."
+  },
+  "pancole_providence": {
+    "title": "Matka Opatrzności Bożej",
+    "location": "Pancole, San Gimignano",
+    "country": "Włochy",
+    "description": "W kwietniu 1668 roku, płacząc z ubóstwa, głuchoniema pasterka Bartolomea Ghini ujrzała piękną damę, która przywróciła jej głos i napełniła spiżarnię rodziców chlebem, oliwą i winem. Kiedy wieśniacy wycinali jeżyny na polu, odkryli jej świątynię."
+  },
+  "pochayiv": {
+    "title": "Matka Boża Poczajowska",
+    "location": "Poczajów",
+    "country": "Ukraina",
+    "description": "Podczas wojny w Zbarażu armia turecka oblegająca Ławrę Poczajowską uciekła w przerażeniu, widząc chwalebne pojawienie się na niebie Bogurodzicy w towarzystwie aniołów i św. Hioba z Poczajowa. Wielu oblegających przeszło na chrześcijaństwo."
+  },
+  "le_laus": {
+    "title": "Matka Boża z Le Laus",
+    "location": "Saint-Étienne-le-Laus",
+    "country": "Francja",
+    "description": "Maryja objawiała się pokornej pasterce Benoîte Rencurel przez 54 lata, prosząc o nieustanną modlitwę i pokutę za grzeszników przy pachnących górskich lampach oliwnych. Oficjalnie zatwierdzony przez Kościół w 2008 roku."
+  },
+  "celles_ariege": {
+    "title": "Matka Boża z Celles",
+    "location": "Celles, Ariège",
+    "country": "Francja",
+    "description": "28 maja 1686 roku 10-letni wieśniak John Courdil zobaczył przy fontannie białą gołębicę przemieniającą się w młodą dziewczynę w bieli: „Jestem Święta Dziewica. Ostrzeż ludzi, aby zmienili swoje życie. Kiedy wrócił po łopatę, z jej rękojeści w cudowny sposób wyrosły trzy liście dębu w kształcie krzyża."
+  },
+  "saint_carr": {
+    "title": "Matka Boża z Saint-Carr",
+    "location": "Saint-Carr, Bretania",
+    "country": "Francja",
+    "description": "Prosty robotnik Jean Bizier śnił, że Mary pokazała mu dokładnie, gdzie ma kopać w pobliżu jego wioski. Następnego dnia odkopał wspaniałą drewnianą rzeźbę Madonny. Przechowany w kaplicy konsekrowanej w 1696 r."
+  },
+  "castenaso": {
+    "title": "Matka Boża z Castenaso",
+    "location": "Castenaso",
+    "country": "Włochy",
+    "description": "27 stycznia 1699 roku młoda Maria Maddalena usłyszała głos wzywający ją do kościoła. Kiedy uklękła przed obrazem Maryi, Matka Boża z miłością wyciągnęła do niej rękę."
+  },
+  "sumeg_sorrows": {
+    "title": "Matki Bożej Bolesnej",
+    "location": "Sümeg",
+    "country": "Węgry",
+    "description": "Sophia Feilheim, cierpiąca na nieuleczalną chorobę w Wiedniu, widziała we śnie Pietę, która do niej przemówiła. Pojechała na Węgry, gdzie znalazła dokładny posąg w Sümeg. Po dotknięciu natychmiast została wyleczona."
+  },
+  "messina_lettera": {
+    "title": "Madonna della Lettera",
+    "location": "Mesyna, Sycylia",
+    "country": "Włochy",
+    "description": "Podczas katastrofalnych trzęsień ziemi w styczniu 1693 r. Maryja ukazała się chorej Paoli Pesce w bieli i niebieskim płaszczu: „Nie bój się”. Obiecała ochronę osobom zgromadzonym w Katedrze przed ikoną Matki Bożej Piśmienniczej. Miasto uniknęło największych skutków katastrofy. Ozdobiony kolosalnym złotym pomnikiem portu."
+  },
+  "urkupina_bolivia": {
+    "title": "Virgen de Urkupiña",
+    "location": "Quillacollo, Cochabamba",
+    "country": "Boliwia",
+    "description": "Pokornej pasterce na wzgórzu Cota ukazała się piękna pani niosąca dziecko, rozmawiająca płynnie w języku keczua. Kiedy mieszkańcy pospieszyli, żeby to zobaczyć, dziewczyna wskazała: „Jaqaypiña orqopiña” („Ona już jest na wzgórzu!”). To wielkie narodowe sanktuarium jest czczone w całej Ameryce Południowej jako Patronka Integracji Narodowej."
+  },
+  "giaudet_lanrivain": {
+    "title": "Matka Boża z Lanrivain",
+    "location": "Lanrivain, Bretania",
+    "country": "Francja",
+    "description": "Maryja ukazała się biednemu chłopowi, ojcu 12 dzieci i cudownie rozmnożyła chleb na jego stole. Kiedy sceptyczny proboszcz oślepł, odzyskał wzrok po modlitwie przed nowo odkrytą figurą Marii."
+  },
+  "capurso_pozzo": {
+    "title": "Madonna ze Studni",
+    "location": "Capurso, Apulia",
+    "country": "Włochy",
+    "description": "W sierpniu 1705 roku umierając na nieuleczalną chorobę ks. Dominic Tanzella ujrzał Matkę Bożą w wizji nocnej. Obiecała natychmiastowe uzdrowienie, jeśli wypije wodę ze starożytnej studni „Santa Maria” i zbuduje kościół. Wypił, natychmiast został przywrócony i wzniósł wspaniałą bazylikę."
+  },
+  "santa_rosa_ambato": {
+    "title": "Virgen de la Elevación",
+    "location": "Santa Rosa, Ambato",
+    "country": "Ekwador",
+    "description": "13 listopada 1695 roku, podczas suszy i wstrząsów, Maryja ukazała się w oślepiającym świetle miejscowemu słudze Juanowi Chacarinowi pod skałą na wysokości 3419 m n.p.m.: „Jestem Maryją Dziewicą bez skazy… pokutujcie za miłosierdzie”. Przechowany w głównym sanktuarium diecezjalnym."
+  },
+  "germany_holzhauser": {
+    "title": "Matki Bożej do Ven. Holzhausera",
+    "location": "Bingen / Bawaria",
+    "country": "Niemcy",
+    "description": "Czcigodny Bartolomeo Holzhauser, znany kapłan, prorok i założyciel Związku Apostolskiego Księży Świeckich, cieszył się wzniosłymi wizjami i objawieniami Najświętszej Maryi Panny, które oświeciły jego głębokie komentarze do Pisma Świętego."
+  },
+  "quito_guapulo": {
+    "title": "Matka Boża z Guapulo",
+    "location": "Quito",
+    "country": "Ekwador",
+    "description": "Podczas uroczystej procesji Matki Bożej z Guadalupe Królowa Nieba ukazała się biskupowi Quito, który natychmiast został wyleczony z ciężkiej choroby."
+  },
+  "quito_nube": {
+    "title": "Nuestra Señora de la Nube",
+    "location": "Quito",
+    "country": "Ekwador",
+    "description": "30 grudnia 1696 roku podczas wielkiej procesji w intencji chorego biskupa, 500 zgromadzonych wiernych ujrzało Matkę Bożą odpoczywającą na obłoku, trzymającą lilię i Dzieciątko Jezus. Chwalebne objawienie trwało przez cały czas odmawiania Gloria Patri."
+  },
+  "san_severino_pollino": {
+    "title": "Madonna del Pollino",
+    "location": "San Severino Lucano",
+    "country": "Włochy",
+    "description": "Matka Boża ukazała się „skąpana w świetle jasnym jak słońce” na północnych zboczach góry Pollino pasterzowi i miejscowej kobiecie, wskazując jaskinię z ukrytą statuą. Wielbiciele wspinają się do pięknego górskiego sanktuarium na wysokości 1537 m npm w kolorowej wiosennej procesji."
+  },
+  "ellwangen_jeningen": {
+    "title": "Matka Boża Schönenberg",
+    "location": "Ellwangen",
+    "country": "Niemcy",
+    "description": "Misjonarz jezuicki ks. Philip Jeningen, znany mistyk i przewodnik duchowy, otrzymał święte stygmaty podczas objawienia Jezusa i Maryi, co skłoniło go do promowania pięknego sanktuarium na wzgórzu w Schönenberg."
+  },
+  "kotschach": {
+    "title": "Matka Boża z Kötschach",
+    "location": "Kötschach-Mauthen",
+    "country": "Austrii",
+    "description": "Maryja poddała młodego zakrystiana próbie, klęcząc w jego domu przez dwanaście godzin, po czym zapewniła go o swojej ochronie nad sanktuarium i pielgrzymami. 29 kwietnia w nocy samoistnie zawyły dzwony, a cały kościół został cudownie oświetlony nieziemskim światłem."
+  },
+  "florida_cuipa": {
+    "title": "Matka Boża do Antonio Cuipy",
+    "location": "La Concepción de Ayubale na Florydzie",
+    "country": "USA",
+    "description": "25 stycznia 1704 roku wódz Apalachee, katecheta i flecista Antonio Cuipa został przywiązany do krzyża i zginął męczeńską śmiercią podczas najazdów angielskich. Torturowany ogniem pod stopami Antonio ujrzał Dziewicę Maryję pojawiającą się u jego boku, która dodała mu pogodnej odwagi do zniesienia chwalebnego męczeństwa."
+  },
+  "poponguine": {
+    "title": "Matka Boża z Poponguine",
+    "location": "Poponguine",
+    "country": "Senegal",
+    "description": "Miejscowy szaman był świadkiem upadku obrazu Matki Bożej z brewiarza młodego francuskiego misjonarza na piasek. Rozpoznając w niej promienną kobietę, którą spotkał poprzedniego dnia na polach, on i cała wioska z radością nawrócili się na chrześcijaństwo. Główne sanktuarium narodowe Senegalu."
+  },
+  "foret_montfort": {
+    "title": "Matka Boża do św. Ludwika de Montfort",
+    "location": "Forêt de la Madeleine, Poitiers",
+    "country": "Francja",
+    "description": "Św. Ludwikowi Marii Grignion de Montfort, niezwykłemu apostołowi Całkowitego Poświęcenia się Jezusowi przez Maryję, podczas jego żmudnych podróży misyjnych po Francji często towarzyszyła promienna „Pani ubrana na biało”, czego świadkiem było kilku wiernych."
+  },
+  "persquen_morbihan": {
+    "title": "Matka Boża z Persquen",
+    "location": "Persquen, Morbihan",
+    "country": "Francja",
+    "description": "Po cudownych objawieniach w 1722 r. wzniesiono wielką kaplicę, w której co roku 1 sierpnia gromadzą się setki wiernych na tradycyjnym bretońskim ułaskawieniu i uroczystej procesji."
+  },
+  "valverde_1711": {
+    "title": "Matka Boża z Valverde",
+    "location": "Rezzato, Brescia",
+    "country": "Włochy",
+    "description": "1 października 1711 roku, podczas niszczycielskiej zarazy bydła, Matka Boża ukazała się w pobliżu stawu sanktuarium Paolo Ognie (8) i Francesco Pellizzari (11) podczas zbierania kasztanów, obiecując natychmiastowe zakończenie epidemii."
+  },
+  "altenhohenau_weigl": {
+    "title": "Matka Boża do Columby Weigl",
+    "location": "Altenhohenau, Bawaria",
+    "country": "Niemcy",
+    "description": "Przeorysza dominikańska Columba Weigl miała w dzieciństwie konsekwentne, niemal codzienne wizje Marii i Jezusa, otrzymując święte stygmaty 19 sierpnia 1731 roku."
+  },
+  "sinj_croatia": {
+    "title": "Matka Boża Sinj",
+    "location": "Sinj",
+    "country": "Chorwacja",
+    "description": "14 sierpnia 1715 roku, gdy 70 000 żołnierzy osmańskich oblegało Sinj w marszu na Wiedeń, mieszczanie modlili się przed cudowną ikoną. W święto Wniebowzięcia na niebie pojawiła się postać Marii, zmuszając armię najeźdźców do ucieczki. Główne sanktuarium narodowe Chorwacji."
+  },
+  "ovada_passion": {
+    "title": "Matka Boża Męka",
+    "location": "Ovada / Castellazzo Bormida",
+    "country": "Włochy",
+    "description": "Św. Paweł od Krzyża, ocalony w młodości od utonięcia przez Maryję, otrzymał monumentalną wizję Matki Bożej w czarnym habicie żałobnym z białym krzyżem na piersi. Poleciła mu założyć znany na całym świecie Zakon Pasjonistów."
+  },
+  "pellestrina_venice": {
+    "title": "Madonna z objawień",
+    "location": "Pellestrina, Wenecja",
+    "country": "Włochy",
+    "description": "4 sierpnia 1716 roku 14-letni Natalino Scarpa ujrzał przed zamkniętym kościołem majestatyczną damę w gwiaździstej błękitnej sukience: „Chodź tu, synu... powiedz proboszczowi, żeby odprawiał msze za dusze czyśćcowe, jeśli chcemy wygrać wojnę”. Delikatnie dotknęła jego nadgarstka, aby potwierdzić cud."
+  },
+  "solovetsky_golgotha": {
+    "title": "Matka Boża na Górze Golgota",
+    "location": "Wyspa Anzersky, Sołowki",
+    "country": "Rosja",
+    "description": "18 czerwca 1712 roku Maryja ukazała się mnichowi Hiobowi (Lovie) w klasztorze Sołowieckim: „Ta góra będzie nazywana Golgota... miejscem nieopisanej męki”. Dokładnie dwa wieki później wyspa stała się miejscem tragicznego obozu jenieckiego Gułagu."
+  },
+  "mercatello_giuliani": {
+    "title": "Matka Boża do św. Weroniki Giuliani",
+    "location": "Mercatello na Metauro",
+    "country": "Włochy",
+    "description": "Św. Weronika Giuliani, niezwykła mistyka kapucyńska i stygmatyczka, przez całe swoje życie klauzurowe doświadczała ciągłej, głębokiej łączności z Maryją i Jezusem."
+  },
+  "maserada_vittorie": {
+    "title": "Madonna delle Vittorie",
+    "location": "Maserada sul Piave",
+    "country": "Włochy",
+    "description": "Cudowne objawienia, które miały miejsce 9 lipca 1722 r., doprowadziły do ​​oddania czci Matce Bożej Zwycięskiej wzdłuż rzeki Piave w Veneto."
+  },
+  "rubiana_sorrows": {
+    "title": "Madonna Bolesna / Matka Boża Niska",
+    "location": "Rubiana / Val della Torre",
+    "country": "Włochy",
+    "description": "18 sierpnia 1713 roku Lorenzo Nicol złamał nogę w grzbiecie alpejskim i po ślubowaniu pylonu został natychmiast wyleczony. Zapominając o ślubie, złamał go ponownie dokładnie rok później, 20 sierpnia 1714 roku. Pokutując, został ponownie uzdrowiony przez Maryję i wzniósł wspaniałe sanktuarium."
+  },
+  "peterwardein_snow": {
+    "title": "Matka Boża Śnieżna",
+    "location": "Peterwardein / Nowy Sad",
+    "country": "Serbia / Słowacja",
+    "description": "Maryja rozciągnęła swój płaszcz ochronny nad chrześcijańskimi siłami księcia Eugeniusza Sabaudzkiego podczas decydującej bitwy z potęgą osmańską 5 sierpnia 1716 r. Papież Klemens XI w dowód wiecznej wdzięczności ustanowił powszechne święto Różańca Świętego."
+  },
+  "bischwind_mittnacht": {
+    "title": "Maryja Wspomożycielka",
+    "location": "Bischwind, Bawaria",
+    "country": "Niemcy",
+    "description": "Żołnierz George Mittnacht, schwytany przez siły osmańskie i skazany na wrzący olej, modlił się żarliwie do Maryi, ślubując kaplicę, jeśli ponownie zobaczy swoją ojczyznę. Następnego ranka obudził się cudownie przeniesiony na trawnik we Frankonii. Kaplicę zbudował własnymi rękami."
+  },
+  "aparecida_brazil": {
+    "title": "Nossa Senhora Aparecida",
+    "location": "Aparecida, São Paulo",
+    "country": "Brazylia",
+    "description": "W październiku 1717 roku, po modlitwie do Maryi podczas bezowocnej nocy na rzece Paraíba, trzech rybaków złowiło w sieci najpierw ciało, a następnie głowę przepięknej terakotowej figury Niepokalanego Poczęcia. Zarzucając ponownie sieci, zostali zasypani rybami. Główna Patronka Brazylii, umiejscowiona w drugiej co do wielkości bazylice katolickiej na Ziemi."
+  },
+  "lescure_paille": {
+    "title": "Matka Boża Nawiedzenia",
+    "location": "Lescure, Cantal",
+    "country": "Francja",
+    "description": "2 lipca 1717 roku Maria ukazała się trzykrotnie 13-letniemu pasterzowi Jeanowi Paillé, prosząc go o odkopanie ukrytego podziemnego posągu. Biskup Saint-Flour formalnie zatwierdził sanktuarium po dokładnym dochodzeniu kanonicznym."
+  },
+  "neunkirchen_locatelli": {
+    "title": "Matka Boża do Józefa Locatellego",
+    "location": "Neunkirchen",
+    "country": "Austrii",
+    "description": "Najświętsza Dziewica ukazała się Józefowi Locatelliemu, cierpiącemu na ciężką puchlinę, i w cudowny sposób przywróciła mu doskonałe zdrowie."
+  },
+  "rome_divino_amore": {
+    "title": "Madonna del Divino Amore",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Zagubiony podróżnik w drodze do Bazyliki Świętego Piotra został zaatakowany przez stado wściekłych bezpańskich psów w Castel di Leva. Krzyknął przed freskiem na wieży przedstawiającym Dziewicę z Dzieciątkiem, a psy natychmiast się rozproszyły. Papież Pius XII przypisuje mu ocalenie Rzymu przed zniszczeniem podczas II wojny światowej."
+  },
+  "france_lenormand": {
+    "title": "Matka Boża do Marii Lenormand",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Manifestacje maryjne zapisane Marii Lenormand we Francji w 1769 r."
+  },
+  "chaguaya_bolivia": {
+    "title": "Dziewica z Chaguaya",
+    "location": "Chaguaya, Tarija",
+    "country": "Boliwia",
+    "description": "Podczas dotkliwej suszy w 1750 r. dwóch pasterzy ujrzało wielobarwne promienie światła emanujące z drzewa Molle, odsłaniając piękny wizerunek Maryi. Po przywiezieniu do ich domu obraz w cudowny sposób powrócił na drzewo, tworząc wielką bazylikę."
+  },
+  "gimigliano_porto": {
+    "title": "Madonna z Porto",
+    "location": "Gimigliano, Kalabria",
+    "country": "Włochy",
+    "description": "W październiku 1753 roku Maryja ukazała się we śnie skruszonemu złodziejowi Pietro Gatto, prosząc o przydrożną kapliczkę. W 1807 roku francuski generał, który zrabował cudowną ikonę, zwrócił ją w uroczystej procesji, gdy w jego namiocie promieniowało oślepiające światło. Koronowany przez papieża św. Jana Pawła II w 1984 r."
+  },
+  "mariabesnyo_hungary": {
+    "title": "Matki Bożej Máriabesnyő",
+    "location": "Gödöllő",
+    "country": "Węgry",
+    "description": "19 kwietnia 1759 roku murarz Jan Fiedler śnił, że Maria powiedziała mu, że odkryje skarb w ruinach kościoła. Następnego dnia odkopał przepiękny XIV-wieczny posąg Matki Boskiej z kości słoniowej. Formalnie potwierdzone przez kardynała Migazziego jako jedno z największych sanktuariów narodowych Węgier."
+  },
+  "pochayiv_1765": {
+    "title": "Matka Boża Poczajowska",
+    "location": "Ławra Poczajowska",
+    "country": "Ukraina",
+    "description": "Majestatyczne objawienie Maryi w jaskrawym świetle ocaliło historyczny klasztor Lavra przed zagładą wojskową osmańską. W 1772 r. cudowna ikona została koronowana przed 100 000 wiernych."
+  },
+  "bois_de_la_roche": {
+    "title": "Matka Boża do Madeleine Morice",
+    "location": "Néant-sur-Yvel, Bretania",
+    "country": "Francja",
+    "description": "Maryja ukazała się w gwiaździstych niebieskich szatach 11-letniej Madeleine-Marie Morice, wyjaśniając głęboką mistyczną głębię Modlitwy Pańskiej („Przyjdź Królestwo Twoje”) i prosząc o założenie sierocińca Domu Opatrzności."
+  },
+  "dulmen_emmerich": {
+    "title": "Matki Bożej do Bł. Anna Emmerich",
+    "location": "Dülmen, Westfalia",
+    "country": "Niemcy",
+    "description": "Błogosławiona Anna Katarzyna Emmerich, augustianka stygmatyczka i mistyczka, otrzymała monumentalne szczegółowe wizje ziemskiego życia Maryi i bolesnej Męki Jezusa, spisane przez poetę Clemensa Brentano. Jej wizje głęboko wzbogacają naszą wiedzę o historii zbawienia."
+  },
+  "bocca_pignone_ghianda": {
+    "title": "Madonna della Ghianda",
+    "location": "Bocca Pignone di Ripalta, La Spezia",
+    "country": "Włochy",
+    "description": "W latach 1778 i 1779 Maryja ukazała się na gałęzi kasztanowca w pobliżu ruin kościoła z XII wieku trzem pastuszkom, wzywając do pokuty i głębokiej medytacji nad pismami świętymi."
+  },
+  "bordeaux_chaminade": {
+    "title": "Matki Bożej do Bł. Chaminada",
+    "location": "Bordeaux",
+    "country": "Francja",
+    "description": "Błogosławiony Guillaume-Joseph Chaminade, który odmówił złożenia przysięgi rewolucyjnej francuskiej, był wielokrotnie chroniony przed odkryciem żołnierzy przez objawienia Maryi. W 1817 założył znany na całym świecie zakon marianistów."
+  },
+  "montagnaga_pine": {
+    "title": "Madonna di Montagnaga / Piné",
+    "location": "Montagnaga di Piné, Trydent",
+    "country": "Włochy",
+    "description": "14 maja 1729 roku Maryja ukazała się w złotym świetle 30-letniej pasterce Domenice Targa, gdy jej bydło tupnęło: „Wybrałam to miejsce na tron ​​mojego Miłosierdzia. Ci, którzy modlą się z wiarą, nie wrócą z pustymi rękami. Formalnie zatwierdzony przez biskupa w 1730 r."
+  },
+  "valley_forge_washington": {
+    "title": "Wizja Jerzego Waszyngtona",
+    "location": "Valley Forge, Pensylwania",
+    "country": "USA",
+    "description": "Według relacji historycznych opublikowanych w 1859 r. generał George Washington ujrzał w Valley Forge tajemniczą damę, która ujawniła trzy wielkie niebezpieczeństwa, przed którymi stanie Republika Amerykańska, i podsumował: „W tym największym konflikcie cały zjednoczony świat nie zwycięży nad nią… tak długo Unia będzie trwała”."
+  },
+  "las_lajas_colombia": {
+    "title": "Matka Boża z Las Lajas",
+    "location": "Kanion Guáitara, Nariño",
+    "country": "Kolumbia",
+    "description": "Podczas burzy w kanionie tubylcza Maria Mueses i jej głuchoniema córka Rosa ujrzały wspaniały obraz Matki Bożej trzymającej różaniec ze św. Dominikiem i św. Franciszkiem, odciśnięty bezpośrednio w łupkowym klifie. Rosa natychmiast odzyskała mowę. Słynny na całym świecie gotycki cud architektury zbudowany nad wąwozem."
+  },
+  "sarov_seraphim": {
+    "title": "Matka Boża do św. Serafina",
+    "location": "Sarow",
+    "country": "Rosja",
+    "description": "Św. Serafin z Sarowa, jeden z najbardziej czczonych mnichów w historii rosyjskiego prawosławia, w ciągu 15 lat swego pobytu w absolutnym odosobnieniu na pustyni doświadczył wielu chwalebnych objawień Matki Bożej."
+  },
+  "grushev-1806": {
+    "title": "Matka Boża Gruszewska",
+    "location": "Gruszew",
+    "country": "Ukraina",
+    "description": "Maryja pojawiła się w Gruszewie w niezwykłych okolicznościach, potwierdzonych przez wielu naocznych świadków. W 1856 roku w tym świętym miejscu wzniesiono piękną kapliczkę pamiątkową."
+  },
+  "doroszlo_hungary": {
+    "title": "Matka Boża z Doroszló",
+    "location": "Doroszló, Wojwodina",
+    "country": "Serbia / Historyczne Węgry",
+    "description": "Janos Zavloczki, oślepiony w wypadku, otrzymał od Marii polecenie obmycia oczu przy świętym źródle. Natychmiast odzyskał wzrok, zakładając jedną z najwybitniejszych bazylik pielgrzymkowych w dorzeczu Dunaju."
+  },
+  "rome-canori-mora-1807": {
+    "title": "Matka Boża do błogosławionej Elżbiety Canori Mora",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Dziewica z Dzieciątkiem Jezus ukazała się błogosławionej Elżbiecie Canori Mora w Rzymie. W Boże Narodzenie 1816 roku Matka Boża okazała się niezwykle smutna, ostrzegając przed wielką bezbożnością i apostazją. Jej pisma zostały rygorystycznie zbadane przez Stolicę Apostolską i uznane za całkowicie wolne od błędów doktrynalnych."
+  },
+  "leipzig-lichen-1813": {
+    "title": "Matki Bożej Licheńskiej (Bitwa pod Lipskiem)",
+    "location": "Lipsk / Licheń",
+    "country": "Polska",
+    "description": "Podczas bitwy pod Lipskiem do Maryi modlił się ranny polski żołnierz Tomasz Kłossowski. Ukazała się w złotej szacie z koroną i białym orłem, obiecując jego uzdrowienie i prosząc o odnalezienie jej portretu. Wrócił do Lichenia i cudowny portret zawiesił w leśnej kaplicy."
+  },
+  "villanova-d-asti-1803": {
+    "title": "Madonna z Bastionów",
+    "location": "Villanova d'Asti",
+    "country": "Włochy",
+    "description": "Dziewica Maryja objawiła się 18-letniej Marii Baj podczas pasania bydła i powiedziała: „Matka Syna Bożego postanowiła być czczona w tym miejscu”. Potem pojawiły się doniesienia o uzdrowieniach, zwłaszcza z gorączki malarycznej. Cudowne źródło w dolinie nazwano „Wodą Dziewicy”."
+  },
+  "rue-du-bac-1830": {
+    "title": "Matki Bożej Cudownego Medalika",
+    "location": "Rue du Bac, Paryż",
+    "country": "Francja",
+    "description": "W kaplicy Sióstr Miłosierdzia Maryja ukazała się nowicjuszce Katarzynie Labouré stojącej na kuli ziemskiej, a promienie światła płynęły z jej ozdobionych klejnotami dłoni. Zamówiła Cudowny Medalik, obiecując ogromne łaski wszystkim, którzy będą go nosić z ufnością."
+  },
+  "matemblewo_gdansk": {
+    "title": "Matka Boża Matemblewska",
+    "location": "Matemblewo, Gdańsk",
+    "country": "Polska",
+    "description": "Podczas mroźnej zimy w 1790 roku Maryja ukazała się w lesie 18-letniej Rosinie Puechner, gdy spacerowała po śniegu, przekazując głębokie przesłanie pokoju, pokuty i modlitwy. Głęboko czczony rezerwat leśny w Gdańsku."
+  },
+  "laurignano-1831": {
+    "title": "Matka Boża Łańcuchowa (Madonna della Catena)",
+    "location": "Laurignano",
+    "country": "Włochy",
+    "description": "Fra Benedetto Falcone przybył do samotnej pustelni w Laurignano. Po kilku objawieniach Najświętszej Maryi Panny wskrzesił nabożeństwo do Madonny della Catena i zbudował piękne sanktuarium, którym obecnie opiekują się Misjonarze Pasjoniści."
+  },
+  "tinos-1821": {
+    "title": "Panagia Megalochare",
+    "location": "Wyspa Tinos",
+    "country": "Grecja",
+    "description": "Dziewica Maryja ukazała się w intensywnym boskim świetle św. Pelagii i jej bratu we śnie, kierując wykopaliskami, które odsłoniły cudowną ikonę Megalochare (Łaski Pełnej). Tinos stało się świętym narodowym sanktuarium maryjnym Grecji."
+  },
+  "la_vang_vietnam": {
+    "title": "Matka Boża z La Vang",
+    "location": "Quảng Trị, Huế",
+    "country": "Wietnam",
+    "description": "Gdy prześladowani wietnamscy chrześcijanie musieli stawić czoła głodowi i dzikim zwierzętom w dżungli, Matka Boża ukazała się w czystym białym świetle, trzymając Dzieciątko Jezus z dwoma aniołami. Pokazała im, jak gotować liście na lekarstwa i obiecała ochronę. Narodowe Sanktuarium Maryjne Wietnamu."
+  },
+  "lescouet-1820": {
+    "title": "Matka Boża z Lescouët",
+    "location": "Lescouët-Gouarec",
+    "country": "Francja",
+    "description": "Siedemnastoletni pasterz Jean Poulli usłyszał głos i zobaczył Najświętszą Maryję Pannę, która prosiła o zbudowanie kaplicy. Proboszcz zbadał sprawę, usłyszał niebiański śpiew i odkrył cudowne źródło. Zatwierdzony przez biskupa De La Romagère w 1829 r."
+  },
+  "sallent-1829": {
+    "title": "Matka Boża do św. Antoniego Marii Klaretu",
+    "location": "Salentny",
+    "country": "Hiszpania",
+    "description": "Św. Antoni Maria Klaret doświadczył wielokrotnych objawień Maryi i został cudownie uzdrowiony z ciężkiej choroby. Następnie założył znane na całym świecie Zgromadzenie Synów Misjonarzy Niepokalanego Serca Maryi (klaretynów)."
+  },
+  "guadalajara-1831": {
+    "title": "Matka Boża do Siostry Patrocinio",
+    "location": "Guadalajara",
+    "country": "Hiszpania",
+    "description": "Dziewica Maryja ukazała się Dolores Quiroga, franciszkance założycielce trzydziestu klasztorów w całej Hiszpanii, która nosiła święte stygmaty. Jej kierownikiem duchowym był św. Antoni Maria Klaret."
+  },
+  "mimbaste-1830": {
+    "title": "Matka Boża do Marii Lataste",
+    "location": "Mimbaste",
+    "country": "Francja",
+    "description": "Mistyk Marie Lataste doświadczyła licznych objawień Najświętszej Maryi Panny i Najświętszego Serca, inspirując jej bohaterskie cnoty jako siostry świeckiej w klasztorze Najświętszego Serca w Rennes."
+  },
+  "vallecorsa-1821": {
+    "title": "Matka Boża do św. Marii De Mattias",
+    "location": "Vallecorsa",
+    "country": "Włochy",
+    "description": "Matka Najświętsza ukazała się młodej Marii, patrząc na nią z wnętrza lustra. Matka Boża w cudowny sposób nauczyła ją czytać, aby mogła studiować księgi duchowe, prowadząc ją do poświęcenia życia Bogu i założenia Sióstr Adoratorek Krwi Chrystusa."
+  },
+  "valmala-1834": {
+    "title": "Matka Miłosierdzia (Matka Boża z Valmala)",
+    "location": "Valmala, Piemont",
+    "country": "Włochy",
+    "description": "Pięciu młodych pasterzy ujrzało piękną Panią stojącą na kamiennej płycie, ubraną w długą czerwonawą suknię z niebieskim welonem, zapinanym na złoty guzik. Przez 50 dni pojawiała się we łzach z otwartymi rękami. Oficjalnie koronowany przez biskupa Saluzzo."
+  },
+  "trinitapoli-1835": {
+    "title": "Matka Boża do Giuseppe Marii Leone",
+    "location": "Trinitapoli, Apulia",
+    "country": "Włochy",
+    "description": "Najświętsza Maryja Panna cudownie ocaliła 6-letniego Józefa Leone, gdy ten wpadł do głębokiego dołu, inspirując go do pobożnego życia. Później, w seminarium, ukazała mu się Maryja i powiedziała: „Należysz do mnie”."
+  },
+  "bous-1833": {
+    "title": "Matka Boża do Matki Marie Claire Dominic",
+    "location": "Bous-Septfontaines",
+    "country": "Francja",
+    "description": "Maryja ukazała się mistyczce Annie Moes podczas jej dzieciństwa w Bous. Pomimo lat sceptycyzmu i oszczerstw wyrażanych z głęboką pokorą, w roku 1884 sąd biskupi w pełni potwierdził jej nadprzyrodzone wizje."
+  },
+  "capriana-1833": {
+    "title": "Matka Boża do Dominiki Lazzeri",
+    "location": "Capriana, Trydent",
+    "country": "Włochy",
+    "description": "Majestatyczna postać Matki Boskiej ukazała się 18-letniej Domenice Lazzeri podczas pracy w polu. Następnie otrzymała święte stygmaty i z niezwykłą cierpliwością znosiła cierpienia pokutne aż do swojej śmierci w 1848 roku."
+  },
+  "versailles-green-scapular-1840": {
+    "title": "Matki Bożej Zielonej Szkaplerznej",
+    "location": "Blangy / Wersal",
+    "country": "Francja",
+    "description": "Maryja ukazała się siostrze Wincentyńskiej Justine Bisqueyburu, trzymając swoje Niepokalane Serce przebite mieczem i płonące boskim światłem. Powierzyła jej Zielony Szkaplerz, obiecując cudowne uzdrowienia fizyczne i nawrócenia na łożu śmierci wszystkim, którzy go noszą."
+  },
+  "nantes-ardouin-1840": {
+    "title": "Matka Boża do Marii Ardouin",
+    "location": "Nantes",
+    "country": "Francja",
+    "description": "Marie Ardouin przez pięć lat cierpiała na rozdzierający ból spowodowany nieuleczalnym nowotworem. Kiedy wydawało się, że jej ostatnie chwile są bliskie, Dziewica Maryja ukazała się jej w oślepiającym świetle i natychmiast i całkowicie ją uzdrowiła."
+  },
+  "rome-ratisbonne-1842": {
+    "title": "Matka Boża Syjonu (Madonna Cudu)",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Antykatolicka żydowska bankierka Marie-Alphonse Ratisbonne stała w środku Sant'Andrea delle Fratte, nosząc w ramach testu Cudowny Medalik. Najświętsza Dziewica ukazała mu się w promieniującym majestacie; natychmiast się nawrócił, został księdzem i założył Zgromadzenie Matki Bożej Syjonu."
+  },
+  "graz-lorber-1840": {
+    "title": "Matka Boża do Jakoba Lorbera",
+    "location": "Graz",
+    "country": "Austrii",
+    "description": "Pisarz mistyczny Jakob Lorber doświadczył głębokich wewnętrznych lokacji i mistycznych wizji życia niebieskiego i Najświętszej Maryi Panny."
+  },
+  "celles-1842": {
+    "title": "Matka Boża do Matki Marie-Stanislas Deprez",
+    "location": "Komórki",
+    "country": "Belgia",
+    "description": "Dziewica Maryja ukazała się Matce Wizytatorce Marii Stanisławie w „Sali Ubogich”, przekazując wzniosłe nauki duchowe. Salę objawień przekształcono później w świętą kaplicę klasztorną."
+  },
+  "paris-victories-1836": {
+    "title": "Matki Bożej Zwycięskiej",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "ks. Desgenettes, zrozpaczony swoją bezowocną posługą u Matki Bożej Zwycięskiej w Paryżu, otrzymał od Najświętszej Maryi Panny głębokie wewnętrzne polecenie, nakazujące mu poświęcenie swojej parafii Jej Niepokalanemu Sercu. Powstałe Arcybractwo zapoczątkowało cudowne nawrócenia na całym świecie."
+  },
+  "ars-vianney-1840": {
+    "title": "Matka Boża do św. Jana Vianneya",
+    "location": "Ars-sur-Formans",
+    "country": "Francja",
+    "description": "Pani. Durie wszedł do pokoju św. Jana Vianneya i był świadkiem, jak Najświętsza Dziewica Maryja ubrana w olśniewającą biel, ze złotymi różami i koroną z błyszczących gwiazd, delikatnie rozmawiała ze świętym Proboszczem na temat cudownych uzdrowień."
+  },
+  "rome-del-bufalo-1837": {
+    "title": "Matka Boża do św. Kaspra del Bufalo",
+    "location": "Rzym",
+    "country": "Włochy",
+    "description": "Apostoł Najdroższej Krwi Św. Kaspar del Bufalo doświadczył głębokiej inspiracji maryjnej i mistycznego przewodnictwa podczas swoich żmudnych podróży misyjnych po Włoszech, zakładając Misjonarzy Najdroższej Krwi."
+  },
+  "montana-little-paul-1841": {
+    "title": "Matki Bożej Modlitwy (Misja Mariacka)",
+    "location": "Dolina Bitterroot, Montana",
+    "country": "USA",
+    "description": "11-letni sierota z Salish ujrzał Dziewicę Maryję unoszącą się nad ziemią w szatach białych jak śnieg, z gwiazdą nad głową i promieniami światła płynącymi z jej serca. ks. Pierre De Smet zbadał sprawę i wzniósł statuę poświęconą Matce Bożej Modlitwy."
+  },
+  "casnigo-1839": {
+    "title": "Matka Boża z Erbii",
+    "location": "Kasnigo",
+    "country": "Włochy",
+    "description": "Podczas gwałtownej burzy mały chłopiec szukający schronienia został przyjęty przez Madonnę do bezpiecznie zamkniętej stodoły, gdzie zapewniła mu chleb i ciepłe łóżko. Zbadane i oficjalnie zatwierdzone w 1873 roku przez biskupa Bergamo."
+  },
+  "siena-taigi-1836": {
+    "title": "Matki Bożej Błogosławionej Anny Marii Taigi",
+    "location": "Siena / Rzym",
+    "country": "Włochy",
+    "description": "Błogosławiona Anna Maria Taigi, oddana matka i mistyczka w Rzymie i Sienie, doświadczyła nadprzyrodzonych objawień i zobaczyła cudowną kulę słoneczną, w której przepowiedziała najważniejsze wydarzenia historyczne na świecie."
+  },
+  "la-salette-1846": {
+    "title": "Matka Boża z La Salette (Rozjemczyni Grzeszników)",
+    "location": "La Salette, Alpy Francuskie",
+    "country": "Francja",
+    "description": "Wysoko w Alpach Francuskich Najświętsza Dziewica ukazała się w jaskrawym świetle, intensywnie płacząc przed dwoma młodymi pasterzami, Maksyminem i Mélanie. Nosząc krucyfiks z młotkiem i szczypcami, ostrzegała przed głodem i nawoływała do szczerej pokuty, modlitwy i obchodzenia Dnia Pańskiego."
+  },
+  "obermauerbach-1848": {
+    "title": "Matka Boża z Obermauerbach",
+    "location": "Obermauerbach, Bawaria",
+    "country": "Niemcy",
+    "description": "Maryja ukazała się na zielonym pastwisku ubrana na różowo, z białym welonem i złotą koroną, płacząc boleśnie nad brakiem wiary w świat. Następnie objawiła się w niebiańskiej okazałości przed tłumami liczącymi maksymalnie czterdziestu ośmiu świadków."
+  },
+  "turin-bosco-1846": {
+    "title": "Maryja Wspomożycielka",
+    "location": "Valdocco, Turyn",
+    "country": "Włochy",
+    "description": "Kierowany mistycznymi snami i bezpośrednimi wizjami Najświętszej Maryi Panny, św. Jan Bosko założył Zakon Salezjański, aby ratować i wychowywać opuszczoną młodzież ulicy. Wzniósł wspaniałą Bazylikę Maryi Wspomożycielki w Turynie, przypisując Matce Bożej każdy triumf."
+  },
+  "maria-dolina-1849": {
+    "title": "Niepokalane Poczęcie (Madonna del Bosco)",
+    "location": "Maria Dolina, Poggersdorf",
+    "country": "Austrii",
+    "description": "Najświętsza Maryja Panna objawiła się jako Niepokalane Poczęcie na leśnej łące trzem młodym pasterzom, przygotowując wiernych do uroczystego określenia dogmatu papieskiego z 1854 roku. Wzniesiono drewnianą kaplicę i cudowny obraz."
+  },
+  "chambery-1849": {
+    "title": "Matka Boża do s. Marie-Marthe Chambon",
+    "location": "Izba",
+    "country": "Francja",
+    "description": "Siostra wizytatorka s. Marie-Marthe Chambon otrzymała głębokie wizje Jezusa i Najświętszej Maryi Panny, zapoczątkowując nabożeństwo do Świętych Ran Chrystusa."
+  },
+  "akko-1850": {
+    "title": "Matka Boża z Akko",
+    "location": "Akko (św. Jan z Akki)",
+    "country": "Izrael",
+    "description": "Habeiche Hassan, nawrócony na chrześcijaństwo i uwięziony syn emira libańskiego, widział we śnie Dziewicę Marię obiecującą jego cudowne wyzwolenie, jeśli wzniesie na jej cześć piękną świątynię."
+  },
+  "la-chaudiere-1848": {
+    "title": "Matka Boża do Weroniki i Augustina Eymieux",
+    "location": "La Chaudière",
+    "country": "Francja",
+    "description": "Madonna ukazała się młodym pasterzom Véronique i Augustinowi Eymieux dokładnie pod postacią Matki Bożej z La Salette, powtarzając swoje pilne matczyne ostrzeżenia dotyczące nawrócenia i sądów Bożych."
+  },
+  "brette-1848": {
+    "title": "Matka Boża z Brette",
+    "location": "Bretta",
+    "country": "Francja",
+    "description": "Dziewica Maryja objawiła się w Brette, wzywając do duchowej odnowy i nawrócenia moralnego w całej Francji podczas rewolucyjnych przewrotów 1848 roku."
+  },
+  "montousse-1848": {
+    "title": "Matka Boża z Nouillan",
+    "location": "Montoussé, Hautes-Pyrénées",
+    "country": "Francja",
+    "description": "Najświętsza Maryja Panna ukazała się trójce małych dzieci w pobliżu ruin starożytnej kaplicy w Nouillan, po czym miały miejsce powtarzające się nadprzyrodzone objawienia, które przyciągnęły ogromne rzesze pobożnych pielgrzymów."
+  },
+  "tours-holy-face-1844": {
+    "title": "Matka Boża do siostry Marii od św. Piotra",
+    "location": "Wycieczki",
+    "country": "Francja",
+    "description": "Karmelitanka Siostra Maria od św. Piotra doświadczyła głębokich wizji Jezusa i Maryi, otrzymując Akt Zadośćuczynienia Złotej Strzały Świętemu Obliczu Jezusa jako odpokutowanie za bluźnierstwo i świętokradztwo."
+  },
+  "cerreto-1853": {
+    "title": "Matki Bożej Bolesnej z Cerreto",
+    "location": "Cerreto, Toskania",
+    "country": "Włochy",
+    "description": "Pasąc owce, 12-letnia Veronica Nucci zobaczyła klęczącą Panią ubraną w białą suknię w czerwone kwiaty i niebieski płaszcz. Opłakując ogrom grzechów świata, Maryja poprosiła o modlitwy zadośćuczynienia i kaplicę. Wytrysnęło cudowne źródło, które spowodowało niezwykłe uzdrowienia."
+  },
+  "la-pierraz-1854": {
+    "title": "Matka Boża do Błogosławionej Małgorzaty Bays",
+    "location": "La Pierraz, Fryburg",
+    "country": "Szwajcaria",
+    "description": "Skromna krawcowa Marguerite Bays cierpiała na nieuleczalnego raka jelita grubego. 8 grudnia 1854 roku, dokładnie w dniu, w którym papież Pius IX ogłosił dogmat o Niepokalanym Poczęciu, Matka Boża cudownie i natychmiastowo ją uzdrowiła. Następnie otrzymała święte stygmaty."
+  },
+  "vatican-city-1850": {
+    "title": "Przesłuchanie Matki Bożej Watykańskiej",
+    "location": "Watykan",
+    "country": "Watykan",
+    "description": "Sceptyczna francuska protestantka uczestnicząca w audiencji papieskiej w Watykanie była świadkiem trzykrotnego zmaterializowania się promienistego promienia światła w postaci Najświętszej Maryi Panny, co spowodowało jej całkowite nawrócenie na wiarę katolicką."
+  },
+  "lichen-stary-1850": {
+    "title": "Matka Boża Licheńska (Mikołaj Sikatka)",
+    "location": "Licheń Stary",
+    "country": "Polska",
+    "description": "Maryja ukazała się w czerwonej szacie i białym płaszczu ze wspaniałą koroną przed skromnym pasterzem Mikołajem Sikatką w lesie Grąblin. Nawoływała do codziennej modlitwy różańcowej i przepowiadała niszczycielską epidemię cholery. Kiedy zaraza uderzyła dokładnie tak, jak przepowiedziano, jej cudowne wstawiennictwo uzdrowiło tysiące. Dziś Sanktuarium Matki Bożej Licheńskiej jest największym kościołem w Polsce."
+  },
+  "savogno-guanella-1851": {
+    "title": "Matka Boża do św. Alojzego Guanelli",
+    "location": "Savogno",
+    "country": "Włochy",
+    "description": "W dniu swojej Pierwszej Komunii 9-letni Luigi Guanella zobaczył piękną Panią, która dokładnie wyjawiła mu, co musi zrobić, aby ratować i pielęgnować biednych i niepełnosprawnych, inspirując tym samym jego charytatywne zakony na całym świecie."
+  },
+  "francoules-1860": {
+    "title": "Matka Boża do Pauliny Périé",
+    "location": "Francoulès",
+    "country": "Francja",
+    "description": "W kościele Francoulès mistyczka Pauline Périé zobaczyła Matkę Bożą ubraną w gwiaździstą szatę ze złotą koroną, trzymającą małe kwiatki. W towarzystwie aniołów Maria nawoływała do szczerych modlitw o pojednanie."
+  },
+  "buu-chau-1855": {
+    "title": "Matka Boża z Buu Chau (Tra Kieu)",
+    "location": "Buu Chau, Quang Nam",
+    "country": "Wietnam",
+    "description": "Podczas gwałtownych prześladowań królewskich Madonna ukazała się w blasku chwały nad dachem kościoła przed 4000 oblegających żołnierzy. Całkowicie przerażona niebiańską Panią chroniącą wiernych katolików, cała armia wycofała się."
+  },
+  "arnaud-guilhem-1859": {
+    "title": "Matka Boża z Picheloup",
+    "location": "Arnaud-Guilhem, Górna Garonna",
+    "country": "Francja",
+    "description": "Czwórka małych dzieci doświadczyła powtarzających się objawień i przesłań. W 2007 roku arcybiskup Tuluzy oficjalnie zatwierdził kult maryjny i pielgrzymki do świętego sanktuarium w Picheloup."
+  },
+  "porzus-1855": {
+    "title": "Matka Boża z Sesule (Madone de Sesule)",
+    "location": "Porzus, Friuli",
+    "country": "Włochy",
+    "description": "Najświętsza Maryja Panna ukazała się w pięknym górskim zagłębieniu 10-letniej Teresie Dush, łagodnie rozmawiającej w lokalnym słoweńskim dialekcie. Matka Boża odcisnęła na dłoni dziecka promienny złoty krzyż, który pozostał widoczny aż do jej śmierci."
+  },
+  "torrazza-1857": {
+    "title": "Matka Boża z Torrazzy",
+    "location": "Torrazza",
+    "country": "Włochy",
+    "description": "Dwie młode dziewczyny były świadkami wyłonienia się Najświętszej Pani z obłoków chwały w białej sukni i niebieskim płaszczu, trzymając mocno Dzieciątko Jezus na piersi."
+  },
+  "orero-1856": {
+    "title": "Matka Boża z Orero",
+    "location": "Orero, Liguria",
+    "country": "Włochy",
+    "description": "Maryja dwukrotnie ukazała się dwudziestoletniej Rosie Carbone, ubolewając nad zaniedbaniem moralnym i zalecając żarliwe odmawianie Ojcze nasz i Zdrowaś Królowo."
+  },
+  "alexandria-baouardy-1858": {
+    "title": "Matka Boża do św. Mariam Baouardy",
+    "location": "Aleksandria / Ibillin",
+    "country": "Egipt",
+    "description": "Młoda Mariam Baouardy omal nie poniosła męczeńskiej śmierci za odmowę wyrzeczenia się wiary katolickiej. Pozostawiona na śmierć z poderżniętym gardłem w alejce Aleksandrii, pojawiła się piękna Pani w błękicie, cudownie ją uzdrowiwszy i przepowiadając jej chwalebny karmelitański los w Betlejem."
+  },
+  "bordeaux-1855": {
+    "title": "Matka Boża z Góry Karmel",
+    "location": "Bordeaux",
+    "country": "Francja",
+    "description": "Dziewica Maryja ukazała się na białym obłoku z królewską koroną i otwartymi ramionami we wnętrzu starożytnego klasztoru karmelitów, gdzie zmarł św. Szymon Stock, głęboko poruszając serca wszystkich zgromadzonych braci."
+  },
+  "lourdes-1858": {
+    "title": "Matka Boża z Lourdes (Niepokalane Poczęcie)",
+    "location": "Lourdes",
+    "country": "Francja",
+    "description": "W wilgotnej grocie Massabielle piękna Dziewica Maryja objawiła się 14-letniej wieśniaczce Bernadette Soubirous 18 razy. Ujawniając swoją tożsamość jako „Niepokalane Poczęcie”, odkryła cudowne źródło lecznicze, które od tego czasu uzdrowiło niezliczoną liczbę nieuleczalnych pielgrzymów. Dziś Lourdes jest jednym z najważniejszych świętych sanktuariów na Ziemi."
+  },
+  "rosenau-1859": {
+    "title": "Matka Boża z Rosenau",
+    "location": "Rosenaua",
+    "country": "Austrii",
+    "description": "Trzyletni Johann Brunnsteiner został oślepiony przez ciężką chorobę. Kiedy rodzice obmyli mu oczy świętym źródłem w kaplicy Czerwonego Krzyża, Matka Boża ukazała się ukoronowana z Dzieciątkiem Jezus i natychmiast przywróciła mu wzrok."
+  },
+  "assisi-de-bray-1856": {
+    "title": "Matka Boża Królowa Aniołów",
+    "location": "Asyż",
+    "country": "Włochy",
+    "description": "Umierając o północy na śmiertelną chorobę trwającą trzydzieści lat, pan de Bray usłyszał głos Boskiej Matki, która polecała mu złożyć śluby udania się na pielgrzymkę do Matki Bożej Anielskiej w Asyżu. Po złożeniu ślubowania został natychmiast i radykalnie uzdrowiony."
+  },
+  "montefalco-1861": {
+    "title": "Madonna Gwiazdy (Madonna della Stella)",
+    "location": "San Luca w Montefalco",
+    "country": "Włochy",
+    "description": "Wśród ruin starożytnej kaplicy św. Bartłomieja Maryja objawiła się 4-letniemu Righetto Cionchi. Kiedy młody człowiek umierający na gruźlicę został cudownie uzdrowiony przez wzywanie Maryi pod tym tytułem, miejscowy biskup oficjalnie uznał objawienia i wzniósł wspaniałe Sanktuarium Madonny della Stella."
+  },
+  "andlau-1860": {
+    "title": "Matka Boża z Andlau",
+    "location": "Andlau, Alzacja",
+    "country": "Francja",
+    "description": "Najświętsza Maryja Panna objawiła się Françoise Barthel w Andlau w Alzacji, przynosząc duchowe pocieszenie i głęboką odnowę pobożności lokalnej parafii."
+  },
+  "spoleto-possenti-1856": {
+    "title": "Matka Boża do św. Gabriela Possentiego",
+    "location": "Spoleto",
+    "country": "Włochy",
+    "description": "Ikona Matki Boskiej w cudowny sposób ożyła przed jezuickim uczniem Francesco Possenti w Spoleto, mówiącym: „Francesco, świat nie jest dla ciebie; musisz wejść w życie zakonne. Wstąpił do pasjonistów, osiągając najwyższą świętość przed śmiercią w wieku 24 lat."
+  },
+  "champion-1859": {
+    "title": "Matka Boża Dobrej Pomocy (Champion)",
+    "location": "Mistrz, Wisconsin",
+    "country": "USA",
+    "description": "Matka Najświętsza ukazała się w olśniewającej bieli pomiędzy dwoma drzewami 28-letniej Adele Brise, mówiąc: „Jestem Królową Nieba, która modli się o nawrócenie grzeszników... uczcie dzieci tego, co powinny wiedzieć, aby osiągnąć zbawienie”. Kiedy katastrofalny pożar Peshtigo w 1871 r., który ogarnął cały region, teren sanktuarium został cudownie ocalony."
+  },
+  "philippsdorf-1866": {
+    "title": "Maryja Wspomożycielka (Filipow)",
+    "location": "Filipow / Philippsdorf",
+    "country": "Czechy",
+    "description": "Magdalena Kade leżała przykuta do łóżka i umierała na bolesne, nieuleczalne choroby. O czwartej rano Najświętsza Maryja Panna ukazała się w olśniewającej bieli ze złotą tiarą i szepnęła: „Moja córko, teraz jesteś uzdrowiona!” Natychmiast podniosła się w doskonałym zdrowiu. Papież Leon XIII oficjalnie uznał cud i podniósł sanktuarium do rangi bazyliki mniejszej."
+  },
+  "eupen-1870": {
+    "title": "Matka Boża z Eupen",
+    "location": "Eupen",
+    "country": "Belgia",
+    "description": "Dziewczynka od urodzenia zupełnie niema odmówiła nowennę przed figurą Maryi w kościele Kapucynów. Dziewiątego dnia obok posągu Maryja ukazała się w świetle niebiańskim i cichym gestem uzdrowiła Ją. Dziecko po raz pierwszy w życiu przemówiło doskonale."
+  },
+  "loigny-1870": {
+    "title": "Matka Boża z Patay",
+    "location": "Loigny-la-Bataille",
+    "country": "Francja",
+    "description": "Podczas krwawej bitwy wojny francusko-pruskiej pod Loigny dowódca papieskiego Zouave, generał de Sonis, leżał ciężko ranny w marznącym śniegu. Najświętsza Maryja Panna ukazała się przed nim na polu bitwy, udzielając wzniosłego pokoju i cudownego męstwa."
+  },
+  "bois-d-haine-1868": {
+    "title": "Matka Boża do Louise Lateau",
+    "location": "Bois-d'Haine",
+    "country": "Belgia",
+    "description": "Młoda Louise Lateau, która bohatersko opiekowała się ofiarami zarazy, miała objawienia Jezusa i Maryi. Następnie w każdy piątek nosiła święte stygmaty i żyła przez dwanaście lat, spożywając wyłącznie Najświętszą Eucharystię."
+  },
+  "ilaca-1865": {
+    "title": "Matka Boża z Ilača (chorwackie Lourdes)",
+    "location": "Ilacza",
+    "country": "Chorwacja",
+    "description": "Miejscowy rolnik odkrył cudowne źródło wody, w którym Matka Boża wielokrotnie ukazywała się tłumom świadków. Po licznych udokumentowanych uzdrowieniach fizycznych biskup diecezjalny zezwolił na budowę słynnego sanktuarium pielgrzymkowego."
+  },
+  "tsuwano-1869": {
+    "title": "Matka Boża z Tsuwano (Maria Seido)",
+    "location": "Tsuwano",
+    "country": "Japonia",
+    "description": "Podczas okrutnych prześladowań Meiji 153 ukrytych chrześcijan z Nagasaki zostało uwięzionych w zamarzniętych klatkach na świeżym powietrzu na przełęczy Otome Toge. Najświętsza Maryja Panna ukazywała się noc po nocy w promieniującym cieple, pocieszając i błogosławiąc zmarzniętych męczenników."
+  },
+  "anglet-1863": {
+    "title": "Matka Boża Królowa Aniołów",
+    "location": "Anglet",
+    "country": "Francja",
+    "description": "Najświętsza Maryja Panna objawiła się jako „Królowa Aniołów” założycielowi ks. Cestaca, instruując go w potężnej modlitwie „Dostojna Królowa Niebios”, aby wysłać legiony aniołów, aby przezwyciężyły demoniczną ciemność na całym świecie."
+  },
+  "metz-1870": {
+    "title": "Matka Boża z La Salette (Metz)",
+    "location": "Metz",
+    "country": "Francja",
+    "description": "8-letni chłopiec w Metz doświadczył wyraźnego objawienia się Matki Bożej dokładnie w przebraniu płaczącej La Salette podczas oblężenia miasta."
+  },
+  "walschbronn-1870": {
+    "title": "Matka Boża z Walschbronn",
+    "location": "Walschbronn",
+    "country": "Francja",
+    "description": "Dziewięcioletnia Barbara Conrad cierpiała na ciężką, nieuleczalną chorobę. W Niedzielę Palmową Maryja objawiła się w promiennej chwale i natychmiast i całkowicie uzdrowiła małe dziecko."
+  },
+  "nancy-1870": {
+    "title": "Matki Bożej z Nancy (Maison de Secours)",
+    "location": "Nancy",
+    "country": "Francja",
+    "description": "Najświętsza Maryja Panna ukazywała się w milczeniu w niebiańskim majestacie licznym wiernym zgromadzonym w kaplicy Maison de Secours przez kilka lat."
+  },
+  "kirchdorf-1867": {
+    "title": "Matka Boża do Teresy Steindl",
+    "location": "Kirchdorf",
+    "country": "Austrii",
+    "description": "Maryja ukazała się Teresie Steindl sześć razy, udzielając pilnych ostrzeżeń, że jeśli ludzkość będzie opierać się nawróceniu, na ziemię spadną katastrofalne burze i duchowa ciemność."
+  },
+  "petigny-1865": {
+    "title": "Matka Boża do Marie Jalhay",
+    "location": "Petycja",
+    "country": "Belgia",
+    "description": "Gospodyni domowa Marie Jalhay cierpiała na ciężką, wyniszczającą chorobę kręgosłupa. Matka Boża ukazała się w nadprzyrodzonym świetle, owinięta białym płaszczem, mówiąc: „Teraz jesteś uzdrowiony!” Wstań i pokaż swojej rodzinie. Natychmiast została wyleczona."
+  },
+  "pontmain-1871": {
+    "title": "Matka Boża Nadziei z Pontmain",
+    "location": "Pontmain",
+    "country": "Francja",
+    "description": "Gdy nacierające wojska pruskie zagroziły Bretanii, na rozgwieżdżonym nocnym niebie pojawiła się piękna Dziewica Maryja ubrana w ciemnoniebieską szatę ozdobioną złotymi gwiazdami. Rozwinął się złoty sztandar z napisem: „Ale módlcie się, moje dzieci. Bóg cię wysłucha w krótkim czasie. Mój Syn pozwala się poruszyć współczuciem. W ciągu kilku godzin generał pruski zarządził całkowity odwrót, oszczędzając cały region."
+  },
+  "locherboden-1871": {
+    "title": "Matka Boża Zbawienia (Maria Locherboden)",
+    "location": "Mötz / Locherboden",
+    "country": "Austrii",
+    "description": "Maria Kalb przez siedem lat cierpiała w agonii w łóżku z powodu nieuleczalnej choroby. Zaniesiona do świętej górskiej jaskini przed cudownym obrazem Maryi, ukazała się Dziewica i natychmiast przywróciła jej zdrowie. Wzniesiono wspaniałą neogotycką świątynię."
+  },
+  "lausanne-1871": {
+    "title": "Matka Boża do Marie-Françoise Decotterd",
+    "location": "Lozanna",
+    "country": "Szwajcaria",
+    "description": "Maryja ukazała się ciężko chorej Marie-Françoise Decotterd, inspirując ją do poświęcenia swojego życia ofierze przebłagalnej za zbawienie dusz."
+  },
+  "paris-truffault-1873": {
+    "title": "Matki Bożej z Rue Truffault",
+    "location": "Batignolles, Paryż",
+    "country": "Francja",
+    "description": "Młody Armand Wallet i Alfred Fontes doświadczyli wyraźnych, nadprzyrodzonych objawień Najświętszej Maryi Panny w dzielnicy Batignolles w Paryżu."
+  },
+  "villareggia-1875": {
+    "title": "Matka Bolesna z Villareggi",
+    "location": "Villareggia, Piemont",
+    "country": "Włochy",
+    "description": "Młoda pokojówka Rosina Ferro przez cały lipiec i sierpień widziała Matkę Bolesną stojącą w milczeniu na poboczu drogi w otoczeniu aniołów. Później nosiła święte stygmaty."
+  },
+  "neubois-1872": {
+    "title": "Matka Miłosierdzia (Matka Boża z Neubois)",
+    "location": "Neubois / Frankenburg",
+    "country": "Francja",
+    "description": "Maryja ukazała się na zalesionych zboczach Frankenburga w koronie i złotym płaszczu z czarnym krzyżem. Często występując przed ponad stuosobowymi tłumami jako „Matka Miłosierdzia”, inspirowała ogromne pielgrzymki pobożne."
+  },
+  "blain-jahenny-1873": {
+    "title": "Matki Bożej Szkaplerznej Najświętszego Serca",
+    "location": "Blain / La Fraudais",
+    "country": "Francja",
+    "description": "Przykuta do łóżka 23-letnia Marie-Julie Jahenny zobaczyła Matkę Bożą ubraną na czarno, niosącą duży biały krzyż. Cudownie uzdrowiona dokładnie 2 maja zgodnie z obietnicą wobec dwóch tysięcy świadków, otrzymała święte stygmaty i głębokie prorocze wizje potwierdzające La Salette i Fatimę."
+  },
+  "biding-1873": {
+    "title": "Matka Boża do Katarzyny Filljung",
+    "location": "Licytacja",
+    "country": "Francja",
+    "description": "Maryja wielokrotnie ukazywała się mistyczce Katarzynie Filljung w niebieskiej kamizelce i białym płaszczu, inspirując ją do założenia dominikańskiego sierocińca i prowadzenia życia głębokiego pokuty."
+  },
+  "paris-assumption-1871": {
+    "title": "Matka Boża do Matki Marie-Eugénie i s. Teresy-Emmanuel",
+    "location": "Paryż",
+    "country": "Francja",
+    "description": "Najświętsza Maryja Panna ukazała się współzałożycielce Wniebowzięcia, s. Teresie-Emmanuel, objawiając głęboką wizję duchowej armii maryjnej noszącej sztandar Niepokalanego Poczęcia."
+  },
+  "saint-bauzille-1873": {
+    "title": "Matka Boża z Saint-Bauzille",
+    "location": "Saint-Bauzille-de-la-Sylve",
+    "country": "Francja",
+    "description": "Podczas gdy winiarz Auguste Arnaud pracował w swojej winnicy w niedzielę Trójcy Świętej, Maryja ukazała się w jaskrawym złotym świetle, wzywając do przestrzegania niedzielnego odpoczynku i wzniesienia wielkiego krzyża. Dokładnie miesiąc później pojawiła się ponownie przed tłumami, mówiąc: „Nigdy nie wolno pracować w niedzielę!” Błogosławieni, którzy wierzą."
+  },
+  "st-louis-1871": {
+    "title": "Matka Boża do Teresy Schaffer",
+    "location": "St. Louis, Missouri",
+    "country": "USA",
+    "description": "Madonna ukazała się w lśniącej białej szacie ze złotą koroną z gwiazd przed przykutą do łóżka Teresą Schaffer, natychmiast ją uzdrawiając i prowadząc do wejścia w życie zakonne."
+  },
+  "pouille-1872": {
+    "title": "Matka Boża z Pouillé",
+    "location": "Pouillé-les-Côteaux",
+    "country": "Francja",
+    "description": "Dziewica Maryja ukazała się przed ołtarzem maryjnym w białej szacie z niebieskimi i różowymi wstążkami oraz w koronie z kwiatów, wzywając do żarliwego odmawiania Ave Maris Stella."
+  },
+  "boulleret-1875": {
+    "title": "Matka Boża z Boulleret (Królowa Męczenników)",
+    "location": "Boullereta",
+    "country": "Francja",
+    "description": "Cierpiąc w potwornej agonii, Joséphine Reverdy doświadczyła chwalebnego objawienia Najświętszej Maryi Panny, która natychmiast ją uzdrowiła. Resztę życia poświęciła ofierze odkupieńczej jako dusza ofiary."
+  },
+  "pra-genoa-1874": {
+    "title": "Maryja Wspomożycielka (Prà)",
+    "location": "Prà, Genua",
+    "country": "Włochy",
+    "description": "Młodzi pasterze Angela Berruti i Vincenzo Scossiera ujrzeli piękną Panią na świetlistym obłoku, która poprosiła o wzniesienie kaplicy na wzgórzu na jej cześć. Pomimo sprzeciwu społeczeństwa zbudowano wspaniałe sanktuarium."
+  },
+  "jerusalem-ghattas-1874": {
+    "title": "Matki Bożej Różańcowej (Jerozolima)",
+    "location": "Jerozolima",
+    "country": "Izrael",
+    "description": "Najświętsza Maryja Panna ukazała się w promiennej chwale w otoczeniu aniołów palestyńskiej zakonnicy Marie-Alphonsine Danil Ghattas w Jerozolimie i Betlejem, inspirując ją do założenia Sióstr Dominikanek Różańca Świętego."
+  },
+  "walbach-1873": {
+    "title": "Matka Boża Renu",
+    "location": "Walbach, Alzacja",
+    "country": "Francja",
+    "description": "Najświętsza Dziewica objawiła się jako Nasza Umiłowana Pani z Cavezzale, wzywając do modlitwy i pokuty za Francję. Paralityk Theresa Kaufmann została następnie cudownie uzdrowiona."
+  },
+  "samois-1873": {
+    "title": "Matka Boża z Samois",
+    "location": "Samois-sur-Seine",
+    "country": "Francja",
+    "description": "Najświętsza Maryja Panna z Dzieciątkiem Jezus na rękach ukazywała się w biały dzień całej klasie liczącej 25 uczniów w ogrodzie szkolnym przez prawie dwie godziny."
+  },
+  "noyal-muzillac-1874": {
+    "title": "Matka Boża do Jean-Pierre’a Le Boterffa",
+    "location": "Noyal-Muzillac",
+    "country": "Francja",
+    "description": "Pracowity młody rolnik Jean-Pierre Le Boterff zobaczył na skraju lasu piękną postać w gwiaździstej błękitnej szacie i złotym płaszczu. Mary nawoływała do pielgrzymki do św. Anny d'Auray i dożywotnich modlitw za Bretanię."
+  },
+  "pompeii-1884": {
+    "title": "Królowa Różańca Świętego (Pompeje)",
+    "location": "Pompeje",
+    "country": "Włochy",
+    "description": "Cierpiąca na nieuleczalną padaczkę i skurcze 21-letnia Fortuna Agrelli odmówiła nowennę różańcową przed obrazem Matki Bożej Pompejańskiej. Dziewica Maryja objawiła się, siedząc na tronie z kwiatów, mówiąc: „Kto pragnie ode mnie łask, niech odmówi trzy nowenny różańcowe”. 8 maja została natychmiastowo i całkowicie wyleczona. Błogosławiony Bartolo Longo wzniósł słynne na całym świecie Papieskie Sanktuarium w Pompejach."
+  },
+  "imbersago-1896": {
+    "title": "Błogosławiona Dziewica Leśna (Madonna del Bosco)",
+    "location": "Imbersago, Lombardia",
+    "country": "Włochy",
+    "description": "Teresa Secomandi, wieśniaczka, która straciła wiarę i przestała chodzić do kościoła, spotkała w lesie lewitującą Dziewicę Maryję. Maryja delikatnie wręczyła jej różaniec i poszła wraz z nią do drzwi Sanktuarium Matki Bożej Leśnej."
+  },
+  "saint-pierre-eynac-1886": {
+    "title": "Matka Boża z Saint-Pierre-Eynac",
+    "location": "Saint-Pierre-Eynac",
+    "country": "Francja",
+    "description": "Dwie młode dziewczyny były świadkami dziewiętnastu cichych objawień Najświętszej Maryi Panny w ciemnym welonie w lasach Blachées. Miejscowy biskup oficjalnie zatwierdził budowę pięknego sanktuarium pamiątkowego, w którym wzywa się Matkę Bożą."
+  },
+  "lucca-galgani-1899": {
+    "title": "Matka Boża do św. Gemmy Galgani",
+    "location": "Lukka, Toskania",
+    "country": "Włochy",
+    "description": "W wigilię uroczystości Najświętszego Serca Pana Jezusa 21-letnia mistyczka Gemma Galgani doświadczyła głębokiego żalu za swoje grzechy. Najświętsza Maryja Panna ukazała się w niebiańskim majestacie u boku swego anioła stróża, mówiąc: „Będę wam matką”. Otwierając swój płaszcz, Maryja otoczyła Gemmę w matczynych objęciach, gdy pojawił się Jezus, udzielając świętym stygmatom boskiego płomienia ognia."
+  },
+  "knock-1879": {
+    "title": "Matka Boża z Knock (królowa Irlandii)",
+    "location": "Knock, hrabstwo Mayo",
+    "country": "Irlandia",
+    "description": "Podczas ulewnego deszczu o zmierzchu, świecące postacie Najświętszej Maryi Panny, św. Józefa i św. Jana Ewangelisty ukazały się obok Baranka Bożego na ołtarzu otoczonym aniołami, znajdującym się na zewnętrznej południowej ścianie wiejskiej kaplicy. Przez dwie godziny piętnastu oficjalnych świadków trwało w milczącej adoracji. Dziś Knock jest Narodowym Sanktuarium Maryjnym w Irlandii."
+  },
+  "gemma_galgani": {
+    "title": "Święta Gemma Galgani",
+    "location": "Lukka, Toskania",
+    "country": "Włochy",
+    "description": "Św. Gemma Galgani przeżyła głębokie mistyczne wizje Jezusa, Dziewicy Maryi i Jej Anioła Stróża, otrzymując stygmaty i głęboko uczestnicząc w Męce Chrystusa."
+  },
+  "tilly-1896": {
+    "title": "Matka Boża z Tilly",
+    "location": "Tilly-sur-Seulles, Normandia",
+    "country": "Francja",
+    "description": "W święto św. Gabriela pięćdziesięciu zgromadzonych uczniów i Marie Martel byli świadkami jaśniejącej, promiennej postaci Najświętszej Maryi Panny na niebie nad wiązami, otoczonej aniołami i trzymającej wspaniały różaniec."
+  },
+  "mettenbuch-1876": {
+    "title": "Pocieszyciel Smutnych (Mettenbuch)",
+    "location": "Metten / Deggendorf",
+    "country": "Niemcy",
+    "description": "Podczas intensywnych prześladowań w Kulturkampfie małe dzieci były świadkami chwalebnych objawień Dziewicy Maryi, Dzieciątka Jezus i chórów aniołów w zalesionym wąwozie w pobliżu opactwa Metten. Cudowna woda źródlana spowodowała niezwykłe udokumentowane uzdrowienia."
+  },
+  "ta-pinu-gozo-1883": {
+    "title": "Matka Boża z Ta' Pinu",
+    "location": "Gharb, Gozo",
+    "country": "Malta",
+    "description": "Przechodząc obok odosobnionej wiejskiej kaplicy, 45-letnia Karmni Grima usłyszała ze środka delikatny matczyny głos wołający: „Przyjdź, przyjdź... odmów trzy Zdrowaś Maryjo na cześć trzech dni spoczynku mojego ciała w grobie”. Nastąpiły niezwykłe cudowne uzdrowienia, które przekształciły Ta' Pinu we wspaniałe Narodowe Sanktuarium Maryjne na Malcie."
+  },
+  "lyon-diemoz-1882": {
+    "title": "Matka Samotności (Notre-Dame de la Solitude)",
+    "location": "Diémoz / Lyon",
+    "country": "Francja",
+    "description": "Pacjentka szpitala Anne-Marie Coste, cierpiąca na ciężką śmiertelną gruźlicę, widziała Maryję we wspaniałej koronie, trzymającą Dzieciątko Jezus, które trzymało kulę ziemską ze złamanym krzyżem. Cudownie uzdrowiona, wypromowała medalik Matki Samotności."
+  },
+  "lisieux-therese-1883": {
+    "title": "Dziewica Uśmiechu (Vierge du Sourire)",
+    "location": "Lisieux",
+    "country": "Francja",
+    "description": "Cierpiąc na straszliwą gorączkę i ataki demonów, które w wieku 10 lat doprowadziły ją do majaczenia i śmierci, mała Teresa Martin zwróciła się w stronę rodzinnej figury Maryi. Nagle posąg ożył w niebiańskim pięknie i uśmiechnął się do niej z niewysłowioną matczyną czułością. Każdy pojedynczy objaw natychmiast zniknął w pełnej radości. Teresa stała się Małym Kwiatkiem, jednym z największych współczesnych świętych katolickich."
+  },
+  "gietrzwald-1877": {
+    "title": "Matka Boża Gietrzwałdzka (Polska Fatima)",
+    "location": "Gietrzwałd",
+    "country": "Polska",
+    "description": "Maryja wielokrotnie pojawiała się w jasnozłotym obłoku nad klonem przed dwiema młodymi dziewczętami, przemawiającymi w ojczystym języku polskim podczas surowego zaboru pruskiego. Zapytana, kim jest, odpowiedziała: „Jestem Najświętsza Maryja Panna, Niepokalane Poczęcie. Pragnę, abyście codziennie odmawiali różaniec”. Cudowne źródło, które pobłogosławiła, nadal uzdrawia niezliczoną liczbę pielgrzymów."
+  },
+  "pellevoisin-1876": {
+    "title": "Wszechmiłosierna Matka (Pellevoisin)",
+    "location": "Pellevoisin",
+    "country": "Francja",
+    "description": "Umierająca w swojej sypialni na nieuleczalną gruźlicę, 33-letnia Estelle Faguette była świadkiem 15 objawień Najświętszej Maryi Panny. Mówiąc: „Jestem Wszechmiłosierna i Panią mojego Syna”, Maryja natychmiast i całkowicie ją uzdrowiła oraz powierzyła Szkaplerz Najświętszego Serca."
+  },
+  "rovigo-1883": {
+    "title": "Matka Boża do Marii Inglese",
+    "location": "Rovigo",
+    "country": "Włochy",
+    "description": "Młoda krawcowa Maria Inglese przeżyła w swoim pokoju kilka wzniosłych wizji Najświętszej Dziewicy, co zainspirowało do powołania Straży Honorowej Niepokalanego Serca Maryi."
+  },
+  "castelpetroso-1888": {
+    "title": "Matki Bożej Bolesnej z Castelpetroso",
+    "location": "Castelpetroso, Isernia",
+    "country": "Włochy",
+    "description": "W nierównej górskiej szczelinie na Monte Patalecchia dwie wieśniaczki ujrzały chwalebną Dziewicę Marię klęczącą w głębokim smutku z wyciągniętymi ramionami przed krwawiącym ciałem Jezusa. Później ponad tysiąc świadków, w tym biskup diecezjalny, było świadkami niebiańskiego światła i objawień. Wytrysnęło cudowne źródło i zbudowano zapierającą dech w piersiach neogotycką bazylikę."
+  },
+  "elena_aiello": {
+    "title": "Bł. Elena Aiello",
+    "location": "Cosenza, Kalabria",
+    "country": "Włochy",
+    "description": "Mistyk, stygmatyk i założycielka Bł. Elena Aiello otrzymała nadprzyrodzone wizje i ostrzeżenia od Jezusa i Marii dotyczące wydarzeń na świecie oraz konieczności pokuty i zadośćuczynienia."
+  },
+  "beauraing": {
+    "title": "Dziewica o Złotym Sercu",
+    "location": "Beauraing",
+    "country": "Belgia",
+    "description": "Maryja ukazała się 33 razy pięciorgu dzieciom w pobliżu wiaduktu kolejowego w ogrodzie klasztornym, objawiając swoje Niepokalane Serce ze Złotego Serca i prosząc o kaplicę i ciągłą modlitwę za grzeszników."
+  },
+  "berthe_petit": {
+    "title": "Berthe Petit / Serce Bolesne i Niepokalane",
+    "location": "Enghien / Bruksela",
+    "country": "Belgia",
+    "description": "Tercjarka franciszkańska Berthe Petit otrzymała wewnętrzne wypowiedzi i wizje wzywające do ogólnoświatowego nabożeństwa do Bolesnego i Niepokalanego Serca Maryi. Jej orędzia otrzymały imprimatur i jej proces beatyfikacyjny jest otwarty."
+  },
+  "annibale_di_francia": {
+    "title": "Św. Annibala Marii di Francia",
+    "location": "Mesyna, Sycylia",
+    "country": "Włochy",
+    "description": "Apostoł modlitwy o powołania i ojciec sierot, św. Annibale został obdarzony mistycznymi łaskami i głębokim przewodnictwem Matki Najświętszej w całej swojej działalności założycielskiej."
+  },
+  "padre_pio": {
+    "title": "Św.Ojciec Pio z Pietrelciny",
+    "location": "San Giovanni Rotondo",
+    "country": "Włochy",
+    "description": "Kapucyński kapłan i stygmatyk św. Ojciec Pio doświadczył przez całe życie niebiańskiej komunikacji, otrzymując głębokie wizje i pocieszenie od Matki Bożej, którą czule nazywał swoją „Drogą Matką”."
+  },
+  "faustina_divine_mercy": {
+    "title": "Św. Faustyna Kowalska",
+    "location": "Warszawa / Kraków",
+    "country": "Polska",
+    "description": "Wraz z monumentalnymi objawieniami Bożego Miłosierdzia od Jezusa św. Faustyna przeżyła liczne intymne widzenia Najświętszej Maryi Panny, która uczyła ją wewnętrznego życia ukrytego, czystości i głębokiej miłości Boga."
+  },
+  "heede": {
+    "title": "Matka Boża Heede / Królowa Wszechświata",
+    "location": "Heede, Dolna Saksonia",
+    "country": "Niemcy",
+    "description": "Cztery młode dziewczyny doświadczyły ponad 100 objawień Matki Bożej na cmentarzu w Heede, wzywając do pokuty, różańca i nabożeństwa do Najświętszego Serca. Miejscowy biskup zezwolił na publiczne oddawanie czci i nabożeństw w tym miejscu."
+  },
+  "divine_tears_cernusco": {
+    "title": "Madonna Boskich Łez",
+    "location": "Cernusco sul Naviglio",
+    "country": "Włochy",
+    "description": "Siostra Elisabetta Redaelli, ciężko chora w domu macierzystym Sióstr Marcelin, została cudownie uzdrowiona po objawieniu się Matki Bożej opłakującej grzechy świata."
+  },
+  "maximilian_kolbe": {
+    "title": "Św. Maksymilian Kolbe",
+    "location": "Zduńska Wola / Pabianice",
+    "country": "Polska",
+    "description": "Jako młody chłopiec w wieku około 10 lat Raymond Kolbe miał kluczową wizję Dziewicy Maryi ofiarowującej mu dwie korony: białą za czystość i czerwoną za męczeństwo. Przyjął jedno i drugie, inspirując jego trwający całe życie apostolat franciszkański i ostateczne męczeństwo w Auschwitz."
+  },
+  "amalia_tears": {
+    "title": "Matka Boża Łez",
+    "location": "Campinas, São Paulo",
+    "country": "Brazylia",
+    "description": "S. Amália Aguirre, współzałożycielka Zgromadzenia Sióstr Misjonarek Jezusa Ukrzyżowanego, otrzymała objawienia Jezusa i Maryi objawiające Koronkę do Matki Bożej Łez. Biskup Francisco de Campos Barreto udzielił oficjalnej zgody diecezjalnej w 1931 roku."
+  },
+  "fatima": {
+    "title": "Matka Boża Fatimska",
+    "location": "Fatima",
+    "country": "Portugalia",
+    "description": "Najświętsza Maryja Panna ukazała się sześciokrotnie pastuszkom Łucji dos Santos oraz świętym Hiacyncie i Franciszkowi Marto w Cova da Iria, przekazując trzy tajemnice, wezwanie do pokuty i różaniec, czego kulminacją był cudowny Cud Słońca, którego świadkiem było 70 000 osób."
+  },
+  "natuzza_evolo": {
+    "title": "Natuzza Evolo",
+    "location": "Paravati, Mileto",
+    "country": "Włochy",
+    "description": "Ukochana włoska mistyczka i stygmatyczka Natuzza Evolo przez całe życie doświadczała wizji Jezusa, Maryi, aniołów i świętych dusz. Na tym miejscu zbudowano monumentalne sanktuarium, zatwierdzone przez diecezję."
+  },
+  "banneux": {
+    "title": "Dziewica Ubogich",
+    "location": "Banneux",
+    "country": "Belgia",
+    "description": "Matka Najświętsza ukazała się 11-letniej Mariette Beco osiem razy, prowadząc ją do źródła zarezerwowanego dla wszystkich narodów i chorych, ogłaszając się „Dziewicą Ubogich”."
+  },
+  "wigratzbad": {
+    "title": "Antonie Rädler / Niepokalane Poczęcie",
+    "location": "Wigratzbad, Bawaria",
+    "country": "Niemcy",
+    "description": "Antonie Rädler doświadczył cudownej ochrony podczas prześladowań nazistowskich dzięki wizjom Matki Bożej. Miejsce to jest obecnie głównym diecezjalnym sanktuarium pielgrzymkowym i międzynarodowym seminarium."
+  },
+  "maria_pierina": {
+    "title": "Bł. Maria Pierina De Micheli",
+    "location": "Mediolan",
+    "country": "Włochy",
+    "description": "Uprzywilejowany wizjami Jezusa i Maryi, bł. Maria Pierina otrzymała zlecenie szerzenia nabożeństwa do Najświętszego Oblicza Jezusa i stworzenia Medalika Najświętszego Oblicza."
+  },
+  "marienfried": {
+    "title": "Wielka Pośredniczka Łask",
+    "location": "Marienfried, Pfaffenhofen",
+    "country": "Niemcy",
+    "description": "Bärbel Ruess była świadkiem objawień Matki Bożej, która ogłosiła się Wielką Pośredniczką Łask. Biskup Augsburga wzniósł oficjalne sanktuarium i udzielił zezwolenia na publiczne nabożeństwa."
+  },
+  "lipa": {
+    "title": "Maryja, Pośredniczka Wszelkich Łask",
+    "location": "Miasto Lipa, Batangas",
+    "country": "Filipiny",
+    "description": "Postulantka karmelitańska Teresita Castillo doniosła o objawieniach, którym towarzyszył deszcz płatków róż. W wyniku dochodzenia Stolica Apostolska potwierdziła dekret, że zjawiska te nie miały charakteru nadprzyrodzonego."
+  },
+  "chandavila": {
+    "title": "Matki Bożej Bolesnej z Chandavila",
+    "location": "La Codosera, Badajoz",
+    "country": "Hiszpania",
+    "description": "Dwie młode dziewczyny, Marcelina Baroso i Afra Blanco, były świadkami objawień Matki Boskiej Bolesnej w pobliżu kasztanowca. W 2024 r. Watykan DDF przyznał oficjalny status kanoniczny „Nihil obstat”."
+  },
+  "kallikulam": {
+    "title": "Matki Bożej Śnieżnej",
+    "location": "Kallikulam, Tamil Nadu",
+    "country": "Indie",
+    "description": "Sześciu młodych ludzi było świadkami cudownego objawienia Najświętszej Maryi Panny na skalistym wzgórzu w pobliżu miejscowego kościoła. Miejsce to stało się znanym sanktuarium regionalnym przy pełnym wsparciu biskupów."
+  },
+  "ghiaie_di_bonate": {
+    "title": "Matka Boża z Ghiaie di Bonate / Królowa Rodziny",
+    "location": "Ghiaie di Bonate, Bergamo",
+    "country": "Włochy",
+    "description": "Podczas II wojny światowej 7-letnia Adelaide Roncalli doświadczyła 13 objawień Świętej Rodziny, które podkreślały jedność rodziny i modlitwę. Biskup Roberto Amadei zatwierdził modlitwy liturgiczne do Matki Bożej z Ghiaie w 2002 roku."
+  },
+  "alexandrina_balasar": {
+    "title": "Bł. Aleksandrina Maria da Costa",
+    "location": "Balasarze",
+    "country": "Portugalia",
+    "description": "Obłożnie chory mistyk i dusza ofiary Bł. Aleksandrina przez 13 lat żyła wyłącznie Najświętszą Eucharystią, doświadczając głębokiej ekstatycznej komunikacji od Chrystusa i Najświętszej Maryi Panny."
+  },
+  "amsterdam_all_nations": {
+    "title": "Pani Wszystkich Narodów",
+    "location": "Amsterdamu",
+    "country": "Holandia",
+    "description": "W latach 1945-1959 Ida Peerdeman opisała 56 wizji Najświętszej Maryi Panny pod tytułem „Pani Wszystkich Narodów”. Po kompleksowych ocenach teologicznych Kongregacja Nauki Wiary potwierdziła w 2020 r., że zgłoszone objawienia nie miały pochodzenia nadprzyrodzonego (Constat de non supernaturalitate)."
+  },
+  "heroldsbach": {
+    "title": "Objawienia Heroldsbacha",
+    "location": "Heroldsbach, Bawaria",
+    "country": "Niemcy",
+    "description": "Cztery młode dziewczęta opowiedziały o wizjach Dziewicy Maryi. Choć początkowo oceniano to negatywnie, abp Ludwig Schick w 1998 roku ustanowił to miejsce oficjalnym diecezjalnym miejscem modlitwy i adoracji eucharystycznej."
+  },
+  "tre_fontane": {
+    "title": "Dziewica Objawienia",
+    "location": "Tre Fontane, Rzym",
+    "country": "Włochy",
+    "description": "Antyklerykalny pracownik transportu Bruno Cornacchiola planował zamordowanie papieża Piusa XII, kiedy Dziewica Maryja ukazała mu się i jego dzieciom w grocie, nawracając go natychmiast. Wikariat Rzymu zatwierdził sanktuarium."
+  },
+  "montichiari_rosa_mystica": {
+    "title": "Rosa Mystica / Matka Kościoła",
+    "location": "Montichiari i Fontanelle",
+    "country": "Włochy",
+    "description": "Pielęgniarka Pierina Gilli była świadkiem objawień Maryi z trzema różami na piersi (białą, czerwoną i złotą, symbolizującymi modlitwę, ofiarę i pokutę). Watykan DDF wystosował w 2024 r. pozytywne pismo, w którym uznało duchowe owoce sanktuarium diecezjalnego."
+  },
+  "ile_bouchard": {
+    "title": "Matka Boża Modlitwy",
+    "location": "L'Île-Bouchard, Touraine",
+    "country": "Francja",
+    "description": "Cztery młode dziewczyny były świadkami Dziewicy Maryi i Anioła Gabriela w kościele parafialnym św. Idziego podczas powojennego kryzysu narodowego, ratując Francję przed wojną domową. Arcybiskup André Vingt-Trois zezwolił na oficjalne pielgrzymki w 2001 roku."
+  },
+  "necedah": {
+    "title": "Objawienia Necedah",
+    "location": "Necedah, Wisconsin",
+    "country": "Stany Zjednoczone",
+    "description": "Twierdzenia o objawieniach maryjnych Mary Ann Van Hoof zostały dokładnie zbadane i oficjalnie odrzucone przez diecezję La Crosse i Stolicę Apostolską."
+  },
+  "turzovka": {
+    "title": "Matka Boża z Turzovki",
+    "location": "Turzówka",
+    "country": "Słowacja",
+    "description": "Leśnik Matúš Lašut był świadkiem Matki Bożej z Lourdes na górze Zivcakova. W 2008 roku biskup Tomáš Galis oficjalnie podniósł to miejsce do rangi maryjnego sanktuarium pielgrzymkowego."
+  },
+  "san_damiano": {
+    "title": "Matki Bożej Cudownych Róż",
+    "location": "San Damiano, Piacenza",
+    "country": "Włochy",
+    "description": "Rosa Quattrini („Mamma Rosa”) doniosła o objawieniach Dziewicy Maryi. Biskupi diecezjalni i Stolica Apostolska wydali oficjalne zawiadomienia, w których uznali twierdzenia za pozbawione nadprzyrodzonej autentyczności."
+  },
+  "balestrino": {
+    "title": "Matka Boża z Balestrino",
+    "location": "Balestrino, Liguria",
+    "country": "Włochy",
+    "description": "Caterina Richero doświadczyła objawień Matki Bożej w Monte Croce. W 1991 roku miejscowy biskup ustanowił to miejsce oficjalnym diecezjalnym centrum kultu maryjnego i pielgrzymek."
+  },
+  "betania": {
+    "title": "Dziewica i Matka Pojednająca Wszystkich Narodów",
+    "location": "Cúa, Miranda",
+    "country": "Wenezuela",
+    "description": "Mistyk Maria Esperanza de Bianchini i 150 świadków widzieli Dziewicę Maryję w bujnej tropikalnej grocie. Biskup Pío Bello Ricardo oficjalnie uznał objawienia za nadprzyrodzone w 1987 roku."
+  },
+  "akita": {
+    "title": "Matka Boża z Akity",
+    "location": "Yuzawadai, Akita",
+    "country": "Japonia",
+    "description": "Drewniana figura Matki Boskiej zapłakała cudownymi łzami 101 razy i przekazała s. Agnes Sasagawie poważne prorocze ostrzeżenia. Biskup John Shojiro Ito udzielił oficjalnej zgody biskupiej w 1984 r."
+  },
+  "bayside": {
+    "title": "Matki Bożej Różanej",
+    "location": "Bayside, Queens, Nowy Jork",
+    "country": "Stany Zjednoczone",
+    "description": "Veronica Lueken opowiedziała o wizjach Jezusa i Marii. Biskup Brooklynu wydał oficjalne oświadczenia potwierdzające, że twierdzeniom brakuje nadprzyrodzonej autentyczności."
+  },
+  "el_escorial": {
+    "title": "Matki Bożej Bolesnej z Prado Nuevo",
+    "location": "El Escorial, Madryt",
+    "country": "Hiszpania",
+    "description": "Luz Amparo Cuevas opowiedział o wizjach Matki Bożej. Kardynał Antonio María Rouco Varela zezwolił na celebracje liturgiczne, adorację eucharystyczną i budowę kaplicy w tym miejscu w 2010 roku."
+  },
+  "garabandal": {
+    "title": "Matka Boża z Góry Karmel w Garabandal",
+    "location": "San Sebastian de Garabandal",
+    "country": "Hiszpania",
+    "description": "Cztery uczennice zrelacjonowały objawienia św. Michała i Dziewicy Maryi z głębokimi ostrzeżeniami dotyczącymi Eucharystii, zbliżającym się ogólnoświatowym ostrzeżeniem i wielkim cudem. Kolejni biskupi uznali, że natura nadprzyrodzona nie została ustalona."
+  },
+  "san_nicolas": {
+    "title": "Matki Bożej Różańcowej z San Nicolás",
+    "location": "San Nicolás de los Arroyos",
+    "country": "Argentyna",
+    "description": "Gladys Quiroga de Motta otrzymała głębokie przesłania i wizje Matki Bożej trzymającej Dzieciątko Jezus. Biskup Héctor Sabatino Cardelli oficjalnie zadekretował nadprzyrodzony charakter objawień w 2016 roku."
+  },
+  "placanica_scoglio": {
+    "title": "Matka Boża Skała (Madonna dello Scoglio)",
+    "location": "Santa Domenica di Placanica",
+    "country": "Włochy",
+    "description": "Skromny rolnik, brat Cosimo Fragomeni, był świadkiem Najświętszej Maryi Panny na skale. Biskup Giuseppe Fiorini Morosini oficjalnie podniósł to miejsce do rangi sanktuarium diecezjalnego w 2016 roku."
+  },
+  "soufanieh": {
+    "title": "Matka Boża z Soufanieh",
+    "location": "Damaszek",
+    "country": "Syria",
+    "description": "Myrna Nazzur doświadczyła świetlistych objawień i cudownego olejku wypływającego z ikony Maryi. Wyjątkowo wspierany i zatwierdzony przez hierarchów katolickich i prawosławnych jako głęboki znak jedności chrześcijan."
+  },
+  "litmanova": {
+    "title": "Nieskazitelna Czystość",
+    "location": "Litmanová, Zvir",
+    "country": "Słowacja",
+    "description": "Dwie młode dziewczyny, Ivetka i Katka, doświadczyły objawień na górze Zvir. W 2004 roku biskup Ján Babjak oficjalnie uznał górę za święte miejsce pielgrzymek i modlitw maryjnych."
+  },
+  "el_cajas_cuenca": {
+    "title": "Matka Strażniczka Wiary",
+    "location": "El Cajas, Cuenca",
+    "country": "Ekwador",
+    "description": "Nastolatka Patricia Talbot otrzymała przesłania od Matki Najświętszej wzywające do czystości i nawrócenia. Arcybiskup Vicente Cisneros kanonicznie ustanowił to sanktuarium na dużej wysokości jako oficjalne diecezjalne miejsce pielgrzymek."
+  },
+  "medjugorje": {
+    "title": "Królowa Pokoju Medziugorja",
+    "location": "Medziugorje",
+    "country": "Bośnia i Hercegowina",
+    "description": "Sześciu wizjonerów przekazuje bieżące przesłania dotyczące pokoju, nawrócenia, postu i modlitwy. We wrześniu 2024 r. Watykan DDF oficjalnie nadał status kanoniczny „Nihil obstat”, uznając ogromne owoce duchowe na całym świecie i upoważniając do publicznego kultu."
+  },
+  "zeitoun": {
+    "title": "Matka Boża z Zeitoun / Matka Boża Światła",
+    "location": "Zeitoun, Kair",
+    "country": "Egipt",
+    "description": "Miliony chrześcijan i muzułmanów widziały ciche, świetliste objawienia Najświętszej Maryi Panny na szczycie koptyjskiego kościoła św. Marka, były transmitowane w ogólnokrajowej telewizji i oficjalnie zatwierdzone przez koptyjskiego papieża Kyrillosa VI."
+  },
+  "kibeho": {
+    "title": "Matka Słowa",
+    "location": "Kibeho",
+    "country": "Rwanda",
+    "description": "Najświętsza Maryja Panna ukazała się trzem uczennicom (Alphonsine, Anathalie i Marie Claire), wzywając do szczerego nawrócenia i przepowiadając tragedię w Rwandzie. Zatwierdzony przez biskupa Augustina Misago i Stolicę Apostolską w 2001 roku."
+  },
+  "salta": {
+    "title": "Niepokalana Matka Boskiego Serca Eucharystycznego",
+    "location": "Sól",
+    "country": "Argentyna",
+    "description": "Maria Livia Galiano relacjonuje wewnętrzne lokalizacje i wizje Matki Bożej na szczycie wzgórza, gdzie dziesiątki tysięcy ludzi gromadzą się co tydzień na modlitwie i cudownym wstawiennictwie."
+  },
+  "scottsdale": {
+    "title": "Objawienia w Scottsdale",
+    "location": "Scottsdale, Arizona",
+    "country": "Stany Zjednoczone",
+    "description": "Diecezja Phoenix zbadała rzekome wypowiedzi i wizje w lokalnej parafii i stwierdziła, że ​​wydarzeniom brakowało nadprzyrodzonych podstaw."
+  },
+  "our_lady_of_america": {
+    "title": "Matka Boża Ameryki",
+    "location": "Rzym, Indiana",
+    "country": "Stany Zjednoczone",
+    "description": "Siostra Mildred Mary Neuzil opisała objawienia Maryi pod tytułem „Matka Boża Ameryki”. Arcybiskup Paul F. Leibold udzielił oficjalnego imprimatur i aktywnej promocji nabożeństwa."
+  },
+  "mosul_iraq": {
+    "title": "Matka Boża z Mosulu",
+    "location": "Mosul",
+    "country": "Irak",
+    "description": "Młoda Dina Basher była świadkiem świetlistych objawień i cudownych uzdrowień w kościele św. Efrema. Syryjski prawosławny patriarcha Ignacy Zakka I oficjalnie potwierdził cudowne zdarzenia w 1992 roku."
+  },
+  "sievernich": {
+    "title": "Matka Najwyższa w Niepokalanym Sercu",
+    "location": "Sievernich",
+    "country": "Niemcy",
+    "description": "Manuela Strack donosi o bieżących objawieniach i przesłaniach eucharystycznych. Biskup Akwizgranu zezwolił na spotkania modlitewne w tym miejscu pod nadzorem duszpasterskim."
+  },
+  "aokpe": {
+    "title": "Pośredniczka Wszelkich Łask",
+    "location": "Aokpe, stan Benue",
+    "country": "Nigeria",
+    "description": "Christiana Agbo doświadczyła głębokich wizji Matki Bożej, którym towarzyszyły cuda słoneczne. Biskup Michael Apochi zezwolił na oficjalne pielgrzymki i udzielił imprimatur modlitwom."
+  },
+  "ngome": {
+    "title": "Matka Boża z Tabernakulum",
+    "location": "Ngome, KwaZulu-Natal",
+    "country": "Republika Południowej Afryki",
+    "description": "Siostra Benedyktynka Reinolda May doświadczyła objawień Maryi trzymającej hostię i kielich, co podkreślało adorację eucharystyczną. Biskup Mansuet Biyase zatwierdził sanktuarium jako oficjalne miejsce pielgrzymek w 1989 roku."
+  },
+  "enugu_precious_blood": {
+    "title": "Barnabas Nwoye / Najdroższa Krew",
+    "location": "Olo, Enugu",
+    "country": "Nigeria",
+    "description": "Barnabas Nwoye otrzymał wizje Jezusa i Marii podkreślające nabożeństwo do Najdroższej Krwi. Miejscowy biskup udzielił oficjalnego imprimatur i nihil obstat modlitwom."
+  },
+  "itapiranga": {
+    "title": "Matka Boża z Itapiranga / Królowa Różańca i Pokoju",
+    "location": "Itapiranga, Amazonka",
+    "country": "Brazylia",
+    "description": "Edson Glauber opisał wizje Świętej Rodziny. W 2017 roku Watykański DDF i lokalny zwyczaj opublikował zawiadomienia stwierdzające, że zjawisko to nie jest nadprzyrodzone."
+  },
+  "zaro_ischia": {
+    "title": "Matka Boża z Zaro",
+    "location": "Zaro, Ischia",
+    "country": "Włochy",
+    "description": "Simona i Angela donoszą o ciągłych objawieniach i przesłaniach w zalesionym obszarze na wyspie Ischia. Biskup Pietro Lagnese powołał oficjalną komisję diecezjalną do rozeznawania owoców i zjawisk duchowych."
+  },
+  "schio": {
+    "title": "Królowa Miłości",
+    "location": "Schio, Vicenza",
+    "country": "Włochy",
+    "description": "Renato Baron opisał lokalizacje i wizje w małym kościele w San Martino. W następstwie diecezjalnych komisji śledczych biskupi wydali zawiadomienia, w których stwierdzili, że wydarzeniom brakuje nadprzyrodzonej autentyczności."
+  },
+  "cefala_diana": {
+    "title": "Matki Bożej Bolesnej z Cefalà Diana",
+    "location": "Cefalà Diana, Sycylia",
+    "country": "Włochy",
+    "description": "Czterech chłopców było świadkami cudownych objawień Matki Bożej Bolesnej. Po pozytywnym wyniku dochodzenia kardynał Francesco Carpino poświęcił piękne sanktuarium zbudowane bezpośrednio w miejscu objawień."
+  },
+  "dozule": {
+    "title": "Chwalebny Krzyż Dozulé",
+    "location": "Dozulé, Normandia",
+    "country": "Francja",
+    "description": "Madeleine Aumont doniosła o wizjach Chrystusa i Marii, żądając zbudowania gigantycznego świetlistego krzyża. Lokalna diecezja i Stolica Apostolska wydały zawiadomienia, w których uznały, że twierdzenia te nie są nadprzyrodzone."
+  },
+  "naju": {
+    "title": "Płacząca Dziewica z Naju",
+    "location": "Naju",
+    "country": "Korea Południowa",
+    "description": "Julia Kim doniosła o płaczących i krwawiących posągach Maryi oraz o cudach eucharystycznych. Arcybiskup Victorinus Yoon Kong-hi wydał oficjalne oświadczenia potwierdzające, że zjawiska te nie mają charakteru nadprzyrodzonego."
+  },
+  "hrushiv": {
+    "title": "Matka Boża Hruszówska",
+    "location": "Hruszów, obwód lwowski",
+    "country": "Ukraina",
+    "description": "W 70. rocznicę Fatimy dziesiątki tysięcy Ukraińców zgromadziło się wokół opuszczonej kaplicy, w której dzień i noc przez tygodnie dzień i noc można było oglądać świetliste objawienia Maryi, przeciwstawiając się blokadom KGB."
+  },
+  "zarvanytsia": {
+    "title": "Matka Boża Zarvanytsia",
+    "location": "Zarwanicyja, Tarnopol",
+    "country": "Ukraina",
+    "description": "Podczas podziemnych prześladowań sowieckich liczni pielgrzymi i młode dziewczęta byli świadkami cudownych świetlistych objawień Najświętszej Maryi Panny nad starożytnym cudownym źródłem i zrujnowaną świątynią."
+  },
+  "trevignano": {
+    "title": "Madonna z Trevignano Romano",
+    "location": "Trevignano Romano",
+    "country": "Włochy",
+    "description": "Gisella Cardia odebrała wiadomości i płaczące posągi. W 2024 roku biskup Marco Salvi i Watykan DDF wydali oficjalne dekrety uznające wydarzenia za „Constat de non supernaturalitate” (potwierdzono, że nie są one nadprzyrodzone)."
+  },
+  "borg_in_nadur": {
+    "title": "Objawienia Borg in-Nadur",
+    "location": "Birżebbuġa",
+    "country": "Malta",
+    "description": "Angelik Caruana odebrał wiadomości i wizje na wzgórzu w Borg in-Nadur. W 2016 roku abp Charles Scicluna wydał ostateczny dekret stwierdzający, że rzekome zjawiska nie mają charakteru nadprzyrodzonego."
+  }
+}

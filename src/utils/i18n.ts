@@ -1,0 +1,561 @@
+import type { Apparition } from '../data/types';
+
+export type Language = 'en' | 'pl' | 'es' | 'pt' | 'fr' | 'it' | 'ar' | 'tl' | 'vi';
+
+export const languageNames: Record<Language, string> = {
+  en: 'English',
+  pl: 'Polski',
+  es: 'Español',
+  pt: 'Português',
+  fr: 'Français',
+  it: 'Italiano',
+  ar: 'العربية',
+  tl: 'Filipino',
+  vi: 'Tiếng Việt'
+};
+
+export const translations = {
+  en: {
+    title: 'Stella Maris',
+    subtitle: 'Marian apparitions map',
+    browseDirectory: 'Browse directory ({count})',
+    searchPlaceholder: 'Search apparitions...',
+    filters: 'Filters',
+    centuries: 'Time period',
+    status: 'Status',
+    selectAll: 'Select all',
+    clearAll: 'Clear all',
+    timeline: 'Timeline',
+    modernEra: 'Modern era (1800–Present)',
+    fullHistory: 'Full history (40 AD–Present)',
+    playTimeline: 'Play timeline ({count} events)',
+    playingTimeline: 'Playing ({year}) — {count} events',
+    legend: 'Legend:',
+    close: 'Close',
+    description: 'Description',
+    viewSource: 'View source',
+    otherApparitions: 'Apparitions at this location ({count})',
+    directoryTitle: 'Marian apparitions directory',
+    directoryListed: '{count} listed',
+    directorySubtitle: 'Complete chronological overview of filtered shrines and apparitions',
+    directoryQuickFilter: 'Quick filter by title, city, country, year, or status...',
+    directoryClear: 'Clear',
+    directoryNoResults: 'No apparitions match your current search criteria.',
+    pauseRotation: 'Pause rotation',
+    resumeRotation: 'Resume rotation',
+    
+    // Status Categories
+    'Vatican approved': 'Vatican approved',
+    'Traditionally approved': 'Traditionally approved',
+    'Bishop approved': 'Bishop approved',
+    'Coptic approved': 'Coptic approved',
+    'Approved for faith expression': 'Approved for faith expression',
+    'Apparitions to saints': 'Apparitions to saints',
+    'Dismissed': 'Dismissed',
+    
+    // Centuries
+    'c_early': 'Early (40 - 999)',
+    'c_11': '11th Century (1000s)',
+    'c_12': '12th Century (1100s)',
+    'c_13': '13th Century (1200s)',
+    'c_14': '14th Century (1300s)',
+    'c_15': '15th Century (1400s)',
+    'c_16': '16th Century (1500s)',
+    'c_17': '17th Century (1600s)',
+    'c_18': '18th Century (1700s)',
+    'c_19': '19th Century (1800s)',
+    'c_20': '20th Century (1900s)',
+    'c_21': '21st Century (2000s)'
+  },
+  pl: {
+    title: 'Stella Maris',
+    subtitle: 'Mapa objawień maryjnych',
+    browseDirectory: 'Przeglądaj katalog ({count})',
+    searchPlaceholder: 'Szukaj objawień...',
+    filters: 'Filtry',
+    centuries: 'Okres czasu',
+    status: 'Status',
+    selectAll: 'Zaznacz wszystko',
+    clearAll: 'Wyczyść wszystko',
+    timeline: 'Oś czasu',
+    modernEra: 'Era nowożytna (1800–teraz)',
+    fullHistory: 'Pełna historia (40–teraz)',
+    playTimeline: 'Odtwarzaj oś ({count} wyd.)',
+    playingTimeline: 'Odtwarzanie ({year}) — {count} wyd.',
+    legend: 'Legenda:',
+    close: 'Zamknij',
+    description: 'Opis',
+    viewSource: 'Zobacz źródło',
+    otherApparitions: 'Objawienia w tym miejscu ({count})',
+    directoryTitle: 'Katalog objawień maryjnych',
+    directoryListed: '{count} na liście',
+    directorySubtitle: 'Pełny chronologiczny przegląd przefiltrowanych sanktuariów i objawień',
+    directoryQuickFilter: 'Szybki filtr według tytułu, miasta, kraju, roku lub statusu...',
+    directoryClear: 'Wyczyść',
+    directoryNoResults: 'Brak objawień spełniających kryteria wyszukiwania.',
+    pauseRotation: 'Wstrzymaj obrót',
+    resumeRotation: 'Wznów obrót',
+
+    // Status Categories
+    'Vatican approved': 'Zatwierdzone przez Watykan',
+    'Traditionally approved': 'Zatwierdzone tradycją',
+    'Bishop approved': 'Zatwierdzone przez biskupa',
+    'Coptic approved': 'Zatwierdzone przez Kościół Koptów',
+    'Approved for faith expression': 'Zezwolenie na wyraz wiary',
+    'Apparitions to saints': 'Objawienia świętym',
+    'Dismissed': 'Odrzucone',
+
+    // Centuries
+    'c_early': 'Wczesne (40 - 999)',
+    'c_11': 'XI Wiek (lata 1000)',
+    'c_12': 'XII Wiek (lata 1100)',
+    'c_13': 'XIII Wiek (lata 1200)',
+    'c_14': 'XIV Wiek (lata 1300)',
+    'c_15': 'XV Wiek (lata 1400)',
+    'c_16': 'XVI Wiek (lata 1500)',
+    'c_17': 'XVII Wiek (lata 1600)',
+    'c_18': 'XVIII Wiek (lata 1700)',
+    'c_19': 'XIX Wiek (lata 1800)',
+    'c_20': 'XX Wiek (lata 1900)',
+    'c_21': 'XXI Wiek (lata 2000)'
+  },
+  es: {
+    title: 'Stella Maris',
+    subtitle: 'Mapa de apariciones marianas',
+    browseDirectory: 'Directorio ({count})',
+    searchPlaceholder: 'Buscar apariciones...',
+    filters: 'Filtros',
+    centuries: 'Siglos',
+    status: 'Estado',
+    selectAll: 'Seleccionar todo',
+    clearAll: 'Limpiar todo',
+    timeline: 'Línea de tiempo',
+    modernEra: 'Era moderna (1800–Presente)',
+    fullHistory: 'Historia completa (40 d.C.–Presente)',
+    playTimeline: 'Reproducir línea de tiempo ({count} eventos)',
+    playingTimeline: 'Reproduciendo ({year}) — {count} eventos',
+    legend: 'Leyenda:',
+    close: 'Cerrar',
+    description: 'Descripción',
+    viewSource: 'Ver fuente',
+    otherApparitions: 'Apariciones en este lugar ({count})',
+    directoryTitle: 'Directorio de apariciones marianas',
+    directoryListed: '{count} listadas',
+    directorySubtitle: 'Resumen cronológico completo de santuarios y apariciones filtrados',
+    directoryQuickFilter: 'Filtro rápido por título, ciudad, país, año o estado...',
+    directoryClear: 'Limpiar',
+    directoryNoResults: 'Ninguna aparición coincide con los criterios de búsqueda actuales.',
+    pauseRotation: 'Pausar rotación',
+    resumeRotation: 'Reanudar rotación',
+
+    // Status Categories
+    'Vatican approved': 'Aprobada por el Vaticano',
+    'Traditionally approved': 'Aprobada por la tradición',
+    'Bishop approved': 'Aprobada por el obispo',
+    'Coptic approved': 'Aprobada por la Iglesia Copta',
+    'Approved for faith expression': 'Aprobada para la expresión de fe',
+    'Apparitions to saints': 'Apariciones a santos',
+    'Dismissed': 'Desestimada',
+
+    // Centuries
+    'c_early': 'Temprana (40 - 999)',
+    'c_11': 'Siglo XI (1000s)',
+    'c_12': 'Siglo XII (1100s)',
+    'c_13': 'Siglo XIII (1200s)',
+    'c_14': 'Siglo XIV (1300s)',
+    'c_15': 'Siglo XV (1400s)',
+    'c_16': 'Siglo XVI (1500s)',
+    'c_17': 'Siglo XVII (1600s)',
+    'c_18': 'Siglo XVIII (1700s)',
+    'c_19': 'Siglo XIX (1800s)',
+    'c_20': 'Siglo XX (1900s)',
+    'c_21': 'Siglo XXI (2000s)'
+  },
+  pt: {
+    title: 'Stella Maris',
+    subtitle: 'Mapa das aparições marianas',
+    browseDirectory: 'Diretório ({count})',
+    searchPlaceholder: 'Pesquisar aparições...',
+    filters: 'Filtros',
+    centuries: 'Séculos',
+    status: 'Status',
+    selectAll: 'Selecionar todos',
+    clearAll: 'Limpar todos',
+    timeline: 'Linha do tempo',
+    modernEra: 'Era moderna (1800–Presente)',
+    fullHistory: 'História completa (40 d.C.–Presente)',
+    playTimeline: 'Reproduzir linha do tempo ({count} eventos)',
+    playingTimeline: 'Reproduzindo ({year}) — {count} eventos',
+    legend: 'Legenda:',
+    close: 'Fechar',
+    description: 'Descrição',
+    viewSource: 'Ver fonte',
+    otherApparitions: 'Aparições neste local ({count})',
+    directoryTitle: 'Diretório de aparições marianas',
+    directoryListed: '{count} listadas',
+    directorySubtitle: 'Visão geral cronológica completa dos santuários e aparições filtrados',
+    directoryQuickFilter: 'Filtro rápido por título, cidade, país, ano ou status...',
+    directoryClear: 'Limpar',
+    directoryNoResults: 'Nenhuma aparição corresponde aos critérios de pesquisa atuais.',
+    pauseRotation: 'Pausar rotação',
+    resumeRotation: 'Retomar rotação',
+
+    // Status Categories
+    'Vatican approved': 'Aprovada pelo Vaticano',
+    'Traditionally approved': 'Aprovada pela tradição',
+    'Bishop approved': 'Aprovada pelo bispo',
+    'Coptic approved': 'Aprovada pela Igreja Copta',
+    'Approved for faith expression': 'Aprovada para expressão de fé',
+    'Apparitions to saints': 'Aparições a santos',
+    'Dismissed': 'Desestimada',
+
+    // Centuries
+    'c_early': 'Precoce (40 - 999)',
+    'c_11': 'Século XI (1000s)',
+    'c_12': 'Século XII (1100s)',
+    'c_13': 'Século XIII (1200s)',
+    'c_14': 'Século XIV (1300s)',
+    'c_15': 'Século XV (1400s)',
+    'c_16': 'Século XVI (1500s)',
+    'c_17': 'Século XVII (1600s)',
+    'c_18': 'Século XVIII (1700s)',
+    'c_19': 'Século XIX (1800s)',
+    'c_20': 'Século XX (1900s)',
+    'c_21': 'Século XXI (2000s)'
+  },
+  fr: {
+    title: 'Stella Maris',
+    subtitle: 'Carte des apparitions mariales',
+    browseDirectory: 'Annuaire ({count})',
+    searchPlaceholder: 'Rechercher...',
+    filters: 'Filtres',
+    centuries: 'Siècles',
+    status: 'Statut',
+    selectAll: 'Tout sélectionner',
+    clearAll: 'Tout effacer',
+    timeline: 'Chronologie',
+    modernEra: 'Ère moderne (1800–Présent)',
+    fullHistory: 'Histoire complète (40 apr. J.-C.–Présent)',
+    playTimeline: 'Lancer la chronologie ({count} événements)',
+    playingTimeline: 'Lecture ({year}) — {count} événements',
+    legend: 'Légende :',
+    close: 'Fermer',
+    description: 'Description',
+    viewSource: 'Voir la source',
+    otherApparitions: 'Apparitions à cet endroit ({count})',
+    directoryTitle: 'Annuaire des apparitions mariales',
+    directoryListed: '{count} répertoriées',
+    directorySubtitle: 'Aperçu chronologique complet des sanctuaires et apparitions filtrés',
+    directoryQuickFilter: 'Filtre rapide par titre, ville, pays, année ou statut...',
+    directoryClear: 'Effacer',
+    directoryNoResults: 'Aucune apparition ne correspond aux critères de recherche actuels.',
+    pauseRotation: 'Pause rotation',
+    resumeRotation: 'Reprendre rotation',
+
+    // Status Categories
+    'Vatican approved': 'Approuvée par le Vatican',
+    'Traditionally approved': 'Approuvée par la tradition',
+    'Bishop approved': 'Approuvée par l’évêque',
+    'Coptic approved': 'Approuvée par l’Église copte',
+    'Approved for faith expression': 'Approuvée pour l’expression de foi',
+    'Apparitions to saints': 'Apparitions aux saints',
+    'Dismissed': 'Rejetée',
+
+    // Centuries
+    'c_early': 'Débuts (40 - 999)',
+    'c_11': 'XIe siècle (1000s)',
+    'c_12': 'XIIe siècle (1100s)',
+    'c_13': 'XIIIe siècle (1200s)',
+    'c_14': 'XIVe siècle (1300s)',
+    'c_15': 'XVe siècle (1400s)',
+    'c_16': 'XVIe siècle (1500s)',
+    'c_17': 'XVIIe siècle (1600s)',
+    'c_18': 'XVIIIe siècle (1700s)',
+    'c_19': 'XIXe siècle (1800s)',
+    'c_20': 'XXe siècle (1900s)',
+    'c_21': 'XXIe siècle (2000s)'
+  },
+  it: {
+    title: 'Stella Maris',
+    subtitle: 'Mappa delle apparizioni mariane',
+    browseDirectory: 'Direttorio ({count})',
+    searchPlaceholder: 'Cerca apparizioni...',
+    filters: 'Filtri',
+    centuries: 'Secoli',
+    status: 'Stato',
+    selectAll: 'Seleziona tutto',
+    clearAll: 'Cancella tutto',
+    timeline: 'Linea temporale',
+    modernEra: 'Era moderna (1800–Presente)',
+    fullHistory: 'Storia completa (40 d.C.–Presente)',
+    playTimeline: 'Riproduci linea temporale ({count} eventi)',
+    playingTimeline: 'In riproduzione ({year}) — {count} eventi',
+    legend: 'Legenda:',
+    close: 'Chiudi',
+    description: 'Descrizione',
+    viewSource: 'Visualizza fonte',
+    otherApparitions: 'Apparizioni in questo luogo ({count})',
+    directoryTitle: 'Direttorio delle apparizioni mariane',
+    directoryListed: '{count} elencate',
+    directorySubtitle: 'Panoramica cronologica completa dei santuari e delle apparizioni filtrati',
+    directoryQuickFilter: 'Filtro rapido per titolo, città, paese, anno o stato...',
+    directoryClear: 'Cancella',
+    directoryNoResults: 'Nessuna apparizione corrisponde ai criteri di ricerca attuali.',
+    pauseRotation: 'Pausa rotazione',
+    resumeRotation: 'Riprendi rotazione',
+
+    // Status Categories
+    'Vatican approved': 'Approvata dal Vaticano',
+    'Traditionally approved': 'Approvata dalla tradizione',
+    'Bishop approved': 'Approvata dal vescovo',
+    'Coptic approved': 'Approvata dalla Chiesa Copta',
+    'Approved for faith expression': 'Approvata per l’espressione di fede',
+    'Apparitions to saints': 'Apparizioni a santi',
+    'Dismissed': 'Rifiutata',
+
+    // Centuries
+    'c_early': 'Primo periodo (40 - 999)',
+    'c_11': 'XI Secolo (1000s)',
+    'c_12': 'XII Secolo (1100s)',
+    'c_13': 'XIII Secolo (1200s)',
+    'c_14': 'XIV Secolo (1300s)',
+    'c_15': 'XV Secolo (1400s)',
+    'c_16': 'XVI Secolo (1500s)',
+    'c_17': 'XVII Secolo (1600s)',
+    'c_18': 'XVIII Secolo (1700s)',
+    'c_19': 'XIX Secolo (1800s)',
+    'c_20': 'XX Secolo (1900s)',
+    'c_21': 'XXI Secolo (2000s)'
+  },
+  ar: {
+    title: 'نجمة البحر',
+    subtitle: 'خريطة الظهورات المريمية',
+    browseDirectory: 'الدليل ({count})',
+    searchPlaceholder: 'البحث عن الظهورات...',
+    filters: 'الفلاتر',
+    centuries: 'القرون',
+    status: 'الحالة',
+    selectAll: 'تحديد الكل',
+    clearAll: 'مسح الكل',
+    timeline: 'المخطط الزمني',
+    modernEra: 'العصر الحديث (1800–الآن)',
+    fullHistory: 'التاريخ الكامل (40 م–الآن)',
+    playTimeline: 'تشغيل المخطط الزمني ({count} أحداث)',
+    playingTimeline: 'تشغيل ({year}) — {count} أحداث',
+    legend: 'دليل الرموز:',
+    close: 'إغلاق',
+    description: 'الوصف',
+    viewSource: 'عرض المصدر',
+    otherApparitions: 'الظهورات في هذا الموقع ({count})',
+    directoryTitle: 'دليل الظهورات المريمية',
+    directoryListed: '{count} مدرجة',
+    directorySubtitle: 'عرض كرونولوجي كامل للمزارات والظهورات المصفاة',
+    directoryQuickFilter: 'فلترة سريعة حسب العنوان، المدينة، البلد، السنة أو الحالة...',
+    directoryClear: 'مسح',
+    directoryNoResults: 'لا توجد ظهورات تطابق معايير البحث الحالية.',
+    pauseRotation: 'إيقاف الدوران مؤقتًا',
+    resumeRotation: 'استئناف الدوران',
+
+    // Status Categories
+    'Vatican approved': 'معتمد من الفاتيكان',
+    'Traditionally approved': 'معتمد بالتقليد الكنسي',
+    'Bishop approved': 'معتمد من الأسقف',
+    'Coptic approved': 'معتمد من الكنيسة القبطية',
+    'Approved for faith expression': 'معتمد للتعبير الإيماني',
+    'Apparitions to saints': 'الظهورات للقديسين',
+    'Dismissed': 'مرفوض',
+
+    // Centuries
+    'c_early': 'مبكر (40 - 999)',
+    'c_11': 'القرن الحادي عشر (1000s)',
+    'c_12': 'القرن الثاني عشر (1100s)',
+    'c_13': 'القرن الثالث عشر (1200s)',
+    'c_14': 'القرن الرابع عشر (1300s)',
+    'c_15': 'القرن الخامس عشر (1400s)',
+    'c_16': 'القرن السادس عشر (1500s)',
+    'c_17': 'القرن السابع عشر (1600s)',
+    'c_18': 'القرن الثامن عشر (1700s)',
+    'c_19': 'القرن التاسع عشر (1800s)',
+    'c_20': 'القرن العشرين (1900s)',
+    'c_21': 'القرن الحادي والعشرين (2000s)'
+  },
+  tl: {
+    title: 'Stella Maris',
+    subtitle: 'Mapa ng mga Pagpapakita ni Maria',
+    browseDirectory: 'Direktoryo ({count})',
+    searchPlaceholder: 'Maghanap ng mga pagpapakita...',
+    filters: 'Mga Filter',
+    centuries: 'Mga Siglo',
+    status: 'Katayuan',
+    selectAll: 'Piliin lahat',
+    clearAll: 'I-clear lahat',
+    timeline: 'Timeline',
+    modernEra: 'Modernong Panahon (1800–Kasalukuyan)',
+    fullHistory: 'Buong Kasaysayan (40 AD–Kasalukuyan)',
+    playTimeline: 'I-play ang Timeline ({count} na kaganapan)',
+    playingTimeline: 'Nagpe-play ({year}) — {count} na kaganapan',
+    legend: 'Alamat:',
+    close: 'Isara',
+    description: 'Paglalarawan',
+    viewSource: 'Tingnan ang pinagmulan',
+    otherApparitions: 'Mga pagpapakita sa lokasyong ito ({count})',
+    directoryTitle: 'Direktoryo ng mga Pagpapakita ni Maria',
+    directoryListed: '{count} ang nakalista',
+    directorySubtitle: 'Kumpletong kronolohikal na pangkalahatayang-ideya ng mga na-filter na dambana at pagpapakita',
+    directoryQuickFilter: 'Mabilis na filter sa pamamagitan ng pamagat, lungsod, bansa, taon, o katayuan...',
+    directoryClear: 'I-clear',
+    directoryNoResults: 'Walang mga pagpapakitang tumutugma sa iyong kasalukuyang pamantayan sa paghahanap.',
+    pauseRotation: 'I-pause ang pag-ikot',
+    resumeRotation: 'Ipagpatuloy ang pag-ikot',
+
+    // Status Categories
+    'Vatican approved': 'Inaprubahan ng Vatican',
+    'Traditionally approved': 'Inaprubahan ng Tradisyon',
+    'Bishop approved': 'Inaprubahan ng Obispo',
+    'Coptic approved': 'Inaprubahan ng Koptiko',
+    'Approved for faith expression': 'Inaprubahan para sa pagpapahayag ng pananampalataya',
+    'Apparitions to saints': 'Mga pagpapakita sa mga santo',
+    'Dismissed': 'Tinanggihan',
+
+    // Centuries
+    'c_early': 'Maagang Panahon (40 - 999)',
+    'c_11': 'Ika-11 na Siglo (1000s)',
+    'c_12': 'Ika-12 na Siglo (1100s)',
+    'c_13': 'Ika-13 na Siglo (1200s)',
+    'c_14': 'Ika-14 na Siglo (1300s)',
+    'c_15': 'Ika-15 na Siglo (1400s)',
+    'c_16': 'Ika-16 na Siglo (1500s)',
+    'c_17': 'Ika-17 na Siglo (1600s)',
+    'c_18': 'Ika-18 na Siglo (1700s)',
+    'c_19': 'Ika-19 na Siglo (1800s)',
+    'c_20': 'Ika-20 na Siglo (1900s)',
+    'c_21': 'Ika-21 na Siglo (2000s)'
+  },
+  vi: {
+    title: 'Stella Maris',
+    subtitle: 'Bản đồ các sự kiện Đức Mẹ hiện ra',
+    browseDirectory: 'Danh bạ ({count})',
+    searchPlaceholder: 'Tìm kiếm các sự kiện...',
+    filters: 'Bộ lọc',
+    centuries: 'Thế kỷ',
+    status: 'Trạng thái',
+    selectAll: 'Chọn tất cả',
+    clearAll: 'Xóa tất cả',
+    timeline: 'Dòng thời gian',
+    modernEra: 'Thời kỳ hiện đại (1800–Nay)',
+    fullHistory: 'Toàn bộ lịch sử (40 CN–Nay)',
+    playTimeline: 'Chạy dòng thời gian ({count} sự kiện)',
+    playingTimeline: 'Đang chạy ({year}) — {count} sự kiện',
+    legend: 'Chú giải:',
+    close: 'Đóng',
+    description: 'Mô tả',
+    viewSource: 'Xem nguồn',
+    otherApparitions: 'Các sự kiện Đức Mẹ hiện ra tại đây ({count})',
+    directoryTitle: 'Danh bạ các sự kiện Đức Mẹ hiện ra',
+    directoryListed: 'Đã liệt kê {count}',
+    directorySubtitle: 'Tổng quan trình tự thời gian đầy đủ của các đền thánh và sự kiện Đức Mẹ hiện ra được lọc',
+    directoryQuickFilter: 'Lọc nhanh theo tên, thành phố, quốc gia, năm, hoặc trạng thái...',
+    directoryClear: 'Xóa',
+    directoryNoResults: 'Không có sự kiện hiện ra nào khớp với tiêu chuẩn tìm kiếm của bạn.',
+    pauseRotation: 'Tạm dừng tự quay',
+    resumeRotation: 'Tiếp tục tự quay',
+
+    // Status Categories
+    'Vatican approved': 'Được Tòa Thánh công nhận',
+    'Traditionally approved': 'Được công nhận theo truyền thống',
+    'Bishop approved': 'Được Giám mục giáo phận công nhận',
+    'Coptic approved': 'Được Giáo hội Coptic công nhận',
+    'Approved for faith expression': 'Được phép tôn kính tôn giáo',
+    'Apparitions to saints': 'Đức Mẹ hiện ra với các thánh',
+    'Dismissed': 'Không được công nhận',
+
+    // Centuries
+    'c_early': 'Thời sơ khai (40 - 999)',
+    'c_11': 'Thế kỷ 11 (1000s)',
+    'c_12': 'Thế kỷ 12 (1100s)',
+    'c_13': 'Thế kỷ 13 (1200s)',
+    'c_14': 'Thế kỷ 14 (1300s)',
+    'c_15': 'Thế kỷ 15 (1400s)',
+    'c_16': 'Thế kỷ 16 (1500s)',
+    'c_17': 'Thế kỷ 17 (1600s)',
+    'c_18': 'Thế kỷ 18 (1700s)',
+    'c_19': 'Thế kỷ 19 (1800s)',
+    'c_20': 'Thế kỷ 20 (1900s)',
+    'c_21': 'Thế kỷ 21 (2000s)'
+  }
+};
+
+/**
+ * Translates a single string key for the active language.
+ */
+export const t = (key: keyof typeof translations['en'], lang: Language, params?: Record<string, string | number>): string => {
+  const dictionary = translations[lang] || translations['en'];
+  let text = (dictionary[key] as string) || (translations['en'][key] as string) || String(key);
+  
+  if (params) {
+    Object.entries(params).forEach(([k, v]) => {
+      text = text.replace(`{${k}}`, String(v));
+    });
+  }
+  
+  return text;
+};
+
+// Local cache for dynamically loaded translations to prevent re-fetching or reloading
+const languageCaches: Record<string, Record<string, { title: string; location: string; country: string; description: string }>> = {};
+
+/**
+ * Loads translations for a specific language from JSON file.
+ * We load dynamically so we do not bloat the initial bundle size.
+ */
+export const loadLanguageTranslations = async (lang: Language): Promise<Record<string, { title: string; location: string; country: string; description: string }>> => {
+  if (lang === 'en') return {};
+  if (languageCaches[lang]) return languageCaches[lang];
+  
+  try {
+    const data = await import(`../data/translations/${lang}.json`);
+    languageCaches[lang] = data.default || data;
+    return languageCaches[lang];
+  } catch (err) {
+    console.error(`Failed to load translations for language ${lang}:`, err);
+    return {};
+  }
+};
+
+/**
+ * Translates an apparition record using a preloaded translations dictionary.
+ */
+export const translateApparition = (
+  app: Apparition, 
+  lang: Language, 
+  langTranslations?: Record<string, { title: string; location: string; country: string; description: string }>
+): Apparition => {
+  if (lang === 'en') {
+    return app;
+  }
+  
+  const tr = langTranslations?.[app.id] || app.translations?.[lang];
+  if (!tr) {
+    return app;
+  }
+  
+  return {
+    ...app,
+    title: tr.title || app.title,
+    location: tr.location || app.location,
+    country: tr.country || app.country,
+    description: tr.description || app.description
+  };
+};
+
+/**
+ * Translates an array of apparition records using a preloaded translations dictionary.
+ */
+export const translateApparitionsList = (
+  list: Apparition[], 
+  lang: Language,
+  langTranslations?: Record<string, { title: string; location: string; country: string; description: string }>
+): Apparition[] => {
+  if (lang === 'en') return list;
+  return list.map(app => translateApparition(app, lang, langTranslations));
+};

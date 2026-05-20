@@ -3,21 +3,65 @@ import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
 import { Play, Pause } from 'lucide-react';
 import { getStatusColor, hexToRgb } from '../utils/colors';
+import { t } from '../utils/i18n';
+import type { Language } from '../utils/i18n';
 
 interface GlobeViewerProps {
   apparitions: Apparition[];
   selectedApparition: Apparition | null;
   onSelectApparition: (apparition: Apparition | null) => void;
   isTimelineOpen: boolean;
+  lang: Language;
+  hidePlayPause?: boolean;
 }
 
-const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedApparition, onSelectApparition, isTimelineOpen }) => {
+const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
+  apparitions, 
+  selectedApparition, 
+  onSelectApparition, 
+  isTimelineOpen, 
+  lang,
+  hidePlayPause = false
+}) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [isAutoRotate, setIsAutoRotate] = useState(true);
   const [lodThreshold, setLodThreshold] = useState<number>(2);
   const lodRef = useRef<number>(2);
   const lastClickTimeRef = useRef<number>(0);
+
+  const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
+  const [ringProgress, setRingProgress] = useState(1);
+
+  useEffect(() => {
+    if (selectedApparition) {
+      setRingApparition(selectedApparition);
+      setRingProgress(1);
+    } else {
+      let start: number | null = null;
+      const duration = 400; // ms
+      let animFrameId: number;
+
+      const animate = (timestamp: number) => {
+        if (!start) start = timestamp;
+        const elapsed = timestamp - start;
+        const progress = Math.max(0, 1 - elapsed / duration);
+        setRingProgress(progress);
+
+        if (progress > 0) {
+          animFrameId = requestAnimationFrame(animate);
+        } else {
+          setRingApparition(null);
+        }
+      };
+
+      animFrameId = requestAnimationFrame(animate);
+      return () => {
+        cancelAnimationFrame(animFrameId);
+      };
+    }
+  }, [selectedApparition]);
 
   useEffect(() => {
     if (selectedApparition && globeEl.current) {
@@ -70,13 +114,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
 
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          // ── 5-zone LOD ──────────────────────────────────────────────────────
+          // 5-zone LOD
           // Zone 1 (very close, alt < 0.4) → 0 extra labels (selected only)
           // Zone 2 (close,     alt < 0.9) → max 6,  priority-1 only
           // Zone 3 (mid,       alt < 1.6) → max 12, priority-1 only
           // Zone 4 (mid-far,   alt < 2.4) → max 8,  priority-1 only
           // Zone 5 (far,       alt ≥ 2.4) → max 5,  priority-1 only
-          // ────────────────────────────────────────────────────────────────────
           const altitude = Math.max(0.1, pov.altitude);
           let newThreshold: number;
           if (altitude < 0.4) newThreshold = 1;
@@ -120,7 +163,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
   }, [apparitions, selectedApparition]);
 
   const visibleHtmlLabels = useMemo(() => {
-    // ── Per-zone label caps ───────────────────────────────────────────────────
+    // Per-zone label caps
     // Zone 1 (very close): selected only
     // Zone 2 (close):      max 2 per region, priority ≤ 1
     // Zone 3 (mid):        max 3 per region, priority ≤ 1
@@ -129,15 +172,14 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     //
     // GEOGRAPHIC DISTRIBUTION: Labels are picked per continental region so the
     // globe always looks populated globally as it rotates, not just over Europe.
-    // ────────────────────────────────────────────────────────────────────────
     const ZONE_CONFIG: Record<number, { perRegion: number; maxPriority: number }> = {
-      1: { perRegion: 0, maxPriority: 0 },
-      2: { perRegion: 2, maxPriority: 1 },
-      3: { perRegion: 3, maxPriority: 1 },
-      4: { perRegion: 2, maxPriority: 1 },
-      5: { perRegion: 1, maxPriority: 1 },
+      1: { perRegion: 25, maxPriority: 5 },
+      2: { perRegion: 15, maxPriority: 4 },
+      3: { perRegion: 8, maxPriority: 2 },
+      4: { perRegion: 3, maxPriority: 1 },
+      5: { perRegion: 2, maxPriority: 1 },
     };
-    const { perRegion, maxPriority } = ZONE_CONFIG[lodThreshold] ?? { perRegion: 1, maxPriority: 1 };
+    const { perRegion, maxPriority } = ZONE_CONFIG[lodThreshold] ?? { perRegion: 2, maxPriority: 1 };
 
     // Dynamic scale-up when user filters down the dataset (e.g. Vatican-approved only)
     const totalItems = apparitions.length;
@@ -173,16 +215,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       return 'other';
     };
 
-    if (effectivePerRegion === 0) {
-      const result: (Apparition & { clusterCount?: number })[] = [];
-      if (selectedApparition) result.push({ ...selectedApparition, clusterCount: 1 });
-      return result;
+    // Pre-calculate active apparitions count per region
+    const totalCountByRegion: Record<string, number> = {};
+    for (const app of apparitions) {
+      const r = getRegion(app.lat, app.lng);
+      totalCountByRegion[r] = (totalCountByRegion[r] || 0) + 1;
     }
 
     // Build candidate list — handle adaptive priority relaxation
     const candidates = apparitions
       .filter(app => {
         if (selectedApparition?.id === app.id) return true;
+        
+        const region = getRegion(app.lat, app.lng);
+        const regionTotal = totalCountByRegion[region] || 0;
+        
+        // If the region has very few total active apparitions, show them all!
+        if (regionTotal < 25) return true;
+        
         if (effectiveMaxPriority >= 999) return true;
         if (app.priority === undefined || app.priority === null) return false;
         return app.priority <= effectiveMaxPriority;
@@ -190,7 +240,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       .sort((a, b) => (a.priority ?? 99) - (b.priority ?? 99));
 
     // Adaptive spacing based on lodThreshold (zoom/altitude) and dataset size
-    let spacingBase = 2.5;
+    let spacingBase: number;
     if (lodThreshold === 5) {
       spacingBase = 12.0; // Far out: labels must be very far apart geographically to not overlap on screen
     } else if (lodThreshold === 4) {
@@ -212,22 +262,38 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
     for (const app of candidates) {
       if (selectedApparition?.id === app.id) continue; // handled at end
 
-      // Avoid showing other labels near the selected apparition to prevent overlap
+      // Avoid showing other labels near the selected apparition to prevent overlap.
+      // Since the selected label is styled larger and wider, we apply a horizontal aspect ratio multiplier.
       if (selectedApparition) {
         const distLat = Math.abs(selectedApparition.lat - app.lat);
         const distLng = Math.abs(selectedApparition.lng - app.lng);
+        const meanLat = ((selectedApparition.lat + app.lat) / 2) * Math.PI / 180;
+        const cosLat = Math.max(0.3, Math.cos(meanLat));
+        const physicalDistLng = distLng * cosLat;
         const minSelectedDist = lodThreshold === 5 ? 12.0 : (lodThreshold === 4 ? 8.0 : (lodThreshold === 3 ? 5.0 : 2.8));
-        if (distLat < minSelectedDist && distLng < minSelectedDist) continue;
+        if (distLat < minSelectedDist && physicalDistLng < (minSelectedDist * 3.8)) continue;
       }
 
       const region = getRegion(app.lat, app.lng);
       const count = regionCounts[region] ?? 0;
-      if (count >= effectivePerRegion) continue;
+      
+      const regionTotal = totalCountByRegion[region] || 0;
+      const maxAllowed = regionTotal < 25 ? 15 : effectivePerRegion;
+      
+      if (count >= maxAllowed) continue;
 
-      // Within same region, avoid placing labels too close together
-      const tooClose = clusters.some(
-        c => Math.abs(c.lat - app.lat) < CLUSTER_DEG && Math.abs(c.lng - app.lng) < CLUSTER_DEG
-      );
+      // Within same region, avoid placing labels too close together.
+      // Since labels are text strings written horizontally, their width is much
+      // larger than their height. We use a 3.8x horizontal aspect ratio multiplier
+      // and project longitude distance by cos(lat) to prevent overlaps.
+      const tooClose = clusters.some(c => {
+        const latDiff = Math.abs(c.lat - app.lat);
+        const lngDiff = Math.abs(c.lng - app.lng);
+        const meanLat = ((c.lat + app.lat) / 2) * Math.PI / 180;
+        const cosLat = Math.max(0.3, Math.cos(meanLat));
+        const physicalLngDiff = lngDiff * cosLat;
+        return latDiff < CLUSTER_DEG && physicalLngDiff < (CLUSTER_DEG * 3.8);
+      });
       if (tooClose) continue;
 
       clusters.push({ ...app, clusterCount: 1 });
@@ -271,7 +337,15 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
 
   return (
     <>
-      <div style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%' }}>
+      <div 
+        style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%' }}
+        onPointerEnter={() => {
+          const active = document.activeElement as HTMLElement;
+          if (active && active.tagName !== 'INPUT' && active.tagName !== 'TEXTAREA') {
+            active.blur();
+          }
+        }}
+      >
         <Globe
           ref={globeEl}
           width={dimensions.width}
@@ -282,21 +356,26 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
           pointsData={visibleApparitions}
           pointLat="lat"
           pointLng="lng"
-          pointColor={(d: any) => getStatusColor(d.approvalStatus)}
+          pointColor={(d: unknown) => getStatusColor((d as Apparition).approvalStatus)}
           pointAltitude={lodThreshold <= 2 ? 0.005 : lodThreshold === 3 ? 0.008 : 0.013}
           pointRadius={lodThreshold <= 1 ? 0.08 : lodThreshold === 2 ? 0.13 : lodThreshold === 3 ? 0.2 : lodThreshold === 4 ? 0.28 : 0.36}
           pointsMerge={false}
-          ringsData={selectedApparition ? [selectedApparition] : []}
+          ringsData={ringApparition ? [ringApparition] : []}
           ringLat="lat"
           ringLng="lng"
-          ringColor={(d: any) => getStatusColor(d.approvalStatus)}
-          ringMaxRadius={6}
+          ringColor={(d: unknown) => {
+            const hex = getStatusColor((d as Apparition).approvalStatus);
+            const rgb = hexToRgb(hex);
+            return `rgba(${rgb}, ${ringProgress})`;
+          }}
+          ringMaxRadius={6 * ringProgress}
           ringPropagationSpeed={4}
           ringRepeatPeriod={700}
           onPointClick={handlePointClick}
           onGlobeClick={handleGlobeClick}
           htmlElementsData={visibleHtmlLabels}
-          htmlElement={(d: any) => {
+          htmlElement={(dRaw: unknown) => {
+            const d = dRaw as Apparition & { clusterCount?: number };
             const isSelected = selectedApparition?.id === d.id;
             const safeTitle = escapeHtml(d.title || '');
             const count = d.clusterCount || 1;
@@ -351,37 +430,39 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({ apparitions, selectedAppariti
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      <button
-        onClick={(e) => {
-          e.stopPropagation();
-          setIsAutoRotate(prev => !prev);
-        }}
-        style={{
-          position: 'fixed',
-          bottom: isTimelineOpen ? '268px' : '20px',
-          left: '20px',
-          zIndex: 200,
-          pointerEvents: 'auto',
-          background: 'rgba(15, 23, 42, 0.75)',
-          backdropFilter: 'blur(12px)',
-          border: '1px solid rgba(255, 255, 255, 0.15)',
-          borderRadius: '50%',
-          width: '44px',
-          height: '44px',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          color: 'var(--text-color)',
-          cursor: 'pointer',
-          boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
-          transition: 'all 0.2s ease'
-        }}
-        onMouseOver={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)'}
-        onMouseOut={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.75)'}
-        title={isAutoRotate ? "Pause rotation" : "Resume rotation"}
-      >
-        {isAutoRotate ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: '2px' }} />}
-      </button>
+      {!hidePlayPause && (
+        <button
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsAutoRotate(prev => !prev);
+          }}
+          style={{
+            position: 'fixed',
+            bottom: isTimelineOpen ? '268px' : '20px',
+            left: '20px',
+            zIndex: 200,
+            pointerEvents: 'auto',
+            background: 'rgba(15, 23, 42, 0.75)',
+            backdropFilter: 'blur(12px)',
+            border: '1px solid rgba(255, 255, 255, 0.15)',
+            borderRadius: '50%',
+            width: '44px',
+            height: '44px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--text-color)',
+            cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+            transition: 'all 0.2s ease'
+          }}
+          onMouseOver={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)'}
+          onMouseOut={(e) => e.currentTarget.style.background = 'rgba(15, 23, 42, 0.75)'}
+          title={isAutoRotate ? t('pauseRotation', lang) : t('resumeRotation', lang)}
+        >
+          {isAutoRotate ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: '2px' }} />}
+        </button>
+      )}
     </>
   );
 };

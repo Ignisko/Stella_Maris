@@ -97,3 +97,8 @@ input, button, textarea, select {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 255, 255, 0.4);
 }
+
+.selectable {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}

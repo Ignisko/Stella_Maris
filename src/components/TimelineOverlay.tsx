@@ -1,7 +1,9 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, Clock, Play, Pause, ChevronUp, ChevronDown, X } from 'lucide-react';
+import { BarChart2, Clock, Play, Pause, ChevronUp, X } from 'lucide-react';
 import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
+import { t } from '../utils/i18n';
+import type { Language } from '../utils/i18n';
 
 interface TimelineOverlayProps {
   apparitions: Apparition[];
@@ -11,20 +13,21 @@ interface TimelineOverlayProps {
   onTogglePlay: () => void;
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
+  lang: Language;
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
   "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 30 },
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 15, fullHistoryOffset: -1 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 60, fullHistoryOffset: -1 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 20, fullHistoryOffset: 70 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 45, fullHistoryOffset: -1 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 80, fullHistoryOffset: 80 },
   "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
-  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -25 },
-  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: 75 }
+  "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -1 },
+  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
-  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isOpen, setIsOpen
+  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isOpen, setIsOpen, lang
 }) => {
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
@@ -43,8 +46,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
 
   const minYear = useMemo(() => timeMode === 'modern' ? 1800 : (sorted[0]?.year ?? 1500), [sorted, timeMode]);
   const maxYear = useMemo(() => timeMode === 'modern' ? 2025 : (sorted[sorted.length - 1]?.year ?? 2025), [sorted, timeMode]);
-  const startY = minYear;
   const endY = maxYear;
+  const startY = timeMode === 'modern' ? 1800 : minYear;
   const range = endY - startY;
 
   const bucketSpan = Math.max(1, Math.round(range / 115));
@@ -63,9 +66,17 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   }, [sorted, startY, bucketSpan, numBuckets]);
 
   const maxCount = useMemo(() => Math.max(1, ...buckets.map(b => b.apps.length)), [buckets]);
-  const tileHeight = maxCount > 25 ? 4.5 : maxCount > 18 ? 6.5 : maxCount > 12 ? 9 : 12;
-  const tileWidth = maxCount > 25 ? 3 : maxCount > 18 ? 4.5 : maxCount > 12 ? 6 : 7.5;
+  
+  const tileHeight = timeMode === 'all'
+    ? (maxCount > 25 ? 3.5 : maxCount > 18 ? 4.5 : maxCount > 12 ? 6 : 8)
+    : (maxCount > 25 ? 4.5 : maxCount > 18 ? 6.5 : maxCount > 12 ? 9 : 12);
+    
+  const tileWidth = timeMode === 'all'
+    ? (maxCount > 25 ? 5.5 : maxCount > 18 ? 7 : maxCount > 12 ? 8.5 : 10)
+    : (maxCount > 25 ? 3 : maxCount > 18 ? 4.5 : maxCount > 12 ? 6 : 7.5);
+    
   const tileGap = maxCount > 25 ? 0.75 : maxCount > 18 ? 1 : 1.5;
+  
   const tickStep = timeMode === 'modern' ? 20 : 100;
 
   const callouts = useMemo(() => {
@@ -79,21 +90,25 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       left: number;
     }[] = [];
 
-    buckets.forEach(b => {
-      const famous = b.apps.find(app => FAMOUS_CALLOUTS[app.id]);
-      const callout = famous ? FAMOUS_CALLOUTS[famous.id] : null;
-      if (!callout || b.apps.length === 0) return;
+    Object.entries(FAMOUS_CALLOUTS).forEach(([id, callout]) => {
+      const famous = sorted.find(app => app.id === id);
+      if (!famous) return;
+
       const offset = timeMode === 'modern' ? callout.modernOffset : callout.fullHistoryOffset;
       if (offset < 0) return;
 
-      const leftPct = ((b.index + 0.5) / buckets.length) * 100;
-      const bottomPx = b.apps.length * (tileHeight + tileGap);
+      const bucket = buckets.find(b => famous.year >= b.startYear && famous.year <= b.endYear);
+      const bottomPx = bucket ? bucket.apps.length * (tileHeight + tileGap) : 0;
+
+      const leftPct = ((famous.year - startY) / range) * 100;
       const clampedLeft = Math.max(6, Math.min(94, leftPct));
+
+      const titleForLang = (famous as any).translations?.[lang]?.title || famous.title;
 
       list.push({
         id: famous.id,
         famous,
-        label: callout.label,
+        label: titleForLang.split('(')[0].trim(),
         originalLeft: leftPct,
         bottomPx,
         offset,
@@ -102,9 +117,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
     });
 
     return list;
-  }, [buckets, timeMode, tileHeight]);
+  }, [sorted, buckets, timeMode, tileHeight, tileGap, startY, range, lang]);
 
-  // ── Collapsed pill ──────────────────────────────────────────────────────────
+  // Collapsed pill
   if (!isOpen) {
     return (
       <button
@@ -145,13 +160,13 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         }}
       >
         <BarChart2 size={20} color="var(--accent-color)" />
-        <span>Timeline</span>
+        <span>{t('timeline', lang)}</span>
         <ChevronUp size={16} style={{ opacity: 0.7, color: 'var(--accent-color)' }} />
       </button>
     );
   }
 
-  // ── Expanded panel ──────────────────────────────────────────────────────────
+  // Expanded panel
   return (
     <div
       className="glass-panel glass-panel-rounded animate-fade-in"
@@ -196,11 +211,11 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
         onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
       >
-        <span>Close</span>
+        <span>{t('close', lang)}</span>
         <X size={13} />
       </button>
 
-      {/* ── Top bar: title + controls ─────────────────────────────── */}
+      {/* Top bar: title + controls */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '8px', paddingRight: '100px' }}>
 
         {/* Title */}
@@ -209,7 +224,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           opacity: 0.85, margin: 0, fontWeight: 700,
           display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0
         }}>
-          <BarChart2 size={16} color="var(--accent-color)" /> Timeline
+          <BarChart2 size={16} color="var(--accent-color)" /> {t('timeline', lang)}
         </h3>
 
         {/* Time mode toggle */}
@@ -230,7 +245,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               }}
             >
               <Clock size={11} />
-              {mode === 'modern' ? 'Modern era (1800–Present)' : 'Full history (40 AD–Present)'}
+              {mode === 'modern' ? t('modernEra', lang) : t('fullHistory', lang)}
             </button>
           ))}
         </div>
@@ -250,13 +265,13 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           {isPlaying ? <Pause size={12} /> : <Play size={12} />}
           <span>
             {isPlaying
-              ? `Playing (${selectedApparition?.year ?? minYear}) — ${sorted.length} events`
-              : `Play timeline (${sorted.length} events)`}
+              ? t('playingTimeline', lang, { year: selectedApparition?.year ?? minYear, count: sorted.length })
+              : t('playTimeline', lang, { count: sorted.length })}
           </span>
         </button>
       </div>
 
-      {/* ── Status legend under the controls ── */}
+      {/* Status legend under the controls */}
       <div style={{
         display: 'flex',
         alignItems: 'center',
@@ -266,16 +281,16 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         paddingTop: '6px',
         borderTop: '1px solid rgba(255, 255, 255, 0.06)'
       }}>
-        <span style={{ fontSize: '10px', opacity: 0.5, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700, marginRight: '4px' }}>Legend:</span>
+        <span style={{ fontSize: '10px', opacity: 0.5, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700, marginRight: '4px' }}>{t('legend', lang)}</span>
         {Object.entries(STATUS_COLORS).map(([label, color]) => (
           <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
             <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
-            <span>{label === 'Approved for faith expression' ? 'Faith expression' : label.replace(' approved', '')}</span>
+            <span>{t(label as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
           </div>
         ))}
       </div>
 
-      {/* ── Hover tooltip ─────────────────────────────────────────────────── */}
+      {/* Hover tooltip */}
       {hoveredApp && (
         <div style={{
           position: 'absolute', bottom: '100%', left: '50%',
@@ -294,15 +309,13 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           <div style={{ fontSize: '11px', display: 'flex', alignItems: 'center', gap: '5px', marginTop: '2px' }}>
             <span style={{ width: '7px', height: '7px', borderRadius: '50%', backgroundColor: getStatusColor(hoveredApp.approvalStatus) }} />
             <span style={{ fontWeight: 600 }}>
-              {getApparitionStatusCategory(hoveredApp.approvalStatus) === 'Approved for faith expression'
-                ? 'Faith expression'
-                : getApparitionStatusCategory(hoveredApp.approvalStatus)}
+              {t(getApparitionStatusCategory(hoveredApp.approvalStatus) as keyof typeof import('../utils/i18n').translations['en'], lang)}
             </span>
           </div>
         </div>
       )}
 
-      {/* ── Histogram ─────────────────────────────────────────────────────── */}
+      {/* Histogram */}
       <div style={{ position: 'relative', width: '100%', height: '120px' }}>
 
         {/* Stacked bars */}
@@ -375,29 +388,46 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             );
           })()}
 
-          {/* Callout lines (solid gradients straight up) */}
-          {callouts.map(c => {
-            const bottomPx = c.bottomPx;
-            return (
-              <div
-                key={`line-${c.id}`}
-                style={{
-                  position: 'absolute',
-                  left: `${c.left}%`,
-                  bottom: `${bottomPx}px`,
-                  transform: 'translateX(-50%)',
-                  width: '1.5px',
-                  height: `${c.offset}px`,
-                  background: 'linear-gradient(to top, rgba(255,255,255,0.15), rgba(255,255,255,0.75))',
-                  zIndex: 5
-                }}
-              />
-            );
-          })}
+          {/* Callout lines (solid gradients diagonal or vertical using SVG) */}
+          <svg style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: '300px', pointerEvents: 'none', zIndex: 5 }}>
+            <defs>
+              <linearGradient id="callout-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+                <stop offset="0%" stopColor="rgba(255,255,255,0.15)" />
+                <stop offset="100%" stopColor="rgba(255,255,255,0.75)" />
+              </linearGradient>
+            </defs>
+            {callouts.map(c => {
+              let lineX2 = c.left;
+              if (c.originalLeft > c.left + 0.5) {
+                lineX2 = c.left + Math.min(3.5, c.originalLeft - c.left);
+              } else if (c.originalLeft < c.left - 0.5) {
+                lineX2 = c.left - Math.min(3.5, c.left - c.originalLeft);
+              }
+              return (
+                <line
+                  key={`svg-line-${c.id}`}
+                  x1={`${c.originalLeft}%`}
+                  y1={300 - c.bottomPx}
+                  x2={`${lineX2}%`}
+                  y2={300 - (c.bottomPx + c.offset)}
+                  stroke="url(#callout-grad)"
+                  strokeWidth="1.5"
+                />
+              );
+            })}
+          </svg>
 
           {/* Callout pills */}
           {callouts.map(c => {
             const bottomPx = c.bottomPx + c.offset;
+            // Calculate dynamic translateX to prevent edge clipping and connect beautifully
+            let translateX = -50;
+            if (c.originalLeft > 85) {
+              translateX = -50 - Math.min(40, (c.originalLeft - 85) * 4);
+            } else if (c.originalLeft < 15) {
+              translateX = -50 + Math.min(40, (15 - c.originalLeft) * 4);
+            }
+
             return (
               <div
                 key={`pill-${c.id}`}
@@ -406,7 +436,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   position: 'absolute',
                   left: `${c.left}%`,
                   bottom: `${bottomPx}px`,
-                  transform: 'translateX(-50%)',
+                  transform: `translateX(${translateX}%)`,
                   zIndex: 50,
                   fontSize: '11px',
                   fontWeight: 700,
@@ -432,7 +462,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         </div>
       </div>
 
-      {/* ── Year axis ─────────────────────────────────────────────────────── */}
+      {/* Year axis */}
       <div style={{ position: 'relative', height: '26px', width: '100%', marginTop: '2px' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255,255,255,0.25)' }} />
         {Array.from({ length: Math.ceil(range / tickStep) + 1 }).map((_, i) => {

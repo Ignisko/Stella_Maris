@@ -1,0 +1,3248 @@
+{
+  "kuravilangad": {
+    "title": "Đức Mẹ Kuravilangad",
+    "location": "Kuravilangad",
+    "country": "Ấn Độ",
+    "description": "Đức Mẹ hiện ra với các trẻ em đang chăn chiên, yêu cầu các em xây dựng một nhà thờ nơi một mùa xuân kỳ diệu vĩnh viễn nảy mầm."
+  },
+  "boulogne": {
+    "title": "Đức Mẹ Boulogne",
+    "location": "Boulogne",
+    "country": "Pháp",
+    "description": "Một con tàu không bánh lái chở tượng Đức Mẹ đã cập bến Boulogne. Mary hiện ra trước đám đông và tuyên bố rằng cô đã chọn thành phố này làm nơi ân sủng."
+  },
+  "pillar": {
+    "title": "Đức Mẹ Cột Trụ",
+    "location": "Zaragoza",
+    "country": "Tây Ban Nha",
+    "description": "Theo truyền thuyết, Sứ đồ Giacôbê Lớn đang rao giảng Tin Mừng thì thấy Đức Maria hiện ra bằng xương bằng thịt một cách kỳ diệu trên một cây cột kêu gọi ông trở về Giêrusalem. Đây được coi là lần hiện ra đầu tiên của Đức Mẹ."
+  },
+  "patmos": {
+    "title": "Người Phụ Nữ Mặc Nắng",
+    "location": "Bát-mô",
+    "country": "Hy Lạp",
+    "description": "Theo truyền thuyết, Thánh sử John đã nhận được thị kiến ​​về Đức Trinh Nữ Maria trước khi ông soạn Sách Khải Huyền."
+  },
+  "ephesus": {
+    "title": "Đức Mẹ ở Ephesus",
+    "location": "Êphêsô",
+    "country": "Thổ Nhĩ Kỳ",
+    "description": "Theo truyền thuyết, Đức Trinh Nữ Maria đã hiện ra với các tông đồ ba ngày sau khi Đức Mẹ Hồn Xác Lên Trời. Được bao bọc trong ánh sáng rực rỡ, cô hứa: 'Em sẽ ở bên anh mãi mãi.'"
+  },
+  "caesarea": {
+    "title": "Mediatrix có chủ quyền",
+    "location": "Sê-sa-rê",
+    "country": "Thổ Nhĩ Kỳ",
+    "description": "Mary xuất hiện với Thánh Basil hứa sẽ bảo vệ ông khỏi kế hoạch phá hủy nhà thờ của hoàng đế La Mã Julian the Apostate."
+  },
+  "saydnaya": {
+    "title": "Đức Mẹ Saydnaya",
+    "location": "Saydnaya",
+    "country": "Syria",
+    "description": "Hoàng đế Justinian I đã nhìn thấy hình ảnh Đức Trinh Nữ Maria, người đã ra lệnh cho ông xây dựng một tu viện trên tảng đá cao nơi bà đang đứng."
+  },
+  "alexandria": {
+    "title": "Đức Mẹ gửi Thánh Catherine",
+    "location": "Alexandria",
+    "country": "Ai Cập",
+    "description": "Thánh Catherine đã được hoán cải nhờ khải tượng về Đức Mẹ và Hài Nhi, khiến bà từ chối kết hôn với một hoàng đế."
+  },
+  "snows": {
+    "title": "Đức Mẹ Tuyết",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria đã để lại tuyết một cách kỳ diệu vào giữa tháng 8 nóng bức trên Đồi Esquiline, chỉ ra chính xác khu vực mà Mẹ muốn xây dựng Vương cung thánh đường Thánh Mary Major."
+  },
+  "lepuy": {
+    "title": "Đức Mẹ Lê Puy",
+    "location": "Lê Puy en Velay",
+    "country": "Pháp",
+    "description": "Đức Mẹ hiện ra với một người mới cải đạo tên là Vila, người đang bị bệnh nặng hành hạ. Cô đã khỏi bệnh hoàn toàn và xây dựng một nhà nguyện nhỏ trên khu vực này."
+  },
+  "tagaste": {
+    "title": "Đức Mẹ đến Thánh Monica",
+    "location": "Tagaste",
+    "country": "Algeria",
+    "description": "Đức Trinh Nữ hiện ra với Thánh Monica, mẹ của Thánh Augustinô, an ủi thánh nữ trong những đau khổ."
+  },
+  "toledo": {
+    "title": "Đức Mẹ đến Thánh Ildefonso",
+    "location": "Toledo",
+    "country": "Tây Ban Nha",
+    "description": "Mary ca ngợi lòng nhiệt thành tôn giáo của Giám mục Ildefonso và trao cho ông một bộ quần áo có giá trị như một biểu tượng cho sự bảo vệ của cô."
+  },
+  "neocaesarea": {
+    "title": "Đức Mẹ đến Thánh Gregory",
+    "location": "Neocaesarea",
+    "country": "Thổ Nhĩ Kỳ",
+    "description": "Đức Trinh Nữ Maria và Sứ đồ John đã hiện ra với Thánh Gregory the Wonderworker để làm sáng tỏ những bí ẩn thần học liên quan đến Chúa Ba Ngôi."
+  },
+  "benevento": {
+    "title": "Đức Mẹ kính Thánh Barabatus",
+    "location": "Benevento",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ hiện ra với Thánh Barabatus dưới bức tường của thành phố Constantine II đang bị bao vây."
+  },
+  "myra": {
+    "title": "Đức Mẹ đến Thánh Nicholas",
+    "location": "Myra",
+    "country": "Thổ Nhĩ Kỳ",
+    "description": "Thánh Nicholas thành Bari đã nhận được hai lần hiện ra thúc giục ngài hoàn thành sứ mệnh tâm linh của mình, lần thứ hai xảy ra trong Công đồng Nicaea."
+  },
+  "montserrat": {
+    "title": "Đức Mẹ Montserrat",
+    "location": "Montserrat",
+    "country": "Tây Ban Nha",
+    "description": "Một cuộc hiện ra đầu tiên nổi bật của Đức Maria với một người mẹ tại địa điểm mà sau này trở thành thánh địa nổi tiếng của Montserrat."
+  },
+  "covadonga": {
+    "title": "Đức Mẹ Covadonga",
+    "location": "Covadonga",
+    "country": "Tây Ban Nha",
+    "description": "Đức Mẹ hiện ra với Dom Pelayo, vị vua đầu tiên của Asturias, để lại một bức tượng. Những người theo đạo Cơ đốc sau đó đã đánh bại người Moor với tỷ lệ khó tin."
+  },
+  "incoronata": {
+    "title": "Mẹ Thiên Chúa đăng quang",
+    "location": "Borgo Incoronata",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ hiện ra trên cây sồi trong rừng Cervaro trước Bá tước Irpino và một người chăn cừu, yêu cầu họ xây dựng một nhà thờ."
+  },
+  "mtathos": {
+    "title": "Đức Mẹ Núi Athos",
+    "location": "Núi Athos",
+    "country": "Hy Lạp",
+    "description": "Đức Trinh Nữ hiện ra với Athanasius, an ủi anh và khuyên anh đừng rời khỏi Núi, truyền cảm hứng cho anh thành lập tu viện đầu tiên ở đó."
+  },
+  "montefortino": {
+    "title": "Đức Mẹ Tự Do",
+    "location": "Montefortino",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ hiện ra với Santina, một cô chăn cừu câm, người đã được ban cho khả năng nói một cách kỳ diệu khi nhìn thấy Mẹ trên trời."
+  },
+  "canterbury": {
+    "title": "Đức Mẹ đến Thánh Dustin",
+    "location": "Canterbury",
+    "country": "Anh",
+    "description": "Trong khi Thánh Dustin cầu nguyện trong nhà thờ, Đức Trinh Nữ Maria hiện ra với ngài cùng với ca đoàn thiên quốc."
+  },
+  "valenciennes": {
+    "title": "Đức Mẹ Dây",
+    "location": "Valenciennes",
+    "country": "Pháp",
+    "description": "Mary xuất hiện cùng với nhiều Thiên thần căng dây quanh thành phố để ngăn chặn bệnh dịch, yêu cầu người dân tổ chức một đám rước."
+  },
+  "einsiedeln": {
+    "title": "Đức Mẹ Einsiedeln",
+    "location": "Einsiedeln",
+    "country": "Thụy Sĩ",
+    "description": "Thánh Konrad đã chứng kiến ​​một cuộc rước hoành tráng của các Thiên thần và chính Chúa Kitô đã thánh hiến một cách kỳ diệu Nhà nguyện Đức Mẹ Các Ẩn sĩ."
+  },
+  "palermo": {
+    "title": "Đức Mẹ Chữa Lành",
+    "location": "Palermo",
+    "country": "Ý",
+    "description": "Trong một cuộc vây hãm kéo dài, nơi bệnh tật lây lan trong quân đội của ông, Roger I của người Norman đã nhìn thấy sự hiện ra của Đức Mẹ, người đã cung cấp một phương pháp chữa trị."
+  },
+  "conche": {
+    "title": "Maddona di Conche",
+    "location": "Conche",
+    "country": "Ý",
+    "description": "Thánh Constantius nhìn thấy một Đức Mẹ bế Hài Nhi trên tay được nâng lên trên chu vi tòa nhà được đánh dấu một cách kỳ diệu bởi một con chim bồ câu trắng."
+  },
+  "nocera": {
+    "title": "Santa Maria di Materdomini",
+    "location": "Nocera Superiore",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ ra lệnh cho một phụ nữ nông dân thuyết phục dân làng đào dưới gốc cây sồi, nơi họ tìm thấy một biểu tượng quý giá của Byzantine."
+  },
+  "chartres": {
+    "title": "Đức Mẹ đến Thánh Fulbert",
+    "location": "Biểu đồ",
+    "country": "Pháp",
+    "description": "Thánh Fulbert đã được chữa lành khỏi một căn bệnh hiểm nghèo sau khi Đức Mẹ hiện ra. Để tỏ lòng biết ơn, ông đã thành lập nhà thờ nổi tiếng Chartres."
+  },
+  "liege": {
+    "title": "Đức Mẹ Tu Viện Trưởng Rupert",
+    "location": "Liège",
+    "country": "Bỉ",
+    "description": "Đức Mẹ hiện ra với cậu sinh viên đang gặp khó khăn Rupert de Deutz và hứa với cậu món quà tri thức để cậu dâng hiến để tôn vinh Thiên Chúa."
+  },
+  "mainz": {
+    "title": "Đức Mẹ Cây Sồi",
+    "location": "Mainz",
+    "country": "Đức",
+    "description": "Thánh Boniface đã nghe thấy giọng nói của Đức Maria từ một biểu tượng kỳ diệu treo trên cây sồi, nói rằng: 'Thân cây sồi này sẽ mãi mãi là bức chân dung của tôi.'"
+  },
+  "walsingham": {
+    "title": "Đức Mẹ Walsingham",
+    "location": "Walsingham",
+    "country": "Anh",
+    "description": "Đức Mẹ hiện ra với Richeldis de Faverches, trình bày với bà các kế hoạch về Nhà Thánh của Thánh Gia ở Nazareth và yêu cầu bà xây dựng một bản sao làm đền thờ."
+  },
+  "reguengo": {
+    "title": "Đức Mẹ Dương Xỉ",
+    "location": "Reguengo do thai nhi",
+    "country": "Bồ Đào Nha",
+    "description": "Một cô chăn cừu đã tìm thấy bánh và một dòng suối kỳ diệu mà cô đã được Đức Mẹ hướng dẫn."
+  },
+  "oudenburg": {
+    "title": "Đức Mẹ đến Thánh Arnulfo",
+    "location": "Oudenburg",
+    "country": "Bỉ",
+    "description": "Mẹ Thiên Chúa hiện ra với Thánh Arnulfo Arnold để thông báo về cái chết của ngài và ban cho ngài ước muốn qua đời vào đêm trước Lễ Đức Mẹ Lên Trời."
+  },
+  "citeaux": {
+    "title": "Đức Mẹ đến Thánh Alberico",
+    "location": "Citeaux",
+    "country": "Pháp",
+    "description": "Mary đảm bảo với Tu viện trưởng Citeaux về sự bảo vệ vĩnh viễn của cô ấy và truyền cảm hứng cho trang phục màu trắng của người Xitô."
+  },
+  "becket": {
+    "title": "Đức Mẹ gửi Thánh Thomas a Becket",
+    "location": "Luân Đôn",
+    "country": "Anh",
+    "description": "Đức Mẹ cho cậu bé Thomas xem một chiếc áo choàng màu đỏ, tượng trưng cho số phận tương lai của cậu với tư cách là Tổng giám mục Canterbury và một vị tử đạo."
+  },
+  "arras": {
+    "title": "Đức Mẹ Nhiệt Thành",
+    "location": "Arras",
+    "country": "Pháp",
+    "description": "Mary xuất hiện trên mây với tư cách là 'Nữ hoàng vũ trụ' với người dân, yêu cầu họ đền tội và thiết lập một đài phun nước kỳ diệu."
+  },
+  "mariazell": {
+    "title": "Madonna của Maria Zell",
+    "location": "Mariazell",
+    "country": "Áo",
+    "description": "Một nhà sư tên là Magnus đã mang một bức tượng nhỏ vào nơi hoang vu, nơi cây cối rậm rạp rẽ ra để nhường đường cho ông. Nó trở thành một trong những ngôi đền nổi tiếng nhất ở Trung Âu."
+  },
+  "schonau": {
+    "title": "Đức Mẹ kính Thánh Elizabeth",
+    "location": "Schönau",
+    "country": "Đức",
+    "description": "Thánh Elizabeth thành Schönau được ưu đãi với những xuất thần và thị kiến ​​về Chúa Kitô và Đức Mẹ trong Thánh lễ và Thần vụ."
+  },
+  "gargano_1120": {
+    "title": "Đức Mẹ gửi Thánh Gioan Matera",
+    "location": "Gargano",
+    "country": "Ý",
+    "description": "Khi đến thăm hang động của Thánh Michael, Đức Trinh Nữ đã hiện ra với Thánh Gioan Matera và chỉ cho ngài nơi xây dựng một tu viện mới."
+  },
+  "ransom": {
+    "title": "Đức Mẹ Giá chuộc / Lòng thương xót",
+    "location": "Barcelona",
+    "country": "Tây Ban Nha",
+    "description": "Đức Trinh Nữ hiện ra với ba người đàn ông đã thành lập dòng tu Mercedarian để cứu những người theo đạo Thiên chúa bị giam cầm khỏi nhà tù Moorish."
+  },
+  "bingen": {
+    "title": "Đức Mẹ đến Thánh Hildegard",
+    "location": "Bingen am Rhein",
+    "country": "Đức",
+    "description": "Thánh Hildegard von Bingen đã trải nghiệm những thị kiến ​​sâu sắc về 'ánh sáng sống động' và Mẹ Thiên Chúa, dẫn đến những tác phẩm thần học và khoa học đáng kinh ngạc của bà."
+  },
+  "liesse": {
+    "title": "Đức Mẹ Liesse",
+    "location": "Cairo",
+    "country": "Ai Cập",
+    "description": "Ba hiệp sĩ người Pháp bị giam cầm đã nhận được một bức tượng kỳ diệu, rạng rỡ từ Đức Maria trong ngục tối của họ, bức tượng này đã cải đạo Ismenia, con gái của Quốc vương."
+  },
+  "melrose": {
+    "title": "Đức Mẹ Melrose",
+    "location": "Melrose",
+    "country": "Scotland",
+    "description": "Một tu sĩ dòng Xitô nhìn thấy Đức Trinh Nữ Maria đi xuống ký túc xá cùng với một thiên thần, người đã viết danh sách các tu sĩ được tiền định lên thiên đàng."
+  },
+  "tortosa": {
+    "title": "La Santa Cinta",
+    "location": "Rùa",
+    "country": "Tây Ban Nha",
+    "description": "Đức Trinh Nữ để lại dải băng hoặc khăn choàng thánh (La Santa Cinta) trên bàn thờ chính của nhà thờ trong một lần hiện ra vào ban đêm."
+  },
+  "pochaiv": {
+    "title": "Đức Mẹ Pochaiv",
+    "location": "Pochaiv",
+    "country": "Ukraina",
+    "description": "Đức Trinh Nữ Maria hiện ra trong vinh quang, để lại dấu chân trên đá và thực hiện hàng loạt phép lạ, dẫn đến việc thành lập Lavra."
+  },
+  "turin": {
+    "title": "Maria Consolata",
+    "location": "Torino",
+    "country": "Ý",
+    "description": "Một người đàn ông mù đã lấy lại được thị lực nhờ Đức Mẹ, người đã hướng dẫn anh ta khai quật một bức chân dung bị thất lạc của bà được giấu kín kể từ cuộc xâm lược của người Saracen."
+  },
+  "carmel": {
+    "title": "Đức Mẹ Núi Carmel",
+    "location": "Aylesford",
+    "country": "Anh",
+    "description": "Để đáp lại lời kêu gọi giúp đỡ của Thánh Simon Stock, Đức Trinh Nữ Maria đã hiện ra với ngài với chiếc áo choàng trên tay và lời hứa sẽ được an toàn khỏi Địa ngục."
+  },
+  "avignon_john22": {
+    "title": "Đặc Quyền Ngày Sabát",
+    "location": "Avignon",
+    "country": "Pháp",
+    "description": "Nữ Vương Các Thánh hiện ra với Đức Giáo Hoàng Gioan XXII, hứa hẹn sự giải thoát nhanh chóng khỏi Luyện Ngục cho các trẻ em Carmel (Đặc quyền Ngày Sabát)."
+  },
+  "bergamo_castagno": {
+    "title": "Madonna hạt dẻ",
+    "location": "Bergamo",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra với một người nông dân trong vườn hạt dẻ quanh Bergamo."
+  },
+  "florence_servites": {
+    "title": "Đức Mẹ kính viếng Thánh Alexis Falconieri",
+    "location": "Firenze",
+    "country": "Ý",
+    "description": "Alexis và những người bạn đồng hành của anh đã được ân huệ khi được Đức Mẹ hiện ra, truyền cảm hứng cho họ thành lập Dòng Tôi Tớ."
+  },
+  "roverano": {
+    "title": "Đức Mẹ Roverano",
+    "location": "Roverano",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria hiện ra với hai cô chăn cừu, chữa lành một người câm từ khi mới sinh ra và để lại một biểu tượng kỳ diệu theo phong cách Byzantine trên một cây ô liu."
+  },
+  "montserrat_1325": {
+    "title": "Đức Mẹ Montserrat",
+    "location": "Montserrat",
+    "country": "Tây Ban Nha",
+    "description": "Một người mẹ đang khóc thương đứa con trai bị giam cầm của mình đã nhìn thấy Mary hứa thả cậu bé; Vài ngày sau, cậu bé quay trở lại, sợi xích của cậu tan biến một cách kỳ diệu."
+  },
+  "bridget_sweden": {
+    "title": "Đức Mẹ đến Thánh Bridget",
+    "location": "Vadstena",
+    "country": "Thụy Điển",
+    "description": "Đức Maria đã đồng hành cùng Thánh Bridget người Thụy Điển trong suốt cuộc đời với nhiều điều mặc khải, hướng dẫn thánh nữ thành lập Dòng Brigidine đan viện."
+  },
+  "constance": {
+    "title": "Đức Mẹ gửi Bl. Henry Suso",
+    "location": "Constance",
+    "country": "Đức",
+    "description": "Nhà thần bí Đa Minh người Đức đã nhận được nhiều lần hiện ra của Đức Maria và các Thiên thần, tạo nên 'Cuốn sách nhỏ về Trí tuệ vĩnh cửu' nổi tiếng của ông."
+  },
+  "laurignano": {
+    "title": "Đức Mẹ Laurignano",
+    "location": "Laurignano",
+    "country": "Ý",
+    "description": "Simone Adami, một người ăn xin mù, tắm ở một đài phun nước gần đó sau khi Mary nói với anh ta trong giấc mơ: 'Hãy rửa ở đài phun nước và xem'. Thị lực của anh đã được phục hồi."
+  },
+  "avignon_favier": {
+    "title": "Nơi ẩn náu của tội nhân",
+    "location": "Avignon",
+    "country": "Pháp",
+    "description": "Tu sĩ nhiệt tình Peter Favier sợ chết cho đến khi Mary xuất hiện, an ủi ông: 'Anh không nghĩ lòng từ bi của tôi sẽ giải cứu anh sao?'"
+  },
+  "santagata": {
+    "title": "Madonna del Soccorso",
+    "location": "Sant'Agata Feltria",
+    "country": "Ý",
+    "description": "Một bà mẹ trẻ giận dữ quát mắng con mình; Khi một con quỷ xuất hiện, một người phụ nữ rạng rỡ đã cứu cậu bé. Ngôi đền trở nên nổi tiếng với những cuộc hành hương trong vùng."
+  },
+  "spoleto_clare": {
+    "title": "Đức Mẹ đến Thánh Clare",
+    "location": "Spoleto",
+    "country": "Ý",
+    "description": "Thánh Clare thành Montefalco đã nhận được sự hiện ra tuyệt vời của Đức Maria trước các Thiên thần ngay trước khi ngài qua đời. Trái tim và cơ thể của cô ấy vẫn không bị hư hỏng."
+  },
+  "gorodetsk": {
+    "title": "Đức Mẹ kính Thánh Abraham",
+    "location": "Gorodetsk",
+    "country": "Nga",
+    "description": "Đức Trinh Nữ hiện ra với ẩn sĩ người Nga, Thánh Abraham de Gorodetsk và yêu cầu ông xây dựng một nơi ẩn náu ở vùng hoang dã."
+  },
+  "proceno_agnes": {
+    "title": "Đức Mẹ đến Thánh Agnes",
+    "location": "Thủ tục",
+    "country": "Ý",
+    "description": "Thánh Agnes thành Montepulciano đã nhận được ba viên đá nhỏ từ Đức Maria kèm theo chỉ dẫn xây dựng một nhà thờ và tu viện Đa Minh để tôn vinh ngài."
+  },
+  "pisa_jordan": {
+    "title": "Đức Mẹ gửi Bl. Jordan của Pisa",
+    "location": "Pisa",
+    "country": "Ý",
+    "description": "Nhà truyền giáo Đaminh nổi tiếng Bl. Jordan được ưu ái khi nhìn thấy cảnh Đức Mẹ bước vào phòng ăn của các anh em và phục vụ họ tại bàn ăn."
+  },
+  "moscow_peter": {
+    "title": "Đức Mẹ đến Thánh Phêrô",
+    "location": "Mátxcơva",
+    "country": "Nga",
+    "description": "Đức Thánh Trinh Nữ hiện ra trước một tu viện trưởng ghen tị, kẻ đã đánh cắp Thánh Peter ở Moscow, khiến ông ta phải ăn năn và trả lại biểu tượng của Đức Maria."
+  },
+  "bergerac": {
+    "title": "Đức Mẹ kính Thánh Phêrô Thomasius",
+    "location": "Bergerac",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với Thánh Phêrô Thomasius khuyến khích hoạt động tông đồ tích cực của ngài và hòa giải hòa bình giữa các giáo hội Hy Lạp và La Mã."
+  },
+  "asti": {
+    "title": "Đức Mẹ gửi Đức Giám Mục Guido",
+    "location": "Asti",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra một cách kỳ diệu trước Giám mục Guido của Asti, người được biết đến với những nỗ lực hòa giải không ngừng nghỉ giữa các lãnh chúa phong kiến."
+  },
+  "fiesole_corsini": {
+    "title": "Đức Mẹ kính Thánh Anrê Corsini",
+    "location": "Fiesole",
+    "country": "Ý",
+    "description": "Vào ngày chịu chức, Đức Maria nói: 'Mẹ đã chọn con làm tôi tớ của Mẹ.' Nhiều năm sau, cô xuất hiện vào đêm Giáng sinh để báo trước sự ra đi trên trời của anh vào Lễ Hiển linh."
+  },
+  "montenero": {
+    "title": "Madonna di Montenero",
+    "location": "Livorno",
+    "country": "Ý",
+    "description": "Một cậu bé chăn cừu què đã tìm thấy một hình ảnh kỳ diệu; sau khi khiêng lên núi theo chỉ dẫn, ông đã khỏi bệnh hoàn toàn."
+  },
+  "bra": {
+    "title": "Đức Mẹ Hoa",
+    "location": "Áo ngực",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra để cứu một người mẹ đang mang thai khỏi bọn lính đánh thuê; những bụi mận gai gần đó nở hoa một cách kỳ diệu vào giữa mùa đông chết chóc."
+  },
+  "basella": {
+    "title": "Đức Mẹ Cây Ô-liu",
+    "location": "Basella",
+    "country": "Ý",
+    "description": "Nữ hoàng Thiên đường với Hài nhi Jesus trên tay hiện ra với Marina Cassone, 15 tuổi, thúc đẩy vị giám mục xây dựng một thánh đường lớn."
+  },
+  "paris_franciscans": {
+    "title": "Đức Mẹ gửi các anh em Phanxicô",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Vào ngày Lễ Truyền Tin, Đức Mẹ hiện ra với Hài Nhi Giêsu trong Thánh Lễ trước toàn thể cộng đoàn tu viện dòng Phanxicô."
+  },
+  "cairo_livini": {
+    "title": "Đức Mẹ gửi Bl. Livini",
+    "location": "Cairo",
+    "country": "Ai Cập",
+    "description": "Đức Maria hiện ra với nhà truyền giáo dòng Phanxicô Livini: 'Hãy hoàn thành công việc của bạn, để bạn sẽ nhìn thấy Chúa Giêsu.' Ông đã tử vì đạo vào cuối năm đó."
+  },
+  "siena_catherine": {
+    "title": "Đức Mẹ gửi Thánh Catherine",
+    "location": "Siena",
+    "country": "Ý",
+    "description": "Thánh Catarina Siena đã trải nghiệm những thị kiến ​​thần bí sâu sắc, nơi Đức Trinh Nữ đã dâng ngài cho Chúa Giêsu để kết hôn huyền bí."
+  },
+  "tournai": {
+    "title": "Đức Mẹ Tournai",
+    "location": "Tournai",
+    "country": "Bỉ",
+    "description": "Trong một cuộc bao vây, người dân đã trao chìa khóa thành phố cho Đức Maria một cách tượng trưng. Những phép lạ hiện ra trong trại địch khiến quân lính vây hãm phải bỏ chạy."
+  },
+  "radonezh": {
+    "title": "Đức Mẹ đến Thánh Sergius",
+    "location": "Radonezh",
+    "country": "Nga",
+    "description": "Mary xuất hiện cùng với các Tông đồ Peter và John tới Thánh Sergius của Radonezh, trấn an ông về sự bảo trợ vĩnh viễn của bà đối với tu viện của ông."
+  },
+  "pistoia": {
+    "title": "Đức Mẹ Pistoia",
+    "location": "Pistoia",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra với một cô gái bệnh tật nhờ cô nói với một linh mục dòng Augustinô để truyền bá thông điệp của cô trong các bài giảng Mùa Chay; hình ảnh của cô được in dấu một cách kỳ diệu trên tường."
+  },
+  "guadalupe_spain": {
+    "title": "Đức Mẹ Guadalupe (Tây Ban Nha)",
+    "location": "Cáceres",
+    "country": "Tây Ban Nha",
+    "description": "Người chăn bò Gil Cordero đã trải qua sự hiện ra của Đức Maria và hướng dẫn ông khai quật một bức tượng kỳ diệu do Giáo hoàng Gregory Đại đế ban tặng 600 năm trước."
+  },
+  "estremoz": {
+    "title": "Đức Mẹ kính Thánh Elizabeth",
+    "location": "Estremoz",
+    "country": "Bồ Đào Nha",
+    "description": "Không lâu trước khi qua đời, Nữ hoàng góa bụa Elizabeth của Bồ Đào Nha đã coi Đức Maria là 'Nữ hoàng Thiên đàng' tuyệt vời đang chuẩn bị cho bà một cuộc ra đi thánh thiện."
+  },
+  "avila": {
+    "title": "Đức Mẹ Avila",
+    "location": "Avila",
+    "country": "Tây Ban Nha",
+    "description": "Các tài liệu lịch sử ghi lại sự hiện ra của Đức Trinh Nữ Maria bên ngoài các bức tường thời Trung cổ của Avila vào đầu thế kỷ."
+  },
+  "valencia_vincent": {
+    "title": "Đức Mẹ đến Thánh Vincent Ferrer",
+    "location": "Valencia",
+    "country": "Tây Ban Nha",
+    "description": "Bối rối trước những nghi ngờ về tâm linh, chàng trai trẻ Vincent đã cầu xin Đức Maria hiểu biết. Cô ấy xuất hiện để trấn an anh ấy, tiếp thêm sức mạnh cho bài giảng lịch sử của anh ấy."
+  },
+  "pribram": {
+    "title": "Đức Mẹ Glatz / Svatá Hora",
+    "location": "Pribram",
+    "country": "Cộng hòa Séc",
+    "description": "Đức Tổng Giám mục Ernest Pardubitz đã nhìn thấy bức tượng Đức Maria quay đầu lại một cách kỳ diệu để không chấp nhận cuộc sống trần thế của ngài, khiến ngài trở nên hoán cải sâu sắc."
+  },
+  "aljubarrota": {
+    "title": "Đức Mẹ Aljubarrota",
+    "location": "Aljubarrota",
+    "country": "Bồ Đào Nha",
+    "description": "Một người phụ nữ nghèo tên Catarina Anes được Mary hướng dẫn khám phá dòng suối chữa lành thần kỳ trên núi Valle de Deus."
+  },
+  "naples_prisoners": {
+    "title": "Người Giải Phóng Tù Nhân",
+    "location": "Napoli",
+    "country": "Ý",
+    "description": "Bá tước Charles của Verona bị người Thổ Nhĩ Kỳ cầm tù; sau khi cầu nguyện tuyệt vọng với Đức Maria, anh được đưa đến một nhà thờ Carmelite ở Naples một cách kỳ diệu."
+  },
+  "dovera": {
+    "title": "Beata Vergine del Pilastrello",
+    "location": "Dovera",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria hiện ra với một cô chăn chiên câm điếc ở Lombardy."
+  },
+  "dolni_dvoriste": {
+    "title": "Đức Mẹ Tuyết tại Holy Stone",
+    "location": "Dolní Dvořiště",
+    "country": "Cộng hòa Séc",
+    "description": "Đức Maria hiện ra với các mục đồng trên một tảng đá đã nứt ra. Các nữ tu Clarissan đã xây dựng nhà thờ St. Mary of the Snow trên Holy Stone. Sau nhiều thập kỷ bị Cộng sản tàn phá, các tín đồ quốc tế đã khôi phục lại thánh địa."
+  },
+  "garaballa": {
+    "title": "Đức Mẹ Garaballa",
+    "location": "Garaballa",
+    "country": "Tây Ban Nha",
+    "description": "Vào Đêm Lễ Thăng Thiên, một chàng chăn chiên nhìn thấy ánh sáng rực rỡ chiếu sáng một cái cây và phát hiện ra một bức tượng Đức Mẹ Maria tuyệt đẹp giữa những cành cây."
+  },
+  "santagadea": {
+    "title": "Virgen del Espino",
+    "location": "Santa Gadea del Cid",
+    "country": "Tây Ban Nha",
+    "description": "Hai mục đồng phát hiện ra một bụi cây tỏa sáng rực rỡ hơn mặt trời có Đức Mẹ đứng phía trên, được công chứng viên thị trấn ghi lại."
+  },
+  "valverde": {
+    "title": "Đức Mẹ Valverde",
+    "location": "Valverde",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra với một nông dân vào tháng 7 năm 1399."
+  },
+  "almonacid": {
+    "title": "Đức Mẹ Almonaxit",
+    "location": "Almonaxit de Toledo",
+    "country": "Tây Ban Nha",
+    "description": "Đức Trinh Nữ hiện ra yêu cầu xây dựng một thánh đường ở Almonaxit de Toledo."
+  },
+  "segovia": {
+    "title": "Đức Mẹ Segovia",
+    "location": "Segovia",
+    "country": "Tây Ban Nha",
+    "description": "Đức Maria hiện ra với một người chăn chiên và chỉ đạo vị giám mục khai quật một bức tượng Đức Mẹ bằng gỗ được chôn cất từ ​​thế kỷ thứ nhất trên ngai vàng."
+  },
+  "vedano": {
+    "title": "Đức Mẹ Nhân Lành",
+    "location": "Vedano al Lambro",
+    "country": "Ý",
+    "description": "Trong một trận dịch hạch nghiêm trọng, người ta chạy trốn vào rừng nhưng tai họa đã ập đến. Đức Mẹ hiện ra trên cây ôm Hài Nhi an ủi, và cơn sốt nhanh chóng biến mất."
+  },
+  "mariastein": {
+    "title": "Đức Mẹ Mariastein",
+    "location": "Mariastein",
+    "country": "Thụy Sĩ",
+    "description": "Một đứa trẻ nhỏ rơi từ vách đá dựng đứng đã được một người phụ nữ tuyệt vời đỡ dậy một cách kỳ diệu, dẫn đến việc xây dựng tu viện nổi tiếng."
+  },
+  "candelaria": {
+    "title": "Virgen de la Candelaria",
+    "location": "Tenerife",
+    "country": "Tây Ban Nha",
+    "description": "Hai người chăn cừu Guanche thổ dân đã phát hiện ra một bức tượng kỳ diệu bằng gỗ về Đức Maria đang bế một đứa trẻ và một con chim vàng, dẫn đến sự biến đổi của hòn đảo."
+  },
+  "sanpolo": {
+    "title": "Đức Mẹ Quả óc chó",
+    "location": "San Polo",
+    "country": "Ý",
+    "description": "Vào ngày 9 tháng 6 năm 1505, Đức Mẹ hiện ra với một phụ nữ tên Giovanna gần cây óc chó."
+  },
+  "werthenstein": {
+    "title": "Nữ hoàng bầu trời",
+    "location": "Werthenstein",
+    "country": "Thụy Sĩ",
+    "description": "Một người nông dân sùng đạo và một ẩn sĩ đã coi Đức Maria là Nữ hoàng bầu trời được nhiều thiên thần vây quanh. Các phép lạ đã xác nhận sự hiện ra của Đức Maria, dẫn tới việc thánh hiến một nhà nguyện."
+  },
+  "tirano": {
+    "title": "Madonna di Tirano",
+    "location": "Tirano",
+    "country": "Ý",
+    "description": "Một thanh niên nhiệt thành cầu nguyện cho người em trai đang bị bệnh của mình. Mary xuất hiện vào ngày 29 tháng 9, hứa hẹn sẽ chữa khỏi bệnh cho anh. Để tỏ lòng biết ơn, ông đã cho xây dựng Thánh địa Madonna di Tirano nổi tiếng."
+  },
+  "sansosti": {
+    "title": "Đức Mẹ Pettoruto",
+    "location": "San Sosti",
+    "country": "Ý",
+    "description": "Vào mùa xuân năm 1500, một người chăn cừu câm điếc tên là Felice Olcese đã nhìn thấy Đức Trinh Nữ và yêu cầu anh ta bảo một linh mục xây dựng một nhà thờ để vinh danh cô."
+  },
+  "villefranche": {
+    "title": "Nhà thờ Đức Bà Treize-Pierres",
+    "location": "Villefranche-de-Rouergue",
+    "country": "Pháp",
+    "description": "Vào ngày 19 tháng 3 năm 1509, Đức Mẹ Mười Ba Viên Đá hiện ra, thiết lập một thánh địa lâu dài ở Aveyron."
+  },
+  "villarrasa": {
+    "title": "Virgen de los Remedios",
+    "location": "Villarrasa",
+    "country": "Tây Ban Nha",
+    "description": "Vào ngày 18 tháng 12 năm 1503, Đức Trinh Nữ Khắc Phục xuất hiện, thiết lập một bữa tiệc và thánh địa nổi bật trong vùng ở Huelva."
+  },
+  "castelleone": {
+    "title": "Thánh Maria Lòng Thương Xót",
+    "location": "Lâu đài",
+    "country": "Ý",
+    "description": "Vào tháng 5 năm 1511, Đức Maria hiện ra với người thu hoạch nho Domenica Zanenga, thúc giục việc xây dựng một khu bảo tồn mà sau này được giao cho các tu sĩ dòng Augustinô."
+  },
+  "motta_livenza": {
+    "title": "Madonna dei Miracoli",
+    "location": "Motta di Livenza",
+    "country": "Ý",
+    "description": "Vào ngày 9 tháng 3 năm 1510, Đức Maria hiện ra ngồi lặng lẽ trên cánh đồng lúa mì xanh với người nông dân già Giovanni Cigana, ra lệnh kiêng ăn và ăn năn để được tha tội."
+  },
+  "virgendelcamino": {
+    "title": "Virgen del Camino",
+    "location": "Leon",
+    "country": "Tây Ban Nha",
+    "description": "Vào ngày 2 tháng 7 năm 1505, Đức Maria hiện ra rạng ngời ánh sáng để chăn dắt Alvar Simón Fernández trên con đường hành hương Camino de Santiago. Cô phóng một hòn đá bằng súng cao su của anh ta, viên đá đó lớn lên một cách kỳ diệu để đánh dấu địa điểm tôn nghiêm."
+  },
+  "trino": {
+    "title": "Đức Mẹ gửi Bl. Maddalena",
+    "location": "Trino",
+    "country": "Ý",
+    "description": "Chân phước Maddalena Panattieri đã nhìn thấy Đức Trinh Nữ vào năm 1503 ngay trước khi Mẹ qua đời. Sau đó bà được Đức Giáo Hoàng Leo XII phong chân phước."
+  },
+  "pannesi": {
+    "title": "Đức Mẹ Rừng Xanh",
+    "location": "Pannesi di Lumarzo",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ hiện ra trong rừng Lumarzo, khơi dậy lòng sùng kính của dân làng địa phương."
+  },
+  "chioggia": {
+    "title": "Đức Trinh Nữ của Con Tàu Nhỏ",
+    "location": "Chioggia",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra với Carlo Baldissera Zanon trên bờ biển Chioggia, trở thành đấng bảo vệ các thủy thủ và tàu đánh cá địa phương."
+  },
+  "aviano": {
+    "title": "Đức Mẹ Trên Núi",
+    "location": "Aviano",
+    "country": "Ý",
+    "description": "Vào ngày 8 tháng 9 năm 1510, Đức Mẹ hiện ra trên sườn núi với Antonio Zampara."
+  },
+  "bergamo_chestnuts": {
+    "title": "Madonna hạt dẻ",
+    "location": "Bergamo",
+    "country": "Ý",
+    "description": "Vào ngày 28 tháng 4 năm 1510, Đức Maria hiện ra với hai cha con đang thu thập lá cây. Để khẳng định sự hiện diện thực sự của cô và mong muốn có một nơi tôn nghiêm, một cây hạt dẻ lớn đột nhiên ra quả chín trái mùa."
+  },
+  "treviso_jerome": {
+    "title": "Giải phóng Tù nhân",
+    "location": "Treviso",
+    "country": "Ý",
+    "description": "Bị giam trong ngục tối của pháo đài, Thánh Jerome Emiliani đã cầu nguyện với Đức Maria. Cô xuất hiện trong ánh sáng, giải thoát anh khỏi sợi xích sắt nặng nề một cách kỳ diệu và dẫn anh an toàn vượt qua chiến tuyến của kẻ thù để đến đền thờ của cô ở Treviso."
+  },
+  "oneta": {
+    "title": "Madonna của Ash",
+    "location": "Oneta",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 7 năm 1512, Đức Mẹ hiện ra với Petruccia Carobbio gần một cây tần bì."
+  },
+  "albendorf": {
+    "title": "Đức Mẹ Albendorf / Wambierzyce",
+    "location": "Wambierzyce",
+    "country": "Ba Lan",
+    "description": "Một người đàn ông mù đã cầu nguyện trước bức tượng gỗ do một hiệp sĩ tạc sau khi hiện ra và đã lấy lại được thị lực một cách kỳ diệu. Khu bảo tồn mở rộng thành một vương cung thánh đường tráng lệ được gọi là 'Jerusalem Silesian'."
+  },
+  "strugnano": {
+    "title": "Madonna của Tầm nhìn",
+    "location": "Strunjan",
+    "country": "Slovenia",
+    "description": "Vào ngày 14 tháng 8 năm 1512, Đức Maria hiện ra với những người canh gác Piero Zagabria và Giovanni Grandi tại cổng Strunjan."
+  },
+  "adro": {
+    "title": "Người biện hộ cho tội nhân",
+    "location": "Adro",
+    "country": "Ý",
+    "description": "Mary xuất hiện với Battista Comino Bajoni, một người chăn cừu câm điếc, đưa cho anh ta bài phát biểu và thông điệp kêu gọi khu vực này tránh xa thói xấu. Như một dấu hiệu, cô đưa cho anh một tảng đá có khả năng đổi màu một cách kỳ diệu."
+  },
+  "angels_lucerne": {
+    "title": "Đức Mẹ Thiên Thần",
+    "location": "Lucerne",
+    "country": "Thụy Sĩ",
+    "description": "Ủy viên hội đồng thành phố Maurice von Mettenwyl nhìn thấy Đức Trinh Nữ Maria được bao quanh bởi ánh sáng thiên đường và hứa sẽ xây dựng lại một nhà nguyện để vinh danh Mẹ."
+  },
+  "garaison": {
+    "title": "Nhà thờ Đức Bà Garaison",
+    "location": "Garaison",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ đã đến thăm cô chăn cừu trẻ Angleze Sagazan ba lần gần nguồn Cier, yêu cầu: 'Tôi muốn xây dựng một nhà nguyện ở đây.'"
+  },
+  "cori": {
+    "title": "Đức Mẹ Cứu Rỗi / Cây chổi",
+    "location": "Cori",
+    "country": "Ý",
+    "description": "Trong một cơn bão dữ dội, Mary đã cứu được Oliva Lannese ba tuổi. Thị trấn đã rước lên núi và khai quật được một bức bích họa cổ về Đức Trinh Nữ trên ngai vàng của bà."
+  },
+  "cotignac": {
+    "title": "Đức Mẹ Ân Sủng",
+    "location": "Cotignac",
+    "country": "Pháp",
+    "description": "Vào ngày 10 và 11 tháng 8, Đức Maria cùng với Hài nhi Giêsu, Thánh Michael và Thánh Bernard hiện ra với người tiều phu Jean de la Baume. Khu bảo tồn sau đó đã trở nên nổi tiếng nhờ sự ra đời kỳ diệu của Vua Louis XIV."
+  },
+  "tarbes": {
+    "title": "Đức Mẹ Chữa Lành Tình Yêu",
+    "location": "Tarbe",
+    "country": "Pháp",
+    "description": "Mary hiện ra với một cô chăn cừu trẻ để xin một nhà thờ. Khi cô gái yêu cầu Mary canh giữ đàn cừu của mình trong khi cô ấy đi đón cha mình, Mary đã trông chừng đàn cừu một cách kỳ diệu."
+  },
+  "camogli": {
+    "title": "Đức Mẹ Trên Núi",
+    "location": "Camogli",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 7 năm 1518, Đức Maria hiện ra với Angela Schiaffino, xin xây một nhà thờ và tu viện trên núi nhìn ra biển Ligurian."
+  },
+  "quintanar": {
+    "title": "Francisca La Brava",
+    "location": "Quintanar de la Orden",
+    "country": "Tây Ban Nha",
+    "description": "Francisca la Brava kể lại việc nhìn thấy Đức Trinh Nữ được các thiên thần vây quanh và nhận được một ngọn nến. Sau đó cô đã bị Tòa án dị giáo kiểm tra và kết án."
+  },
+  "loyola": {
+    "title": "Đức Mẹ kính Thánh Ignatius",
+    "location": "Manresa / Loyola",
+    "country": "Tây Ban Nha",
+    "description": "Trong khi đang hồi phục sau những vết thương do chiến trận ở Loyola, Thánh Ignatius đã trải qua một thị kiến ​​sâu sắc vào ban đêm về Đức Trinh Nữ Maria và Hài Nhi, khởi đầu cho sự hoán cải hoàn toàn của ngài và việc thành lập Dòng Tên."
+  },
+  "rome_cajetan": {
+    "title": "Đức Mẹ đến Thánh Cajetan",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Vào đêm Giáng sinh ở Santa Maria Maggiore, Thánh Cajetan thành Thiêne đã trải nghiệm một thị kiến ​​siêu phàm khi Đức Maria đặt thẳng Chúa Giêsu Hài Đồng vào vòng tay ngài."
+  },
+  "liveri": {
+    "title": "Santa Maria a Parete",
+    "location": "Gan của Nola",
+    "country": "Ý",
+    "description": "Vào ngày 12 tháng 4 năm 1514, Mary hiện ra với người nông dân trẻ Autilia Scala, hướng dẫn cô dẫn Bá tước Orsini khai quật một biểu tượng và chiếc chuông Byzantine thế kỷ 13 bị chôn vùi dưới một bụi cây."
+  },
+  "aberdeen": {
+    "title": "Đức Mẹ gửi Đức Giám mục Dumbar",
+    "location": "Aberdeen",
+    "country": "Scotland",
+    "description": "Trong khi cầu nguyện trước biểu tượng của mình, Đức Maria hiện ra với Giám mục Gavan Dumbar, báo trước rằng bất chấp tình trạng hỗn loạn tôn giáo lan rộng, lòng trung thành của ông sẽ được bảo tồn."
+  },
+  "bovegno": {
+    "title": "Đức Mẹ Nhân Lành",
+    "location": "Bovegno",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra với cô bé mồ côi Maria Amadini, 22 tuổi, kêu gọi ăn chay và sám hối để tránh những tai họa sắp xảy ra. Cô ấy xác nhận sự hiện diện của mình bằng cách chữa lành vết thương cho anh trai của Maria."
+  },
+  "sens": {
+    "title": "Đức Mẹ Sens",
+    "location": "Cảm giác",
+    "country": "Pháp",
+    "description": "Trong một trận dịch hạch tàn khốc, Đức Maria hiện ra trong ánh sáng xanh dữ dội trong Thánh lễ. Ngay sau đó, trận dịch đã chấm dứt một cách kỳ diệu."
+  },
+  "naples_constantinople": {
+    "title": "Thánh Mary thành Constantinople",
+    "location": "Napoli",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra với một bà già ở Naples vào tháng 6 năm 1529."
+  },
+  "guadalupe_mexico": {
+    "title": "Đức Mẹ Guadalupe",
+    "location": "Thành phố Mexico",
+    "country": "Mexico",
+    "description": "Đức Maria hiện ra trên Đồi Tepeyac cho Thánh Juan Diego, để lại hình ảnh kỳ diệu, không phai mờ của Mẹ được in trực tiếp trên chiếc áo choàng tilma của ngài. Đây là đền thánh Đức Mẹ được viếng thăm nhiều nhất trên thế giới."
+  },
+  "peru_rosary": {
+    "title": "Đức Mẹ Mân Côi",
+    "location": "Lima",
+    "country": "Peru",
+    "description": "Những cuộc hiện ra thuộc địa sớm nổi bật và lòng sùng kính Đức Mẹ được thành lập ở Lima."
+  },
+  "montestella": {
+    "title": "Ngôi sao Madonna",
+    "location": "Monte Stella",
+    "country": "Ý",
+    "description": "Vào ngày 31 tháng 5 năm 1536, Đức Maria hiện ra với Antonio de’ Antoni ở Monte Stella."
+  },
+  "cuzco": {
+    "title": "Đức Mẹ Hậu Thế",
+    "location": "Cuzco",
+    "country": "Peru",
+    "description": "Vào ngày 23 tháng 5 năm 1536, Đức Maria hiện ra trên mái nhà với các Kitô hữu đang bị bao vây bởi những vụ đốt phá. Ngọn lửa đã tắt một cách kỳ diệu, cứu được cộng đồng."
+  },
+  "farigliano": {
+    "title": "Vergine delle Grazie",
+    "location": "Farigliano",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra vào ngày 20 tháng 5 năm 1537 tại Piedmont."
+  },
+  "altkirch": {
+    "title": "Đức Mẹ Altkirch",
+    "location": "Altkirch",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ xuất hiện phía trên pháo đài thành phố để bảo vệ cư dân trong các cuộc xung đột tôn giáo trong khu vực."
+  },
+  "svetagora": {
+    "title": "Đức Mẹ Sveta Gora",
+    "location": "Sveta Gora",
+    "country": "Slovenia",
+    "description": "Đức Maria hiện ra trên Núi Skalnica với người chăn cừu Ursula Ferligoj: 'Hãy bảo mọi người xây dựng một ngôi đền ở đây và cầu xin ân sủng của ta.' Mặc dù bị chính quyền hoài nghi giam cầm nhưng Ursula lần nào cũng trốn thoát một cách kỳ diệu."
+  },
+  "savona": {
+    "title": "Mẹ Thương Xót",
+    "location": "Savona",
+    "country": "Ý",
+    "description": "Vào ngày 18 tháng 3 năm 1536, Đức Maria hiện ra trong ánh sáng rực rỡ với người nông dân Antonio Botta trong một dòng suối, kêu gọi cầu nguyện, lòng thương xót và sự hoán cải. Cô ấy là người bảo trợ chính thức của Savona."
+  },
+  "paitone": {
+    "title": "Madonna di Paitone",
+    "location": "Paitone",
+    "country": "Ý",
+    "description": "Vào tháng 8 năm 1532, Mary hiện ra với cậu bé nông dân câm điếc Filippo Viotti, chữa lành bệnh cho cậu một cách thần kỳ và yêu cầu một nơi trú ẩn trên núi."
+  },
+  "combarbio": {
+    "title": "Đức Mẹ Núi Carmel",
+    "location": "Combarbio",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra với một cô bé chăn cừu 12 tuổi, dẫn đến việc các kiến ​​trúc sư đại công tước xây dựng một thánh đường Carmelite thời Phục hưng tuyệt đẹp."
+  },
+  "gubel": {
+    "title": "Đức Mẹ Gubel",
+    "location": "Gubel",
+    "country": "Thụy Sĩ",
+    "description": "Vào ngày 11 và 23 tháng 10, Đức Maria hiện ra với những người lính Công giáo trên núi Gubel, truyền cảm hứng cho việc phòng thủ của họ và dẫn đến một chiến thắng kỳ diệu dù bị áp đảo về quân số rất nhiều."
+  },
+  "ipswich": {
+    "title": "Đức Mẹ Ân Sủng tại Ipswich",
+    "location": "Ipswich",
+    "country": "Anh",
+    "description": "Anne Wentworth, bị quỷ ám kinh khủng, đã được phục hồi một cách kỳ diệu và ngay lập tức trước tượng Đức Mẹ Ân Sủng, một sự kiện được Thánh Thomas More ghi lại."
+  },
+  "weissenstein": {
+    "title": "Đức Mẹ Pietralba",
+    "location": "Monte San Pietro",
+    "country": "Ý",
+    "description": "Mary hiện ra với Leonhard Weissensteiner trong khu rừng Dolomite, chữa khỏi bệnh cho ông và dẫn ông khai quật được một bức tượng Pietà kỳ diệu. Thánh địa này đã được Đức Thánh Cha Gioan Phaolô I và Thánh Gioan Phaolô II viếng thăm."
+  },
+  "leuven_wischaven": {
+    "title": "Đức Mẹ gửi Cha. Wischaven",
+    "location": "Leuven",
+    "country": "Bỉ",
+    "description": "Đức Maria hiện ra với Cornelius Wischaven, hướng dẫn ông gia nhập Thánh Phêrô Faber và Thánh Ignatius Loyola với tư cách là tu sĩ Dòng Tên Flemish đầu tiên."
+  },
+  "gorizia": {
+    "title": "Đức Mẹ Gorizia",
+    "location": "Gorizia",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra với một nữ chăn chiên kêu gọi dân chúng cầu nguyện và hòa giải."
+  },
+  "ocotlan_1541": {
+    "title": "Đức Mẹ Ocotlán",
+    "location": "Tlaxcala",
+    "country": "Mexico",
+    "description": "Đức Mẹ hiện ra với Juan Diego Bernardino trong một trận dịch, dẫn ông đến một nguồn nước chữa lành và tiết lộ một bức tượng gỗ kỳ diệu bên trong một cây thông đang cháy."
+  },
+  "montegridolfo": {
+    "title": "Beata Vergine delle Grazie",
+    "location": "Montegridolfo",
+    "country": "Ý",
+    "description": "Vào ngày 25 tháng 6 năm 1548, Đức Trinh Nữ Ân Sủng xuất hiện trên vùng đồi Rimini."
+  },
+  "poggio_bologna": {
+    "title": "Beata Vergine di Poggio",
+    "location": "Castel San Pietro Terme",
+    "country": "Ý",
+    "description": "Vào ngày 22 tháng 2 năm 1550, Mary hiện ra với người ăn xin mù Antonia Bedini, hứa rằng chiếc tủ của cô sẽ cung cấp bánh mì cho cô đến hết cuộc đời."
+  },
+  "cantu": {
+    "title": "Đức Mẹ Andacollo",
+    "location": "Cần Thơ",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra được ghi lại ở Cantu vào tháng 5 năm 1543."
+  },
+  "vailankanni_1580": {
+    "title": "Đức Mẹ Sức Khỏe Tốt",
+    "location": "Vailankanni",
+    "country": "Ấn Độ",
+    "description": "Đức Maria hiện ra với một cậu bé chăn cừu đang dâng sữa cho Hài nhi Giêsu, và sau đó đã chữa lành một cách kỳ diệu một cậu bé bán sữa bơ bị què. Được hàng triệu người tôn kính là 'Lộ Đức của phương Đông'."
+  },
+  "granada_john": {
+    "title": "Đức Mẹ kính Thánh Gioan Thiên Chúa",
+    "location": "Granada",
+    "country": "Tây Ban Nha",
+    "description": "Đức Maria xuất hiện như một người phụ nữ nông dân giản dị để giúp đỡ và chữa lành Thánh Gioan Thiên Chúa sau khi ngài bị ngã ngựa nặng, khởi xướng công việc tông đồ suốt đời trong bệnh viện của ngài."
+  },
+  "ameno": {
+    "title": "Madonna della Bocciola",
+    "location": "Ameno",
+    "country": "Ý",
+    "description": "Vào ngày 28 tháng 5 năm 1543, Đức Maria hiện ra trong một bụi gai đang nở hoa với người chăn cừu câm điếc Giulia Manfredi, phát biểu và yêu cầu tuân giữ ngày nghỉ ngày Sabát."
+  },
+  "andacollo": {
+    "title": "Đức Mẹ Andacollo",
+    "location": "Andacollo",
+    "country": "Chilê",
+    "description": "Những người thợ mỏ bản địa đã phát hiện ra một bức tượng kỳ diệu của Đức Maria ở vùng núi Chile, thành lập một trong những khu bảo tồn quốc gia được tôn kính nhất ở Nam Mỹ."
+  },
+  "azay": {
+    "title": "Đức Mẹ Quỳ",
+    "location": "Azay-sur-Thuet",
+    "country": "Pháp",
+    "description": "Vào ngày 8 tháng 9 năm 1550, Đức Maria hiện ra với bà góa Louise Estivalle khi bà quỳ trên đường, ban cho bà một thị kiến ​​kỳ diệu qua nhiều dặm của Hy lễ Thánh lễ."
+  },
+  "corbetta": {
+    "title": "Đức Trinh Nữ làm phép lạ",
+    "location": "Corbetta",
+    "country": "Ý",
+    "description": "Vào ngày 17 tháng 4 năm 1555, Hài nhi Giêsu trong bức bích họa đã bước xuống chơi với ba đứa trẻ một cách kỳ diệu trước khi Đức Maria gọi Ngài trở lại."
+  },
+  "civitella": {
+    "title": "Đức Mẹ đến Pasquino",
+    "location": "Dân sự",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra với Pasquino da Vignale lúc 10 tuổi năm 1556."
+  },
+  "lisbon_barradda": {
+    "title": "Đức Mẹ gửi Sebastian Barradda",
+    "location": "Lisboa",
+    "country": "Bồ Đào Nha",
+    "description": "Mary hiện ra với Sebastian Barradda, khuyến khích anh gia nhập dòng Tên."
+  },
+  "cordoba_font": {
+    "title": "Đức Mẹ Phông Chữ",
+    "location": "Córdoba",
+    "country": "Tây Ban Nha",
+    "description": "Mary hiện ra với một người công nhân chán nản, chỉ anh ta đến một bức tượng gỗ được giấu kín gần một con suối chữa bệnh."
+  },
+  "brescia_ledesma": {
+    "title": "Đức Mẹ gửi Cha. Ledesma",
+    "location": "Brescia",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra cùng Thánh Mary Magdalene và Thánh Catherine với nhà thần học Dòng Tên Giacomo Ledesma, hứa bảo vệ bà trong những thử thách tâm linh."
+  },
+  "gerosa": {
+    "title": "Madonna della Foppa",
+    "location": "Gerosa",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 7 năm 1558, Đức Maria hiện ra với hai người chăn cừu đang chết khát trên đồng cỏ, mở ra một dòng suối trong lành kỳ diệu dưới chân họ."
+  },
+  "arcola": {
+    "title": "Nữ hoàng thiên thần",
+    "location": "Arcola",
+    "country": "Ý",
+    "description": "Vào ngày 21 tháng 5 năm 1556, năm chị em Fiamberti nhìn thấy Đức Maria được các thiên thần vây quanh khi đang lần hạt Mân Côi trong rừng ô liu."
+  },
+  "arenas_alcantara": {
+    "title": "Đức Mẹ đến Thánh Phêrô",
+    "location": "Đấu trường San Pedro",
+    "country": "Tây Ban Nha",
+    "description": "Đức Maria hiện ra với Thánh Phêrô Alcantara, nhà cải cách và khổ hạnh vĩ đại của dòng Phanxicô, báo trước sự ra đi trên trời của ngài."
+  },
+  "giulianova": {
+    "title": "Đức Mẹ lộng lẫy",
+    "location": "Giulianova",
+    "country": "Ý",
+    "description": "Vào ngày 22 tháng 4 năm 1557, Đức Maria hiện ra trong ánh sáng rực rỡ với người nông dân Bertolino gần một cây ô liu. Khi bị những kẻ hoài nghi đánh đập, Đức Maria đã làm tê liệt cánh tay của họ cho đến khi họ ăn năn và khiến một dòng suối thần kỳ tuôn trào."
+  },
+  "amendolara": {
+    "title": "Đức Mẹ Amendolara",
+    "location": "Amendolara",
+    "country": "Ý",
+    "description": "Thầy Giuliano di Camerino đã trải nghiệm một thị kiến ​​vinh quang về Nữ Vương Thiên Đàng ngay trước khi ngài qua đời."
+  },
+  "torrehermosa": {
+    "title": "Đức Mẹ đến Thánh Paschal",
+    "location": "Torrehermosa",
+    "country": "Tây Ban Nha",
+    "description": "Đức Maria cùng với Thánh Phanxicô và Thánh Clare đến gặp Thánh Paschal Baylón trong khi ngài chăn cừu, thúc giục ngài gia nhập Dòng Phanxicô."
+  },
+  "moncrivello": {
+    "title": "Vergine del Tromone",
+    "location": "Moncrivello",
+    "country": "Ý",
+    "description": "Vào ngày 26 tháng 6 năm 1562, Đức Maria hiện ra với Domenica di Miglianotto để chữa lành bệnh tật cho bà."
+  },
+  "forli_jerome": {
+    "title": "Đức Mẹ gửi Cha. Jerome",
+    "location": "Forlì",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra trong ánh sáng rạng rỡ với Jerome, tu sĩ Dòng Capuchin, dự đoán chính xác việc ông sẽ chuyển lên thiên đàng trong khi tiếng chuông Truyền tin vang lên."
+  },
+  "petrella": {
+    "title": "Đức Mẹ Petrella",
+    "location": "Petrella",
+    "country": "Ý",
+    "description": "Vào ngày 31 tháng 5 năm 1562, Đức Maria hiện ra với một phụ nữ tên là Ba Tư."
+  },
+  "vienna_stanislaus": {
+    "title": "Đức Mẹ đến Thánh Stanislaus",
+    "location": "Viên",
+    "country": "Áo",
+    "description": "Khi Thánh Stanislaus Kostka trẻ tuổi nằm bệnh nặng ở Vienna, Đức Maria đã hiện ra cùng với các thiên thần và đặt Hài nhi Giêsu vào vòng tay ngài, sức khỏe của ngài đã phục hồi một cách kỳ diệu."
+  },
+  "rapallo": {
+    "title": "Đức Mẹ Montallegro",
+    "location": "Rapallo",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 7 năm 1557, Mary hiện ra với người nông dân Giovanni Chichizola, để lại một biểu tượng kỳ diệu của Byzantine về Sự ký túc của cô, biểu tượng này sẽ quay trở lại ngọn núi một cách bí ẩn mỗi khi di chuyển."
+  },
+  "monomotapa": {
+    "title": "Đức Mẹ ở Rhodesia",
+    "location": "Monomotapa",
+    "country": "Zimbabwe",
+    "description": "Khi nhà truyền giáo Dòng Tên Fr. Gonçalo da Silveira đã tặng cho Hoàng đế Monomotapa một biểu tượng của Đức Maria, bầu trời đêm được Nữ hoàng Thiên đường chiếu sáng một cách kỳ diệu trong năm đêm liên tiếp."
+  },
+  "avila_teresa": {
+    "title": "Đức Mẹ gửi Thánh Teresa",
+    "location": "Ávila",
+    "country": "Tây Ban Nha",
+    "description": "Thánh Têrêsa Ávila, Vị Tiến sĩ vĩ đại của Giáo hội và nhà cải cách Cát Minh, đã trải nghiệm những thị kiến ​​thần bí siêu phàm nơi Đức Maria mặc cho ngài bộ áo tinh tuyền vô nhiễm."
+  },
+  "ancona_novice": {
+    "title": "Đức Mẹ Ancona",
+    "location": "Ancona",
+    "country": "Ý",
+    "description": "Một tập sinh dòng Capuchin đang chịu đựng những cơn cám dỗ của ma quỷ đã trải nghiệm sự hiện ra của Đức Maria, điều đã mang lại sự bình an sâu sắc cho tâm hồn anh."
+  },
+  "mariagyud": {
+    "title": "Đức Mẹ Máriagyűd",
+    "location": "Máriagyűd",
+    "country": "Hungary",
+    "description": "Khi những người theo chủ nghĩa Calvin chiếm giữ ngôi đền lịch sử, Mary xuất hiện trong cửa sổ nhà thờ với Thomas Mathinicz và sau đó là trên cổng. Được tin về phép lạ, Hoàng đế Leopold I đã trả lại thánh đường cho người Công giáo."
+  },
+  "sancho_abarca": {
+    "title": "Nuestra Señora de Sancho Abarca",
+    "location": "Tauste",
+    "country": "Tây Ban Nha",
+    "description": "Vào ngày 7 tháng 4 năm 1569, một cuộc hiện ra kỳ diệu và được khám phá ra Đức Mẹ Sancho Abarca đã xảy ra ở Aragon."
+  },
+  "seville_rodriguez": {
+    "title": "Đức Mẹ kính Thánh Anphongsô",
+    "location": "Sevilla",
+    "country": "Tây Ban Nha",
+    "description": "Thánh Alphonsus Rodriguez, bề trên tập sinh Dòng Tên ở Seville, đã nói chuyện với Đức Maria trong lời cầu nguyện với sự thân mật dịu dàng của một đứa trẻ với mẹ của mình."
+  },
+  "caltagirone": {
+    "title": "Cầu Thánh Maria",
+    "location": "Caltagirone",
+    "country": "Ý",
+    "description": "Vào ngày 15 tháng 8 năm 1572, Đức Maria hiện ra với một cô gái câm điếc trên cầu, phục hồi thính giác và giọng nói một cách kỳ diệu."
+  },
+  "casalpusterlengo": {
+    "title": "Đức Mẹ Capuchins",
+    "location": "Casalpusterlengo",
+    "country": "Ý",
+    "description": "Vào tháng 5 năm 1574, một cuộc hiện ra hàng loạt của Đức Trinh Nữ Maria đã xảy ra trước 4.000 tín hữu tụ tập."
+  },
+  "faenza_alexander": {
+    "title": "Đức Mẹ Faenza",
+    "location": "Faenza",
+    "country": "Ý",
+    "description": "Thầy dòng Capuchin Alexander xứ Butrium đã cầu nguyện nhiệt thành trong những thử thách tâm linh. Đức Maria hiện ra và đội cho ông vòng hoa chiến thắng."
+  },
+  "languedoc_gutierrez": {
+    "title": "Đức Mẹ gửi Cha. Gutierrez",
+    "location": "Languedoc",
+    "country": "Pháp",
+    "description": "Dòng Tên Cha. Martin Gutierrez nhìn thấy Đức Maria trong chiếc áo choàng trắng như tuyết che chở cho Dòng Chúa Giêsu. Khi đến thăm một nhà nguyện nông thôn ở Languedoc, Mary đã báo trước về cuộc tử đạo sắp xảy ra của ông."
+  },
+  "norcia_giacomo": {
+    "title": "Đức Mẹ Norcia",
+    "location": "Norcia",
+    "country": "Ý",
+    "description": "Tu sĩ Capuchin Giacomo đã trải nghiệm sự hiện ra vui vẻ của Đức Maria trên giường bệnh: 'Nữ hoàng Thiên đàng khải hoàn đang ở đây! Cô ấy đang đến đón tôi.”"
+  },
+  "monsummano": {
+    "title": "Rất Thánh Đức Maria Fontenuova",
+    "location": "Monsummano Terme",
+    "country": "Ý",
+    "description": "Vào ngày 9 tháng 6 năm 1573, nữ mục đồng Jacopina Mariotti đã cầu nguyện trước một biểu tượng bên đường và được Đức Maria hiện ra. Trong Thánh lễ năm 1602, một dòng suối chữa lành kỳ diệu đã dâng lên từ mặt đất khô cằn."
+  },
+  "casalbordino": {
+    "title": "Madonna dei Miracoli",
+    "location": "Casalbordo",
+    "country": "Ý",
+    "description": "Vào tháng 5 năm 1576, Mary hiện ra với người nông dân Alessandro Muzio sau một trận mưa đá nghiêm trọng, bảo vệ cánh đồng của ông khỏi bị tàn phá."
+  },
+  "gubbio_pacifico": {
+    "title": "Đức Mẹ gửi Cha. Thái Bình Dương",
+    "location": "Gubbio",
+    "country": "Ý",
+    "description": "Vào Lễ Đức Mẹ Vô Nhiễm Nguyên Tội, thầy dòng Capuchin Pacifico đã nhìn thấy Đức Maria trong ca đoàn, tiết lộ mầu nhiệm sâu xa về Đức Mẹ Vô Nhiễm Nguyên Tội giữa hương thơm của hoa hồng."
+  },
+  "pistoia_jerome": {
+    "title": "Đức Mẹ Pistoia",
+    "location": "Pistoia",
+    "country": "Ý",
+    "description": "Mary đã hiện ra nhiều lần với tu sĩ dòng Capuchin Jerome, một lần tiên đoán về cái chết của ông, và một lần khác một cách thần kỳ hướng dẫn ông khi bị lạc trên đường nông thôn vào ban đêm."
+  },
+  "lezajsk_1578": {
+    "title": "Đức Mẹ Leżajsk",
+    "location": "Leżajsk",
+    "country": "Ba Lan",
+    "description": "Đức Maria hiện ra trong ánh sáng rực rỡ với người tiều phu khiêm tốn Tomasz Michałek trong rừng, cầu xin một nhà thờ nơi các tín hữu sẽ nhận được ân sủng thiêng liêng. Sau các cuộc điều tra kinh điển chính thức và ghi lại những ca chữa lành kỳ diệu, Vatican đã phê chuẩn thánh đường hành hương tráng lệ."
+  },
+  "virgendelapaz": {
+    "title": "Virgen de la Paz",
+    "location": "Trujillo",
+    "country": "Venezuela",
+    "description": "Một thiếu nữ rạng rỡ bí ẩn đi dạo chợ trên núi và nói rằng cô ấy đã đi bộ 'với Chúa, mặt trời và các vì sao' trước khi biến mất vào một hang đá lấp lánh. Ngày nay, một tượng đài khổng lồ cao 154 foot đánh dấu thánh địa linh thiêng."
+  },
+  "ziteil": {
+    "title": "Đức Mẹ Ziteil",
+    "location": "Ziteil",
+    "country": "Thụy Sĩ",
+    "description": "Vào ngày 16 tháng 7, Đức Maria hiện ra trên đồng cỏ trên núi cao với cô chăn cừu 18 tuổi Dietegen Giategen, kêu gọi cả vùng sám hối. Với độ cao 2.434 mét, đây là thánh đường Đức Mẹ cao nhất ở châu Âu."
+  },
+  "poggio_roio": {
+    "title": "Thánh Maria Thánh Giá",
+    "location": "Poggio di Roio",
+    "country": "Ý",
+    "description": "Vào tháng 12 năm 1578, Mary xuất hiện để chăn dắt Felice Calcagno, hướng dẫn anh khám phá biểu tượng bằng gỗ kỳ diệu của cô trong tuyết."
+  },
+  "madrid_mendoza": {
+    "title": "Đức Mẹ gửi Cha. Mendoza",
+    "location": "Madrid",
+    "country": "Tây Ban Nha",
+    "description": "Đức Trinh Nữ hiện ra với tu sĩ Dòng Tên. Didacus Mendoza trên giường bệnh, lấp đầy tâm hồn ông bằng niềm an ủi thiên đường."
+  },
+  "conflenti": {
+    "title": "Madonna della Quercia",
+    "location": "Conflenti",
+    "country": "Ý",
+    "description": "Vào ngày 7 tháng 6, Mary xuất hiện trên đỉnh một cây sồi lớn để chăn dắt Lorenzo Folino, yêu cầu một nơi trú ẩn ở Visora. Cô xác nhận sự hiện diện của mình bằng cách chữa lành một cách kỳ diệu một cậu bé bị mù và què từ khi mới sinh ra."
+  },
+  "flochberg": {
+    "title": "Đức Mẹ Flochberg",
+    "location": "Bopfingen",
+    "country": "Đức",
+    "description": "Vào ngày 30 tháng 6 năm 1582, Đức Maria hiện ra trong ánh sáng rực rỡ với cậu bé William Wintzerer, 10 tuổi, đang nằm ốm nặng trên một cánh đồng ngô, ngay lập tức chữa khỏi bệnh cho cậu và thúc giục cậu sống một đời sống Cơ đốc sùng đạo."
+  },
+  "kazan": {
+    "title": "Đức Mẹ Kazan",
+    "location": "Kazan",
+    "country": "Nga",
+    "description": "Vào ngày 8 tháng 7 năm 1579, Mary hiện ra trong linh ảnh với Matrona, 8 tuổi, tiết lộ vị trí chính xác của biểu tượng thánh cổ xưa của cô bị chôn vùi dưới đống tro tàn của một ngôi nhà bị đốt cháy. Nó đã trở thành thánh palladium của Nga."
+  },
+  "pumenengo": {
+    "title": "Madonna della Rotonda",
+    "location": "Pumenengo",
+    "country": "Ý",
+    "description": "Vào ngày 24 tháng 5 năm 1585, Mary hiện ra với người nông dân câm điếc Francesco Zamboni, ngay lập tức khôi phục lại bài phát biểu của mình và yêu cầu Bá tước Barbò dựng lên một thánh đường hình tròn tuyệt đẹp."
+  },
+  "florence_pazzi": {
+    "title": "Đức Mẹ kính Thánh Mary Magdalene de' Pazzi",
+    "location": "Firenze",
+    "country": "Ý",
+    "description": "Nhà thần bí Carmelite vĩ đại đã trải qua những cơn xuất thần sâu sắc khi bà nhìn thấy Đức Maria trên thiên đường đang phân phát những dòng sữa và máu quý giá của Chúa Giêsu cho nhân loại."
+  },
+  "madrid_gonzaga": {
+    "title": "Đức Mẹ kính Thánh Aloysius",
+    "location": "Madrid",
+    "country": "Tây Ban Nha",
+    "description": "Vào Lễ Đức Mẹ Hồn Xác Lên Trời tại nhà thờ Dòng Tên ở Madrid, chàng trai trẻ Aloysius Gonzaga đã nghe rõ giọng nói của Đức Maria trong lúc chiêm niệm: 'Hãy gia nhập Dòng mang tên Con Mẹ'."
+  },
+  "stezzano": {
+    "title": "Đức Trinh Nữ Đồng ruộng",
+    "location": "Stezzano",
+    "country": "Ý",
+    "description": "Vào ngày 12 tháng 7 năm 1586, Mary xuất hiện như một người phụ nữ mặc đồ đen với mạng che mặt màu trắng đang đọc một cuốn sách nhỏ cho Bartolomea Bucanelli 10 tuổi và Dorotea Battistoni 11 tuổi."
+  },
+  "plouguerneau": {
+    "title": "Đức Mẹ gửi Cha. Lê Nobletz",
+    "location": "Plouguerneau",
+    "country": "Pháp",
+    "description": "Nhà truyền giáo nổi tiếng người Breton Fr. Michel Le Nobletz đã được Đức Maria hướng dẫn từ thời thơ ấu, khi bà mở những cánh cửa nhà thờ bị khóa cho ông cho đến cái chết thiêng liêng của ông."
+  },
+  "angola": {
+    "title": "Đức Mẹ tại Angola",
+    "location": "Luanda",
+    "country": "Ăng-gô-la",
+    "description": "Trong trận chiến chống lại lực lượng áp đảo, Mary xuất hiện với thanh kiếm rực lửa để bảo vệ quân Thiên chúa giáo."
+  },
+  "montevarchi": {
+    "title": "Santa Maria al Giglio",
+    "location": "Montevarchi",
+    "country": "Ý",
+    "description": "Vào ngày 29 tháng 8 năm 1585, những cuộc hiện ra kỳ diệu của Thánh Mary tại Lily đã xảy ra trước nhiều nhân chứng."
+  },
+  "leuven_calstro": {
+    "title": "Đức Mẹ gửi Cha. Calstro",
+    "location": "Leuven",
+    "country": "Bỉ",
+    "description": "Cha Đa Minh Henry Calstro đã may mắn được gặp nhiều lần với Đức Maria, người đã an ủi ông trong những thử thách và tiếp thêm sức mạnh cho ông khi ông qua đời."
+  },
+  "trivento": {
+    "title": "Đức Mẹ Trivento",
+    "location": "Trivento",
+    "country": "Ý",
+    "description": "Hai tu sĩ dòng Capuchin vướng vào một cơn bão dữ dội được một người mẹ có vẻ đẹp khó tả che chở trong một ngôi nhà nhỏ bí ẩn. Khi họ rời đi và nhìn lại, ngôi nhà đã biến mất."
+  },
+  "naples_1588": {
+    "title": "Đức Mẹ Naples",
+    "location": "Napoli",
+    "country": "Ý",
+    "description": "Một phụ nữ Neapolitan nổi tiếng bị bệnh nặng đã cầu nguyện với Đức Maria và trải qua một cuộc hiện ra nơi Đức Maria chữa lành bệnh tật của bà."
+  },
+  "proceno_orozco": {
+    "title": "Đức Mẹ gửi Bl. Alphonsus de Orozco",
+    "location": "Thủ tục",
+    "country": "Ý",
+    "description": "Nhà thần bí và nhà thuyết giáo triều đình nổi tiếng người Augustinô ở Madrid đã trải nghiệm những thị kiến ​​siêu phàm về Đức Maria, điều đã truyền cảm hứng cho các luận thuyết tâm linh của ông."
+  },
+  "cologne": {
+    "title": "Đức Mẹ Cologne",
+    "location": "Nước Köln",
+    "country": "Đức",
+    "description": "Một họa sĩ trẻ ở trường đại học Dòng Tên, người yêu thích vẽ các biểu tượng về Đức Mẹ Maria, đã được an ủi bởi sự hiện ra của Mẹ và thiên thần hộ mệnh của anh ấy trước khi hấp hối."
+  },
+  "medous": {
+    "title": "Nhà Thờ Đức Bà Médoux",
+    "location": "Bagnères-de-Bigorre",
+    "country": "Pháp",
+    "description": "Mary hiện ra với Domenge Liloye gần một dòng suối kỳ diệu, bảo vệ cộng đồng khỏi một trận dịch hạch tàn khốc."
+  },
+  "lima_portyllo": {
+    "title": "Đức Mẹ gửi Cha. Portyllo",
+    "location": "Lima",
+    "country": "Peru",
+    "description": "Nhà truyền giáo Dòng Tên Ruys de Portyllo được hướng dẫn bởi những hình ảnh của Đức Mẹ trong suốt thời gian tông đồ thuộc địa gian khổ của ông."
+  },
+  "dijon": {
+    "title": "Đức Mẹ Dijon",
+    "location": "Dijon",
+    "country": "Pháp",
+    "description": "Một cô gái trẻ bị bệnh nằm liệt giường trong nhiều năm đã được Đức Maria và các thiên thần đến thăm khi cô chuyển tiếp về cõi vĩnh hằng."
+  },
+  "arona_sa": {
+    "title": "Đức Mẹ gửi Cha. Emmanuel Sa",
+    "location": "Arona",
+    "country": "Ý",
+    "description": "Đức Maria đã hiện ra nhiều lần với nhà thần học luân lý Dòng Tên người Bồ Đào Nha, Fr. Emmanuel Sa, một lần được Thánh Ignatius Loyola tháp tùng để tiên đoán ngày ngài qua đời."
+  },
+  "costa_folgaria": {
+    "title": "Đức Mẹ Ân Sủng ở Costa",
+    "location": "Folgaria",
+    "country": "Ý",
+    "description": "Vào tháng 1 năm 1588, Đức Maria hiện ra với tu sĩ Pietro dal Dosso ở độ cao 1.230 mét. Năm 1955, Giáo hoàng Pius XII đã tuyên bố Đức Mẹ Ân sủng tại Costa là thánh quan thầy chính thức của tất cả những người trượt tuyết ở Ý."
+  },
+  "itati": {
+    "title": "Trinh nữ Itatí",
+    "location": "Nó",
+    "country": "Argentina",
+    "description": "Những cuộc hiện ra kỳ diệu và việc bảo tồn bức tượng Đức Mẹ bằng gỗ giữa những người Guarani bản địa cải đạo, thiết lập một trong những vương cung thánh đường hành hương vĩ đại nhất của Argentina."
+  },
+  "rome_philip": {
+    "title": "Đức Mẹ gửi Thánh Philip Neri",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "'Vị thánh của niềm vui' và người sáng lập Nhà nguyện đã trải qua nhiều lần hiện ra của Đức Maria, người đã an ủi ông trong lúc bị bệnh và che chở cho ông khỏi nguy hiểm."
+  },
+  "rome_felix": {
+    "title": "Đức Mẹ đến Thánh Felix",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Thánh Felix xứ Cantalice, người phát phát dòng Capuchin được yêu quý, được biết đến với biệt danh là 'Anh Deo Gratias', được ưu ái với những lần hiện ra khi Đức Maria đặt Hài nhi Giêsu vào vòng tay của ngài."
+  },
+  "acquasparta": {
+    "title": "Đức Mẹ Acquasparta",
+    "location": "Acquasparta",
+    "country": "Ý",
+    "description": "Nhà sử học dòng Capuchin, Bernardino di Colpetrazzo đã nhìn thấy Đức Maria từ trời xuống với một vương miện hoa lộng lẫy như một phần thưởng cho tâm hồn trong sáng và lịch sử tu viện siêng năng của ông."
+  },
+  "quito": {
+    "title": "Đức Mẹ Thành Công",
+    "location": "Quito",
+    "country": "Ecuador",
+    "description": "Đức Maria hiện ra với Mẹ Mariana de Jesus Torres tại tu viện Thụ thai ở Quito, đặt làm một bức tượng lạ và báo trước những cuộc khủng hoảng về đức tin và ơn gọi trong thế kỷ 20."
+  },
+  "monte_bonicca": {
+    "title": "Đức Mẹ Núi Bonicca",
+    "location": "Campo Ligure",
+    "country": "Ý",
+    "description": "Vào ngày 11 tháng 9 năm 1595, Mary hiện ra trên núi với những cư dân thù địch ở Campo Ligure và Masone sau khi họ cuối cùng đã ký một hiệp ước hòa bình, củng cố sự hòa giải của họ."
+  },
+  "morbio": {
+    "title": "Santa Maria dei Miracoli",
+    "location": "Morbio Hạ Đẳng",
+    "country": "Thụy Sĩ",
+    "description": "Vào ngày 29 tháng 7 năm 1594, Đức Maria hiện ra trên sườn đồi với hai cô gái trẻ bị quỷ ám và chữa khỏi hoàn toàn cho họ, yêu cầu một nơi trú ẩn ở biên giới với Ý."
+  },
+  "bruges_greef": {
+    "title": "Đức Mẹ gửi Cha. de Greef",
+    "location": "Brugge",
+    "country": "Bỉ",
+    "description": "Anton de Greef, SJ, đã khấn ơn gọi trước bức chân dung Đức Maria trên thiên đường. Đêm hôm sau, một cuộc hiện ra kỳ diệu đã xác nhận ơn gọi của anh. Năm 1636, ông dành cả cuộc đời để chăm sóc các nạn nhân bệnh dịch hạch ở Nijmegen."
+  },
+  "mariahilf_passau": {
+    "title": "Mariahilf tại Passau",
+    "location": "Passau",
+    "country": "Đức",
+    "description": "Nam tước Marquard von Schwendi nhìn thấy ánh sáng rạng ngời chiếu sáng những ngọn đồi hùng vĩ mang đậm nét của Mẹ Thiên Chúa. Ông đã xây dựng nhà thờ hành hương Mariahilf nổi tiếng vào năm 1620, tôn kính biểu tượng kỳ diệu năm 1363."
+  },
+  "lepuy_1598": {
+    "title": "Đức Mẹ Lê Puy",
+    "location": "Lê Puy-en-Velay",
+    "country": "Pháp",
+    "description": "Một thanh niên có đức tin ngày càng nguội lạnh đã trải qua sự hiện ra của Đức Maria, điều đã khơi dậy tâm hồn anh về lòng sùng kính và bác ái sâu sắc."
+  },
+  "molare": {
+    "title": "Đức Mẹ Núi Đá",
+    "location": "Molare",
+    "country": "Ý",
+    "description": "Mary hiện ra với Clarice giữa những tảng đá ở Molare vào đầu thế kỷ."
+  },
+  "concepcion_araucani": {
+    "title": "Đức Mẹ Thụ Thai",
+    "location": "Quan niệm",
+    "country": "Chilê",
+    "description": "Trong một cuộc bao vây thù địch của các chiến binh Araucanian xung quanh Conception, Đức Mẹ đã bước ra khỏi bức tranh nhà thờ của mình một cách thần kỳ và đi trên một đám mây phía trên các trại, giải tán những kẻ bao vây bằng những tia sáng thiên đường."
+  },
+  "fribourg_canisius": {
+    "title": "Đức Mẹ kính Thánh Phêrô Canisius",
+    "location": "Fribourg",
+    "country": "Thụy Sĩ",
+    "description": "Vị Tiến sĩ vĩ đại của Giáo hội và là 'Tông đồ thứ hai của nước Đức' đã được ưu ái thường xuyên xuất thần và Đức Mẹ hiện ra trong suốt cuộc đời cũng như lúc hấp hối thánh thiện của ông ở Fribourg."
+  },
+  "rome_benedict": {
+    "title": "Đức Mẹ gửi Thầy Bênêđíctô",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Một thời gian ngắn trước khi qua đời thánh thiện, tu sĩ dòng Capuchin Benedict đã trải qua một cuộc hiện ra dịu dàng nơi Đức Maria đặt Hài nhi thiêng liêng vào vòng tay của ông."
+  },
+  "monsummano_fontenova": {
+    "title": "Maria Santissima della Fontenova",
+    "location": "Monsummano Terme",
+    "country": "Ý",
+    "description": "Vào ngày 10 tháng 6 năm 1602, một cuộc biểu hiện đã xảy ra trước mặt Hiệu trưởng thị trấn. Sau một đợt hạn hán nghiêm trọng, một dòng suối kỳ diệu bất ngờ tuôn chảy trong thánh lễ, dẫn dắt Đại công tước Ferdinando I de' Medici xây dựng thánh đường lớn."
+  },
+  "aljubarrota_light": {
+    "title": "Đức Mẹ Ánh Sáng",
+    "location": "Aljubarrota",
+    "country": "Bồ Đào Nha",
+    "description": "Đức Maria cùng Thánh Martha hiện ra với bà cụ Catarina Anes khi bà đang kiếm củi. Đức Trinh Nữ đã trả lại chiếc chìa khóa bị mất cho cô một cách kỳ diệu và giúp đào một dòng nước kết tinh có thể chữa lành."
+  },
+  "palma_rodriguez": {
+    "title": "Đức Mẹ kính Thánh Anphongsô",
+    "location": "Palma de Mallorca",
+    "country": "Tây Ban Nha",
+    "description": "Thánh Alphonsus Rodriguez, người gác cổng khiêm tốn của Dòng Tên tại trường Mount Zion College, thường xuyên vui vẻ tận hưởng những cuộc hiện ra của Đức Maria. Cô từng nói với anh: 'Tình yêu của tất cả các bà mẹ không thể so sánh được với tôi!'"
+  },
+  "san_severino": {
+    "title": "Đức Mẹ San Severino",
+    "location": "San Severino",
+    "country": "Ý",
+    "description": "Vào ngày 16 tháng 10 năm 1601, người ta quan sát thấy những ánh sáng kỳ diệu xung quanh một ngôi đền bên đường dành riêng cho Đức Trinh Nữ."
+  },
+  "lampedusa": {
+    "title": "Nostra Signora di Lampedusa",
+    "location": "Castellaro",
+    "country": "Ý",
+    "description": "Bị cướp biển Thổ Nhĩ Kỳ bắt làm nô lệ ở Lampedusa, Andrea Anfossi đã phát hiện ra một bức tranh về Đức Mẹ kỳ diệu trong ánh sáng chói lóa. Sử dụng tấm bạt làm cánh buồm trên thân cây rỗng, anh định hướng vùng biển rộng mở đến Liguria. Khu bảo tồn tại Castellaro được hoàn thành vào năm 1619."
+  },
+  "aleth_youth": {
+    "title": "Đức Mẹ Aleth",
+    "location": "Aleth",
+    "country": "Pháp",
+    "description": "Sau một linh ảnh ma quỷ đau khổ, Mary xuất hiện giữa ban ngày trong trang phục màu trắng với một chàng trai trẻ, cảnh báo anh ta thay đổi hành vi và bước vào đời sống tu trì."
+  },
+  "beaune_jesuit": {
+    "title": "Đức Mẹ kính viếng một linh mục Dòng Tên",
+    "location": "Beaune",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria, cùng với Thánh Giacôbê và Thánh Gioan Tẩy Giả, hiện ra trong thị kiến ​​với một linh mục trẻ Dòng Tên."
+  },
+  "verdun_youth": {
+    "title": "Đức Mẹ Verdun",
+    "location": "Verdun",
+    "country": "Pháp",
+    "description": "Đức Maria chỉ cho chàng trai trẻ chiếc vương miện quý giá trên trời để truyền cảm hứng cho ơn gọi tu trì của anh. Sau đó, cô lại xuất hiện để truyền cho anh lòng dũng cảm mới trong quá trình thử thách."
+  },
+  "heiligwasser": {
+    "title": "Đức Mẹ Heiligwasser",
+    "location": "Innsbruck",
+    "country": "Áo",
+    "description": "Mary xuất hiện trong bộ áo choàng màu xanh lam với hai anh em chăn cừu trẻ Johann và Paulus Mayr gần một con suối trên núi cao, xin thành lập một nhà thờ. Nhiều năm sau, đứa con trai câm của Johann nhận được bài phát biểu vào mùa xuân, thực hiện lời hứa."
+  },
+  "argenta_celletta": {
+    "title": "Madonna della Celletta",
+    "location": "Argentina",
+    "country": "Ý",
+    "description": "Vào ngày 5 tháng 6 năm 1606, Đức Maria hiện ra với người phụ nữ nông dân Sigismonda Conti, hứa sẽ đáp lại lời cầu nguyện cho những ai ăn chay và cầu xin với đức tin. Đến năm 1619, ngôi đền đã lưu giữ hơn 150.000 đồ vàng mã bằng vàng và bạc."
+  },
+  "lepuy_1605": {
+    "title": "Đức Mẹ Lê Puy",
+    "location": "Lê Puy-en-Velay",
+    "country": "Pháp",
+    "description": "Khi một thành viên lớn tuổi của hội Thánh Mẫu phải đối mặt với cuộc chiến tâm linh trên giường bệnh, Đức Maria đã xuất hiện và xua tan bóng tối bằng sự hiện diện đắc thắng của mình."
+  },
+  "lenola": {
+    "title": "Madonna del Colle",
+    "location": "Lenola",
+    "country": "Ý",
+    "description": "Vào ngày 15 tháng 9 năm 1602, Đức Maria hiện ra với Gabriele Mattei trên sườn đồi, hoán cải ông và dẫn đến việc thành lập Thánh địa Đức Mẹ trên đồi nổi bật."
+  },
+  "ardesio_graces": {
+    "title": "Đức Trinh Nữ Ân Sủng",
+    "location": "Ardesio",
+    "country": "Ý",
+    "description": "Vào ngày 23 tháng 6 năm 1607, khi một cơn bão đáng ngại ập đến, hai chị em Maria (11 tuổi) và Caterina Salerno (7) nhìn thấy bức tranh treo tường về Cuộc đóng đinh sáng rực rỡ trước khi Đức Mẹ hiện ra, ngồi trên chiếc ghế vàng với Chúa Giêsu Hài Đồng."
+  },
+  "bergamo_sorrows": {
+    "title": "Mẹ Sầu Bi",
+    "location": "Bergamo",
+    "country": "Ý",
+    "description": "Vào ngày 18 tháng 8 năm 1602, người dân thị trấn ở Borgo Santa Caterina đã nhìn thấy một ngôi sao sáng giữa ban ngày, từ đó Đức Maria xuất hiện với khuôn mặt đau buồn được bao quanh bởi những mũi tên sáng, truyền cảm hứng cho sự ăn năn sâu sắc."
+  },
+  "florence_medici": {
+    "title": "Đức Mẹ đến Alessandro de' Medici",
+    "location": "Firenze",
+    "country": "Ý",
+    "description": "Cậu bé Alessandro de' Medici đã nhận được những lần Đức Mẹ hiện ra cùng với các thiên thần. Lúc ông qua đời ở tuổi mười lăm, Mary và Thánh Mary Magdalene de' Pazzi rõ ràng đứng bên cạnh ông."
+  },
+  "san_bartolomeo_rovere": {
+    "title": "Nostra Signora della Rovere",
+    "location": "San Bartolomeo al Mare",
+    "country": "Ý",
+    "description": "Vào tháng 7 năm 1608, Đức Maria hiện ra bên cửa sổ tháp chuông mới dựng của ngôi đền bằng gỗ sồi, một sự kiện được Giám mục Luca Fieschi chính thức điều tra và ghi lại."
+  },
+  "ingolstadt_rem": {
+    "title": "Mẹ Ba Lần Đáng khâm phục",
+    "location": "Ingolstadt",
+    "country": "Đức",
+    "description": "Vào ngày 6 tháng 4 năm 1604, Đức Maria rạng ngời hiện ra với Cha Dòng Tên. Jakob Rem khi hát Kinh cầu Loreto. Khi anh hỏi cô danh hiệu đáng hoan nghênh nhất, cô tiết lộ 'Mater admirabilis', làm nảy sinh lòng sùng kính Ba lần đáng ngưỡng mộ nổi tiếng."
+  },
+  "bamberg_guttrie": {
+    "title": "Đức Mẹ gửi Frederick Guttrie",
+    "location": "Bamberg",
+    "country": "Đức",
+    "description": "Mary hiện ra với Frederick Guttrie, thúc giục ông quay trở lại với đức tin Công giáo và báo trước ngày chính xác ông qua đời vào đêm Giáng sinh năm 1608."
+  },
+  "paris_berulle": {
+    "title": "Đức Mẹ gửi Đức Hồng Y Bérulle",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Đức Hồng Y Pierre de Bérulle, người sáng lập Nhà nguyện Pháp, đã trải qua một cuộc hiện ra trong Thánh lễ, nơi Đức Maria hướng dẫn ông thành lập dòng Carmelite đi chân đất ở Pháp."
+  },
+  "rome_benevolence": {
+    "title": "Đức Mẹ Nhân Từ Yêu Dấu",
+    "location": "Roma / Viên",
+    "country": "Ý",
+    "description": "Carmelite Fr. Domenico Maria Ruzzola phát hiện ra một biểu tượng bị chôn vùi dưới đống đổ nát. Đức Maria hiện ra nhiều lần, thúc giục cầu nguyện cho các linh hồn trong Luyện ngục. Biểu tượng này sau đó được Hoàng đế cất giữ ở Vienna."
+  },
+  "siluva": {
+    "title": "Đức Mẹ Šiluva",
+    "location": "Šiluva",
+    "country": "Litva",
+    "description": "Đức Mẹ hiện ra trên một tảng đá ôm Chúa Giêsu Hài Đồng và khóc lóc thảm thiết trước sự mất đức tin Công giáo trong vùng. Sự hiện ra của bà đã khôi phục đức tin của toàn thể cộng đồng, trở thành một trong những đền thờ được Vatican công nhận sớm nhất ở Châu Âu."
+  },
+  "sanlucar": {
+    "title": "Đức Mẹ Sanlúcar",
+    "location": "Sanlúcar de Barrameda",
+    "country": "Tây Ban Nha",
+    "description": "Đức Mẹ hiện ra với người lính Neapolitan Pedro Rivera năm 1608."
+  },
+  "bordeaux_healing": {
+    "title": "Đức Mẹ Bordeaux",
+    "location": "Bordeaux",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với một thành viên hội đoàn đang bị bệnh nặng, chữa khỏi bệnh cho anh ta sau khi anh ta hứa sẽ cống hiến cả cuộc đời mình để truyền bá lòng sùng kính Đức Mẹ Vô Nhiễm Nguyên Tội."
+  },
+  "lepuy_ponceot": {
+    "title": "Đức Mẹ gửi Cha. Ponceot",
+    "location": "Lê Puy-en-Velay",
+    "country": "Pháp",
+    "description": "Giám đốc Dòng Tên Fr. Claudio Ponceot được ba thiên thần an ủi trên giường bệnh, sau đó là sự hiện ra của Đức Maria cùng với Thánh Claude và Thánh Ignatius."
+  },
+  "manaoag": {
+    "title": "Đức Mẹ Manaoag",
+    "location": "Manaoag",
+    "country": "Philippines",
+    "description": "Một người đàn ông địa phương nghe thấy một giọng nói bí ẩn và nhìn thấy Đức Maria đứng trên đám mây trên ngọn cây, tay cầm Chuỗi Mân Côi và Hài Nhi. Thị trấn phát triển rực rỡ xung quanh tiểu vương cung thánh đường nổi tiếng thế giới được đặt tên là Manaoag (\"Cô ấy gọi\")."
+  },
+  "chioggia_donkey": {
+    "title": "Madonna của chú lừa nhỏ",
+    "location": "Chioggia",
+    "country": "Ý",
+    "description": "Vào ngày 5 tháng 7 năm 1615, Đức Mẹ hiện ra với Thầy Adam gần Chioggia."
+  },
+  "philippines_otazo": {
+    "title": "Đức Mẹ gửi Cha. Otazo",
+    "location": "Manila",
+    "country": "Philippines",
+    "description": "Nhà truyền giáo Dòng Tên Fr. Francis Otazo đã được an ủi trong cuộc đàn áp bởi sự hiện ra của Đức Maria, người đã bảo đảm với ông: 'Francis, đừng lo lắng, tôi sẽ bảo vệ bạn!' Sau đó cô cho anh xem Cuốn sách Sự sống."
+  },
+  "caysasay": {
+    "title": "Đức Mẹ Caysasay / Misericordia",
+    "location": "Taal, Batangas",
+    "country": "Philippines",
+    "description": "Lần hiện ra đầu tiên của Đức Maria được ghi nhận ở Philippines. Mary xuất hiện trong ánh sáng rạng rỡ từ một hốc đá gần con suối đến Juana Tangui và Catalina Talayn. Những dòng nước chữa lành kỳ diệu tiếp tục chảy vào thánh đường."
+  },
+  "lublin_lutheran": {
+    "title": "Đức Mẹ Lublin",
+    "location": "Lublin",
+    "country": "Ba Lan",
+    "description": "Mary xuất hiện được bao bọc trong ánh sáng xanh thiên thể trước một học giả Luther nổi tiếng người Hungary, cho thấy bà không tán thành các chuyên luận Tin lành và khiến ông chuyển sang Nhà thờ Công giáo."
+  },
+  "saragossa_agnes": {
+    "title": "Đức Mẹ gửi Sr. Agnes Chúa Giêsu",
+    "location": "Saragossa",
+    "country": "Tây Ban Nha",
+    "description": "Agnes de Casanate, nữ tập sinh dòng Carmelite, đã nhận được vô số lần xuất thần và hiện ra của Đức Maria khi ngài chia sẻ Cuộc Khổ Nạn của Chúa Kitô."
+  },
+  "paris_acarie": {
+    "title": "Nữ Vương Thiên Đường",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Chân phước Barbara Acarie (Sr. Mary of the Incarnation), người đồng sáng lập dòng Cát Minh Pháp, thường xuyên được tận hưởng những thị kiến ​​siêu phàm về Đức Maria là Nữ Vương Thiên Đàng."
+  },
+  "stans_nocker": {
+    "title": "Đức Mẹ Stans",
+    "location": "Stans",
+    "country": "Thụy Sĩ",
+    "description": "Mary xuất hiện gần một tảng đá lớn trên núi cao với Georg Nocker, thúc giục xây dựng một nhà nguyện mà sau này được Hoàng tử-Giám mục Bressanone thánh hiến."
+  },
+  "berzo_inferiore": {
+    "title": "Đức Mẹ Berzo",
+    "location": "Berzo kém hơn",
+    "country": "Ý",
+    "description": "Vào ngày 24 tháng 9 năm 1616, Mary xuất hiện trên không trung với đôi mắt đẫm lệ trước Marta Damioli Polentini, giải thoát cô khỏi sự áp bức tinh thần và xin thành lập một nhà thờ."
+  },
+  "rome_calasanzio": {
+    "title": "Đức Mẹ kính Thánh Giuse Calasanz",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria đã hiện ra nhiều lần để chúc lành và hướng dẫn Thánh Giuse Calasanz trong việc thành lập Dòng Piarist và các trường công miễn phí đầu tiên cho trẻ em nghèo ở Châu Âu."
+  },
+  "nuremberg_girl": {
+    "title": "Đức Mẹ Nuremberg",
+    "location": "Nürnberg",
+    "country": "Đức",
+    "description": "Một cô gái trẻ theo đạo Tin lành đã trung thành đọc kinh Kính Mừng đã trải qua một cuộc hiện ra, nơi Đức Mẹ hướng dẫn cô đến Bamberg để gia nhập Giáo hội Công giáo."
+  },
+  "naples_benincasa": {
+    "title": "Đức Mẹ hiện ra ở vai xanh",
+    "location": "Napoli",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 2 năm 1617, Ven. Orsola Benincasa đã nhìn thấy Đức Maria và Chúa Giêsu, nhận được sự mặc khải và lời hứa về những ân sủng đặc biệt dành cho Áo Đức Mẹ Vô Nhiễm Nguyên Tội màu xanh."
+  },
+  "fribourg_youth": {
+    "title": "Đức Mẹ Fribourg",
+    "location": "Fribourg",
+    "country": "Thụy Sĩ",
+    "description": "Sau khi chân thành hoán cải trên giường bệnh, một chàng trai trẻ đã được ban phước khi được Đức Maria, Thánh Phêrô Canisius và Thánh Ignatius hiện ra vào ban đêm."
+  },
+  "malta_conversion": {
+    "title": "Đức Mẹ ở Malta",
+    "location": "Malta",
+    "country": "Malta",
+    "description": "Một tội nhân sám hối đã dành nhiều tháng để chuẩn bị và cầu nguyện, đã trải nghiệm sự hiện ra mang tính biến đổi của Đức Trinh Nữ Maria, dẫn đến sự xá tội đầy vui mừng của anh ta."
+  },
+  "bosentino_feles": {
+    "title": "Madonna của Feles",
+    "location": "Bosentino",
+    "country": "Ý",
+    "description": "Vào ngày 21 tháng 6 năm 1623, Đức Maria hiện ra với một nông dân trẻ tên là Janesel."
+  },
+  "imbersago_bosco": {
+    "title": "Madonna del Bosco",
+    "location": "Imbersago",
+    "country": "Ý",
+    "description": "Vào ngày 9 tháng 5 năm 1617, ba người chăn cừu nhìn thấy Đức Maria bay lơ lửng trong ánh sáng trên một cây hạt dẻ có quả chín trái mùa một cách thần kỳ. Được cất giữ trong một vương cung thánh đường xinh đẹp được Thánh Giáo hoàng John XXIII viếng thăm."
+  },
+  "alcoy_nun": {
+    "title": "Đức Mẹ gửi Sr. Maria de Jesus",
+    "location": "Rượu",
+    "country": "Tây Ban Nha",
+    "description": "Trong khoảng thời gian từ 1620 đến 1630, nữ tu dòng Augustinô Maria de Jesus Martin đã trải qua những cuộc hiện ra sâu sắc của Đức Mẹ trong tu viện của mình."
+  },
+  "goa_andrade": {
+    "title": "Đức Mẹ gửi Cha. Andrade",
+    "location": "Goa",
+    "country": "Ấn Độ",
+    "description": "Nhà truyền giáo Dòng Tên Fr. Antonio Andrade, nhà thám hiểm châu Âu đầu tiên đến Tây Tạng, bị đầu độc trên con tàu của mình. Đức Mẹ hiện ra trên giường bệnh và chữa lành bệnh cho ông một cách kỳ diệu để tiếp tục sứ mệnh Châu Á."
+  },
+  "castel_san_pietro_1623": {
+    "title": "Đức Trinh Nữ Lato di Monte Calderaro",
+    "location": "Castel San Pietro Terme",
+    "country": "Ý",
+    "description": "Vào tháng 2 năm 1623, Mary hiện ra với cô chăn cừu trẻ Zenobia."
+  },
+  "paris_catherine": {
+    "title": "Áo choàng bảo vệ",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Nữ tu Carmelite Catherine of Jesus nhìn thấy Đức Maria che chở cho dòng Carmelite bên dưới chiếc áo choàng trắng như tuyết vô nhiễm của mình."
+  },
+  "lima_rose": {
+    "title": "Nữ Vương Mân Côi",
+    "location": "Lima",
+    "country": "Peru",
+    "description": "Thánh Rose of Lima, vị thánh đầu tiên được phong thánh ở Châu Mỹ, đã trải qua những cuộc giao tiếp siêu phàm thường xuyên với Đức Maria trước khi vẽ tranh nhà thờ Mân Côi, may những chiếc áo dài thêu lộng lẫy cho Mẹ Thiên Chúa."
+  },
+  "alessandria_rocca": {
+    "title": "Madonna della Rocca",
+    "location": "Alessandria della Rocca",
+    "country": "Ý",
+    "description": "Mary xuất hiện để làm mù mắt Angelina và mẹ cô là Rosa, giúp cô gái nhìn thấy và dẫn người dân thị trấn khai quật một bức tượng cổ có từ thế kỷ thứ 6 được giấu trong đá."
+  },
+  "ribordone_prascondu": {
+    "title": "Madonna di Pracondù",
+    "location": "Ribordone, Torino",
+    "country": "Ý",
+    "description": "Vào ngày 27 tháng 8 năm 1619, chàng trai trẻ Giovannino Berrardi đã lấy lại được khả năng nói đã bị mất sau cuộc hiện ra rạng ngời của Đức Mẹ trên đồng cỏ núi cao Loreto, truyền cảm hứng cho thánh địa lớn."
+  },
+  "langeac_agnes": {
+    "title": "Đức Mẹ đến Ven. Agnes",
+    "location": "Langeac",
+    "country": "Pháp",
+    "description": "Nữ tu viện trưởng Đa Minh và Ven. Mẹ Agnes của Chúa Giêsu đã nhận được những cuộc hiện ra nơi Đức Maria kết nối bà với Jean-Jacques Olier, khiến bà trở thành người bảo trợ tinh thần cho cuộc cải cách chủng viện Sulpician."
+  },
+  "maria_bildstein": {
+    "title": "Đức Mẹ Maria Bildstein",
+    "location": "Maria Bildstein",
+    "country": "Áo",
+    "description": "Mary hiện ra với Martin và John Hofle, hai đứa con trai nhỏ của một nông dân đã bỏ bê lời thề trong trận dịch, thúc đẩy việc xây dựng khu bảo tồn xinh đẹp ở Áo."
+  },
+  "quimper_danielou": {
+    "title": "Đức Mẹ gửi Catherine Danielou",
+    "location": "Quimper",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với Catherine Danielou gần một bức tượng bên đường: 'Catherine, em nghèo, tôi cũng... tôi sống trên thiên đường nhưng vô gia cư trên Trái đất.' Catherine trở thành một nhà thần bí nổi tiếng bị kỳ thị."
+  },
+  "paris_maunoir": {
+    "title": "Đức Mẹ gửi Cha. Maunoir",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Nhà truyền giáo Breton nổi tiếng Fr. Giuliano Maunoir thường xuyên được Đức Maria hiện ra, người đã che chở ông khỏi nguy hiểm và hướng dẫn ông hoạt động tông đồ sám hối sâu sắc."
+  },
+  "santa_fe_conquistadora": {
+    "title": "Đức Mẹ Hòa Bình / La Conquistadora",
+    "location": "Santa Fe, New Mexico",
+    "country": "Hoa Kỳ",
+    "description": "Được cất giữ trong Nhà thờ chính tòa Thánh Phanxicô Assisi, La Conquistadora là bức tượng Đức Trinh Nữ Maria bằng gỗ lâu đời nhất ở Hoa Kỳ, được tôn kính sâu sắc qua nhiều thế kỷ lịch sử Tây Nam."
+  },
+  "ozegna": {
+    "title": "Đức Trinh Nữ của Rừng Rừng",
+    "location": "Ozegna",
+    "country": "Ý",
+    "description": "Vào ngày 21 tháng 6 năm 1623, Mary xuất hiện với Giovanni Petro, 15 tuổi bị câm điếc trong khi đang làm cỏ khô dọc sông Orco, ngay lập tức đọc cho cậu bé bài phát biểu của mình."
+  },
+  "aljubarrota_sands": {
+    "title": "Đức Mẹ Cát",
+    "location": "São Vicente de Aljubarrota",
+    "country": "Bồ Đào Nha",
+    "description": "Mary xuất hiện ngồi trên một tảng đá trước một người phụ nữ trong làng đang khóc, tìm lại chiếc chìa khóa bị mất của mình và xin vào nhà thờ. Khi vị giám mục hoài nghi nhốt tảng đá trong phòng cung điện của mình, nó đã biến mất một cách kỳ diệu và quay trở lại cánh đồng hai lần."
+  },
+  "lure_shepherd": {
+    "title": "Đức Mẹ Thu Hút",
+    "location": "Thu hút",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với một người chăn chiên yêu cầu xây dựng lại một nhà thờ trên đống đổ nát của tu viện Benedictine cổ."
+  },
+  "sinopoli_lactans": {
+    "title": "Maria Lactans",
+    "location": "Trung Quốc",
+    "country": "Ý",
+    "description": "Thánh Maria hiện ra hai lần yêu cầu tôn kính biểu tượng của ngài là 'Maria Lactans' (Mẹ Thiên Chúa đang nuôi Con)."
+  },
+  "japan_martyr": {
+    "title": "Đức Mẹ tại Nhật Bản",
+    "location": "Nagasaki",
+    "country": "Nhật Bản",
+    "description": "Mary xuất hiện để an ủi vị tử đạo Cơ đốc giáo người Nhật Kegan Fucinanga Nicholas trong lúc bị tra tấn dã man dưới sự đàn áp chống Cơ đốc giáo."
+  },
+  "ajaccio_peace": {
+    "title": "Đức Mẹ ở Corsica",
+    "location": "Ajaccio",
+    "country": "Pháp",
+    "description": "Hai kẻ thù thù địch đã nhận được sự hiện ra kỳ diệu và thông điệp từ Đức Trinh Nữ Maria ra lệnh cho họ làm hòa."
+  },
+  "gandos_galleno": {
+    "title": "Đức Mẹ Galleno",
+    "location": "Gandos di Galleno",
+    "country": "Ý",
+    "description": "Đức Maria cùng thiên thần hiện ra với người câm điếc Margherita Lazzaroni, phát biểu và hướng dẫn dân làng lần hạt Mân Côi để ngăn chặn bệnh dịch. Thị trấn được bảo tồn một cách kỳ diệu."
+  },
+  "leini_grazie": {
+    "title": "Madonna delle Grazie",
+    "location": "Leini, Torino",
+    "country": "Ý",
+    "description": "Vào ngày 1 tháng 6 năm 1630, Đức Maria hiện ra với một người đàn ông câm điếc, trao cho ông một chuỗi tràng hạt và công bố dịch bệnh dịch hạch đã hoàn toàn chấm dứt."
+  },
+  "bargemon": {
+    "title": "Nhà Thờ Đức Bà Bargemon",
+    "location": "Bargemon",
+    "country": "Pháp",
+    "description": "Vào ngày 17 tháng 3 năm 1635, Mary hiện ra trong đêm với Elizabeth Caille đang nằm liệt giường với tư cách là một người hành hương xinh đẹp trong bộ nhung xanh với vương miện bằng vàng, chữa lành bệnh cho cô một cách kỳ diệu và xin một ngôi đền."
+  },
+  "forno_alpi_graie": {
+    "title": "Đức Mẹ Loreto tại Forno",
+    "location": "Forno Alpi Graie",
+    "country": "Ý",
+    "description": "Vào ngày 30 tháng 9 năm 1630, Đức Maria hiện ra trên một tảng đá lớn ở Pietro Garino, hứa sẽ chấm dứt bệnh dịch nếu khu vực này ăn năn. Hai bức tranh thánh bị mất tích đã được phát hiện một cách kỳ diệu dưới tảng đá."
+  },
+  "quito_1634": {
+    "title": "Đức Mẹ Thành Công",
+    "location": "Quito",
+    "country": "Ecuador",
+    "description": "Vào ngày 2 tháng 2 năm 1634, Đức Mẹ Thành Công đã hiện ra với Mẹ Mariana de Jesus Torres tại Tu viện Hoàng gia, cảnh báo về những khủng hoảng đạo đức sâu sắc và sự mất niềm tin trong thế kỷ 20."
+  },
+  "cavite_porta_vaga": {
+    "title": "Reina de Cavite / Porta Vaga",
+    "location": "Thành phố Cavite",
+    "country": "Philippines",
+    "description": "Một người lính gác Tây Ban Nha đã dừng vầng sáng đang chuyển động trên vịnh trong cơn bão và nghe thấy một giọng nói ngọt ngào: 'Người lính nhỏ... cho tôi lối đi. Bạn không nhận ra Mary sao?' Biểu tượng phép lạ, có niên đại năm 1692, là bức tranh Đức Mẹ lâu đời nhất còn tồn tại ở Philippines và là Thánh Bổn Mạng của Galleon."
+  },
+  "naples_vesuvius": {
+    "title": "Đức Mẹ ở Naples",
+    "location": "Napoli",
+    "country": "Ý",
+    "description": "Trong một vụ phun trào núi lửa kinh hoàng của Núi Vesuvius, Đức Maria đã xuất hiện trên thành phố giữa cơn mưa tro bụi, cứu các tín hữu đang cầu khẩn khỏi bị hủy diệt."
+  },
+  "lake_huron_brebeuf": {
+    "title": "Đức Mẹ kính Thánh Jean de Brébeuf",
+    "location": "Trung du, Ontario",
+    "country": "Canada",
+    "description": "Vị tử đạo vĩ đại của Dòng Tên Bắc Mỹ đã trải nghiệm một thị kiến ​​hùng vĩ về Đức Maria với trái tim bị ba mũi tên xuyên qua, chuẩn bị cho ông cuộc tử đạo anh hùng giữa những người Huron."
+  },
+  "constance_loreto": {
+    "title": "Đức Mẹ Constance",
+    "location": "Constance",
+    "country": "Đức",
+    "description": "Mary xuất hiện trên tháp chuông của nhà thờ Augustinian, truyền cảm hứng cho người dân trong cuộc bao vây quân sự thù địch. Để tỏ lòng biết ơn, thành phố đã dựng lên một nhà nguyện Loreto."
+  },
+  "guiclan_picard": {
+    "title": "Đức Mẹ gửi Marie-Amice Picard",
+    "location": "Guiclan",
+    "country": "Pháp",
+    "description": "Ngày 19 tháng 5 năm 1634, Mary và St. John xuất hiện để giải cứu Marie-Amice Picard khỏi kẻ tấn công. Cô trở thành một linh hồn nạn nhân bị kỳ thị sâu sắc."
+  },
+  "montagnolo_pinocchio": {
+    "title": "Đức Mẹ Montagnolo",
+    "location": "Ancona",
+    "country": "Ý",
+    "description": "Năm 1640, Đức Trinh Nữ Maria đã xuất hiện để ngăn chặn một trận dịch khủng khiếp tràn ngập vùng này."
+  },
+  "beaune_infant": {
+    "title": "Vua Ân Điển",
+    "location": "Beaune",
+    "country": "Pháp",
+    "description": "Carmelite Ven. Margaret Thánh Thể được Đức Maria hướng dẫn trong việc thành lập Hiệp hội Hài nhi Chúa Giêsu, sau này được Đức Giáo hoàng Piô IX nâng lên."
+  },
+  "maria_taferl": {
+    "title": "Đức Mẹ Maria Taferl",
+    "location": "Maria Taferl",
+    "country": "Áo",
+    "description": "Alexander Schinnagl đã đặt một chiếc Pietà bằng gỗ vào một hốc cây sồi và đã được chữa khỏi. Từ năm 1658 đến năm 1661, có 57 nhân chứng tuyên thệ xác nhận đã nhìn thấy các hình tượng thiên thần phát sáng và ánh sáng thiên thể xung quanh cái cây. Đây là một trong những đền thờ quốc gia vĩ đại nhất của Áo."
+  },
+  "prague_infant": {
+    "title": "Đức Mẹ Chiến Thắng / Praha",
+    "location": "Praha",
+    "country": "Cộng hòa Séc",
+    "description": "Vào đêm trước Đức Mẹ Vô Nhiễm Nguyên Tội, Đức Maria đã xuất hiện từ dàn hợp xướng nhà thờ đến gặp Cha. Cyril, chỉ ra địa điểm chính xác để khôi phục và tôn phong bức tượng kỳ diệu nổi tiếng thế giới Chúa Giêsu Hài Đồng ở Praha."
+  },
+  "kevelaer": {
+    "title": "Đấng An Ủi Người Đau Khổ",
+    "location": "Kevelaer",
+    "country": "Đức",
+    "description": "Vào Giáng sinh năm 1641, Hendrik Busman nghe thấy giọng nói của Mary trên đồng hoang: 'Ở nơi này tôi cần bạn cung hiến một nhà nguyện.' Tôn thờ Đức Trinh Nữ kỳ diệu của Luxembourg, đây là đền thờ Đức Mẹ lớn nhất ở Đức được 600.000 người hành hương viếng thăm hàng năm."
+  },
+  "savigliano": {
+    "title": "Đức Mẹ Savigliano",
+    "location": "Savigliano",
+    "country": "Ý",
+    "description": "Sự hiện ra của Đức Maria được ghi lại bởi Tesio Petrina vào năm 1639."
+  },
+  "frejus_cotignac": {
+    "title": "Đức Mẹ gửi anh Fiacre",
+    "location": "Cotignac",
+    "country": "Pháp",
+    "description": "Vào ngày 3 tháng 11 năm 1637, Mary xuất hiện trong bộ áo choàng màu xanh đầy sao trước Thầy Fiacre trong phòng giam của tu viện, cho anh xem đền thờ của Mẹ ở Cotignac và hứa hẹn sự ra đời kỳ diệu của Vua Louis XIV tương lai sau ba tuần cửu nhật."
+  },
+  "uruguay_reduction": {
+    "title": "Đức Mẹ Truyền Tin",
+    "location": "Giảm thiểu Uruguay",
+    "country": "Uruguay",
+    "description": "Trong đợt giảm bớt truyền giáo của Dòng Tên, Đức Maria đã hiện ra hai lần với một bé gái bản địa mười tuổi sùng đạo để chuẩn bị cho bé bước vào cõi vĩnh hằng đầy vui vẻ."
+  },
+  "cursi_abbondanza": {
+    "title": "Santa Maria dell'Abbondanza",
+    "location": "Cursi, Apulia",
+    "country": "Ý",
+    "description": "Vào mùa xuân năm 1641, Đức Maria hiện ra với chàng chăn cừu trẻ Biagio Orlando Natali: 'Ta là Nữ hoàng Thiên đường, và ta đau khổ vì thân phận khốn khổ của loài người.' Cô ấy yêu cầu một nhà nguyện và đám rước."
+  },
+  "cast_le_goff": {
+    "title": "Đức Mẹ Yves Le Goff",
+    "location": "Diễn viên, Brittany",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với người nông dân Yves Le Goff, in dấu chữ thập đỏ vào tay phải của ông và yêu cầu ông thực hiện một Mùa Chay nghiêm ngặt kéo dài 15 năm không uống nước để cầu cho tội nhân hoán cải."
+  },
+  "ponzano_magra": {
+    "title": "Đức Mẹ Schiavonea tại Ponzano",
+    "location": "Ponzano Magra",
+    "country": "Ý",
+    "description": "Vào ngày 10 tháng 7 năm 1647, Đức Maria hiện ra với Antonio Ruffio."
+  },
+  "palizi_moscow": {
+    "title": "Đức Mẹ Sầu Bi / Strastnaya",
+    "location": "Mátxcơva",
+    "country": "Nga",
+    "description": "Mary hiện ra với một người phụ nữ tàn tật, chữa khỏi bệnh cho cô ấy và hướng dẫn cô vẽ một biểu tượng. Hình ảnh kỳ diệu đã được rước long trọng về Moscow."
+  },
+  "corigliano_schiavonea": {
+    "title": "Santa Maria ad Nives / Schiavonea",
+    "location": "Corigliano Calabro",
+    "country": "Ý",
+    "description": "Vào ngày 23 tháng 8 năm 1648, sau cuộc hiện ra kỳ diệu, thánh đường lớn của Đức Mẹ Đen ở Schiavonea đã được dựng lên."
+  },
+  "lake_huron_hurons": {
+    "title": "Đức Mẹ trên hồ Huron",
+    "location": "Hồ Huron",
+    "country": "Canada",
+    "description": "Hai người cải đạo theo đạo Cơ đốc ở Huron bị trói vào cọc bởi người Iroquois thù địch đã quay sang cầu nguyện với Đức Maria và được giải thoát khỏi xiềng xích một cách kỳ diệu để trốn thoát."
+  },
+  "buenos_aires_1647": {
+    "title": "Đức Mẹ ở Buenos Aires",
+    "location": "Buenos Aires",
+    "country": "Argentina",
+    "description": "Đức Maria hiện ra với một cô gái nông dân trẻ và một tu sĩ giáo dân, kêu gọi mọi người hãy thành tâm sám hối."
+  },
+  "paris_olier": {
+    "title": "Đức Mẹ gửi Cha. Olier",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Jean-Jacques Olier, người sáng lập cuộc cải cách chủng viện Sulpician, đã được Đức Maria chữa khỏi bệnh mù một cách thần kỳ khi còn trẻ. Năm 1649, Mẹ lại xuất hiện để khơi dậy tinh thần linh mục sâu sắc của ông."
+  },
+  "plounevez_quintin": {
+    "title": "Đức Mẹ Plounévez",
+    "location": "Plounevez-Quintin",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với Louise Le Comec khi đang lần hạt Mân Côi cầu xin một cái chết tốt lành, báo trước chính xác giờ chuyển tiếp lên thiên đàng của bà."
+  },
+  "naples_carafa": {
+    "title": "Đức Mẹ gửi Cha. Carafa",
+    "location": "Napoli",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra với Tổng quyền Dòng Tên Fr. Vincenzo Carafa, soi sáng những tác phẩm khổ hạnh và thần bí của ông."
+  },
+  "querrien_courtel": {
+    "title": "Đức Mẹ Hằng Cứu Giúp",
+    "location": "La Prénessaye, Querrien",
+    "country": "Pháp",
+    "description": "Vào ngày 15 tháng 8 năm 1652, Mary hiện ra với cô bé chăn cừu câm điếc Jeanne Courtel, 12 tuổi, ngay lập tức phục hồi thính giác và giọng nói của cô. Cô hướng dẫn cô khai quật một bức tượng cổ bị chôn vùi. Được chính thức công nhận bởi Giám mục Thánh Brieuc là 'Little Breton Lourdes'."
+  },
+  "colere_fontane": {
+    "title": "Madonna delle Fontane",
+    "location": "Colere, Val di Scalve",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 7 năm 1654, qua đời vì bệnh lao, người chăn cừu Bartolomeo Burat ngã gục vì ho ra máu gần một đài phun nước ven đường. Mary bước ra khỏi bức bích họa của nhà nguyện, chạm nước lên trán anh và ngay lập tức chữa khỏi cho anh: 'Hãy yên tâm, con yêu, con đã khỏi bệnh.'"
+  },
+  "malta_sultan": {
+    "title": "Đức Mẹ gửi Quốc vương",
+    "location": "Malta",
+    "country": "Malta",
+    "description": "Một Quốc vương Maroc bị Hiệp sĩ Malta bắt giữ đã trải qua cuộc hiện ra của Đức Maria trong tù. Sau khi được trả tự do, ông chuyển sang đạo Công giáo, rửa tội ở Rome và đi hành hương đến Loreto."
+  },
+  "campeneac_nicolas": {
+    "title": "Đức Mẹ gửi Armelle Nicolas",
+    "location": "Campénéac",
+    "country": "Pháp",
+    "description": "Vào ngày 15 tháng 8 năm 1652, người tôi tớ khiêm nhường 'Armelle tốt bụng' đã nhận được một thị kiến ​​vinh quang về việc Đức Maria Hồn Xác Lên Trời."
+  },
+  "turin_1651": {
+    "title": "Đức Mẹ ở Turin",
+    "location": "Torino",
+    "country": "Ý",
+    "description": "Vào ngày 20 tháng 3 năm 1651, Đức Maria hiện ra với Andreeta Pendigliona, phục hồi một cách kỳ diệu đôi chân bị què của một người đàn ông trong thánh đường."
+  },
+  "ancienne_lorette": {
+    "title": "Đức Mẹ ở Quebec",
+    "location": "Ancienne Lorette, Quebec",
+    "country": "Canada",
+    "description": "Đức Trinh Nữ Maria hiện ra với Jeanne Ouendite, 14 tuổi, người cải đạo Christian Huron."
+  },
+  "notre_dame_osier": {
+    "title": "Notre Dame de l'Osier",
+    "location": "Les Plantées, Vinay",
+    "country": "Pháp",
+    "description": "Vào ngày 25 tháng 3 năm 1649, những cành liễu gai do Pierre Port-Combet cắt đã chảy máu một cách thần kỳ. Năm 1657, Đức Maria hiện ra với ông khi đang cày ruộng, khiến ông chân thành cải đạo từ bỏ đạo Tin lành và thành lập đại vương cung thánh đường."
+  },
+  "trun_light": {
+    "title": "Nàng Ánh Sáng",
+    "location": "Trun, Graubünden",
+    "country": "Thụy Sĩ",
+    "description": "Mục sư và cộng đoàn nhìn thấy ánh sáng kỳ diệu chiếu trên ngọn đồi, nơi Đức Maria tỏ ra hiện diện và xin ban cho một nơi tôn nghiêm. Nhiều người bệnh đã được phục hồi sức khỏe tại nhà thờ thánh hiến."
+  },
+  "mariahilfberg_gutenstein": {
+    "title": "Đức Mẹ Phù Hộ",
+    "location": "Gutenstein",
+    "country": "Áo",
+    "description": "Mary hiện ra sáu lần với Sebastian Schmid Schlager, chữa khỏi bệnh cho anh ta và vẽ hình ảnh của cô trên một tấm vải treo trên cây sồi. Đức Giáo Hoàng Clement IX đã chính thức cho phép việc tôn kính và cung thánh."
+  },
+  "coromoto_venezuela": {
+    "title": "Đức Mẹ Coromoto",
+    "location": "Guanare",
+    "country": "Venezuela",
+    "description": "Ngày 8 tháng 9 năm 1652, Mary hiện ra trong khu rừng nguyên sinh với tù trưởng Coromoto của bộ tộc Cospes: 'Hãy đến nhà trắng và yêu cầu họ đổ nước vào đầu bạn để lên thiên đường'. Cô đã để lại hình ảnh kỳ diệu của mình in trên sợi gỗ. Bổn mạng chính thức của Venezuela."
+  },
+  "pieve_di_rosa": {
+    "title": "Thánh Maria Pieve di Rosa",
+    "location": "San Vito al Tagliamento",
+    "country": "Ý",
+    "description": "Vào ngày 2 tháng 2 năm 1655, Maria Giacomuzzi, 8 tuổi, bệnh động kinh, đã được khỏi bệnh trong trạng thái xuất thần trước bức bích họa trên tường có hình Đức Mẹ Maria. Khi những con bò kéo bức bích họa đến San Vito bị khóa chân và không chịu di chuyển tại nhà thờ St. Nicholas, khu bảo tồn lớn đã được thành lập ở đó."
+  },
+  "birkenstein": {
+    "title": "Đức Mẹ Birkenstein",
+    "location": "Fischbachau, Bavaria",
+    "country": "Đức",
+    "description": "Tổng đại diện Johann Stiglmaier đã xây dựng một nhà nguyện Loreto sau khi Đức Mẹ hiện ra trong giấc mơ: 'Trong nhà nguyện này... tôi muốn bày tỏ lòng biết ơn đến những người cầu khẩn tôi.' Ngôi đền tuyệt đẹp trên núi cao có bức tượng đội vương miện được 92 thiên thần vây quanh."
+  },
+  "bianzone_piano": {
+    "title": "Madonna del Piano",
+    "location": "Bianzone",
+    "country": "Ý",
+    "description": "Ngày 26 tháng 3 năm 1675, Đức Maria hiện ra với một người đàn ông địa phương xin ông dựng một bàn thờ và một ngôi chùa trên đồng bằng."
+  },
+  "agnie_quebec": {
+    "title": "Đức Mẹ ở Quebec",
+    "location": "Agni, Quebec",
+    "country": "Canada",
+    "description": "Mary hiện ra với Martin Kandegonrhaksen, một thanh niên theo đạo Thiên chúa Mohawk bản địa."
+  },
+  "citta_di_castello": {
+    "title": "Đức Mẹ đến Thánh Veronica Giuliani",
+    "location": "Città di Castello",
+    "country": "Ý",
+    "description": "Thánh Veronica Giuliani, một trong những nhà huyền bí vĩ đại nhất thời kỳ Baroque, đã vào tu viện Capuchin sau khi được thị kiến ​​sâu sắc về Đức Maria. Cô ấy mang dấu thánh và vương miện gai."
+  },
+  "mary_tax_stams": {
+    "title": "Thuế Đức Mẹ Maria",
+    "location": "Stams, Tyrol",
+    "country": "Áo",
+    "description": "Mary hiện ra với một chủ đất ở Tyrol để xin một nhà nguyện trong rừng. Năm 1667, Tu viện trưởng Nicola Kraus đã xây dựng ngôi đền để trở thành nơi trú ẩn cho những người lữ hành và hành hương."
+  },
+  "san_vito_casalbuttano": {
+    "title": "Đức Mẹ Casalbuttano",
+    "location": "San Vito di Casalbuttano",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra được ghi lại ở San Vito di Casalbuttano năm 1668."
+  },
+  "san_bartolomeo_1671": {
+    "title": "Nostra Signora della Rovere",
+    "location": "San Bartolomeo al Mare",
+    "country": "Ý",
+    "description": "Vào ngày 18 tháng 4 năm 1671, Mary hiện ra với người nông dân Giacinto Perato, người bị liệt một tay, khuyên ông đừng trì hoãn chuyến hành hương đến ngôi đền bằng gỗ sồi của bà. Anh ấy đã được chữa khỏi ngay lập tức trong Thánh lễ ngày hôm sau."
+  },
+  "le_laus": {
+    "title": "Đức Mẹ Lê Laus",
+    "location": "Saint-Étienne-le-Laus",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với nữ chăn chiên khiêm tốn Benoîte Rencurel trong khoảng thời gian 54 năm, xin liên tục cầu nguyện và sám hối cho các tội nhân bên những ngọn đèn dầu thơm trên núi. Được chính thức phê duyệt bởi Giáo hội vào năm 2008."
+  },
+  "agreda_mystic": {
+    "title": "Đức Mẹ đến Ven. Mary của Agreda",
+    "location": "Ágreda",
+    "country": "Tây Ban Nha",
+    "description": "Ven. Nữ tu viện trưởng Maria của Chúa Giêsu thành Agreda đã trải nghiệm những thị kiến ​​nội tâm siêu phàm về Đức Mẹ, ghi lại kiệt tác hoành tráng gồm 4 tập 'Thành phố huyền bí của Thiên Chúa'. Cơ thể của cô ấy vẫn còn nguyên vẹn."
+  },
+  "pancole_providence": {
+    "title": "Mẹ Thiên Chúa Quan Phòng",
+    "location": "Pancole, San Gimignano",
+    "country": "Ý",
+    "description": "Vào tháng 4 năm 1668, đang khóc trong cảnh nghèo khó, người chăn cừu câm điếc Bartolomea Ghini nhìn thấy một phụ nữ xinh đẹp đã lấy lại được giọng nói và đổ đầy bánh mì, dầu và rượu vào tủ đựng thức ăn của cha mẹ cô. Khi dân làng đi chặt mâm xôi ngoài đồng, họ phát hiện ra ngôi đền của bà."
+  },
+  "pochayiv": {
+    "title": "Đức Mẹ Pochayiv",
+    "location": "Pochayiv",
+    "country": "Ukraina",
+    "description": "Trong Chiến tranh Zbarazh, quân đội Thổ Nhĩ Kỳ bao vây Pochayiv Lavra đã bỏ chạy trong kinh hoàng khi nhìn thấy sự xuất hiện vinh quang của Theotokos trên thiên đường cùng với các thiên thần và Thánh Job of Pochayiv. Vô số kẻ bao vây đã cải đạo sang Cơ đốc giáo."
+  },
+  "alcobendas_paz": {
+    "title": "Virgen de la Paz",
+    "location": "Alcobendas, Madrid",
+    "country": "Tây Ban Nha",
+    "description": "Mary hiện ra trên cây vả với một người chăn cừu bị què ở Fuentiduña, chữa lành bàn tay bị liệt của cô một cách kỳ diệu và lấp đầy ngực mẹ cô bằng bánh mì tươi."
+  },
+  "celles_ariege": {
+    "title": "Đức Mẹ Celles",
+    "location": "Tế bào, Ariège",
+    "country": "Pháp",
+    "description": "Vào ngày 28 tháng 5 năm 1686, cậu bé nông dân 10 tuổi John Courdil nhìn thấy một con chim bồ câu trắng biến thành một cô gái trẻ mặc đồ trắng ở một đài phun nước: 'Tôi là Đức Trinh Nữ Thánh. Hãy cảnh báo mọi người hãy thay đổi lối sống của họ.' Khi anh quay lại lấy xẻng, ba chiếc lá sồi hình chữ thập mọc lên một cách kỳ diệu từ cán thuổng."
+  },
+  "paray_le_monial": {
+    "title": "Đức Mẹ kính Thánh Margaret Mary",
+    "location": "Paray-le-Monial",
+    "country": "Pháp",
+    "description": "Thánh Margaret Mary Alacoque, người nằm liệt giường vì bệnh thấp khớp nặng khi còn trẻ, đã được chữa khỏi ngay lập tức sau khi thề trở thành một trong những con gái của Đức Maria. Cô bước vào tu viện Thăm viếng, nơi cô nhận được những mặc khải biến đổi thế giới về Thánh Tâm Chúa Giêsu."
+  },
+  "saint_carr": {
+    "title": "Đức Mẹ Saint-Carr",
+    "location": "Saint-Carr, Brittany",
+    "country": "Pháp",
+    "description": "Người công nhân giản dị Jean Bizier mơ thấy Mary chỉ cho anh ta chính xác nơi đào gần làng của anh ta. Ngày hôm sau, ông khai quật được một bức tượng Đức Mẹ bằng gỗ tuyệt đẹp. Được cất giữ trong một nhà nguyện được thánh hiến vào năm 1696."
+  },
+  "torre_di_ruggiero": {
+    "title": "Đức Maria Rất Thánh Ân Sủng",
+    "location": "Torre di Ruggiero",
+    "country": "Ý",
+    "description": "Vào ngày 17 tháng 4 năm 1677, cô gái trẻ Isabella Cristello và Antonia De Luca đã nhìn thấy Đức Maria trong một thị kiến ​​ngọt ngào siêu phàm, chữa khỏi bệnh cho Isabella. Sau trận động đất năm 1783 đã chôn vùi ngôi đền, Đức Maria hiện ra trong giấc mơ với Pascale Luna để truyền cảm hứng cho việc xây dựng lại ngôi đền. Năm 1858, một dòng suối kỳ diệu dâng lên đã chữa lành vết thương cho người nông dân Francesco Arone."
+  },
+  "giaudet_lanrivain": {
+    "title": "Đức Mẹ Lanrivain",
+    "location": "Lanrivain, Brittany",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với một người cha nông dân nghèo có 12 đứa con và làm nhiều bánh mì trên bàn của ông một cách thần kỳ. Khi vị linh mục giáo xứ hoài nghi bị mù, ông đã lấy lại được thị lực sau khi cầu nguyện trước bức tượng Đức Mẹ Maria mới được phát hiện."
+  },
+  "messina_lettera": {
+    "title": "Madonna della Lettera",
+    "location": "Messina, Sicilia",
+    "country": "Ý",
+    "description": "Trong trận động đất thảm khốc vào tháng 1 năm 1693, Mary xuất hiện với Paola Pesce trong bộ đồ trắng với áo choàng xanh: 'Đừng sợ.' Mẹ hứa sẽ bảo vệ những người tập trung tại Nhà thờ trước biểu tượng Đức Mẹ Thư. Thành phố đã thoát khỏi gánh nặng của thảm họa. Được bảo tồn với một tượng đài bến cảng vàng khổng lồ."
+  },
+  "castenaso": {
+    "title": "Đức Mẹ Castenaso",
+    "location": "Castenaso",
+    "country": "Ý",
+    "description": "Vào ngày 27 tháng 1 năm 1699, cô gái trẻ Maria Maddalena nghe thấy một giọng nói gọi cô đến nhà thờ. Khi cô quỳ xuống trước tượng Đức Maria, Đức Mẹ âu yếm đưa tay ra."
+  },
+  "quito_nube": {
+    "title": "Nuestra Señora de la Nube",
+    "location": "Quito",
+    "country": "Ecuador",
+    "description": "Vào ngày 30 tháng 12 năm 1696, trong cuộc rước kiệu lớn dành cho Đức Giám mục ốm yếu, 500 tín hữu tụ tập đã nhìn thấy Đức Mẹ ngự trên mây, tay cầm một bông huệ và Hài nhi Giêsu. Cuộc hiện ra vinh quang kéo dài suốt thời gian đọc kinh Gloria Patri."
+  },
+  "ellwangen_jeningen": {
+    "title": "Đức Mẹ Schönenberg",
+    "location": "Ellwangen",
+    "country": "Đức",
+    "description": "Nhà truyền giáo Dòng Tên Fr. Philip Jeningen, nhà thần bí và hướng dẫn tâm linh nổi tiếng, đã nhận được dấu thánh từ sự hiện ra của Chúa Giêsu và Đức Mẹ Maria, dẫn ông đến việc quảng bá thánh đường tuyệt đẹp trên đỉnh đồi ở Schönenberg."
+  },
+  "san_severino_pollino": {
+    "title": "Madonna del Pollino",
+    "location": "San Severino Lucano",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra “tắm trong ánh sáng, đẹp đẽ như mặt trời” trên sườn phía bắc của Núi Pollino trước một mục đồng và một phụ nữ địa phương, chỉ vào một hang động có một bức tượng được giấu kín. Các tín đồ leo lên thánh địa núi tuyệt đẹp ở độ cao 1.537m trong lễ rước xuân đầy màu sắc."
+  },
+  "germany_holzhauser": {
+    "title": "Đức Mẹ đến Ven. Holzhauser",
+    "location": "Bingen / Bavaria",
+    "country": "Đức",
+    "description": "Đấng đáng kính Bartolomeo Holzhauser, linh mục, nhà tiên tri nổi tiếng và người sáng lập Hiệp hội Tông đồ các Linh mục Thế tục, đã được thưởng thức những thị kiến ​​và sự hiện ra siêu phàm của Đức Trinh Nữ Maria, Đấng đã soi sáng những bài bình luận sâu sắc về Kinh thánh của ngài."
+  },
+  "santa_rosa_ambato": {
+    "title": "Virgen de la Eevación",
+    "location": "Santa Rosa, Ambato",
+    "country": "Ecuador",
+    "description": "Vào ngày 13 tháng 11 năm 1695, trong lúc hạn hán và chấn động, Đức Maria hiện ra trong ánh sáng rực rỡ với người hầu bản địa Juan Chacarin dưới một tảng đá ở độ cao 3.419m: ‘Ta là Đức Maria Đồng Trinh không tì vết… hãy đền tội để được thương xót.’ Được lưu giữ trong một thánh đường lớn của giáo phận."
+  },
+  "florida_cuipa": {
+    "title": "Đức Mẹ gửi Antonio Cuipa",
+    "location": "La Conception de Ayubale, Florida",
+    "country": "Hoa Kỳ",
+    "description": "Vào ngày 25 tháng 1 năm 1704, người đứng đầu Apalachee, giáo lý viên và nghệ sĩ sáo Antonio Cuipa bị trói vào cây thánh giá và tử đạo trong các cuộc đột kích của người Anh. Bị tra tấn bằng lửa dưới chân, Antonio nhìn thấy Đức Trinh Nữ Maria hiện ra bên cạnh mình, ban cho anh lòng can đảm thanh thản để chịu đựng cuộc tử đạo vinh quang của mình."
+  },
+  "kotschach": {
+    "title": "Đức Mẹ Kötschach",
+    "location": "Kötschach-Mauthen",
+    "country": "Áo",
+    "description": "Mary đã kiểm tra một người giữ phòng thờ trẻ tuổi bằng cách quỳ tại nhà anh ta trong mười hai giờ trước khi đảm bảo với anh ta về sự bảo vệ của cô đối với thánh đường và những người hành hương. Vào ngày 29 tháng 4, tiếng chuông tự nhiên vang lên trong đêm khi toàn bộ nhà thờ được chiếu sáng một cách kỳ diệu bởi ánh sáng kỳ lạ."
+  },
+  "urkupina_bolivia": {
+    "title": "Virgen de Urkupiña",
+    "location": "Quillacollo, Cochabamba",
+    "country": "Bôlivia",
+    "description": "Một phụ nữ xinh đẹp bế một đứa trẻ xuất hiện trước một cô chăn cừu khiêm tốn trên đồi Cota, nói chuyện trôi chảy bằng tiếng Quechua. Khi người dân thị trấn đổ xô đến xem, cô gái chỉ: 'Jaqaypiña orqopiña' ('Cô ấy đã ở trên đồi rồi!'). Khu bảo tồn quốc gia vĩ đại được tôn kính trên khắp Nam Mỹ với tư cách là Người bảo trợ cho sự hội nhập quốc gia."
+  },
+  "capurso_pozzo": {
+    "title": "Đức Mẹ Bên Giếng",
+    "location": "Capurso, Apulia",
+    "country": "Ý",
+    "description": "Vào tháng 8 năm 1705, qua đời vì bệnh nan y, Cha. Đaminh Tanzaniaella đã nhìn thấy Đức Mẹ trong thị kiến ​​ban đêm. Cô hứa sẽ chữa lành ngay lập tức nếu anh uống nước từ giếng cổ 'Santa Maria' và xây dựng một nhà thờ. Anh ta uống rượu, được phục hồi ngay lập tức và dựng lên một vương cung thánh đường tráng lệ."
+  },
+  "quito_guapulo": {
+    "title": "Đức Mẹ Guápulo",
+    "location": "Quito",
+    "country": "Ecuador",
+    "description": "Trong cuộc rước long trọng Đức Mẹ Guadalupe, Nữ Vương Thiên Đàng hiện ra rõ ràng với Đức Giám mục Quito, người đã được chữa khỏi bệnh nặng ngay lập tức."
+  },
+  "poponguine": {
+    "title": "Đức Mẹ Poponguine",
+    "location": "Poponguine",
+    "country": "Sénégal",
+    "description": "Một pháp sư địa phương đã chứng kiến ​​tượng Đức Mẹ rơi từ kinh nhật ký của một nhà truyền giáo trẻ người Pháp xuống cát. Nhận ra cô chính là người phụ nữ rạng ngời mà anh đã gặp trên cánh đồng ngày hôm trước, anh và cả làng vui vẻ cải sang đạo Thiên Chúa. Đền thờ quốc gia lớn của Sénégal."
+  },
+  "sumeg_sorrows": {
+    "title": "Đức Mẹ Sầu Bi",
+    "location": "Sumeg",
+    "country": "Hungary",
+    "description": "Sophia Feilheim, mắc một căn bệnh nan y ở Vienna, đã nhìn thấy Pietà trong giấc mơ và nói chuyện với cô. Cô đã đến Hungary và tìm thấy bức tượng chính xác ở Sümeg. Khi chạm vào nó, cô ấy đã được chữa khỏi ngay lập tức."
+  },
+  "maserada_vittorie": {
+    "title": "Madonna delle Vittorie",
+    "location": "Maserada sul Piave",
+    "country": "Ý",
+    "description": "Vào ngày 9 tháng 7 năm 1722, những cuộc biểu hiện kỳ ​​diệu đã dẫn đến việc tôn kính Đức Mẹ Chiến Thắng dọc theo sông Piave ở Veneto."
+  },
+  "sinj_croatia": {
+    "title": "Đức Mẹ Sinj",
+    "location": "Sinj",
+    "country": "Croatia",
+    "description": "Vào ngày 14 tháng 8 năm 1715, khi 70.000 quân Ottoman bao vây Sinj trên đường hành quân tới Vienna, người dân thị trấn đã cầu nguyện trước biểu tượng kỳ diệu. Vào ngày lễ Đức Mẹ Lên Trời, hình bóng Đức Maria xuất hiện trên bầu trời khiến quân xâm lược phải bỏ chạy. Đền thờ quốc gia lớn của Croatia."
+  },
+  "lescure_paille": {
+    "title": "Đức Mẹ Thăm Viếng",
+    "location": "Lescure, Cantal",
+    "country": "Pháp",
+    "description": "Vào ngày 2 tháng 7 năm 1717, Mary hiện ra ba lần với cậu bé chăn cừu 13 tuổi Jean Paillé, hướng dẫn cậu khai quật một bức tượng ẩn giấu dưới lòng đất. Giám mục của Saint-Flour đã chính thức ủy quyền cho khu bảo tồn sau khi điều tra kỹ lưỡng về mặt giáo luật."
+  },
+  "altenhohenau_weigl": {
+    "title": "Đức Mẹ gửi Columba Weigl",
+    "location": "Altenhohenau, Bavaria",
+    "country": "Đức",
+    "description": "Nữ tu viện trưởng dòng Đaminh Columba Weigl đã được nhìn thấy Đức Maria và Chúa Giêsu một cách nhất quán, hầu như hàng ngày trong thời thơ ấu, bà đã nhận được các dấu thánh vào ngày 19 tháng 8 năm 1731."
+  },
+  "foret_montfort": {
+    "title": "Đức Mẹ đến Thánh Louis de Montfort",
+    "location": "Forêt de la Madeleine, Poitiers",
+    "country": "Pháp",
+    "description": "Thánh Louis Marie Grignion de Montfort, vị tông đồ ngoại thường của phong trào Tận hiến hoàn toàn cho Chúa Giêsu qua Đức Maria, thường xuyên được đồng hành trong các chuyến hành trình truyền giáo gian khổ khắp nước Pháp bởi một ‘Bà mặc áo trắng’ rạng ngời, được chứng kiến ​​bởi một số tín hữu."
+  },
+  "valverde_1711": {
+    "title": "Đức Mẹ Valverde",
+    "location": "Rezzato, Brescia",
+    "country": "Ý",
+    "description": "Vào ngày 1 tháng 10 năm 1711, trong một trận dịch hạch tàn khốc trên gia súc, Đức Mẹ hiện ra gần ao thánh với Paolo Ogna (8) và Francesco Pellizzari (11) trong khi đang thu thập hạt dẻ, hứa hẹn chấm dứt ngay trận dịch."
+  },
+  "pellestrina_venice": {
+    "title": "Đức Mẹ Hiện Ra",
+    "location": "Pellestrina, Venice",
+    "country": "Ý",
+    "description": "Vào ngày 4 tháng 8 năm 1716, Natalino Scarpa, 14 tuổi, nhìn thấy một phụ nữ uy nghi trong bộ váy màu xanh đầy sao bên ngoài nhà thờ đóng cửa: 'Hãy đến đây, con trai... hãy bảo mục sư cử hành Thánh lễ cho các linh hồn trong Luyện ngục nếu chúng ta muốn chiến thắng trong cuộc chiến.' Cô nhẹ nhàng chạm vào cổ tay anh để xác nhận điều kỳ diệu."
+  },
+  "mercatello_giuliani": {
+    "title": "Đức Mẹ đến Thánh Veronica Giuliani",
+    "location": "Mercatello sul Metauro",
+    "country": "Ý",
+    "description": "Thánh Veronica Giuliani, nhà thần bí và thánh tích ngoại thường của dòng Capuchin, đã trải qua những mối liên lạc sâu sắc liên tục với Đức Maria và Chúa Giêsu trong suốt cuộc đời tu viện của ngài."
+  },
+  "ovada_passion": {
+    "title": "Đức Mẹ Thương Khó",
+    "location": "Ovada / Castellazzo Bormida",
+    "country": "Ý",
+    "description": "Thánh Phaolô Thánh Giá, được Đức Maria cứu khỏi chết đuối khi còn trẻ, đã nhận được một thị kiến ​​hoành tráng về Đức Mẹ trong bộ đồ tang màu đen với cây thánh giá màu trắng trên ngực. Mẹ hướng dẫn ngài thành lập Dòng Thương Khó nổi tiếng thế giới."
+  },
+  "peterwardein_snow": {
+    "title": "Đức Mẹ Tuyết",
+    "location": "Peterwardein / Novi Buồn",
+    "country": "Serbia / Slovakia",
+    "description": "Đức Maria đã mở rộng tấm áo bảo vệ của mình trên lực lượng Kitô giáo của Hoàng tử Eugene xứ Savoy trong trận chiến quyết định chống lại quyền lực của Ottoman vào ngày 5 tháng 8 năm 1716. Đức Giáo hoàng Clement XI đã thiết lập lễ phổ quát Kinh Mân Côi để tỏ lòng biết ơn vĩnh cửu."
+  },
+  "persquen_morbihan": {
+    "title": "Đức Mẹ Persquen",
+    "location": "Persquen, Morbihan",
+    "country": "Pháp",
+    "description": "Sau những hiện tượng kỳ diệu vào năm 1722, một nhà nguyện lớn đã được dựng lên, nơi hàng trăm tín đồ tụ tập vào ngày 1 tháng 8 hàng năm để thực hiện lễ xá tội truyền thống Breton và lễ rước long trọng."
+  },
+  "rubiana_sorrows": {
+    "title": "Đức Mẹ Sầu Bi / Đức Mẹ Hạ Hạ",
+    "location": "Rubiana / Val della Torre",
+    "country": "Ý",
+    "description": "Vào ngày 18 tháng 8 năm 1713, Lorenzo Nicol bị gãy chân trên sườn núi cao và được chữa khỏi ngay lập tức sau khi khấn một cột tháp. Quên lời thề của mình, đúng một năm sau, ông lại vi phạm lời thề đó vào ngày 20 tháng 8 năm 1714. Sám hối, ông được Đức Maria chữa khỏi bệnh lần nữa và dựng lên một thánh đường lớn."
+  },
+  "solovetsky_golgotha": {
+    "title": "Đức Mẹ Trên Núi Golgotha ​​",
+    "location": "Đảo Anzersky, Solovki",
+    "country": "Nga",
+    "description": "Vào ngày 18 tháng 6 năm 1712, Mary hiện ra với tu sĩ Job (Lova) tại tu viện Solovetsky: 'Ngọn núi này sẽ được đặt tên là Golgotha... một nơi đau khổ khôn tả.' Đúng hai thế kỷ sau, hòn đảo trở thành nơi có trại tù Gulag bi thảm."
+  },
+  "bischwind_mittnacht": {
+    "title": "Đức Maria Phù Hộ Các Giáo Hữu",
+    "location": "Bischwind, Bavaria",
+    "country": "Đức",
+    "description": "Người lính George Mittnacht, bị quân Ottoman bắt và bị kết án dầu sôi, đã nhiệt thành cầu nguyện với Đức Maria, thề sẽ lập một nhà nguyện nếu được nhìn thấy quê hương lần nữa. Sáng hôm sau, anh thức dậy một cách kỳ diệu và được đưa đến một bãi cỏ ở Franconia. Ông đã xây dựng nhà nguyện bằng chính đôi tay của mình."
+  },
+  "aparecida_brazil": {
+    "title": "Nossa Senhora Aparecida",
+    "location": "Aparecida, São Paulo",
+    "country": "Brazil",
+    "description": "Vào tháng 10 năm 1717, sau khi cầu nguyện với Đức Maria trong một đêm không có kết quả trên sông Paraíba, ba ngư dân đã đánh lưới được thi thể đầu tiên, sau đó là phần đầu của một bức tượng Đức Mẹ Vô Nhiễm Nguyên Tội bằng đất nung tinh xảo. Họ lại thả lưới, cá tràn ngập. Bổn mạng chính của Brazil, được tôn thờ tại vương cung thánh đường Công giáo lớn thứ hai trên Trái đất."
+  },
+  "gimigliano_porto": {
+    "title": "Madonna di Porto",
+    "location": "Gimigliano, Calabria",
+    "country": "Ý",
+    "description": "Vào tháng 10 năm 1753, Mary hiện ra trong giấc mơ với tên trộm Pietro Gatto đang ăn năn, xin một ngôi đền bên đường. Vào năm 1807, một vị tướng người Pháp đã cướp phá biểu tượng kỳ diệu đã trả lại nó trong một cuộc rước long trọng sau khi nó tỏa ra ánh sáng chói mắt trong lều của ông ta. Được đăng quang bởi Thánh Giáo Hoàng Gioan Phaolô II vào năm 1984."
+  },
+  "chaguaya_bolivia": {
+    "title": "Virgen de Chaguaya",
+    "location": "Chaguaya, Tarija",
+    "country": "Bôlivia",
+    "description": "Trong một đợt hạn hán nghiêm trọng vào năm 1750, hai người chăn cừu đã nhìn thấy những tia sáng nhiều màu phát ra từ cây Molle, để lộ ra hình ảnh xinh đẹp của Đức Maria. Khi được mang về nhà, hình ảnh đó đã quay trở lại cây một cách kỳ diệu, khiến nhà thờ lớn phải chú ý."
+  },
+  "pochayiv_1765": {
+    "title": "Đức Mẹ Pochayiv",
+    "location": "Pochayiv Lavra",
+    "country": "Ukraina",
+    "description": "Sự hiện ra uy nghiêm của Đức Maria trong ánh sáng rực rỡ đã cứu tu viện Lavra lịch sử khỏi sự tàn phá của quân đội Ottoman. Năm 1772, biểu tượng phép lạ được đăng quang trước 100.000 tín hữu."
+  },
+  "neunkirchen_locatelli": {
+    "title": "Đức Mẹ gửi Joseph Locatelli",
+    "location": "Neunkirchen",
+    "country": "Áo",
+    "description": "Đức Thánh Trinh Nữ hiện ra với Joseph Locatelli, người bị bệnh cổ chướng nặng, và đã phục hồi sức khỏe hoàn hảo cho ông một cách kỳ diệu."
+  },
+  "sarov_seraphim": {
+    "title": "Đức Mẹ đến Thánh Seraphim",
+    "location": "Sarov",
+    "country": "Nga",
+    "description": "Thánh Seraphim thành Sarov, một trong những tu sĩ được kính trọng nhất trong lịch sử Chính thống giáo Nga, đã nhận được nhiều lần hiện ra vinh quang của Mẹ Thiên Chúa trong suốt 15 năm sống ẩn dật nơi hoang địa."
+  },
+  "bois_de_la_roche": {
+    "title": "Đức Mẹ gửi Madeleine Morice",
+    "location": "Néant-sur-Yvel, Brittany",
+    "country": "Pháp",
+    "description": "Mary xuất hiện trong bộ áo choàng màu xanh đầy sao trước Madeleine-Marie Morice, 11 tuổi, giải thích chiều sâu thần bí sâu sắc của Kinh Lạy Cha (“Vương quốc của Ngài hãy đến”) và yêu cầu thành lập trại trẻ mồ côi House of Providence."
+  },
+  "valley_forge_washington": {
+    "title": "Tầm nhìn của George Washington",
+    "location": "Thung lũng Forge, Pennsylvania",
+    "country": "Hoa Kỳ",
+    "description": "Theo các ghi chép lịch sử xuất bản năm 1859, Tướng George Washington đã chứng kiến ​​một người phụ nữ bí ẩn ở Valley Forge, người đã tiết lộ ba mối nguy hiểm lớn mà Cộng hòa Mỹ sẽ phải đối mặt, ông kết luận: 'Trong cuộc xung đột lớn nhất này, cả thế giới thống nhất sẽ không thể thắng được bà ta... Liên minh sẽ tồn tại bao lâu nữa.'"
+  },
+  "bocca_pignone_ghianda": {
+    "title": "Madonna della Ghianda",
+    "location": "Bocca Pignone di Ripalta, La Spezia",
+    "country": "Ý",
+    "description": "Vào năm 1778 và 1779, Đức Maria hiện ra trên cành cây hạt dẻ gần tàn tích nhà thờ từ thế kỷ 12 với ba trẻ chăn cừu, kêu gọi họ ăn năn và suy ngẫm sâu sắc về Kinh thánh."
+  },
+  "las_lajas_colombia": {
+    "title": "Đức Mẹ Las Lajas",
+    "location": "Hẻm núi Guáitara, Nariño",
+    "country": "Colombia",
+    "description": "Trong một cơn bão ở hẻm núi, Maria Mueses bản địa và cô con gái câm điếc Rosa của cô đã nhìn thấy một bức ảnh tuyệt đẹp Đức Mẹ cầm chuỗi Mân Côi với Thánh Đa Minh và Thánh Phanxicô được in trực tiếp vào vách đá phiến. Rosa ngay lập tức có được bài phát biểu của mình. Kỳ quan kiến ​​trúc Gothic nổi tiếng thế giới được xây dựng trên hẻm núi."
+  },
+  "montagnaga_pine": {
+    "title": "Madonna di Montagnaga / Piné",
+    "location": "Montagnaga di Piné, Trento",
+    "country": "Ý",
+    "description": "Vào ngày 14 tháng 5 năm 1729, Đức Maria hiện ra dưới ánh sáng vàng với người chăn bò Domenica Targa, 30 tuổi khi đàn gia súc của bà dậm chân: ‘Ta đã chọn nơi này làm ngai tòa của Lòng Thương Xót của Ta. Những ai cầu nguyện với đức tin sẽ không trở về tay không.' Được chính thức phê chuẩn bởi Giám mục vào năm 1730."
+  },
+  "dulmen_emmerich": {
+    "title": "Đức Mẹ gửi Bl. Anne Emmerich",
+    "location": "Dülmen, Westphalia",
+    "country": "Đức",
+    "description": "Chân phước Anne Catherine Emmerich, một nhà thần bí và kỳ thị dòng Augustinô, đã nhận được những thị kiến ​​chi tiết và hoành tráng về cuộc đời trần thế của Đức Maria và Cuộc Khổ nạn đau buồn của Chúa Giêsu, được nhà thơ Clemens Brentano ghi lại. Những thị kiến ​​của cô làm phong phú sâu sắc kiến ​​thức của chúng ta về lịch sử cứu độ."
+  },
+  "bordeaux_chaminade": {
+    "title": "Đức Mẹ gửi Bl. Chaminade",
+    "location": "Bordeaux",
+    "country": "Pháp",
+    "description": "Chân phước Guillaume-Joseph Chaminade, từ chối tuyên thệ Cách mạng Pháp, đã nhiều lần được che chắn khỏi việc phát hiện ra binh lính bởi sự hiện ra của Đức Maria. Năm 1817, ông thành lập Dòng Thánh Mẫu nổi tiếng thế giới."
+  },
+  "rome_divino_amore": {
+    "title": "Madonna del Divino Amore",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Một người lữ hành bị lạc trên đường đến St. Peter's đã bị một đàn chó hoang dại tấn công ở Castel di Leva. Anh ta kêu lên trước bức bích họa trên tháp của Đức Trinh nữ và Hài nhi, và những con chó ngay lập tức giải tán. Được Giáo hoàng Pius XII công nhận đã cứu Rome khỏi sự hủy diệt trong Thế chiến thứ hai."
+  },
+  "france_lenormand": {
+    "title": "Đức Mẹ gửi Marie Lenormand",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Những cuộc biểu hiện của Thánh Mẫu được ghi lại cho Marie Lenormand ở Pháp vào năm 1769."
+  },
+  "mariabesnyo_hungary": {
+    "title": "Đức Mẹ Máriabesnyő",
+    "location": "Gödöllő",
+    "country": "Hungary",
+    "description": "Vào ngày 19 tháng 4 năm 1759, thợ nề John Fiedler mơ thấy Mary nói với anh rằng anh sẽ phát hiện ra một kho báu trong đống đổ nát của nhà thờ. Ngày hôm sau, ông khai quật được một bức tượng Đức Trinh Nữ bằng ngà voi tinh xảo có từ thế kỷ 14. Được Đức Hồng Y Migazzi chính thức xác nhận là một trong những đền thờ quốc gia vĩ đại nhất của Hungary."
+  },
+  "lescouet-1820": {
+    "title": "Đức Mẹ Lescouët",
+    "location": "Lescouët-Gouarec",
+    "country": "Pháp",
+    "description": "Người chăn cừu mười bảy tuổi Jean Poulli nghe thấy một giọng nói và nhìn thấy Đức Trinh Nữ Maria, người đã yêu cầu xây dựng một nhà nguyện. Cha xứ đã điều tra, nghe tiếng hát thiên đường và phát hiện ra một dòng suối kỳ diệu. Được Đức Giám mục De La Romagère phê duyệt vào năm 1829."
+  },
+  "sallent-1829": {
+    "title": "Đức Mẹ kính Thánh Anthony Mary Claret",
+    "location": "Tuyệt vời",
+    "country": "Tây Ban Nha",
+    "description": "Thánh Anthony Mary Claret đã nhiều lần được Đức Maria hiện ra và được chữa lành một cách kỳ diệu khỏi căn bệnh hiểm nghèo. Ông tiếp tục thành lập Dòng Thừa Sai Trái Tim Vô Nhiễm Nguyên Tội Mẹ Maria (Claretians) nổi tiếng thế giới."
+  },
+  "doroszlo_hungary": {
+    "title": "Đức Mẹ Doroszló",
+    "location": "Doroszló, Vojvodina",
+    "country": "Serbia / Hungary lịch sử",
+    "description": "Janos Zavloczki, bị mù trong một vụ tai nạn, được Mary hướng dẫn rửa mắt tại suối thiêng. Anh ta ngay lập tức lấy lại được thị lực, thành lập một trong những vương cung thánh đường hành hương nổi bật nhất ở lưu vực sông Danube."
+  },
+  "rome-canori-mora-1807": {
+    "title": "Đức Mẹ kính Chân phước Elizabeth Canori Mora",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ cùng hài nhi Giêsu hiện ra với Chân phước Elizabeth Canori Mora ở Rôma. Vào lễ Giáng Sinh năm 1816, Đức Mẹ hiện ra vô cùng buồn bã, cảnh báo về tình trạng vô đạo và bội đạo trầm trọng. Các bài viết của cô đã được Tòa thánh kiểm tra nghiêm ngặt và hoàn toàn không có lỗi về mặt giáo lý."
+  },
+  "leipzig-lichen-1813": {
+    "title": "Đức Mẹ Địa Y (Trận Leipzig)",
+    "location": "Leipzig / Địa y",
+    "country": "Ba Lan",
+    "description": "Trong trận Leipzig, người lính Ba Lan bị thương Tomasz Klossowski đã cầu nguyện với Đức Maria. Cô xuất hiện trong chiếc áo choàng vàng với vương miện và đại bàng trắng, hứa hẹn sự chữa lành cho anh và yêu cầu anh tìm một bức chân dung của cô. Anh trở lại Lichen và treo bức chân dung thần kỳ trong một ngôi nhà nguyện trong rừng."
+  },
+  "grushev-1806": {
+    "title": "Đức Mẹ Grushev",
+    "location": "Grushev",
+    "country": "Ukraina",
+    "description": "Mary xuất hiện ở Grushev trong một hoàn cảnh bất thường, được nhiều nhân chứng xác nhận. Một ngôi đền tưởng niệm tuyệt đẹp đã được xây dựng tại thánh địa vào năm 1856."
+  },
+  "tinos-1821": {
+    "title": "Panagia Megalochare",
+    "location": "Đảo Tinos",
+    "country": "Hy Lạp",
+    "description": "Đức Trinh Nữ Maria hiện ra trong ánh sáng thiêng liêng mãnh liệt với Thánh Pelagia và anh trai của bà trong một giấc mơ, hướng dẫn các cuộc khai quật khai quật được biểu tượng kỳ diệu của Megalochare (Đầy ân sủng). Tinos trở thành đền thờ Đức Mẹ thiêng liêng quốc gia của Hy Lạp."
+  },
+  "matemblewo_gdansk": {
+    "title": "Đức Mẹ Matemblewo",
+    "location": "Matemblewo, Gdańsk",
+    "country": "Ba Lan",
+    "description": "Trong một mùa đông lạnh giá năm 1790, Đức Maria hiện ra trong rừng với Rosina Puechner, 18 tuổi, khi cô đi qua tuyết, mang đến một thông điệp sâu sắc về hòa bình, sám hối và cầu nguyện. Khu bảo tồn rừng được tôn kính sâu sắc ở Gdańsk."
+  },
+  "vallecorsa-1821": {
+    "title": "Đức Mẹ kính Thánh Maria De Mattias",
+    "location": "Vallecorsa",
+    "country": "Ý",
+    "description": "Đức Mẹ hiện ra với cô bé Maria đang nhìn cô từ trong gương. Đức Mẹ đã dạy cô đọc một cách kỳ diệu để cô có thể nghiên cứu các sách thiêng liêng, hướng dẫn cô hiến dâng cuộc đời mình cho Thiên Chúa và thành lập Dòng Nữ tu tôn thờ Máu Chúa Kitô."
+  },
+  "la_vang_vietnam": {
+    "title": "Đức Mẹ La Vang",
+    "location": "Quảng Trị, Huế",
+    "country": "Việt Nam",
+    "description": "Khi các Kitô hữu Việt Nam bị đàn áp phải đối mặt với nạn đói và thú dữ trong rừng, Đức Mẹ hiện ra trong ánh sáng trắng tinh khiết bế Hài Nhi Giêsu cùng với hai thiên thần. Cô chỉ cho họ cách đun lá làm thuốc và hứa bảo vệ. Đền Thánh Đức Mẹ Quốc Gia Việt Nam."
+  },
+  "guadalajara-1831": {
+    "title": "Đức Mẹ gửi chị Patrocinio",
+    "location": "Guadalajara",
+    "country": "Tây Ban Nha",
+    "description": "Đức Trinh Nữ Maria hiện ra với Dolores Quiroga, người sáng lập ba mươi tu viện dòng Phanxicô trên khắp Tây Ban Nha, người mang dấu tích thánh. Thánh Anthony Mary Claret là linh hướng của cô."
+  },
+  "mimbaste-1830": {
+    "title": "Đức Mẹ gửi Marie Lataste",
+    "location": "Mimbaste",
+    "country": "Pháp",
+    "description": "Nhà huyền môn Marie Lataste đã nhận được nhiều lần hiện ra của Đức Trinh Nữ Maria và Thánh Tâm, truyền cảm hứng cho nhân đức anh hùng của bà khi còn là một nữ tu giáo dân trong Tu viện Thánh Tâm Rennes."
+  },
+  "laurignano-1831": {
+    "title": "Đức Mẹ Dây Xích (Madonna della Catena)",
+    "location": "Laurignano",
+    "country": "Ý",
+    "description": "Fra Benedetto Falcone đến ẩn thất đơn độc Laurignano. Sau nhiều lần Đức Trinh Nữ Maria hiện ra, ông đã khôi phục lòng sùng kính Đức Mẹ Madonna della Catena và xây dựng một thánh đường xinh đẹp hiện được các nhà Truyền giáo Dòng Thương Khó chăm sóc."
+  },
+  "rue-du-bac-1830": {
+    "title": "Huân chương Đức Mẹ Thần Kỳ",
+    "location": "Rue du Bac, Paris",
+    "country": "Pháp",
+    "description": "Trong nhà nguyện của Nữ tử Bác ái, Đức Maria hiện ra với tập sinh Catherine Labouré đang đứng trên một quả địa cầu với những tia sáng phát ra từ đôi bàn tay đeo đá quý của ngài. Cô đã ủy thác Huân chương Phép lạ, hứa hẹn những ân sủng to lớn cho tất cả những ai tin tưởng đeo nó."
+  },
+  "villanova-d-asti-1803": {
+    "title": "Madonna của Bulwarks",
+    "location": "Villanova d'Asti",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria hiện ra với Maria Baj, 18 tuổi, khi đang chăn gia súc và nói rằng 'Mẹ của Con Thiên Chúa đã quyết định được tôn vinh ở nơi này.' Sau đó có những báo cáo về việc chữa lành bệnh, đặc biệt là khỏi bệnh sốt rét. Suối thung lũng kỳ diệu được mệnh danh là 'Nước của Trinh nữ'."
+  },
+  "rome-del-bufalo-1837": {
+    "title": "Đức Mẹ kính viếng Thánh Gaspar del Bufalo",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Tông đồ của Máu Châu Báu Thánh Gaspar del Bufalo đã trải nghiệm nguồn cảm hứng sâu sắc và sự hướng dẫn thần bí của Thánh Mẫu trong suốt chuyến hành trình truyền giáo gian khổ khắp nước Ý, thành lập Dòng Truyền giáo Máu Châu Báu."
+  },
+  "paris-victories-1836": {
+    "title": "Đức Mẹ Chiến Thắng",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Cha. Desgenettes, tuyệt vọng vì sứ vụ không có kết quả của mình tại Đức Mẹ Chiến Thắng ở Paris, đã nhận được lời hướng dẫn nội tâm sâu sắc từ Đức Trinh Nữ Maria hướng dẫn ông thánh hiến giáo xứ của mình cho Trái Tim Vô Nhiễm Nguyên Tội của Mẹ. Kết quả là Hội Huynh đệ đoàn đã khơi dậy những cuộc hoán cải kỳ diệu trên toàn thế giới."
+  },
+  "valmala-1834": {
+    "title": "Mẹ Thương Xót (Đức Mẹ Valmala)",
+    "location": "Valmala, Piedmont",
+    "country": "Ý",
+    "description": "Năm mục đồng trẻ nhìn thấy một Bà xinh đẹp đứng trên phiến đá, mặc một chiếc váy dài màu đỏ với khăn che mặt màu xanh có cài khuy vàng. Cô ấy xuất hiện trong nước mắt với bàn tay rộng mở trong hơn 50 ngày. Chính thức đăng quang bởi Giám mục Saluzzo."
+  },
+  "trinitapoli-1835": {
+    "title": "Đức Mẹ đến Giuseppe Maria Leone",
+    "location": "Trinitapoli, Apulia",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria đã cứu cậu bé Joseph Leone 6 tuổi một cách kỳ diệu khi cậu rơi xuống hố sâu, truyền cảm hứng cho cậu sống đời sùng đạo. Sau này trong chủng viện, Đức Maria hiện ra với ngài và nói: 'Con thuộc về ta.'"
+  },
+  "casnigo-1839": {
+    "title": "Đức Mẹ Erbia",
+    "location": "Casnigo",
+    "country": "Ý",
+    "description": "Trong một cơn bão dữ dội, một cậu bé đang tìm nơi trú ẩn đã được Đức Mẹ đón vào một nhà kho có khóa an toàn, nơi bà cung cấp cho cậu bánh mì và một chiếc giường ấm áp. Được điều tra và chính thức phê duyệt vào năm 1873 bởi Giám mục Bergamo."
+  },
+  "siena-taigi-1836": {
+    "title": "Đức Mẹ kính Chân phước Anna Maria Taigi",
+    "location": "Siena / Rome",
+    "country": "Ý",
+    "description": "Chân phước Anna Maria Taigi, một người mẹ tận tụy và là nhà thần bí ở Rome và Siena, đã trải nghiệm những cuộc hiện ra siêu nhiên và nhìn thấy một quả cầu mặt trời kỳ diệu, trong đó bà thấy trước những sự kiện lịch sử lớn của thế giới."
+  },
+  "bous-1833": {
+    "title": "Đức Mẹ Maria Claire Dominic",
+    "location": "Bous-Septfontaines",
+    "country": "Pháp",
+    "description": "Mary hiện ra với nhà huyền bí Anna Moes trong thời thơ ấu của cô ở Bous. Mặc dù phải chịu đựng nhiều năm hoài nghi và vu khống với sự khiêm tốn sâu sắc, tòa án giám mục đã hoàn toàn chứng minh được những khải tượng siêu nhiên của bà vào năm 1884."
+  },
+  "ars-vianney-1840": {
+    "title": "Đức Mẹ kính Thánh Gioan Vianney",
+    "location": "Ars-sur-Formans",
+    "country": "Pháp",
+    "description": "thưa bà. Durie bước vào phòng của Thánh Gioan Vianney và chứng kiến ​​Đức Trinh Nữ Maria mặc áo trắng rực rỡ với những bông hồng vàng và đội vương miện bằng những ngôi sao sáng, nhẹ nhàng trò chuyện với Cha Sở thánh thiện về những ca chữa lành kỳ diệu."
+  },
+  "versailles-green-scapular-1840": {
+    "title": "Đức Mẹ Áo Đức Bà Xanh",
+    "location": "Blangy / Versailles",
+    "country": "Pháp",
+    "description": "Đức Maria hiện ra với chị Justine Bisqueyburu thuộc dòng Vincentian, ôm Trái Tim Vô Nhiễm Nguyên Tội bị gươm đâm và rực cháy ánh sáng thần linh. Cô giao cho cô chiếc Áo choàng xanh, hứa hẹn những sự chữa lành thể xác kỳ diệu và sự hoán cải trên giường bệnh cho tất cả những ai đeo nó."
+  },
+  "celles-1842": {
+    "title": "Đức Mẹ Maria-Stanislas Deprez",
+    "location": "Tế bào",
+    "country": "Bỉ",
+    "description": "Đức Trinh Nữ Maria đã hiện ra với Mẹ Maria-Stanislas của Visitandine bên trong 'Đại sảnh dành cho người nghèo', truyền đạt những giáo lý thiêng liêng cao cả. Phòng hiện ra sau đó được chuyển thành nhà nguyện tu viện thánh."
+  },
+  "graz-lorber-1840": {
+    "title": "Đức Mẹ gửi Jakob Lorber",
+    "location": "Graz",
+    "country": "Áo",
+    "description": "Nhà văn thần bí Jakob Lorber đã trải nghiệm những địa điểm nội tâm sâu sắc và những tầm nhìn thần bí về cuộc sống trên thiên đàng và Đức Trinh Nữ Maria."
+  },
+  "montana-little-paul-1841": {
+    "title": "Đức Mẹ Cầu Nguyện (Sứ mệnh của Thánh Mary)",
+    "location": "Thung lũng Bitterroot, Montana",
+    "country": "Hoa Kỳ",
+    "description": "Một cậu bé mồ côi Salish 11 tuổi nhìn thấy Đức Trinh Nữ Maria bay lượn trên trái đất trong bộ quần áo trắng như tuyết với một ngôi sao trên đầu và những tia sáng chiếu từ trái tim cô. Cha. Pierre De Smet đã nghiên cứu và dựng lên một bức tượng dành riêng cho Đức Mẹ Cầu Nguyện."
+  },
+  "capriana-1833": {
+    "title": "Đức Mẹ gửi Domenica Lazzeri",
+    "location": "Capriana, Trentino",
+    "country": "Ý",
+    "description": "Hình ảnh uy nghiêm của Đức Trinh Nữ hiện ra với cô gái 18 tuổi Domenica Lazzeri khi đang làm việc trên cánh đồng. Sau đó, bà đã nhận được các dấu thánh và chịu đựng đau khổ đền tội với lòng kiên nhẫn vô cùng cho đến khi qua đời vào năm 1848."
+  },
+  "nantes-ardouin-1840": {
+    "title": "Đức Mẹ Maria Ardouin",
+    "location": "Nantes",
+    "country": "Pháp",
+    "description": "Marie Ardouin phải chịu đựng nỗi đau tột cùng vì căn bệnh ung thư giai đoạn cuối trong 5 năm. Khi những giây phút cuối cùng của cô dường như đã gần kề, Đức Trinh Nữ Maria hiện ra với cô trong ánh sáng rực rỡ và ngay lập tức chữa lành cô hoàn toàn."
+  },
+  "rome-ratisbonne-1842": {
+    "title": "Đức Mẹ Zion (Madonna Phép Lạ)",
+    "location": "Roma",
+    "country": "Ý",
+    "description": "Chủ ngân hàng Do Thái chống Công giáo Marie-Alphonse Ratisbonne đứng bên trong Sant'Andrea delle Fratte đeo Huân chương Kỳ diệu như một bài kiểm tra. Đức Trinh Nữ hiện ra với ông trong vẻ uy nghiêm rạng ngời; ông ngay lập tức cải đạo, trở thành linh mục và thành lập Dòng Đức Mẹ Zion."
+  },
+  "la-chaudiere-1848": {
+    "title": "Đức Mẹ đến Véronique và Augustin Eymieux",
+    "location": "La Chaudière",
+    "country": "Pháp",
+    "description": "Đức Mẹ hiện ra với các mục đồng trẻ Véronique và Augustin Eymieux trong lốt chính xác của Đức Mẹ La Salette, lặp lại những lời cảnh báo khẩn cấp của người mẹ về sự hoán cải và sự phán xét của Thiên Chúa."
+  },
+  "obermauerbach-1848": {
+    "title": "Đức Mẹ Obermauerbach",
+    "location": "Obermauerbach, Bavaria",
+    "country": "Đức",
+    "description": "Đức Maria hiện ra trên đồng cỏ xanh tươi trong trang phục màu hồng với mạng che mặt màu trắng và vương miện vàng, buồn bã khóc lóc vì thiếu niềm tin vào thế giới. Sau đó, cô thị hiện trong vẻ huy hoàng của cõi trời trước đám đông lên tới bốn mươi tám nhân chứng."
+  },
+  "maria-dolina-1849": {
+    "title": "Đức Mẹ Vô Nhiễm Nguyên Tội (Madonna del Bosco)",
+    "location": "Maria Dolina, Poggersdorf",
+    "country": "Áo",
+    "description": "Đức Trinh Nữ Maria hiện ra với tư cách là Đức Mẹ Vô Nhiễm Nguyên Tội trên một đồng cỏ trong rừng với ba cô chăn cừu trẻ, chuẩn bị cho các tín hữu chuẩn bị cho việc tuyên bố tín điều long trọng của giáo hoàng vào năm 1854. Một nhà nguyện bằng gỗ và bức tranh kỳ diệu đã được dựng lên."
+  },
+  "chambery-1849": {
+    "title": "Đức Mẹ gửi Sr. Marie-Marthe Chambon",
+    "location": "Phòng trưng bày",
+    "country": "Pháp",
+    "description": "Nữ tu Visitandine, Sr. Marie-Marthe Chambon đã nhận được những thị kiến ​​sâu sắc về Chúa Giêsu và Đức Trinh Nữ Maria, khởi xướng việc sùng kính các Vết Thương Thánh của Chúa Kitô."
+  },
+  "la-salette-1846": {
+    "title": "Đức Mẹ La Salette (Người hòa giải tội nhân)",
+    "location": "La Salette, dãy Alps thuộc Pháp",
+    "country": "Pháp",
+    "description": "Trên dãy núi Alps của Pháp, Đức Trinh Nữ hiện ra trong ánh sáng rực rỡ và khóc lóc thảm thiết trước hai mục đồng trẻ, Maximin và Mélanie. Đeo cây thánh giá với búa và kìm, cô cảnh báo nạn đói và kêu gọi chân thành sám hối, cầu nguyện và tuân giữ Ngày của Chúa."
+  },
+  "tours-holy-face-1844": {
+    "title": "Đức Mẹ gửi Chị Marie Thánh Phêrô",
+    "location": "Chuyến tham quan",
+    "country": "Pháp",
+    "description": "Nữ tu Carmelite, Chị Marie của Thánh Phêrô đã trải nghiệm những thị kiến ​​sâu sắc về Chúa Giêsu và Mẹ Maria, nhận được Đạo luật Mũi tên Vàng để đền tạ Thánh Nhan Chúa Giêsu để chuộc tội báng bổ và phạm thánh."
+  },
+  "montousse-1848": {
+    "title": "Đức Mẹ Nouillan",
+    "location": "Montoussé, Hautes-Pyrénées",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria hiện ra gần tàn tích nhà thờ cổ Nouillan với ba trẻ nhỏ, sau đó là những biểu hiện siêu nhiên lặp đi lặp lại thu hút rất đông người hành hương sùng đạo."
+  },
+  "brette-1848": {
+    "title": "Đức Mẹ Brette",
+    "location": "Brette",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria hiện ra ở Brette đưa ra những lời kêu gọi khẩn cấp về việc canh tân tinh thần và hoán cải đạo đức trên khắp nước Pháp trong những biến động cách mạng năm 1848."
+  },
+  "vatican-city-1850": {
+    "title": "Đức Mẹ Phiên tòa Vatican",
+    "location": "Thành phố Vatican",
+    "country": "Thành phố Vatican",
+    "description": "Một phụ nữ theo đạo Tin lành người Pháp hoài nghi tham dự buổi tiếp kiến ​​giáo hoàng ở Vatican đã chứng kiến ​​một chùm ánh sáng rạng rỡ hiện thành hình Đức Trinh Nữ Maria ba lần riêng biệt, khiến bà hoàn toàn chuyển đổi sang đức tin Công giáo."
+  },
+  "akko-1850": {
+    "title": "Đức Mẹ Akko",
+    "location": "Akko (Thánh John xứ Acre)",
+    "country": "Israel",
+    "description": "Habeiche Hassan, người cải đạo theo đạo Cơ đốc và là con trai bị cầm tù của một tiểu vương Lebanon, đã nhìn thấy Đức Trinh Nữ Maria trong một giấc mơ hứa hẹn sự giải thoát kỳ diệu nếu ông dựng lên một ngôi đền đẹp đẽ để tôn vinh bà."
+  },
+  "turin-bosco-1846": {
+    "title": "Đức Maria Phù Hộ Các Giáo Hữu",
+    "location": "Valdocco, Torino",
+    "country": "Ý",
+    "description": "Được hướng dẫn bởi những giấc mơ huyền bí và những thị kiến ​​trực tiếp của Đức Trinh Nữ Maria, Thánh Gioan Bosco đã thành lập Dòng Salêdiêng để giải cứu và giáo dục những thanh thiếu niên đường phố bị bỏ rơi. Ngài đã xây dựng Vương cung thánh đường tráng lệ Đức Mẹ Phù hộ các Giáo hữu ở Turin, quy mọi chiến thắng cho Đức Mẹ."
+  },
+  "lichen-stary-1850": {
+    "title": "Đức Mẹ Địa Y (Mikołaj Sikatka)",
+    "location": "Địa y đầy sao",
+    "country": "Ba Lan",
+    "description": "Mary xuất hiện trong chiếc áo choàng đỏ và áo choàng trắng với chiếc vương miện lộng lẫy trước người chăn cừu khiêm tốn Mikołaj Sikatka trong khu rừng Grąblin. Mẹ kêu gọi cầu nguyện Mân Côi hàng ngày và báo trước một trận dịch tả tàn khốc. Khi bệnh dịch xảy ra đúng như lời báo trước, lời cầu thay kỳ diệu của cô đã chữa lành hàng ngàn người. Ngày nay, Thánh địa Đức Mẹ Licheń là nhà thờ lớn nhất Ba Lan."
+  },
+  "cerreto-1853": {
+    "title": "Đức Mẹ Sầu Bi Cerreto",
+    "location": "Cerreto, Tuscany",
+    "country": "Ý",
+    "description": "Khi đang chăn cừu, Veronica Nucci, 12 tuổi, nhìn thấy một Quý bà đang quỳ mặc váy trắng có hoa đỏ và áo choàng xanh. Khóc vì vô số tội lỗi trên thế giới, Đức Maria xin những lời cầu nguyện đền tạ và xin một nhà nguyện. Một mùa xuân kỳ diệu xuất hiện, tạo ra những sự chữa lành đáng chú ý."
+  },
+  "savogno-guanella-1851": {
+    "title": "Đức Mẹ đến Thánh Luigi Guanella",
+    "location": "Savogno",
+    "country": "Ý",
+    "description": "Vào ngày Rước lễ lần đầu, Luigi Guanella, 9 tuổi, đã nhìn thấy một Đức Mẹ xinh đẹp, người đã tiết lộ cho cậu biết chính xác những gì cậu phải làm để giải cứu và yêu thương người nghèo và người khuyết tật, truyền cảm hứng cho các dòng tu từ thiện trên toàn thế giới của cậu."
+  },
+  "la-pierraz-1854": {
+    "title": "Đức Mẹ đến vịnh Marguerite may mắn",
+    "location": "La Pierraz, Fribourg",
+    "country": "Thụy Sĩ",
+    "description": "Người thợ may khiêm tốn Marguerite Bays bị ung thư ruột giai đoạn cuối. Vào ngày 8 tháng 12 năm 1854, đúng ngày Đức Giáo Hoàng Piô IX công bố tín điều Đức Mẹ Vô Nhiễm Nguyên Tội, Đức Mẹ đã chữa lành bệnh cho bà một cách kỳ diệu và ngay lập tức. Sau đó cô đã nhận được thánh tích."
+  },
+  "buu-chau-1855": {
+    "title": "Đức Mẹ Bửu Châu (Trà Kiệu)",
+    "location": "Bửu Châu, Quảng Nam",
+    "country": "Việt Nam",
+    "description": "Trong những cuộc đàn áp bạo lực của hoàng gia, Đức Mẹ đã xuất hiện trong ánh hào quang rực rỡ trên mái nhà thờ trước 4.000 binh lính đang bao vây. Vô cùng kinh hãi trước sự bảo vệ của Đức Mẹ Thiên Chúa, toàn quân rút lui."
+  },
+  "porzus-1855": {
+    "title": "Đức Mẹ Sesule (Madone de Sesule)",
+    "location": "Porzus, Friuli",
+    "country": "Ý",
+    "description": "Đức Trinh Nữ Maria hiện ra trong một hố sâu tuyệt đẹp trên núi với cô bé Teresa Dush 10 tuổi, nhẹ nhàng trò chuyện bằng phương ngữ địa phương của người Slovenia. Đức Mẹ đã in dấu thánh giá vàng rực rỡ trên bàn tay của trẻ và vẫn còn nhìn thấy được cho đến khi bé qua đời."
+  },
+  "assisi-de-bray-1856": {
+    "title": "Đức Mẹ Nữ Vương Các Thiên Thần",
+    "location": "Assisi",
+    "country": "Ý",
+    "description": "Qua đời vì một căn bệnh hiểm nghèo kéo dài ba mươi năm vào lúc nửa đêm, ông de Bray nghe thấy tiếng Đức Mẹ hướng dẫn ông phát nguyện đi hành hương đến Đức Mẹ Các Thiên Thần ở Assisi. Sau khi phát nguyện, ông được chữa lành hoàn toàn ngay lập tức."
+  },
+  "spoleto-possenti-1856": {
+    "title": "Đức Mẹ kính Thánh Gabriel Possenti",
+    "location": "Spoleto",
+    "country": "Ý",
+    "description": "Một biểu tượng của Đức Trinh Nữ Maria đã sống động một cách kỳ diệu trước mặt sinh viên Dòng Tên Francesco Possenti ở Spoleto và nói rằng 'Francesco, thế giới không dành cho bạn; bạn phải bước vào đời sống tôn giáo.' Anh gia nhập Dòng Passionists, đạt được sự thánh thiện cao cả trước khi qua đời ở tuổi 24."
+  },
+  "torrazza-1857": {
+    "title": "Đức Mẹ Torrazza",
+    "location": "Torrazza",
+    "country": "Ý",
+    "description": "Hai thiếu nữ đã chứng kiến ​​Đức Mẹ hiện ra từ đám mây vinh quang trong áo dài trắng và áo choàng xanh, ôm chặt Hài Nhi Giêsu vào ngực."
+  },
+  "bordeaux-1855": {
+    "title": "Đức Mẹ Núi Cát Minh",
+    "location": "Bordeaux",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria hiện ra trên đám mây trắng với vương miện hoàng gia và vòng tay rộng mở bên trong tu viện Carmelite cổ kính nơi Thánh Simon Stock qua đời, làm cảm động sâu sắc trái tim của tất cả anh em tập hợp."
+  },
+  "orero-1856": {
+    "title": "Đức Mẹ Orero",
+    "location": "Orero, Liguria",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra hai lần với Rosa Carbone, cô gái 20 tuổi, than thở về tình trạng bỏ bê đạo đức và đề nghị nhiệt thành đọc Kinh Lạy Cha và Kinh Kính Mừng Nữ Vương."
+  },
+  "alexandria-baouardy-1858": {
+    "title": "Đức Mẹ kính Thánh Mariam Baouardy",
+    "location": "Alexandria / Ibillin",
+    "country": "Ai Cập",
+    "description": "Cô gái trẻ Mariam Baouardy suýt tử đạo vì không chịu từ bỏ đức tin Công giáo. Bị bỏ mặc cho đến chết với vết chém ở cổ họng trong một con hẻm ở Alexandria, một Quý bà xinh đẹp mặc áo xanh xuất hiện, chữa lành vết thương cho cô một cách kỳ diệu và báo trước số phận Carmelite vinh quang của cô ở Bethlehem."
+  },
+  "andlau-1860": {
+    "title": "Đức Mẹ Andlau",
+    "location": "Andlau, Alsace",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria hiện ra với Françoise Barthel ở Andlau, Alsace, mang lại niềm an ủi tinh thần và sự đổi mới sùng kính sâu sắc cho giáo xứ địa phương."
+  },
+  "lourdes-1858": {
+    "title": "Đức Mẹ Lộ Đức (Đức Mẹ Vô Nhiễm Nguyên Tội)",
+    "location": "Lộ Đức",
+    "country": "Pháp",
+    "description": "Tại hang động Massabielle ẩm ướt, Đức Trinh Nữ xinh đẹp đã hiện ra 18 lần với cô gái nông dân 14 tuổi Bernadette Soubirous. Tiết lộ danh tính của mình là 'Đức Mẹ Vô Nhiễm Nguyên Tội', cô đã phát hiện ra một dòng suối chữa lành kỳ diệu đã chữa khỏi vô số người hành hương mắc bệnh nan y. Ngày nay Lộ Đức là một trong những thánh địa hàng đầu trên Trái đất."
+  },
+  "rosenau-1859": {
+    "title": "Đức Mẹ Rosenau",
+    "location": "Rosenau",
+    "country": "Áo",
+    "description": "Cậu bé ba tuổi Johann Brunnsteiner bị mù vì bệnh nặng. Khi cha mẹ anh tắm mắt cho anh trong suối thánh tại nhà nguyện Chữ Thập Đỏ, Mẹ Thiên Chúa hiện ra đội vương miện với Chúa Giêsu Hài Đồng và ngay lập tức phục hồi thị lực cho anh."
+  },
+  "francoules-1860": {
+    "title": "Đức Mẹ kính Phaolô Périé",
+    "location": "Francoulès",
+    "country": "Pháp",
+    "description": "Tại nhà thờ Francoulès, nhà thần bí Pauline Périé nhìn thấy Đức Mẹ mặc áo choàng đầy sao với vương miện vàng, tay cầm những bông hoa nhỏ. Cùng với các thiên thần, Đức Maria kêu gọi những lời cầu nguyện chân thành để chuộc tội."
+  },
+  "champion-1859": {
+    "title": "Đức Mẹ Phù Hộ (Vô địch)",
+    "location": "Nhà vô địch, Wisconsin",
+    "country": "Hoa Kỳ",
+    "description": "Đức Mẹ hiện ra với sắc trắng rực rỡ giữa hai cái cây với Adele Brise, 28 tuổi, và nói 'Ta là Nữ Vương Thiên Đàng, người cầu nguyện cho sự hoán cải của các tội nhân... hãy dạy cho trẻ em những điều chúng cần biết để được cứu rỗi.' Khi trận hỏa hoạn Peshtigo thảm khốc năm 1871 nhấn chìm toàn bộ khu vực, khu bảo tồn đã được cứu thoát một cách kỳ diệu."
+  },
+  "montefalco-1861": {
+    "title": "Ngôi sao Madonna (Madonna della Stella)",
+    "location": "San Luca di Montefalco",
+    "country": "Ý",
+    "description": "Đức Maria hiện ra giữa tàn tích nhà nguyện cổ kính của Thánh Bartholomew với cậu bé Righetto Cionchi 4 tuổi. Khi một thanh niên sắp chết vì bệnh lao được chữa khỏi một cách kỳ diệu bằng cách cầu khẩn Đức Maria dưới tước hiệu này, vị giám mục địa phương đã chính thức công nhận các cuộc hiện ra và xây dựng Thánh đường tráng lệ của Madonna della Stella."
+  },
+  "arnaud-guilhem-1859": {
+    "title": "Đức Mẹ Picheloup",
+    "location": "Arnaud-Guilhem, Haute-Garonne",
+    "country": "Pháp",
+    "description": "Bốn đứa trẻ đã trải qua nhiều lần hiện ra và nhắn tin. Năm 2007, Tổng Giám mục Toulouse đã chính thức phê chuẩn việc sùng kính Đức Mẹ và các cuộc hành hương tại thánh địa Picheloup."
+  },
+  "nancy-1870": {
+    "title": "Đức Mẹ Nancy (Maison de Secours)",
+    "location": "Nancy",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria đã hiện ra lặng lẽ trong uy nghi thiên đàng trước đông đảo tín hữu tụ họp bên trong nhà nguyện Maison de Secours trong nhiều năm."
+  },
+  "kirchdorf-1867": {
+    "title": "Đức Mẹ Teresa Steindl",
+    "location": "Kirchdorf",
+    "country": "Áo",
+    "description": "Đức Maria hiện ra sáu lần với Teresa Steindl, đưa ra những cảnh báo khẩn cấp rằng nếu nhân loại chống lại sự hoán cải thì những cơn bão thảm khốc và bóng tối tâm linh sẽ ập xuống trái đất."
+  },
+  "anglet-1863": {
+    "title": "Đức Mẹ Nữ Vương Các Thiên Thần",
+    "location": "Góc",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria hiện ra với tư cách là 'Nữ hoàng các thiên thần' trước linh mục sáng lập Fr. Cestac, hướng dẫn anh ta trong lời cầu nguyện mạnh mẽ 'Nữ hoàng Thiên đường tháng Tám' để phái các quân đoàn thiên thần đi tiêu diệt bóng tối ma quỷ trên khắp thế giới."
+  },
+  "philippsdorf-1866": {
+    "title": "Đức Maria Phù Hộ Các Giáo Hữu (Filipov)",
+    "location": "Filipov / Philippsdorf",
+    "country": "Cộng hòa Séc",
+    "description": "Magdalena Kade nằm liệt giường và chết vì những căn bệnh nan y đau đớn. Vào lúc 4 giờ sáng, Đức Trinh Nữ Maria hiện ra trong trang phục trắng sáng chói với vương miện vàng và thì thầm 'Hỡi con gái của Mẹ, bây giờ con đã được chữa lành!' Cô ấy ngay lập tức sống lại với sức khỏe hoàn hảo. Đức Giáo Hoàng Leo XIII đã chính thức công nhận phép lạ và nâng cung thánh lên thành một vương cung thánh đường nhỏ."
+  },
+  "bois-d-haine-1868": {
+    "title": "Đức Mẹ đến Louise Lateau",
+    "location": "Bois-d'Haine",
+    "country": "Bỉ",
+    "description": "Cô bé Louise Lateau, người đã anh hùng chăm sóc các nạn nhân bệnh dịch hạch, đã nhận được sự hiện ra của Chúa Giêsu và Mẹ Maria. Sau đó, cô ấy mang dấu thánh vào mỗi thứ Sáu hàng tuần và sống trong mười hai năm không ăn gì ngoài Bí tích Thánh Thể."
+  },
+  "tsuwano-1869": {
+    "title": "Đức Mẹ Tsuwano (Maria Seido)",
+    "location": "Tsuwano",
+    "country": "Nhật Bản",
+    "description": "Trong cuộc đàn áp tàn khốc thời Meiji, 153 Cơ đốc nhân ẩn náu từ Nagasaki đã bị giam trong những chiếc lồng đông lạnh ngoài trời ở đèo Otome Toge. Đức Trinh Nữ Maria hiện ra đêm này qua đêm khác trong ánh nắng ấm áp, an ủi và chúc lành cho các vị tử đạo đang lạnh cóng."
+  },
+  "walschbronn-1870": {
+    "title": "Đức Mẹ Walschbronn",
+    "location": "Walschbronn",
+    "country": "Pháp",
+    "description": "Barbara Conrad chín tuổi bị bệnh nặng giai đoạn cuối. Vào Chúa nhật Lễ Lá, Đức Maria hiện ra trong vinh quang rạng ngời và lập tức chữa lành hoàn toàn đứa trẻ."
+  },
+  "eupen-1870": {
+    "title": "Đức Mẹ Eupen",
+    "location": "Eupen",
+    "country": "Bỉ",
+    "description": "Một bé gái bị câm bẩm sinh đã cầu nguyện tuần cửu nhật trước tượng Đức Mẹ Maria tại nhà thờ Capuchin. Vào ngày thứ chín, Đức Maria hiện ra trong ánh sáng thiên đường bên cạnh bức tượng và âm thầm chữa lành vết thương cho cô bằng một cử chỉ. Lần đầu tiên trong đời đứa trẻ nói một cách hoàn hảo."
+  },
+  "loigny-1870": {
+    "title": "Đức Mẹ Patay",
+    "location": "Loigny-la-Bataille",
+    "country": "Pháp",
+    "description": "Trong trận chiến đẫm máu của Chiến tranh Pháp-Phổ tại Loigny, tướng de Sonis, chỉ huy của Giáo hoàng Zouave, nằm bị thương nặng trong tuyết lạnh giá. Đức Trinh Nữ Maria hiện ra trước mặt anh trên chiến trường, ban bình an tuyệt vời và sức mạnh kỳ diệu."
+  },
+  "metz-1870": {
+    "title": "Đức Mẹ La Salette (Metz)",
+    "location": "Metz",
+    "country": "Pháp",
+    "description": "Một cậu bé 8 tuổi ở Metz đã trải nghiệm sự hiện ra rõ ràng của Đức Mẹ trong hình dạng khóc lóc của La Salette trong cuộc vây hãm thành phố."
+  },
+  "ilaca-1865": {
+    "title": "Đức Mẹ Ilača (Lourdes Croatia)",
+    "location": "Ilača",
+    "country": "Croatia",
+    "description": "Một nông dân địa phương đã phát hiện ra một dòng suối kỳ diệu nơi Đức Trinh Nữ Maria liên tục hiện ra trước đám đông nhân chứng. Sau nhiều lần chữa lành thể xác được ghi lại, vị giám mục giáo phận đã cho phép xây dựng thánh đường hành hương nổi tiếng."
+  },
+  "lausanne-1871": {
+    "title": "Đức Mẹ Maria-Françoise Decotterd",
+    "location": "Lausanne",
+    "country": "Thụy Sĩ",
+    "description": "Mary hiện ra với Marie-Françoise Decotterd đang bị bệnh nặng, truyền cảm hứng cho cô hiến dâng cuộc đời mình để hy sinh đền tội để cứu rỗi các linh hồn."
+  },
+  "pontmain-1871": {
+    "title": "Đức Mẹ Hy Vọng Pontmain",
+    "location": "Pontmain",
+    "country": "Pháp",
+    "description": "Khi quân đội Phổ đang tiến lên đe dọa Brittany, Đức Trinh Nữ Maria xinh đẹp xuất hiện trên bầu trời đêm đầy sao với chiếc áo choàng màu xanh đậm được trang trí bằng những ngôi sao vàng. Một biểu ngữ vàng giương lên có dòng chữ: 'Nhưng hãy cầu nguyện cho các con của ta. Chúa sẽ nghe thấy bạn trong một thời gian ngắn. Thánh Tử của Mẹ để cho lòng trắc ẩn lay động Ngài.' Trong vòng vài giờ, tướng Phổ ra lệnh rút lui hoàn toàn, để lại toàn bộ khu vực."
+  },
+  "petigny-1865": {
+    "title": "Đức Mẹ gửi Marie Jalhay",
+    "location": "Nhỏ mọn",
+    "country": "Bỉ",
+    "description": "Bà nội trợ Marie Jalhay bị bệnh cột sống nặng, suy nhược. Đức Mẹ hiện ra trong ánh sáng siêu nhiên được khoác áo choàng trắng và nói 'Bây giờ con đã được chữa lành! Hãy đứng dậy và cho gia đình anh xem.” Cô ấy đã được chữa khỏi ngay lập tức."
+  },
+  "locherboden-1871": {
+    "title": "Đức Mẹ Cứu Rỗi (Maria Locherboden)",
+    "location": "Mötz / Locherboden",
+    "country": "Áo",
+    "description": "Maria Kalb phải chịu đau đớn nằm liệt giường suốt bảy năm vì một căn bệnh nan y. Được đưa đến hang núi linh thiêng trước bức ảnh phép lạ của Đức Maria, Đức Trinh Nữ hiện ra và ngay lập tức phục hồi sức khỏe. Một khu bảo tồn tân Gothic tráng lệ đã được dựng lên."
+  },
+  "paris-truffault-1873": {
+    "title": "Đức Mẹ Rue Truffault",
+    "location": "Batignolles, Paris",
+    "country": "Pháp",
+    "description": "Cậu bé Armand Wallet và Alfred Fontes đã trải nghiệm những lần hiện ra siêu nhiên rõ ràng của Đức Trinh Nữ Maria tại khu Batignolles của Paris."
+  },
+  "noyal-muzillac-1874": {
+    "title": "Đức Mẹ gửi Jean-Pierre Le Boterff",
+    "location": "Noyal-Muzillac",
+    "country": "Pháp",
+    "description": "Người nông dân trẻ siêng năng Jean-Pierre Le Boterff nhìn thấy một bóng dáng xinh đẹp trong chiếc áo choàng màu xanh đầy sao và chiếc áo choàng vàng ở bìa rừng. Mary kêu gọi một cuộc hành hương đến Thánh Anne d'Auray và cầu nguyện suốt đời cho Brittany."
+  },
+  "walbach-1873": {
+    "title": "Đức Mẹ sông Rhine",
+    "location": "Walbach, Alsace",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Rất Thánh hiện ra với tư cách là Đức Mẹ yêu dấu của chúng ta ở Cavezzale, kêu gọi cầu nguyện và sám hối cho nước Pháp. Bệnh bại liệt Theresa Kaufmann sau đó đã được chữa khỏi một cách kỳ diệu."
+  },
+  "neubois-1872": {
+    "title": "Mẹ Thương Xót (Đức Mẹ Neubois)",
+    "location": "Neubois / Frankenbourg",
+    "country": "Pháp",
+    "description": "Mary xuất hiện trên sườn núi rậm rạp của Frankenbourg, đội vương miện và mặc áo choàng vàng có hình cây thánh giá màu đen. Thường xuyên xuất hiện trước đám đông hơn một trăm nhân chứng với tư cách là 'Mẹ của Lòng Thương Xót', bà đã truyền cảm hứng cho những cuộc hành hương sùng kính rộng lớn."
+  },
+  "st-louis-1871": {
+    "title": "Đức Mẹ Têrêsa Schaffer",
+    "location": "Thánh Louis, Missouri",
+    "country": "Hoa Kỳ",
+    "description": "Đức Mẹ xuất hiện trong bộ áo choàng trắng sáng chói với vương miện vàng có các ngôi sao trước mặt Therese Schaffer đang nằm liệt giường, ngay lập tức chữa lành vết thương cho cô và hướng dẫn cô bước vào đời sống tu trì."
+  },
+  "pouille-1872": {
+    "title": "Đức Mẹ Pouillé",
+    "location": "Pouillé-les-Côteaux",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria hiện ra trước bàn thờ Đức Mẹ trong áo choàng trắng có dải ruy băng màu xanh và hồng và đội vương miện bằng hoa, thúc giục mọi người nhiệt thành đọc kinh Ave Maris Stella."
+  },
+  "biding-1873": {
+    "title": "Đức Mẹ gửi Catherine Filljung",
+    "location": "Đấu thầu",
+    "country": "Pháp",
+    "description": "Đức Maria xuất hiện nhiều lần trong bộ vest xanh và áo choàng trắng trước nhà thần bí Catherine Filljung, truyền cảm hứng cho bà thành lập trại trẻ mồ côi Đa Minh và sống một cuộc đời đền tội sâu sắc."
+  },
+  "paris-assumption-1871": {
+    "title": "Đức Mẹ Maria-Eugénie & Sr. Thérèse-Emmanuel",
+    "location": "Paris",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria đã hiện ra với nữ tu đồng sáng lập trường phái Assumptionist, Sơ Thérèse-Emmanuel, cho thấy một tầm nhìn sâu sắc về đạo quân thiêng liêng của Đức Mẹ mang ngọn cờ Đức Mẹ Vô Nhiễm Nguyên Tội."
+  },
+  "jerusalem-ghattas-1874": {
+    "title": "Đức Mẹ Mân Côi (Jerusalem)",
+    "location": "Giêrusalem",
+    "country": "Israel",
+    "description": "Đức Trinh Nữ Maria đã hiện ra trong vinh quang rạng ngời được các thiên thần vây quanh trước mặt nữ tu người Palestine Marie-Alphonsine Danil Ghattas ở Jerusalem và Bethlehem, truyền cảm hứng cho bà thành lập Dòng Nữ tu Đa Minh Mân Côi."
+  },
+  "saint-bauzille-1873": {
+    "title": "Đức Mẹ Saint-Bauzille",
+    "location": "Saint-Bauzille-de-la-Sylve",
+    "country": "Pháp",
+    "description": "Trong khi nhà sản xuất rượu vang Auguste Arnaud làm việc trong vườn nho của ông vào Chúa Nhật Chúa Ba Ngôi, Đức Maria hiện ra trong ánh sáng vàng rực rỡ, thúc giục mọi người tuân theo việc nghỉ ngơi ngày Chúa Nhật và dựng một cây thánh giá lớn. Đúng một tháng sau, cô lại xuất hiện trước đám đông và nói: 'Các bạn không bao giờ được làm việc vào Chủ nhật! Phước cho những ai tin.'"
+  },
+  "samois-1873": {
+    "title": "Đức Mẹ Samois",
+    "location": "Samois-sur-Seine",
+    "country": "Pháp",
+    "description": "Đức Trinh Nữ Maria bế Hài nhi Giêsu trên tay hiện ra giữa ban ngày với toàn thể lớp học gồm 25 học sinh trong vườn trường trong gần hai giờ đồng hồ."
+  },
+  "pra-genoa-1874": {
+    "title": "Đức Maria Phù Hộ Các Giáo Hữu (Prà)",
+    "location": "Prà, Genoa",
+    "country": "Ý",
+    "description": "Hai mục đồng trẻ Angela Berruti và Vincenzo Scosiera nhìn thấy một Đức Mẹ xinh đẹp trên đám mây sáng ngời đã yêu cầu dựng lên một nhà nguyện trên đỉnh đồi để tôn vinh Đức Mẹ. Bất chấp sự phản đối của dân chúng, một khu bảo tồn tráng lệ đã được xây dựng."
+  },
+  "boulleret-1875": {
+    "title": "Đức Mẹ Boulleret (Nữ Vương Tử Đạo)",
+    "location": "Boulleret",
+    "country": "Pháp",
+    "description": "Chịu đựng cơn đau đớn tột cùng ở giai đoạn cuối, Joséphine Reverdy đã trải nghiệm sự hiện ra vinh quang của Đức Trinh Nữ Maria, người đã ngay lập tức chữa lành cho cô. Cô đã cống hiến phần đời còn lại của mình để hy sinh đền tội như một linh hồn nạn nhân."
+  },
+  "blain-jahenny-1873": {
+    "title": "Đức Mẹ Áo Đức Thánh Tâm",
+    "location": "Blain / La Fraudais",
+    "country": "Pháp",
+    "description": "Marie-Julie Jahenny, 23 tuổi, nằm liệt giường đã nhìn thấy Đức Mẹ mặc áo đen mang một cây thánh giá lớn màu trắng. Được chữa lành một cách kỳ diệu đúng vào ngày 2 tháng 5 như đã hứa trước hai nghìn nhân chứng, cô đã nhận được các dấu thánh và những thị kiến ​​tiên tri sâu sắc xác nhận La Salette và Fatima."
+  },
+  "villareggia-1875": {
+    "title": "Mẹ đau khổ của Villareggia",
+    "location": "Villareggia, Piedmont",
+    "country": "Ý",
+    "description": "Cô hầu gái trẻ Rosina Ferro nhìn thấy Đức Mẹ Sầu Bi đứng im lặng bên lề đường được bao quanh bởi các thiên thần trong suốt tháng Bảy và tháng Tám. Sau đó cô ấy đã mang thánh tích."
+  },
+  "saint-pierre-eynac-1886": {
+    "title": "Đức Mẹ Saint-Pierre-Eynac",
+    "location": "Saint-Pierre-Eynac",
+    "country": "Pháp",
+    "description": "Hai cô gái trẻ đã chứng kiến ​​mười chín lần hiện ra thầm lặng của Đức Trinh Nữ Maria đeo khăn che mặt tối màu trong rừng Blachées. Vị giám mục địa phương đã chính thức chấp thuận việc xây dựng một ngôi đền tưởng niệm tuyệt đẹp, nơi Đức Mẹ được cầu khẩn."
+  },
+  "imbersago-1896": {
+    "title": "Đức Trinh Nữ vùng rừng (Madonna del Bosco)",
+    "location": "Imbersago, Lombardy",
+    "country": "Ý",
+    "description": "Teresa Secomandi, một phụ nữ nông dân đã mất đức tin và ngừng đi nhà thờ, đã gặp Đức Trinh Nữ Maria đang bay trong rừng. Đức Maria nhẹ nhàng trao cho cô một chuỗi Mân côi và đi cùng cô đến cửa Đền thánh Đức Mẹ Rừng."
+  },
+  "lucca-galgani-1899": {
+    "title": "Đức Mẹ kính Thánh Gemma Galgani",
+    "location": "Lucca, Tuscany",
+    "country": "Ý",
+    "description": "Vào đêm vọng Lễ Thánh Tâm, nhà thần bí 21 tuổi Gemma Galgani đã trải qua nỗi đau buồn sâu sắc vì tội lỗi của mình. Đức Trinh Nữ Maria hiện ra uy nghiêm trên trời cùng với thiên thần hộ mệnh của mình và nói 'Mẹ sẽ là mẹ của con'. Mở áo choàng của mình ra, Đức Maria ôm lấy Gemma trong vòng tay mẫu tử của mình khi Chúa Giêsu hiện ra, truyền các dấu thánh bằng ngọn lửa thiêng liêng."
+  },
+  "pompeii-1884": {
+    "title": "Nữ Vương Rất Thánh Mân Côi (Pompeii)",
+    "location": "Pompeii",
+    "country": "Ý",
+    "description": "Bị chứng động kinh và chuột rút giai đoạn cuối, Fortuna Agrelli, 21 tuổi, đã cầu nguyện tuần cửu nhật Mân côi trước ảnh Đức Mẹ Pompeii. Đức Trinh Nữ Maria hiện ra ngồi trên ngai hoa và nói: 'Bất cứ ai mong muốn ân sủng từ Ta thì hãy cầu nguyện ba tuần cửu nhật lần hạt Mân Côi.' Cô đã được chữa khỏi ngay lập tức và hoàn toàn vào ngày 8 tháng 5. Chân phước Bartolo Longo đã cho xây dựng Đền thờ Giáo hoàng Pompeii nổi tiếng thế giới."
+  },
+  "lyon-diemoz-1882": {
+    "title": "Mẹ Cô Đơn (Notre-Dame de la Solitude)",
+    "location": "Diémoz / Lyon",
+    "country": "Pháp",
+    "description": "Bệnh nhân Anne-Marie Coste ở bệnh viện, mắc bệnh lao nặng giai đoạn cuối, đã nhìn thấy Đức Maria đội một vương miện lộng lẫy ôm Chúa Giêsu Hài Đồng đang cầm một quả địa cầu có cây thánh giá gãy. Được chữa lành một cách thần kỳ, bà được thăng huân chương Mẹ Cô Đơn."
+  },
+  "lisieux-therese-1883": {
+    "title": "Trinh Nữ Nụ Cười (Vierge du Sourire)",
+    "location": "Lisieux",
+    "country": "Pháp",
+    "description": "Bị cơn sốt khủng khiếp và những cuộc tấn công của ma quỷ khiến cô mê sảng và suýt chết lúc 10 tuổi, cô bé Thérèse Martin đã hướng về bức tượng Đức Mẹ Maria của gia đình. Đột nhiên bức tượng trở nên sống động với vẻ đẹp thiên đường và mỉm cười với cô với sự dịu dàng không thể diễn tả của người mẹ. Mọi triệu chứng ngay lập tức biến mất trong niềm vui trọn vẹn. Thérèse tiếp tục trở thành Bông Hoa Nhỏ, một trong những vị thánh Công giáo hiện đại vĩ đại nhất."
+  },
+  "gietrzwald-1877": {
+    "title": "Đức Mẹ Gietrzwald (Fatima Ba Lan)",
+    "location": "Gietrzwald",
+    "country": "Ba Lan",
+    "description": "Mary xuất hiện nhiều lần trong đám mây vàng rực rỡ phía trên cây phong trước hai cô gái trẻ, nói bằng tiếng Ba Lan bản địa trong thời kỳ phân chia khắc nghiệt của Phổ. Khi được hỏi bà là ai, bà trả lời: 'Tôi là Đức Trinh Nữ Maria, Đức Mẹ Vô Nhiễm Nguyên Tội... Tôi cầu chúc các bạn lần hạt Mân Côi mỗi ngày.' Mùa xuân kỳ diệu mà cô ban phước tiếp tục chữa lành vô số người hành hương."
+  },
+  "pellevoisin-1876": {
+    "title": "Người Mẹ Nhân Lành (Pellevoisin)",
+    "location": "Pellevoisin",
+    "country": "Pháp",
+    "description": "Chết vì bệnh lao giai đoạn cuối trong phòng ngủ, Estelle Faguette, 33 tuổi, đã chứng kiến ​​15 lần hiện ra của Đức Trinh Nữ Maria. Khi nói ‘Ta là Đấng rất nhân từ và là tình nhân của Con Ta’, Đức Maria đã ngay lập tức chữa lành hoàn toàn cho cô ấy và giao cho cô ấy Áo Đức Bà Thánh Tâm."
+  },
+  "rovigo-1883": {
+    "title": "Đức Mẹ gửi Maria Inglese",
+    "location": "Rovigo",
+    "country": "Ý",
+    "description": "Cô thợ may trẻ Maria Inglese đã trải nghiệm một số thị kiến ​​siêu phàm về Đức Trinh Nữ Rất Thánh trong phòng của cô, truyền cảm hứng cho việc thành lập Đội danh dự Trái Tim Vô Nhiễm Nguyên Tội của Đức Maria."
+  },
+  "gemma_galgani": {
+    "title": "Thánh Gemma Galgani",
+    "location": "Lucca, Tuscany",
+    "country": "Ý",
+    "description": "Thánh Gemma Galgani đã trải nghiệm những thị kiến ​​thần bí sâu sắc về Chúa Giêsu, Đức Trinh Nữ Maria và Thiên thần Hộ mệnh của Mẹ, nhận các dấu thánh và tham gia sâu sắc vào Cuộc Khổ nạn của Chúa Kitô."
+  },
+  "ta-pinu-gozo-1883": {
+    "title": "Đức Mẹ Ta' Pinu",
+    "location": "Gharb, Gozo",
+    "country": "Malta",
+    "description": "Đi ngang qua một nhà nguyện hẻo lánh ở vùng nông thôn, Karmni Grima, 45 tuổi, nghe thấy một giọng nói dịu dàng của mẫu thân gọi từ bên trong: 'Hãy đến, đến... hãy đọc ba kinh Kính Mừng để tôn vinh ba ngày thi hài tôi được an táng trong mộ.' Những sự chữa lành kỳ diệu đáng chú ý xảy ra sau đó, biến Ta' Pinu thành Đền thờ Đức Mẹ Quốc gia tráng lệ của Malta."
+  },
+  "knock-1879": {
+    "title": "Đức Mẹ Knock (Nữ hoàng Ireland)",
+    "location": "Knock, Quận Mayo",
+    "country": "Ireland",
+    "description": "Trong cơn mưa tầm tã lúc chạng vạng, các hình tượng rực rỡ của Đức Trinh Nữ Maria, Thánh Giuse và Thánh Gioan Thánh sử xuất hiện cùng với Chiên Thiên Chúa trên một bàn thờ có các thiên thần bao quanh trên bức tường phía nam bên ngoài của nhà nguyện làng. Trong hai giờ, mười lăm nhân chứng chính thức đứng im lặng tôn thờ. Ngày nay Knock là Đền thánh Đức Mẹ Quốc gia của Ireland."
+  },
+  "mettenbuch-1876": {
+    "title": "Người an ủi người đau khổ (Mettenbuch)",
+    "location": "Metten / Deggendorf",
+    "country": "Đức",
+    "description": "Trong cuộc đàn áp Kulturkampf khốc liệt, trẻ nhỏ đã chứng kiến ​​​​sự hiện ra vinh quang của Đức Trinh Nữ Maria, Chúa Giêsu Hài Đồng và dàn hợp xướng các thiên thần trong một khe núi rậm rạp gần Tu viện Metten. Nước suối kỳ diệu đã tạo ra sự chữa lành đáng chú ý được ghi chép lại."
+  },
+  "castelpetroso-1888": {
+    "title": "Đức Mẹ Sầu Bi Castelpetroso",
+    "location": "Castelpetroso, Isernia",
+    "country": "Ý",
+    "description": "Trong một khe núi gồ ghề ở Monte Patalecchia, hai người phụ nữ nông dân đã nhìn thấy Đức Trinh Nữ Maria vinh hiển đang quỳ gối trong nỗi đau buồn sâu sắc với đôi tay dang rộng trước thân xác đầy máu của Chúa Giêsu. Hơn một ngàn nhân chứng, kể cả vị giám mục giáo phận, sau đó đã chứng kiến ​​ánh sáng thiên đàng và những cuộc hiện ra. Một dòng suối kỳ diệu đã xuất hiện và một vương cung thánh đường theo phong cách tân Gothic ngoạn mục đã được xây dựng."
+  },
+  "tilly-1896": {
+    "title": "Đức Mẹ Tilly",
+    "location": "Tilly-sur-Seulles, Normandy",
+    "country": "Pháp",
+    "description": "Vào Lễ Thánh Gabriel, năm mươi học sinh tụ tập và Marie Martel đã chứng kiến ​​hình ảnh Đức Trinh Nữ Maria rực sáng, rạng ngời trên bầu trời phía trên những cây du, được bao quanh bởi các thiên thần và cầm một chuỗi Mân côi lộng lẫy."
+  },
+  "elena_aiello": {
+    "title": "Bl. Elena Aiello",
+    "location": "Cosenza, Calabria",
+    "country": "Ý",
+    "description": "Người huyền bí, kỳ thị và người sáng lập Bl. Elena Aiello đã nhận được những thị kiến ​​và cảnh báo siêu nhiên từ Chúa Giêsu và Mẹ Maria về các biến cố thế giới cũng như sự cần thiết của việc sám hối và đền tạ."
+  },
+  "natuzza_evolo": {
+    "title": "Natuzza Evolo",
+    "location": "Paravati, Mileto",
+    "country": "Ý",
+    "description": "Natuzza Evolo, nhà thần bí và kỳ thị người Ý được yêu mến, đã trải qua những hình ảnh suốt đời về Chúa Giêsu, Đức Mẹ Maria, các thiên thần và các linh hồn thánh thiện. Một thánh đường hoành tráng đã được giáo phận phê duyệt đã được xây dựng tại địa điểm này."
+  },
+  "padre_pio": {
+    "title": "Thánh Padre Pio Pietrelcina",
+    "location": "San Giovanni Rotondo",
+    "country": "Ý",
+    "description": "Linh mục dòng Capuchin và Thánh Padre Pio mang dấu thánh đã trải qua suốt cuộc đời giao tiếp với thiên đàng, nhận được những thị kiến ​​sâu sắc và sự an ủi từ Đức Mẹ, người mà ngài dịu dàng gọi là 'Mẹ thân yêu' của mình."
+  },
+  "divine_tears_cernusco": {
+    "title": "Đức Mẹ Giọt Lệ Thiêng Liêng",
+    "location": "Cernusco sul Naviglio",
+    "country": "Ý",
+    "description": "Sơ Elisabetta Redaelli, bị bệnh nặng tại nhà mẹ của các Nữ tu Marcelline, đã được chữa lành một cách kỳ diệu sau khi Đức Mẹ hiện ra khóc than vì tội lỗi của thế giới."
+  },
+  "banneux": {
+    "title": "Trinh Nữ Nghèo",
+    "location": "Banneux",
+    "country": "Bỉ",
+    "description": "Đức Mẹ đã hiện ra tám lần với cô bé Mariette Beco 11 tuổi, hướng dẫn cô bé đến một dòng suối dành riêng cho mọi dân tộc và người bệnh, tuyên bố mình là 'Trinh nữ của người nghèo'."
+  },
+  "amalia_tears": {
+    "title": "Đức Mẹ Nước Mắt",
+    "location": "Campinas, São Paulo",
+    "country": "Brazil",
+    "description": "Sơ Amália Aguirre, người đồng sáng lập Dòng Nữ tu Truyền giáo Chúa Giêsu Chịu Đóng Đinh, đã nhận được những lần hiện ra của Chúa Giêsu và Mẹ Maria, tiết lộ Chuỗi Kinh Đức Mẹ Nước Mắt. Đức Giám mục Francisco de Campos Barreto đã chính thức phê chuẩn giáo phận vào năm 1931."
+  },
+  "berthe_petit": {
+    "title": "Berthe Petit / Trái Tim Sầu Bi và Vô Nhiễm Nguyên Tội",
+    "location": "Enghien / Brussels",
+    "country": "Bỉ",
+    "description": "Berthe Petit, sinh viên cấp ba dòng Phanxicô đã nhận được những lời phát biểu và thị kiến ​​nội tâm kêu gọi toàn thế giới tôn sùng Trái Tim Sầu Bi và Vô Nhiễm Nguyên Tội của Đức Maria. Các tin nhắn của cô đã nhận được một giấy ủy quyền và án phong chân phước cho cô đã được mở."
+  },
+  "maximilian_kolbe": {
+    "title": "Thánh Maximilian Kolbe",
+    "location": "Zduńska Wola / Pabianice",
+    "country": "Ba Lan",
+    "description": "Khi còn là một cậu bé khoảng 10 tuổi, Raymond Kolbe đã có một hình ảnh quan trọng về việc Đức Trinh Nữ Maria ban cho cậu hai vương miện: màu trắng tượng trưng cho sự trong sạch và màu đỏ tượng trưng cho sự tử đạo. Ngài đã chấp nhận cả hai, truyền cảm hứng cho việc tông đồ dòng Phanxicô suốt đời và cuộc tử đạo cuối cùng tại Auschwitz."
+  },
+  "fatima": {
+    "title": "Đức Mẹ Fatima",
+    "location": "Fatima",
+    "country": "Bồ Đào Nha",
+    "description": "Đức Trinh Nữ Maria hiện ra sáu lần để chăn dắt trẻ em Lúcia dos Santos và các thánh Jacinta và Francisco Marto tại Cova da Iria, ban ba bí mật, lời kêu gọi sám hối và Kinh Mân Côi, đỉnh điểm là Phép lạ Mặt trời được 70.000 người chứng kiến."
+  },
+  "heede": {
+    "title": "Đức Mẹ Heede / Nữ hoàng vũ trụ",
+    "location": "Heede, Hạ Saxony",
+    "country": "Đức",
+    "description": "Bốn cô gái trẻ đã trải qua hơn 100 lần hiện ra của Đức Mẹ tại nghĩa trang Heede, kêu gọi sám hối, lần hạt Mân Côi và sùng kính Thánh Tâm. Giám mục địa phương cho phép công chúng thờ phượng và sùng kính tại địa điểm này."
+  },
+  "faustina_divine_mercy": {
+    "title": "Thánh Faustina Kowalska",
+    "location": "Warsaw / Kraków",
+    "country": "Ba Lan",
+    "description": "Cùng với những mạc khải vĩ đại về Lòng Thương Xót Chúa từ Chúa Giêsu, Thánh Faustina đã trải nghiệm nhiều thị kiến ​​sâu xa về Đức Trinh Nữ Maria, Đấng đã hướng dẫn thánh nữ về đời sống ẩn dật, sự trong sạch và tình yêu sâu sắc đối với Thiên Chúa."
+  },
+  "annibale_di_francia": {
+    "title": "Thánh Annibale Maria di Francia",
+    "location": "Messina, Sicilia",
+    "country": "Ý",
+    "description": "Là tông đồ cầu nguyện cho ơn gọi và là cha của trẻ mồ côi, Thánh Annibale được ban những ân sủng thần bí và sự hướng dẫn sâu sắc của Đức Mẹ trong suốt các công trình nền tảng của ngài."
+  },
+  "wigratzbad": {
+    "title": "Antonie Rädler / Đức Mẹ Vô Nhiễm Nguyên Tội",
+    "location": "Wigratzbad, Bavaria",
+    "country": "Đức",
+    "description": "Antonie Rädler đã trải nghiệm sự bảo vệ kỳ diệu trong cuộc đàn áp của Đức Quốc xã qua những lần hiện ra với Đức Mẹ. Địa điểm này hiện là thánh địa hành hương lớn của giáo phận và chủng viện quốc tế."
+  },
+  "beauraing": {
+    "title": "Trinh nữ có tấm lòng vàng",
+    "location": "Làm đẹp",
+    "country": "Bỉ",
+    "description": "Đức Maria hiện ra 33 lần với 5 trẻ em gần cầu vượt đường sắt trong vườn tu viện, tiết lộ Trái Tim Vàng Vô Nhiễm Nguyên Tội của Mẹ và xin một nhà nguyện và liên tục cầu nguyện cho các tội nhân."
+  },
+  "maria_pierina": {
+    "title": "Bl. Maria Pierina De Micheli",
+    "location": "Milano",
+    "country": "Ý",
+    "description": "Được ưu ái với những khải tượng về Chúa Giêsu và Đức Maria, Bl. Maria Pierina đã nhận được nhiệm vụ truyền bá lòng sùng kính Thánh Nhan Chúa Giêsu và việc thành lập Huân chương Thánh Nhan."
+  },
+  "ghiaie_di_bonate": {
+    "title": "Đức Mẹ Ghiaie di Bonate / Nữ hoàng của Gia đình",
+    "location": "Ghiaie di Bonate, Bergamo",
+    "country": "Ý",
+    "description": "Trong Thế chiến II, cậu bé 7 tuổi Adelaide Roncalli đã trải qua 13 lần hiện ra của Thánh Gia, nhấn mạnh đến sự đoàn kết gia đình và cầu nguyện. Đức Giám mục Roberto Amadei đã ủy quyền cầu nguyện phụng vụ cho Đức Mẹ Ghiaie vào năm 2002."
+  },
+  "chandavila": {
+    "title": "Đức Mẹ Sầu Bi Chandavila",
+    "location": "La Codosera, Badajoz",
+    "country": "Tây Ban Nha",
+    "description": "Hai cô gái trẻ, Marcelina Baroso và Afra Blanco, đã chứng kiến ​​sự hiện ra của Đức Trinh Nữ Sầu Bi gần một cây hạt dẻ. Vào năm 2024, DDF của Vatican đã cấp quy chế kinh điển chính thức cho 'Nihil obstat'."
+  },
+  "kallikulam": {
+    "title": "Đức Mẹ Tuyết",
+    "location": "Kallikulam, Tamil Nadu",
+    "country": "Ấn Độ",
+    "description": "Sáu bạn trẻ đã chứng kiến ​​sự hiện ra kỳ diệu của Đức Trinh Nữ Maria trên một ngọn đồi đá gần nhà thờ địa phương. Địa điểm này đã trở thành một ngôi đền nổi tiếng trong khu vực với sự hỗ trợ đầy đủ của các giám mục."
+  },
+  "marienfried": {
+    "title": "Đấng Trung Gian Vĩ Đại của Ân Sủng",
+    "location": "Marienfried, Pfaffenhofen",
+    "country": "Đức",
+    "description": "Bärbel Ruess đã chứng kiến ​​sự hiện ra của Đức Mẹ và tuyên bố mình là Đấng Trung gian Vĩ đại của các Ân sủng. Giám mục của Augsburg đã xây dựng một thánh đường chính thức và cho phép công chúng sùng kính."
+  },
+  "lipa": {
+    "title": "Đức Maria, Đấng Trung Gian của Mọi Ân Sủng",
+    "location": "Thành phố Lipa, Batangas",
+    "country": "Philippines",
+    "description": "Thí sinh Carmelite Teresita Castillo đã báo cáo những lần hiện ra kèm theo những cơn mưa cánh hoa hồng. Sau khi điều tra, Tòa Thánh xác nhận sắc lệnh rằng các hiện tượng này không phải là siêu nhiên."
+  },
+  "san_damiano": {
+    "title": "Đức Mẹ Hoa Hồng Kỳ Diệu",
+    "location": "San Damiano, Piacenza",
+    "country": "Ý",
+    "description": "Rosa Quattrini ('Mamma Rosa') báo cáo về sự hiện ra của Đức Trinh Nữ Maria. Các giám mục giáo phận và Tòa thánh đã đưa ra thông báo chính thức tuyên bố những tuyên bố này không có tính xác thực siêu nhiên."
+  },
+  "balestrino": {
+    "title": "Đức Mẹ Balestrino",
+    "location": "Balestrino, Liguria",
+    "country": "Ý",
+    "description": "Caterina Richero đã trải nghiệm những cuộc hiện ra của Đức Mẹ tại Monte Croce. Vị giám mục địa phương đã thành lập địa điểm này như một trung tâm chính thức của giáo phận về lòng sùng kính và hành hương Đức Mẹ vào năm 1991."
+  },
+  "necedah": {
+    "title": "Những lần hiện ra của Needah",
+    "location": "Needah, Wisconsin",
+    "country": "Hoa Kỳ",
+    "description": "Những tuyên bố về sự hiện ra của Đức Maria bởi Mary Ann Van Hoof đã được điều tra kỹ lưỡng và chính thức bị Giáo phận La Crosse và Tòa thánh bác bỏ."
+  },
+  "tre_fontane": {
+    "title": "Trinh Nữ Mặc Khải",
+    "location": "Tre Fontane, Roma",
+    "country": "Ý",
+    "description": "Nhân viên quá cảnh chống giáo sĩ Bruno Cornacchiola đang lên kế hoạch ám sát Giáo hoàng Pius XII thì Đức Trinh Nữ Maria hiện ra với ông và các con ông tại một hang động, khiến ông biến đổi ngay lập tức. Đại diện của Rome đã phê duyệt khu bảo tồn."
+  },
+  "amsterdam_all_nations": {
+    "title": "Quý bà của mọi dân tộc",
+    "location": "Amsterdam",
+    "country": "Hà Lan",
+    "description": "Từ năm 1945 đến năm 1959, Ida Peerdeman đã báo cáo 56 lần nhìn thấy Đức Trinh Nữ Maria dưới danh hiệu 'Quý bà của mọi quốc gia'. Sau những đánh giá thần học toàn diện, Bộ Giáo lý Đức tin đã xác nhận vào năm 2020 rằng những lần hiện ra được báo cáo không có nguồn gốc siêu nhiên (Constat de non supernaturalitate)."
+  },
+  "montichiari_rosa_mystica": {
+    "title": "Rosa Mystica / Mẹ Giáo Hội",
+    "location": "Montichiari & Fontanelle",
+    "country": "Ý",
+    "description": "Y tá Pierina Gilli đã chứng kiến ​​sự hiện ra của Đức Maria với ba bông hồng trên ngực (trắng, đỏ và vàng, tượng trưng cho lời cầu nguyện, hy sinh và sám hối). Vatican DDF đã ban hành một lá thư tích cực vào năm 2024 công nhận những thành quả tinh thần của thánh đường giáo phận."
+  },
+  "alexandrina_balasar": {
+    "title": "Bl. Alexandrina Maria da Costa",
+    "location": "Balasar",
+    "country": "Bồ Đào Nha",
+    "description": "Nhà thần bí và linh hồn nạn nhân nằm liệt giường Bl. Alexandrina chỉ sống nhờ Bí tích Thánh Thể trong 13 năm, trải qua những giao tiếp ngây ngất sâu sắc từ Chúa Kitô và Đức Trinh Nữ Maria."
+  },
+  "ile_bouchard": {
+    "title": "Đức Mẹ Cầu Nguyện",
+    "location": "L'Île-Bouchard, Touraine",
+    "country": "Pháp",
+    "description": "Bốn cô gái trẻ đã chứng kiến ​​​​Đức Trinh Nữ Maria và Thiên thần Gabriel tại nhà thờ giáo xứ St. Giles trong cuộc khủng hoảng quốc gia sau chiến tranh, cứu nước Pháp khỏi cuộc nội chiến. Đức Tổng Giám mục André Vingt-Trois đã cho phép tổ chức các cuộc hành hương chính thức vào năm 2001."
+  },
+  "heroldsbach": {
+    "title": "Sự hiện ra của Heroldsbach",
+    "location": "Heroldsbach, Bavaria",
+    "country": "Đức",
+    "description": "Bốn cô gái trẻ kể lại những hình ảnh về Đức Trinh Nữ Maria. Mặc dù ban đầu bị đánh giá tiêu cực, Đức Tổng Giám mục Ludwig Schick đã thành lập địa điểm này như một nơi cầu nguyện và chầu Thánh Thể chính thức của giáo phận vào năm 1998."
+  },
+  "turzovka": {
+    "title": "Đức Mẹ Turzovka",
+    "location": "Turzovka",
+    "country": "Slovakia",
+    "description": "Forester Matúš Lašut đã chứng kiến ​​Đức Mẹ Lộ Đức trên Núi Zivckova. Năm 2008, Đức Giám mục Tomáš Galis đã chính thức nâng địa điểm này lên thành thánh đường hành hương Đức Mẹ."
+  },
+  "placanica_scoglio": {
+    "title": "Đức Mẹ Núi Đá (Madonna dello Scoglio)",
+    "location": "Santa Domenica di Placanica",
+    "country": "Ý",
+    "description": "Anh nông dân khiêm nhường Cosimo Fragomeni đã chứng kiến ​​Đức Trinh Nữ trên một tảng đá. Đức Giám mục Giuseppe Fiorini Morosini đã chính thức nâng địa điểm này lên thành thánh đường giáo phận vào năm 2016."
+  },
+  "bayside": {
+    "title": "Đức Mẹ Hoa Hồng",
+    "location": "Bờ vịnh, Queens, New York",
+    "country": "Hoa Kỳ",
+    "description": "Veronica Lueken kể lại những hình ảnh về Chúa Giêsu và Đức Maria. Giám mục Brooklyn đã đưa ra những tuyên bố chính thức xác nhận những tuyên bố này thiếu tính xác thực siêu nhiên."
+  },
+  "betania": {
+    "title": "Đức Trinh Nữ và Mẹ Hòa giải mọi dân tộc",
+    "location": "Cúa, Miranda",
+    "country": "Venezuela",
+    "description": "Nhà thần bí Maria Esperanza de Bianchini và 150 nhân chứng đã nhìn thấy Đức Trinh Nữ Maria tại một hang động nhiệt đới tươi tốt. Đức Giám mục Pío Bello Ricardo chính thức phê chuẩn các cuộc hiện ra là siêu nhiên vào năm 1987."
+  },
+  "akita": {
+    "title": "Đức Mẹ Akita",
+    "location": "Yuzawadai, Akita",
+    "country": "Nhật Bản",
+    "description": "Một bức tượng gỗ Đức Trinh Nữ Maria đã khóc những giọt nước mắt kỳ diệu 101 lần và đưa ra những lời cảnh báo mang tính tiên tri nghiêm trọng cho Sơ Agnes Sasagawa. Đức Giám mục John Shojiro Ito đã chính thức phê chuẩn giám mục vào năm 1984."
+  },
+  "san_nicolas": {
+    "title": "Đức Mẹ Mân Côi San Nicolás",
+    "location": "San Nicolás de los Arroyos",
+    "country": "Argentina",
+    "description": "Gladys Quiroga de Motta đã nhận được những thông điệp và thị kiến ​​sâu sắc về việc Đức Mẹ bế Hài Nhi Giêsu. Đức Giám mục Héctor Sabatino Cardelli đã chính thức ban sắc lệnh về tính chất siêu nhiên của các cuộc hiện ra vào năm 2016."
+  },
+  "soufanieh": {
+    "title": "Đức Mẹ Soufanieh",
+    "location": "Damas",
+    "country": "Syria",
+    "description": "Myrna Nazzour đã trải nghiệm những lần hiện ra sáng ngời và dầu kỳ diệu tiết ra từ ảnh tượng Đức Mẹ Maria. Được hỗ trợ và chấp thuận một cách độc đáo bởi cả hệ thống cấp bậc Công giáo và Chính thống giáo Đông phương như một dấu hiệu sâu sắc của sự hiệp nhất Kitô giáo."
+  },
+  "litmanova": {
+    "title": "Thanh tịnh vô nhiễm",
+    "location": "Litmanová, Zvir",
+    "country": "Slovakia",
+    "description": "Hai cô gái trẻ, Ivetka và Katka, đã trải qua những lần hiện ra trên Núi Zvir. Năm 2004, Đức Giám mục Ján Babjak chính thức tuyên bố ngọn núi này là nơi hành hương và cầu nguyện thiêng liêng của Đức Mẹ."
+  },
+  "el_cajas_cuenca": {
+    "title": "Mẹ Bảo Vệ Đức Tin",
+    "location": "El Cajas, Cuenca",
+    "country": "Ecuador",
+    "description": "Thiếu niên Patricia Talbot nhận được tin nhắn từ Đức Mẹ kêu gọi sự trong sạch và hoán cải. Đức Tổng Giám mục Vicente Cisneros đã công bố thành lập thánh địa trên cao như một địa điểm hành hương chính thức của giáo phận."
+  },
+  "medjugorje": {
+    "title": "Nữ hoàng Hòa bình Medjugorje",
+    "location": "Medjugorje",
+    "country": "Bosnia và Herzegovina",
+    "description": "Sáu thị nhân báo cáo các thông điệp liên tục về hòa bình, hoán cải, ăn chay và cầu nguyện. Vào tháng 9 năm 2024, DDF của Vatican đã chính thức cấp quy chế kinh điển là 'Nihil obstat', công nhận những thành quả thiêng liêng to lớn trên toàn thế giới và cho phép công chúng sùng kính."
+  },
+  "zeitoun": {
+    "title": "Đức Mẹ Zeitoun / Đức Mẹ Ánh Sáng",
+    "location": "Zeitoun, Cairo",
+    "country": "Ai Cập",
+    "description": "Những cuộc hiện ra thầm lặng, sáng chói của Đức Trinh Nữ Maria trên đỉnh Nhà thờ St. Mark's Coptic đã được chứng kiến ​​bởi hàng triệu Kitô hữu và người Hồi giáo, được phát sóng trên truyền hình quốc gia và được Giáo hoàng Coptic Kyrillos VI chính thức phê chuẩn."
+  },
+  "el_escorial": {
+    "title": "Đức Mẹ Sầu Bi Prado Nuevo",
+    "location": "El Escorial, Madrid",
+    "country": "Tây Ban Nha",
+    "description": "Luz Amparo Cuevas thuật lại những thị kiến ​​về Đức Mẹ. Đức Hồng Y Antonio María Rouco Varela đã ủy quyền cử hành phụng vụ, chầu Thánh Thể và xây dựng một nhà nguyện tại địa điểm này vào năm 2010."
+  },
+  "salta": {
+    "title": "Đức Mẹ Vô Nhiễm Nguyên Tội Trái Tim Thánh Thể",
+    "location": "Salta",
+    "country": "Argentina",
+    "description": "Maria Livia Galiano kể lại những địa điểm bên trong và những hình ảnh Đức Mẹ hiện ra trên đỉnh đồi, nơi hàng chục ngàn người tụ tập hàng tuần để cầu nguyện và cầu bầu một cách kỳ diệu."
+  },
+  "garabandal": {
+    "title": "Đức Mẹ Núi Cát Minh Garabandal",
+    "location": "San Sebastián de Garabandal",
+    "country": "Tây Ban Nha",
+    "description": "Bốn nữ sinh kể lại sự hiện ra của Thánh Michael và Đức Trinh Nữ Maria với những lời cảnh báo sâu sắc về Bí tích Thánh Thể, một lời cảnh báo toàn cầu sắp xảy ra và một phép lạ vĩ đại. Các giám mục kế nhiệm tuyên bố bản chất siêu nhiên không được thiết lập."
+  },
+  "scottsdale": {
+    "title": "Những lần hiện ra ở Scottsdale",
+    "location": "Scottsdale, Arizona",
+    "country": "Hoa Kỳ",
+    "description": "Các địa điểm và khải tượng có chủ đích ở một giáo xứ địa phương đã được Giáo phận Phoenix điều tra, kết luận rằng các sự kiện này thiếu nền tảng siêu nhiên."
+  },
+  "kibeho": {
+    "title": "Mẹ của Ngôi Lời",
+    "location": "Kibeho",
+    "country": "Rwanda",
+    "description": "Đức Trinh Nữ Maria hiện ra với ba nữ sinh (Alphonsine, Anathalie và Marie Claire), kêu gọi sự hoán cải chân thành và tiên tri về thảm kịch ở Rwanda. Được Đức Giám mục Augustin Misago và Tòa thánh phê duyệt năm 2001."
+  },
+  "itapiranga": {
+    "title": "Đức Mẹ Itapiranga / Nữ hoàng Mân côi và Hòa bình",
+    "location": "Itapiranga, Amazonas",
+    "country": "Brazil",
+    "description": "Edson Glauber kể lại những hình ảnh về Thánh Gia. Vào năm 2017, DDF của Vatican và các thông báo thông thường của địa phương đã công bố tuyên bố các hiện tượng này không phải là siêu nhiên."
+  },
+  "mosul_iraq": {
+    "title": "Đức Mẹ Mosul",
+    "location": "Mosul",
+    "country": "Irắc",
+    "description": "Cô bé Dina Basher đã chứng kiến ​​những cuộc hiện ra rực sáng và sự chữa lành kỳ diệu tại Nhà thờ Thánh Ephrem. Đức Thượng phụ Chính thống giáo Syria Ignatius Zakka I chính thức xác nhận những sự việc kỳ diệu xảy ra vào năm 1992."
+  },
+  "ngome": {
+    "title": "Đức Mẹ Đền Tạm",
+    "location": "Ngome, KwaZulu-Natal",
+    "country": "Nam Phi",
+    "description": "Nữ tu dòng Benedictine Reinolda May đã trải qua những lần hiện ra của Đức Maria cầm Mình Thánh và chén thánh, nhấn mạnh đến việc tôn thờ Thánh Thể. Đức Giám mục Mansuet Biyase đã phê chuẩn thánh địa này là nơi hành hương chính thức vào năm 1989."
+  },
+  "sievernich": {
+    "title": "Mẹ Tối Cao trong Trái Tim Vô Nhiễm Nguyên Tội",
+    "location": "Sivernich",
+    "country": "Đức",
+    "description": "Manuela Strack kể lại những lần hiện ra và thông điệp Thánh Thể đang diễn ra. Giám mục Aachen đã cho phép tổ chức các buổi cầu nguyện tại địa điểm này dưới sự giám sát mục vụ."
+  },
+  "aokpe": {
+    "title": "Đấng Trung Gian của Mọi Ân Sủng",
+    "location": "Aokpe, Bang Benue",
+    "country": "Nigeria",
+    "description": "Christiana Agbo đã trải nghiệm những thị kiến ​​sâu sắc về Đức Mẹ kèm theo các phép lạ mặt trời. Giám mục Michael Apochi đã ủy quyền cho các cuộc hành hương chính thức và cấp phép cho những lời cầu nguyện."
+  },
+  "naju": {
+    "title": "Trinh nữ khóc lóc của Naju",
+    "location": "Naju",
+    "country": "Hàn Quốc",
+    "description": "Julia Kim kể lại những bức tượng Đức Mẹ khóc và chảy máu và các phép lạ Thánh Thể. Đức Tổng Giám mục Victorinus Yoon Kong-hi đã đưa ra tuyên bố chính thức xác nhận hiện tượng này không phải là siêu nhiên."
+  },
+  "schio": {
+    "title": "Nữ Hoàng Tình Yêu",
+    "location": "Schio, Vicenza",
+    "country": "Ý",
+    "description": "Renato Baron đã báo cáo những địa điểm và khải tượng trong một nhà thờ nhỏ ở San Martino. Sau ủy ban điều tra của giáo phận, các giám mục đã đưa ra thông báo kết luận rằng các sự kiện thiếu tính xác thực siêu nhiên."
+  },
+  "zaro_ischia": {
+    "title": "Đức Mẹ Zaro",
+    "location": "Zaro, Ischia",
+    "country": "Ý",
+    "description": "Simona và Angela báo cáo những lần hiện ra và thông điệp liên tục trong một khu rừng trên đảo Ischia. Đức Giám mục Pietro Lagnese đã thành lập một ủy ban chính thức của giáo phận để phân định các hoa trái và hiện tượng thiêng liêng."
+  },
+  "enugu_precious_blood": {
+    "title": "Barnabas Nwoye / Máu quý",
+    "location": "Ôi, Enugu",
+    "country": "Nigeria",
+    "description": "Barnabas Nwoye đã nhận được các thị kiến ​​về Chúa Giêsu và Mẹ Maria nhấn mạnh đến lòng sùng kính Máu Châu Báu Cực Thánh. Giám mục địa phương đã cấp giấy phép chính thức và nihil obstat cho những lời cầu nguyện."
+  },
+  "zarvanytsia": {
+    "title": "Đức Mẹ Zarvanytsia",
+    "location": "Zarvanytsia, Ternopil",
+    "country": "Ukraina",
+    "description": "Trong thời kỳ bách hại dưới lòng đất của Liên Xô, nhiều người hành hương và các cô gái trẻ đã chứng kiến ​​những cuộc hiện ra sáng ngời kỳ diệu của Đức Trinh Nữ Maria trên dòng suối kỳ diệu cổ xưa và ngôi đền đổ nát."
+  },
+  "trevignano": {
+    "title": "Madonna của Trevignano Romano",
+    "location": "Trevignano Romano",
+    "country": "Ý",
+    "description": "Gisella Cardia tuyên bố những tin nhắn và những bức tượng khóc. Vào năm 2024, Giám mục Marco Salvi và DDF của Vatican đã ban hành sắc lệnh chính thức tuyên bố các sự kiện là 'Constat de non supernaturalitate' (được xác nhận là không siêu nhiên)."
+  },
+  "hrushiv": {
+    "title": "Đức Mẹ Hrushiv",
+    "location": "Hrushiv, tỉnh Lviv",
+    "country": "Ukraina",
+    "description": "Vào dịp kỷ niệm 70 năm Fatima, hàng chục ngàn người Ukraine đã tập trung quanh một nhà nguyện bỏ hoang, nơi người ta chứng kiến ​​những cuộc hiện ra sáng chói của Đức Maria cả ngày lẫn đêm trong nhiều tuần, bất chấp sự phong tỏa của KGB."
+  },
+  "dozule": {
+    "title": "Thập giá vinh quang của Dozulé",
+    "location": "Dozulé, Normandy",
+    "country": "Pháp",
+    "description": "Madeleine Aumont kể lại những hình ảnh về Chúa Kitô và Đức Maria yêu cầu xây dựng một cây thánh giá khổng lồ phát sáng. Giáo phận địa phương và Tòa thánh đã đưa ra thông báo tuyên bố những tuyên bố này không phải là siêu nhiên."
+  },
+  "cefala_diana": {
+    "title": "Đức Mẹ Sầu Bi Cefalà Diana",
+    "location": "Cefalà Diana, Sicily",
+    "country": "Ý",
+    "description": "Bốn cậu bé đã chứng kiến ​​những cuộc hiện ra kỳ diệu của Đức Mẹ Sầu Bi. Sau những cuộc điều tra tích cực, Đức Hồng Y Francesco Carpino đã thánh hiến một thánh đường tuyệt đẹp được xây dựng ngay tại địa điểm xảy ra các cuộc hiện ra."
+  },
+  "our_lady_of_america": {
+    "title": "Đức Mẹ Châu Mỹ",
+    "location": "Thành phố Rome, Indiana",
+    "country": "Hoa Kỳ",
+    "description": "Sơ Mildred Mary Neuzil đã báo cáo về những lần Đức Maria hiện ra dưới danh hiệu 'Đức Mẹ Châu Mỹ'. Đức Tổng Giám mục Paul F. Leibold đã ban hành giấy phép chính thức và khuyến khích tích cực cho việc sùng kính."
+  },
+  "borg_in_nadur": {
+    "title": "Những lần hiện ra của Borg in-Nadur",
+    "location": "Birżebbuġa",
+    "country": "Malta",
+    "description": "Angelik Caruana tuyên bố những thông điệp và tầm nhìn tại một ngọn đồi ở Borg in-Nadur. Vào năm 2016, Đức Tổng Giám mục Charles Scicluna đã ban hành một sắc lệnh dứt khoát xác nhận rằng các hiện tượng được cho là không phải siêu nhiên."
+  }
+}
