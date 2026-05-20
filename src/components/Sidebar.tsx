@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { MapPin, Calendar, Info, X, ExternalLink, Award, BookOpen, CheckCircle2, Sparkles, HeartHandshake, XCircle, Copy, Check } from 'lucide-react';
-import { getApparitionStatusCategory, getStatusColor, hexToRgb } from '../utils/colors';
+import { getApparitionStatusCategory, getStatusColor, hexToRgb, getSingleStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
@@ -156,12 +156,12 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
           <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{apparition.year}</span>
         </div>
 
-        {(() => {
-          const cat = getApparitionStatusCategory(apparition.approvalStatus);
-          const color = getStatusColor(apparition.approvalStatus);
+        {apparition.approvalStatus.split(/[/,;]/).map(s => s.trim()).filter(Boolean).map((part, index) => {
+          const cat = getSingleStatusCategory(part);
+          const color = STATUS_COLORS[cat] || "#94a3b8";
           const rgb = hexToRgb(color);
           return (
-            <div style={{ 
+            <div key={index} style={{ 
               display: 'flex', 
               alignItems: 'center', 
               gap: '12px', 
@@ -179,7 +179,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
               </span>
             </div>
           );
-        })()}
+        })}
       </div>
 
       <div style={{ height: '1px', background: 'var(--glass-border)', margin: '4px 0' }}></div>

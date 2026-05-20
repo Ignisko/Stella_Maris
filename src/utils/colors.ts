@@ -8,16 +8,46 @@ export const STATUS_COLORS: Record<string, string> = {
   "Dismissed": "#94a3b8" // Slate Gray
 };
 
-export const getApparitionStatusCategory = (status: string): string => {
+export const STATUS_RANK: Record<string, number> = {
+  "Vatican approved": 7,
+  "Coptic approved": 6,
+  "Traditionally approved": 5,
+  "Bishop approved": 4,
+  "Approved for faith expression": 3,
+  "Apparitions to saints": 2,
+  "Dismissed": 1
+};
+
+export const getSingleStatusCategory = (status: string): string => {
   if (!status) return "Dismissed";
   const s = status.toLowerCase();
   if (s.includes('vatican') || s.includes('holy see')) return "Vatican approved";
+  if (s.includes('coptic')) return "Coptic approved";
   if (s.includes('tradition')) return "Traditionally approved";
   if (s.includes('bishop') || s.includes('supernatural') || s.includes('syrian')) return "Bishop approved";
-  if (s.includes('coptic')) return "Coptic approved";
   if (s.includes('faith') || s.includes('prayer') || s.includes('nihil') || s.includes('pilgrimage')) return "Approved for faith expression";
   if (s.includes('saint')) return "Apparitions to saints";
   return "Dismissed";
+};
+
+export const getApparitionStatusCategory = (status: string): string => {
+  if (!status) return "Dismissed";
+  const parts = status.split(/[/,;]/).map(s => s.trim()).filter(Boolean);
+  if (parts.length <= 1) {
+    return getSingleStatusCategory(status);
+  }
+  
+  let highestCat = "Dismissed";
+  let maxRank = 0;
+  for (const part of parts) {
+    const cat = getSingleStatusCategory(part);
+    const rank = STATUS_RANK[cat] || 0;
+    if (rank > maxRank) {
+      maxRank = rank;
+      highestCat = cat;
+    }
+  }
+  return highestCat;
 };
 
 export const getStatusColor = (status: string): string => {
