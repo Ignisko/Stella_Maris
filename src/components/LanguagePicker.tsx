@@ -83,7 +83,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
         }}
       >
         <img 
-          src={`https://flagcdn.com/w40/${LANGUAGE_FLAG_CODES[currentLang]}.png`} 
+          src={`https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/${LANGUAGE_FLAG_CODES[currentLang]}.svg`} 
           alt={languageNames[currentLang]} 
           style={{ 
             width: '21px', 
@@ -160,7 +160,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
                 }}
               >
                 <img 
-                  src={`https://flagcdn.com/w40/${LANGUAGE_FLAG_CODES[lang]}.png`} 
+                  src={`https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/${LANGUAGE_FLAG_CODES[lang]}.svg`} 
                   alt={languageNames[lang]} 
                   style={{ 
                     width: '21px', 

@@ -27,8 +27,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
   const [isAutoRotate, setIsAutoRotate] = useState(true);
-  const [lodThreshold, setLodThreshold] = useState<number>(2);
-  const lodRef = useRef<number>(2);
+  const [lodThreshold, setLodThreshold] = useState<number>(6);
+  const lodRef = useRef<number>(6);
   const lastClickTimeRef = useRef<number>(0);
 
   const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
@@ -118,19 +118,23 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
         const pov = globeEl.current.pointOfView();
         if (pov && pov.altitude !== undefined) {
-          // 5-zone LOD
-          // Zone 1 (very close, alt < 0.4) → 0 extra labels (selected only)
-          // Zone 2 (close,     alt < 0.9) → max 6,  priority-1 only
-          // Zone 3 (mid,       alt < 1.6) → max 12, priority-1 only
-          // Zone 4 (mid-far,   alt < 2.4) → max 8,  priority-1 only
-          // Zone 5 (far,       alt ≥ 2.4) → max 5,  priority-1 only
-          const altitude = Math.max(0.1, pov.altitude);
+          // 7-zone LOD
+          // Zone 1 (super close, alt < 0.05)
+          // Zone 2 (very close,  alt < 0.15)
+          // Zone 3 (close,       alt < 0.4)
+          // Zone 4 (mid-close,   alt < 0.9)
+          // Zone 5 (mid,         alt < 1.6)
+          // Zone 6 (mid-far,     alt < 2.4)
+          // Zone 7 (far,         alt ≥ 2.4)
+          const altitude = Math.max(0.001, pov.altitude);
           let newThreshold: number;
-          if (altitude < 0.4) newThreshold = 1;
-          else if (altitude < 0.9) newThreshold = 2;
-          else if (altitude < 1.6) newThreshold = 3;
-          else if (altitude < 2.4) newThreshold = 4;
-          else newThreshold = 5;
+          if (altitude < 0.05) newThreshold = 1;
+          else if (altitude < 0.15) newThreshold = 2;
+          else if (altitude < 0.4) newThreshold = 3;
+          else if (altitude < 0.9) newThreshold = 4;
+          else if (altitude < 1.6) newThreshold = 5;
+          else if (altitude < 2.4) newThreshold = 6;
+          else newThreshold = 7;
 
           if (newThreshold !== lodRef.current) {
             lodRef.current = newThreshold;
@@ -220,12 +224,25 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     //
     // GEOGRAPHIC DISTRIBUTION: Labels are picked per continental region so the
     // globe always looks populated globally as it rotates, not just over Europe.
+    // Per-zone label caps
+    // Zone 1 (super close): max 100 per region, priority ≤ 5
+    // Zone 2 (very close):  max 50 per region, priority ≤ 5
+    // Zone 3 (close):       max 25 per region, priority ≤ 4
+    // Zone 4 (mid-close):   max 15 per region, priority ≤ 3
+    // Zone 5 (mid):         max 8 per region, priority ≤ 2
+    // Zone 6 (mid-far):     max 3 per region, priority ≤ 1
+    // Zone 7 (far):         max 2 per region, priority ≤ 1
+    //
+    // GEOGRAPHIC DISTRIBUTION: Labels are picked per continental region so the
+    // globe always looks populated globally as it rotates, not just over Europe.
     const ZONE_CONFIG: Record<number, { perRegion: number; maxPriority: number }> = {
-      1: { perRegion: 25, maxPriority: 5 },
-      2: { perRegion: 15, maxPriority: 4 },
-      3: { perRegion: 8, maxPriority: 2 },
-      4: { perRegion: 3, maxPriority: 1 },
-      5: { perRegion: 2, maxPriority: 1 },
+      1: { perRegion: 100, maxPriority: 5 },
+      2: { perRegion: 50, maxPriority: 5 },
+      3: { perRegion: 25, maxPriority: 4 },
+      4: { perRegion: 15, maxPriority: 3 },
+      5: { perRegion: 8, maxPriority: 2 },
+      6: { perRegion: 3, maxPriority: 1 },
+      7: { perRegion: 2, maxPriority: 1 },
     };
     const { perRegion, maxPriority } = ZONE_CONFIG[lodThreshold] ?? { perRegion: 2, maxPriority: 1 };
 
@@ -289,16 +306,20 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
     // Adaptive spacing based on lodThreshold (zoom/altitude) and dataset size
     let spacingBase: number;
-    if (lodThreshold === 5) {
+    if (lodThreshold === 7) {
       spacingBase = 12.0; // Far out: labels must be very far apart geographically to not overlap on screen
-    } else if (lodThreshold === 4) {
+    } else if (lodThreshold === 6) {
       spacingBase = 7.5;  // Mid-far
-    } else if (lodThreshold === 3) {
+    } else if (lodThreshold === 5) {
       spacingBase = 4.5;  // Mid
+    } else if (lodThreshold === 4) {
+      spacingBase = 2.5;  // Mid-close
+    } else if (lodThreshold === 3) {
+      spacingBase = 0.8;  // Close
     } else if (lodThreshold === 2) {
-      spacingBase = 2.5;  // Close
+      spacingBase = 0.2;  // Very close
     } else {
-      spacingBase = 1.2;  // Very close
+      spacingBase = 0.04; // Super close
     }
 
     // Slightly compress spacing margin if dataset is small, but keep safety bounds
@@ -318,7 +339,16 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         const meanLat = ((selectedApparition.lat + app.lat) / 2) * Math.PI / 180;
         const cosLat = Math.max(0.3, Math.cos(meanLat));
         const physicalDistLng = distLng * cosLat;
-        const minSelectedDist = lodThreshold === 5 ? 12.0 : (lodThreshold === 4 ? 8.0 : (lodThreshold === 3 ? 5.0 : 2.8));
+        
+        let minSelectedDist: number;
+        if (lodThreshold === 7) minSelectedDist = 12.0;
+        else if (lodThreshold === 6) minSelectedDist = 8.0;
+        else if (lodThreshold === 5) minSelectedDist = 5.0;
+        else if (lodThreshold === 4) minSelectedDist = 2.8;
+        else if (lodThreshold === 3) minSelectedDist = 1.0;
+        else if (lodThreshold === 2) minSelectedDist = 0.25;
+        else minSelectedDist = 0.05;
+
         if (distLat < minSelectedDist && physicalDistLng < (minSelectedDist * 3.8)) continue;
       }
 
@@ -398,15 +428,31 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           ref={globeEl}
           width={dimensions.width}
           height={dimensions.height}
-          globeImageUrl="https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
-          bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
+          globeImageUrl="/earth-blue-marble-4k.jpg"
+          bumpImageUrl="/earth-topology-4k.jpg"
           backgroundImageUrl="https://unpkg.com/three-globe/example/img/night-sky.png"
           pointsData={visibleApparitions}
           pointLat="lat"
           pointLng="lng"
           pointColor={(d: unknown) => getStatusColor((d as Apparition).approvalStatus)}
-          pointAltitude={lodThreshold <= 2 ? 0.005 : lodThreshold === 3 ? 0.008 : 0.013}
-          pointRadius={lodThreshold <= 1 ? 0.08 : lodThreshold === 2 ? 0.13 : lodThreshold === 3 ? 0.2 : lodThreshold === 4 ? 0.28 : 0.36}
+          pointAltitude={
+            lodThreshold === 1 ? 0.0004 :
+            lodThreshold === 2 ? 0.001 :
+            lodThreshold === 3 ? 0.003 :
+            lodThreshold === 4 ? 0.006 :
+            lodThreshold === 5 ? 0.009 :
+            lodThreshold === 6 ? 0.012 :
+            0.015
+          }
+          pointRadius={
+            lodThreshold === 1 ? 0.006 :
+            lodThreshold === 2 ? 0.015 :
+            lodThreshold === 3 ? 0.05 :
+            lodThreshold === 4 ? 0.12 :
+            lodThreshold === 5 ? 0.2 :
+            lodThreshold === 6 ? 0.28 :
+            0.36
+          }
           pointsMerge={false}
           ringsData={ringApparition ? [ringApparition] : []}
           ringLat="lat"
