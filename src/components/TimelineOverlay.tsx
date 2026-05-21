@@ -440,11 +440,17 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             const clampedYear = Math.max(startY, Math.min(endY, year));
             const leftPct = range > 0 ? ((clampedYear - startY) / range) * 100 : 0;
             
-            // Calculate the height of the bar stack for the selected year
+            // Calculate the height of the bar stack up to the selected apparition
             const selectedBucket = buckets.find(b => selectedApparition && selectedApparition.year >= b.startYear && selectedApparition.year <= b.endYear);
-            const stackHeight = (!isCinemaMode && selectedBucket) 
-              ? selectedBucket.apps.length * (tileHeight + tileGap) 
-              : 0;
+            let stackHeight = 0;
+            if (!isCinemaMode && selectedBucket && selectedApparition) {
+              const selectedIndex = selectedBucket.apps.findIndex(app => app.id === selectedApparition.id);
+              if (selectedIndex !== -1) {
+                stackHeight = (selectedIndex + 1) * (tileHeight + tileGap);
+              } else {
+                stackHeight = selectedBucket.apps.length * (tileHeight + tileGap);
+              }
+            }
 
             return (
               <div style={{
