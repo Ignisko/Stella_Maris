@@ -21,7 +21,7 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 30 },
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 6, fullHistoryOffset: -1 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: -55, fullHistoryOffset: -1 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 40, fullHistoryOffset: 80 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 40, fullHistoryOffset: 45 },
   "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
   "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -1 },
   "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
@@ -329,21 +329,35 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       {/* Status legend under the controls */}
       {!isCinemaMode && (
         <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '12px',
-          flexWrap: 'wrap',
+          display: 'grid',
+          gridTemplateColumns: 'auto 1fr',
+          gap: '16px',
           marginBottom: '16px',
           paddingTop: '6px',
           borderTop: '1px solid rgba(255, 255, 255, 0.06)'
         }}>
-          <span style={{ fontSize: '10px', opacity: 0.5, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700, marginRight: '4px' }}>{t('legend', lang)}</span>
-          {Object.entries(STATUS_COLORS).map(([label, color]) => (
-            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
-              <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
-              <span>{t(label as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
-            </div>
-          ))}
+          <span style={{ 
+            fontSize: '10px', 
+            opacity: 0.5, 
+            textTransform: 'uppercase', 
+            letterSpacing: '0.5px', 
+            fontWeight: 700,
+            marginTop: '4px'
+          }}>
+            {t('legend', lang)}
+          </span>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: '8px 16px'
+          }}>
+            {Object.entries(STATUS_COLORS).map(([label, color]) => (
+              <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
+                <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
+                <span>{t(label as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
+              </div>
+            ))}
+          </div>
         </div>
       )}
 
@@ -427,18 +441,25 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             const year = selectedApparition.year;
             const clampedYear = Math.max(startY, Math.min(endY, year));
             const leftPct = range > 0 ? ((clampedYear - startY) / range) * 100 : 0;
+            
+            // Calculate the height of the bar stack for the selected year
+            const selectedBucket = buckets.find(b => selectedApparition && selectedApparition.year >= b.startYear && selectedApparition.year <= b.endYear);
+            const stackHeight = (!isCinemaMode && selectedBucket) 
+              ? selectedBucket.apps.length * (tileHeight + tileGap) 
+              : 0;
+
             return (
               <div style={{
                 position: 'absolute', 
                 left: `${leftPct}%`, 
-                bottom: '-2px', 
-                top: isCinemaMode ? '0px' : '-10px',
+                bottom: '0px', 
+                height: `${stackHeight}px`,
                 width: '2px', 
                 backgroundColor: 'var(--accent-color)',
                 boxShadow: '0 0 12px var(--accent-color)', 
                 zIndex: 110,
                 transform: 'translateX(-50%)', 
-                transition: 'left 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+                transition: 'left 0.5s cubic-bezier(0.4, 0, 0.2, 1), height 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
                 pointerEvents: 'none'
               }}>
                 {/* Pointer head needle Google-style Map Pin */}
