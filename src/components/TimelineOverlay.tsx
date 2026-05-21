@@ -329,27 +329,25 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       {/* Status legend under the controls */}
       {!isCinemaMode && (
         <div style={{
-          display: 'grid',
-          gridTemplateColumns: 'auto 1fr',
-          gap: '16px',
           marginBottom: '16px',
           paddingTop: '6px',
           borderTop: '1px solid rgba(255, 255, 255, 0.06)'
         }}>
-          <span style={{ 
+          <div style={{ 
             fontSize: '10px', 
             opacity: 0.5, 
             textTransform: 'uppercase', 
             letterSpacing: '0.5px', 
             fontWeight: 700,
-            marginTop: '4px'
+            marginBottom: '6px'
           }}>
             {t('legend', lang)}
-          </span>
+          </div>
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '8px 16px'
+            gridTemplateColumns: 'repeat(2, 1fr)',
+            gap: '8px 16px',
+            maxWidth: '600px'
           }}>
             {Object.entries(STATUS_COLORS).map(([label, color]) => (
               <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
