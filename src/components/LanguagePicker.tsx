@@ -8,18 +8,17 @@ interface LanguagePickerProps {
   onLanguageChange: (lang: Language) => void;
 }
 
-const LANGUAGE_FLAGS: Record<Language, string> = {
-  en: '🇬🇧',
-  pl: '🇵🇱',
-  es: '🇪🇸',
-  pt: '🇵🇹',
-  fr: '🇫🇷',
-  it: '🇮🇹',
-  ar: '🇸🇦',
-  tl: '🇵🇭',
-  vi: '🇻🇳'
+const LANGUAGE_FLAG_CODES: Record<Language, string> = {
+  en: 'gb',
+  pl: 'pl',
+  es: 'es',
+  pt: 'pt',
+  fr: 'fr',
+  it: 'it',
+  ar: 'sa',
+  tl: 'ph',
+  vi: 'vn'
 };
-
 
 const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguageChange }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,13 +57,11 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
         style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '8px',
-          padding: '10px 16px',
+          gap: '6px',
+          padding: '10px 12px',
           background: isOpen ? 'rgba(56,189,248,0.15)' : 'rgba(15, 23, 42, 0.8)',
           border: `1px solid ${isOpen ? 'rgba(56,189,248,0.5)' : 'var(--glass-border)'}`,
           color: 'var(--text-color)',
-          fontSize: '13px',
-          fontWeight: 600,
           cursor: 'pointer',
           boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
           transition: 'all 0.2s ease',
@@ -85,7 +82,18 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
           }
         }}
       >
-        <span style={{ fontSize: '18px' }}>{LANGUAGE_FLAGS[currentLang]}</span>
+        <img 
+          src={`https://flagcdn.com/w40/${LANGUAGE_FLAG_CODES[currentLang]}.png`} 
+          alt={languageNames[currentLang]} 
+          style={{ 
+            width: '21px', 
+            height: '14px', 
+            objectFit: 'cover', 
+            borderRadius: '2px',
+            boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
+            display: 'block'
+          }} 
+        />
         <ChevronDown 
           size={13} 
           style={{ 
@@ -116,7 +124,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
             zIndex: 101
           }}
         >
-          {(Object.keys(LANGUAGE_FLAGS) as Language[]).map(lang => {
+          {(Object.keys(LANGUAGE_FLAG_CODES) as Language[]).map(lang => {
             const isSelected = currentLang === lang;
             return (
               <button
@@ -125,7 +133,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
                 style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '10px',
+                  gap: '12px',
                   padding: '10px 16px',
                   background: isSelected ? 'rgba(56, 189, 248, 0.12)' : 'transparent',
                   border: 'none',
@@ -151,7 +159,18 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
                   }
                 }}
               >
-                <span style={{ fontSize: '16px', width: '20px', display: 'inline-block' }}>{LANGUAGE_FLAGS[lang]}</span>
+                <img 
+                  src={`https://flagcdn.com/w40/${LANGUAGE_FLAG_CODES[lang]}.png`} 
+                  alt={languageNames[lang]} 
+                  style={{ 
+                    width: '21px', 
+                    height: '14px', 
+                    objectFit: 'cover', 
+                    borderRadius: '2px',
+                    boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
+                    display: 'block'
+                  }} 
+                />
                 <span style={{ flex: 1 }}>{languageNames[lang]}</span>
               </button>
             );
