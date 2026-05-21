@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { List } from 'lucide-react';
+import { List, Play, Pause, X } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
@@ -12,6 +12,54 @@ import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
 import { t, translateApparitionsList, loadLanguageTranslations } from './utils/i18n';
 import type { Language } from './utils/i18n';
+
+const pauseTranslations: Record<string, string> = {
+  pl: 'Zatrzymaj',
+  es: 'Pausar',
+  pt: 'Pausar',
+  fr: 'Pause',
+  it: 'Pausa',
+  vi: 'Tạm dừng',
+  ar: 'إيقاف مؤقت',
+  tl: 'I-pause',
+  en: 'Pause'
+};
+
+const resumeTranslations: Record<string, string> = {
+  pl: 'Wznów',
+  es: 'Reanudar',
+  pt: 'Retomar',
+  fr: 'Reprendre',
+  it: 'Riprendi',
+  vi: 'Tiếp tục',
+  ar: 'استئناف',
+  tl: 'Ituloy',
+  en: 'Resume'
+};
+
+const exitTranslations: Record<string, string> = {
+  pl: 'Zakończ',
+  es: 'Salir',
+  pt: 'Sair',
+  fr: 'Quitter',
+  it: 'Esci',
+  vi: 'Thoát',
+  ar: 'إنهاء',
+  tl: 'Lumabas',
+  en: 'Exit'
+};
+
+const playPresentationTranslations: Record<string, string> = {
+  pl: 'Uruchom prezentację',
+  es: 'Iniciar presentación',
+  pt: 'Iniciar apresentação',
+  fr: 'Lancer la présentation',
+  it: 'Avvia presentazione',
+  vi: 'Bắt đầu trình chiếu',
+  ar: 'بدء العرض التقديمي',
+  tl: 'Simulan ang Presentation',
+  en: 'Play Presentation'
+};
 
 function App() {
   const [lang, setLang] = useState<Language>(() => {
@@ -37,6 +85,8 @@ function App() {
   const [activeCenturies, setActiveCenturies] = useState<string[]>(CENTURY_FILTERS.map(c => c.id));
   const [isDirectoryOpen, setIsDirectoryOpen] = useState(false);
   const [isPlayingTimeline, setIsPlayingTimeline] = useState(false);
+  const [isCinemaMode, setIsCinemaMode] = useState(false);
+  const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [playbackIndex, setPlaybackIndex] = useState(0);
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
 
@@ -48,7 +98,13 @@ function App() {
 
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
-    if (isPlayingTimeline) {
+    if (apparition) {
+      const idx = sortedFilteredApparitions.findIndex(a => a.id === apparition.id);
+      if (idx !== -1) {
+        setPlaybackIndex(idx);
+      }
+    }
+    if (!isCinemaMode && isPlayingTimeline) {
       setIsPlayingTimeline(false);
     }
   };
@@ -84,7 +140,7 @@ function App() {
     return [...filteredApparitions].sort((a, b) => a.year - b.year);
   }, [filteredApparitions]);
 
-  // Interval loop for timeline playback
+  // Interval loop for timeline playback (4.5s per event to give zoom/read time)
   useEffect(() => {
     if (!isPlayingTimeline || sortedFilteredApparitions.length === 0) return;
 
@@ -96,7 +152,7 @@ function App() {
         }
         return next;
       });
-    }, 2800);
+    }, 4500);
 
     return () => clearInterval(interval);
   }, [isPlayingTimeline, sortedFilteredApparitions]);
@@ -105,33 +161,186 @@ function App() {
   useEffect(() => {
     if (isPlayingTimeline && sortedFilteredApparitions[playbackIndex]) {
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      // Note: we're disabling warnings because setting state in this interval effect is intentional
       setSelectedApparition(sortedFilteredApparitions[playbackIndex]);
     }
   }, [isPlayingTimeline, playbackIndex, sortedFilteredApparitions]);
 
+  // Manage sidebar visibility delay during timeline playback to wait for flight animation
+  useEffect(() => {
+    if (isPlayingTimeline) {
+      setIsSidebarVisible(false);
+      const timer = setTimeout(() => {
+        setIsSidebarVisible(true);
+      }, 1200); // 1.2s delay covers the flight duration (1.0s) beautifully
+      return () => clearTimeout(timer);
+    } else {
+      setIsSidebarVisible(true);
+    }
+  }, [playbackIndex, isPlayingTimeline]);
+
   const togglePlayTimeline = () => {
-    if (!isPlayingTimeline) {
+    if (isCinemaMode) {
+      // If already in cinema mode, toggle play/pause state
+      setIsPlayingTimeline(prev => !prev);
+    } else {
+      // Enter cinema mode and play
       setIsPlayingTimeline(true);
+      setIsCinemaMode(true);
       setPlaybackIndex(0);
       if (sortedFilteredApparitions.length > 0) {
         setSelectedApparition(sortedFilteredApparitions[0]);
       }
-    } else {
-      setIsPlayingTimeline(false);
     }
+  };
+
+  const exitCinemaMode = () => {
+    setIsPlayingTimeline(false);
+    setIsCinemaMode(false);
   };
 
   // Sliced data for GlobeViewer during playback
   const displayedApparitions = useMemo(() => {
-    if (!isPlayingTimeline || !currentSelectedApparition) return filteredApparitions;
+    if (!isCinemaMode || !currentSelectedApparition) return filteredApparitions;
     return filteredApparitions.filter(a => a.year <= currentSelectedApparition.year);
-  }, [isPlayingTimeline, currentSelectedApparition, filteredApparitions]);
+  }, [isCinemaMode, currentSelectedApparition, filteredApparitions]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+      {(isCinemaMode || (hasPopups && !isCinemaMode)) && (
+        <div 
+          className="glass-panel glass-panel-rounded animate-fade-in" 
+          style={{
+            position: 'absolute',
+            top: '20px',
+            left: '20px',
+            zIndex: 40,
+            padding: '16px 20px',
+            background: 'rgba(15, 23, 42, 0.95)',
+            border: '1px solid var(--glass-border)',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'stretch',
+            gap: '12px',
+            width: isCinemaMode ? '210px' : '230px',
+            boxShadow: '0 15px 45px rgba(0,0,0,0.6)',
+            pointerEvents: 'auto',
+            transition: 'all 0.3s ease'
+          }}
+        >
+          {isCinemaMode ? (
+            <>
+              {/* Play/Pause Button */}
+              <button
+                onClick={togglePlayTimeline}
+                style={{
+                  background: isPlayingTimeline ? '#ef4444' : 'var(--accent-color)',
+                  color: '#fff',
+                  border: 'none',
+                  padding: '12px 24px',
+                  borderRadius: '25px',
+                  fontSize: '15px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  boxShadow: isPlayingTimeline ? '0 0 20px rgba(239, 68, 68, 0.45)' : '0 0 20px rgba(56, 189, 248, 0.45)',
+                  transition: 'all 0.2s',
+                  letterSpacing: '0.5px'
+                }}
+                onMouseOver={e => {
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                  e.currentTarget.style.boxShadow = isPlayingTimeline ? '0 0 25px rgba(239, 68, 68, 0.65)' : '0 0 25px rgba(56, 189, 248, 0.65)';
+                }}
+                onMouseOut={e => {
+                  e.currentTarget.style.transform = 'none';
+                  e.currentTarget.style.boxShadow = isPlayingTimeline ? '0 0 20px rgba(239, 68, 68, 0.45)' : '0 0 20px rgba(56, 189, 248, 0.45)';
+                }}
+              >
+                {isPlayingTimeline ? <Pause size={16} /> : <Play size={16} />}
+                <span>
+                  {isPlayingTimeline 
+                    ? (pauseTranslations[lang] || 'Pause')
+                    : (resumeTranslations[lang] || 'Resume')
+                  }
+                </span>
+              </button>
+
+              {/* Exit Button */}
+              <button
+                onClick={exitCinemaMode}
+                style={{
+                  background: 'rgba(255, 255, 255, 0.08)',
+                  color: '#fff',
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  padding: '12px 24px',
+                  borderRadius: '25px',
+                  fontSize: '15px',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  transition: 'all 0.2s',
+                  letterSpacing: '0.5px'
+                }}
+                onMouseOver={e => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
+                  e.currentTarget.style.transform = 'scale(1.03)';
+                }}
+                onMouseOut={e => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+                  e.currentTarget.style.transform = 'none';
+                }}
+              >
+                <X size={16} style={{ opacity: 0.8 }} />
+                <span>{exitTranslations[lang] || 'Exit'}</span>
+              </button>
+            </>
+          ) : (
+            /* Włącz animację / Play Presentation when controls are hidden and sidebar is open */
+            <button
+              onClick={togglePlayTimeline}
+              style={{
+                background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
+                color: '#fff',
+                border: 'none',
+                padding: '12px 24px',
+                borderRadius: '25px',
+                fontSize: '15px',
+                fontWeight: 700,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '8px',
+                boxShadow: '0 4px 20px rgba(56, 189, 248, 0.35)',
+                transition: 'all 0.2s',
+                letterSpacing: '0.5px'
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = 'scale(1.03)';
+                e.currentTarget.style.boxShadow = '0 6px 24px rgba(56, 189, 248, 0.55)';
+                e.currentTarget.style.filter = 'brightness(1.1)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.boxShadow = '0 4px 20px rgba(56, 189, 248, 0.35)';
+                e.currentTarget.style.filter = 'none';
+              }}
+            >
+              <Play size={16} fill="#ffffff" />
+              <span>
+                {playPresentationTranslations[lang] || 'Play Presentation'}
+              </span>
+            </button>
+          )}
+        </div>
+      )}
       {/* Left Control Panel */}
       <div style={{
         position: 'absolute',
@@ -143,7 +352,7 @@ function App() {
         flexDirection: 'column',
         gap: '10px',
         pointerEvents: 'none',
-        transform: hasPopups ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
+        transform: (hasPopups || isCinemaMode) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
         transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
       }}>
         {/* Title Card */}
@@ -217,6 +426,44 @@ function App() {
             <span>{t('browseDirectory', lang, { count: filteredApparitions.length })}</span>
           </button>
         </div>
+
+        {/* Play Presentation Button */}
+        <button
+          onClick={togglePlayTimeline}
+          className="glass-panel glass-panel-rounded"
+          style={{
+            pointerEvents: 'auto',
+            width: '100%',
+            height: '42px',
+            padding: '0 16px',
+            background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.8))',
+            color: '#ffffff',
+            border: 'none',
+            fontSize: '13px',
+            fontWeight: 700,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '8px',
+            boxShadow: '0 4px 16px rgba(56, 189, 248, 0.3)',
+            transition: 'all 0.2s ease',
+            letterSpacing: '0.3px'
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.transform = 'translateY(-1px)';
+            e.currentTarget.style.boxShadow = '0 6px 20px rgba(56, 189, 248, 0.45)';
+            e.currentTarget.style.filter = 'brightness(1.1)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.transform = 'none';
+            e.currentTarget.style.boxShadow = '0 4px 16px rgba(56, 189, 248, 0.3)';
+            e.currentTarget.style.filter = 'none';
+          }}
+        >
+          <Play size={15} fill="#ffffff" />
+          <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
+        </button>
       </div>
 
       {/* Top Right Language Switcher */}
@@ -242,13 +489,16 @@ function App() {
         hidePlayPause={hasPopups}
       />
       
-      <Sidebar 
-        apparition={currentSelectedApparition} 
-        onClose={() => setSelectedApparition(null)} 
-        allActiveApparitions={filteredApparitions}
-        onSelectApparition={handleSelectApparition}
-        lang={lang}
-      />
+      {currentSelectedApparition && (
+        <Sidebar 
+          apparition={currentSelectedApparition} 
+          isVisible={isSidebarVisible}
+          onClose={() => setSelectedApparition(null)} 
+          allActiveApparitions={filteredApparitions}
+          onSelectApparition={handleSelectApparition}
+          lang={lang}
+        />
+      )}
 
       {filteredApparitions.length > 0 && (
         <TimelineOverlay
@@ -257,6 +507,7 @@ function App() {
           onSelectApparition={handleSelectApparition}
           isPlaying={isPlayingTimeline}
           onTogglePlay={togglePlayTimeline}
+          isCinemaMode={isCinemaMode}
           isOpen={isTimelineOpen}
           setIsOpen={setIsTimelineOpen}
           lang={lang}

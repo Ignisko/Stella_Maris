@@ -69,7 +69,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = false;
       }
-      const latOffset = isTimelineOpen ? 14 : 4;
+      const latOffset = isTimelineOpen ? 6 : 0;
       globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: 0.6 }, 1000);
     }
   }, [selectedApparition, isTimelineOpen]);
@@ -86,9 +86,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     if (globeEl.current && globeEl.current.controls()) {
       const controls = globeEl.current.controls();
       controls.autoRotateSpeed = 0.15;
-      controls.minDistance = 112; // Globe radius ~100. 112 keeps camera safely outside globe surface but allows closer zoom
+      controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
       controls.maxDistance = 400;
-      controls.zoomSpeed = 0.6;
+      controls.zoomSpeed = 1.8; // Faster, more responsive zoom
+      controls.enableDamping = true; // Premium inertial damping
+      controls.dampingFactor = 0.08;
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
   }, []);
@@ -106,9 +108,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       if (globeEl.current) {
         if (!controlsConfigured && globeEl.current.controls()) {
           const controls = globeEl.current.controls();
-          controls.minDistance = 112;
+          controls.minDistance = 101.5;
           controls.maxDistance = 400;
-          controls.zoomSpeed = 0.6;
+          controls.zoomSpeed = 1.8;
+          controls.enableDamping = true;
+          controls.dampingFactor = 0.08;
           controlsConfigured = true;
         }
 
@@ -140,12 +144,56 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           document.documentElement.style.setProperty('--globe-label-opacity', targetOpacity.toString());
           document.documentElement.style.setProperty('--globe-label-scale', '1');
         }
+
+        // Check HTML label collisions to prevent overlapping text on screen
+        const labelEls = Array.from(document.querySelectorAll('.globe-html-label')) as HTMLElement[];
+        if (labelEls.length > 1) {
+          // Sort labels: selected (highest priority) -> priority value (ascending)
+          labelEls.sort((a, b) => {
+            const aSel = a.dataset.selected === 'true';
+            const bSel = b.dataset.selected === 'true';
+            if (aSel && !bSel) return -1;
+            if (!aSel && bSel) return 1;
+            
+            const aPri = parseInt(a.dataset.priority || '3', 10);
+            const bPri = parseInt(b.dataset.priority || '3', 10);
+            return aPri - bPri;
+          });
+
+          const keptRects: DOMRect[] = [];
+          const padding = 5; // Safety margin between label rectangles in pixels
+
+          for (const el of labelEls) {
+            const content = el.querySelector('.label-content') as HTMLElement;
+            if (!content) continue;
+
+            // Restore visibility to measure correct size
+            content.style.visibility = 'visible';
+            const rect = content.getBoundingClientRect();
+
+            let overlaps = false;
+            for (const kept of keptRects) {
+              const overlapX = rect.left - padding < kept.right && rect.right + padding > kept.left;
+              const overlapY = rect.top - padding < kept.bottom && rect.bottom + padding > kept.top;
+              if (overlapX && overlapY) {
+                overlaps = true;
+                break;
+              }
+            }
+
+            if (overlaps) {
+              content.style.visibility = 'hidden';
+            } else {
+              keptRects.push(rect);
+            }
+          }
+        }
       }
       animationFrameId = requestAnimationFrame(updateScale);
     };
     updateScale();
     return () => cancelAnimationFrame(animationFrameId);
-  }, []);
+  }, [selectedApparition]);
 
   const visibleApparitions = useMemo(() => {
     // Show all pins always (dots are lightweight), only labels are LOD-gated

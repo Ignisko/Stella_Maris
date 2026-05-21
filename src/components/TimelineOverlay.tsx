@@ -1,6 +1,6 @@
-import React, { useState, useMemo, useEffect } from 'react';
+import React, { useState, useMemo, useEffect, useRef } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, Clock, Play, Pause, ChevronUp, X } from 'lucide-react';
+import { BarChart2, Clock, ChevronUp, X, MapPin } from 'lucide-react';
 import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -11,6 +11,7 @@ interface TimelineOverlayProps {
   onSelectApparition: (apparition: Apparition) => void;
   isPlaying: boolean;
   onTogglePlay: () => void;
+  isCinemaMode: boolean;
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
   lang: Language;
@@ -18,24 +19,21 @@ interface TimelineOverlayProps {
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
   "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 30 },
-  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 15, fullHistoryOffset: -1 },
-  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: 45, fullHistoryOffset: -1 },
-  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 80, fullHistoryOffset: 80 },
+  "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 6, fullHistoryOffset: -1 },
+  "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: -55, fullHistoryOffset: -1 },
+  "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 40, fullHistoryOffset: 80 },
   "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
   "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -1 },
   "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
-  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isOpen, setIsOpen, lang
+  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isCinemaMode, isOpen, setIsOpen, lang
 }) => {
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
-
-  // Auto-open when playing, auto-close when stopped (but only if user didn't manually open)
-  useEffect(() => {
-    if (isPlaying) setIsOpen(true);
-  }, [isPlaying, setIsOpen]);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [isDragging, setIsDragging] = useState(false);
 
   const activeApparitions = useMemo(() => {
     if (timeMode === 'modern') return apparitions.filter(a => a.year >= 1800);
@@ -52,6 +50,70 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
 
   const bucketSpan = Math.max(1, Math.round(range / 115));
   const numBuckets = Math.ceil(range / bucketSpan);
+
+  // Auto-open when cinema mode is active
+  useEffect(() => {
+    if (isCinemaMode) setIsOpen(true);
+  }, [isCinemaMode, setIsOpen]);
+
+  // Auto-switch to 'all' if cinema mode is active and we have apparitions before 1800
+  useEffect(() => {
+    if (isCinemaMode && apparitions.some(a => a.year < 1800)) {
+      setTimeMode('all');
+    }
+  }, [isCinemaMode, apparitions]);
+
+  const handleTimelineInteraction = (clientX: number) => {
+    if (!containerRef.current || sorted.length === 0) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const padding = 20; // 20px padding left/right
+    const relativeX = clientX - rect.left - padding;
+    const timelineWidth = rect.width - (padding * 2);
+    if (timelineWidth <= 0) return;
+
+    const pct = Math.max(0, Math.min(1, relativeX / timelineWidth));
+    const targetYear = startY + pct * range;
+
+    // Find closest apparition
+    let closest = sorted[0];
+    let minDiff = Math.abs(sorted[0].year - targetYear);
+    for (let i = 1; i < sorted.length; i++) {
+      const diff = Math.abs(sorted[i].year - targetYear);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closest = sorted[i];
+      }
+    }
+    onSelectApparition(closest);
+  };
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    const target = e.target as HTMLElement;
+    if (target.closest('button') || target.closest('.interactive-pill') || target.closest('.interactive-bar')) {
+      return;
+    }
+    setIsDragging(true);
+    handleTimelineInteraction(e.clientX);
+  };
+
+  useEffect(() => {
+    if (!isDragging) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      handleTimelineInteraction(e.clientX);
+    };
+
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+    };
+  }, [isDragging, startY, range, sorted]);
 
   const buckets = useMemo(() => {
     if (sorted.length === 0) return [];
@@ -100,7 +162,10 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       const bucket = buckets.find(b => famous.year >= b.startYear && famous.year <= b.endYear);
       const bottomPx = bucket ? bucket.apps.length * (tileHeight + tileGap) : 0;
 
-      const leftPct = ((famous.year - startY) / range) * 100;
+      // Use the exact center of the bucket column for perfect alignment with the timeline bar stack
+      const leftPct = bucket
+        ? ((bucket.index + 0.5) / buckets.length) * 100
+        : ((famous.year - startY) / range) * 100;
       const clampedLeft = Math.max(6, Math.min(94, leftPct));
 
       const titleForLang = (famous as any).translations?.[lang]?.title || famous.title;
@@ -169,18 +234,21 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   // Expanded panel
   return (
     <div
+      ref={containerRef}
+      onMouseDown={handleMouseDown}
       className="glass-panel glass-panel-rounded animate-fade-in"
       style={{
+        cursor: 'pointer',
         position: 'fixed',
         bottom: '12px',
         left: '20px',
-        right: selectedApparition ? '420px' : '30px',
+        right: (selectedApparition && !isCinemaMode) ? '420px' : '30px',
         maxWidth: '1400px',
         backgroundColor: 'rgba(15, 23, 42, 0.98)',
         border: '1px solid rgba(255, 255, 255, 0.2)',
         backdropFilter: 'blur(20px)',
         boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
-        padding: '10px 20px',
+        padding: isCinemaMode ? '6px 20px' : '10px 20px',
         zIndex: 25,
         boxSizing: 'border-box',
         transition: 'all 0.3s ease',
@@ -188,107 +256,96 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       }}
     >
       {/* Close button in top-right */}
-      <button
-        onClick={() => { setIsOpen(false); if (isPlaying) onTogglePlay(); }}
-        style={{
-          position: 'absolute',
-          top: '10px',
-          right: '20px',
-          background: 'rgba(255,255,255,0.06)',
-          border: '1px solid rgba(255,255,255,0.15)',
-          borderRadius: '16px',
-          padding: '6px 12px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-          color: '#e2e8f0',
-          cursor: 'pointer',
-          fontSize: '12px',
-          fontWeight: 600,
-          transition: 'all 0.2s',
-          zIndex: 35
-        }}
-        onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
-        onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
-      >
-        <span>{t('close', lang)}</span>
-        <X size={13} />
-      </button>
+      {!isCinemaMode && (
+        <button
+          onClick={() => {
+            setIsOpen(false);
+            if (isPlaying) onTogglePlay();
+          }}
+          style={{
+            position: 'absolute',
+            top: '10px',
+            right: '20px',
+            background: 'rgba(255,255,255,0.06)',
+            border: '1px solid rgba(255,255,255,0.15)',
+            borderRadius: '16px',
+            padding: '6px 12px',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px',
+            color: '#e2e8f0',
+            cursor: 'pointer',
+            fontSize: '12px',
+            fontWeight: 600,
+            transition: 'all 0.2s',
+            zIndex: 35
+          }}
+          onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
+          onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
+        >
+          <span>{t('close', lang)}</span>
+          <X size={13} />
+        </button>
+      )}
 
       {/* Top bar: title + controls */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '8px', paddingRight: '100px' }}>
+      {!isCinemaMode && (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '8px', paddingRight: '100px' }}>
 
-        {/* Title */}
-        <h3 style={{
-          fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.5px',
-          opacity: 0.85, margin: 0, fontWeight: 700,
-          display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0
-        }}>
-          <BarChart2 size={16} color="var(--accent-color)" /> {t('timeline', lang)}
-        </h3>
+          {/* Title */}
+          <h3 style={{
+            fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.5px',
+            opacity: 0.85, margin: 0, fontWeight: 700,
+            display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0
+          }}>
+            <BarChart2 size={16} color="var(--accent-color)" /> {t('timeline', lang)}
+          </h3>
 
-        {/* Time mode toggle */}
-        <div style={{
-          display: 'flex', background: 'rgba(0,0,0,0.4)', padding: '3px',
-          borderRadius: '20px', border: '1px solid rgba(255,255,255,0.12)'
-        }}>
-          {(['modern', 'all'] as const).map(mode => (
-            <button
-              key={mode}
-              onClick={() => setTimeMode(mode)}
-              style={{
-                background: timeMode === mode ? 'var(--accent-color)' : 'transparent',
-                color: timeMode === mode ? '#ffffff' : '#94a3b8',
-                border: 'none', padding: '4px 14px', borderRadius: '18px',
-                fontSize: '11px', fontWeight: 700, cursor: 'pointer',
-                transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '5px'
-              }}
-            >
-              <Clock size={11} />
-              {mode === 'modern' ? t('modernEra', lang) : t('fullHistory', lang)}
-            </button>
-          ))}
+          {/* Time mode toggle */}
+          <div style={{
+            display: 'flex', background: 'rgba(0,0,0,0.4)', padding: '3px',
+            borderRadius: '20px', border: '1px solid rgba(255,255,255,0.12)'
+          }}>
+            {(['modern', 'all'] as const).map(mode => (
+              <button
+                key={mode}
+                onClick={() => setTimeMode(mode)}
+                style={{
+                  background: timeMode === mode ? 'var(--accent-color)' : 'transparent',
+                  color: timeMode === mode ? '#ffffff' : '#94a3b8',
+                  border: 'none', padding: '4px 14px', borderRadius: '18px',
+                  fontSize: '11px', fontWeight: 700, cursor: 'pointer',
+                  transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '5px'
+                }}
+              >
+                <Clock size={11} />
+                {mode === 'modern' ? t('modernEra', lang) : t('fullHistory', lang)}
+              </button>
+            ))}
+          </div>
         </div>
-
-        {/* Play / Pause */}
-        <button
-          onClick={onTogglePlay}
-          style={{
-            background: isPlaying ? '#ef4444' : 'var(--accent-color)',
-            color: '#fff', border: 'none', padding: '5px 16px',
-            borderRadius: '20px', fontSize: '11px', fontWeight: 700,
-            cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px',
-            boxShadow: isPlaying ? '0 0 15px rgba(239,68,68,0.8)' : '0 0 15px rgba(56,189,248,0.6)',
-            transition: 'all 0.2s'
-          }}
-        >
-          {isPlaying ? <Pause size={12} /> : <Play size={12} />}
-          <span>
-            {isPlaying
-              ? t('playingTimeline', lang, { year: selectedApparition?.year ?? minYear, count: sorted.length })
-              : t('playTimeline', lang, { count: sorted.length })}
-          </span>
-        </button>
-      </div>
+      )}
 
       {/* Status legend under the controls */}
-      <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '12px',
-        flexWrap: 'wrap',
-        marginBottom: '16px',
-        paddingTop: '6px',
-        borderTop: '1px solid rgba(255, 255, 255, 0.06)'
-      }}>
-        <span style={{ fontSize: '10px', opacity: 0.5, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700, marginRight: '4px' }}>{t('legend', lang)}</span>
-        {Object.entries(STATUS_COLORS).map(([label, color]) => (
-          <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
-            <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
-            <span>{t(label as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
-          </div>
-        ))}
-      </div>
+      {!isCinemaMode && (
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
+          flexWrap: 'wrap',
+          marginBottom: '16px',
+          paddingTop: '6px',
+          borderTop: '1px solid rgba(255, 255, 255, 0.06)'
+        }}>
+          <span style={{ fontSize: '10px', opacity: 0.5, textTransform: 'uppercase', letterSpacing: '0.5px', fontWeight: 700, marginRight: '4px' }}>{t('legend', lang)}</span>
+          {Object.entries(STATUS_COLORS).map(([label, color]) => (
+            <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '5px', fontSize: '11px', opacity: 0.8, fontWeight: 500 }}>
+              <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 5px ${color}`, flexShrink: 0 }} />
+              <span>{t(label as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Hover tooltip */}
       {hoveredApp && (
@@ -316,109 +373,149 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       )}
 
       {/* Histogram */}
-      <div style={{ position: 'relative', width: '100%', height: '120px' }}>
+      <div style={{ position: 'relative', width: '100%', height: isCinemaMode ? '35px' : '120px', transition: 'height 0.3s ease' }}>
 
         {/* Stacked bars */}
-        <div style={{
-          display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between',
-          width: '100%', height: '100%', position: 'absolute', bottom: 0, left: 0, paddingBottom: '1px'
-        }}>
-          {buckets.map(b => (
-            <div key={b.index} style={{
-              flex: 1, minWidth: 0, margin: '0 0.5px',
-              display: 'flex', flexDirection: 'column-reverse', alignItems: 'center',
-              gap: `${tileGap}px`, height: '100%', justifyContent: 'flex-start', position: 'relative'
-            }}>
-              {b.apps.map(app => {
-                const isFuture = isPlaying && selectedApparition && app.year > selectedApparition.year;
-                if (isFuture) return null;
-                const isSelected = selectedApparition?.id === app.id;
-                const statusColor = getStatusColor(app.approvalStatus);
-                return (
-                  <div
-                    key={app.id}
-                    onClick={e => { e.stopPropagation(); onSelectApparition(app); }}
-                    onMouseEnter={() => setHoveredApp(app)}
-                    onMouseLeave={() => setHoveredApp(null)}
-                    style={{
-                      width: '100%', maxWidth: `${tileWidth}px`, minWidth: '1.5px',
-                      height: `${tileHeight}px`, backgroundColor: statusColor,
-                      borderRadius: '1.5px', borderTop: '1px solid rgba(255,255,255,0.3)',
-                      border: isSelected ? '2px solid #ffffff' : undefined,
-                      boxShadow: isSelected ? `0 0 12px #ffffff, 0 0 8px ${statusColor}` : undefined,
-                      cursor: 'pointer', transition: 'all 0.2s ease',
-                      opacity: selectedApparition ? (isSelected ? 1 : 0.4) : 0.9,
-                      zIndex: isSelected ? 30 : 1,
-                      transform: isSelected ? 'scale(1.25)' : undefined,
-                      flexShrink: 0
-                    }}
-                  />
-                );
-              })}
-            </div>
-          ))}
-        </div>
+        {!isCinemaMode && (
+          <div style={{
+            display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between',
+            width: '100%', height: '100%', position: 'absolute', bottom: 0, left: 0, paddingBottom: '1px'
+          }}>
+            {buckets.map(b => (
+              <div key={b.index} style={{
+                flex: 1, minWidth: 0, margin: '0 0.5px',
+                display: 'flex', flexDirection: 'column-reverse', alignItems: 'center',
+                gap: `${tileGap}px`, height: '100%', justifyContent: 'flex-start', position: 'relative'
+              }}>
+                {b.apps.map(app => {
+                  const isFuture = isPlaying && selectedApparition && app.year > selectedApparition.year;
+                  if (isFuture) return null;
+                  const isSelected = selectedApparition?.id === app.id;
+                  const statusColor = getStatusColor(app.approvalStatus);
+                  return (
+                    <div
+                      key={app.id}
+                      className="interactive-bar"
+                      onClick={e => { e.stopPropagation(); onSelectApparition(app); }}
+                      onMouseEnter={() => setHoveredApp(app)}
+                      onMouseLeave={() => setHoveredApp(null)}
+                      style={{
+                        width: '100%', maxWidth: `${tileWidth}px`, minWidth: '1.5px',
+                        height: `${tileHeight}px`, backgroundColor: statusColor,
+                        borderRadius: '1.5px', borderTop: '1px solid rgba(255,255,255,0.3)',
+                        border: isSelected ? '2px solid #ffffff' : undefined,
+                        boxShadow: isSelected ? `0 0 12px #ffffff, 0 0 8px ${statusColor}` : undefined,
+                        cursor: 'pointer', transition: 'all 0.2s ease',
+                        opacity: selectedApparition ? (isSelected ? 1 : 0.4) : 0.9,
+                        zIndex: isSelected ? 30 : 1,
+                        transform: isSelected ? 'scale(1.25)' : undefined,
+                        flexShrink: 0
+                      }}
+                    />
+                  );
+                })}
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Callout overlays */}
         <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
 
-          {/* Playback laser */}
-          {selectedApparition && isPlaying && (() => {
-            const idx = buckets.findIndex(b => b.apps.some(a => a.id === selectedApparition.id));
-            if (idx === -1) return null;
-            const leftPct = ((idx + 0.5) / buckets.length) * 100;
+          {/* Playback laser pointer / indicator */}
+          {selectedApparition && (() => {
+            const year = selectedApparition.year;
+            const clampedYear = Math.max(startY, Math.min(endY, year));
+            const leftPct = range > 0 ? ((clampedYear - startY) / range) * 100 : 0;
             return (
               <div style={{
-                position: 'absolute', left: `${leftPct}%`, bottom: 0, top: '-45px',
-                width: '2px', backgroundColor: '#38bdf8',
-                boxShadow: '0 0 12px #38bdf8', zIndex: 110,
-                transform: 'translateX(-50%)', transition: 'left 0.5s cubic-bezier(0.4,0,0.2,1)',
+                position: 'absolute', 
+                left: `${leftPct}%`, 
+                bottom: '-2px', 
+                top: isCinemaMode ? '0px' : '-10px',
+                width: '2px', 
+                backgroundColor: 'var(--accent-color)',
+                boxShadow: '0 0 12px var(--accent-color)', 
+                zIndex: 110,
+                transform: 'translateX(-50%)', 
+                transition: 'left 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
                 pointerEvents: 'none'
               }}>
+                {/* Pointer head needle Google-style Map Pin */}
                 <div style={{
-                  position: 'absolute', top: 0, left: '50%',
-                  transform: 'translate(-50%, -100%)',
-                  backgroundColor: '#38bdf8', color: '#0f172a',
-                  padding: '2px 8px', borderRadius: '10px',
-                  fontSize: '11px', fontWeight: 800, whiteSpace: 'nowrap'
+                  position: 'absolute',
+                  top: 0,
+                  left: '50%',
+                  transform: 'translate(-50%, -100%) translateY(2px)',
+                  filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.6)) drop-shadow(0 0 8px var(--accent-color))',
+                  zIndex: 112,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
                 }}>
-                  {selectedApparition.year}: {selectedApparition.title}
+                  <MapPin size={22} fill="#ef4444" color="#ffffff" strokeWidth={1.5} />
                 </div>
+                
+                {/* floating badge in cinema mode */}
+                {isCinemaMode && (() => {
+                  let badgeTranslateX = -50;
+                  if (leftPct > 80) {
+                    badgeTranslateX = -50 - Math.min(45, (leftPct - 80) * 2.25);
+                  } else if (leftPct < 20) {
+                    badgeTranslateX = -50 + Math.min(45, (20 - leftPct) * 2.25);
+                  }
+                  return (
+                    <div style={{
+                      position: 'absolute', 
+                      top: '-15px', 
+                      left: '50%',
+                      transform: `translate(${badgeTranslateX}%, -100%)`,
+                      backgroundColor: 'var(--accent-color)', 
+                      color: '#0f172a',
+                      padding: '4px 10px', 
+                      borderRadius: '12px',
+                      fontSize: '11px', 
+                      fontWeight: 800, 
+                      whiteSpace: 'nowrap',
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                      transition: 'transform 0.1s ease-out'
+                    }}>
+                      {selectedApparition.year}: {selectedApparition.title}
+                    </div>
+                  );
+                })()}
               </div>
             );
           })()}
 
-          {/* Callout lines (solid gradients diagonal or vertical using SVG) */}
-          <svg style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: '300px', pointerEvents: 'none', zIndex: 5 }}>
-            <defs>
-              <linearGradient id="callout-grad" x1="0%" y1="100%" x2="0%" y2="0%">
-                <stop offset="0%" stopColor="rgba(255,255,255,0.15)" />
-                <stop offset="100%" stopColor="rgba(255,255,255,0.75)" />
-              </linearGradient>
-            </defs>
-            {callouts.map(c => {
-              let lineX2 = c.left;
-              if (c.originalLeft > c.left + 0.5) {
-                lineX2 = c.left + Math.min(3.5, c.originalLeft - c.left);
-              } else if (c.originalLeft < c.left - 0.5) {
-                lineX2 = c.left - Math.min(3.5, c.left - c.originalLeft);
-              }
-              return (
-                <line
-                  key={`svg-line-${c.id}`}
-                  x1={`${c.originalLeft}%`}
-                  y1={300 - c.bottomPx}
-                  x2={`${lineX2}%`}
-                  y2={300 - (c.bottomPx + c.offset)}
-                  stroke="url(#callout-grad)"
-                  strokeWidth="1.5"
-                />
-              );
-            })}
-          </svg>
+          {/* Callout lines (solid light white lines using SVG) */}
+          {!isCinemaMode && (
+            <svg width="100%" height="300" style={{ position: 'absolute', left: 0, right: 0, bottom: 0, pointerEvents: 'none', zIndex: 5 }}>
+              {callouts.map(c => {
+                let lineX2 = c.left;
+                if (c.originalLeft > c.left + 0.5) {
+                  lineX2 = c.left + Math.min(3.5, c.originalLeft - c.left);
+                } else if (c.originalLeft < c.left - 0.5) {
+                  lineX2 = c.left - Math.min(3.5, c.left - c.originalLeft);
+                }
+                return (
+                  <line
+                    key={`svg-line-${c.id}`}
+                    x1={`${c.originalLeft}%`}
+                    y1={300 - c.bottomPx}
+                    x2={`${lineX2}%`}
+                    y2={300 - (c.bottomPx + c.offset)}
+                    stroke="rgba(255, 255, 255, 0.45)"
+                    strokeWidth="1.2"
+                  />
+                );
+              })}
+            </svg>
+          )}
 
           {/* Callout pills */}
-          {callouts.map(c => {
+          {!isCinemaMode && callouts.map(c => {
             const bottomPx = c.bottomPx + c.offset;
             // Calculate dynamic translateX to prevent edge clipping and connect beautifully
             let translateX = -50;
@@ -431,6 +528,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             return (
               <div
                 key={`pill-${c.id}`}
+                className="interactive-pill"
                 onClick={e => { e.stopPropagation(); onSelectApparition(c.famous); }}
                 style={{
                   position: 'absolute',

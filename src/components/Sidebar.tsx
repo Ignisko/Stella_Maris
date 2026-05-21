@@ -1,12 +1,13 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { MapPin, Calendar, Info, X, ExternalLink, Award, BookOpen, CheckCircle2, Sparkles, HeartHandshake, XCircle, Copy, Check } from 'lucide-react';
-import { getApparitionStatusCategory, getStatusColor, hexToRgb, getSingleStatusCategory, STATUS_COLORS } from '../utils/colors';
+import { getStatusColor, hexToRgb, getSingleStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
 interface SidebarProps {
   apparition: Apparition | null;
+  isVisible?: boolean;
   onClose: () => void;
   allActiveApparitions?: Apparition[];
   onSelectApparition?: (apparition: Apparition) => void;
@@ -33,35 +34,48 @@ const getCategoryIcon = (category: string, color: string) => {
   }
 };
 
-const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparitions = [], onSelectApparition, lang }) => {
+const Sidebar: React.FC<SidebarProps> = ({ apparition, isVisible = true, onClose, allActiveApparitions = [], onSelectApparition, lang }) => {
   const [copied, setCopied] = useState(false);
+  const [localApparition, setLocalApparition] = useState<Apparition | null>(apparition);
+
+  useEffect(() => {
+    if (apparition) {
+      if (isVisible || !localApparition) {
+        setLocalApparition(apparition);
+      }
+    } else {
+      setLocalApparition(null);
+    }
+  }, [apparition, isVisible, localApparition]);
+
+  const displayApp = localApparition || apparition;
 
   const clusteredApps = useMemo(() => {
-    if (!apparition || !allActiveApparitions.length) return [];
+    if (!displayApp || !allActiveApparitions.length) return [];
     const threshold = 0.02; // Close distance to group only within same city/shrine
     return allActiveApparitions.filter(a => 
-      Math.abs(a.lat - apparition.lat) < threshold && Math.abs(a.lng - apparition.lng) < threshold
+      Math.abs(a.lat - displayApp.lat) < threshold && Math.abs(a.lng - displayApp.lng) < threshold
     ).sort((a, b) => a.year - b.year);
-  }, [apparition, allActiveApparitions]);
+  }, [displayApp, allActiveApparitions]);
 
-  if (!apparition) return null;
+  if (!displayApp) return null;
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(apparition.title);
+    navigator.clipboard.writeText(displayApp.title);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const querySlug = apparition.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
-  const sourceLink = apparition.sourceUrl || `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`;
+  const querySlug = displayApp.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
+  const sourceLink = displayApp.sourceUrl || `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`;
 
   return (
-    <div className="glass-panel glass-panel-rounded animate-slide-in-right selectable" style={{
+    <div className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
       top: '80px',
+      bottom: '180px',
       right: '20px',
       width: '380px',
-      maxHeight: 'calc(100vh - 100px)',
       overflowY: 'auto',
       zIndex: 10,
       padding: '24px 28px',
@@ -70,12 +84,16 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
       boxShadow: '0 20px 50px rgba(0,0,0,0.8)',
       display: 'flex',
       flexDirection: 'column',
-      gap: '16px'
+      gap: '16px',
+      transform: isVisible ? 'translateX(0)' : 'translateX(calc(100% + 40px))',
+      opacity: isVisible ? 1 : 0,
+      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+      pointerEvents: isVisible ? 'auto' : 'none'
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
           <h2 style={{ fontSize: '26px', fontWeight: 600, margin: 0, color: 'var(--gold-accent)', lineHeight: 1.2, userSelect: 'text', WebkitUserSelect: 'text' }}>
-            {apparition.title}
+            {displayApp.title}
           </h2>
           <button
             onClick={handleCopy}
@@ -114,7 +132,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
           <span style={{ fontSize: '13px', opacity: 0.7, fontWeight: 500 }}>{t('otherApparitions', lang, { count: clusteredApps.length })}:</span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
             {clusteredApps.map(app => {
-              const isCurrent = app.id === apparition.id;
+              const isCurrent = app.id === displayApp.id;
               const color = getStatusColor(app.approvalStatus);
               return (
                 <button
@@ -148,15 +166,15 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
           <MapPin size={18} color="var(--accent-color)" />
-          <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{apparition.location}, {apparition.country}</span>
+          <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.location}, {displayApp.country}</span>
         </div>
         
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
           <Calendar size={18} color="var(--accent-color)" />
-          <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{apparition.year}</span>
+          <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.year}</span>
         </div>
 
-        {apparition.approvalStatus.split(/[/,;]/).map(s => s.trim()).filter(Boolean).map((part, index) => {
+        {displayApp.approvalStatus.split(/[/,;]/).map(s => s.trim()).filter(Boolean).map((part, index) => {
           const cat = getSingleStatusCategory(part);
           const color = STATUS_COLORS[cat] || "#94a3b8";
           const rgb = hexToRgb(color);
@@ -190,7 +208,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, onClose, allActiveApparit
           <h3 style={{ fontSize: '16px', fontWeight: 600, margin: 0 }}>{t('description', lang)}</h3>
         </div>
         <p style={{ fontSize: '15px', lineHeight: 1.65, opacity: 0.9, letterSpacing: '0.2px', margin: 0, userSelect: 'text', WebkitUserSelect: 'text' }}>
-          {apparition.description}
+          {displayApp.description}
         </p>
         
         <div style={{ marginTop: '18px' }}>
