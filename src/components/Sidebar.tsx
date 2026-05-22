@@ -12,6 +12,7 @@ interface SidebarProps {
   allActiveApparitions?: Apparition[];
   onSelectApparition?: (apparition: Apparition) => void;
   lang: Language;
+  isTimelineOpen?: boolean;
 }
 
 const getCategoryIcon = (category: string, color: string) => {
@@ -34,7 +35,15 @@ const getCategoryIcon = (category: string, color: string) => {
   }
 };
 
-const Sidebar: React.FC<SidebarProps> = ({ apparition, isVisible = true, onClose, allActiveApparitions = [], onSelectApparition, lang }) => {
+const Sidebar: React.FC<SidebarProps> = ({ 
+  apparition, 
+  isVisible = true, 
+  onClose, 
+  allActiveApparitions = [], 
+  onSelectApparition, 
+  lang,
+  isTimelineOpen = false
+}) => {
   const [copied, setCopied] = useState(false);
   const [localApparition, setLocalApparition] = useState<Apparition | null>(apparition);
 
@@ -48,7 +57,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, isVisible = true, onClose
     }
   }, [apparition, isVisible, localApparition]);
 
-  const displayApp = localApparition || apparition;
+  const displayApp = localApparition;
 
   const clusteredApps = useMemo(() => {
     if (!displayApp || !allActiveApparitions.length) return [];
@@ -66,14 +75,41 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, isVisible = true, onClose
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const querySlug = displayApp.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
-  const sourceLink = displayApp.sourceUrl || `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`;
+  const sources = useMemo(() => {
+    const raw = displayApp.sourceUrl;
+    if (!raw) {
+      const querySlug = displayApp.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
+      return [{
+        url: `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`,
+        label: t('viewSource', lang)
+      }];
+    }
+    
+    return raw.split(';').map(urlStr => {
+      const url = urlStr.trim();
+      let label = t('viewSource', lang);
+      
+      if (url.includes('miraclehunter.com')) {
+        label = t('viewSource', lang);
+      } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
+        label = 'Sanktuarium Leżajsk';
+      } else {
+        try {
+          const parsed = new URL(url);
+          label = parsed.hostname.replace('www.', '');
+        } catch (e) {
+          // ignore
+        }
+      }
+      return { url, label };
+    });
+  }, [displayApp, lang]);
 
   return (
     <div className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
       top: '80px',
-      bottom: '180px',
+      bottom: isTimelineOpen ? '230px' : '20px',
       right: '20px',
       width: '380px',
       overflowY: 'auto',
@@ -87,7 +123,7 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, isVisible = true, onClose
       gap: '16px',
       transform: isVisible ? 'translateX(0)' : 'translateX(calc(100% + 40px))',
       opacity: isVisible ? 1 : 0,
-      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), bottom 0.3s ease-in-out',
       pointerEvents: isVisible ? 'auto' : 'none'
     }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
@@ -211,40 +247,43 @@ const Sidebar: React.FC<SidebarProps> = ({ apparition, isVisible = true, onClose
           {displayApp.description}
         </p>
         
-        <div style={{ marginTop: '18px' }}>
-          <a
-            href={sourceLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              fontSize: '13px',
-              fontWeight: 600,
-              color: '#38bdf8',
-              textDecoration: 'none',
-              background: 'rgba(56, 189, 248, 0.12)',
-              border: '1px solid rgba(56, 189, 248, 0.3)',
-              padding: '8px 16px',
-              borderRadius: '8px',
-              transition: 'all 0.2s',
-              boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
-            }}
-            onMouseOver={(e) => {
-              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.22)';
-              e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)';
-              e.currentTarget.style.transform = 'translateY(-1px)';
-            }}
-            onMouseOut={(e) => {
-              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
-              e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.3)';
-              e.currentTarget.style.transform = 'none';
-            }}
-          >
-            <ExternalLink size={14} />
-            <span>{t('viewSource', lang)}</span>
-          </a>
+        <div style={{ marginTop: '18px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+          {sources.map((src, i) => (
+            <a
+              key={i}
+              href={src.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                fontSize: '13px',
+                fontWeight: 600,
+                color: '#38bdf8',
+                textDecoration: 'none',
+                background: 'rgba(56, 189, 248, 0.12)',
+                border: '1px solid rgba(56, 189, 248, 0.3)',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                transition: 'all 0.2s',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.background = 'rgba(56, 189, 248, 0.22)';
+                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.3)';
+                e.currentTarget.style.transform = 'none';
+              }}
+            >
+              <ExternalLink size={14} />
+              <span>{src.label}</span>
+            </a>
+          ))}
         </div>
       </div>
     </div>

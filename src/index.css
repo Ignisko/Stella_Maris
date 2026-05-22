@@ -102,3 +102,127 @@ input, button, textarea, select {
   user-select: text !important;
   -webkit-user-select: text !important;
 }
+
+/* HTML Bubble Markers and Labels */
+.globe-html-label {
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.marker-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+/* The visual bubble dot */
+.marker-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--marker-color, #3b82f6);
+  box-shadow: 0 0 10px var(--marker-color, #3b82f6), 0 0 4px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffffff;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.marker-dot:hover {
+  transform: translate(-50%, -50%) scale(1.4);
+  box-shadow: 0 0 16px var(--marker-color, #3b82f6), 0 0 6px rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+/* Pulsing effect for the selected marker */
+.marker-pulse {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--marker-color, #3b82f6);
+  transform: translate(-50%, -50%);
+  animation: markerPulse 1.6s infinite ease-out;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes markerPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(3.5);
+    opacity: 0;
+  }
+}
+
+/* Label content text box positioned next to the dot */
+.label-content {
+  pointer-events: auto;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: opacity 0.3s ease-out, transform 0.2s ease-out, color 0.2s ease, text-shadow 0.2s ease;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Selected state styling */
+.label-content.selected {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--marker-color, #3b82f6);
+  background: transparent;
+  padding: 2px 6px;
+  border: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+  text-shadow: 0 0 8px var(--marker-color, rgba(59, 130, 246, 0.6)), 0 1px 4px rgba(0, 0, 0, 0.95);
+  transform: translate(-50%, -26px) scale(1.15);
+  transform-origin: bottom center;
+  z-index: 9999;
+}
+
+/* Normal state styling for pill labels */
+.globe-html-label .label-content:not(.selected) {
+  font-size: 12px;
+  font-weight: 600;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  padding: 2px 6px;
+  box-shadow: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.85);
+  transform: translate(-50%, -24px) scale(var(--globe-label-scale, 1));
+  transform-origin: bottom center;
+  opacity: var(--globe-label-opacity, 1);
+  display: flex;
+  align-items: center;
+}
+
+.label-content:not(.selected):hover {
+  transform: translate(-50%, -24px) scale(1.05);
+  z-index: 10000;
+}
+
+

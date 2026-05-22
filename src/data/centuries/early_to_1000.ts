@@ -227,7 +227,8 @@ export const earlyApparitions: Apparition[] = [
     year: 963,
     description: "The Virgin appeared to Athanasius, consoling him and exhorting him not to leave the Mount, inspiring him to establish the first monastery there.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html"
   },
   {
     id: "canterbury",

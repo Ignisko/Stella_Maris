@@ -37,3 +37,5 @@ This document tracks completed visual, spatial, and functional improvements, alo
 ### 3. Data & Localization
 - [ ] **Multilingual Support**: Add language toggles (e.g., English, Polish, Spanish) for titles, sidebar content, and status descriptions.
 - [ ] **Extended Historical Info**: Integrate external encyclopedia references or historical source links into the details sidebar for all 500+ events.
+- [ ] **Correct Website Sources**: Review and correct external URLs, reference links, and documentation sources for the apparitions database to ensure all external links are valid and active.
+

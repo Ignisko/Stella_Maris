@@ -1,0 +1,194 @@
+{
+  "ephesus": {
+    "title": "Efes'teki Meryem Ana",
+    "location": "Efes, Selçuk, İzmir",
+    "country": "Türkiye",
+    "description": "Meryem Ana Evi, İsa Mesih'in annesi Meryem'in son yıllarını Havari Yuhanna ile birlikte geçirdiğine ve burada göğe yükseldiğine inanılan kutsal yerdir."
+  },
+  "lourdes": {
+    "title": "Lourdes Meryem Ana",
+    "location": "Lourdes",
+    "country": "Fransa",
+    "description": "1858 yılında Meryem Ana, Bernadette Soubirous adlı genç bir kıza 18 kez görünmüş, tövbe çağrısında bulunmuş ve mucizevi şifa kaynağını ortaya çıkarmıştır."
+  },
+  "fatima": {
+    "title": "Fatima Meryem Ana",
+    "location": "Fátima",
+    "country": "Portekiz",
+    "description": "1917 yılında Meryem Ana, üç çoban çocuğa görünmüş, dünya barışı için tespih duası edilmesini istemiş ve ünlü Fatima Sırları ile Güneş Mucizesi'ni gerçekleştirmiştir."
+  },
+  "guadalupe": {
+    "title": "Guadalupe Meryem Ana",
+    "location": "Guadalupe, Mexico City",
+    "country": "Meksika",
+    "description": "1531 yılında Meryem Ana, yerli bir Aztek köylüsü olan Juan Diego'ya görünmüş ve pelerini (tilma) üzerinde günümüzde de hayranlık uyandıran mucizevi imgesini bırakmıştır."
+  },
+  "walsingham": {
+    "title": "Walsingham Meryem Ana",
+    "location": "Walsingham",
+    "country": "İngiltere",
+    "description": "Asil zengin kadın Richeldis de Faverches'e görünen Meryem Ana, ona Nasıra'daki Kutsal Ev'in bir benzerini inşa etmesini söyledi."
+  },
+  "einsiedeln": {
+    "title": "Einsiedeln Meryem Ana",
+    "location": "Einsiedeln",
+    "country": "İsviçre",
+    "description": "Aziz Konrad, meleklerin ve bizzat İsa Mesih'in keşiş şapelini Meryem Ana onuruna kutsadığı görkemli bir ayine tanıklık etti."
+  },
+  "lezajsk": {
+    "title": "Leżajsk Meryem Ana",
+    "location": "Leżajsk",
+    "country": "Polonya",
+    "description": "Meryem Ana ve Aziz Yusuf, bir bira fabrikası işçisi olan Tomasz Michałek'e görünerek kilise inşa edilmesini istediler."
+  },
+  "mtathos": {
+    "title": "Aynoroz Meryem Ana",
+    "location": "Aynoroz (Athos Dağı)",
+    "country": "Yunanistan",
+    "description": "Meryem Ana, Athanasius'a görünerek onu teselli etti ve Dağ'dan ayrılmaması için teşvik etti, bu da onun orada ilk manastırı kurmasına ilham verdi."
+  },
+  "saydnaya": {
+    "title": "Saydnaya Meryem Ana",
+    "location": "Saydnaya",
+    "country": "Suriye",
+    "description": "İmparator I. Justinian, yüksek bir kaya üzerinde duran Meryem Ana'yı gördü ve kendisine orada bir manastır inşa etmesi emredildi."
+  },
+  "mosul": {
+    "title": "Musul Meryem Ana",
+    "location": "Musul",
+    "country": "Irak",
+    "description": "Meryem Ana, Süryani Katolik Kilisesi'nde inanışa göre şehri ve inananları korumak üzere görünmüştür."
+  },
+  "tapinu": {
+    "title": "Ta' Pinu Meryem Ana",
+    "location": "Gharb, Gozo",
+    "country": "Malta",
+    "description": "Karmni Grima adında bir köylü kadın, küçük bir şapelin yakınından geçerken Meryem Ana'nın sesini duydu ve dua etmeye çağrıldı."
+  },
+  "lettera": {
+    "title": "Mektuplu Meryem Ana",
+    "location": "Messina",
+    "country": "İtalya",
+    "description": "Havari Pavlus'un Messina halkına getirdiği ve bizzat Meryem Ana tarafından yazıldığına inanılan kutsal mektup ve koruma vaadi."
+  },
+  "zeitoun": {
+    "title": "Zeitoun Meryem Ana (Işık Meryem Ana)",
+    "location": "Zeitoun, Kahire",
+    "country": "Mısır",
+    "description": "Kıpti Ortodoks Kilisesi üzerinde milyonlarca insan tarafından görülen, haftalarca süren ve fotoğraflarla da belgelenen görkemli ışık saçan Meryem Ana görünümü."
+  },
+  "durunka": {
+    "title": "Durunka Meryem Ana",
+    "location": "Durunka, Asyut",
+    "country": "Mısır",
+    "description": "Kutsal Aile'nin Mısır'a kaçışı sırasında sığındığı mağaranın üzerinde görülen görkemli Meryem Ana ışık ve güvercin tezahürleri."
+  },
+  "candelaria": {
+    "title": "Candelaria Meryem Ana",
+    "location": "Tenerife",
+    "country": "İspanya",
+    "description": "İspanyol fethinden önce yerli Guançe halkı tarafından bir kumsalda bulunan ve Meryem Ana'yı tasvir eden gizemli siyah heykel."
+  },
+  "melrose": {
+    "title": "Melrose Meryem Ana",
+    "location": "Melrose",
+    "country": "İskoçya",
+    "description": "Melrose Manastırı'nda keşişlere görünerek manastırın kutsallığını ve korumasını pekiştiren Meryem Ana görünümü."
+  },
+  "bridget": {
+    "title": "Azize Bridget'e Meryem Ana Görünümü",
+    "location": "Vadstena",
+    "country": "İsveç",
+    "description": "Azize Bridget, İsa Mesih ve Meryem Ana'dan manastır kurallarını ve vahiylerini içeren derin ruhani görünümler aldı."
+  },
+  "siluva": {
+    "title": "Šiluva Meryem Ana",
+    "location": "Šiluva",
+    "country": "Litvanya",
+    "description": "Protestan reformu sırasında çocuklara görünen ağlayan Meryem Ana, kucağında bebek İsa ile eski Katolik kilisesinin yerine dikkat çekmiştir."
+  },
+  "kazan": {
+    "title": "Kazan Meryem Ana",
+    "location": "Kazan",
+    "country": "Rusya",
+    "description": "Küçük bir kız çocuğuna rüyasında görünen Meryem Ana, küller arasından çıkarılan ve Rusya'nın en kutsal ikonalarından biri haline gelen tasvirini buldurmuştur."
+  },
+  "pillar": {
+    "title": "Sütunlu Meryem Ana",
+    "location": "Zaragoza",
+    "country": "İspanya",
+    "description": "Havari Yakup'a görünen Meryem Ana, bir sütun üzerinde cisimleşerek orada bir kilise kurulmasını istemiştir; bu ilk görünüm kabul edilir."
+  },
+  "banneux": {
+    "title": "Fakirler Bakiresi (Banneux)",
+    "location": "Banneux",
+    "country": "Belçika",
+    "description": "Meryem Ana, Mariette Beco adında genç bir kıza görünerek kendisini 'Fakirlerin Bakiresi' olarak tanıttı ve acıları hafifletmek için bir çeşme gösterdi."
+  },
+  "beauraing": {
+    "title": "Altın Kalpli Meryem Ana (Beauraing)",
+    "location": "Beauraing",
+    "country": "Belçika",
+    "description": "Meryem Ana, beş çocuğa otuzdan fazla kez görünerek altın kalbini gösterdi ve dua edilmesini istedi."
+  },
+  "akita": {
+    "title": "Akita Meryem Ana",
+    "location": "Akita",
+    "country": "Japonya",
+    "description": "Rahibe Agnes Sasagawa'ya görünen Meryem Ana, ağlayan ahşap heykel aracılığıyla dua, tövbe ve insanlık için uyarı mesajları iletmiştir."
+  },
+  "kibeho": {
+    "title": "Kibeho Meryem Ana",
+    "location": "Kibeho",
+    "country": "Ruanda",
+    "description": "Genç öğrencilere görünen Meryem Ana, yaklaşan Ruanda soykırımı konusunda uyarılarda bulunmuş, dua ve sevgi çağrısı yapmıştır."
+  },
+  "czestochowa": {
+    "title": "Czestochowa Meryem Ana",
+    "location": "Częstochowa",
+    "country": "Polonya",
+    "description": "Kara Madonna ikonası çevresinde gerçekleşen mucizeler ve Polonya'nın İsveç kuşatmasına karşı korunmasında Meryem Ana'nın yardımı."
+  },
+  "carmel": {
+    "title": "Karmel Meryem Anası",
+    "location": "Aylesford",
+    "country": "İngiltere",
+    "description": "Aziz Simon Stock'a görünen Meryem Ana, ona kurtuluş ve koruma vaadi olan Kahverengi Skapular'ı (kutsal giysi) vermiştir."
+  },
+  "monserrat": {
+    "title": "Montserrat Meryem Ana",
+    "location": "Montserrat",
+    "country": "İspanya",
+    "description": "Çoban çocukların kutsal dağda buldukları ve mucizevi melodilerle ortaya çıkan siyah ahşap Meryem Ana heykeli."
+  },
+  "loreto": {
+    "title": "Loreto Kutsal Evi",
+    "location": "Loreto",
+    "country": "İtalya",
+    "description": "Meryem Ana'nın Nasıra'daki evinin, melekler tarafından kutsal topraklardan İtalya'ya taşındığına inanılan mucizevi olay."
+  },
+  "la_salette": {
+    "title": "La Salette Meryem Ana",
+    "location": "La Salette",
+    "country": "Fransa",
+    "description": "İki çoban çocuğa ağlarken görünen Meryem Ana, pazar gününün kutsallığı ve dua eksikliği konusunda uyarılarda bulunmuştur."
+  },
+  "miraculous_medal": {
+    "title": "Mucizevi Madalya Meryem Ana",
+    "location": "Paris",
+    "country": "Fransa",
+    "description": "Azize Catherine Labouré'ye görünen Meryem Ana, üzerinde haç ve meryem tasviri bulunan koruyucu Mucizevi Madalya'nın basılmasını istemiştir."
+  },
+  "knock": {
+    "title": "Knock Meryem Ana",
+    "location": "Knock",
+    "country": "İrlanda",
+    "description": "Köy kilisesinin duvarında Meryem Ana, Aziz Yusuf, Havari Yuhanna ve Kuzu'nun sessiz ve görkemli bir şekilde belirmesi."
+  },
+  "snows": {
+    "title": "Karlar Meryem Anası",
+    "location": "Roma",
+    "country": "İtalya",
+    "description": "Meryem Ana, sıcak ağustos ayında Roma'ya kar yağdırarak Santa Maria Maggiore Bazilikası'nın inşa edileceği yeri göstermiştir."
+  }
+}

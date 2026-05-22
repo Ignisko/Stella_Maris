@@ -17,7 +17,8 @@ const LANGUAGE_FLAG_CODES: Record<Language, string> = {
   it: 'it',
   ar: 'sa',
   tl: 'ph',
-  vi: 'vn'
+  vi: 'vn',
+  tr: 'tr'
 };
 
 const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguageChange }) => {
@@ -83,7 +84,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
         }}
       >
         <img 
-          src={`https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/${LANGUAGE_FLAG_CODES[currentLang]}.svg`} 
+          src={`${import.meta.env.BASE_URL}flags/${LANGUAGE_FLAG_CODES[currentLang]}.svg`} 
           alt={languageNames[currentLang]} 
           style={{ 
             width: '21px', 
@@ -160,7 +161,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
                 }}
               >
                 <img 
-                  src={`https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/flags/4x3/${LANGUAGE_FLAG_CODES[lang]}.svg`} 
+                  src={`${import.meta.env.BASE_URL}flags/${LANGUAGE_FLAG_CODES[lang]}.svg`} 
                   alt={languageNames[lang]} 
                   style={{ 
                     width: '21px', 

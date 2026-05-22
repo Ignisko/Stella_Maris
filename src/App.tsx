@@ -22,6 +22,7 @@ const pauseTranslations: Record<string, string> = {
   vi: 'Tạm dừng',
   ar: 'إيقاف مؤقت',
   tl: 'I-pause',
+  tr: 'Duraklat',
   en: 'Pause'
 };
 
@@ -34,6 +35,7 @@ const resumeTranslations: Record<string, string> = {
   vi: 'Tiếp tục',
   ar: 'استئناف',
   tl: 'Ituloy',
+  tr: 'Sürdür',
   en: 'Resume'
 };
 
@@ -46,6 +48,7 @@ const exitTranslations: Record<string, string> = {
   vi: 'Thoát',
   ar: 'إنهاء',
   tl: 'Lumabas',
+  tr: 'Kapat',
   en: 'Exit'
 };
 
@@ -58,8 +61,10 @@ const playPresentationTranslations: Record<string, string> = {
   vi: 'Bắt đầu trình chiếu',
   ar: 'بدء العرض التقديمي',
   tl: 'Simulan ang Presentation',
+  tr: 'Sunumu Oynat',
   en: 'Play Presentation'
 };
+
 
 function App() {
   const [lang, setLang] = useState<Language>(() => {
@@ -381,7 +386,7 @@ function App() {
           opacity: isTimelineOpen ? 0 : 1,
           maxHeight: isTimelineOpen ? '0px' : '220px',
           transform: isTimelineOpen ? 'translateY(-10px)' : 'translateY(0)',
-          overflow: 'hidden',
+          overflow: isTimelineOpen ? 'hidden' : 'visible',
           transition: 'opacity 0.3s ease, maxHeight 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease',
           pointerEvents: isTimelineOpen ? 'none' : 'auto'
         }}>
@@ -510,6 +515,7 @@ function App() {
           allActiveApparitions={filteredApparitions}
           onSelectApparition={handleSelectApparition}
           lang={lang}
+          isTimelineOpen={isTimelineOpen}
         />
       )}
 

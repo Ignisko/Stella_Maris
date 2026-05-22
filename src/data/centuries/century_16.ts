@@ -1112,8 +1112,9 @@ export const century16Apparitions: Apparition[] = [
     country: "Poland",
     lat: 50.2639,
     lng: 22.4206,
-    year: 1578,
-    description: "Mary appeared in dazzling light to humble woodcutter Tomasz Michałek in the forest, asking for a church where faithful would receive divine graces. Following official canonical investigations and documented miraculous healings, the Vatican approved the magnificent pilgrimage basilica.",
+    year: 1590,
+    description: "The Virgin Mary and St. Joseph appeared together in dazzling light to humble woodcutter Tomasz Michałek in the forest, asking for a church where the faithful would receive divine graces. Following official canonical investigations and documented miracles, the Vatican approved the magnificent pilgrimage basilica.",
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/lejask/index.html;https://lezajsk.bernardyni.pl/historia/",
     approvalStatus: "Vatican approved",
     priority: 1
   },

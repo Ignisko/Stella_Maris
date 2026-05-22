@@ -1,6 +1,6 @@
 import type { Apparition } from '../data/types';
 
-export type Language = 'en' | 'pl' | 'es' | 'pt' | 'fr' | 'it' | 'ar' | 'tl' | 'vi';
+export type Language = 'en' | 'pl' | 'es' | 'pt' | 'fr' | 'it' | 'ar' | 'tl' | 'vi' | 'tr';
 
 export const languageNames: Record<Language, string> = {
   en: 'English',
@@ -11,8 +11,10 @@ export const languageNames: Record<Language, string> = {
   it: 'Italiano',
   ar: 'العربية',
   tl: 'Filipino',
-  vi: 'Tiếng Việt'
+  vi: 'Tiếng Việt',
+  tr: 'Türkçe'
 };
+
 
 export const translations = {
   en: {
@@ -43,6 +45,8 @@ export const translations = {
     directoryNoResults: 'No apparitions match your current search criteria.',
     pauseRotation: 'Pause rotation',
     resumeRotation: 'Resume rotation',
+    autoRotateOn: 'Auto-Rotate Earth: On',
+    autoRotateOff: 'Auto-Rotate Earth: Off',
     
     // Status Categories
     'Vatican approved': 'Vatican approved',
@@ -95,6 +99,8 @@ export const translations = {
     directoryNoResults: 'Brak objawień spełniających kryteria wyszukiwania.',
     pauseRotation: 'Wstrzymaj obrót',
     resumeRotation: 'Wznów obrót',
+    autoRotateOn: 'Auto-rotacja Ziemi: Wł.',
+    autoRotateOff: 'Auto-rotacja Ziemi: Wył.',
 
     // Status Categories
     'Vatican approved': 'Zatwierdzone przez Watykan',
@@ -147,6 +153,8 @@ export const translations = {
     directoryNoResults: 'Ninguna aparición coincide con los criterios de búsqueda actuales.',
     pauseRotation: 'Pausar rotación',
     resumeRotation: 'Reanudar rotación',
+    autoRotateOn: 'Rotación automática: Activada',
+    autoRotateOff: 'Rotación automática: Desactivada',
 
     // Status Categories
     'Vatican approved': 'Aprobada por el Vaticano',
@@ -199,6 +207,8 @@ export const translations = {
     directoryNoResults: 'Nenhuma aparição corresponde aos critérios de pesquisa atuais.',
     pauseRotation: 'Pausar rotação',
     resumeRotation: 'Retomar rotação',
+    autoRotateOn: 'Rotação automática: Ligada',
+    autoRotateOff: 'Rotação automática: Desligada',
 
     // Status Categories
     'Vatican approved': 'Aprovada pelo Vaticano',
@@ -251,6 +261,8 @@ export const translations = {
     directoryNoResults: 'Aucune apparition ne correspond aux critères de recherche actuels.',
     pauseRotation: 'Pause rotation',
     resumeRotation: 'Reprendre rotation',
+    autoRotateOn: 'Rotation automatique : Activée',
+    autoRotateOff: 'Rotation automatique : Désactivée',
 
     // Status Categories
     'Vatican approved': 'Approuvée par le Vatican',
@@ -303,6 +315,8 @@ export const translations = {
     directoryNoResults: 'Nessuna apparizione corrisponde ai criteri di ricerca attuali.',
     pauseRotation: 'Pausa rotazione',
     resumeRotation: 'Riprendi rotazione',
+    autoRotateOn: 'Rotazione automatica: Attiva',
+    autoRotateOff: 'Rotazione automatica: Disattiva',
 
     // Status Categories
     'Vatican approved': 'Approvata dal Vaticano',
@@ -355,6 +369,8 @@ export const translations = {
     directoryNoResults: 'لا توجد ظهورات تطابق معايير البحث الحالية.',
     pauseRotation: 'إيقاف الدوران مؤقتًا',
     resumeRotation: 'استئناف الدوران',
+    autoRotateOn: 'دوران تلقائي: نشط',
+    autoRotateOff: 'دوران تلقائي: متوقف',
 
     // Status Categories
     'Vatican approved': 'معتمد من الفاتيكان',
@@ -407,6 +423,8 @@ export const translations = {
     directoryNoResults: 'Walang mga pagpapakitang tumutugma sa iyong kasalukuyang pamantayan sa paghahanap.',
     pauseRotation: 'I-pause ang pag-ikot',
     resumeRotation: 'Ipagpatuloy ang pag-ikot',
+    autoRotateOn: 'Auto-Rotate ng Mundo: Bukas',
+    autoRotateOff: 'Auto-Rotate ng Mundo: Patay',
 
     // Status Categories
     'Vatican approved': 'Inaprubahan ng Vatican',
@@ -459,6 +477,8 @@ export const translations = {
     directoryNoResults: 'Không có sự kiện hiện ra nào khớp với tiêu chuẩn tìm kiếm của bạn.',
     pauseRotation: 'Tạm dừng tự quay',
     resumeRotation: 'Tiếp tục tự quay',
+    autoRotateOn: 'Tự quay Trái Đất: Bật',
+    autoRotateOff: 'Tự quay Trái Đất: Tắt',
 
     // Status Categories
     'Vatican approved': 'Được Tòa Thánh công nhận',
@@ -482,6 +502,60 @@ export const translations = {
     'c_19': 'Thế kỷ 19 (1800s)',
     'c_20': 'Thế kỷ 20 (1900s)',
     'c_21': 'Thế kỷ 21 (2000s)'
+  },
+  tr: {
+    title: 'Stella Maris',
+    subtitle: 'Meryem Ana görünümleri haritası',
+    browseDirectory: 'Kataloğa göz at ({count})',
+    searchPlaceholder: 'Görünümleri ara...',
+    filters: 'Filtreler',
+    centuries: 'Zaman dilimi',
+    status: 'Durum',
+    selectAll: 'Tümünü seç',
+    clearAll: 'Tümünü temizle',
+    timeline: 'Zaman tüneli',
+    modernEra: 'Modern dönem (1800-Günümüz)',
+    fullHistory: 'Tüm tarih (MS 40-Günümüz)',
+    playTimeline: 'Zaman tünelini oynat ({count} olay)',
+    playingTimeline: 'Onyatılıyor ({year}) — {count} olay',
+    legend: 'Açıklamalar:',
+    close: 'Kapat',
+    description: 'Açıklama',
+    viewSource: 'Kaynağı görüntüle',
+    otherApparitions: 'Bu konumdaki diğer görünümler ({count})',
+    directoryTitle: 'Meryem Ana görünümleri kataloğu',
+    directoryListed: '{count} listelendi',
+    directorySubtitle: 'Filtrelenmiş tapınak ve görünümlerin tam kronolojik özeti',
+    directoryQuickFilter: 'Başlık, şehir, ülke, yıl veya duruma göre hızlı filtrele...',
+    directoryClear: 'Temizle',
+    directoryNoResults: 'Mevcut arama kriterlerinize uyan hiçbir görünüm bulunamadı.',
+    pauseRotation: 'Dönüşü duraklat',
+    resumeRotation: 'Dönüşü sürdür',
+    autoRotateOn: 'Otomatik Döndürme: Açık',
+    autoRotateOff: 'Otomatik Döndürme: Kapalı',
+
+    // Status Categories
+    'Vatican approved': 'Vatikan onaylı',
+    'Traditionally approved': 'Geleneksel olarak onaylı',
+    'Bishop approved': 'Piskopos onaylı',
+    'Coptic approved': 'Kıpti onaylı',
+    'Approved for faith expression': 'İnanç ifadesi için onaylı',
+    'Apparitions to saints': 'Azizlere görünümler',
+    'Dismissed': 'Reddedilmiş',
+
+    // Centuries
+    'c_early': 'Erken Dönem (40 - 999)',
+    'c_11': '11. Yüzyıl (1000\'ler)',
+    'c_12': '12. Yüzyıl (1100\'ler)',
+    'c_13': '13. Yüzyıl (1200\'ler)',
+    'c_14': '14. Yüzyıl (1300\'ler)',
+    'c_15': '15. Yüzyıl (1400\'ler)',
+    'c_16': '16. Yüzyıl (1500\'ler)',
+    'c_17': '17. Yüzyıl (1600\'ler)',
+    'c_18': '18. Yüzyıl (1700\'ler)',
+    'c_19': '19. Yüzyıl (1800\'ler)',
+    'c_20': '20. Yüzyıl (1900\'ler)',
+    'c_21': '21. Yüzyıl (2000\'ler)'
   }
 };
 
