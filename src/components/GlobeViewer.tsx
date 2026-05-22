@@ -37,20 +37,20 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const ringConfig = useMemo(() => {
     switch (lodThreshold) {
       case 1: // super close (alt < 0.05)
-        return { maxRadius: 0.15, propagationSpeed: 0.1, repeatPeriod: 2400 };
+        return { maxRadius: 0.04, propagationSpeed: 0.02, repeatPeriod: 3000 };
       case 2: // very close (alt < 0.15)
-        return { maxRadius: 0.4, propagationSpeed: 0.25, repeatPeriod: 2000 };
+        return { maxRadius: 0.12, propagationSpeed: 0.06, repeatPeriod: 2500 };
       case 3: // close (alt < 0.4)
-        return { maxRadius: 1.0, propagationSpeed: 0.7, repeatPeriod: 1600 };
+        return { maxRadius: 0.35, propagationSpeed: 0.18, repeatPeriod: 2200 };
       case 4: // mid-close (alt < 0.9)
-        return { maxRadius: 2.2, propagationSpeed: 1.5, repeatPeriod: 1300 };
+        return { maxRadius: 0.9, propagationSpeed: 0.45, repeatPeriod: 1800 };
       case 5: // mid (alt < 1.6)
-        return { maxRadius: 4.0, propagationSpeed: 2.5, repeatPeriod: 1000 };
+        return { maxRadius: 1.8, propagationSpeed: 0.9, repeatPeriod: 1500 };
       case 6: // mid-far (alt < 2.4)
-        return { maxRadius: 5.5, propagationSpeed: 3.5, repeatPeriod: 800 };
+        return { maxRadius: 3.2, propagationSpeed: 1.6, repeatPeriod: 1200 };
       case 7: // far (alt >= 2.4)
       default:
-        return { maxRadius: 7.0, propagationSpeed: 4.5, repeatPeriod: 700 };
+        return { maxRadius: 4.8, propagationSpeed: 2.4, repeatPeriod: 1000 };
     }
   }, [lodThreshold]);
 
@@ -212,7 +212,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           });
 
           const keptRects: DOMRect[] = [];
-          const padding = 5; // Safety margin between label rectangles in pixels
+          // Dynamically adjust collision padding: fewer active labels allow closer screen proximity
+          const padding = labelEls.length < 25 ? -12 : (labelEls.length < 50 ? -3 : 5);
 
           for (const el of labelEls) {
             const content = el.querySelector('.label-content') as HTMLElement;
@@ -456,8 +457,22 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             const d = dRaw as Apparition & { clusterCount?: number };
             const isSelected = selectedApparition?.id === d.id;
             const safeTitle = escapeHtml(d.title || '');
+            
             const count = d.clusterCount || 1;
             const badge = count > 1 ? `<span style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700;">+${count - 1}</span>` : '';
+
+            // Format title by separating parenthetical subtitles (like "(Filipov)") onto a new line,
+            // placing the cluster count badge on the main title line to save vertical space.
+            const formatTitle = (title: string) => {
+              const openParenIdx = title.indexOf(' (');
+              if (openParenIdx !== -1 && title.endsWith(')')) {
+                const mainTitle = title.substring(0, openParenIdx);
+                const subtitle = title.substring(openParenIdx + 1);
+                return `<span class="label-title-main">${mainTitle}${badge}</span><span class="label-subtitle">${subtitle}</span>`;
+              }
+              return `<span class="label-title-main">${title}${badge}</span>`;
+            };
+            const displayTitleHtml = formatTitle(safeTitle);
             const statusColor = getStatusColor(d.approvalStatus);
             const rgb = hexToRgb(statusColor);
             
@@ -479,7 +494,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
               <div class="marker-container">
                 <div class="marker-dot"></div>
                 ${pulseHtml}
-                <div class="label-content${isSelected ? ' selected' : ''}">${safeTitle}${badge}</div>
+                <div class="label-content${isSelected ? ' selected' : ''}">${displayTitleHtml}</div>
               </div>
             `;
 

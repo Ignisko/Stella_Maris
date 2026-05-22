@@ -110,6 +110,8 @@ input, button, textarea, select {
   align-items: center;
   justify-content: center;
   position: absolute;
+  width: max-content !important;
+  white-space: nowrap !important;
 }
 
 .marker-container {
@@ -118,6 +120,8 @@ input, button, textarea, select {
   position: relative;
   transform: translate(-50%, -50%);
   pointer-events: none;
+  width: max-content !important;
+  white-space: nowrap !important;
 }
 
 /* The visual bubble dot */
@@ -179,27 +183,50 @@ input, button, textarea, select {
   top: 0;
   color: #ffffff;
   font-family: inherit;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap !important;
+  width: max-content !important;
   transition: opacity 0.3s ease-out, transform 0.2s ease-out, color 0.2s ease, text-shadow 0.2s ease;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
 
-/* Selected state styling */
+.label-title-main {
+  white-space: nowrap;
+}
+
+.label-subtitle {
+  font-size: 10px;
+  font-weight: 500;
+  opacity: 0.85;
+  margin-top: 1px;
+  white-space: nowrap;
+}
+
+/* Selected state styling - reverted to highly legible glassmorphic style */
 .label-content.selected {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
-  color: var(--marker-color, #3b82f6);
-  background: transparent;
-  padding: 2px 6px;
-  border: none;
-  backdrop-filter: none;
-  -webkit-backdrop-filter: none;
-  box-shadow: none;
-  text-shadow: 0 0 8px var(--marker-color, rgba(59, 130, 246, 0.6)), 0 1px 4px rgba(0, 0, 0, 0.95);
-  transform: translate(-50%, -26px) scale(1.15);
+  color: #ffffff;
+  background: var(--marker-bg-selected, rgba(59, 130, 246, 0.4));
+  padding: 6px 12px;
+  border: 2px solid var(--marker-color, #3b82f6);
+  border-radius: 8px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 0 20px var(--marker-glow-selected, rgba(59, 130, 246, 0.8));
+  text-shadow: none;
+  transform: translate(-50%, -30px) scale(1.15);
   transform-origin: bottom center;
   z-index: 9999;
+  width: max-content !important;
+  white-space: nowrap !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Normal state styling for pill labels */
@@ -217,7 +244,11 @@ input, button, textarea, select {
   transform-origin: bottom center;
   opacity: var(--globe-label-opacity, 1);
   display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
+  width: max-content !important;
+  white-space: nowrap !important;
 }
 
 .label-content:not(.selected):hover {
