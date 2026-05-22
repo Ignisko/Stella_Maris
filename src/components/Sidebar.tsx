@@ -13,6 +13,7 @@ interface SidebarProps {
   onSelectApparition?: (apparition: Apparition) => void;
   lang: Language;
   isTimelineOpen?: boolean;
+  isCinemaMode?: boolean;
 }
 
 const getCategoryIcon = (category: string, color: string) => {
@@ -42,7 +43,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   allActiveApparitions = [], 
   onSelectApparition, 
   lang,
-  isTimelineOpen = false
+  isTimelineOpen = false,
+  isCinemaMode = false
 }) => {
   const [copied, setCopied] = useState(false);
   const [localApparition, setLocalApparition] = useState<Apparition | null>(apparition);
@@ -108,12 +110,12 @@ const Sidebar: React.FC<SidebarProps> = ({
   return (
     <div className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
-      top: '80px',
-      bottom: isTimelineOpen ? '230px' : '20px',
+      top: isCinemaMode ? '20px' : '80px',
+      bottom: isCinemaMode ? '95px' : (isTimelineOpen ? '230px' : '20px'),
       right: '20px',
       width: '380px',
       overflowY: 'auto',
-      zIndex: 10,
+      zIndex: 110,
       padding: '24px 28px',
       backgroundColor: 'rgba(15, 23, 42, 0.95)',
       backdropFilter: 'blur(25px)',
@@ -123,9 +125,10 @@ const Sidebar: React.FC<SidebarProps> = ({
       gap: '16px',
       transform: isVisible ? 'translateX(0)' : 'translateX(calc(100% + 40px))',
       opacity: isVisible ? 1 : 0,
-      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), bottom 0.3s ease-in-out',
+      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), bottom 0.3s ease-in-out, top 0.3s ease-in-out',
       pointerEvents: isVisible ? 'auto' : 'none'
     }}>
+
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
           <h2 style={{ fontSize: '26px', fontWeight: 600, margin: 0, color: 'var(--gold-accent)', lineHeight: 1.2, userSelect: 'text', WebkitUserSelect: 'text' }}>

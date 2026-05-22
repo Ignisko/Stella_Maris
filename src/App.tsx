@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect } from 'react';
-import { List, Play, Pause, X } from 'lucide-react';
+import { List, Play, Pause, X, HelpCircle } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
@@ -8,10 +8,12 @@ import { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './data/filt
 import SearchBar from './components/SearchBar';
 import DirectoryModal from './components/DirectoryModal';
 import LanguagePicker from './components/LanguagePicker';
+import TutorialModal from './components/TutorialModal';
 import { apparitionsData } from './data/apparitions';
 import type { Apparition } from './data/apparitions';
 import { t, translateApparitionsList, loadLanguageTranslations } from './utils/i18n';
 import type { Language } from './utils/i18n';
+
 
 const pauseTranslations: Record<string, string> = {
   pl: 'Zatrzymaj',
@@ -94,6 +96,33 @@ function App() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [playbackIndex, setPlaybackIndex] = useState(0);
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
+
+  const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
+    return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
+  });
+  const [tutorialStep, setTutorialStep] = useState<number>(0);
+
+  const handleTutorialStepChange = (step: number) => {
+    setTutorialStep(step);
+    if (step === 2) {
+      const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
+      if (guadalupe) {
+        setSelectedApparition(guadalupe);
+      }
+    } else if (step === 4) {
+      setIsTimelineOpen(true);
+    } else if (step === 0 || step === 1 || step === 3 || step === 5) {
+      setSelectedApparition(null);
+    }
+  };
+
+  const handleTutorialClose = () => {
+    setIsTutorialActive(false);
+    localStorage.setItem('stellamaris_tutorial_seen', 'true');
+    setSelectedApparition(null);
+    setIsTimelineOpen(true);
+  };
+
 
   // Dynamically translate the selected apparition object
   const currentSelectedApparition = useMemo(() => {
@@ -484,6 +513,50 @@ function App() {
         </div>
       </div>
 
+      {/* Help / Onboarding Tutorial Button */}
+      {!isCinemaMode && (
+        <button
+          onClick={() => {
+            setIsTutorialActive(true);
+            setTutorialStep(0);
+          }}
+          className="glass-panel glass-panel-rounded animate-fade-in"
+          style={{
+            position: 'absolute',
+            top: '20px',
+            right: '96px',
+            zIndex: 100,
+            pointerEvents: 'auto',
+            width: '42px',
+            height: '42px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(15, 23, 42, 0.8)',
+            color: 'var(--text-color)',
+            border: '1px solid var(--glass-border)',
+            cursor: 'pointer',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            transition: 'all 0.2s ease',
+            borderRadius: '12px',
+            outline: 'none'
+          }}
+          title="Onboarding Guide / Przewodnik"
+          onMouseOver={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
+            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+            e.currentTarget.style.transform = 'none';
+          }}
+        >
+          <HelpCircle size={20} color="var(--accent-color)" />
+        </button>
+      )}
+
       {/* Top Right Language Switcher */}
       <LanguagePicker 
         currentLang={lang} 
@@ -516,6 +589,7 @@ function App() {
           onSelectApparition={handleSelectApparition}
           lang={lang}
           isTimelineOpen={isTimelineOpen}
+          isCinemaMode={isCinemaMode}
         />
       )}
 
@@ -532,7 +606,17 @@ function App() {
           lang={lang}
         />
       )}
+
+      <TutorialModal
+        isOpen={isTutorialActive}
+        onClose={handleTutorialClose}
+        currentLang={lang}
+        onLanguageChange={setLang}
+        step={tutorialStep}
+        onStepChange={handleTutorialStepChange}
+      />
     </div>
+
   );
 }
 
