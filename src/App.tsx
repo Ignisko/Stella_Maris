@@ -145,7 +145,7 @@ function App() {
     return [...filteredApparitions].sort((a, b) => a.year - b.year);
   }, [filteredApparitions]);
 
-  // Interval loop for timeline playback (4.5s per event to give zoom/read time)
+  // Interval loop for timeline playback (8.0s per event to give zoom/read time)
   useEffect(() => {
     if (!isPlayingTimeline || sortedFilteredApparitions.length === 0) return;
 
@@ -157,7 +157,7 @@ function App() {
         }
         return next;
       });
-    }, 4500);
+    }, 8000);
 
     return () => clearInterval(interval);
   }, [isPlayingTimeline, sortedFilteredApparitions]);
@@ -176,7 +176,7 @@ function App() {
       setIsSidebarVisible(false);
       const timer = setTimeout(() => {
         setIsSidebarVisible(true);
-      }, 1200); // 1.2s delay covers the flight duration (1.0s) beautifully
+      }, 2200); // 2.2s delay covers the cinematic flight duration beautifully
       return () => clearTimeout(timer);
     } else {
       setIsSidebarVisible(true);

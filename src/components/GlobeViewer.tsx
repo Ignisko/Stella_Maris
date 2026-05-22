@@ -34,6 +34,26 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
   const [ringProgress, setRingProgress] = useState(1);
 
+  const ringConfig = useMemo(() => {
+    switch (lodThreshold) {
+      case 1: // super close (alt < 0.05)
+        return { maxRadius: 0.15, propagationSpeed: 0.1, repeatPeriod: 2400 };
+      case 2: // very close (alt < 0.15)
+        return { maxRadius: 0.4, propagationSpeed: 0.25, repeatPeriod: 2000 };
+      case 3: // close (alt < 0.4)
+        return { maxRadius: 1.0, propagationSpeed: 0.7, repeatPeriod: 1600 };
+      case 4: // mid-close (alt < 0.9)
+        return { maxRadius: 2.2, propagationSpeed: 1.5, repeatPeriod: 1300 };
+      case 5: // mid (alt < 1.6)
+        return { maxRadius: 4.0, propagationSpeed: 2.5, repeatPeriod: 1000 };
+      case 6: // mid-far (alt < 2.4)
+        return { maxRadius: 5.5, propagationSpeed: 3.5, repeatPeriod: 800 };
+      case 7: // far (alt >= 2.4)
+      default:
+        return { maxRadius: 7.0, propagationSpeed: 4.5, repeatPeriod: 700 };
+    }
+  }, [lodThreshold]);
+
   useEffect(() => {
     if (selectedApparition) {
       setRingApparition(selectedApparition);
@@ -70,10 +90,28 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         globeEl.current.controls().autoRotate = false;
       }
       const currentPov = globeEl.current.pointOfView();
+      const currentLat = currentPov ? currentPov.lat : 0;
+      const currentLng = currentPov ? currentPov.lng : 0;
       const currentAltitude = currentPov ? currentPov.altitude : 0.6;
-      const targetAltitude = Math.min(0.6, Math.max(0.2, currentAltitude));
+      
+      // If we are already zoomed in closer than 0.35, keep the current close zoom.
+      // Otherwise, zoom in to a regional view (0.35).
+      const targetAltitude = currentAltitude < 0.35 ? currentAltitude : 0.35;
       const latOffset = isTimelineOpen ? 6 : 0;
-      globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: targetAltitude }, 1000);
+      
+      // Calculate dynamic duration for smooth and cinematic transitions
+      const dLat = (selectedApparition.lat - latOffset) - currentLat;
+      let dLng = selectedApparition.lng - currentLng;
+      if (dLng > 180) dLng -= 360;
+      if (dLng < -180) dLng += 360;
+      
+      const spatialDist = Math.sqrt(dLat * dLat + dLng * dLng);
+      const altDist = Math.abs(targetAltitude - currentAltitude);
+      
+      // Gentle, smooth duration: base 1500ms, scaling with distance and zoom transition (capped at 3000ms)
+      const duration = Math.min(3000, 1500 + spatialDist * 6 + altDist * 400);
+      
+      globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: targetAltitude }, duration);
     }
   }, [selectedApparition, isTimelineOpen]);
 
@@ -91,9 +129,9 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       controls.autoRotateSpeed = 0.05;
       controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
       controls.maxDistance = 400;
-      controls.zoomSpeed = 3.0; // Fast, highly responsive zoom speed
+      controls.zoomSpeed = 1.8; // Calmer, smoother manual zooming
       controls.enableDamping = true; // Premium inertial damping
-      controls.dampingFactor = 0.15;
+      controls.dampingFactor = 0.08; // High glide inertia for premium feel
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
   }, []);
@@ -113,9 +151,9 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           const controls = globeEl.current.controls();
           controls.minDistance = 101.5;
           controls.maxDistance = 400;
-          controls.zoomSpeed = 3.0; // Fast, highly responsive zoom speed
+          controls.zoomSpeed = 1.8; // Calmer, smoother manual zooming
           controls.enableDamping = true;
-          controls.dampingFactor = 0.15;
+          controls.dampingFactor = 0.08; // High glide inertia for premium feel
           controlsConfigured = true;
         }
 
@@ -365,14 +403,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     const app = point as Apparition;
     onSelectApparition(app);
     setIsAutoRotate(false); 
-    if (globeEl.current && globeEl.current.controls()) {
-      globeEl.current.controls().autoRotate = false;
-      const currentPov = globeEl.current.pointOfView();
-      const currentAltitude = currentPov ? currentPov.altitude : 0.6;
-      const targetAltitude = Math.min(0.6, Math.max(0.2, currentAltitude));
-      const latOffset = isTimelineOpen ? 6 : 0;
-      globeEl.current.pointOfView({ lat: app.lat - latOffset, lng: app.lng, altitude: targetAltitude }, 1000);
-    }
   };
 
   const handleGlobeClick = () => {
@@ -417,9 +447,9 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             const rgb = hexToRgb(hex);
             return `rgba(${rgb}, ${ringProgress})`;
           }}
-          ringMaxRadius={6 * ringProgress}
-          ringPropagationSpeed={4}
-          ringRepeatPeriod={700}
+          ringMaxRadius={ringConfig.maxRadius * ringProgress}
+          ringPropagationSpeed={ringConfig.propagationSpeed}
+          ringRepeatPeriod={ringConfig.repeatPeriod}
           onGlobeClick={handleGlobeClick}
           htmlElementsData={visibleHtmlLabels}
           htmlElement={(dRaw: unknown) => {
