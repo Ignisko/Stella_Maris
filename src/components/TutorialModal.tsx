@@ -27,92 +27,92 @@ const LANGUAGE_FLAG_CODES: Record<Language, string> = {
 
 const tutorialTranslations = {
   en: {
-    skip: 'Skip Tour',
+    skip: 'Skip',
     next: 'Next',
     back: 'Back',
     finish: 'Start Exploring',
-    start: 'Start Tour',
+    start: 'Start',
     step: 'Step',
     of: 'of'
   },
   pl: {
-    skip: 'Pomiń przewodnik',
+    skip: 'Pomiń',
     next: 'Dalej',
     back: 'Wstecz',
     finish: 'Rozpocznij odkrywanie',
-    start: 'Rozpocznij przewodnik',
+    start: 'Rozpocznij',
     step: 'Krok',
     of: 'z'
   },
   es: {
-    skip: 'Omitir tutorial',
+    skip: 'Omitir',
     next: 'Siguiente',
     back: 'Atrás',
     finish: 'Comenzar a explorar',
-    start: 'Iniciar tutorial',
+    start: 'Iniciar',
     step: 'Paso',
     of: 'de'
   },
   pt: {
-    skip: 'Pular tutorial',
+    skip: 'Pular',
     next: 'Avançar',
     back: 'Voltar',
     finish: 'Começar a explorar',
-    start: 'Iniciar tutorial',
+    start: 'Iniciar',
     step: 'Passo',
     of: 'de'
   },
   fr: {
-    skip: 'Passer le tour',
+    skip: 'Passer',
     next: 'Suivant',
     back: 'Retour',
     finish: 'Commencer l’exploration',
-    start: 'Lancer le guide',
+    start: 'Lancer',
     step: 'Étape',
     of: 'sur'
   },
   it: {
-    skip: 'Salta tutorial',
+    skip: 'Salta',
     next: 'Avanti',
     back: 'Indietro',
     finish: 'Inizia a esplorare',
-    start: 'Avvia tutorial',
+    start: 'Avvia',
     step: 'Passo',
     of: 'di'
   },
   ar: {
-    skip: 'تخطي الجولة',
+    skip: 'تخطي',
     next: 'التالي',
     back: 'السابق',
     finish: 'بدء الاستكشاف',
-    start: 'بدء الجولة',
+    start: 'بدء',
     step: 'الخطوة',
     of: 'من'
   },
   tl: {
-    skip: 'Laktawan ang Tour',
+    skip: 'Laktawan',
     next: 'Susunod',
     back: 'Balik',
     finish: 'Simulan ang Paggagalugad',
-    start: 'Simulan ang Tour',
+    start: 'Simulan',
     step: 'Hakbang',
     of: 'ng'
   },
   vi: {
-    skip: 'Bỏ qua hướng dẫn',
+    skip: 'Bỏ qua',
     next: 'Tiếp tục',
     back: 'Quay lại',
     finish: 'Bắt đầu khám phá',
-    start: 'Bắt đầu hướng dẫn',
+    start: 'Bắt đầu',
     step: 'Bước',
     of: 'trên'
   },
   tr: {
-    skip: 'Rehberi Geç',
+    skip: 'Geç',
     next: 'İleri',
     back: 'Geri',
     finish: 'Keşfetmeye Başla',
-    start: 'Rehberi Başlat',
+    start: 'Başlat',
     step: 'Adım',
     of: '/'
   }
@@ -433,9 +433,8 @@ const getCardStyle = (step: number): React.CSSProperties => {
     case 1:
       return {
         ...common,
-        left: '50vw',
-        top: '100px',
-        transform: 'translateX(-50%)',
+        left: '60px',
+        top: '150px',
       };
     case 2:
       // To the left of the Sidebar
@@ -638,10 +637,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
             display: 'grid',
             gridTemplateColumns: 'repeat(2, 1fr)',
             gap: '8px',
-            marginTop: '8px',
-            maxHeight: '160px',
-            overflowY: 'auto',
-            paddingRight: '4px'
+            marginTop: '8px'
           }}>
             {(Object.keys(LANGUAGE_FLAG_CODES) as Language[]).map(lang => {
               const isSelected = currentLang === lang;
