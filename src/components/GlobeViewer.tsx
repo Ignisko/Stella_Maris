@@ -15,6 +15,24 @@ interface GlobeViewerProps {
   hidePlayPause?: boolean;
 };
 
+const configureOrbitControls = (controls: any) => {
+  controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
+  controls.maxDistance = 400;
+  controls.zoomSpeed = 3.5; // More responsive manual zooming (especially for touchpads)
+  controls.enableDamping = true; // Premium inertial damping
+  controls.dampingFactor = 0.08; // High glide inertia for premium feel
+  
+  // Custom zoom scale calculator to boost small touchpad scroll increments (deltaY is typically 1-20)
+  // while keeping physical mouse wheel scrolling (deltaY is typically 100-120) feeling natural.
+  controls._getZoomScale = function (delta: number) {
+    const absDelta = Math.abs(delta);
+    // Smooth exponential boost: up to 5x boost for small deltas, fading to ~1.2x for mouse deltas.
+    const boost = 1.0 + 4.0 * Math.exp(-absDelta / 40.0);
+    const normalizedDelta = (absDelta * boost) * 0.01;
+    return Math.pow(0.95, this.zoomSpeed * normalizedDelta);
+  };
+};
+
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
   apparitions, 
   selectedApparition, 
@@ -127,11 +145,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     if (globeEl.current && globeEl.current.controls()) {
       const controls = globeEl.current.controls();
       controls.autoRotateSpeed = 0.05;
-      controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
-      controls.maxDistance = 400;
-      controls.zoomSpeed = 1.8; // Calmer, smoother manual zooming
-      controls.enableDamping = true; // Premium inertial damping
-      controls.dampingFactor = 0.08; // High glide inertia for premium feel
+      configureOrbitControls(controls);
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
   }, []);
@@ -149,11 +163,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       if (globeEl.current) {
         if (!controlsConfigured && globeEl.current.controls()) {
           const controls = globeEl.current.controls();
-          controls.minDistance = 101.5;
-          controls.maxDistance = 400;
-          controls.zoomSpeed = 1.8; // Calmer, smoother manual zooming
-          controls.enableDamping = true;
-          controls.dampingFactor = 0.08; // High glide inertia for premium feel
+          configureOrbitControls(controls);
           controlsConfigured = true;
         }
 

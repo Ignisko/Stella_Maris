@@ -352,7 +352,7 @@ const getHighlightStyle = (step: number): React.CSSProperties => {
       // Highlight Sidebar
       return {
         right: '15px',
-        top: '15px',
+        top: '75px',
         bottom: '15px',
         width: '390px',
         left: 'auto',
@@ -365,7 +365,7 @@ const getHighlightStyle = (step: number): React.CSSProperties => {
         left: '15px',
         top: '15px',
         width: '330px',
-        height: '490px',
+        height: '265px',
         background: 'transparent',
       };
     case 4:

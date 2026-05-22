@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, Clock, ChevronUp, X, MapPin } from 'lucide-react';
+import { BarChart2, Clock, ChevronUp, X, MapPin, Play } from 'lucide-react';
 import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -25,6 +25,19 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
   "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -1 },
   "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
+};
+
+const playPresentationTranslations: Record<string, string> = {
+  pl: 'Uruchom prezentację',
+  es: 'Iniciar presentación',
+  pt: 'Iniciar apresentação',
+  fr: 'Lancer la présentation',
+  it: 'Avvia presentazione',
+  vi: 'Bắt đầu trình chiếu',
+  ar: 'بدء العرض التقديمي',
+  tl: 'Simulan ang Presentation',
+  tr: 'Sunumu Oynat',
+  en: 'Play Presentation'
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
@@ -255,37 +268,72 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         pointerEvents: 'auto'
       }}
     >
-      {/* Close button in top-right */}
+      {/* Top-right action controls (Play Presentation and Close buttons) */}
       {!isCinemaMode && (
-        <button
-          onClick={() => {
-            setIsOpen(false);
-            if (isPlaying) onTogglePlay();
-          }}
-          style={{
-            position: 'absolute',
-            top: '10px',
-            right: '20px',
-            background: 'rgba(255,255,255,0.06)',
-            border: '1px solid rgba(255,255,255,0.15)',
-            borderRadius: '16px',
-            padding: '6px 12px',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-            color: '#e2e8f0',
-            cursor: 'pointer',
-            fontSize: '12px',
-            fontWeight: 600,
-            transition: 'all 0.2s',
-            zIndex: 35
-          }}
-          onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
-          onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
-        >
-          <span>{t('close', lang)}</span>
-          <X size={13} />
-        </button>
+        <div style={{
+          position: 'absolute',
+          top: '10px',
+          right: '20px',
+          display: 'flex',
+          gap: '8px',
+          zIndex: 35
+        }}>
+          <button
+            onClick={onTogglePlay}
+            style={{
+              background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
+              color: '#ffffff',
+              border: 'none',
+              borderRadius: '16px',
+              padding: '6px 14px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              cursor: 'pointer',
+              fontSize: '12px',
+              fontWeight: 700,
+              boxShadow: '0 4px 12px rgba(56, 189, 248, 0.25)',
+              transition: 'all 0.2s'
+            }}
+            onMouseOver={e => {
+              e.currentTarget.style.transform = 'scale(1.03)';
+              e.currentTarget.style.boxShadow = '0 6px 16px rgba(56, 189, 248, 0.4)';
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.transform = 'none';
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(56, 189, 248, 0.25)';
+            }}
+          >
+            <Play size={13} fill="#ffffff" />
+            <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
+          </button>
+
+          <button
+            onClick={() => {
+              setIsOpen(false);
+              if (isPlaying) onTogglePlay();
+            }}
+            style={{
+              background: 'rgba(255,255,255,0.06)',
+              border: '1px solid rgba(255,255,255,0.15)',
+              borderRadius: '16px',
+              padding: '6px 12px',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '6px',
+              color: '#e2e8f0',
+              cursor: 'pointer',
+              fontSize: '12px',
+              fontWeight: 600,
+              transition: 'all 0.2s'
+            }}
+            onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
+            onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
+          >
+            <span>{t('close', lang)}</span>
+            <X size={13} />
+          </button>
+        </div>
       )}
 
       {/* Top bar: title + controls */}
