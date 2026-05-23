@@ -136,9 +136,29 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       const currentLng = currentPov ? currentPov.lng : 0;
       const currentAltitude = currentPov ? currentPov.altitude : 0.6;
       
-      // If we are already zoomed in closer than 0.35, keep the current close zoom.
-      // Otherwise, zoom in to a regional view (0.35).
-      const targetAltitude = currentAltitude < 0.35 ? currentAltitude : 0.35;
+      // Calculate dynamic target altitude based on nearby pin density to help separate clustered pins
+      let baseTargetAltitude = 0.35;
+      if (apparitions.length > 1) {
+        let minPeerDist = 999;
+        for (const a of apparitions) {
+          if (a.id === selectedApparition.id) continue;
+          const dLat = Math.abs(a.lat - selectedApparition.lat);
+          const dLng = Math.abs(a.lng - selectedApparition.lng);
+          const dist = Math.sqrt(dLat * dLat + dLng * dLng);
+          if (dist < minPeerDist) {
+            minPeerDist = dist;
+          }
+        }
+        
+        if (minPeerDist < 0.8) {
+          baseTargetAltitude = 0.05; // Zoom in very close to separate nearby pins
+        } else if (minPeerDist < 3.0) {
+          baseTargetAltitude = 0.15; // Zoom in mid-close
+        }
+      }
+
+      // If we are already zoomed in closer than targetAltitude, keep the current close zoom.
+      const targetAltitude = currentAltitude < baseTargetAltitude ? currentAltitude : baseTargetAltitude;
       const latOffset = isTimelineOpen ? 6 : 0;
       
       // Calculate dynamic duration for smooth and cinematic transitions
@@ -155,7 +175,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       
       globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: targetAltitude }, duration);
     }
-  }, [selectedApparition, isTimelineOpen]);
+  }, [selectedApparition, isTimelineOpen, apparitions]);
 
   useEffect(() => {
     const handleResize = () => {
