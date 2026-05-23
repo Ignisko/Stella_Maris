@@ -41,7 +41,7 @@ const configureOrbitControls = (controls: any) => {
     if (this.targetRadius === undefined) {
       this.targetRadius = currentDistance;
     }
-    this.targetRadius /= dollyScale;
+    this.targetRadius *= dollyScale;
     this.targetRadius = Math.max(this.minDistance, Math.min(this.maxDistance, this.targetRadius));
     this.lastZoomTime = Date.now();
   };
@@ -51,7 +51,7 @@ const configureOrbitControls = (controls: any) => {
     if (this.targetRadius === undefined) {
       this.targetRadius = currentDistance;
     }
-    this.targetRadius *= dollyScale;
+    this.targetRadius /= dollyScale;
     this.targetRadius = Math.max(this.minDistance, Math.min(this.maxDistance, this.targetRadius));
     this.lastZoomTime = Date.now();
   };
