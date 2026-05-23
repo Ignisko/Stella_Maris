@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronDown, ChevronUp, Filter, Clock, Award } from 'lucide-react';
 import { STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
@@ -25,6 +25,24 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   onToggleExpanded
 }) => {
   const [activeTab, setActiveTab] = useState<'status' | 'time'>('status');
+  const filterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!isExpanded) return;
+
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
+        onToggleExpanded(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isExpanded, onToggleExpanded]);
 
   const toggleFilter = (category: string) => {
     if (activeFilters.includes(category)) {
@@ -53,10 +71,13 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   };
 
   return (
-    <div style={{
-      width: '100%',
-      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
-    }}>
+    <div 
+      ref={filterRef}
+      style={{
+        width: '100%',
+        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+      }}
+    >
       {!isExpanded ? (
         /* Small trigger button */
         <button
