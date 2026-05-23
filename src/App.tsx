@@ -577,6 +577,10 @@ function App() {
         apparitions={filteredApparitions}
         onSelectApparition={handleSelectApparition}
         lang={lang}
+        activeFilters={activeFilters}
+        onChangeFilters={setActiveFilters}
+        activeCenturies={activeCenturies}
+        onChangeCenturies={setActiveCenturies}
       />
 
       <GlobeViewer 

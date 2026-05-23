@@ -4,6 +4,7 @@ import { X, MapPin, Calendar, ChevronRight, Search } from 'lucide-react';
 import { getStatusColor, getApparitionStatusCategory } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
+import FilterMenu from './FilterMenu';
 
 interface DirectoryModalProps {
   isOpen: boolean;
@@ -11,10 +12,25 @@ interface DirectoryModalProps {
   apparitions: Apparition[];
   onSelectApparition: (app: Apparition) => void;
   lang: Language;
+  activeFilters: string[];
+  onChangeFilters: (filters: string[]) => void;
+  activeCenturies: string[];
+  onChangeCenturies: (centuries: string[]) => void;
 }
 
-const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, apparitions, onSelectApparition, lang }) => {
+const DirectoryModal: React.FC<DirectoryModalProps> = ({ 
+  isOpen, 
+  onClose, 
+  apparitions, 
+  onSelectApparition, 
+  lang,
+  activeFilters,
+  onChangeFilters,
+  activeCenturies,
+  onChangeCenturies
+}) => {
   const [localQuery, setLocalQuery] = useState('');
+  const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
 
   if (!isOpen) return null;
 
@@ -96,30 +112,66 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({ isOpen, onClose, appari
           </button>
         </div>
 
-        {/* Local Search inside modal */}
-        <div style={{ padding: '16px 28px', borderBottom: '1px solid var(--glass-border)', display: 'flex', alignItems: 'center', gap: '12px', background: 'rgba(0,0,0,0.2)' }}>
-          <Search size={16} color="var(--accent-color)" />
-          <input
-            type="text"
-            placeholder={t('directoryQuickFilter', lang)}
-            value={localQuery}
-            onChange={e => setLocalQuery(e.target.value)}
-            style={{
-              background: 'transparent',
-              border: 'none',
-              color: '#f1f5f9',
-              fontSize: '14px',
-              width: '100%',
-              outline: 'none',
-              fontFamily: 'inherit',
-              fontWeight: 500
-            }}
-          />
-          {localQuery && (
-            <button onClick={() => setLocalQuery('')} style={{ background: 'none', border: 'none', color: '#f1f5f9', opacity: 0.6, cursor: 'pointer', fontSize: '13px' }}>
-              {t('directoryClear', lang)}
-            </button>
-          )}
+        {/* Local Search and Filters Row inside modal */}
+        <div style={{ 
+          padding: '16px 28px', 
+          borderBottom: '1px solid var(--glass-border)', 
+          display: 'flex', 
+          alignItems: 'center', 
+          justifyContent: 'space-between',
+          gap: '20px', 
+          background: 'rgba(0,0,0,0.2)',
+          position: 'relative',
+          zIndex: 40
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0 }}>
+            <Search size={16} color="var(--accent-color)" />
+            <input
+              type="text"
+              placeholder={t('directoryQuickFilter', lang)}
+              value={localQuery}
+              onChange={e => setLocalQuery(e.target.value)}
+              style={{
+                background: 'transparent',
+                border: 'none',
+                color: '#f1f5f9',
+                fontSize: '14px',
+                width: '100%',
+                outline: 'none',
+                fontFamily: 'inherit',
+                fontWeight: 500
+              }}
+            />
+            {localQuery && (
+              <button 
+                onClick={() => setLocalQuery('')} 
+                style={{ 
+                  background: 'none', 
+                  border: 'none', 
+                  color: '#f1f5f9', 
+                  opacity: 0.6, 
+                  cursor: 'pointer', 
+                  fontSize: '13px',
+                  whiteSpace: 'nowrap'
+                }}
+              >
+                {t('directoryClear', lang)}
+              </button>
+            )}
+          </div>
+          
+          <div style={{ width: '160px', flexShrink: 0 }}>
+            <FilterMenu 
+              activeFilters={activeFilters} 
+              onChange={onChangeFilters} 
+              activeCenturies={activeCenturies}
+              onChangeCenturies={onChangeCenturies}
+              lang={lang}
+              isExpanded={isFiltersExpanded}
+              onToggleExpanded={setIsFiltersExpanded}
+              absolute={true}
+            />
+          </div>
         </div>
 
         {/* List Content */}

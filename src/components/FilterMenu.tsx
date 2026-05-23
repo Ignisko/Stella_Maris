@@ -13,6 +13,7 @@ interface FilterMenuProps {
   lang: Language;
   isExpanded: boolean;
   onToggleExpanded: (expanded: boolean) => void;
+  absolute?: boolean;
 }
 
 const FilterMenu: React.FC<FilterMenuProps> = ({ 
@@ -22,7 +23,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   onChangeCenturies, 
   lang,
   isExpanded,
-  onToggleExpanded
+  onToggleExpanded,
+  absolute = false
 }) => {
   const [activeTab, setActiveTab] = useState<'status' | 'time'>('status');
   const filterRef = useRef<HTMLDivElement>(null);
@@ -75,6 +77,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
       ref={filterRef}
       style={{
         width: '100%',
+        position: 'relative', // Ensures absolute children position correctly
         transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
       }}
     >
@@ -121,14 +124,18 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
         <div
           className="glass-panel glass-panel-rounded animate-fade-in"
           style={{
-            width: '100%',
-            background: 'rgba(15, 23, 42, 0.92)',
+            width: absolute ? '280px' : '100%',
+            position: absolute ? 'absolute' : 'relative',
+            top: absolute ? 'calc(100% + 8px)' : undefined,
+            right: absolute ? 0 : undefined,
+            background: 'rgba(15, 23, 42, 0.95)',
             border: '1px solid rgba(56, 189, 248, 0.45)',
             boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
             borderRadius: '16px',
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
+            zIndex: absolute ? 50 : undefined,
           }}
         >
           {/* Unified Header */}
