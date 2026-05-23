@@ -96,6 +96,7 @@ function App() {
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [playbackIndex, setPlaybackIndex] = useState(0);
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
+  const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
 
   const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
     return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
@@ -141,6 +142,7 @@ function App() {
     if (!isCinemaMode && isPlayingTimeline) {
       setIsPlayingTimeline(false);
     }
+    setIsFiltersExpanded(false);
   };
 
   // Filter the data
@@ -413,7 +415,7 @@ function App() {
           flexDirection: 'column',
           gap: '10px',
           opacity: isTimelineOpen ? 0 : 1,
-          maxHeight: isTimelineOpen ? '0px' : '220px',
+          maxHeight: isTimelineOpen ? '0px' : (isFiltersExpanded ? '600px' : '220px'),
           transform: isTimelineOpen ? 'translateY(-10px)' : 'translateY(0)',
           overflow: isTimelineOpen ? 'hidden' : 'visible',
           transition: 'opacity 0.3s ease, maxHeight 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease',
@@ -429,87 +431,93 @@ function App() {
           </div>
 
           {/* Action Row: Filters and Browse Directory */}
-          <div style={{ display: 'flex', gap: '8px', pointerEvents: 'auto' }}>
+          <div style={{ display: 'flex', gap: '8px', pointerEvents: 'auto', width: '100%' }}>
             <FilterMenu 
               activeFilters={activeFilters} 
               onChange={setActiveFilters} 
               activeCenturies={activeCenturies}
               onChangeCenturies={setActiveCenturies}
               lang={lang}
+              isExpanded={isFiltersExpanded}
+              onToggleExpanded={setIsFiltersExpanded}
             />
 
+            {!isFiltersExpanded && (
+              <button
+                onClick={() => setIsDirectoryOpen(true)}
+                className="glass-panel glass-panel-rounded animate-fade-in"
+                style={{
+                  flex: 1,
+                  height: '42px',
+                  padding: '0 12px',
+                  background: 'rgba(15, 23, 42, 0.8)',
+                  color: 'var(--text-color)',
+                  border: '1px solid var(--glass-border)',
+                  fontSize: '13px',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+                  transition: 'all 0.2s ease',
+                  whiteSpace: 'nowrap'
+                }}
+                onMouseOver={e => {
+                  e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
+                  e.currentTarget.style.borderColor = 'var(--accent-color)';
+                }}
+                onMouseOut={e => {
+                  e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+                  e.currentTarget.style.borderColor = 'var(--glass-border)';
+                }}
+              >
+                <List size={15} color="var(--accent-color)" />
+                <span>{t('browseDirectory', lang, { count: filteredApparitions.length })}</span>
+              </button>
+            )}
+          </div>
+
+          {/* Play Presentation Button */}
+          {!isFiltersExpanded && (
             <button
-              onClick={() => setIsDirectoryOpen(true)}
-              className="glass-panel glass-panel-rounded animate-fade-in"
+              onClick={togglePlayTimeline}
+              className="glass-panel glass-panel-rounded"
               style={{
-                flex: 1,
+                pointerEvents: 'auto',
+                width: '100%',
                 height: '42px',
-                padding: '0 12px',
-                background: 'rgba(15, 23, 42, 0.8)',
-                color: 'var(--text-color)',
-                border: '1px solid var(--glass-border)',
+                padding: '0 16px',
+                background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.8))',
+                color: '#ffffff',
+                border: 'none',
                 fontSize: '13px',
-                fontWeight: 600,
+                fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '8px',
-                boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+                boxShadow: '0 4px 16px rgba(56, 189, 248, 0.3)',
                 transition: 'all 0.2s ease',
-                whiteSpace: 'nowrap'
+                letterSpacing: '0.3px'
               }}
               onMouseOver={e => {
-                e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
-                e.currentTarget.style.borderColor = 'var(--accent-color)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(56, 189, 248, 0.45)';
+                e.currentTarget.style.filter = 'brightness(1.1)';
               }}
               onMouseOut={e => {
-                e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
-                e.currentTarget.style.borderColor = 'var(--glass-border)';
+                e.currentTarget.style.transform = 'none';
+                e.currentTarget.style.boxShadow = '0 4px 16px rgba(56, 189, 248, 0.3)';
+                e.currentTarget.style.filter = 'none';
               }}
             >
-              <List size={15} color="var(--accent-color)" />
-              <span>{t('browseDirectory', lang, { count: filteredApparitions.length })}</span>
+              <Play size={15} fill="#ffffff" />
+              <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
             </button>
-          </div>
-
-          {/* Play Presentation Button */}
-          <button
-            onClick={togglePlayTimeline}
-            className="glass-panel glass-panel-rounded"
-            style={{
-              pointerEvents: 'auto',
-              width: '100%',
-              height: '42px',
-              padding: '0 16px',
-              background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.8))',
-              color: '#ffffff',
-              border: 'none',
-              fontSize: '13px',
-              fontWeight: 700,
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '8px',
-              boxShadow: '0 4px 16px rgba(56, 189, 248, 0.3)',
-              transition: 'all 0.2s ease',
-              letterSpacing: '0.3px'
-            }}
-            onMouseOver={e => {
-              e.currentTarget.style.transform = 'translateY(-1px)';
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(56, 189, 248, 0.45)';
-              e.currentTarget.style.filter = 'brightness(1.1)';
-            }}
-            onMouseOut={e => {
-              e.currentTarget.style.transform = 'none';
-              e.currentTarget.style.boxShadow = '0 4px 16px rgba(56, 189, 248, 0.3)';
-              e.currentTarget.style.filter = 'none';
-            }}
-          >
-            <Play size={15} fill="#ffffff" />
-            <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
-          </button>
+          )}
         </div>
       </div>
 
@@ -577,7 +585,7 @@ function App() {
         onSelectApparition={handleSelectApparition} 
         isTimelineOpen={isTimelineOpen}
         lang={lang}
-        hidePlayPause={hasPopups || isTimelineOpen}
+        hidePlayPause={hasPopups || isTimelineOpen || isFiltersExpanded}
       />
       
       {currentSelectedApparition && (

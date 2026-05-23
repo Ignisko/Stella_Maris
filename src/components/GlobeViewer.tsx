@@ -31,6 +31,30 @@ const configureOrbitControls = (controls: any) => {
     const normalizedDelta = (absDelta * boost) * 0.01;
     return Math.pow(0.95, this.zoomSpeed * normalizedDelta);
   };
+
+  // Intercept dolly actions to smooth out zoom (since OrbitControls has no native zoom damping)
+  controls.targetRadius = undefined;
+  controls.lastZoomTime = 0;
+
+  controls._dollyIn = function (dollyScale: number) {
+    const currentDistance = this.object.position.distanceTo(this.target);
+    if (this.targetRadius === undefined) {
+      this.targetRadius = currentDistance;
+    }
+    this.targetRadius /= dollyScale;
+    this.targetRadius = Math.max(this.minDistance, Math.min(this.maxDistance, this.targetRadius));
+    this.lastZoomTime = Date.now();
+  };
+
+  controls._dollyOut = function (dollyScale: number) {
+    const currentDistance = this.object.position.distanceTo(this.target);
+    if (this.targetRadius === undefined) {
+      this.targetRadius = currentDistance;
+    }
+    this.targetRadius *= dollyScale;
+    this.targetRadius = Math.max(this.minDistance, Math.min(this.maxDistance, this.targetRadius));
+    this.lastZoomTime = Date.now();
+  };
 };
 
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
@@ -165,6 +189,26 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           const controls = globeEl.current.controls();
           configureOrbitControls(controls);
           controlsConfigured = true;
+        }
+
+        if (globeEl.current.controls()) {
+          const controls = globeEl.current.controls();
+          const now = Date.now();
+          const currentDistance = controls.object.position.distanceTo(controls.target);
+          
+          if (controls.targetRadius === undefined) {
+            controls.targetRadius = currentDistance;
+          }
+
+          if (now - (controls.lastZoomTime || 0) > 800) {
+            controls.targetRadius = currentDistance;
+          } else {
+            const diff = controls.targetRadius - currentDistance;
+            if (Math.abs(diff) > 0.05) {
+              const nextDistance = currentDistance + diff * 0.12; // Smooth 12% glide step per frame
+              controls._scale = nextDistance / currentDistance;
+            }
+          }
         }
 
         const pov = globeEl.current.pointOfView();
@@ -536,6 +580,33 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
                 handlePointClick(d);
               };
             }
+
+            el.onwheel = (e) => {
+              if (globeEl.current) {
+                const renderer = globeEl.current.renderer();
+                if (renderer) {
+                  const canvas = renderer.domElement;
+                  if (canvas) {
+                    const clonedEvent = new WheelEvent('wheel', {
+                      clientX: e.clientX,
+                      clientY: e.clientY,
+                      deltaX: e.deltaX,
+                      deltaY: e.deltaY,
+                      deltaZ: e.deltaZ,
+                      deltaMode: e.deltaMode,
+                      bubbles: true,
+                      cancelable: true,
+                      ctrlKey: e.ctrlKey,
+                      shiftKey: e.shiftKey,
+                      altKey: e.altKey,
+                      metaKey: e.metaKey
+                    });
+                    canvas.dispatchEvent(clonedEvent);
+                  }
+                }
+              }
+            };
+
             return el;
           }}
         />

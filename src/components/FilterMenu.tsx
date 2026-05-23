@@ -11,10 +11,19 @@ interface FilterMenuProps {
   activeCenturies: string[];
   onChangeCenturies: (centuries: string[]) => void;
   lang: Language;
+  isExpanded: boolean;
+  onToggleExpanded: (expanded: boolean) => void;
 }
 
-const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, activeCenturies, onChangeCenturies, lang }) => {
-  const [isExpanded, setIsExpanded] = useState(false);
+const FilterMenu: React.FC<FilterMenuProps> = ({ 
+  activeFilters, 
+  onChange, 
+  activeCenturies, 
+  onChangeCenturies, 
+  lang,
+  isExpanded,
+  onToggleExpanded
+}) => {
   const [activeTab, setActiveTab] = useState<'status' | 'time'>('status');
 
   const toggleFilter = (category: string) => {
@@ -42,100 +51,223 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
     if (activeTab === 'status') onChange([]);
     else onChangeCenturies([]);
   };
+
   return (
     <div style={{
-      position: 'relative',
-      zIndex: 10,
+      width: '100%',
+      transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
     }}>
-      {/* Small trigger button */}
-      <button
-        onClick={() => setIsExpanded(!isExpanded)}
-        title="Filters"
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '10px 16px',
-          background: isExpanded
-            ? 'rgba(56,189,248,0.15)'
-            : 'rgba(15, 23, 42, 0.8)',
-          border: `1px solid ${isExpanded ? 'rgba(56,189,248,0.5)' : 'var(--glass-border)'}`,
-          borderRadius: '12px',
-          backdropFilter: 'blur(12px)',
-          boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-          cursor: 'pointer',
-          color: 'var(--text-color)',
-          fontSize: '13px',
-          fontWeight: 600,
-          transition: 'all 0.2s ease',
-          whiteSpace: 'nowrap',
-        }}
-        onMouseOver={e => {
-          if (!isExpanded) {
+      {!isExpanded ? (
+        /* Small trigger button */
+        <button
+          onClick={() => onToggleExpanded(true)}
+          title="Filters"
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '10px 16px',
+            background: 'rgba(15, 23, 42, 0.8)',
+            border: '1px solid var(--glass-border)',
+            borderRadius: '12px',
+            backdropFilter: 'blur(12px)',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            cursor: 'pointer',
+            color: 'var(--text-color)',
+            fontSize: '13px',
+            fontWeight: 600,
+            transition: 'all 0.2s ease',
+            whiteSpace: 'nowrap',
+            width: '100%',
+            height: '42px',
+            justifyContent: 'center'
+          }}
+          onMouseOver={e => {
             e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
             e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
-          }
-        }}
-        onMouseOut={e => {
-          if (!isExpanded) {
+          }}
+          onMouseOut={e => {
             e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
             e.currentTarget.style.borderColor = 'var(--glass-border)';
-          }
-        }}
-      >
-        <Filter size={15} color="var(--accent-color)" />
-        <span>{t('filters', lang)}</span>
-        {isExpanded ? <ChevronUp size={13} style={{ opacity: 0.7 }} /> : <ChevronDown size={13} style={{ opacity: 0.7 }} />}
-      </button>
-
-      {/* Dropdown panel */}
-      {isExpanded && (
+          }}
+        >
+          <Filter size={15} color="var(--accent-color)" />
+          <span>{t('filters', lang)}</span>
+          <ChevronDown size={13} style={{ opacity: 0.7 }} />
+        </button>
+      ) : (
+        /* Expanded Unified Box */
         <div
           className="glass-panel glass-panel-rounded animate-fade-in"
           style={{
-            position: 'absolute',
-            top: 'calc(100% + 8px)',
-            left: 0,
-            width: '280px',
-            overflow: 'hidden',
+            width: '100%',
+            background: 'rgba(15, 23, 42, 0.92)',
+            border: '1px solid rgba(56, 189, 248, 0.45)',
             boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
-            zIndex: 11,
+            borderRadius: '16px',
+            overflow: 'hidden',
+            display: 'flex',
+            flexDirection: 'column',
           }}
         >
+          {/* Unified Header */}
+          <button
+            onClick={() => onToggleExpanded(false)}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              width: '100%',
+              padding: '12px 20px',
+              background: 'rgba(56, 189, 248, 0.12)',
+              border: 'none',
+              borderBottom: '1px solid var(--glass-border)',
+              color: 'var(--text-color)',
+              cursor: 'pointer',
+              fontWeight: 600,
+              fontSize: '14px',
+              transition: 'all 0.2s ease'
+            }}
+            onMouseOver={e => {
+              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.2)';
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <Filter size={15} color="var(--accent-color)" />
+              <span>{t('filters', lang)}</span>
+            </div>
+            <ChevronUp size={15} style={{ opacity: 0.8, color: 'var(--accent-color)' }} />
+          </button>
+
           {/* Tabs */}
           <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)' }}>
             <button
               onClick={() => setActiveTab('status')}
-              style={{ flex: 1, padding: '12px 0', background: activeTab === 'status' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'status' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
+              style={{ 
+                flex: 1, 
+                padding: '12px 0', 
+                background: activeTab === 'status' ? 'rgba(255,255,255,0.06)' : 'transparent', 
+                border: 'none', 
+                color: 'var(--text-color)', 
+                opacity: activeTab === 'status' ? 1 : 0.5, 
+                cursor: 'pointer', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                gap: '8px', 
+                alignItems: 'center', 
+                fontSize: '13px', 
+                fontWeight: 600, 
+                transition: 'all 0.2s ease' 
+              }}
             >
               <Award size={15} /> {t('status', lang)}
             </button>
             <button
               onClick={() => setActiveTab('time')}
-              style={{ flex: 1, padding: '12px 0', background: activeTab === 'time' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: 'var(--text-color)', opacity: activeTab === 'time' ? 1 : 0.5, cursor: 'pointer', display: 'flex', justifyContent: 'center', gap: '8px', alignItems: 'center', fontSize: '13px', fontWeight: 600, transition: 'all 0.2s ease' }}
+              style={{ 
+                flex: 1, 
+                padding: '12px 0', 
+                background: activeTab === 'time' ? 'rgba(255,255,255,0.06)' : 'transparent', 
+                border: 'none', 
+                color: 'var(--text-color)', 
+                opacity: activeTab === 'time' ? 1 : 0.5, 
+                cursor: 'pointer', 
+                display: 'flex', 
+                justifyContent: 'center', 
+                gap: '8px', 
+                alignItems: 'center', 
+                fontSize: '13px', 
+                fontWeight: 600, 
+                transition: 'all 0.2s ease' 
+              }}
             >
               <Clock size={15} /> {t('centuries', lang)}
             </button>
           </div>
 
-          <div style={{ padding: '14px 20px', display: 'flex', flexDirection: 'column', gap: '12px', maxHeight: 'calc(100vh - 260px)', overflowY: 'auto' }}>
+          {/* Checkboxes List */}
+          <div style={{ 
+            padding: '14px 20px', 
+            display: 'flex', 
+            flexDirection: 'column', 
+            gap: '12px', 
+            maxHeight: '320px', 
+            overflowY: 'auto' 
+          }}>
+            {/* Switched Buttons: Clear all on left, Select all on right */}
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
-              <button onClick={selectAll} style={{ background: 'none', border: 'none', color: 'var(--accent-color)', fontSize: '12px', cursor: 'pointer', fontWeight: 500, fontFamily: 'inherit' }}>{t('selectAll', lang)}</button>
-              <button onClick={clearAll} style={{ background: 'none', border: 'none', color: 'var(--text-color)', opacity: 0.7, fontSize: '12px', cursor: 'pointer', fontFamily: 'inherit' }}>{t('clearAll', lang)}</button>
+              <button 
+                onClick={clearAll} 
+                style={{ 
+                  background: 'none', 
+                  border: 'none', 
+                  color: 'var(--text-color)', 
+                  opacity: 0.7, 
+                  fontSize: '12px', 
+                  cursor: 'pointer', 
+                  fontFamily: 'inherit',
+                  transition: 'opacity 0.2s'
+                }}
+                onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                onMouseOut={e => e.currentTarget.style.opacity = '0.7'}
+              >
+                {t('clearAll', lang)}
+              </button>
+              <button 
+                onClick={selectAll} 
+                style={{ 
+                  background: 'none', 
+                  border: 'none', 
+                  color: 'var(--accent-color)', 
+                  fontSize: '12px', 
+                  cursor: 'pointer', 
+                  fontWeight: 600, 
+                  fontFamily: 'inherit',
+                  transition: 'filter 0.2s'
+                }}
+                onMouseOver={e => e.currentTarget.style.filter = 'brightness(1.2)'}
+                onMouseOut={e => e.currentTarget.style.filter = 'none'}
+              >
+                {t('selectAll', lang)}
+              </button>
             </div>
 
             {activeTab === 'status' && FILTER_CATEGORIES.map(category => {
               const isActive = activeFilters.includes(category);
               const color = STATUS_COLORS[category] || '#94a3b8';
               return (
-                <label key={category} style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '13px', opacity: isActive ? 1 : 0.5, transition: 'opacity 0.2s' }}>
+                <label 
+                  key={category} 
+                  style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '10px', 
+                    cursor: 'pointer', 
+                    fontSize: '13px', 
+                    opacity: isActive ? 1 : 0.55, 
+                    transition: 'all 0.2s' 
+                  }}
+                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                  onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                >
                   <input
                     type="checkbox"
                     checked={isActive}
                     onChange={() => toggleFilter(category)}
                     style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
                   />
-                  <span style={{ width: '10px', height: '10px', borderRadius: '50%', backgroundColor: color, display: 'inline-block', flexShrink: 0, boxShadow: `0 0 6px ${color}` }} />
+                  <span style={{ 
+                    width: '10px', 
+                    height: '10px', 
+                    borderRadius: '50%', 
+                    backgroundColor: color, 
+                    display: 'inline-block', 
+                    flexShrink: 0, 
+                    boxShadow: `0 0 6px ${color}` 
+                  }} />
                   <span>{t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
                 </label>
               );
@@ -144,14 +276,27 @@ const FilterMenu: React.FC<FilterMenuProps> = ({ activeFilters, onChange, active
             {activeTab === 'time' && CENTURY_FILTERS.map(century => {
               const isActive = activeCenturies.includes(century.id);
               return (
-                <label key={century.id} style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '13px', opacity: isActive ? 1 : 0.5, transition: 'opacity 0.2s' }}>
+                <label 
+                  key={century.id} 
+                  style={{ 
+                    display: 'flex', 
+                    alignItems: 'center', 
+                    gap: '10px', 
+                    cursor: 'pointer', 
+                    fontSize: '13px', 
+                    opacity: isActive ? 1 : 0.55, 
+                    transition: 'all 0.2s' 
+                  }}
+                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                  onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                >
                   <input
                     type="checkbox"
                     checked={isActive}
                     onChange={() => toggleCentury(century.id)}
                     style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
                   />
-                  {t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}
+                  <span>{t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
                 </label>
               );
             })}
