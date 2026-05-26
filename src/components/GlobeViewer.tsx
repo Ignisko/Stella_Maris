@@ -193,7 +193,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   // Focus camera on Mexico (Guadalupe) during Step 2 of Onboarding Guide, and reset when closed or started
   const prevTutorialActiveRef = useRef(isTutorialActive);
   useEffect(() => {
-    if (isTutorialActive && tutorialStep === 2 && globeEl.current) {
+    if (isTutorialActive && (tutorialStep === 2 || tutorialStep === 3) && globeEl.current) {
       setIsAutoRotate(false);
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = false;
@@ -725,7 +725,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 7)) && (
+      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 8)) && (
         <button
           id="auto-rotate-button"
           onClick={(e) => {

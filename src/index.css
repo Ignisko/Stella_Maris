@@ -350,8 +350,13 @@ input, button, textarea, select {
   animation: tutorialFadeIn 0.4s ease-out forwards;
 }
 
-/* Brighter and highlighted sidebar Close button on Step 2 */
-body[data-tutorial-step="2"] #sidebar-close-button {
+/* Highlight and elevate sidebar on Step 3 (zoom & details step 4) */
+body[data-tutorial-step="3"] #apparition-sidebar {
+  z-index: 125 !important;
+}
+
+/* Brighter and highlighted sidebar Close button on Step 3 */
+body[data-tutorial-step="3"] #sidebar-close-button {
   color: var(--gold-accent) !important;
   opacity: 1 !important;
   transform: scale(1.2) !important;

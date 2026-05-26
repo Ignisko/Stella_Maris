@@ -106,7 +106,7 @@ function App() {
 
   const handleTutorialStepChange = (step: number) => {
     setTutorialStep(step);
-    if (step === 2) {
+    if (step === 3) {
       const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
       if (guadalupe) {
         setSelectedApparition(guadalupe);
@@ -137,8 +137,8 @@ function App() {
       if (idx !== -1) {
         setPlaybackIndex(idx);
       }
-      if (isTutorialActive && tutorialStep === 1) {
-        setTutorialStep(2);
+      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2)) {
+        setTutorialStep(3);
       }
     }
     if (!isCinemaMode && isPlayingTimeline) {
@@ -603,8 +603,8 @@ function App() {
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
         onAdvanceTutorialStep={() => {
-          if (isTutorialActive && tutorialStep === 7) {
-            setTutorialStep(8);
+          if (isTutorialActive && tutorialStep === 8) {
+            setTutorialStep(9);
           }
         }}
       />
@@ -615,8 +615,8 @@ function App() {
           isVisible={isSidebarVisible}
           onClose={() => {
             setSelectedApparition(null);
-            if (isTutorialActive && tutorialStep === 2) {
-              setTutorialStep(3);
+            if (isTutorialActive && tutorialStep === 3) {
+              setTutorialStep(4);
             }
           }} 
           allActiveApparitions={filteredApparitions}
@@ -638,10 +638,10 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 5) {
-              setTutorialStep(6);
-            } else if (!open && isTutorialActive && tutorialStep === 6) {
+            if (open && isTutorialActive && tutorialStep === 6) {
               setTutorialStep(7);
+            } else if (!open && isTutorialActive && tutorialStep === 7) {
+              setTutorialStep(8);
             }
           }}
           lang={lang}

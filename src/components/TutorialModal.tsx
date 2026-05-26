@@ -131,7 +131,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     en: [
       "Stella Maris onboarding",
       "Explore the 3D globe",
-      "Zoom to Guadalupe & details",
+      "Zoom to Guadalupe",
+      "Apparition details",
       "Search & filters",
       "Browse directory",
       "Open timeline",
@@ -142,7 +143,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     pl: [
       "Wprowadzenie do Stella Maris",
       "Eksploruj globus 3D",
-      "Zbliżenie na Guadalupe i szczegóły",
+      "Zbliżenie na Guadalupe",
+      "Szczegóły objawienia",
       "Wyszukiwanie i filtry",
       "Przeglądaj katalog",
       "Otwórz oś czasu",
@@ -153,18 +155,20 @@ const getStepsContent = (lang: Language): StepContent[] => {
     es: [
       "Guía de Stella Maris",
       "Explore el globo 3D",
-      "Zoom a Guadalupe y detalles",
+      "Zoom a Guadalupe",
+      "Detalles de la aparición",
       "Búsqueda y filtros",
       "Explorar directorio",
       "Abrir línea de tiempo",
-      "Línea de tiempo y presentación",
+      "Línea de tiempo y presentation",
       "Rotación automática de la Tierra",
       "¡Gloria a Jesús!"
     ],
     pt: [
       "Introdução ao Stella Maris",
       "Explore o globo 3D",
-      "Zoom para Guadalupe e detalhes",
+      "Zoom para Guadalupe",
+      "Detalhes da aparição",
       "Pesquisa e filtros",
       "Navegar no diretório",
       "Abrir linha do tempo",
@@ -175,7 +179,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     fr: [
       "Bienvenue sur Stella Maris",
       "Explorez le globe 3D",
-      "Zoom sur Guadalupe & détails",
+      "Zoom sur Guadalupe",
+      "Détails de l'apparition",
       "Recherche & filtres",
       "Parcourir le répertoire",
       "Ouvrir la frise chronologique",
@@ -186,7 +191,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     it: [
       "Introduzione a Stella Maris",
       "Esplora il globo 3D",
-      "Zoom su Guadalupe e dettagli",
+      "Zoom su Guadalupe",
+      "Dettagli dell'apparizione",
       "Ricerca & filtri",
       "Sfoglia la directory",
       "Apri la cronologia",
@@ -200,7 +206,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     en: [
       "Choose your language to begin.",
       "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out.",
-      "The globe has zoomed to Mexico. On the right, the details panel for 'Our Lady of Guadalupe' has opened automatically. Read the description, and when you are ready to explore other features, click the Close (X) button in the top right corner of the panel.",
+      "The globe zooms in to the apparition site in Guadalupe (Mexico). See the location on the map.",
+      "On the right, the details panel for 'Our Lady of Guadalupe' has opened automatically. Read the description, and when you are ready to explore other features, click the Close (X) button in the top right corner of the panel.",
       "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
       "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
       "Click the timeline toggle button in the bottom right corner to show the chronological event timeline.",
@@ -211,7 +218,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     pl: [
       "Wybierz język, aby rozpocząć.",
       "Kliknij lewym przyciskiem myszy i przeciągnij Ziemię, aby ją obrócić. Użyj kółka myszy, aby przybliżyć lub oddalić.",
-      "Globus przybliżył się do Meksyku. Po prawej stronie automatycznie otworzył się panel szczegółów dla „Matki Bożej z Guadalupe”. Przeczytaj opis, a gdy będziesz gotowy poznać inne funkcje, kliknij przycisk Zamknij (X) w prawym górnym rogu panelu.",
+      "Globus przybliża się do miejsca objawienia w Guadalupe (Meksyk). Zobacz lokalizację na mapie.",
+      "Po prawej stronie automatycznie otworzył się panel szczegółów dla „Matki Bożej z Guadalupe”. Przeczytaj opis, a gdy będziesz gotowy poznać inne funkcje, kliknij przycisk Zamknij (X) w prawym górnym rogu panelu.",
       "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, filtrować według statusu zatwierdzenia lub stulecia historycznego.",
       "Kliknij „Przeglądaj katalog”, aby otworzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
       "Kliknij przycisk osi czasu w prawym dolnym rogu, aby wyświetlić chronologiczną linię wydarzeń.",
@@ -222,7 +230,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
     es: [
       "Elija su idioma para comenzar.",
       "Haga clic izquierdo y arrastre la Tierra para rotarla. Use la rueda del mouse para acercar y alejar.",
-      "El globo se ha acercado a Guadalupe. A la derecha, el panel de detalles de 'Nuestra Señora de Guadalupe' se ha abierto automáticamente. Lea la descripción y haga clic en Cerrar (X) cuando esté listo.",
+      "El globo se acerca al lugar de la aparición en Guadalupe (México). Vea la ubicación en el mapa.",
+      "A la derecha, el panel de detalles de 'Nuestra Señora de Guadalupe' se ha abierto automáticamente. Lea la descripción y haga clic en Cerrar (X) cuando esté listo.",
       "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación o por siglo histórico.",
       "Haga clic en 'Explorar directorio' para abrir una lista completa de todas las apariciones y explorarlas en detalle.",
       "Haga clic en el botón de la línea de tiempo en la esquina inferior derecha para abrir la vista cronológica.",
@@ -233,18 +242,20 @@ const getStepsContent = (lang: Language): StepContent[] => {
     pt: [
       "Escolha o seu idioma para começar.",
       "Clique com o botão esquerdo e arraste a Terra para girá-la. Use a roda do mouse para aproximar e afastar.",
-      "O globo foi ampliado para Guadalupe. À direita, o painel de detalhes de 'Nossa Senhora de Guadalupe' abriu-se automaticamente. Leia a descrição e clique em Fechar (X) quando estiver pronto.",
+      "O globo amplia para o local da aparição em Guadalupe (México). Veja a localização no mapa.",
+      "À direita, o painel de detalhes de 'Nossa Senhora de Guadalupe' abriu-se automaticamente. Leia a descrição e clique em Fechar (X) quando estiver pronto.",
       "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação ou por século histórico.",
-      "Clique em 'Navegar no diretório' para abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
+      "Clique em 'Navegar no diretório' to abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
       "Clique no botão da linha do tempo no canto inferior direito para abrir a visualização cronológica.",
-      "Abra a linha do tempo na parte inferior para ver os eventos em ordem cronológica. Clique em 'Iniciar apresentação' para iniciar um tour cinematográfico!",
-      "Ative ou desative a rotação automática da Terra usando este botão no canto inferior esquerdo.",
+      "Abra la linha do tempo na parte inferior para ver os eventos em ordem cronológica. Clique em 'Iniciar apresentação' para iniciar un tour cinematográfico!",
+      "Ative ou desactive a rotação automática da Terra usando este botão no canto inferior esquerdo.",
       "Você está pronto para começar. Aproveite a sua jornada pela história do Stella Maris! Maria Mãe de Deus, glória por Ela a Jesus."
     ],
     fr: [
       "Choisissez votre langue pour commencer.",
       "Faites un clic gauche et glissez la Terre pour la faire tourner. Faites défiler la molette de votre souris pour zoomer et dézoomer.",
-      "Le globe a zoomé sur Guadalupe. À droite, le panneau de détails pour 'Notre-Dame de Guadalupe' s'est ouvert automatiquement. Lisez la description et cliquez sur Fermer (X) pour continuer.",
+      "Le globe zoome sur le lieu de l'apparition à Guadalupe (Mexique). Découvrez le lieu sur la carte.",
+      "À droite, le panneau de détails pour 'Notre-Dame de Guadalupe' s'est ouvert automatiquement. Lisez la description et cliquez sur Fermer (X) pour continuer.",
       "Utilisez le panneau de gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation ou par siècle historique.",
       "Cliquez sur 'Parcourir le répertoire' pour ouvrir la liste complète de toutes les apparitions et les explorer en détail.",
       "Cliquez sur le bouton de la frise chronologique en bas à droite pour l'afficher.",
@@ -255,12 +266,13 @@ const getStepsContent = (lang: Language): StepContent[] => {
     it: [
       "Scegli la tua lingua per iniziare.",
       "Fai clic sinistro e trascina la Terra per ruotarla. Usa la rotellina del mouse per ingrandire e rimpicciolire.",
-      "Il globo ha eseguito lo zoom su Guadalupe. A destra, il pannello dei dettagli di 'Nostra Signora di Guadalupe' si è aperto automaticamente. Leggi la descrizione e fai clic su Chiudi (X) quando sei pronto.",
+      "Il globo esegue lo zoom sul luogo dell'apparizione a Guadalupe (Messico). Guarda la posizione sulla mappa.",
+      "A destra, il pannello dei dettagli di 'Nostra Signora di Guadalupe' si è aperto automaticamente. Leggi la descrizione e fai clic su Chiudi (X) quando sei pronto.",
       "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione o per secolo storico.",
       "Fai clic su 'Sfoglia la directory' per aprire un elenco completo di tutte le apparizioni ed esplorarle in dettaglio.",
       "Fai clic sul pulsante della cronologia nell'angolo in basso a destra per aprirla.",
       "Apri la cronologia in basso per vedere gli eventi in ordine cronologico. Fai clic su 'Avvia presentazione' per iniziare un tour cinematografico!",
-      "Attiva o disattiva la rotazione automatica della Terra usando questo pulsante nell'angolo in basso a sinistra.",
+      "Attiva o disattiva la rotazione automatica della Terre usando questo pulsante nell'angolo in basso a sinistra.",
       "Sei pronto per iniziare. Buon viaggio attraverso la storia di Stella Maris! Maria Madre di Dio, gloria attraverso di Lei a Gesù."
     ]
   };
@@ -270,6 +282,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
 
   const icons = [
     <HelpCircle size={40} color="var(--gold-accent)" />,
+    <Globe size={40} color="var(--accent-color)" />,
     <Globe size={40} color="var(--accent-color)" />,
     <SidebarIcon size={40} color="var(--accent-color)" />,
     <Sliders size={40} color="var(--accent-color)" />,
@@ -302,7 +315,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   // Manage timeline open/close dynamically depending on tutorial step
   useEffect(() => {
     if (!isOpen) return;
-    if (step === 6) {
+    if (step === 7) {
       setIsTimelineOpen(true);
     } else {
       setIsTimelineOpen(false);
@@ -330,11 +343,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     let animFrameId: number;
     const updateRect = () => {
       let selector = '';
-      if (step === 3) selector = '#search-filters-container';
-      else if (step === 4) selector = '#browse-directory-button';
-      else if (step === 5) selector = '#timeline-closed-pill';
-      else if (step === 6) selector = '#timeline-container';
-      else if (step === 7) selector = '#auto-rotate-button';
+      if (step === 4) selector = '#search-filters-container';
+      else if (step === 5) selector = '#browse-directory-button';
+      else if (step === 6) selector = '#timeline-closed-pill';
+      else if (step === 7) selector = '#timeline-container';
+      else if (step === 8) selector = '#auto-rotate-button';
 
       if (selector) {
         const el = document.querySelector(selector);
@@ -375,7 +388,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
-    if (step === 0 || step === 8) {
+    if (step === 0 || step === 9) {
       return {
         left: '-100px',
         top: '-100px',
@@ -386,7 +399,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 2) {
+    if (step === 1 || step === 2 || step === 3) {
       return {
         left: '50vw',
         top: '50vh',
@@ -403,7 +416,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       let paddingL = 6;
       let paddingR = 6;
 
-      if (step === 3) {
+      if (step === 4) {
         paddingT = 2; // reduces the excessive top space to center the frame
         paddingB = 10; // shifts the highlight down slightly to center it evenly
       }
@@ -446,7 +459,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       pointerEvents: 'auto'
     };
 
-    if (step === 0 || step === 8) {
+    if (step === 0 || step === 9) {
       return {
         ...common,
         left: '50vw',
@@ -454,11 +467,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         width: '450px',
         maxWidth: '90vw',
-        textAlign: step === 8 ? 'center' : 'left',
-        alignItems: step === 8 ? 'center' : 'stretch'
+        textAlign: step === 9 ? 'center' : 'left',
+        alignItems: step === 9 ? 'center' : 'stretch'
       };
     }
-    if (step === 1 || step === 2) {
+    if (step === 1 || step === 2 || step === 3) {
       return {
         ...common,
         left: '60px',
@@ -468,27 +481,27 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
 
     if (elementRect) {
       switch (step) {
-        case 3:
         case 4:
+        case 5:
           return {
             ...common,
             left: `${elementRect.right + 20}px`,
             top: `${elementRect.top}px`,
           };
-        case 5:
+        case 6:
           return {
             ...common,
             left: `${elementRect.left - 380}px`,
             bottom: '30px',
           };
-        case 6:
+        case 7:
           return {
             ...common,
             left: '50px',
             bottom: `${window.innerHeight - elementRect.top + 20}px`,
             width: '420px',
           };
-        case 7:
+        case 8:
           return {
             ...common,
             left: `${elementRect.right + 20}px`,
@@ -501,7 +514,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 2 || step === 8 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 9 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
@@ -512,9 +525,9 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     };
 
     switch (step) {
-      case 3:
       case 4:
-      case 7:
+      case 5:
+      case 8:
         return {
           ...base,
           top: '30px',
@@ -522,7 +535,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           borderWidth: '10px 10px 10px 0',
           borderColor: 'transparent rgba(15, 23, 42, 0.96) transparent transparent',
         };
-      case 5:
+      case 6:
         return {
           ...base,
           bottom: '24px',
@@ -530,7 +543,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           borderWidth: '10px 0 10px 10px',
           borderColor: 'transparent transparent transparent rgba(15, 23, 42, 0.96)',
         };
-      case 6:
+      case 7:
         return {
           ...base,
           bottom: '-10px',
