@@ -330,8 +330,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     let animFrameId: number;
     const updateRect = () => {
       let selector = '';
-      if (step === 2) selector = '#sidebar-close-button';
-      else if (step === 3) selector = '#search-filters-container';
+      if (step === 3) selector = '#search-filters-container';
       else if (step === 4) selector = '#browse-directory-button';
       else if (step === 5) selector = '#timeline-closed-pill';
       else if (step === 6) selector = '#timeline-container';
@@ -387,7 +386,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1) {
+    if (step === 1 || step === 2) {
       return {
         left: '50vw',
         top: '50vh',
@@ -407,12 +406,6 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       if (step === 3) {
         paddingT = 2; // reduces the excessive top space to center the frame
         paddingB = 10; // shifts the highlight down slightly to center it evenly
-      } else if (step === 2) {
-        // Spotlight close button tightly
-        paddingT = 8;
-        paddingB = 8;
-        paddingL = 8;
-        paddingR = 8;
       }
 
       return {
@@ -422,7 +415,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         height: `${elementRect.height + paddingT + paddingB}px`,
         position: 'fixed',
         background: 'transparent',
-        borderRadius: step === 2 ? '50%' : '12px',
+        borderRadius: '12px',
       };
     }
     return {
@@ -465,7 +458,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         alignItems: step === 8 ? 'center' : 'stretch'
       };
     }
-    if (step === 1) {
+    if (step === 1 || step === 2) {
       return {
         ...common,
         left: '60px',
@@ -475,12 +468,6 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
 
     if (elementRect) {
       switch (step) {
-        case 2:
-          return {
-            ...common,
-            left: `${elementRect.left - 380}px`,
-            top: `${elementRect.top - 10}px`,
-          };
         case 3:
         case 4:
           return {
@@ -514,7 +501,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 8 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 8 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
@@ -534,14 +521,6 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           left: '-10px',
           borderWidth: '10px 10px 10px 0',
           borderColor: 'transparent rgba(15, 23, 42, 0.96) transparent transparent',
-        };
-      case 2:
-        return {
-          ...base,
-          top: '50px',
-          right: '-10px',
-          borderWidth: '10px 0 10px 10px',
-          borderColor: 'transparent transparent transparent rgba(15, 23, 42, 0.96)',
         };
       case 5:
         return {
