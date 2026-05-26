@@ -72,11 +72,12 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   // Auto-switch to 'all' if cinema mode is active and we have apparitions before 1800
   useEffect(() => {
     if (isCinemaMode && apparitions.some(a => a.year < 1800)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setTimeMode('all');
     }
   }, [isCinemaMode, apparitions]);
 
-  const handleTimelineInteraction = (clientX: number) => {
+  const handleTimelineInteraction = React.useCallback((clientX: number) => {
     if (!containerRef.current || sorted.length === 0) return;
     const rect = containerRef.current.getBoundingClientRect();
     const padding = 20; // 20px padding left/right
@@ -98,7 +99,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       }
     }
     onSelectApparition(closest);
-  };
+  }, [sorted, startY, range, onSelectApparition]);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
@@ -126,7 +127,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       window.removeEventListener('mousemove', handleMouseMove);
       window.removeEventListener('mouseup', handleMouseUp);
     };
-  }, [isDragging, startY, range, sorted]);
+  }, [isDragging, handleTimelineInteraction]);
 
   const buckets = useMemo(() => {
     if (sorted.length === 0) return [];
@@ -181,6 +182,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         : ((famous.year - startY) / range) * 100;
       const clampedLeft = Math.max(6, Math.min(94, leftPct));
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const titleForLang = (famous as any).translations?.[lang]?.title || famous.title;
 
       list.push({
@@ -201,6 +203,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   if (!isOpen) {
     return (
       <button
+        id="timeline-closed-pill"
         className="glass-panel glass-panel-rounded animate-fade-in"
         onClick={() => setIsOpen(true)}
         style={{
@@ -247,6 +250,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   // Expanded panel
   return (
     <div
+      id="timeline-container"
       ref={containerRef}
       onMouseDown={handleMouseDown}
       className="glass-panel glass-panel-rounded animate-fade-in"

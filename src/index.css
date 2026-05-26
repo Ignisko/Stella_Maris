@@ -350,5 +350,26 @@ input, button, textarea, select {
   animation: tutorialFadeIn 0.4s ease-out forwards;
 }
 
+/* Brighter and highlighted sidebar Close button on Step 4 */
+body[data-tutorial-step="4"] #sidebar-close-button {
+  color: var(--gold-accent) !important;
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+  filter: drop-shadow(0 0 6px var(--gold-accent)) !important;
+  transition: all 0.3s ease !important;
+  animation: close-btn-glow-pulse 2s infinite ease-in-out;
+}
+
+@keyframes close-btn-glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px var(--gold-accent));
+    transform: scale(1.15);
+  }
+  50% {
+    filter: drop-shadow(0 0 10px var(--gold-accent));
+    transform: scale(1.3);
+  }
+}
+
 
 

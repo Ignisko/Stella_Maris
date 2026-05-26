@@ -51,6 +51,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   useEffect(() => {
     if (apparition) {
       if (isVisible || !localApparition) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setLocalApparition(apparition);
       }
     } else {
@@ -68,18 +69,11 @@ const Sidebar: React.FC<SidebarProps> = ({
     ).sort((a, b) => a.year - b.year);
   }, [displayApp, allActiveApparitions]);
 
-  if (!displayApp) return null;
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(displayApp.title);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   const sources = useMemo(() => {
+    if (!displayApp) return [];
     const raw = displayApp.sourceUrl;
     if (!raw) {
-      let fallbackUrl = "";
+      let fallbackUrl: string;
       if (displayApp.year < 1000) {
         fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
       } else if (displayApp.year < 1500) {
@@ -122,14 +116,14 @@ const Sidebar: React.FC<SidebarProps> = ({
       if (url.includes('miraclehunter.com')) {
         label = t('viewSource', lang);
       } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
-        label = 'Sanktuarium Leżajsk';
+        label = url.includes('transmisja') ? 'Live Stream' : 'Sanktuarium Leżajsk';
       } else if (url.includes('youtube.com') || url.includes('youtu.be')) {
         label = (url.includes('ESNa1vdHcYY') || url.includes('GENH9mWlvb4') || url.includes('/live')) ? 'Live Stream' : 'Video';
       } else {
         try {
           const parsed = new URL(url);
           label = parsed.hostname.replace('www.', '');
-        } catch (e) {
+        } catch {
           // ignore
         }
       }
@@ -137,8 +131,16 @@ const Sidebar: React.FC<SidebarProps> = ({
     });
   }, [displayApp, lang]);
 
+  if (!displayApp) return null;
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(displayApp.title);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
   return (
-    <div className="glass-panel glass-panel-rounded selectable" style={{
+    <div id="apparition-sidebar" className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
       top: '20px',
       bottom: 'auto',
@@ -188,6 +190,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           </button>
         </div>
         <button 
+          id="sidebar-close-button"
           onClick={onClose}
           style={{ background: 'transparent', border: 'none', color: 'var(--text-color)', cursor: 'pointer', padding: '4px', opacity: 0.7, transition: 'opacity 0.2s', flexShrink: 0 }}
           onMouseOver={(e) => e.currentTarget.style.opacity = '1'}

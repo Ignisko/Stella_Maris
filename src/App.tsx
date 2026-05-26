@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect } from 'react';
 import { List, Play, Pause, X, HelpCircle } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
@@ -110,11 +111,7 @@ function App() {
       if (guadalupe) {
         setSelectedApparition(guadalupe);
       }
-    } else if (step === 5) {
-      setIsTimelineOpen(true);
-    } else if (step === 6) {
-      setIsTimelineOpen(false);
-    } else if (step === 0 || step === 1 || step === 3 || step === 4 || step === 7) {
+    } else {
       setSelectedApparition(null);
     }
   };
@@ -123,7 +120,7 @@ function App() {
     setIsTutorialActive(false);
     localStorage.setItem('stellamaris_tutorial_seen', 'true');
     setSelectedApparition(null);
-    setIsTimelineOpen(true);
+    setIsTimelineOpen(false);
   };
 
 
@@ -139,6 +136,9 @@ function App() {
       const idx = sortedFilteredApparitions.findIndex(a => a.id === apparition.id);
       if (idx !== -1) {
         setPlaybackIndex(idx);
+      }
+      if (isTutorialActive && tutorialStep === 1) {
+        setTutorialStep(2);
       }
     }
     if (!isCinemaMode && isPlayingTimeline) {
@@ -174,9 +174,7 @@ function App() {
   }, [translatedApparitionsData, activeFilters, activeCenturies]);
 
   // Sort filtered data chronologically
-  const sortedFilteredApparitions = useMemo(() => {
-    return [...filteredApparitions].sort((a, b) => a.year - b.year);
-  }, [filteredApparitions]);
+  const sortedFilteredApparitions = [...filteredApparitions].sort((a, b) => a.year - b.year);
 
   // Interval loop for timeline playback (8.0s per event to give zoom/read time)
   useEffect(() => {
@@ -198,7 +196,6 @@ function App() {
   // Auto-select apparition when playbackIndex ticks
   useEffect(() => {
     if (isPlayingTimeline && sortedFilteredApparitions[playbackIndex]) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSelectedApparition(sortedFilteredApparitions[playbackIndex]);
     }
   }, [isPlayingTimeline, playbackIndex, sortedFilteredApparitions]);
@@ -238,9 +235,13 @@ function App() {
 
   // Sliced data for GlobeViewer during playback
   const displayedApparitions = useMemo(() => {
+    if (isTutorialActive) {
+      const guadalupe = translatedApparitionsData.find(a => a.id === 'guadalupe_mexico');
+      return guadalupe ? [guadalupe] : [];
+    }
     if (!isCinemaMode || !currentSelectedApparition) return filteredApparitions;
     return filteredApparitions.filter(a => a.year <= currentSelectedApparition.year);
-  }, [isCinemaMode, currentSelectedApparition, filteredApparitions]);
+  }, [isCinemaMode, currentSelectedApparition, filteredApparitions, isTutorialActive, translatedApparitionsData]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
   const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition;
@@ -413,7 +414,7 @@ function App() {
         </div>
 
         {/* Collapsible interactive controls container */}
-        <div style={{
+        <div id="search-filters-container" style={{
           display: 'flex',
           flexDirection: 'column',
           gap: '10px',
@@ -447,6 +448,7 @@ function App() {
 
             {!isFiltersExpanded && (
               <button
+                id="browse-directory-button"
                 onClick={() => setIsDirectoryOpen(true)}
                 className="glass-panel glass-panel-rounded animate-fade-in"
                 style={{
@@ -530,6 +532,8 @@ function App() {
           onClick={() => {
             setIsTutorialActive(true);
             setTutorialStep(0);
+            setSelectedApparition(null);
+            setIsTimelineOpen(false);
           }}
           className="glass-panel glass-panel-rounded animate-fade-in"
           style={{
@@ -598,13 +602,23 @@ function App() {
         isTutorialActive={isTutorialActive}
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
+        onAdvanceTutorialStep={() => {
+          if (isTutorialActive && tutorialStep === 7) {
+            setTutorialStep(8);
+          }
+        }}
       />
       
       {currentSelectedApparition && (
         <Sidebar 
           apparition={currentSelectedApparition} 
           isVisible={isSidebarVisible}
-          onClose={() => setSelectedApparition(null)} 
+          onClose={() => {
+            setSelectedApparition(null);
+            if (isTutorialActive && tutorialStep === 2) {
+              setTutorialStep(3);
+            }
+          }} 
           allActiveApparitions={filteredApparitions}
           onSelectApparition={handleSelectApparition}
           lang={lang}
@@ -622,7 +636,14 @@ function App() {
           onTogglePlay={togglePlayTimeline}
           isCinemaMode={isCinemaMode}
           isOpen={isTimelineOpen}
-          setIsOpen={setIsTimelineOpen}
+          setIsOpen={(open) => {
+            setIsTimelineOpen(open);
+            if (open && isTutorialActive && tutorialStep === 5) {
+              setTutorialStep(6);
+            } else if (!open && isTutorialActive && tutorialStep === 6) {
+              setTutorialStep(7);
+            }
+          }}
           lang={lang}
         />
       )}
@@ -634,6 +655,8 @@ function App() {
         onLanguageChange={setLang}
         step={tutorialStep}
         onStepChange={handleTutorialStepChange}
+        isTimelineOpen={isTimelineOpen}
+        setIsTimelineOpen={setIsTimelineOpen}
       />
     </div>
 

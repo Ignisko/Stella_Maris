@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
@@ -18,8 +19,10 @@ interface GlobeViewerProps {
   isTutorialActive?: boolean;
   tutorialStep?: number;
   isCinemaMode?: boolean;
+  onAdvanceTutorialStep?: () => void;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const configureOrbitControls = (controls: any) => {
   controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
   controls.maxDistance = 400;
@@ -34,7 +37,7 @@ const configureOrbitControls = (controls: any) => {
     // Smooth exponential boost: up to 5x boost for small deltas, fading to ~1.2x for mouse deltas.
     const boost = 1.0 + 4.0 * Math.exp(-absDelta / 40.0);
     const normalizedDelta = (absDelta * boost) * 0.01;
-    return Math.pow(0.95, this.zoomSpeed * normalizedDelta);
+    return Math.pow(0.95, controls.zoomSpeed * normalizedDelta);
   };
 
   // Intercept dolly actions to smooth out zoom (since OrbitControls has no native zoom damping)
@@ -42,23 +45,23 @@ const configureOrbitControls = (controls: any) => {
   controls.lastZoomTime = 0;
 
   controls._dollyIn = function (dollyScale: number) {
-    const currentDistance = this.object.position.distanceTo(this.target);
-    if (this.targetRadius === undefined) {
-      this.targetRadius = currentDistance;
+    const currentDistance = controls.object.position.distanceTo(controls.target);
+    if (controls.targetRadius === undefined) {
+      controls.targetRadius = currentDistance;
     }
-    this.targetRadius *= dollyScale;
-    this.targetRadius = Math.max(this.minDistance, Math.min(this.maxDistance, this.targetRadius));
-    this.lastZoomTime = Date.now();
+    controls.targetRadius *= dollyScale;
+    controls.targetRadius = Math.max(controls.minDistance, Math.min(controls.maxDistance, controls.targetRadius));
+    controls.lastZoomTime = Date.now();
   };
 
   controls._dollyOut = function (dollyScale: number) {
-    const currentDistance = this.object.position.distanceTo(this.target);
-    if (this.targetRadius === undefined) {
-      this.targetRadius = currentDistance;
+    const currentDistance = controls.object.position.distanceTo(controls.target);
+    if (controls.targetRadius === undefined) {
+      controls.targetRadius = currentDistance;
     }
-    this.targetRadius /= dollyScale;
-    this.targetRadius = Math.max(this.minDistance, Math.min(this.maxDistance, this.targetRadius));
-    this.lastZoomTime = Date.now();
+    controls.targetRadius /= dollyScale;
+    controls.targetRadius = Math.max(controls.minDistance, Math.min(controls.maxDistance, controls.targetRadius));
+    controls.lastZoomTime = Date.now();
   };
 };
 
@@ -71,7 +74,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   hidePlayPause = false,
   isTutorialActive = false,
   tutorialStep = 0,
-  isCinemaMode = false
+  isCinemaMode = false,
+  onAdvanceTutorialStep
 }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
@@ -186,6 +190,40 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     }
   }, [selectedApparition, isTimelineOpen, isCinemaMode, apparitions]);
 
+  // Focus camera on Mexico (Guadalupe) during Step 2 of Onboarding Guide, and reset when closed or started
+  const prevTutorialActiveRef = useRef(isTutorialActive);
+  useEffect(() => {
+    if (isTutorialActive && tutorialStep === 2 && globeEl.current) {
+      setIsAutoRotate(false);
+      if (globeEl.current.controls()) {
+        globeEl.current.controls().autoRotate = false;
+      }
+      globeEl.current.pointOfView({ lat: 19.484, lng: -99.117, altitude: 0.35 }, 2000);
+    } else if (isTutorialActive && (tutorialStep === 0 || tutorialStep === 1) && globeEl.current) {
+      setIsAutoRotate(true);
+      if (globeEl.current.controls()) {
+        globeEl.current.controls().autoRotate = true;
+      }
+      globeEl.current.pointOfView({ lat: 15, lng: -90, altitude: 2.2 }, 1200);
+    } else if (prevTutorialActiveRef.current && !isTutorialActive && globeEl.current) {
+      setIsAutoRotate(true);
+      if (globeEl.current.controls()) {
+        globeEl.current.controls().autoRotate = true;
+      }
+      globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 }, 1500);
+    }
+    prevTutorialActiveRef.current = isTutorialActive;
+  }, [isTutorialActive, tutorialStep]);
+
+  // Freeze globe controls during tutorial steps except Step 1 (Globe exploration step)
+  useEffect(() => {
+    if (globeEl.current && globeEl.current.controls()) {
+      const controls = globeEl.current.controls();
+      const shouldFreeze = isTutorialActive && tutorialStep !== 1;
+      controls.enabled = !shouldFreeze;
+    }
+  }, [isTutorialActive, tutorialStep]);
+
   useEffect(() => {
     const handleResize = () => {
       setDimensions({ width: window.innerWidth, height: window.innerHeight });
@@ -197,7 +235,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   useEffect(() => {
     if (globeEl.current && globeEl.current.controls()) {
       const controls = globeEl.current.controls();
-      controls.autoRotateSpeed = 0.05;
+      controls.autoRotateSpeed = 1.0;
       configureOrbitControls(controls);
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
@@ -268,7 +306,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           // Dynamically adjust auto-rotation speed based on altitude (zoom)
           if (globeEl.current.controls()) {
             const controls = globeEl.current.controls();
-            controls.autoRotateSpeed = 0.05 * Math.min(1.0, altitude / 2.0);
+            controls.autoRotateSpeed = 1.0 * Math.min(1.0, altitude / 2.0);
           }
 
           // Labels fade slightly when very far out
@@ -687,11 +725,15 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 6)) && (
+      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 7)) && (
         <button
+          id="auto-rotate-button"
           onClick={(e) => {
             e.stopPropagation();
             setIsAutoRotate(prev => !prev);
+            if (onAdvanceTutorialStep) {
+              onAdvanceTutorialStep();
+            }
           }}
           style={{
             position: 'fixed',

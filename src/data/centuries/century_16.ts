@@ -1115,7 +1115,7 @@ export const century16Apparitions: Apparition[] = [
     lng: 22.4206,
     year: 1590,
     description: "The Virgin Mary and St. Joseph appeared together in dazzling light to humble woodcutter Tomasz Michałek in the forest, asking for a church where the faithful would receive divine graces. Following official canonical investigations and documented miracles, the Vatican approved the magnificent pilgrimage basilica.",
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/lejask/index.html;https://lezajsk.bernardyni.pl/historia/",
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/lejask/index.html;https://lezajsk.bernardyni.pl/historia/;https://lezajsk.bernardyni.pl/transmisja/",
     approvalStatus: "Vatican approved",
     priority: 1
   },
