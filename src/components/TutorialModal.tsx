@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { X, ArrowRight, ArrowLeft, Globe, Sidebar as SidebarIcon, Sliders, Calendar, Sparkles, HelpCircle } from 'lucide-react';
+import { ArrowRight, ArrowLeft, Globe, Sidebar as SidebarIcon, Sliders, Calendar, Sparkles, HelpCircle } from 'lucide-react';
 import type { Language } from '../utils/i18n';
 import { languageNames } from '../utils/i18n';
 
@@ -131,7 +131,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     en: [
       "Stella Maris onboarding",
       "Explore the 3D globe",
-      "Zoom to Guadalupe",
+      "Zoom",
       "Apparition details",
       "Search & filters",
       "Browse directory",
@@ -143,7 +143,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     pl: [
       "Wprowadzenie do Stella Maris",
       "Eksploruj globus 3D",
-      "Zbliżenie na Guadalupe",
+      "Zbliżenie",
       "Szczegóły objawienia",
       "Wyszukiwanie i filtry",
       "Przeglądaj katalog",
@@ -155,7 +155,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     es: [
       "Guía de Stella Maris",
       "Explore el globo 3D",
-      "Zoom a Guadalupe",
+      "Zoom",
       "Detalles de la aparición",
       "Búsqueda y filtros",
       "Explorar directorio",
@@ -167,7 +167,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     pt: [
       "Introdução ao Stella Maris",
       "Explore o globo 3D",
-      "Zoom para Guadalupe",
+      "Zoom",
       "Detalhes da aparição",
       "Pesquisa e filtros",
       "Navegar no diretório",
@@ -179,7 +179,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     fr: [
       "Bienvenue sur Stella Maris",
       "Explorez le globe 3D",
-      "Zoom sur Guadalupe",
+      "Zoom",
       "Détails de l'apparition",
       "Recherche & filtres",
       "Parcourir le répertoire",
@@ -191,7 +191,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     it: [
       "Introduzione a Stella Maris",
       "Esplora il globo 3D",
-      "Zoom su Guadalupe",
+      "Zoom",
       "Dettagli dell'apparizione",
       "Ricerca & filtri",
       "Sfoglia la directory",
@@ -206,7 +206,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     en: [
       "Choose your language to begin.",
       "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out.",
-      "The globe zooms in to the apparition site in Guadalupe (Mexico). See the location on the map.",
+      "After selecting an apparition, the map zooms in to its location. Click the point to open more information.",
       "On the right, the details panel for 'Our Lady of Guadalupe' has opened automatically. Read the description, and when you are ready to explore other features, click the Close (X) button in the top right corner of the panel.",
       "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
       "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
@@ -217,11 +217,11 @@ const getStepsContent = (lang: Language): StepContent[] => {
     ],
     pl: [
       "Wybierz język, aby rozpocząć.",
-      "Kliknij lewym przyciskiem myszy i przeciągnij Ziemię, aby ją obrócić. Użyj kółka myszy, aby przybliżyć lub oddalić.",
-      "Globus przybliża się do miejsca objawienia w Guadalupe (Meksyk). Zobacz lokalizację na mapie.",
+      "Kliknij lewym przyciskiem myszy i przeciągnij Ziemię, aby ją obrócić. Użyj myszy, aby przybliżyć lub oddalić.",
+      "Po wybraniu objawienia mapa zbliża się do jego lokalizacji. Kliknij punkt, aby otworzyć więcej informacji.",
       "Po prawej stronie automatycznie otworzył się panel szczegółów dla „Matki Bożej z Guadalupe”. Przeczytaj opis, a gdy będziesz gotowy poznać inne funkcje, kliknij przycisk Zamknij (X) w prawym górnym rogu panelu.",
       "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, filtrować według statusu zatwierdzenia lub stulecia historycznego.",
-      "Kliknij „Przeglądaj katalog”, aby otworzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
+      "Kliknij „Przeglądaj katalog”, aby otwowrzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
       "Kliknij przycisk osi czasu w prawym dolnym rogu, aby wyświetlić chronologiczną linię wydarzeń.",
       "Otwórz oś czasu na dole, aby zobaczyć wydarzenia w porządku chronologicznym. Kliknij „Uruchom prezentację”, aby rozpocząć kinową podróż!",
       "Włącz lub wyłącz automatyczne obracanie Ziemi za pomocą tego przycisku w lewym dolnym rogu.",
@@ -230,7 +230,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     es: [
       "Elija su idioma para comenzar.",
       "Haga clic izquierdo y arrastre la Tierra para rotarla. Use la rueda del mouse para acercar y alejar.",
-      "El globo se acerca al lugar de la aparición en Guadalupe (México). Vea la ubicación en el mapa.",
+      "Después de seleccionar una aparición, el mapa se acerca a su ubicación. Haga clic en el punto para abrir más información.",
       "A la derecha, el panel de detalles de 'Nuestra Señora de Guadalupe' se ha abierto automáticamente. Lea la descripción y haga clic en Cerrar (X) cuando esté listo.",
       "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación o por siglo histórico.",
       "Haga clic en 'Explorar directorio' para abrir una lista completa de todas las apariciones y explorarlas en detalle.",
@@ -242,7 +242,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     pt: [
       "Escolha o seu idioma para começar.",
       "Clique com o botão esquerdo e arraste a Terra para girá-la. Use a roda do mouse para aproximar e afastar.",
-      "O globo amplia para o local da aparição em Guadalupe (México). Veja a localização no mapa.",
+      "Depois de selecionar uma aparição, o mapa se aproxima de sua localização. Clique no ponto para abrir mais informações.",
       "À direita, o painel de detalhes de 'Nossa Senhora de Guadalupe' abriu-se automaticamente. Leia a descrição e clique em Fechar (X) quando estiver pronto.",
       "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação ou por século histórico.",
       "Clique em 'Navegar no diretório' to abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
@@ -254,7 +254,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
     fr: [
       "Choisissez votre langue pour commencer.",
       "Faites un clic gauche et glissez la Terre pour la faire tourner. Faites défiler la molette de votre souris pour zoomer et dézoomer.",
-      "Le globe zoome sur le lieu de l'apparition à Guadalupe (Mexique). Découvrez le lieu sur la carte.",
+      "Après avoir sélectionné une apparition, la carte zoome sur son emplacement. Cliquez sur le point pour ouvrir plus d'informations.",
       "À droite, le panneau de détails pour 'Notre-Dame de Guadalupe' s'est ouvert automatiquement. Lisez la description et cliquez sur Fermer (X) pour continuer.",
       "Utilisez le panneau de gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation ou par siècle historique.",
       "Cliquez sur 'Parcourir le répertoire' pour ouvrir la liste complète de toutes les apparitions et les explorer en détail.",
@@ -266,13 +266,13 @@ const getStepsContent = (lang: Language): StepContent[] => {
     it: [
       "Scegli la tua lingua per iniziare.",
       "Fai clic sinistro e trascina la Terra per ruotarla. Usa la rotellina del mouse per ingrandire e rimpicciolire.",
-      "Il globo esegue lo zoom sul luogo dell'apparizione a Guadalupe (Messico). Guarda la posizione sulla mappa.",
+      "Dopo aver selezionato un'apparizione, la mappa esegue lo zoom sulla sua posizione. Fare clic sul punto per aprire ulteriori informazioni.",
       "A destra, il pannello dei dettagli di 'Nostra Signora di Guadalupe' si è aperto automaticamente. Leggi la descrizione e fai clic su Chiudi (X) quando sei pronto.",
       "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione o per secolo storico.",
       "Fai clic su 'Sfoglia la directory' per aprire un elenco completo di tutte le apparizioni ed esplorarle in dettaglio.",
       "Fai clic sul pulsante della cronologia nell'angolo in basso a destra per aprirla.",
       "Apri la cronologia in basso per vedere gli eventi in ordine cronologico. Fai clic su 'Avvia presentazione' per iniziare un tour cinematografico!",
-      "Attiva o disattiva la rotazione automatica della Terre usando questo pulsante nell'angolo in basso a sinistra.",
+      "Attiva o disattiva la rotazione automatica della Terre usando questo postanel nell'angolo in basso a sinistra.",
       "Sei pronto per iniziare. Buon viaggio attraverso la storia di Stella Maris! Maria Madre di Dio, gloria attraverso di Lei a Gesù."
     ]
   };
@@ -616,10 +616,10 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         {/* Arrow pointer */}
         {arrowStyle && <div className="tutorial-arrow" style={arrowStyle} />}
 
-        {/* Header with Close */}
+        {/* Header without Close X */}
         <div style={{ 
           display: 'flex', 
-          justifyContent: step === 8 ? 'center' : 'space-between', 
+          justifyContent: step === 9 ? 'center' : 'flex-start', 
           alignItems: 'center', 
           gap: '12px',
           width: '100%',
@@ -627,11 +627,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         }}>
           <div style={{ 
             display: 'flex', 
-            flexDirection: step === 8 ? 'column' : 'row', 
+            flexDirection: step === 9 ? 'column' : 'row', 
             alignItems: 'center', 
             gap: '12px', 
             width: '100%',
-            justifyContent: 'center'
+            justifyContent: step === 9 ? 'center' : 'flex-start'
           }}>
             {currentStepData.icon}
             <h2 style={{ 
@@ -639,30 +639,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
               fontWeight: 700, 
               margin: 0, 
               color: 'var(--text-color)',
-              textAlign: step === 8 ? 'center' : 'left'
+              textAlign: step === 9 ? 'center' : 'left'
             }}>
               {currentStepData.title}
             </h2>
           </div>
-          <button 
-            onClick={onClose}
-            style={{
-              position: step === 8 ? 'absolute' : 'static',
-              right: step === 8 ? '0' : 'auto',
-              top: step === 8 ? '0' : 'auto',
-              background: 'transparent',
-              border: 'none',
-              color: 'var(--text-color)',
-              cursor: 'pointer',
-              opacity: 0.6,
-              transition: 'opacity 0.2s',
-              padding: '4px'
-            }}
-            onMouseOver={e => e.currentTarget.style.opacity = '1'}
-            onMouseOut={e => e.currentTarget.style.opacity = '0.6'}
-          >
-            <X size={20} />
-          </button>
         </div>
 
         {/* Content text */}
