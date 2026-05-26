@@ -256,6 +256,55 @@ input, button, textarea, select {
   z-index: 10000;
 }
 
+/* Custom offsets for label contents (not selected and selected) */
+.globe-html-label[data-offset="left"] .label-content:not(.selected) {
+  transform: translate(-100%, -50%) translateX(-12px) scale(var(--globe-label-scale, 1));
+  transform-origin: right center;
+}
+.globe-html-label[data-offset="right"] .label-content:not(.selected) {
+  transform: translate(0, -50%) translateX(12px) scale(var(--globe-label-scale, 1));
+  transform-origin: left center;
+}
+.globe-html-label[data-offset="top"] .label-content:not(.selected) {
+  transform: translate(-50%, -100%) translateY(-12px) scale(var(--globe-label-scale, 1));
+  transform-origin: bottom center;
+}
+.globe-html-label[data-offset="bottom"] .label-content:not(.selected) {
+  transform: translate(-50%, 0) translateY(12px) scale(var(--globe-label-scale, 1));
+  transform-origin: top center;
+}
+
+.globe-html-label[data-offset="left"] .label-content:not(.selected):hover {
+  transform: translate(-100%, -50%) translateX(-12px) scale(1.05);
+}
+.globe-html-label[data-offset="right"] .label-content:not(.selected):hover {
+  transform: translate(0, -50%) translateX(12px) scale(1.05);
+}
+.globe-html-label[data-offset="top"] .label-content:not(.selected):hover {
+  transform: translate(-50%, -100%) translateY(-12px) scale(1.05);
+}
+.globe-html-label[data-offset="bottom"] .label-content:not(.selected):hover {
+  transform: translate(-50%, 0) translateY(12px) scale(1.05);
+}
+
+/* Selected state with custom offsets */
+.globe-html-label[data-offset="left"] .label-content.selected {
+  transform: translate(-100%, -50%) translateX(-16px) scale(1.15);
+  transform-origin: right center;
+}
+.globe-html-label[data-offset="right"] .label-content.selected {
+  transform: translate(0, -50%) translateX(16px) scale(1.15);
+  transform-origin: left center;
+}
+.globe-html-label[data-offset="top"] .label-content.selected {
+  transform: translate(-50%, -100%) translateY(-16px) scale(1.15);
+  transform-origin: bottom center;
+}
+.globe-html-label[data-offset="bottom"] .label-content.selected {
+  transform: translate(-50%, 0) translateY(16px) scale(1.15);
+  transform-origin: top center;
+}
+
 /* Onboarding Tutorial Guided Tour Styles */
 .tutorial-spotlight {
   position: fixed;

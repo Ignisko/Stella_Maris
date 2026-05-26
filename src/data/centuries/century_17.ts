@@ -275,7 +275,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1608,
     description: "Mary appeared on a rock holding the Infant Jesus and weeping bitterly over the loss of Catholic faith in the region. Her apparition restored the faith of the entire community, becoming one of Europe's earliest Vatican-recognized shrines.",
     approvalStatus: "Approved by the Holy See",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/siluva/index.html"
   },
   {
     id: "sanlucar",
@@ -1235,7 +1236,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1664,
     description: "Mary appeared to humble shepherdess Benoîte Rencurel over a period of 54 years, asking for continuous prayer and penance for sinners at the fragrant mountain oil lamps. Officially approved by the Church in 2008.",
     approvalStatus: "Approved by the Holy See",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/laus/index.html"
   },
   {
     id: "agreda_mystic",
@@ -1251,7 +1253,7 @@ export const century17Apparitions: Apparition[] = [
   },
   {
     id: "mary_tax_stams",
-    title: "Our Lady of Mary Tax",
+    title: "Our Lady of Maria Tax",
     location: "Stams, Tyrol",
     country: "Austria",
     lat: 47.2764,
@@ -1259,7 +1261,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1667,
     description: "Mary appeared to a landowner in Tyrol asking for a chapel in the woods. In 1667, Abbot Nicola Kraus built the shrine that became a haven for wayfarers and pilgrims.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    labelOffset: "right"
   },
   {
     id: "citta_di_castello",

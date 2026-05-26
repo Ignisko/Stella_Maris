@@ -311,6 +311,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1842,
     approvalStatus: "Vatican approved",
     priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/rome/index.html",
     description: "Anti-Catholic Jewish banker Marie-Alphonse Ratisbonne stood inside Sant'Andrea delle Fratte wearing the Miraculous Medal as a test. The Blessed Virgin appeared to him in radiant majesty; he instantly converted, became a priest, and founded the Congregation of Our Lady of Zion."
   },
   {
@@ -347,6 +348,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1846,
     approvalStatus: "Vatican approved",
     priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/lasalette/index.html",
     description: "High in the French Alps, the Blessed Virgin appeared in brilliant light weeping intensely before two young shepherds, Maximin and Mélanie. Wearing a crucifix with a hammer and pincers, she warned of famine and urged heartfelt penance, prayer, and observance of the Lord's Day."
   },
   {
@@ -619,6 +621,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1858,
     approvalStatus: "Vatican approved",
     priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/lourdes/index.html;https://www.youtube.com/watch?v=ESNa1vdHcYY;https://www.youtube.com/watch?v=DshDkE6O9UA",
     description: "At the damp Massabielle grotto, the beautiful Virgin Mary appeared 18 times to 14-year-old peasant girl Bernadette Soubirous. Revealing her identity as 'The Immaculate Conception', she uncovered a miraculous healing spring that has since cured countless incurable pilgrims. Today Lourdes is one of the premier holy shrines on Earth.",
     translations: {
       pl: {
@@ -651,6 +654,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1859,
     approvalStatus: "Bishop approved",
     priority: 1,
+    sourceUrl: "https://www.youtube.com/@ChampionShrine/live",
     description: "The Blessed Mother appeared in dazzling white between two trees to 28-year-old Adele Brise, saying 'I am the Queen of Heaven who prays for the conversion of sinners... teach the children what they should know for salvation.' When the catastrophic 1871 Peshtigo Fire engulfed the entire region, the sanctuary grounds were miraculously spared."
   },
   {
@@ -855,6 +859,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1871,
     approvalStatus: "Vatican approved",
     priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/pontmain/index.html",
     description: "As advancing Prussian armies threatened Brittany, the beautiful Virgin Mary appeared in the starry night sky wearing a dark blue robe adorned with golden stars. A golden banner unfurled reading: 'But pray my children. God will hear you in a short time. My Son allows Himself to be moved by compassion.' Within hours, the Prussian general ordered a total retreat, sparing the entire region."
   },
   {
@@ -867,6 +872,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1871,
     approvalStatus: "Bishop approved",
     priority: 2,
+    labelOffset: "left",
     description: "Maria Kalb suffered bedridden agony for seven years from an incurable disease. Carried to a holy mountain cave before a miraculous picture of Mary, the Virgin appeared and instantly restored her health. A magnificent neo-Gothic sanctuary was erected."
   },
   {
@@ -1095,7 +1101,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1877,
     approvalStatus: "Vatican approved",
     priority: 1,
-    sourceUrl: "https://sanktuariummaryjne.pl/page/24/historia",
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/gietrzwald/index.html;https://sanktuariummaryjne.pl/page/24/historia;https://www.youtube.com/@warmia1877/live",
     description: "Mary appeared repeatedly in a bright golden cloud above a maple tree before two young girls, speaking in the native Polish tongue during the harsh Prussian partition. When asked who she was, she replied: 'I am the Blessed Virgin Mary, the Immaculate Conception... I wish you to pray the Rosary every day.' The miraculous spring she blessed continues to heal countless pilgrims.",
     translations: {
       pl: {
@@ -1116,6 +1122,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1879,
     approvalStatus: "Vatican approved",
     priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/knock/index.html",
     description: "During pouring rain at twilight, the glowing figures of the Blessed Virgin Mary, St. Joseph, and St. John the Evangelist appeared alongside the Lamb of God upon an altar surrounded by angels on the outer south wall of the village chapel. For two hours, fifteen official witnesses stood in silent adoration. Today Knock is Ireland's National Marian Shrine."
   },
   {

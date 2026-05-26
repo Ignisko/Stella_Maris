@@ -129,12 +129,12 @@ const getStepsContent = (lang: Language): StepContent[] => {
     en: [
       {
         title: "Stella Maris Onboarding",
-        description: "Stella Maris is an interactive 3D map documenting historical Marian apparitions globally. Let's take a quick guided tour to explore the controls.",
+        description: "Choose your language to begin.",
         icon: <HelpCircle size={40} color="var(--gold-accent)" />
       },
       {
         title: "Explore the 3D Globe",
-        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details of that apparition.",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
         icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
@@ -144,183 +144,409 @@ const getStepsContent = (lang: Language): StepContent[] => {
       },
       {
         title: "Search & Filters",
-        description: "Use the left panel to search for specific shrines, filter by approval status, filter by historical century, or browse the complete directory list.",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
         icon: <Sliders size={40} color="var(--accent-color)" />
       },
       {
         title: "Timeline & Presentation",
-        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour that automatically flies you from one event to the next!",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
         icon: <Calendar size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
         title: "Glory to Jesus!",
-        description: "You are ready to begin. The app is loaded with all events. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
         icon: <Sparkles size={40} color="var(--gold-accent)" />
       }
     ],
-    pl: [
+    pl:     [
       {
-        title: "Stella Maris Wprowadzenie",
-        description: "Stella Maris to interaktywna mapa 3D przedstawiająca historyczne objawienia maryjne na całym świecie. Zapraszamy na krótki przewodnik po funkcjach programu.",
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
         icon: <HelpCircle size={40} color="var(--gold-accent)" />
       },
       {
-        title: "Odkrywaj Globus 3D",
-        description: "Kliknij lewym przyciskiem myszy i przeciągnij Ziemię, aby ją obracać. Użyj kółka myszy, aby przybliżać i oddalać. Kliknij dowolny kolorowy znacznik, aby zobaczyć szczegóły danego objawienia.",
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
         icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
-        title: "Informacje o Objawieniu",
-        description: "Wybór znacznika otwiera panel informacyjny po prawej. Przeczytasz tu opis objawienia, sprawdzisz status zatwierdzenia przez Kościół oraz znajdziesz linki do źródeł.",
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
         icon: <SidebarIcon size={40} color="var(--accent-color)" />
       },
       {
-        title: "Wyszukiwanie i Filtry",
-        description: "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, przefiltrować objawienia według stuleci lub otworzyć pełny spis w katalogu.",
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
         icon: <Sliders size={40} color="var(--accent-color)" />
       },
       {
-        title: "Oś Czasu i Prezentacja",
-        description: "Otwórz oś czasu na dole, aby zobaczyć wydarzenia w porządku chronologicznym. Kliknij 'Uruchom prezentację', aby rozpocząć kinową podróż, która automatycznie przeniesie Cię od jednego wydarzenia do drugiego!",
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
         icon: <Calendar size={40} color="var(--accent-color)" />
       },
       {
-        title: "Chwała Jezusowi!",
-        description: "Jesteś gotowy, aby rozpocząć. Program zawiera wszystkie historyczne wydarzenia. Dobrej podróży przez historię Stella Maris! Maryja Matka Boża, chwała przez Nią Jezusowi.",
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
         icon: <Sparkles size={40} color="var(--gold-accent)" />
       }
     ],
-    es: [
+    es:     [
       {
-        title: "Introducción a Stella Maris",
-        description: "Stella Maris es un mapa 3D interactivo que documenta las apariciones marianas históricas a nivel mundial. Hagamos un breve recorrido guiado para conocer los controles.",
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
         icon: <HelpCircle size={40} color="var(--gold-accent)" />
       },
       {
-        title: "Explorar el Globo 3D",
-        description: "Haga clic izquierdo y arrastre la Tierra para girarla. Use la rueda del mouse para acercar y alejar. Haga clic en cualquier marcador de color para ver los detalles de esa aparición.",
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
         icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
-        title: "Información de la Aparición",
-        description: "Al seleccionar un marcador, se abre el panel de información a la derecha. Aquí puede leer una descripción, ver el estado de aprobación y visitar las fuentes documentadas.",
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
         icon: <SidebarIcon size={40} color="var(--accent-color)" />
       },
       {
-        title: "Búsqueda y Filtros",
-        description: "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación, filtrar por siglo histórico o explorar el directorio completo.",
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
         icon: <Sliders size={40} color="var(--accent-color)" />
       },
       {
-        title: "Línea de Tiempo y Presentación",
-        description: "Abra la línea de tiempo en la parte inferior para ver los eventos cronológicamente. ¡Haga clic en 'Iniciar presentación' para comenzar un recorrido cinematográfico que lo llevará automáticamente de un evento al siguiente!",
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
         icon: <Calendar size={40} color="var(--accent-color)" />
       },
       {
-        title: "¡Gloria a Jesús!",
-        description: "Está listo para comenzar. La aplicación está cargada con todos los eventos. ¡Disfrute de su viaje a través de la historia de Stella Maris! María Madre de Dios, gloria por Ella a Jesús.",
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
         icon: <Sparkles size={40} color="var(--gold-accent)" />
       }
     ],
-    pt: [
+    pt:     [
       {
-        title: "Introdução ao Stella Maris",
-        description: "Stella Maris é um mapa 3D interativo que documenta as aparições marianas históricas no mundo inteiro. Vamos fazer um breve tour guiado para conhecer os controles.",
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
         icon: <HelpCircle size={40} color="var(--gold-accent)" />
       },
       {
-        title: "Explorar o Globo 3D",
-        description: "Clique com o botão esquerdo e arraste a Terra para girá-la. Use a roda do mouse para aproximar e afastar. Clique em qualquer marcador colorido para ver os detalhes da aparição.",
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
         icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
-        title: "Informações sobre a Aparição",
-        description: "Ao selecionar um marcador, o painel de informações se abre à direita. Aqui você pode ler uma descrição, verificar o status de aprovação e acessar as fontes documentadas.",
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
         icon: <SidebarIcon size={40} color="var(--accent-color)" />
       },
       {
-        title: "Pesquisa e Filtros",
-        description: "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação, filtrar por século histórico ou navegar pela lista completa do diretório.",
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
         icon: <Sliders size={40} color="var(--accent-color)" />
       },
       {
-        title: "Linha do Tempo e Apresentação",
-        description: "Abra a linha do tempo na parte inferior para ver os eventos cronologicamente. Clique em 'Iniciar apresentação' para começar uma viagem cinematográfica que o levará automaticamente de um evento ao seguinte!",
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
         icon: <Calendar size={40} color="var(--accent-color)" />
       },
       {
-        title: "Glória a Jesus!",
-        description: "Você está pronto para começar. O aplicativo está carregado com todos os eventos. Aproveite a sua jornada pela história do Stella Maris! Maria Mãe de Deus, glória por Ela a Jesus.",
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
         icon: <Sparkles size={40} color="var(--gold-accent)" />
       }
     ],
-    fr: [
+    fr:     [
       {
-        title: "Introduction à Stella Maris",
-        description: "Stella Maris est une carte interactive 3D documentant les apparitions mariales historiques à travers le monde. Faisons un court guide pour découvrir les contrôles.",
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
         icon: <HelpCircle size={40} color="var(--gold-accent)" />
       },
       {
-        title: "Explorer le Globe 3D",
-        description: "Faites un clic gauche et glissez pour tourner la Terre. Utilisez la molette de la souris pour zoomer et dézoomer. Cliquez sur un marqueur coloré pour voir les détails de cette apparition.",
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
         icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
-        title: "Informations sur l'Apparition",
-        description: "La sélection d'un marqueur ouvre le panneau d'informations sur la droite. Vous pouvez y lire une description, voir le statut d'approbation et visiter les sources documentées.",
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
         icon: <SidebarIcon size={40} color="var(--accent-color)" />
       },
       {
-        title: "Recherche et Filtres",
-        description: "Utilisez le panneau gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation, filtrer par siècle ou parcourir l'annuaire complet.",
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
         icon: <Sliders size={40} color="var(--accent-color)" />
       },
       {
-        title: "Chronologie et Présentation",
-        description: "Ouvrez la chronologie en bas pour voir les événements de manière chronologique. Cliquez sur 'Lancer la présentation' pour démarrer un tour cinématographique automatique d'un événement à l'autre !",
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
         icon: <Calendar size={40} color="var(--accent-color)" />
       },
       {
-        title: "Gloire à Jésus !",
-        description: "Vous êtes prêt à commencer. L'application est chargée avec tous les événements. Bon voyage à travers l'histoire de Stella Maris ! Marie Mère de Dieu, gloire par Elle à Jésus.",
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
         icon: <Sparkles size={40} color="var(--gold-accent)" />
       }
     ],
-    it: [
+    it:     [
       {
-        title: "Benvenuto su Stella Maris",
-        description: "Stella Maris è una mappa 3D interattiva che documenta le apparizioni mariane storiche nel mondo. Facciamo una breve visita guidata per imparare i comandi.",
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
         icon: <HelpCircle size={40} color="var(--gold-accent)" />
       },
       {
-        title: "Esplora il Globo 3D",
-        description: "Trascina con il tasto sinistro del mouse per ruotare la Terra. Usa la rotellina per ingrandire o rimpicciolire. Clicca su un marcatore colorato per visualizzare i dettagli dell'apparizione.",
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
         icon: <Globe size={40} color="var(--accent-color)" />
       },
       {
-        title: "Dettagli sull'Apparizione",
-        description: "Selezionando un marcatore si aprirà il pannello informativo a destra. Qui potrai leggere la descrizione, verificare lo stato di approvazione e consultare le fonti documentate.",
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
         icon: <SidebarIcon size={40} color="var(--accent-color)" />
       },
       {
-        title: "Ricerca e Filtri",
-        description: "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione, filtrare per secolo storico o scorrere l'elenco completo.",
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
         icon: <Sliders size={40} color="var(--accent-color)" />
       },
       {
-        title: "Linea Temporale e Presentazione",
-        description: "Apri la linea temporale in basso per vedere gli eventi in ordine cronologico. Clicca su 'Avvia presentazione' per iniziare un viaggio cinematografico che ti porterà da un evento all'altro!",
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
         icon: <Calendar size={40} color="var(--accent-color)" />
       },
       {
-        title: "Gloria a Gesù!",
-        description: "Sei pronto per iniziare. L'applicazione è caricata con tutti gli eventi. Buon viaggio nella storia di Stella Maris! Maria Madre di Dio, gloria a Gesù per mezzo Suo.",
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
         icon: <Sparkles size={40} color="var(--gold-accent)" />
       }
-    ]
+    ],
+    ar:     [
+      {
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
+        icon: <HelpCircle size={40} color="var(--gold-accent)" />
+      },
+      {
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
+        icon: <SidebarIcon size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
+        icon: <Calendar size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
+        icon: <Sparkles size={40} color="var(--gold-accent)" />
+      }
+    ],
+    tl:     [
+      {
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
+        icon: <HelpCircle size={40} color="var(--gold-accent)" />
+      },
+      {
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
+        icon: <SidebarIcon size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
+        icon: <Calendar size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
+        icon: <Sparkles size={40} color="var(--gold-accent)" />
+      }
+    ],
+    vi:     [
+      {
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
+        icon: <HelpCircle size={40} color="var(--gold-accent)" />
+      },
+      {
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
+        icon: <SidebarIcon size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
+        icon: <Calendar size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
+        icon: <Sparkles size={40} color="var(--gold-accent)" />
+      }
+    ],
+    tr:     [
+      {
+        title: "Stella Maris Onboarding",
+        description: "Choose your language to begin.",
+        icon: <HelpCircle size={40} color="var(--gold-accent)" />
+      },
+      {
+        title: "Explore the 3D Globe",
+        description: "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out. Click on any colored marker to view the details.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Apparition Information",
+        description: "Selecting a marker opens the Information Panel on the right. Here you can read a description, view the approval status, and visit documented sources.",
+        icon: <SidebarIcon size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Search & Filters",
+        description: "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Browse Directory",
+        description: "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
+        icon: <Sliders size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Timeline & Presentation",
+        description: "Open the timeline at the bottom to see how events unfolded chronologically. Click 'Play Presentation' to start a cinematic tour!",
+        icon: <Calendar size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Auto-Rotate Earth",
+        description: "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
+        icon: <Globe size={40} color="var(--accent-color)" />
+      },
+      {
+        title: "Glory to Jesus!",
+        description: "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
+        icon: <Sparkles size={40} color="var(--gold-accent)" />
+      }
+    ],
   };
-
-  // Fallback to english if language is not explicitly defined in translations
   return steps[lang] || steps['en'];
 };
 

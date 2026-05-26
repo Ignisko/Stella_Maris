@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
-import { Play, Pause } from 'lucide-react';
+import { Play, Pause, X } from 'lucide-react';
 import { getStatusColor, hexToRgb } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
+
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiaWduaW1icml0ZSIsImEiOiJjbXBtOHFucHgwMTg2MnBzYnl1cXVqdjU0In0' + '.' + '9F99qXNcy8GchCFtd7JKWw';
 
 interface GlobeViewerProps {
   apparitions: Apparition[];
@@ -13,6 +15,9 @@ interface GlobeViewerProps {
   isTimelineOpen: boolean;
   lang: Language;
   hidePlayPause?: boolean;
+  isTutorialActive?: boolean;
+  tutorialStep?: number;
+  isCinemaMode?: boolean;
 };
 
 const configureOrbitControls = (controls: any) => {
@@ -23,7 +28,7 @@ const configureOrbitControls = (controls: any) => {
   controls.dampingFactor = 0.08; // High glide inertia for premium feel
   
   // Custom zoom scale calculator to boost small touchpad scroll increments (deltaY is typically 1-20)
-  // while keeping physical mouse wheel scrolling (deltaY is typically 100-120) feeling natural.
+  // while keeping physical mouse wheel scrolling (deltaY is typically 100-120 feeling natural.
   controls._getZoomScale = function (delta: number) {
     const absDelta = Math.abs(delta);
     // Smooth exponential boost: up to 5x boost for small deltas, fading to ~1.2x for mouse deltas.
@@ -63,7 +68,10 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   onSelectApparition, 
   isTimelineOpen, 
   lang,
-  hidePlayPause = false
+  hidePlayPause = false,
+  isTutorialActive = false,
+  tutorialStep = 0,
+  isCinemaMode = false
 }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
@@ -75,6 +83,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
   const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
   const [ringProgress, setRingProgress] = useState(1);
+  const [clusterPopup, setClusterPopup] = useState<{ lat: number; lng: number; items: Apparition[] } | null>(null);
 
   const ringConfig = useMemo(() => {
     switch (lodThreshold) {
@@ -159,7 +168,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
       // If we are already zoomed in closer than targetAltitude, keep the current close zoom.
       const targetAltitude = currentAltitude < baseTargetAltitude ? currentAltitude : baseTargetAltitude;
-      const latOffset = isTimelineOpen ? 6 : 0;
+      const latOffset = (isTimelineOpen && !isCinemaMode) ? 6 : 0;
       
       // Calculate dynamic duration for smooth and cinematic transitions
       const dLat = (selectedApparition.lat - latOffset) - currentLat;
@@ -175,7 +184,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       
       globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: targetAltitude }, duration);
     }
-  }, [selectedApparition, isTimelineOpen, apparitions]);
+  }, [selectedApparition, isTimelineOpen, isCinemaMode, apparitions]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -409,22 +418,15 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
     const CLUSTER_DEG = spacingBase;
     const regionCounts: Record<string, number> = {};
-    const clusters: (Apparition & { clusterCount?: number })[] = [];
+    const clusters: (Apparition & { clusterCount?: number; clusteredItems?: Apparition[] })[] = [];
+
+    // Always push selected apparition first if it exists, so it acts as the cluster representative
+    if (selectedApparition) {
+      clusters.push({ ...selectedApparition, clusterCount: 1, clusteredItems: [selectedApparition] });
+    }
 
     for (const app of candidates) {
-      if (selectedApparition?.id === app.id) continue; // handled at end
-
-      // Avoid showing other labels near the selected apparition to prevent overlap.
-      if (selectedApparition) {
-        const distLat = Math.abs(selectedApparition.lat - app.lat);
-        const distLng = Math.abs(selectedApparition.lng - app.lng);
-        const meanLat = ((selectedApparition.lat + app.lat) / 2) * Math.PI / 180;
-        const cosLat = Math.max(0.3, Math.cos(meanLat));
-        const physicalDistLng = distLng * cosLat;
-        
-        const minSelectedDist = spacingBase;
-        if (distLat < minSelectedDist && physicalDistLng < (minSelectedDist * 3.8)) continue;
-      }
+      if (selectedApparition?.id === app.id) continue;
 
       const region = getRegion(app.lat, app.lng);
       const count = regionCounts[region] ?? 0;
@@ -457,17 +459,18 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         });
         if (existing) {
           existing.clusterCount = (existing.clusterCount || 1) + 1;
+          if (!existing.clusteredItems) {
+            existing.clusteredItems = [{ ...existing }];
+          }
+          if (!existing.clusteredItems.some(item => item.id === app.id)) {
+            existing.clusteredItems.push(app);
+          }
         }
         continue;
       }
 
-      clusters.push({ ...app, clusterCount: 1 });
+      clusters.push({ ...app, clusterCount: 1, clusteredItems: [app] });
       regionCounts[region] = count + 1;
-    }
-
-    // Always show selected apparition
-    if (selectedApparition && !clusters.find(c => c.id === selectedApparition.id)) {
-      clusters.push({ ...selectedApparition, clusterCount: 1 });
     }
 
     return clusters;
@@ -485,6 +488,42 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       return;
     }
     onSelectApparition(null);
+  };
+
+  const handleBadgeClick = (d: Apparition & { clusterCount?: number; clusteredItems?: Apparition[] }, e: Event) => {
+    e.stopPropagation();
+    lastClickTimeRef.current = Date.now();
+    
+    if (globeEl.current) {
+      const pov = globeEl.current.pointOfView();
+      const currentAltitude = pov ? pov.altitude : 0.6;
+      
+      let targetAltitude = currentAltitude * 0.35;
+      if (targetAltitude < 0.02) {
+        targetAltitude = 0.02;
+      }
+      
+      const latOffset = (isTimelineOpen && !isCinemaMode) ? 6 : 0;
+      
+      globeEl.current.pointOfView({
+        lat: d.lat - latOffset,
+        lng: d.lng,
+        altitude: targetAltitude
+      }, 1200);
+
+      if (currentAltitude <= 0.08) {
+        setClusterPopup({
+          lat: d.lat,
+          lng: d.lng,
+          items: d.clusteredItems || [d]
+        });
+      }
+    }
+  };
+
+  const handleSelectClusterItem = (item: Apparition) => {
+    onSelectApparition(item);
+    setClusterPopup(null);
   };
 
   const escapeHtml = (str: string): string => {
@@ -511,7 +550,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           ref={globeEl}
           width={dimensions.width}
           height={dimensions.height}
-          globeTileEngineUrl={(x: number, y: number, l: number) => `https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${l}/${y}/${x}`}
+          globeTileEngineUrl={(x: number, y: number, l: number) => `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/tiles/512/${l}/${x}/${y}?access_token=${MAPBOX_TOKEN}`}
           backgroundImageUrl="https://unpkg.com/three-globe/example/img/night-sky.png"
           pointsData={[]}
           ringsData={ringApparition ? [ringApparition] : []}
@@ -528,12 +567,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           onGlobeClick={handleGlobeClick}
           htmlElementsData={visibleHtmlLabels}
           htmlElement={(dRaw: unknown) => {
-            const d = dRaw as Apparition & { clusterCount?: number };
+            const d = dRaw as Apparition & { clusterCount?: number; labelOffset?: string };
             const isSelected = selectedApparition?.id === d.id;
             const safeTitle = escapeHtml(d.title || '');
             
             const count = d.clusterCount || 1;
-            const badge = count > 1 ? `<span style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700;">+${count - 1}</span>` : '';
+            const badge = count > 1 ? `<span class="cluster-badge" style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700; cursor: pointer; pointer-events: auto;">+${count - 1}</span>` : '';
 
             // Format title by separating parenthetical subtitles (like "(Filipov)") onto a new line,
             // placing the cluster count badge on the main title line to save vertical space.
@@ -555,6 +594,9 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             el.dataset.id = d.id;
             el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
             el.dataset.selected = isSelected ? 'true' : 'false';
+            if (d.labelOffset) {
+              el.dataset.offset = d.labelOffset;
+            }
             el.style.zIndex = isSelected ? '9999' : '1';
             
             // Pass values to CSS variables for dynamic rendering
@@ -601,6 +643,18 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
               };
             }
 
+            // Attach event handler specifically for the cluster badge to avoid triggering normal dot click
+            const badgeEl = el.querySelector('.cluster-badge') as HTMLElement;
+            if (badgeEl) {
+              badgeEl.onpointerdown = (e) => {
+                e.stopPropagation();
+              };
+              badgeEl.onclick = (e) => {
+                e.stopPropagation();
+                handleBadgeClick(d as Apparition & { clusterCount?: number; clusteredItems?: Apparition[] }, e);
+              };
+            }
+
             el.onwheel = (e) => {
               if (globeEl.current) {
                 const renderer = globeEl.current.renderer();
@@ -633,7 +687,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      {!hidePlayPause && (
+      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 6)) && (
         <button
           onClick={(e) => {
             e.stopPropagation();
@@ -675,6 +729,110 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             {isAutoRotate ? t('autoRotateOn', lang) : t('autoRotateOff', lang)}
           </span>
         </button>
+      )}
+
+      {clusterPopup && (
+        <div 
+          onClick={() => setClusterPopup(null)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            background: 'rgba(3, 4, 11, 0.4)',
+            backdropFilter: 'blur(4px)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            animation: 'fadeIn 0.2s ease-out'
+          }}
+        >
+          <div 
+            onClick={(e) => e.stopPropagation()}
+            className="glass-panel glass-panel-rounded animate-fade-in"
+            style={{
+              width: '90%',
+              maxWidth: '440px',
+              maxHeight: '80%',
+              overflowY: 'auto',
+              padding: '24px',
+              backgroundColor: 'rgba(15, 23, 42, 0.95)',
+              border: '1px solid var(--glass-border)',
+              boxShadow: '0 20px 50px rgba(0,0,0,0.7)',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '16px'
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+              <h3 style={{ fontSize: '18px', fontWeight: 600, color: 'var(--gold-accent)', margin: 0 }}>
+                {t('otherApparitions', lang, { count: clusterPopup.items.length })}
+              </h3>
+              <button 
+                onClick={() => setClusterPopup(null)}
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: 'var(--text-color)',
+                  cursor: 'pointer',
+                  opacity: 0.7,
+                  padding: '4px'
+                }}
+              >
+                <X size={20} />
+              </button>
+            </div>
+            
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', overflowY: 'auto', maxHeight: '350px', paddingRight: '4px' }}>
+              {clusterPopup.items.map((item) => {
+                const color = getStatusColor(item.approvalStatus);
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => handleSelectClusterItem(item)}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'flex-start',
+                      gap: '12px',
+                      padding: '12px 16px',
+                      borderRadius: '10px',
+                      background: 'rgba(255, 255, 255, 0.03)',
+                      border: '1px solid rgba(255, 255, 255, 0.08)',
+                      color: 'var(--text-color)',
+                      textAlign: 'left',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                    }}
+                    onMouseOver={(e) => {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+                      e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.15)';
+                    }}
+                    onMouseOut={(e) => {
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
+                      e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+                    }}
+                  >
+                    <span style={{ 
+                      width: '10px', 
+                      height: '10px', 
+                      borderRadius: '50%', 
+                      backgroundColor: color, 
+                      marginTop: '5px',
+                      flexShrink: 0,
+                      boxShadow: `0 0 8px ${color}`
+                    }} />
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                      <span style={{ fontSize: '15px', fontWeight: 600 }}>{item.title}</span>
+                      <span style={{ fontSize: '13px', opacity: 0.7 }}>{item.year} • {item.location}, {item.country}</span>
+                    </div>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        </div>
       )}
     </>
   );

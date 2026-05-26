@@ -453,6 +453,7 @@ export const century16Apparitions: Apparition[] = [
     lat: 19.4848,
     lng: -99.1179,
     year: 1531,
+    sourceUrl: "https://www.youtube.com/@BasilicadeGuadalupe/live",
     description: "Mary appeared on Tepeyac Hill to St. Juan Diego, leaving her miraculous, unfading image imprinted directly on his tilma cloak. It is the most visited Marian shrine in the world.",
     approvalStatus: "Vatican approved",
     priority: 1

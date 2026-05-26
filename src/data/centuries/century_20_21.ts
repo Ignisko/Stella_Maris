@@ -68,6 +68,7 @@ export const century20and21Apparitions: Apparition[] = [
     description: "The Blessed Virgin Mary appeared six times to shepherd children Lúcia dos Santos and saints Jacinta and Francisco Marto at Cova da Iria, delivering three secrets, a call for penance and the Rosary, culminating in the miraculous Miracle of the Sun witnessed by 70,000 people.",
     approvalStatus: "Vatican approved",
     priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/fatima/index.html;https://www.youtube.com/watch?v=GENH9mWlvb4",
     translations: {
       pl: {
         title: "Matka Boża Fatimska",
@@ -167,7 +168,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1932,
     description: "Mary appeared 33 times to five children near a convent garden railway overpass, revealing her Immaculate Heart of Gold and asking for a chapel and continuous prayer for sinners.",
     approvalStatus: "Vatican approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/beauraing/index.html"
   },
   {
     id: "banneux",
@@ -467,7 +469,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1973,
     description: "A wooden statue of the Virgin Mary wept miraculous tears 101 times and delivered grave prophetic warnings to Sr. Agnes Sasagawa. Bishop John Shojiro Ito granted official episcopal approval in 1984.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/akita/index.html"
   },
   {
     id: "betania",
@@ -513,6 +516,7 @@ export const century20and21Apparitions: Apparition[] = [
     lat: -2.6467,
     lng: 29.5853,
     year: 1981,
+    sourceUrl: "https://www.youtube.com/@SanctuaireNotre-DamedeKibeho/live",
     description: "The Blessed Virgin Mary appeared to three schoolgirls (Alphonsine, Anathalie, and Marie Claire), calling for sincere conversion and prophesying the Rwandan tragedy. Approved by Bishop Augustin Misago and the Holy See in 2001.",
     approvalStatus: "Vatican approved",
     priority: 1
@@ -537,6 +541,7 @@ export const century20and21Apparitions: Apparition[] = [
     lat: -33.3333,
     lng: -60.2167,
     year: 1983,
+    sourceUrl: "https://www.youtube.com/@santuarioma.delrosariodesa8364/live",
     description: "Gladys Quiroga de Motta received profound messages and visions of Our Lady holding the Child Jesus. Bishop Héctor Sabatino Cardelli officially decreed the supernatural character of the apparitions in 2016.",
     approvalStatus: "Bishop approved",
     priority: 1
@@ -671,7 +676,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1955,
     description: "Benedictine Sister Reinolda May experienced apparitions of Mary holding a host and chalice, emphasizing Eucharistic adoration. Bishop Mansuet Biyase approved the sanctuary as an official place of pilgrimage in 1989.",
     approvalStatus: "Approved for faith expression",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/ngome__kwazulu_natal/index.html;https://www.youtube.com/watch?v=bdFfPFXRZXE"
   },
   {
     id: "our_lady_of_america",

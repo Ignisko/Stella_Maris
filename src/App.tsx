@@ -110,9 +110,11 @@ function App() {
       if (guadalupe) {
         setSelectedApparition(guadalupe);
       }
-    } else if (step === 4) {
+    } else if (step === 5) {
       setIsTimelineOpen(true);
-    } else if (step === 0 || step === 1 || step === 3 || step === 5) {
+    } else if (step === 6) {
+      setIsTimelineOpen(false);
+    } else if (step === 0 || step === 1 || step === 3 || step === 4 || step === 7) {
       setSelectedApparition(null);
     }
   };
@@ -241,6 +243,7 @@ function App() {
   }, [isCinemaMode, currentSelectedApparition, filteredApparitions]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
+  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition;
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -522,7 +525,7 @@ function App() {
       </div>
 
       {/* Help / Onboarding Tutorial Button */}
-      {!isCinemaMode && (
+      {!isCinemaMode && !isSidebarOpen && (
         <button
           onClick={() => {
             setIsTutorialActive(true);
@@ -566,10 +569,12 @@ function App() {
       )}
 
       {/* Top Right Language Switcher */}
-      <LanguagePicker 
-        currentLang={lang} 
-        onLanguageChange={setLang} 
-      />
+      {!isSidebarOpen && (
+        <LanguagePicker 
+          currentLang={lang} 
+          onLanguageChange={setLang} 
+        />
+      )}
 
       <DirectoryModal
         isOpen={isDirectoryOpen}
@@ -590,6 +595,9 @@ function App() {
         isTimelineOpen={isTimelineOpen}
         lang={lang}
         hidePlayPause={hasPopups || isTimelineOpen || isFiltersExpanded}
+        isTutorialActive={isTutorialActive}
+        tutorialStep={tutorialStep}
+        isCinemaMode={isCinemaMode}
       />
       
       {currentSelectedApparition && (

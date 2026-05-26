@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
 import { MapPin, Calendar, Info, X, ExternalLink, Award, BookOpen, CheckCircle2, Sparkles, HeartHandshake, XCircle, Copy, Check } from 'lucide-react';
-import { getStatusColor, hexToRgb, getSingleStatusCategory, STATUS_COLORS } from '../utils/colors';
+import { getStatusColor, hexToRgb, getSingleStatusCategory, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
@@ -43,7 +43,6 @@ const Sidebar: React.FC<SidebarProps> = ({
   allActiveApparitions = [], 
   onSelectApparition, 
   lang,
-  isTimelineOpen = false,
   isCinemaMode = false
 }) => {
   const [copied, setCopied] = useState(false);
@@ -80,9 +79,38 @@ const Sidebar: React.FC<SidebarProps> = ({
   const sources = useMemo(() => {
     const raw = displayApp.sourceUrl;
     if (!raw) {
-      const querySlug = displayApp.location.toLowerCase().replace(/[^a-z0-9]/g, '_');
+      let fallbackUrl = "";
+      if (displayApp.year < 1000) {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
+      } else if (displayApp.year < 1500) {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1000-1499.html";
+      } else if (displayApp.year < 1800) {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1500-1799.html";
+      } else if (displayApp.year < 1900) {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1800-1899.html";
+      } else {
+        // Post-1900 categories
+        const cat = getApparitionStatusCategory(displayApp.approvalStatus);
+        if (cat === "Vatican approved") {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
+        } else if (cat === "Bishop approved") {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
+        } else if (cat === "Coptic approved") {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
+        } else if (cat === "Approved for faith expression") {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
+        } else if (cat === "Traditionally approved") {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
+        } else {
+          if (displayApp.year < 2000) {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
+          } else {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
+          }
+        }
+      }
       return [{
-        url: `https://www.miraclehunter.com/marian_apparitions/approved_apparitions/${querySlug}/index.html`,
+        url: fallbackUrl,
         label: t('viewSource', lang)
       }];
     }
@@ -95,6 +123,8 @@ const Sidebar: React.FC<SidebarProps> = ({
         label = t('viewSource', lang);
       } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
         label = 'Sanktuarium Leżajsk';
+      } else if (url.includes('youtube.com') || url.includes('youtu.be')) {
+        label = (url.includes('ESNa1vdHcYY') || url.includes('GENH9mWlvb4') || url.includes('/live')) ? 'Live Stream' : 'Video';
       } else {
         try {
           const parsed = new URL(url);
@@ -110,8 +140,9 @@ const Sidebar: React.FC<SidebarProps> = ({
   return (
     <div className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
-      top: isCinemaMode ? '20px' : '80px',
-      bottom: isCinemaMode ? '95px' : (isTimelineOpen ? '230px' : '20px'),
+      top: '20px',
+      bottom: 'auto',
+      maxHeight: isCinemaMode ? 'calc(100vh - 115px)' : 'calc(100vh - 40px)',
       right: '20px',
       width: '380px',
       overflowY: 'auto',
@@ -125,7 +156,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       gap: '16px',
       transform: isVisible ? 'translateX(0)' : 'translateX(calc(100% + 40px))',
       opacity: isVisible ? 1 : 0,
-      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), bottom 0.3s ease-in-out, top 0.3s ease-in-out',
+      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), max-height 0.3s ease-in-out, top 0.3s ease-in-out',
       pointerEvents: isVisible ? 'auto' : 'none'
     }}>
 
@@ -194,7 +225,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   title={app.title}
                 >
                   <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, flexShrink: 0 }} />
-                  <span>{app.year} • {app.title.replace('Our Lady of ', '').replace('The Virgin Mary in ', '')}</span>
+                  <span>{app.year} • {app.title}</span>
                 </button>
               );
             })}
