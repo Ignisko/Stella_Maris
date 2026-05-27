@@ -291,7 +291,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         position: 'fixed',
         bottom: '12px',
         left: '20px',
-        right: (selectedApparition && !isCinemaMode) ? '420px' : '30px',
+        width: (selectedApparition && !isCinemaMode) ? 'calc(100vw - 440px)' : 'calc(100vw - 40px)',
         maxWidth: '1400px',
         backgroundColor: 'rgba(15, 23, 42, 0.98)',
         border: '1px solid rgba(255, 255, 255, 0.2)',

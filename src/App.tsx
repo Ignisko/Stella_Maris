@@ -672,8 +672,8 @@ function App() {
         isOpen={isDirectoryOpen}
         onClose={() => {
           setIsDirectoryOpen(false);
-          if (isTutorialActive && tutorialStep === 7) {
-            setTutorialStep(8);
+          if (isTutorialActive && tutorialStep === 8) {
+            setTutorialStep(9);
           }
         }}
         apparitions={filteredApparitions}
@@ -696,8 +696,8 @@ function App() {
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
         onAdvanceTutorialStep={() => {
-          if (isTutorialActive && tutorialStep === 10) {
-            setTutorialStep(11);
+          if (isTutorialActive && tutorialStep === 2) {
+            setTutorialStep(3);
           }
         }}
       />
@@ -708,8 +708,8 @@ function App() {
           isVisible={isSidebarVisible}
           onClose={() => {
             setSelectedApparition(null);
-            if (isTutorialActive && tutorialStep === 3) {
-              setTutorialStep(4);
+            if (isTutorialActive && tutorialStep === 4) {
+              setTutorialStep(5);
             }
           }} 
           allActiveApparitions={filteredApparitions}
@@ -720,7 +720,7 @@ function App() {
         />
       )}
 
-      {filteredApparitions.length > 0 && (!isTutorialActive || tutorialStep >= 8) && (
+      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 9 && tutorialStep <= 10)) && (
         <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
@@ -731,10 +731,10 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 8) {
-              setTutorialStep(9);
-            } else if (!open && isTutorialActive && tutorialStep === 9) {
+            if (open && isTutorialActive && tutorialStep === 9) {
               setTutorialStep(10);
+            } else if (!open && isTutorialActive && tutorialStep === 10) {
+              setTutorialStep(11);
             }
           }}
           lang={lang}
