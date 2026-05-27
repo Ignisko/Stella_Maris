@@ -135,7 +135,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Apparition details",
       "Search & filters",
       "Status filters",
-      "Century timeline",
       "Browse directory",
       "Apparitions list",
       "Open timeline",
@@ -150,7 +149,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Szczegóły objawienia",
       "Wyszukiwanie i filtry",
       "Filtry statusu",
-      "Filtry stuleci",
       "Przeglądaj katalog",
       "Katalog objawień",
       "Otwórz oś czasu",
@@ -165,7 +163,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Detalles de la aparición",
       "Búsqueda y filtros",
       "Filtros de estado",
-      "Línea de tiempo de siglos",
       "Explorar directorio",
       "Directorio de apariciones",
       "Abrir línea de tiempo",
@@ -180,7 +177,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Detalhes da aparição",
       "Pesquisa e filtros",
       "Filtros de status",
-      "Linha do tempo dos séculos",
       "Navegar no diretório",
       "Diretório de aparições",
       "Abrir linha do tempo",
@@ -195,7 +191,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Détails de l'apparition",
       "Recherche & filtres",
       "Filtres de statut",
-      "Frise des siècles",
       "Parcourir le répertoire",
       "Répertoire des apparitions",
       "Ouvrir la frise chronologique",
@@ -210,7 +205,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Dettagli dell'apparizione",
       "Ricerca & filtri",
       "Filtri di stato",
-      "Cronologia dei secoli",
       "Sfoglia la directory",
       "Elenco delle apparizioni",
       "Apri la cronologia",
@@ -228,7 +222,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "On the right, the details panel for 'Our Lady of Guadalupe' has opened automatically. Read the description, and when you are ready to explore other features, click the Close (X) button in the top right corner of the panel.",
       "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
       "Filter apparitions by their Church approval status (e.g., Vatican approved or local bishop approved).",
-      "Select the centuries you are interested in to see when different apparitions occurred in history.",
       "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
       "In the directory, you can quickly search and sort all recorded apparitions. Close the directory to continue.",
       "Click the timeline toggle button in the bottom right corner to show the chronological event timeline.",
@@ -243,7 +236,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Po prawej stronie automatycznie otworzył się panel szczegółów dla „Matki Bożej z Guadalupe”. Przeczytaj opis, a gdy będziesz gotowy poznać inne funkcje, kliknij przycisk Zamknij (X) w prawym górnym rogu panelu.",
       "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, filtrować według statusu zatwierdzenia lub stulecia historycznego.",
       "Filtruj objawienia według ich statusu zatwierdzenia przez Kościół (np. zatwierdzone przez Watykan lub lokalnego biskupa).",
-      "Wybierz interesujące Cię stulecia, aby zobaczyć, kiedy miały miejsce poszczególne objawienia w historii.",
       "Kliknij „Przeglądaj katalog”, aby otworzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
       "W katalogu możesz szybko przeszukiwać i sortować wszystkie zarejestrowane objawienia. Zamknij katalog, aby kontynuować.",
       "Kliknij przycisk osi czasu w prawym dolnym rogu, aby wyświetlić chronologiczną linię wydarzeń.",
@@ -258,7 +250,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "A la derecha, el panel de detalles de 'Nuestra Señora de Guadalupe' se ha abierto automáticamente. Lea la descripción y haga clic en Cerrar (X) cuando esté listo.",
       "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación o por siglo histórico.",
       "Filtre las apariciones por su estado de aprobación por la Iglesia (por ejemplo, aprobadas por el Vaticano o por el obispo local).",
-      "Seleccione los siglos que le interesen para ver cuándo ocurrieron las diferentes apariciones en la historia.",
       "Haga clic en 'Explorar directorio' para abrir una lista completa de todas las apariciones y explorarlas en detalle.",
       "En el directorio, puede buscar y ordenar rápidamente todas las apariciones registradas. Cierre el directorio para continuar.",
       "Haga clic en el botón de la línea de tiempo en la esquina inferior derecha para abrir la vista cronológica.",
@@ -273,7 +264,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "À direita, o painel de detalhes de 'Nossa Senhora de Guadalupe' abriu-se automaticamente. Leia a descrição e clique em Fechar (X) quando estiver pronto.",
       "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação ou por século histórico.",
       "Filtre as aparições por seu status de aprovação pela Igreja (por exemplo, aprovadas pelo Vaticano ou pelo bispo local).",
-      "Selecione os séculos de seu interesse para ver quando diferentes aparições ocorreram na história.",
       "Clique em 'Navegar no diretório' to abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
       "No diretório, você pode pesquisar e ordenar rapidamente todas as aparições registradas. Feche o diretório para continuar.",
       "Clique no botão da linha do tempo no canto inferior direito para abrir la visualização cronológica.",
@@ -288,7 +278,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "À droite, le panneau de détails pour 'Notre-Dame de Guadalupe' s'est ouvert automatiquement. Lisez la description et cliquez sur Fermer (X) pour continuer.",
       "Utilisez le panneau de gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation ou par siècle historique.",
       "Filtrez les apparitions selon leur statut d'approbation par l'Église (ex. approuvées par le Vatican ou par l'évêque local).",
-      "Sélectionnez les siècles qui vous intéressent pour voir quand les différentes apparitions ont eu lieu dans l'histoire.",
       "Cliquez sur 'Parcourir le répertoire' pour ouvrir la liste complète de toutes les apparitions et les explorer en détail.",
       "Dans le répertoire, vous pouvez rapidement rechercher et trier toutes les apparitions enregistrées. Fermez le répertoire pour continuer.",
       "Cliquez sur le bouton de la frise chronologique en bas à droite pour l'afficher.",
@@ -303,7 +292,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "A destra, il pannello dei dettagli di 'Nostra Signora di Guadalupe' si è aperto automaticamente. Leggi la descrizione e fai clic su Chiudi (X) quando sei pronto.",
       "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione o per secolo storico.",
       "Filtra le apparizioni in base al loro stato de approvazione da parte della Chiesa (es. approvate dal Vaticano o dal vescovo locale).",
-      "Seleziona i secoli di tuo interesse per vedere quando si sono verificate le diverse apparizioni nella storia.",
       "Fai clic su 'Sfoglia la directory' per aprire un elenco completo di tutte le apparizioni ed esplorarle in dettaglio.",
       "Nell'elenco, puoi cercare e ordinare rapidamente tutte le apparizioni registrate. Chiudi l'elenco per continuare.",
       "Fai clic sul pulsante della cronologia nell'angolo in basso a destra per aprirla.",
@@ -321,8 +309,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
     <Globe size={40} color="var(--accent-color)" />,
     <Globe size={40} color="var(--accent-color)" />,
     <SidebarIcon size={40} color="var(--accent-color)" />,
-    <Sliders size={40} color="var(--accent-color)" />,
-    <Sliders size={40} color="var(--accent-color)" />,
     <Sliders size={40} color="var(--accent-color)" />,
     <Sliders size={40} color="var(--accent-color)" />,
     <Sliders size={40} color="var(--accent-color)" />,
@@ -354,7 +340,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   // Manage timeline open/close dynamically depending on tutorial step
   useEffect(() => {
     if (!isOpen) return;
-    if (step === 10) {
+    if (step === 9) {
       setIsTimelineOpen(true);
     } else {
       setIsTimelineOpen(false);
@@ -384,12 +370,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       let selector = '';
       if (step === 4) selector = '#search-filters-container';
       else if (step === 5) selector = '#filter-tabs-content-container';
-      else if (step === 6) selector = '#filter-tabs-content-container';
-      else if (step === 7) selector = '#browse-directory-button';
-      else if (step === 8) selector = '#directory-modal-container';
-      else if (step === 9) selector = '#timeline-closed-pill';
-      else if (step === 10) selector = '#timeline-play-presentation-button';
-      else if (step === 11) selector = '#auto-rotate-button';
+      else if (step === 6) selector = '#browse-directory-button';
+      else if (step === 7) selector = '#directory-modal-container';
+      else if (step === 8) selector = '#timeline-closed-pill';
+      else if (step === 9) selector = '#timeline-play-presentation-button';
+      else if (step === 10) selector = '#auto-rotate-button';
 
       if (selector) {
         const el = document.querySelector(selector);
@@ -430,7 +415,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
-    if (step === 0 || step === 12) {
+    if (step === 0 || step === 11) {
       return {
         left: '-100px',
         top: '-100px',
@@ -501,7 +486,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       pointerEvents: 'auto'
     };
 
-    if (step === 0 || step === 12) {
+    if (step === 0 || step === 11) {
       return {
         ...common,
         left: '50vw',
@@ -509,8 +494,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         width: '450px',
         maxWidth: '90vw',
-        textAlign: step === 12 ? 'center' : 'left',
-        alignItems: step === 12 ? 'center' : 'stretch'
+        textAlign: step === 11 ? 'center' : 'left',
+        alignItems: step === 11 ? 'center' : 'stretch'
       };
     }
     if (step === 1 || step === 2 || step === 3) {
@@ -526,33 +511,32 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         case 4:
         case 5:
         case 6:
-        case 7:
           return {
             ...common,
             left: `${elementRect.right + 20}px`,
             top: `${elementRect.top}px`,
           };
-        case 8:
+        case 7:
           return {
             ...common,
             left: '50px',
             bottom: '30px',
             width: '420px',
           };
-        case 9:
+        case 8:
           return {
             ...common,
             left: `${elementRect.left - 380}px`,
             bottom: '30px',
           };
-        case 10:
+        case 9:
           return {
             ...common,
             left: '50px',
             bottom: `${window.innerHeight - elementRect.top + 20}px`,
             width: '420px',
           };
-        case 11:
+        case 10:
           return {
             ...common,
             left: `${elementRect.right + 20}px`,
@@ -565,7 +549,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 12 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 11 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
@@ -579,8 +563,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       case 4:
       case 5:
       case 6:
-      case 7:
-      case 11:
+      case 10:
         return {
           ...base,
           top: '30px',
@@ -588,7 +571,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           borderWidth: '10px 10px 10px 0',
           borderColor: 'transparent rgba(15, 23, 42, 0.96) transparent transparent',
         };
-      case 9:
+      case 8:
         return {
           ...base,
           bottom: '24px',
@@ -596,7 +579,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           borderWidth: '10px 0 10px 10px',
           borderColor: 'transparent transparent transparent rgba(15, 23, 42, 0.96)',
         };
-      case 10:
+      case 9:
         return {
           ...base,
           bottom: '-10px',
@@ -604,7 +587,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           borderWidth: '10px 10px 0 10px',
           borderColor: 'rgba(15, 23, 42, 0.96) transparent transparent transparent',
         };
-      case 8:
+      case 7:
       default:
         return null;
     }

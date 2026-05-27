@@ -672,8 +672,8 @@ function App() {
         isOpen={isDirectoryOpen}
         onClose={() => {
           setIsDirectoryOpen(false);
-          if (isTutorialActive && tutorialStep === 8) {
-            setTutorialStep(9);
+          if (isTutorialActive && tutorialStep === 7) {
+            setTutorialStep(8);
           }
         }}
         apparitions={filteredApparitions}
@@ -696,8 +696,8 @@ function App() {
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
         onAdvanceTutorialStep={() => {
-          if (isTutorialActive && tutorialStep === 11) {
-            setTutorialStep(12);
+          if (isTutorialActive && tutorialStep === 10) {
+            setTutorialStep(11);
           }
         }}
       />
@@ -720,7 +720,7 @@ function App() {
         />
       )}
 
-      {filteredApparitions.length > 0 && (
+      {filteredApparitions.length > 0 && (!isTutorialActive || tutorialStep >= 8) && (
         <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
@@ -731,10 +731,10 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 9) {
+            if (open && isTutorialActive && tutorialStep === 8) {
+              setTutorialStep(9);
+            } else if (!open && isTutorialActive && tutorialStep === 9) {
               setTutorialStep(10);
-            } else if (!open && isTutorialActive && tutorialStep === 10) {
-              setTutorialStep(11);
             }
           }}
           lang={lang}
