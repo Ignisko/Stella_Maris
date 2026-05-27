@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect } from 'react';
-import { List, Play, Pause, X, HelpCircle } from 'lucide-react';
+import { List, Play, Pause, X, HelpCircle, ArrowLeft, ArrowRight, Rewind, FastForward } from 'lucide-react';
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
@@ -16,31 +16,7 @@ import { t, translateApparitionsList, loadLanguageTranslations } from './utils/i
 import type { Language } from './utils/i18n';
 
 
-const pauseTranslations: Record<string, string> = {
-  pl: 'Zatrzymaj',
-  es: 'Pausar',
-  pt: 'Pausar',
-  fr: 'Pause',
-  it: 'Pausa',
-  vi: 'Tạm dừng',
-  ar: 'إيقاف مؤقت',
-  tl: 'I-pause',
-  tr: 'Duraklat',
-  en: 'Pause'
-};
 
-const resumeTranslations: Record<string, string> = {
-  pl: 'Wznów',
-  es: 'Reanudar',
-  pt: 'Retomar',
-  fr: 'Reprendre',
-  it: 'Riprendi',
-  vi: 'Tiếp tục',
-  ar: 'استئناف',
-  tl: 'Ituloy',
-  tr: 'Sürdür',
-  en: 'Resume'
-};
 
 const exitTranslations: Record<string, string> = {
   pl: 'Zakończ',
@@ -98,6 +74,7 @@ function App() {
   const [playbackIndex, setPlaybackIndex] = useState(0);
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
   const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
+  const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
 
   const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
     return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
@@ -106,7 +83,25 @@ function App() {
 
   const handleTutorialStepChange = (step: number) => {
     setTutorialStep(step);
-    if (step === 3) {
+  };
+
+  // Centralized synchronization of panels and modal visibility based on tutorial step
+  useEffect(() => {
+    if (!isTutorialActive) return;
+
+    if (tutorialStep === 5 || tutorialStep === 6) {
+      setIsFiltersExpanded(true);
+    } else {
+      setIsFiltersExpanded(false);
+    }
+
+    if (tutorialStep === 8) {
+      setIsDirectoryOpen(true);
+    } else {
+      setIsDirectoryOpen(false);
+    }
+
+    if (tutorialStep === 3) {
       const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
       if (guadalupe) {
         setSelectedApparition(guadalupe);
@@ -114,7 +109,7 @@ function App() {
     } else {
       setSelectedApparition(null);
     }
-  };
+  }, [tutorialStep, isTutorialActive, translatedApparitionsData]);
 
   const handleTutorialClose = () => {
     setIsTutorialActive(false);
@@ -174,7 +169,9 @@ function App() {
   }, [translatedApparitionsData, activeFilters, activeCenturies]);
 
   // Sort filtered data chronologically
-  const sortedFilteredApparitions = [...filteredApparitions].sort((a, b) => a.year - b.year);
+  const sortedFilteredApparitions = useMemo(() => {
+    return [...filteredApparitions].sort((a, b) => a.year - b.year);
+  }, [filteredApparitions]);
 
   // Interval loop for timeline playback (8.0s per event to give zoom/read time)
   useEffect(() => {
@@ -188,17 +185,38 @@ function App() {
         }
         return next;
       });
-    }, 8000);
+    }, 8000 / playbackSpeedMultiplier);
 
     return () => clearInterval(interval);
-  }, [isPlayingTimeline, sortedFilteredApparitions]);
+  }, [isPlayingTimeline, sortedFilteredApparitions, playbackSpeedMultiplier]);
 
   // Auto-select apparition when playbackIndex ticks
   useEffect(() => {
-    if (isPlayingTimeline && sortedFilteredApparitions[playbackIndex]) {
+    if (isCinemaMode && sortedFilteredApparitions[playbackIndex]) {
       setSelectedApparition(sortedFilteredApparitions[playbackIndex]);
     }
-  }, [isPlayingTimeline, playbackIndex, sortedFilteredApparitions]);
+  }, [isCinemaMode, playbackIndex, sortedFilteredApparitions]);
+
+  // Re-sync playback index if filtered apparitions change during cinema mode
+  useEffect(() => {
+    if (isCinemaMode) {
+      if (sortedFilteredApparitions.length === 0) {
+        setIsPlayingTimeline(false);
+        setIsCinemaMode(false);
+        return;
+      }
+      
+      setPlaybackIndex(prevIdx => {
+        if (selectedApparition) {
+          const newIdx = sortedFilteredApparitions.findIndex(a => a.id === selectedApparition.id);
+          if (newIdx !== -1) {
+            return newIdx === prevIdx ? prevIdx : newIdx;
+          }
+        }
+        return prevIdx >= sortedFilteredApparitions.length ? Math.max(0, sortedFilteredApparitions.length - 1) : prevIdx;
+      });
+    }
+  }, [sortedFilteredApparitions, isCinemaMode, selectedApparition]);
 
   // Manage sidebar visibility delay during timeline playback to wait for flight animation
   useEffect(() => {
@@ -231,6 +249,26 @@ function App() {
   const exitCinemaMode = () => {
     setIsPlayingTimeline(false);
     setIsCinemaMode(false);
+    setSelectedApparition(null);
+    setIsTimelineOpen(false);
+  };
+
+  const handlePrevPresentation = () => {
+    if (sortedFilteredApparitions.length === 0) return;
+    setPlaybackIndex(prev => {
+      const next = prev - 1;
+      if (next < 0) return sortedFilteredApparitions.length - 1;
+      return next;
+    });
+  };
+
+  const handleNextPresentation = () => {
+    if (sortedFilteredApparitions.length === 0) return;
+    setPlaybackIndex(prev => {
+      const next = prev + 1;
+      if (next >= sortedFilteredApparitions.length) return 0;
+      return next;
+    });
   };
 
   // Sliced data for GlobeViewer during playback
@@ -263,52 +301,79 @@ function App() {
             flexDirection: 'column',
             alignItems: 'stretch',
             gap: '12px',
-            width: isCinemaMode ? '210px' : '230px',
+            width: isCinemaMode ? '280px' : '230px',
             boxShadow: '0 15px 45px rgba(0,0,0,0.6)',
             pointerEvents: 'auto',
             transition: 'all 0.3s ease'
           }}
         >
           {isCinemaMode ? (
-            <>
-              {/* Play/Pause Button */}
-              <button
-                onClick={togglePlayTimeline}
-                style={{
-                  background: isPlayingTimeline ? '#ef4444' : 'var(--accent-color)',
-                  color: '#fff',
-                  border: 'none',
-                  padding: '12px 24px',
-                  borderRadius: '25px',
-                  fontSize: '15px',
-                  fontWeight: 700,
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '8px',
-                  boxShadow: isPlayingTimeline ? '0 0 20px rgba(239, 68, 68, 0.45)' : '0 0 20px rgba(56, 189, 248, 0.45)',
-                  transition: 'all 0.2s',
-                  letterSpacing: '0.5px'
-                }}
-                onMouseOver={e => {
-                  e.currentTarget.style.transform = 'scale(1.03)';
-                  e.currentTarget.style.boxShadow = isPlayingTimeline ? '0 0 25px rgba(239, 68, 68, 0.65)' : '0 0 25px rgba(56, 189, 248, 0.65)';
-                }}
-                onMouseOut={e => {
-                  e.currentTarget.style.transform = 'none';
-                  e.currentTarget.style.boxShadow = isPlayingTimeline ? '0 0 20px rgba(239, 68, 68, 0.45)' : '0 0 20px rgba(56, 189, 248, 0.45)';
-                }}
-              >
-                {isPlayingTimeline ? <Pause size={16} /> : <Play size={16} />}
-                <span>
-                  {isPlayingTimeline 
-                    ? (pauseTranslations[lang] || 'Pause')
-                    : (resumeTranslations[lang] || 'Resume')
-                  }
-                </span>
-              </button>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px' }}>
+                <button
+                  onClick={() => setPlaybackSpeedMultiplier(prev => Math.max(0.5, prev / 2))}
+                  title="Slow Down"
+                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: playbackSpeedMultiplier > 0.5 ? 0.8 : 0.3, padding: '6px', transition: 'opacity 0.2s' }}
+                  disabled={playbackSpeedMultiplier <= 0.5}
+                >
+                  <Rewind size={22} />
+                </button>
+                <button
+                  onClick={handlePrevPresentation}
+                  title="Previous Apparition"
+                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: 0.8, padding: '6px', transition: 'opacity 0.2s' }}
+                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                  onMouseOut={e => e.currentTarget.style.opacity = '0.8'}
+                >
+                  <ArrowLeft size={24} />
+                </button>
+                
+                <button
+                  onClick={togglePlayTimeline}
+                  style={{
+                    background: isPlayingTimeline ? '#ef4444' : 'var(--accent-color)',
+                    color: '#fff',
+                    border: 'none',
+                    width: '52px',
+                    height: '52px',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    boxShadow: isPlayingTimeline ? '0 0 15px rgba(239, 68, 68, 0.45)' : '0 0 15px rgba(56, 189, 248, 0.45)',
+                    transition: 'all 0.2s',
+                    flexShrink: 0
+                  }}
+                  onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
+                  onMouseOut={e => e.currentTarget.style.transform = 'none'}
+                >
+                  {isPlayingTimeline ? <Pause size={24} /> : <Play size={24} style={{ marginLeft: '2px' }} />}
+                </button>
 
+                <button
+                  onClick={handleNextPresentation}
+                  title="Next Apparition"
+                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: 0.8, padding: '6px', transition: 'opacity 0.2s' }}
+                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                  onMouseOut={e => e.currentTarget.style.opacity = '0.8'}
+                >
+                  <ArrowRight size={24} />
+                </button>
+                <button
+                  onClick={() => setPlaybackSpeedMultiplier(prev => Math.min(4, prev * 2))}
+                  title="Speed Up"
+                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: playbackSpeedMultiplier < 4 ? 0.8 : 0.3, padding: '6px', transition: 'opacity 0.2s' }}
+                  disabled={playbackSpeedMultiplier >= 4}
+                >
+                  <FastForward size={22} />
+                </button>
+              </div>
+              
+              <div style={{ textAlign: 'center', fontSize: '11px', fontWeight: 600, color: 'rgba(255,255,255,0.6)' }}>
+                {playbackSpeedMultiplier}x Speed
+              </div>
+              
               {/* Exit Button */}
               <button
                 onClick={exitCinemaMode}
@@ -316,17 +381,17 @@ function App() {
                   background: 'rgba(255, 255, 255, 0.08)',
                   color: '#fff',
                   border: '1px solid rgba(255, 255, 255, 0.15)',
-                  padding: '12px 24px',
-                  borderRadius: '25px',
-                  fontSize: '15px',
-                  fontWeight: 700,
+                  padding: '10px 20px',
+                  borderRadius: '20px',
+                  fontSize: '14px',
+                  fontWeight: 600,
                   cursor: 'pointer',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '8px',
-                  transition: 'all 0.2s',
-                  letterSpacing: '0.5px'
+                  marginTop: '4px',
+                  transition: 'all 0.2s'
                 }}
                 onMouseOver={e => {
                   e.currentTarget.style.background = 'rgba(255, 255, 255, 0.15)';
@@ -340,7 +405,7 @@ function App() {
                 <X size={16} style={{ opacity: 0.8 }} />
                 <span>{exitTranslations[lang] || 'Exit'}</span>
               </button>
-            </>
+            </div>
           ) : (
             /* Włącz animację / Play Presentation when controls are hidden and sidebar is open */
             <button
@@ -444,6 +509,7 @@ function App() {
               lang={lang}
               isExpanded={isFiltersExpanded}
               onToggleExpanded={setIsFiltersExpanded}
+              forceTab={tutorialStep === 5 ? 'status' : (tutorialStep === 6 ? 'time' : undefined)}
             />
 
             {!isFiltersExpanded && (
@@ -485,7 +551,7 @@ function App() {
           </div>
 
           {/* Play Presentation Button */}
-          {!isFiltersExpanded && (
+          {!isFiltersExpanded && !isTutorialActive && (
             <button
               onClick={togglePlayTimeline}
               className="glass-panel glass-panel-rounded"
@@ -573,16 +639,43 @@ function App() {
       )}
 
       {/* Top Right Language Switcher */}
-      {!isSidebarOpen && (
+      {!isSidebarOpen && !isCinemaMode && (
         <LanguagePicker 
           currentLang={lang} 
           onLanguageChange={setLang} 
         />
       )}
 
+      {/* Floating Filter Menu for Cinema Mode */}
+      {isCinemaMode && (
+        <div style={{
+          position: 'absolute',
+          top: '210px',
+          left: '20px',
+          zIndex: 150,
+          width: '280px'
+        }}>
+          <FilterMenu 
+            activeFilters={activeFilters} 
+            onChange={setActiveFilters} 
+            activeCenturies={activeCenturies}
+            onChangeCenturies={setActiveCenturies}
+            lang={lang}
+            isExpanded={isFiltersExpanded}
+            onToggleExpanded={setIsFiltersExpanded}
+            absolute={true}
+          />
+        </div>
+      )}
+
       <DirectoryModal
         isOpen={isDirectoryOpen}
-        onClose={() => setIsDirectoryOpen(false)}
+        onClose={() => {
+          setIsDirectoryOpen(false);
+          if (isTutorialActive && tutorialStep === 8) {
+            setTutorialStep(9);
+          }
+        }}
         apparitions={filteredApparitions}
         onSelectApparition={handleSelectApparition}
         lang={lang}
@@ -603,8 +696,8 @@ function App() {
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
         onAdvanceTutorialStep={() => {
-          if (isTutorialActive && tutorialStep === 8) {
-            setTutorialStep(9);
+          if (isTutorialActive && tutorialStep === 11) {
+            setTutorialStep(12);
           }
         }}
       />
@@ -638,10 +731,10 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 6) {
-              setTutorialStep(7);
-            } else if (!open && isTutorialActive && tutorialStep === 7) {
-              setTutorialStep(8);
+            if (open && isTutorialActive && tutorialStep === 9) {
+              setTutorialStep(10);
+            } else if (!open && isTutorialActive && tutorialStep === 10) {
+              setTutorialStep(11);
             }
           }}
           lang={lang}

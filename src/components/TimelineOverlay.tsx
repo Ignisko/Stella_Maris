@@ -47,6 +47,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [previewApparition, setPreviewApparition] = useState<Apparition | null>(null);
+  const [hoverX, setHoverX] = useState<number | null>(null);
+  const [hoverYear, setHoverYear] = useState<number | null>(null);
 
   const activeApparitions = useMemo(() => {
     if (timeMode === 'modern') return apparitions.filter(a => a.year >= 1800);
@@ -77,7 +80,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
     }
   }, [isCinemaMode, apparitions]);
 
-  const handleTimelineInteraction = React.useCallback((clientX: number) => {
+  const handleTimelineInteraction = React.useCallback((clientX: number, isFinal: boolean = false) => {
     if (!containerRef.current || sorted.length === 0) return;
     const rect = containerRef.current.getBoundingClientRect();
     const padding = 20; // 20px padding left/right
@@ -98,8 +101,34 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         closest = sorted[i];
       }
     }
-    onSelectApparition(closest);
+    
+    if (!isFinal) {
+      setPreviewApparition(closest);
+    } else {
+      setPreviewApparition(null);
+      onSelectApparition(closest);
+    }
   }, [sorted, startY, range, onSelectApparition]);
+
+  const handleContainerMouseMove = (e: React.MouseEvent) => {
+    if (!containerRef.current || sorted.length === 0) return;
+    const rect = containerRef.current.getBoundingClientRect();
+    const padding = 20;
+    const relativeX = e.clientX - rect.left - padding;
+    const timelineWidth = rect.width - (padding * 2);
+    if (timelineWidth <= 0) return;
+
+    const pct = Math.max(0, Math.min(1, relativeX / timelineWidth));
+    const targetYear = Math.round(startY + pct * range);
+    
+    setHoverX(e.clientX - rect.left);
+    setHoverYear(targetYear);
+  };
+
+  const handleContainerMouseLeave = () => {
+    setHoverX(null);
+    setHoverYear(null);
+  };
 
   const handleMouseDown = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
@@ -107,18 +136,19 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       return;
     }
     setIsDragging(true);
-    handleTimelineInteraction(e.clientX);
+    handleTimelineInteraction(e.clientX, false);
   };
 
   useEffect(() => {
     if (!isDragging) return;
 
     const handleMouseMove = (e: MouseEvent) => {
-      handleTimelineInteraction(e.clientX);
+      handleTimelineInteraction(e.clientX, false);
     };
 
-    const handleMouseUp = () => {
+    const handleMouseUp = (e: MouseEvent) => {
       setIsDragging(false);
+      handleTimelineInteraction(e.clientX, true);
     };
 
     window.addEventListener('mousemove', handleMouseMove);
@@ -210,7 +240,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           position: 'fixed',
           bottom: '20px',
           right: selectedApparition ? '420px' : '20px',
-          zIndex: 25,
+          zIndex: 160,
           pointerEvents: 'auto',
           background: 'linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,41,59,0.95))',
           border: '1px solid rgba(56,189,248,0.35)',
@@ -253,6 +283,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       id="timeline-container"
       ref={containerRef}
       onMouseDown={handleMouseDown}
+      onMouseMove={handleContainerMouseMove}
+      onMouseLeave={handleContainerMouseLeave}
       className="glass-panel glass-panel-rounded animate-fade-in"
       style={{
         cursor: 'pointer',
@@ -266,12 +298,35 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         backdropFilter: 'blur(20px)',
         boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
         padding: isCinemaMode ? '6px 20px' : '10px 20px',
-        zIndex: 25,
+        zIndex: 160,
         boxSizing: 'border-box',
         transition: 'all 0.3s ease',
         pointerEvents: 'auto'
       }}
     >
+      {/* Top hover tooltip pill over cursor */}
+      {hoverYear !== null && hoverX !== null && (
+        <div style={{
+          position: 'absolute',
+          left: `${hoverX}px`,
+          top: '-24px',
+          transform: 'translateX(-50%)',
+          background: 'rgba(15,23,42,0.9)',
+          color: 'var(--accent-color)',
+          border: '1px solid rgba(56,189,248,0.4)',
+          padding: '2px 8px',
+          borderRadius: '12px',
+          fontSize: '11px',
+          fontWeight: 700,
+          pointerEvents: 'none',
+          zIndex: 200,
+          boxShadow: '0 4px 12px rgba(0,0,0,0.5)',
+          whiteSpace: 'nowrap'
+        }}>
+          {hoverYear}
+        </div>
+      )}
+
       {/* Top-right action controls (Play Presentation and Close buttons) */}
       {!isCinemaMode && (
         <div style={{
@@ -283,6 +338,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           zIndex: 35
         }}>
           <button
+            id="timeline-play-presentation-button"
             onClick={onTogglePlay}
             style={{
               background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
@@ -483,20 +539,82 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           </div>
         )}
 
+        {/* Cinema Mode Markers */}
+        {isCinemaMode && (
+          <div style={{ position: 'absolute', bottom: '0px', left: 0, right: 0, height: '10px' }}>
+            {sorted.map(app => {
+              const clampedYear = Math.max(startY, Math.min(endY, app.year));
+              const leftPct = range > 0 ? ((clampedYear - startY) / range) * 100 : 0;
+              const isSelected = selectedApparition?.id === app.id;
+              const statusColor = getStatusColor(app.approvalStatus);
+              return (
+                <div
+                  key={`marker-${app.id}`}
+                  onClick={(e) => { e.stopPropagation(); onSelectApparition(app); }}
+                  title={`${app.year}: ${app.title}`}
+                  style={{
+                    position: 'absolute',
+                    left: `${leftPct}%`,
+                    bottom: '0',
+                    width: '24px',
+                    height: '24px',
+                    transform: 'translate(-50%, 50%)',
+                    cursor: 'pointer',
+                    zIndex: isSelected ? 105 : 100,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}
+                >
+                  <div
+                    style={{
+                      width: isSelected ? '10px' : '8px',
+                      height: isSelected ? '10px' : '8px',
+                      backgroundColor: statusColor,
+                      border: isSelected ? '2px solid #ffffff' : '1px solid rgba(255,255,255,0.3)',
+                      borderRadius: '50%',
+                      boxShadow: isSelected 
+                        ? `0 0 16px ${statusColor}, 0 0 8px rgba(0,0,0,0.8)` 
+                        : 'none',
+                      transition: 'all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
+                      opacity: isSelected ? 1 : 0.25
+                    }}
+                    onMouseOver={(e) => {
+                      if (!isSelected) {
+                        e.currentTarget.style.transform = 'scale(1.2)';
+                        e.currentTarget.style.opacity = '0.8';
+                      }
+                    }}
+                    onMouseOut={(e) => {
+                      if (!isSelected) {
+                        e.currentTarget.style.transform = 'none';
+                        e.currentTarget.style.opacity = '0.25';
+                      }
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        )}
+
         {/* Callout overlays */}
         <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 100 }}>
 
           {/* Playback laser pointer / indicator */}
-          {selectedApparition && (() => {
-            const year = selectedApparition.year;
+          {(selectedApparition || (isCinemaMode && isDragging && previewApparition)) && (() => {
+            const activeApp = (isCinemaMode && isDragging && previewApparition) ? previewApparition : selectedApparition;
+            if (!activeApp) return null;
+
+            const year = activeApp.year;
             const clampedYear = Math.max(startY, Math.min(endY, year));
             const leftPct = range > 0 ? ((clampedYear - startY) / range) * 100 : 0;
             
             // Calculate the height of the bar stack up to the selected apparition
-            const selectedBucket = buckets.find(b => selectedApparition && selectedApparition.year >= b.startYear && selectedApparition.year <= b.endYear);
+            const selectedBucket = buckets.find(b => activeApp && activeApp.year >= b.startYear && activeApp.year <= b.endYear);
             let stackHeight = 0;
-            if (!isCinemaMode && selectedBucket && selectedApparition) {
-              const selectedIndex = selectedBucket.apps.findIndex(app => app.id === selectedApparition.id);
+            if (!isCinemaMode && selectedBucket && activeApp) {
+              const selectedIndex = selectedBucket.apps.findIndex(app => app.id === activeApp.id);
               if (selectedIndex !== -1) {
                 stackHeight = (selectedIndex + 1) * (tileHeight + tileGap);
               } else {
@@ -533,8 +651,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   <MapPin size={22} fill="#ef4444" color="#ffffff" strokeWidth={1.5} />
                 </div>
                 
-                {/* floating badge in cinema mode */}
-                {isCinemaMode && (() => {
+                {/* floating badge in cinema mode for scrubbing preview */}
+                {(isCinemaMode && isDragging && previewApparition) && (() => {
                   let badgeTranslateX = -50;
                   if (leftPct > 80) {
                     badgeTranslateX = -50 - Math.min(45, (leftPct - 80) * 2.25);
@@ -558,7 +676,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                       border: '1px solid rgba(255,255,255,0.2)',
                       transition: 'transform 0.1s ease-out'
                     }}>
-                      {selectedApparition.year}: {selectedApparition.title}
+                      {activeApp.year}: {activeApp.title}
                     </div>
                   );
                 })()}

@@ -14,6 +14,7 @@ interface FilterMenuProps {
   isExpanded: boolean;
   onToggleExpanded: (expanded: boolean) => void;
   absolute?: boolean;
+  forceTab?: 'status' | 'time';
 }
 
 const FilterMenu: React.FC<FilterMenuProps> = ({ 
@@ -24,10 +25,18 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   lang,
   isExpanded,
   onToggleExpanded,
-  absolute = false
+  absolute = false,
+  forceTab
 }) => {
   const [activeTab, setActiveTab] = useState<'status' | 'time'>('status');
   const filterRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (forceTab) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setActiveTab(forceTab);
+    }
+  }, [forceTab]);
 
   useEffect(() => {
     if (!isExpanded) return;
@@ -127,7 +136,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             width: absolute ? '280px' : '100%',
             position: absolute ? 'absolute' : 'relative',
             top: absolute ? 'calc(100% + 8px)' : undefined,
-            right: absolute ? 0 : undefined,
+            left: absolute ? 0 : undefined,
             background: 'rgba(15, 23, 42, 0.95)',
             border: '1px solid rgba(56, 189, 248, 0.45)',
             boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
@@ -170,164 +179,175 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             <ChevronUp size={15} style={{ opacity: 0.8, color: 'var(--accent-color)' }} />
           </button>
 
-          {/* Tabs */}
-          <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)' }}>
-            <button
-              onClick={() => setActiveTab('status')}
-              style={{ 
-                flex: 1, 
-                padding: '12px 0', 
-                background: activeTab === 'status' ? 'rgba(255,255,255,0.06)' : 'transparent', 
-                border: 'none', 
-                color: 'var(--text-color)', 
-                opacity: activeTab === 'status' ? 1 : 0.5, 
-                cursor: 'pointer', 
-                display: 'flex', 
-                justifyContent: 'center', 
-                gap: '8px', 
-                alignItems: 'center', 
-                fontSize: '13px', 
-                fontWeight: 600, 
-                transition: 'all 0.2s ease' 
-              }}
-            >
-              <Award size={15} /> {t('status', lang)}
-            </button>
-            <button
-              onClick={() => setActiveTab('time')}
-              style={{ 
-                flex: 1, 
-                padding: '12px 0', 
-                background: activeTab === 'time' ? 'rgba(255,255,255,0.06)' : 'transparent', 
-                border: 'none', 
-                color: 'var(--text-color)', 
-                opacity: activeTab === 'time' ? 1 : 0.5, 
-                cursor: 'pointer', 
-                display: 'flex', 
-                justifyContent: 'center', 
-                gap: '8px', 
-                alignItems: 'center', 
-                fontSize: '13px', 
-                fontWeight: 600, 
-                transition: 'all 0.2s ease' 
-              }}
-            >
-              <Clock size={15} /> {t('centuries', lang)}
-            </button>
-          </div>
-
-          {/* Checkboxes List */}
-          <div style={{ 
-            padding: '14px 20px', 
-            display: 'flex', 
-            flexDirection: 'column', 
-            gap: '12px', 
-            maxHeight: '320px', 
-            overflowY: 'auto' 
-          }}>
-            {/* Switched Buttons: Clear all on left, Select all on right */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
-              <button 
-                onClick={clearAll} 
+          {/* Tabs and Checkboxes Wrapper for tutorial highlight */}
+          <div id="filter-tabs-content-container" style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+            {/* Tabs */}
+            <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)' }}>
+              <button
+                onClick={() => setActiveTab('status')}
                 style={{ 
-                  background: 'none', 
+                  flex: 1, 
+                  padding: '12px 0', 
+                  background: activeTab === 'status' ? 'rgba(255,255,255,0.06)' : 'transparent', 
                   border: 'none', 
                   color: 'var(--text-color)', 
-                  opacity: 0.7, 
-                  fontSize: '12px', 
+                  opacity: activeTab === 'status' ? 1 : 0.5, 
                   cursor: 'pointer', 
-                  fontFamily: 'inherit',
-                  transition: 'opacity 0.2s'
-                }}
-                onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                onMouseOut={e => e.currentTarget.style.opacity = '0.7'}
-              >
-                {t('clearAll', lang)}
-              </button>
-              <button 
-                onClick={selectAll} 
-                style={{ 
-                  background: 'none', 
-                  border: 'none', 
-                  color: 'var(--accent-color)', 
-                  fontSize: '12px', 
-                  cursor: 'pointer', 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  gap: '8px', 
+                  alignItems: 'center', 
+                  fontSize: '13px', 
                   fontWeight: 600, 
-                  fontFamily: 'inherit',
-                  transition: 'filter 0.2s'
+                  transition: 'all 0.2s ease' 
                 }}
-                onMouseOver={e => e.currentTarget.style.filter = 'brightness(1.2)'}
-                onMouseOut={e => e.currentTarget.style.filter = 'none'}
               >
-                {t('selectAll', lang)}
+                <Award size={15} /> {t('status', lang)}
+              </button>
+              <button
+                onClick={() => setActiveTab('time')}
+                style={{ 
+                  flex: 1, 
+                  padding: '12px 0', 
+                  background: activeTab === 'time' ? 'rgba(255,255,255,0.06)' : 'transparent', 
+                  border: 'none', 
+                  color: 'var(--text-color)', 
+                  opacity: activeTab === 'time' ? 1 : 0.5, 
+                  cursor: 'pointer', 
+                  display: 'flex', 
+                  justifyContent: 'center', 
+                  gap: '8px', 
+                  alignItems: 'center', 
+                  fontSize: '13px', 
+                  fontWeight: 600, 
+                  transition: 'all 0.2s ease' 
+                }}
+              >
+                <Clock size={15} /> {t('centuries', lang)}
               </button>
             </div>
 
-            {activeTab === 'status' && FILTER_CATEGORIES.map(category => {
-              const isActive = activeFilters.includes(category);
-              const color = STATUS_COLORS[category] || '#94a3b8';
-              return (
-                <label 
-                  key={category} 
+            {/* Checkboxes List */}
+            <div style={{ 
+              padding: '14px 20px', 
+              display: 'flex', 
+              flexDirection: 'column', 
+              gap: '12px', 
+              maxHeight: '320px', 
+              overflowY: 'auto' 
+            }}>
+              {/* Switched Buttons: Clear all on left, Select all on right */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
+                <button 
+                  onClick={clearAll} 
                   style={{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: '10px', 
+                    background: 'none', 
+                    border: 'none', 
+                    color: 'var(--text-color)', 
+                    opacity: 0.7, 
+                    fontSize: '12px', 
                     cursor: 'pointer', 
-                    fontSize: '13px', 
-                    opacity: isActive ? 1 : 0.55, 
-                    transition: 'all 0.2s' 
+                    fontFamily: 'inherit',
+                    transition: 'opacity 0.2s'
                   }}
                   onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                  onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                  onMouseOut={e => e.currentTarget.style.opacity = '0.7'}
                 >
-                  <input
-                    type="checkbox"
-                    checked={isActive}
-                    onChange={() => toggleFilter(category)}
-                    style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
-                  />
-                  <span style={{ 
-                    width: '10px', 
-                    height: '10px', 
-                    borderRadius: '50%', 
-                    backgroundColor: color, 
-                    display: 'inline-block', 
-                    flexShrink: 0, 
-                    boxShadow: `0 0 6px ${color}` 
-                  }} />
-                  <span>{t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
-                </label>
-              );
-            })}
+                  {t('clearAll', lang)}
+                </button>
+                <button 
+                  onClick={selectAll} 
+                  style={{ 
+                    background: 'none', 
+                    border: 'none', 
+                    color: 'var(--accent-color)', 
+                    fontSize: '12px', 
+                    cursor: 'pointer', 
+                    fontWeight: 600, 
+                    fontFamily: 'inherit',
+                    transition: 'filter 0.2s'
+                  }}
+                  onMouseOver={e => e.currentTarget.style.filter = 'brightness(1.2)'}
+                  onMouseOut={e => e.currentTarget.style.filter = 'none'}
+                >
+                  {t('selectAll', lang)}
+                </button>
+              </div>
 
-            {activeTab === 'time' && CENTURY_FILTERS.map(century => {
-              const isActive = activeCenturies.includes(century.id);
-              return (
-                <label 
-                  key={century.id} 
-                  style={{ 
-                    display: 'flex', 
-                    alignItems: 'center', 
-                    gap: '10px', 
-                    cursor: 'pointer', 
-                    fontSize: '13px', 
-                    opacity: isActive ? 1 : 0.55, 
-                    transition: 'all 0.2s' 
-                  }}
-                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                  onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
-                >
-                  <input
-                    type="checkbox"
-                    checked={isActive}
-                    onChange={() => toggleCentury(century.id)}
-                    style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
-                  />
-                  <span>{t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
-                </label>
-              );
-            })}
+              {activeTab === 'status' && (
+                <div id="status-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%' }}>
+                  {FILTER_CATEGORIES.map(category => {
+                    const isActive = activeFilters.includes(category);
+                    const color = STATUS_COLORS[category] || '#94a3b8';
+                    return (
+                      <label 
+                        key={category} 
+                        style={{ 
+                          display: 'flex', 
+                          alignItems: 'center', 
+                          gap: '10px', 
+                          cursor: 'pointer', 
+                          fontSize: '13px', 
+                          opacity: isActive ? 1 : 0.55, 
+                          transition: 'all 0.2s' 
+                        }}
+                        onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                        onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={isActive}
+                          onChange={() => toggleFilter(category)}
+                          style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
+                        />
+                        <span style={{ 
+                          width: '10px', 
+                          height: '10px', 
+                          borderRadius: '50%', 
+                          backgroundColor: color, 
+                          display: 'inline-block', 
+                          flexShrink: 0, 
+                          boxShadow: `0 0 6px ${color}` 
+                        }} />
+                        <span>{t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              )}
+
+              {activeTab === 'time' && (
+                <div id="century-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%' }}>
+                  {CENTURY_FILTERS.map(century => {
+                    const isActive = activeCenturies.includes(century.id);
+                    return (
+                      <label 
+                        key={century.id} 
+                        style={{ 
+                          display: 'flex', 
+                          alignItems: 'center', 
+                          gap: '10px', 
+                          cursor: 'pointer', 
+                          fontSize: '13px', 
+                          opacity: isActive ? 1 : 0.55, 
+                          transition: 'all 0.2s' 
+                        }}
+                        onMouseOver={e => e.currentTarget.style.opacity = '1'}
+                        onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                      >
+                        <input
+                          type="checkbox"
+                          checked={isActive}
+                          onChange={() => toggleCentury(century.id)}
+                          style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
+                        />
+                        <span>{t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

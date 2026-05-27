@@ -59,7 +59,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
       justifyContent: 'center',
       padding: '20px'
     }}>
-      <div className="glass-panel glass-panel-rounded" style={{
+      <div id="directory-modal-container" className="glass-panel glass-panel-rounded" style={{
         width: '100%',
         maxWidth: '920px',
         height: '85vh',

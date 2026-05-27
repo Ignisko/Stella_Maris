@@ -88,6 +88,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
   const [ringProgress, setRingProgress] = useState(1);
   const [clusterPopup, setClusterPopup] = useState<{ lat: number; lng: number; items: Apparition[] } | null>(null);
+  const latestSelectedIdRef = useRef<string | null>(null);
 
   const ringConfig = useMemo(() => {
     switch (lodThreshold) {
@@ -140,6 +141,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
   useEffect(() => {
     if (selectedApparition && globeEl.current) {
+      latestSelectedIdRef.current = selectedApparition.id;
       setIsAutoRotate(false);
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = false;
@@ -187,6 +189,18 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       const duration = Math.min(3000, 1500 + spatialDist * 6 + altDist * 400);
       
       globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: targetAltitude }, duration);
+    } else if (!selectedApparition) {
+      latestSelectedIdRef.current = null;
+      if (globeEl.current && !isCinemaMode) {
+        const currentPov = globeEl.current.pointOfView();
+        if (currentPov && currentPov.altitude < 1.5) {
+          globeEl.current.pointOfView({ lat: currentPov.lat, lng: currentPov.lng, altitude: 2.2 }, 1500);
+        }
+        setIsAutoRotate(true);
+        if (globeEl.current.controls()) {
+          globeEl.current.controls().autoRotate = true;
+        }
+      }
     }
   }, [selectedApparition, isTimelineOpen, isCinemaMode, apparitions]);
 
@@ -725,7 +739,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 8)) && (
+      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 11)) && (
         <button
           id="auto-rotate-button"
           onClick={(e) => {
