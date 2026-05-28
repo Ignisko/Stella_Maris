@@ -81,21 +81,26 @@ function App() {
   });
   const [tutorialStep, setTutorialStep] = useState<number>(0);
 
-  const handleTutorialStepChange = (step: number) => {
-    setTutorialStep(step);
+  const handleTutorialStepChange = (newStep: number) => {
+    setTutorialStep(newStep);
+    
+    // If we advance to step 4 (Search & filters), ensure the apparition infobox is closed
+    if (newStep === 4) {
+      setSelectedApparition(null);
+    }
   };
 
   // Centralized synchronization of panels and modal visibility based on tutorial step
   useEffect(() => {
     if (!isTutorialActive) return;
 
-    if (tutorialStep === 5 || tutorialStep === 6) {
+    if (tutorialStep === 5) {
       setIsFiltersExpanded(true);
     } else {
       setIsFiltersExpanded(false);
     }
 
-    if (tutorialStep === 8) {
+    if (tutorialStep === 7) {
       setIsDirectoryOpen(true);
     } else {
       setIsDirectoryOpen(false);
@@ -500,7 +505,7 @@ function App() {
           </div>
 
           {/* Action Row: Filters and Browse Directory */}
-          <div style={{ display: 'flex', gap: '8px', pointerEvents: 'auto', width: '100%' }}>
+          <div id="action-row-container" style={{ display: 'flex', gap: '8px', pointerEvents: 'auto', width: '100%' }}>
             <FilterMenu 
               activeFilters={activeFilters} 
               onChange={setActiveFilters} 
@@ -509,7 +514,7 @@ function App() {
               lang={lang}
               isExpanded={isFiltersExpanded}
               onToggleExpanded={setIsFiltersExpanded}
-              forceTab={tutorialStep === 5 ? 'status' : (tutorialStep === 6 ? 'time' : undefined)}
+              forceTab={tutorialStep === 5 ? 'status' : undefined}
             />
 
             {!isFiltersExpanded && (
