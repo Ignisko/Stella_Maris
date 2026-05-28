@@ -101,7 +101,7 @@ function App() {
       setIsDirectoryOpen(false);
     }
 
-    if (tutorialStep === 3) {
+    if (tutorialStep === 3 || tutorialStep === 4) {
       const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
       if (guadalupe) {
         setSelectedApparition(guadalupe);
@@ -282,7 +282,7 @@ function App() {
   }, [isCinemaMode, currentSelectedApparition, filteredApparitions, isTutorialActive, translatedApparitionsData]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
-  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition;
+  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition && !(isTutorialActive && tutorialStep === 3);
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
