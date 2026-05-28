@@ -661,7 +661,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             const isTutorialTarget = isTutorialActive && tutorialStep === 3 && d.id === 'guadalupe_mexico';
             const tutorialPointerHtml = isTutorialTarget ? `
               <div class="tutorial-click-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="#38bdf8" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 22 13 13l4-7-13 4 5 5-3 9 7-2 3-5Z"/></svg>
+                <div style={{width: 0, height: 0, borderLeft: "12px solid transparent", borderRight: "12px solid transparent", borderTop: "16px solid var(--accent-color)", filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.5))"}}></div>
               </div>
             ` : '';
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { ArrowRight, ArrowLeft, Globe, Sliders, Calendar, Sparkles, HelpCircle } from 'lucide-react';
+import { ZoomIn, Info, ArrowRight, ArrowLeft, Globe, Sliders, Calendar, Sparkles, HelpCircle } from 'lucide-react';
 import type { Language } from '../utils/i18n';
 import { languageNames } from '../utils/i18n';
 
@@ -133,6 +133,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Explore the 3D globe",
       "Auto-rotate Earth",
       "Zoom",
+      "Click on apparition",
+      "Apparition details",
       "Search & filters",
       "Browse directory",
       "Apparitions list",
@@ -145,6 +147,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Eksploruj globus 3D",
       "Automatyczne obracanie Ziemi",
       "Zbliżenie",
+      "Kliknij na objawienie",
+      "Informacje o objawieniu",
       "Wyszukiwanie i filtry",
       "Przeglądaj katalog",
       "Katalog objawień",
@@ -157,11 +161,13 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Explore el globo 3D",
       "Rotación automática de la Tierra",
       "Zoom",
+      "Haga clic en la aparición",
+      "Detalles de la aparición",
       "Búsqueda y filtros",
       "Explorar directorio",
       "Directorio de apariciones",
       "Abrir línea de tiempo",
-      "Línea de tiempo y presentation",
+      "Línea de tiempo y presentación",
       "¡Gloria a Jesús!"
     ],
     pt: [
@@ -169,6 +175,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Explore o globo 3D",
       "Rotação automática da Terra",
       "Zoom",
+      "Clique na aparição",
+      "Detalhes da aparição",
       "Pesquisa e filtros",
       "Navegar no diretório",
       "Diretório de aparições",
@@ -181,6 +189,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Explorez le globe 3D",
       "Rotation automatique de la Terre",
       "Zoom",
+      "Cliquez sur l'apparition",
+      "Détails de l'apparition",
       "Recherche & filtres",
       "Parcourir le répertoire",
       "Répertoire des apparitions",
@@ -193,6 +203,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Esplora il globo 3D",
       "Rotazione automatica della Terra",
       "Zoom",
+      "Clicca sull'apparizione",
+      "Dettagli dell'apparizione",
       "Ricerca & filtri",
       "Sfoglia la directory",
       "Elenco delle apparizioni",
@@ -208,6 +220,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out.",
       "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
       "After selecting an apparition, the map zooms in to its location. Click the point to open more information.",
+      "Now that we are zoomed in, click on the marker to open detailed information about the apparition.",
+      "This sidebar contains the historical overview, the visionary's story, and details about the Church's approval.",
       "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
       "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
       "In the directory, you can quickly search and sort all recorded apparitions. Close the directory to continue.",
@@ -220,6 +234,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Kliknij lewym przyciskiem myszy i przeciągnij Ziemię, aby ją obrócić. Użyj myszy, aby przybliżyć lub oddalić.",
       "Włącz lub wyłącz automatyczne obracanie Ziemi za pomocą tego przycisku w lewym dolnym rogu.",
       "Po wybraniu objawienia mapa zbliża się do jego lokalizacji. Kliknij punkt, aby otworzyć więcej informacji.",
+      "Teraz, gdy przybliżyliśmy, kliknij znacznik, aby otworzyć szczegółowe informacje o objawieniu.",
+      "Ten panel boczny zawiera historyczny przegląd, historię wizjonera oraz szczegóły dotyczące zatwierdzenia przez Kościół.",
       "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, filtrować według statusu zatwierdzenia lub stulecia historycznego.",
       "Kliknij „Przeglądaj katalog”, aby otworzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
       "W katalogu możesz szybko przeszukiwać i sortować wszystkie zarejestrowane objawienia. Zamknij katalog, aby kontynuować.",
@@ -232,6 +248,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Haga clic izquierdo y arrastre la Tierra para rotarla. Use la rueda del mouse para acercar y alejar.",
       "Active o desactive la rotación automática de la Tierra usando este botón en la esquina inferior izquierda.",
       "Después de seleccionar una aparición, el mapa se acerca a su ubicación. Haga clic en el punto para abrir más información.",
+      "Ahora que nos hemos acercado, haga clic en el marcador para abrir información detallada sobre la aparición.",
+      "Esta barra lateral contiene el resumen histórico, la historia del vidente y detalles sobre la aprobación de la Iglesia.",
       "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación o por siglo histórico.",
       "Haga clic en 'Explorar directorio' para abrir una lista completa de todas las apariciones y explorarlas en detalle.",
       "En el directorio, puede buscar y ordenar rápidamente todas las apariciones registradas. Cierre el directorio para continuar.",
@@ -244,6 +262,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Clique com o botão esquerdo e arraste a Terra para girá-la. Use a roda do mouse para aproximar e afastar.",
       "Ative ou desactive a rotação automática da Terra usando este botão no canto inferior esquerdo.",
       "Depois de selecionar uma aparição, o mapa se aproxima de sua localização. Clique no ponto para abrir mais informações.",
+      "Agora que nos aproximamos, clique no marcador para abrir informações detalhadas sobre a aparição.",
+      "Esta barra lateral contém a visão geral histórica, a história do vidente e detalhes sobre a aprovação da Igreja.",
       "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação ou por século histórico.",
       "Clique em 'Navegar no diretório' to abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
       "No diretório, você pode pesquisar e ordenar rapidamente todas as aparições registradas. Feche o diretório para continuar.",
@@ -256,6 +276,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Faites un clic gauche et glissez la Terre pour la faire tourner. Faites défiler la molette de votre souris pour zoomer et dézoomer.",
       "Activez ou désactivez la rotation automatique de la Terre à l'aide de ce bouton dans le coin inférieur gauche.",
       "Après avoir sélectionné une apparition, la carte zoome sur son emplacement. Cliquez sur le point pour ouvrir plus d'informations.",
+      "Maintenant que nous avons zoomé, cliquez sur le marqueur pour ouvrir des informations détaillées.",
+      "Ce panneau latéral contient un aperçu historique, l'histoire du voyant et des détails sur l'approbation de l'Église.",
       "Utilisez le panneau de gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation ou par siècle historique.",
       "Cliquez sur 'Parcourir le répertoire' pour ouvrir la liste complète de toutes les apparitions et les explorer en détail.",
       "Dans le répertoire, vous pouvez rapidement rechercher et trier toutes les apparitions enregistrées. Fermez le répertoire pour continuer.",
@@ -268,6 +290,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Fai clic sinistro e trascina la Terra per ruotarla. Usa la rotellina del mouse per ingrandire e rimpicciolire.",
       "Attiva o disattiva la rotazione automatica della Terre usando questo postanel nell'angolo in basso a sinistra.",
       "Dopo aver selezionato un'apparizione, la mappa esegue lo zoom sulla sua posizione. Fare clic sul punto per aprire ulteriori informazioni.",
+      "Ora che abbiamo ingrandito, clicca sul marcatore per aprire informazioni dettagliate.",
+      "Questo pannello laterale contiene la panoramica storica, la storia del veggente e i dettagli sull'approvazione della Chiesa.",
       "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione o per secolo storico.",
       "Fai clic su 'Sfoglia la directory' per aprire un elenco completo di tutte le apparizioni ed esplorarle in dettaglio.",
       "Nell'elenco, puoi cercare e ordinare rapidamente tutte le apparizioni registrate. Chiudi l'elenco per continuare.",
@@ -284,7 +308,9 @@ const getStepsContent = (lang: Language): StepContent[] => {
       <HelpCircle size={40} color="var(--gold-accent)" />,
       <Globe size={40} color="var(--accent-color)" />,
       <Globe size={40} color="var(--accent-color)" />,
+      <ZoomIn size={40} color="var(--accent-color)" />,
       <Globe size={40} color="var(--accent-color)" />,
+      <Info size={40} color="var(--accent-color)" />,
       <Sliders size={40} color="var(--accent-color)" />,
       <Sliders size={40} color="var(--accent-color)" />,
       <Calendar size={40} color="var(--accent-color)" />,
@@ -336,20 +362,20 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       document.body.removeAttribute('data-tutorial-step');
     };
   }, [isOpen, step]);
-
   useEffect(() => {
     if (!isOpen) return;
 
     let animFrameId: number;
     const updateRect = () => {
       let selector = '';
-      if (step === 5) selector = '#search-filters-container';
-      else if (step === 6) selector = '#filter-tabs-content-container';
-      else if (step === 7) selector = '#browse-directory-button';
-      else if (step === 8) selector = '#directory-modal-container';
-      else if (step === 9) selector = '#timeline-closed-pill';
-      else if (step === 10) selector = '#timeline-play-presentation-button';
-      else if (step === 11) selector = '#auto-rotate-button';
+      if (step === 5) selector = '#apparition-sidebar';
+      else if (step === 7) selector = '#search-filters-container';
+      else if (step === 8) selector = '#filter-tabs-content-container';
+      else if (step === 9) selector = '#browse-directory-button';
+      else if (step === 10) selector = '#directory-modal-container';
+      else if (step === 11) selector = '#timeline-closed-pill';
+      else if (step === 12) selector = '#timeline-play-presentation-button';
+      else if (step === 13) selector = '#auto-rotate-button';
 
       if (selector) {
         const el = document.querySelector(selector);
@@ -390,7 +416,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
-    if (step === 0 || step === 12) {
+    if (step === 0 || step === 13) {
       return {
         left: '-100px',
         top: '-100px',
@@ -401,7 +427,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 4) {
+    if (step === 1 || step === 2 || step === 3 || step === 6) {
       return {
         left: '50vw',
         top: '50vh',
@@ -418,7 +444,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       const paddingL = 6;
       const paddingR = 6;
 
-      if (step === 5) {
+      if (step === 7) {
         paddingT = 2; // reduces the excessive top space to center the frame
         paddingB = 10; // shifts the highlight down slightly to center it evenly
       }
@@ -461,7 +487,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       pointerEvents: 'auto'
     };
 
-    if (step === 0 || step === 12) {
+    if (step === 0 || step === 13) {
       return {
         ...common,
         left: '50vw',
@@ -469,11 +495,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         width: '450px',
         maxWidth: '90vw',
-        textAlign: step === 12 ? 'center' : 'left',
-        alignItems: step === 12 ? 'center' : 'stretch'
+        textAlign: step === 13 ? 'center' : 'left',
+        alignItems: step === 13 ? 'center' : 'stretch'
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 4) {
+    if (step === 1 || step === 2 || step === 3 || step === 6) {
       return {
         ...common,
         left: '60px',
@@ -526,7 +552,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 9 || step === 10 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 11 || step === 12 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',

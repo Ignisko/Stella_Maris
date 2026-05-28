@@ -101,14 +101,14 @@ function App() {
       setIsFiltersExpanded(false);
     }
 
-    if (tutorialStep === 7) {
+    if (tutorialStep === 8) {
       setIsDirectoryOpen(true);
     } else {
       setIsDirectoryOpen(false);
     }
 
-    if (tutorialStep === 4 || tutorialStep === 5) {
-      if (tutorialStep === 5 && !selectedApparition) {
+    if (tutorialStep === 5 || tutorialStep === 6) {
+      if (tutorialStep === 6 && !selectedApparition) {
         const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
         if (guadalupe) {
           setSelectedApparition(guadalupe);
@@ -140,7 +140,7 @@ function App() {
       if (idx !== -1) {
         setPlaybackIndex(idx);
       }
-      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4)) {
+      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 5)) {
         setTutorialStep(5);
       }
     }
@@ -680,7 +680,7 @@ function App() {
         isOpen={isDirectoryOpen}
         onClose={() => {
           setIsDirectoryOpen(false);
-          if (isTutorialActive && tutorialStep === 7) {
+          if (isTutorialActive && tutorialStep === 8) {
             setTutorialStep(8);
           }
         }}
@@ -693,7 +693,7 @@ function App() {
         onChangeCenturies={setActiveCenturies}
       />
 
-      <div style={{ pointerEvents: isTutorialActive && (tutorialStep === 2 || tutorialStep === 3) ? 'none' : 'auto', width: '100%', height: '100%' }}>
+      <div style={{ pointerEvents: isTutorialActive && (tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 5) ? 'none' : 'auto', width: '100%', height: '100%' }}>
           <GlobeViewer 
         apparitions={displayedApparitions} 
         selectedApparition={currentSelectedApparition}
@@ -720,7 +720,7 @@ function App() {
           isVisible={isSidebarVisible}
           onClose={() => {
             setSelectedApparition(null);
-            if (isTutorialActive && tutorialStep === 5) {
+            if (isTutorialActive && tutorialStep === 6) {
               setTutorialStep(6);
             }
           }} 
@@ -732,7 +732,7 @@ function App() {
         />
       )}
 
-      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 8 && tutorialStep <= 10)) && (
+      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 9 && tutorialStep <= 11)) && (
         <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
@@ -743,9 +743,9 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 8) {
+            if (open && isTutorialActive && tutorialStep === 9) {
               setTutorialStep(9);
-            } else if (!open && isTutorialActive && tutorialStep === 9) {
+            } else if (!open && isTutorialActive && tutorialStep === 10) {
               setTutorialStep(10);
             }
           }}
