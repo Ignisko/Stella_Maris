@@ -507,7 +507,12 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
 
     if (elementRect) {
       switch (step) {
-        case 5:
+        case 5:   // sidebar is on RIGHT, left side is empty → place card top-left
+          return {
+            ...common,
+            left: '20px',
+            top: '80px',
+          };
         case 6:
         case 7:
           return {
@@ -555,9 +560,16 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     };
 
     switch (step) {
-      case 5:
+      case 5:   // card is on LEFT, sidebar is on RIGHT → arrow points RIGHT
+        return {
+          ...base,
+          top: '30px',
+          right: '-10px',
+          borderWidth: '10px 0 10px 10px',
+          borderColor: 'transparent transparent transparent rgba(15, 23, 42, 0.96)',
+        };
       case 6:
-      case 7:
+      case 7:   // card is to RIGHT of element → arrow points LEFT
         return {
           ...base,
           top: '30px',

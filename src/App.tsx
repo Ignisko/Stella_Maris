@@ -465,9 +465,10 @@ function App() {
         display: 'flex',
         flexDirection: 'column',
         gap: isTimelineOpen ? '0px' : '10px',
-        pointerEvents: 'none',
+        pointerEvents: isTutorialActive && tutorialStep < 6 ? 'none' : 'none',
+        opacity: isTutorialActive && tutorialStep < 6 ? 0.35 : 1,
         transform: (hasPopups || isCinemaMode) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
-        transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), gap 0.4s cubic-bezier(0.4, 0, 0.2, 1)'
+        transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), gap 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease'
       }}>
         {/* Title Card */}
         <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
