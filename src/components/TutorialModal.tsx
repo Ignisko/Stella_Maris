@@ -427,7 +427,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 6) {
+    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 6) {
       return {
         left: '50vw',
         top: '50vh',
@@ -499,7 +499,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         alignItems: step === 13 ? 'center' : 'stretch'
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 6) {
+    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 6) {
       return {
         ...common,
         left: '60px',

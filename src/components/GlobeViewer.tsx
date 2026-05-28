@@ -747,7 +747,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 9)) && (
+      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 2 || tutorialStep === 9)) && (
         <button
           id="auto-rotate-button"
           onClick={(e) => {
@@ -775,7 +775,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             gap: '10px',
             color: 'var(--text-color)',
             cursor: 'pointer',
-            boxShadow: isTutorialActive && (tutorialStep === 2 || tutorialStep === 3) ? '0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.8)' : '0 4px 12px rgba(0,0,0,0.4)',
+            boxShadow: isTutorialActive && tutorialStep === 2 ? '0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.8)' : '0 4px 12px rgba(0,0,0,0.4)',
             transition: 'all 0.2s ease'
           }}
           onMouseOver={(e) => {
