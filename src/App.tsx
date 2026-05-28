@@ -756,13 +756,16 @@ function App() {
       )}
 
       {/* Tutorial click-blocker: transparent overlay blocks all clicks on background UI.
-          Only tutorial modal (z:130) and auto-rotate button (z:200) are above this.
+          At steps 0-8 and 10-11: zIndex 120 (above most UI, below tutorial modal 130).
+          At step 9 specifically: zIndex 165 to also block the timeline pill (zIndex 160).
+          Tutorial modal zIndex is 130 — we need it above even the step-9 blocker,
+          so the tutorial card style uses zIndex 170 at step 9 (see TutorialModal cardStyle).
           Disabled at steps 1 (user rotates globe) and 4 (user clicks marker). */}
       {isTutorialActive && tutorialStep !== 1 && tutorialStep !== 4 && (
         <div style={{
           position: 'fixed',
           inset: 0,
-          zIndex: 120,
+          zIndex: tutorialStep === 9 ? 165 : 120,
           pointerEvents: 'all',
           background: 'transparent',
           cursor: 'default'

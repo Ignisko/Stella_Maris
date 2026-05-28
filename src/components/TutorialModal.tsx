@@ -338,10 +338,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
 }) => {
   const [elementRect, setElementRect] = useState<DOMRect | null>(null);
 
-  // Manage timeline open/close dynamically depending on tutorial step
+  // Step 9: timeline stays CLOSED so #timeline-closed-pill is visible for the highlight
+  // Step 10: timeline auto-opens so #timeline-play-presentation-button is visible
   useEffect(() => {
     if (!isOpen) return;
-    if (step === 9) {
+    if (step === 10) {
       setIsTimelineOpen(true);
     } else {
       setIsTimelineOpen(false);
@@ -470,7 +471,9 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const cardStyle = useMemo((): React.CSSProperties => {
     const common: React.CSSProperties = {
       position: 'fixed',
-      zIndex: 130,
+      // At step 9, the blocker overlay is at zIndex 165 (to block the timeline pill at 160).
+      // Raise the card to 170 so it's still visible above the blocker.
+      zIndex: step === 9 ? 170 : 130,
       width: '360px',
       backgroundColor: 'rgba(15, 23, 42, 0.96)',
       backdropFilter: 'blur(20px)',
