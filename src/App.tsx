@@ -706,13 +706,6 @@ function App() {
         isTutorialActive={isTutorialActive}
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
-        onAdvanceTutorialStep={() => {
-          if (isTutorialActive && tutorialStep === 2) {
-            setTutorialStep(3);
-          } else if (isTutorialActive && tutorialStep === 3) {
-            setTutorialStep(4);
-          }
-        }}
       />
         </div>
       

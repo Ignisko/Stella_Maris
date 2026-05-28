@@ -19,7 +19,6 @@ interface GlobeViewerProps {
   isTutorialActive?: boolean;
   tutorialStep?: number;
   isCinemaMode?: boolean;
-  onAdvanceTutorialStep?: () => void;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -74,8 +73,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   hidePlayPause = false,
   isTutorialActive = false,
   tutorialStep = 0,
-  isCinemaMode = false,
-  onAdvanceTutorialStep
+  isCinemaMode = false
 }) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
@@ -753,9 +751,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           onClick={(e) => {
             e.stopPropagation();
             setIsAutoRotate(prev => !prev);
-            if (onAdvanceTutorialStep) {
-              onAdvanceTutorialStep();
-            }
           }}
           style={{
             position: 'fixed',
