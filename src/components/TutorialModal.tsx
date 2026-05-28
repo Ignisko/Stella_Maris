@@ -134,7 +134,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Auto-rotate Earth",
       "Zoom",
       "Search & filters",
-      "Status filters",
       "Browse directory",
       "Apparitions list",
       "Open timeline",
@@ -147,7 +146,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Automatyczne obracanie Ziemi",
       "Zbliżenie",
       "Wyszukiwanie i filtry",
-      "Filtry statusu",
       "Przeglądaj katalog",
       "Katalog objawień",
       "Otwórz oś czasu",
@@ -160,7 +158,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Rotación automática de la Tierra",
       "Zoom",
       "Búsqueda y filtros",
-      "Filtros de estado",
       "Explorar directorio",
       "Directorio de apariciones",
       "Abrir línea de tiempo",
@@ -173,7 +170,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Rotação automática da Terra",
       "Zoom",
       "Pesquisa e filtros",
-      "Filtros de status",
       "Navegar no diretório",
       "Diretório de aparições",
       "Abrir linha do tempo",
@@ -186,7 +182,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Rotation automatique de la Terre",
       "Zoom",
       "Recherche & filtres",
-      "Filtres de statut",
       "Parcourir le répertoire",
       "Répertoire des apparitions",
       "Ouvrir la frise chronologique",
@@ -199,7 +194,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Rotazione automatica della Terra",
       "Zoom",
       "Ricerca & filtri",
-      "Filtri di stato",
       "Sfoglia la directory",
       "Elenco delle apparizioni",
       "Apri la cronologia",
@@ -215,7 +209,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
       "After selecting an apparition, the map zooms in to its location. Click the point to open more information.",
       "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
-      "Filter apparitions by their Church approval status (e.g., Vatican approved or local bishop approved).",
       "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
       "In the directory, you can quickly search and sort all recorded apparitions. Close the directory to continue.",
       "Click the timeline toggle button in the bottom right corner to show the chronological event timeline.",
@@ -228,7 +221,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Włącz lub wyłącz automatyczne obracanie Ziemi za pomocą tego przycisku w lewym dolnym rogu.",
       "Po wybraniu objawienia mapa zbliża się do jego lokalizacji. Kliknij punkt, aby otworzyć więcej informacji.",
       "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, filtrować według statusu zatwierdzenia lub stulecia historycznego.",
-      "Filtruj objawienia według ich statusu zatwierdzenia przez Kościół (np. zatwierdzone przez Watykan lub lokalnego biskupa).",
       "Kliknij „Przeglądaj katalog”, aby otworzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
       "W katalogu możesz szybko przeszukiwać i sortować wszystkie zarejestrowane objawienia. Zamknij katalog, aby kontynuować.",
       "Kliknij przycisk osi czasu w prawym dolnym rogu, aby wyświetlić chronologiczną linię wydarzeń.",
@@ -241,7 +233,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Active o desactive la rotación automática de la Tierra usando este botón en la esquina inferior izquierda.",
       "Después de seleccionar una aparición, el mapa se acerca a su ubicación. Haga clic en el punto para abrir más información.",
       "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación o por siglo histórico.",
-      "Filtre las apariciones por su estado de aprobación por la Iglesia (por ejemplo, aprobadas por el Vaticano o por el obispo local).",
       "Haga clic en 'Explorar directorio' para abrir una lista completa de todas las apariciones y explorarlas en detalle.",
       "En el directorio, puede buscar y ordenar rápidamente todas las apariciones registradas. Cierre el directorio para continuar.",
       "Haga clic en el botón de la línea de tiempo en la esquina inferior derecha para abrir la vista cronológica.",
@@ -254,7 +245,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Ative ou desactive a rotação automática da Terra usando este botão no canto inferior esquerdo.",
       "Depois de selecionar uma aparição, o mapa se aproxima de sua localização. Clique no ponto para abrir mais informações.",
       "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação ou por século histórico.",
-      "Filtre as aparições por seu status de aprovação pela Igreja (por exemplo, aprovadas pelo Vaticano ou pelo bispo local).",
       "Clique em 'Navegar no diretório' to abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
       "No diretório, você pode pesquisar e ordenar rapidamente todas as aparições registradas. Feche o diretório para continuar.",
       "Clique no botão da linha do tempo no canto inferior direito para abrir la visualização cronológica.",
@@ -267,7 +257,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Activez ou désactivez la rotation automatique de la Terre à l'aide de ce bouton dans le coin inférieur gauche.",
       "Après avoir sélectionné une apparition, la carte zoome sur son emplacement. Cliquez sur le point pour ouvrir plus d'informations.",
       "Utilisez le panneau de gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation ou par siècle historique.",
-      "Filtrez les apparitions selon leur statut d'approbation par l'Église (ex. approuvées par le Vatican ou par l'évêque local).",
       "Cliquez sur 'Parcourir le répertoire' pour ouvrir la liste complète de toutes les apparitions et les explorer en détail.",
       "Dans le répertoire, vous pouvez rapidement rechercher et trier toutes les apparitions enregistrées. Fermez le répertoire pour continuer.",
       "Cliquez sur le bouton de la frise chronologique en bas à droite pour l'afficher.",
@@ -280,7 +269,6 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Attiva o disattiva la rotazione automatica della Terre usando questo postanel nell'angolo in basso a sinistra.",
       "Dopo aver selezionato un'apparizione, la mappa esegue lo zoom sulla sua posizione. Fare clic sul punto per aprire ulteriori informazioni.",
       "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione o per secolo storico.",
-      "Filtra le apparizioni in base al loro stato de approvazione da parte della Chiesa (es. approvate dal Vaticano o dal vescovo locale).",
       "Fai clic su 'Sfoglia la directory' per aprire un elenco completo di tutte le apparizioni ed esplorarle in dettaglio.",
       "Nell'elenco, puoi cercare e ordinare rapidamente tutte le apparizioni registrate. Chiudi l'elenco per continuare.",
       "Fai clic sul pulsante della cronologia nell'angolo in basso a destra per aprirla.",
@@ -293,18 +281,17 @@ const getStepsContent = (lang: Language): StepContent[] => {
   const selectedDescs = descriptions[lang] || descriptions['en'];
 
   const icons = [
-    <HelpCircle size={40} color="var(--gold-accent)" />,
-    <Globe size={40} color="var(--accent-color)" />,
-    <Globe size={40} color="var(--accent-color)" />,
-    <Globe size={40} color="var(--accent-color)" />,
-    <Sliders size={40} color="var(--accent-color)" />,
-    <Sliders size={40} color="var(--accent-color)" />,
-    <Sliders size={40} color="var(--accent-color)" />,
-    <Calendar size={40} color="var(--accent-color)" />,
-    <Calendar size={40} color="var(--accent-color)" />,
-    <Globe size={40} color="var(--accent-color)" />,
-    <Sparkles size={40} color="var(--gold-accent)" />
-  ];
+      <HelpCircle size={40} color="var(--gold-accent)" />,
+      <Globe size={40} color="var(--accent-color)" />,
+      <Globe size={40} color="var(--accent-color)" />,
+      <Globe size={40} color="var(--accent-color)" />,
+      <Sliders size={40} color="var(--accent-color)" />,
+      <Sliders size={40} color="var(--accent-color)" />,
+      <Calendar size={40} color="var(--accent-color)" />,
+      <Calendar size={40} color="var(--accent-color)" />,
+      <Globe size={40} color="var(--accent-color)" />,
+      <Sparkles size={40} color="var(--gold-accent)" />
+    ];
 
   return selectedTitles.map((title, i) => ({
     title,
@@ -539,7 +526,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 3 || step === 9 || step === 10 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 3 || step === 8 || step === 9 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',

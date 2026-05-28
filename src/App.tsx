@@ -94,13 +94,14 @@ function App() {
   useEffect(() => {
     if (!isTutorialActive) return;
 
-    if (tutorialStep === 5) {
+    // Filters no longer forced open by a step
+    if (false) {
       setIsFiltersExpanded(true);
     } else {
       setIsFiltersExpanded(false);
     }
 
-    if (tutorialStep === 7) {
+    if (tutorialStep === 6) {
       setIsDirectoryOpen(true);
     } else {
       setIsDirectoryOpen(false);
@@ -514,7 +515,7 @@ function App() {
               lang={lang}
               isExpanded={isFiltersExpanded}
               onToggleExpanded={setIsFiltersExpanded}
-              forceTab={tutorialStep === 5 ? 'status' : undefined}
+              forceTab={undefined}
             />
 
             {!isFiltersExpanded && (
