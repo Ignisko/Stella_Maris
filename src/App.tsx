@@ -319,7 +319,8 @@ function App() {
                 <button
                   onClick={() => setPlaybackSpeedMultiplier(prev => Math.max(0.5, prev / 2))}
                   title="Slow Down"
-                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: playbackSpeedMultiplier > 0.5 ? 0.8 : 0.3, padding: '6px', transition: 'opacity 0.2s' }}
+                  style={{ background: 'transparent', border: 'none', color: '#fff',
+          boxShadow: isTutorialActive && tutorialStep === 2 ? '0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.8)' : undefined, cursor: 'pointer', opacity: playbackSpeedMultiplier > 0.5 ? 0.8 : 0.3, padding: '6px', transition: 'opacity 0.2s' }}
                   disabled={playbackSpeedMultiplier <= 0.5}
                 >
                   <Rewind size={22} />
@@ -691,7 +692,8 @@ function App() {
         onChangeCenturies={setActiveCenturies}
       />
 
-      <GlobeViewer 
+      <div style={{ pointerEvents: isTutorialActive && tutorialStep === 2 ? 'none' : 'auto', width: '100%', height: '100%' }}>
+          <GlobeViewer 
         apparitions={displayedApparitions} 
         selectedApparition={currentSelectedApparition}
         onSelectApparition={handleSelectApparition} 
@@ -707,6 +709,7 @@ function App() {
           }
         }}
       />
+        </div>
       
       {currentSelectedApparition && (
         <Sidebar 
