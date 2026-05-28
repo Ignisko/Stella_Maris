@@ -369,13 +369,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     const updateRect = () => {
       let selector = '';
       if (step === 5) selector = '#apparition-sidebar';
-      else if (step === 7) selector = '#search-filters-container';
-      else if (step === 8) selector = '#filter-tabs-content-container';
-      else if (step === 9) selector = '#browse-directory-button';
-      else if (step === 10) selector = '#directory-modal-container';
-      else if (step === 11) selector = '#timeline-closed-pill';
-      else if (step === 12) selector = '#timeline-play-presentation-button';
-      else if (step === 13) selector = '#auto-rotate-button';
+      else if (step === 6) selector = '#search-filters-container';
+      else if (step === 7) selector = '#browse-directory-button';
+      else if (step === 8) selector = '#directory-modal-container';
+      else if (step === 9) selector = '#timeline-closed-pill';
+      else if (step === 10) selector = '#timeline-play-presentation-button';
 
       if (selector) {
         const el = document.querySelector(selector);
@@ -416,7 +414,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
-    if (step === 0 || step === 13) {
+    if (step === 0 || step === 11) {
       return {
         left: '-100px',
         top: '-100px',
@@ -427,7 +425,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 6) {
+    if (step === 1 || step === 2 || step === 3 || step === 4) {
       return {
         left: '50vw',
         top: '50vh',
@@ -487,7 +485,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       pointerEvents: 'auto'
     };
 
-    if (step === 0 || step === 13) {
+    if (step === 0 || step === 11) {
       return {
         ...common,
         left: '50vw',
@@ -495,11 +493,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         width: '450px',
         maxWidth: '90vw',
-        textAlign: step === 13 ? 'center' : 'left',
-        alignItems: step === 13 ? 'center' : 'stretch'
+        textAlign: step === 11 ? 'center' : 'left',
+        alignItems: step === 11 ? 'center' : 'stretch'
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 6) {
+    if (step === 1 || step === 2 || step === 3 || step === 4) {
       return {
         ...common,
         left: '60px',
@@ -539,12 +537,6 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
             transform: 'translateX(-50%)',
             width: '420px',
           };
-        case 11:
-          return {
-            ...common,
-            left: `${elementRect.right + 20}px`,
-            bottom: '30px',
-          };
       }
     }
 
@@ -552,7 +544,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 12 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 4 || step === 11 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',

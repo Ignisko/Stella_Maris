@@ -107,8 +107,9 @@ function App() {
       setIsDirectoryOpen(false);
     }
 
-    if (tutorialStep === 5 || tutorialStep === 6) {
-      if (tutorialStep === 6 && !selectedApparition) {
+    if (tutorialStep === 5) {
+      // Step 5 = "Apparition details" — always ensure Guadalupe sidebar is open
+      if (!selectedApparition) {
         const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
         if (guadalupe) {
           setSelectedApparition(guadalupe);
@@ -720,8 +721,8 @@ function App() {
           isVisible={isSidebarVisible}
           onClose={() => {
             setSelectedApparition(null);
-            if (isTutorialActive && tutorialStep === 6) {
-              setTutorialStep(6);
+            if (isTutorialActive && tutorialStep === 5) {
+              setTutorialStep(6); // Advance: "Apparition details" → "Search & filters"
             }
           }} 
           allActiveApparitions={filteredApparitions}
