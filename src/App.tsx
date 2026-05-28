@@ -140,7 +140,7 @@ function App() {
       if (idx !== -1) {
         setPlaybackIndex(idx);
       }
-      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 5)) {
+      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4 || tutorialStep === 5)) {
         setTutorialStep(5);
       }
     }
