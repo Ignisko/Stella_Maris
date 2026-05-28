@@ -552,7 +552,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 11 || step === 12 || !elementRect) return null;
+    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 12 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
@@ -658,7 +658,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         {/* Header without Close X */}
         <div style={{ 
           display: 'flex', 
-          justifyContent: step === 9 ? 'center' : 'flex-start', 
+          justifyContent: step === 11 ? 'center' : 'flex-start', 
           alignItems: 'center', 
           gap: '12px',
           width: '100%',
@@ -666,11 +666,12 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         }}>
           <div style={{ 
             display: 'flex', 
-            flexDirection: step === 9 ? 'column' : 'row', 
+            flexDirection: step === 11 ? 'column' : 'row', 
             alignItems: 'center', 
             gap: '12px', 
             width: '100%',
-            justifyContent: step === 9 ? 'center' : 'flex-start'
+            justifyContent: step === 11 ? 'center' : 'flex-start',
+            paddingRight: step < steps.length - 1 ? '55px' : '0px'
           }}>
             {currentStepData.icon}
             <h2 style={{ 
@@ -678,7 +679,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
               fontWeight: 700, 
               margin: 0, 
               color: 'var(--text-color)',
-              textAlign: step === 9 ? 'center' : 'left'
+              textAlign: step === 11 ? 'center' : 'left'
             }}>
               {currentStepData.title}
             </h2>
@@ -709,7 +710,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           opacity: 0.85, 
           margin: 0, 
           color: 'var(--text-color)',
-          textAlign: step === 8 ? 'center' : 'left'
+          textAlign: step === 10 || step === 11 ? 'center' : 'left'
         }}>
           {currentStepData.description}
         </p>
