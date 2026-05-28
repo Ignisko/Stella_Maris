@@ -207,13 +207,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   // Focus camera on Mexico (Guadalupe) during Step 2 of Onboarding Guide, and reset when closed or started
   const prevTutorialActiveRef = useRef(isTutorialActive);
   useEffect(() => {
-    if (isTutorialActive && (tutorialStep === 2 || tutorialStep === 3) && globeEl.current) {
-      setIsAutoRotate(false);
+    if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3) && globeEl.current) {
+      setIsAutoRotate(tutorialStep === 1);
       if (globeEl.current.controls()) {
-        globeEl.current.controls().autoRotate = false;
+        globeEl.current.controls().autoRotate = (tutorialStep === 1);
       }
-      globeEl.current.pointOfView({ lat: 19.484, lng: -99.117, altitude: 0.35 }, 2000);
-    } else if (isTutorialActive && (tutorialStep === 0 || tutorialStep === 1) && globeEl.current) {
+      globeEl.current.pointOfView({ lat: 15, lng: -90, altitude: 2.2 }, 1200);
+    } else if (isTutorialActive && tutorialStep === 0 && globeEl.current) {
       setIsAutoRotate(true);
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = true;
@@ -747,7 +747,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       </div>
 
       {/* Play/Pause Control Button - fixed so zoom/pan never moves it off-screen */}
-      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 2 || tutorialStep === 9)) && (
+      {(!hidePlayPause && (!isTutorialActive || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 9)) && (
         <button
           id="auto-rotate-button"
           onClick={(e) => {
@@ -775,7 +775,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             gap: '10px',
             color: 'var(--text-color)',
             cursor: 'pointer',
-            boxShadow: isTutorialActive && tutorialStep === 2 ? '0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.8)' : '0 4px 12px rgba(0,0,0,0.4)',
+            boxShadow: isTutorialActive && (tutorialStep === 2 || tutorialStep === 3) ? '0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.8)' : '0 4px 12px rgba(0,0,0,0.4)',
             transition: 'all 0.2s ease'
           }}
           onMouseOver={(e) => {

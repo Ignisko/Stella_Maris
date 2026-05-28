@@ -401,7 +401,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 3) {
+    if (step === 1 || step === 2 || step === 3) {
       return {
         left: '50vw',
         top: '50vh',
@@ -473,7 +473,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         alignItems: step === 11 ? 'center' : 'stretch'
       };
     }
-    if (step === 1 || step === 3) {
+    if (step === 1 || step === 2 || step === 3) {
       return {
         ...common,
         left: '60px',
@@ -526,7 +526,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 3 || step === 8 || step === 9 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 8 || step === 9 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
