@@ -681,6 +681,23 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
               {currentStepData.title}
             </h2>
           </div>
+          {step > 0 && step < steps.length - 1 && (
+            <div style={{
+              position: 'absolute',
+              right: 0,
+              top: 0,
+              fontSize: '12px',
+              fontWeight: 700,
+              color: 'rgba(255, 255, 255, 0.45)',
+              background: 'rgba(255, 255, 255, 0.05)',
+              padding: '4px 10px',
+              borderRadius: '12px',
+              letterSpacing: '0.5px',
+              border: '1px solid rgba(255, 255, 255, 0.05)'
+            }}>
+              {step}/{steps.length - 2}
+            </div>
+          )}
         </div>
 
         {/* Content text */}
