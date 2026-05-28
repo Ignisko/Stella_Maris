@@ -101,16 +101,18 @@ function App() {
       setIsFiltersExpanded(false);
     }
 
-    if (tutorialStep === 6) {
+    if (tutorialStep === 7) {
       setIsDirectoryOpen(true);
     } else {
       setIsDirectoryOpen(false);
     }
 
-    if (tutorialStep === 3 || tutorialStep === 4) {
-      const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
-      if (guadalupe) {
-        setSelectedApparition(guadalupe);
+    if (tutorialStep === 4 || tutorialStep === 5) {
+      if (tutorialStep === 5 && !selectedApparition) {
+        const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
+        if (guadalupe) {
+          setSelectedApparition(guadalupe);
+        }
       }
     } else {
       setSelectedApparition(null);
@@ -138,8 +140,8 @@ function App() {
       if (idx !== -1) {
         setPlaybackIndex(idx);
       }
-      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2)) {
-        setTutorialStep(3);
+      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4)) {
+        setTutorialStep(5);
       }
     }
     if (!isCinemaMode && isPlayingTimeline) {
@@ -288,7 +290,7 @@ function App() {
   }, [isCinemaMode, currentSelectedApparition, filteredApparitions, isTutorialActive, translatedApparitionsData]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
-  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition && !(isTutorialActive && tutorialStep === 3);
+  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition && !(isTutorialActive && (tutorialStep === 3 || tutorialStep === 4));
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -678,8 +680,8 @@ function App() {
         isOpen={isDirectoryOpen}
         onClose={() => {
           setIsDirectoryOpen(false);
-          if (isTutorialActive && tutorialStep === 8) {
-            setTutorialStep(9);
+          if (isTutorialActive && tutorialStep === 7) {
+            setTutorialStep(8);
           }
         }}
         apparitions={filteredApparitions}
@@ -691,7 +693,7 @@ function App() {
         onChangeCenturies={setActiveCenturies}
       />
 
-      <div style={{ pointerEvents: isTutorialActive && tutorialStep === 2 ? 'none' : 'auto', width: '100%', height: '100%' }}>
+      <div style={{ pointerEvents: isTutorialActive && (tutorialStep === 2 || tutorialStep === 3) ? 'none' : 'auto', width: '100%', height: '100%' }}>
           <GlobeViewer 
         apparitions={displayedApparitions} 
         selectedApparition={currentSelectedApparition}
@@ -705,6 +707,8 @@ function App() {
         onAdvanceTutorialStep={() => {
           if (isTutorialActive && tutorialStep === 2) {
             setTutorialStep(3);
+          } else if (isTutorialActive && tutorialStep === 3) {
+            setTutorialStep(4);
           }
         }}
       />
@@ -716,8 +720,8 @@ function App() {
           isVisible={isSidebarVisible}
           onClose={() => {
             setSelectedApparition(null);
-            if (isTutorialActive && tutorialStep === 4) {
-              setTutorialStep(5);
+            if (isTutorialActive && tutorialStep === 5) {
+              setTutorialStep(6);
             }
           }} 
           allActiveApparitions={filteredApparitions}
@@ -728,7 +732,7 @@ function App() {
         />
       )}
 
-      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 9 && tutorialStep <= 10)) && (
+      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 8 && tutorialStep <= 10)) && (
         <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
@@ -739,10 +743,10 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 9) {
+            if (open && isTutorialActive && tutorialStep === 8) {
+              setTutorialStep(9);
+            } else if (!open && isTutorialActive && tutorialStep === 9) {
               setTutorialStep(10);
-            } else if (!open && isTutorialActive && tutorialStep === 10) {
-              setTutorialStep(11);
             }
           }}
           lang={lang}
