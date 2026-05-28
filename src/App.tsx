@@ -295,7 +295,7 @@ function App() {
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-      {(isCinemaMode || (hasPopups && !isCinemaMode)) && (
+      {!isTutorialActive && (isCinemaMode || (hasPopups && !isCinemaMode)) && (
         <div 
           className="glass-panel glass-panel-rounded animate-fade-in" 
           style={{
@@ -603,7 +603,7 @@ function App() {
       </div>
 
       {/* Help / Onboarding Tutorial Button */}
-      {!isCinemaMode && !isSidebarOpen && (
+      {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
         <button
           onClick={() => {
             setIsTutorialActive(true);
@@ -649,7 +649,7 @@ function App() {
       )}
 
       {/* Top Right Language Switcher */}
-      {!isSidebarOpen && !isCinemaMode && (
+      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
         <LanguagePicker 
           currentLang={lang} 
           onLanguageChange={setLang} 
@@ -695,7 +695,7 @@ function App() {
         onChangeCenturies={setActiveCenturies}
       />
 
-      <div style={{ pointerEvents: isTutorialActive && (tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 5) ? 'none' : 'auto', width: '100%', height: '100%' }}>
+      <div style={{ pointerEvents: isTutorialActive && tutorialStep !== 1 && tutorialStep !== 4 ? 'none' : 'auto', width: '100%', height: '100%' }}>
           <GlobeViewer 
         apparitions={displayedApparitions} 
         selectedApparition={currentSelectedApparition}
@@ -753,6 +753,20 @@ function App() {
           }}
           lang={lang}
         />
+      )}
+
+      {/* Tutorial click-blocker: transparent overlay blocks all clicks on background UI.
+          Only tutorial modal (z:130) and auto-rotate button (z:200) are above this.
+          Disabled at steps 1 (user rotates globe) and 4 (user clicks marker). */}
+      {isTutorialActive && tutorialStep !== 1 && tutorialStep !== 4 && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 120,
+          pointerEvents: 'all',
+          background: 'transparent',
+          cursor: 'default'
+        }} />
       )}
 
       <TutorialModal
