@@ -126,12 +126,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       } else if (url.includes('youtube.com') || url.includes('youtu.be')) {
         label = (url.includes('ESNa1vdHcYY') || url.includes('GENH9mWlvb4') || url.includes('/live')) ? t('liveStream', lang) : 'Video';
       } else {
-        try {
-          const parsed = new URL(url);
-          label = parsed.hostname.replace('www.', '');
-        } catch {
-          // ignore
-        }
+        label = t('viewSource', lang);
       }
       return { url, label };
     });
