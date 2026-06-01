@@ -932,6 +932,27 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           </div>
         )}
 
+        {step === 0 && config.projectId === 'eucharist' && (
+          <div style={{ marginTop: '14px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--gold-accent)' }}>
+              {currentLang === 'pl' ? 'Wprowadzenie wideo (Cuda Eucharystyczne):' : 'Video Introduction (Eucharistic Miracles):'}
+            </span>
+            <iframe
+              width="100%"
+              height="225"
+              src="https://www.youtube.com/embed/wKJWrXGOqoc"
+              title="Eucharistic Miracles Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{
+                borderRadius: '12px',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.5)'
+              }}
+            />
+          </div>
+        )}
+
         {/* Footer Navigation */}
         <div style={{ 
           display: 'flex', 
