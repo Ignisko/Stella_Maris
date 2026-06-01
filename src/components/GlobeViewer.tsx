@@ -45,7 +45,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
-  const [isAutoRotate, setIsAutoRotate] = useState(true);
+  const [isAutoRotate, setIsAutoRotate] = useState(false);
   const [lodThreshold, setLodThreshold] = useState<number>(6);
   const lodRef = useRef<number>(6);
   const lastClickTimeRef = useRef<number>(0);
@@ -156,15 +156,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       const duration = Math.min(3000, 1500 + spatialDist * 6 + altDist * 400);
       
       globeEl.current.pointOfView({ lat: selectedApparition.lat - latOffset, lng: selectedApparition.lng, altitude: targetAltitude }, duration);
-    } else if (!selectedApparition) {
-      latestSelectedIdRef.current = null;
-      if (globeEl.current && !isCinemaMode) {
-        setIsAutoRotate(true);
-        if (globeEl.current.controls()) {
-          globeEl.current.controls().autoRotate = true;
-        }
-      }
     }
+    // When closing infobox: keep current zoom and stop rotation (do not auto-resume)
   }, [selectedApparition, isTimelineOpen, isCinemaMode, apparitions]);
 
   // Focus camera on Mexico (Guadalupe) during Step 2 of Onboarding Guide, and reset when closed or started
