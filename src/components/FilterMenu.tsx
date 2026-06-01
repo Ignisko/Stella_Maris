@@ -87,7 +87,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
       style={{
         width: isExpanded ? '100%' : 'auto',
         position: 'relative', // Ensures absolute children position correctly
-        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
+        transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        userSelect: 'none',
+        WebkitUserSelect: 'none'
       }}
     >
       {!isExpanded ? (

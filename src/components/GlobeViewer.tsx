@@ -192,10 +192,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     } else if (!selectedApparition) {
       latestSelectedIdRef.current = null;
       if (globeEl.current && !isCinemaMode) {
-        const currentPov = globeEl.current.pointOfView();
-        if (currentPov && currentPov.altitude < 1.5) {
-          globeEl.current.pointOfView({ lat: currentPov.lat, lng: currentPov.lng, altitude: 2.2 }, 1500);
-        }
         setIsAutoRotate(true);
         if (globeEl.current.controls()) {
           globeEl.current.controls().autoRotate = true;
@@ -347,8 +343,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           });
 
           const keptRects: DOMRect[] = [];
-          // Dynamically adjust collision padding: fewer active labels allow closer screen proximity
-          const padding = labelEls.length < 25 ? -12 : (labelEls.length < 50 ? -3 : 5);
+          // Prevent any overlapping text. Use a fixed positive padding.
+          const padding = 2;
 
           for (const el of labelEls) {
             const content = el.querySelector('.label-content') as HTMLElement;
@@ -429,15 +425,16 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     let effectivePerRegion = config.perRegion;
     let spacingBase = config.spacingBase;
 
-    // Dynamic scale-up of region caps and relaxation when dataset is sparse (e.g. searches)
+    // Make clustering more aggressive for smaller datasets with very long titles (like Eucharistic Miracles)
     if (totalItems < 35) {
       maxPriority = 5;
       effectivePerRegion = 999;
-      spacingBase = 0.1;
+      // Do not reduce spacingBase; in fact, keep it large enough to cluster long titles.
+      spacingBase = spacingBase * 1.2;
     } else if (totalItems < 75) {
       maxPriority = Math.max(maxPriority, 3);
       effectivePerRegion = Math.max(effectivePerRegion, 30);
-      spacingBase = spacingBase * 0.4;
+      spacingBase = spacingBase * 1.0;
     }
 
     const filtered = apparitions.filter(app => {
@@ -496,7 +493,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         const meanLat = ((c.lat + app.lat) / 2) * Math.PI / 180;
         const cosLat = Math.max(0.3, Math.cos(meanLat));
         const physicalLngDiff = lngDiff * cosLat;
-        return latDiff < CLUSTER_DEG && physicalLngDiff < (CLUSTER_DEG * 3.8);
+        return latDiff < CLUSTER_DEG && physicalLngDiff < (CLUSTER_DEG * 5.5);
       });
 
       if (tooClose) {
@@ -507,7 +504,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           const meanLat = ((c.lat + app.lat) / 2) * Math.PI / 180;
           const cosLat = Math.max(0.3, Math.cos(meanLat));
           const physicalLngDiff = lngDiff * cosLat;
-          return latDiff < CLUSTER_DEG && physicalLngDiff < (CLUSTER_DEG * 3.8);
+          return latDiff < CLUSTER_DEG && physicalLngDiff < (CLUSTER_DEG * 5.5);
         });
         if (existing) {
           existing.clusterCount = (existing.clusterCount || 1) + 1;

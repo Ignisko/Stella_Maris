@@ -1,24 +1,24 @@
 import type { Apparition } from './apparitions';
 
 export const eucharisticMiraclesData: Apparition[] = [
-  {
-    id: 'lanciano_italy',
-    location: 'Lanciano',
-    country: 'Italy',
-    year: 700,
-    coordinates: [42.2300, 14.3900],
-    title: 'Eucharistic Miracle of Lanciano',
-    description: 'In the 8th century, a priest who doubted the Real Presence saw the host turn into flesh and the wine turn into blood during Mass.',
-    approvalStatus: 'Vatican Approved'
-  },
-  {
-    id: 'bolsena_italy',
-    location: 'Bolsena',
-    country: 'Italy',
-    year: 1263,
-    coordinates: [42.6467, 11.9867],
-    title: 'Eucharistic Miracle of Bolsena',
-    description: 'A doubting priest, Peter of Prague, celebrated Mass at the tomb of St. Christina. Blood began to seep from the consecrated Host.',
-    approvalStatus: 'Vatican Approved'
-  }
+  { id: 'lanciano_italy', location: 'Lanciano', country: 'Italy', year: 750, lat: 42.2300, lng: 14.3900, title: 'Eucharistic Miracle of Lanciano', description: 'In the 8th century, a Basilian monk who doubted the Real Presence saw the Host turn into real flesh and the wine into real blood during Mass. Extensive scientific testing in the 1970s concluded it is human cardiac tissue (myocardium) and AB blood type, identical to the Shroud of Turin.', approvalStatus: 'Vatican Approved' },
+  { id: 'bolsena_italy', location: 'Bolsena', country: 'Italy', year: 1263, lat: 42.6467, lng: 11.9867, title: 'Eucharistic Miracle of Bolsena', description: 'In 1263, a doubting priest named Peter of Prague celebrated Mass. Upon breaking the Host, blood began to seep from it, staining the corporal. This miracle prompted Pope Urban IV to institute the feast of Corpus Christi.', approvalStatus: 'Vatican Approved' },
+  { id: 'buenos_aires_argentina', location: 'Buenos Aires', country: 'Argentina', year: 1996, lat: -34.6037, lng: -58.3816, title: 'Eucharistic Miracle of Buenos Aires', description: 'In 1992, 1994, and 1996, discarded Hosts began bleeding. Under the direction of Cardinal Jorge Bergoglio (now Pope Francis), the tissue was scientifically analyzed and found to contain living human white blood cells and heart muscle tissue in severe distress.', approvalStatus: 'Vatican Approved' },
+  { id: 'sokolka_poland', location: 'Sokółka', country: 'Poland', year: 2008, lat: 53.4072, lng: 23.5022, title: 'Eucharistic Miracle of Sokółka', description: 'In 2008, a consecrated Host that had fallen was placed in water to dissolve. A week later, a red stain appeared on it. Pathologists concluded the substance is identical to myocardial (heart) tissue of a person nearing death.', approvalStatus: 'Vatican Approved' },
+  { id: 'legnica_poland', location: 'Legnica', country: 'Poland', year: 2013, lat: 51.2070, lng: 16.1619, title: 'Eucharistic Miracle of Legnica', description: 'In 2013, a fallen Host was placed in water. It developed red stains, which scientific analysis confirmed contained fragmented human heart muscle fibers exhibiting signs of extreme stress and agony.', approvalStatus: 'Vatican Approved' },
+  { id: 'tixtla_mexico', location: 'Tixtla', country: 'Mexico', year: 2006, lat: 17.5683, lng: -99.3986, title: 'Eucharistic Miracle of Tixtla', description: 'During a retreat in 2006, a Host began effusing a reddish substance. Scientific investigations found that the blood came from the interior of the Host outward, possessed AB blood type, and contained intact human DNA and active white blood cells.', approvalStatus: 'Bishop Approved' },
+  { id: 'santarem_portugal', location: 'Santarém', country: 'Portugal', year: 1247, lat: 39.2333, lng: -8.6833, title: 'Eucharistic Miracle of Santarém', description: 'A woman seeking to use a consecrated Host for a potion found it bleeding profusely. The Host is still preserved today in the Church of St. Stephen, having maintained its incorrupt state for over 750 years.', approvalStatus: 'Vatican Approved' },
+  { id: 'cascia_italy', location: 'Cascia', country: 'Italy', year: 1330, lat: 42.7167, lng: 13.0167, title: 'Eucharistic Miracle of Cascia', description: 'A priest irreverently placed a consecrated Host between the pages of his breviary. The Host turned to blood, staining both pages, forming the profile of Christ’s face.', approvalStatus: 'Vatican Approved' },
+  { id: 'siena_italy', location: 'Siena', country: 'Italy', year: 1730, lat: 43.3186, lng: 11.3306, title: 'Eucharistic Miracle of Siena', description: 'In 1730, thieves stole a ciborium containing 351 consecrated Hosts. They were recovered three days later and have since remained perfectly incorrupt and fresh, defying natural deterioration.', approvalStatus: 'Vatican Approved' },
+  { id: 'daroca_spain', location: 'Daroca', country: 'Spain', year: 1239, lat: 41.1147, lng: -1.4114, title: 'Eucharistic Miracle of Daroca', description: 'During a battle against the Moors, six consecrated Hosts were hidden in a corporal. When retrieved, they were found drenched in blood. The blood-stained corporal remains preserved as a relic.', approvalStatus: 'Vatican Approved' },
+  { id: 'chirattakonam_india', location: 'Chirattakonam', country: 'India', year: 2001, lat: 8.5241, lng: 76.9366, title: 'Eucharistic Miracle of Chirattakonam', description: 'During Eucharistic adoration, three red stains appeared on the Host. Over the next few days, the stains formed the clear image of the face of Jesus crowned with thorns.', approvalStatus: 'Bishop Approved' },
+  { id: 'tumaco_colombia', location: 'Tumaco', country: 'Colombia', year: 1906, lat: 1.8067, lng: -78.7647, title: 'Eucharistic Miracle of Tumaco', description: 'In 1906, a massive tsunami threatened the island of Tumaco. Father Gerardo Larrondo carried the Blessed Sacrament to the shore. As a massive wave approached, it instantly receded upon reaching the Eucharist, saving the island.', approvalStatus: 'Vatican Approved' },
+  { id: 'amsterdam_holland', location: 'Amsterdam', country: 'Netherlands', year: 1345, lat: 52.3676, lng: 4.9041, title: 'Eucharistic Miracle of Amsterdam', description: 'A dying man received the Eucharist but vomited it up. The vomit was thrown into a roaring fire, but the Host miraculously remained unburnt and suspended in the flames.', approvalStatus: 'Vatican Approved' },
+  { id: 'avignon_france', location: 'Avignon', country: 'France', year: 1433, lat: 43.9493, lng: 4.8055, title: 'Eucharistic Miracle of Avignon', description: 'Following severe flooding, members of the Gray Penitents rowed to their chapel expecting the Blessed Sacrament to be destroyed. Instead, they found the waters miraculously parted, leaving the altar and the Host completely dry.', approvalStatus: 'Vatican Approved' },
+  { id: 'krakow_poland', location: 'Kraków', country: 'Poland', year: 1345, lat: 50.0647, lng: 19.9450, title: 'Eucharistic Miracle of Kraków', description: 'Thieves stole a ciborium containing consecrated Hosts and dumped them in a marsh. A mysterious light led searchers to the Hosts, which were completely undamaged despite the mud.', approvalStatus: 'Vatican Approved' },
+  { id: 'poznan_poland', location: 'Poznań', country: 'Poland', year: 1399, lat: 52.4064, lng: 16.9252, title: 'Eucharistic Miracle of Poznań', description: 'Three Hosts were stolen and profaned by being pierced, causing them to bleed. They were later discovered floating in a nearby meadow, surrounded by a miraculous light.', approvalStatus: 'Vatican Approved' },
+  { id: 'betania_venezuela', location: 'Betania', country: 'Venezuela', year: 1991, lat: 10.2227, lng: -66.8682, title: 'Eucharistic Miracle of Betania', description: 'During Mass celebrated by Father Oti, the consecrated Host began to bleed profusely from one side. Medical tests confirmed the substance as human blood.', approvalStatus: 'Bishop Approved' },
+  { id: 'ludbreg_croatia', location: 'Ludbreg', country: 'Croatia', year: 1411, lat: 46.2522, lng: 16.6186, title: 'Eucharistic Miracle of Ludbreg', description: 'A priest doubting the Real Presence saw the wine turn into actual blood in the chalice. The relic of the Precious Blood is still preserved and venerated today.', approvalStatus: 'Vatican Approved' },
+  { id: 'walldurn_germany', location: 'Walldürn', country: 'Germany', year: 1330, lat: 49.5833, lng: 9.3667, title: 'Eucharistic Miracle of Walldürn', description: 'A priest accidentally overturned the chalice during Mass. The consecrated wine spilled onto the corporal, forming the image of Christ crucified and eleven identical heads of Jesus crowned with thorns.', approvalStatus: 'Vatican Approved' },
+  { id: 'blanot_france', location: 'Blanot', country: 'France', year: 1331, lat: 46.4744, lng: 4.7331, title: 'Eucharistic Miracle of Blanot', description: 'During communion, a fragment of the Host fell to the ground. The priest tried to retrieve it, but it had turned into a drop of blood that soaked into the cloth and permanently stained it.', approvalStatus: 'Vatican Approved' }
 ];

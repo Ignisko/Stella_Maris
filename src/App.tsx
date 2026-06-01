@@ -511,7 +511,7 @@ function App() {
           padding: '20px 24px',
           background: 'rgba(15, 23, 42, 0.85)',
           border: '1px solid var(--glass-border)',
-          display: 'flex',
+          display: 'none', // Hidden as requested
           flexDirection: 'column',
           gap: '6px',
           pointerEvents: 'auto'
@@ -520,7 +520,7 @@ function App() {
             {config.title}
           </h1>
           <p style={{ fontSize: '13px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
-            {t('subtitle', lang)}
+            {config.subtitle ? (config.subtitle[lang] || config.subtitle['en']) : t('subtitle', lang)}
           </p>
         </div>
 
@@ -1016,7 +1016,6 @@ function App() {
             position: 'fixed',
             inset: 0,
             zIndex: 250,
-            display: 'flex',
             flexDirection: 'column',
             justifyContent: 'flex-end',
           }}

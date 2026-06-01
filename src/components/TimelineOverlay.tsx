@@ -481,7 +481,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       )}
 
       {/* Histogram */}
-      <div style={{ position: 'relative', width: '100%', height: isCinemaMode ? '35px' : '120px', transition: 'height 0.3s ease' }}>
+      <div style={{ position: 'relative', width: '100%', height: isCinemaMode ? '35px' : `${Math.max(60, Math.min(120, maxCount * (tileHeight + tileGap) + 40))}px`, transition: 'height 0.3s ease' }}>
 
         {/* Stacked bars */}
         {!isCinemaMode && (
