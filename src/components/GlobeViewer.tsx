@@ -19,6 +19,7 @@ interface GlobeViewerProps {
   isTutorialActive?: boolean;
   tutorialStep?: number;
   isCinemaMode?: boolean;
+  isDarkMode?: boolean;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -86,6 +87,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
   const [ringProgress, setRingProgress] = useState(1);
   const [clusterPopup, setClusterPopup] = useState<{ lat: number; lng: number; items: Apparition[] } | null>(null);
+  const [isDragging, setIsDragging] = useState(false);
   const latestSelectedIdRef = useRef<string | null>(null);
 
   const ringConfig = useMemo(() => {
@@ -413,13 +415,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
     // Per-zone label configs defining cap per region, max allowed priority, and geographic spacing base (in degrees)
     const ZONE_CONFIG: Record<number, { perRegion: number; maxPriority: number; spacingBase: number }> = {
-      1: { perRegion: 999, maxPriority: 5, spacingBase: 0.01 }, // super close (altitude < 0.05) - show all, minimal clustering (~1km)
-      2: { perRegion: 150, maxPriority: 5, spacingBase: 0.15 }, // very close (altitude < 0.15) - show up to priority 5, spacing base (~15km)
-      3: { perRegion: 80,  maxPriority: 5, spacingBase: 0.4  }, // close (altitude < 0.4) - show up to priority 5, spacing base (~40km)
-      4: { perRegion: 45,  maxPriority: 4, spacingBase: 1.0  }, // mid-close (altitude < 0.9, Europe/US full screen view) - show up to priority 4, spacing base (~100km)
-      5: { perRegion: 25,  maxPriority: 3, spacingBase: 2.2  }, // mid zoom (altitude < 1.6) - show up to priority 3, spacing base (~240km)
-      6: { perRegion: 12,  maxPriority: 3, spacingBase: 4.5  }, // far zoom (altitude < 2.4) - show up to priority 3, spacing base (~500km)
-      7: { perRegion: 6,   maxPriority: 2, spacingBase: 9.0  }, // very far zoom (altitude >= 2.4) - show up to priority 2, spacing base (~1000km)
+      1: { perRegion: 999, maxPriority: 5, spacingBase: 0.05 }, // super close
+      2: { perRegion: 40,  maxPriority: 4, spacingBase: 0.5  }, // very close
+      3: { perRegion: 20,  maxPriority: 3, spacingBase: 1.2  }, // close
+      4: { perRegion: 10,  maxPriority: 2, spacingBase: 3.0  }, // mid-close
+      5: { perRegion: 5,   maxPriority: 2, spacingBase: 6.0  }, // mid zoom
+      6: { perRegion: 3,   maxPriority: 1, spacingBase: 12.0 }, // far zoom
+      7: { perRegion: 2,   maxPriority: 1, spacingBase: 20.0 }, // very far zoom
     };
 
     const config = ZONE_CONFIG[lodThreshold] ?? { perRegion: 3, maxPriority: 1, spacingBase: 12.0 };
@@ -588,7 +590,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   return (
     <>
       <div 
-        style={{ position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%' }}
+        style={{ 
+          position: 'absolute', top: 0, left: 0, zIndex: 1, width: '100%', height: '100%',
+          cursor: isDragging ? 'grabbing' : 'grab'
+        }}
+        onPointerDown={() => setIsDragging(true)}
+        onPointerUp={() => setIsDragging(false)}
+        onPointerLeave={() => setIsDragging(false)}
         onPointerEnter={() => {
           const active = document.activeElement as HTMLElement;
           if (active && active.tagName !== 'INPUT' && active.tagName !== 'TEXTAREA') {
@@ -619,7 +627,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           htmlElement={(dRaw: unknown) => {
             const d = dRaw as Apparition & { clusterCount?: number; labelOffset?: string };
             const isSelected = selectedApparition?.id === d.id;
-            const safeTitle = escapeHtml(d.title || '');
+            const titleText = d.title + (d.approvalStatus === 'Dismissed' ? ' ⚠️' : '');
+            const safeTitle = escapeHtml(titleText || '');
             
             const count = d.clusterCount || 1;
             const badge = count > 1 ? `<span class="cluster-badge" style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700; cursor: pointer; pointer-events: auto;">+${count - 1}</span>` : '';
@@ -883,7 +892,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
                       boxShadow: `0 0 8px ${color}`
                     }} />
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
-                      <span style={{ fontSize: '15px', fontWeight: 600 }}>{item.title}</span>
+                      <span style={{ fontSize: '15px', fontWeight: 600 }}>{item.title} {item.approvalStatus === 'Dismissed' && '⚠️'}</span>
                       <span style={{ fontSize: '13px', opacity: 0.7 }}>{item.year} • {item.location}, {item.country}</span>
                     </div>
                   </button>

@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
-import { languageNames } from '../utils/i18n';
+import { languageNames, t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
 interface LanguagePickerProps {
@@ -18,7 +18,8 @@ const LANGUAGE_FLAG_CODES: Record<Language, string> = {
   ar: 'sa',
   tl: 'ph',
   vi: 'vn',
-  tr: 'tr'
+  tr: 'tr',
+  ko: 'kr'
 };
 
 const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguageChange }) => {
@@ -54,6 +55,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
       {/* Trigger Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
+        title={t('changeLanguage', currentLang)}
         className="glass-panel glass-panel-rounded"
         style={{
           display: 'flex',

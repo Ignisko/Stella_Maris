@@ -1,6 +1,6 @@
 import type { Apparition } from '../data/types';
 
-export type Language = 'en' | 'pl' | 'es' | 'pt' | 'fr' | 'it' | 'ar' | 'tl' | 'vi' | 'tr';
+export type Language = 'en' | 'pl' | 'es' | 'pt' | 'fr' | 'it' | 'ar' | 'tl' | 'vi' | 'tr' | 'ko';
 
 export const languageNames: Record<Language, string> = {
   en: 'English',
@@ -12,10 +12,9 @@ export const languageNames: Record<Language, string> = {
   ar: 'العربية',
   tl: 'Filipino',
   vi: 'Tiếng Việt',
-  tr: 'Türkçe'
+  tr: 'Türkçe',
+  ko: '한국어'
 };
-
-
 export const translations = {
   en: {
     title: 'Stella Maris',
@@ -47,6 +46,11 @@ export const translations = {
     resumeRotation: 'Resume rotation',
     autoRotateOn: 'Auto-Rotate Earth: On',
     autoRotateOff: 'Auto-Rotate Earth: Off',
+    changeLanguage: 'Change language',
+    themeLight: 'Light Mode',
+    themeDark: 'Dark Mode',
+    liveStream: 'Live stream',
+    helpGuide: 'Onboarding Guide',
     
     // Status Categories
     'Vatican approved': 'Vatican approved',
@@ -101,6 +105,11 @@ export const translations = {
     resumeRotation: 'Wznów obrót',
     autoRotateOn: 'Auto-rotacja Ziemi: Wł.',
     autoRotateOff: 'Auto-rotacja Ziemi: Wył.',
+    changeLanguage: 'Zmień język',
+    themeLight: 'Tryb jasny',
+    themeDark: 'Tryb ciemny',
+    liveStream: 'Transmisja na żywo',
+    helpGuide: 'Przewodnik',
 
     // Status Categories
     'Vatican approved': 'Zatwierdzone przez Watykan',
@@ -155,6 +164,11 @@ export const translations = {
     resumeRotation: 'Reanudar rotación',
     autoRotateOn: 'Rotación automática: Activada',
     autoRotateOff: 'Rotación automática: Desactivada',
+    changeLanguage: 'Cambiar idioma',
+    themeLight: 'Modo claro',
+    themeDark: 'Modo oscuro',
+    liveStream: 'Transmisión en vivo',
+    helpGuide: 'Guía de inicio',
 
     // Status Categories
     'Vatican approved': 'Aprobada por el Vaticano',
@@ -209,6 +223,11 @@ export const translations = {
     resumeRotation: 'Retomar rotação',
     autoRotateOn: 'Rotação automática: Ligada',
     autoRotateOff: 'Rotação automática: Desligada',
+    changeLanguage: 'Alterar idioma',
+    themeLight: 'Modo claro',
+    themeDark: 'Modo escuro',
+    liveStream: 'Transmissão ao vivo',
+    helpGuide: 'Guia de integração',
 
     // Status Categories
     'Vatican approved': 'Aprovada pelo Vaticano',
@@ -263,6 +282,11 @@ export const translations = {
     resumeRotation: 'Reprendre rotation',
     autoRotateOn: 'Rotation automatique : Activée',
     autoRotateOff: 'Rotation automatique : Désactivée',
+    changeLanguage: 'Changer de langue',
+    themeLight: 'Mode clair',
+    themeDark: 'Mode sombre',
+    liveStream: 'Diffusion en direct',
+    helpGuide: "Guide d'intégration",
 
     // Status Categories
     'Vatican approved': 'Approuvée par le Vatican',
@@ -317,6 +341,11 @@ export const translations = {
     resumeRotation: 'Riprendi rotazione',
     autoRotateOn: 'Rotazione automatica: Attiva',
     autoRotateOff: 'Rotazione automatica: Disattiva',
+    changeLanguage: 'Cambia lingua',
+    themeLight: 'Modalità chiara',
+    themeDark: 'Modalità scura',
+    liveStream: 'Diretta streaming',
+    helpGuide: 'Guida introduttiva',
 
     // Status Categories
     'Vatican approved': 'Approvata dal Vaticano',
@@ -371,6 +400,11 @@ export const translations = {
     resumeRotation: 'استئناف الدوران',
     autoRotateOn: 'دوران تلقائي: نشط',
     autoRotateOff: 'دوران تلقائي: متوقف',
+    changeLanguage: 'تغيير اللغة',
+    themeLight: 'الوضع المضيء',
+    themeDark: 'الوضع الداكن',
+    liveStream: 'بث مباشر',
+    helpGuide: 'دليل البدء',
 
     // Status Categories
     'Vatican approved': 'معتمد من الفاتيكان',
@@ -425,6 +459,11 @@ export const translations = {
     resumeRotation: 'Ipagpatuloy ang pag-ikot',
     autoRotateOn: 'Auto-Rotate ng Mundo: Bukas',
     autoRotateOff: 'Auto-Rotate ng Mundo: Patay',
+    changeLanguage: 'Baguhin ang wika',
+    themeLight: 'Maliwanag na Mode',
+    themeDark: 'Madilim na Mode',
+    liveStream: 'Live stream',
+    helpGuide: 'Gabay sa Pagsisimula',
 
     // Status Categories
     'Vatican approved': 'Inaprubahan ng Vatican',
@@ -479,6 +518,11 @@ export const translations = {
     resumeRotation: 'Tiếp tục tự quay',
     autoRotateOn: 'Tự quay Trái Đất: Bật',
     autoRotateOff: 'Tự quay Trái Đất: Tắt',
+    changeLanguage: 'Thay đổi ngôn ngữ',
+    themeLight: 'Chế độ sáng',
+    themeDark: 'Chế độ tối',
+    liveStream: 'Phát trực tiếp',
+    helpGuide: 'Hướng dẫn bắt đầu',
 
     // Status Categories
     'Vatican approved': 'Được Tòa Thánh công nhận',
@@ -533,6 +577,11 @@ export const translations = {
     resumeRotation: 'Dönüşü sürdür',
     autoRotateOn: 'Otomatik Döndürme: Açık',
     autoRotateOff: 'Otomatik Döndürme: Kapalı',
+    changeLanguage: 'Dili değiştir',
+    themeLight: 'Açık Tema',
+    themeDark: 'Karanlık Tema',
+    liveStream: 'Canlı yayın',
+    helpGuide: 'Başlangıç Kılavuzu',
 
     // Status Categories
     'Vatican approved': 'Vatikan onaylı',
@@ -556,6 +605,65 @@ export const translations = {
     'c_19': '19. Yüzyıl (1800\'ler)',
     'c_20': '20. Yüzyıl (1900\'ler)',
     'c_21': '21. Yüzyıl (2000\'ler)'
+  },
+  ko: {
+    title: 'Stella Maris',
+    subtitle: '성모 발현 지도',
+    browseDirectory: '디렉토리 찾아보기 ({count})',
+    searchPlaceholder: '발현 검색...',
+    filters: '필터',
+    centuries: '기간',
+    status: '상태',
+    selectAll: '모두 선택',
+    clearAll: '모두 지우기',
+    timeline: '타임라인',
+    modernEra: '현대 (1800–현재)',
+    fullHistory: '전체 역사 (서기 40–현재)',
+    playTimeline: '타임라인 재생 ({count}개 이벤트)',
+    playingTimeline: '재생 중 ({year}) — {count}개 이벤트',
+    legend: '범례:',
+    close: '닫기',
+    description: '설명',
+    viewSource: '출처 보기',
+    otherApparitions: '이 장소에서의 발현 ({count})',
+    directoryTitle: '성모 발현 디렉토리',
+    directoryListed: '{count}개 목록',
+    directorySubtitle: '필터링된 성지 및 발현의 연대기적 개요',
+    directoryQuickFilter: '제목, 도시, 국가, 연도 또는 상태로 빠른 필터링...',
+    directoryClear: '지우기',
+    directoryNoResults: '현재 검색 조건과 일치하는 발현이 없습니다.',
+    pauseRotation: '회전 일시 중지',
+    resumeRotation: '회전 재개',
+    autoRotateOn: '지구 자동 회전: 켜짐',
+    autoRotateOff: '지구 자동 회전: 꺼짐',
+    changeLanguage: '언어 변경',
+    themeLight: '라이트 모드',
+    themeDark: '다크 모드',
+    liveStream: '라이브 스트림',
+    helpGuide: '시작 가이드',
+
+    // Status Categories
+    'Vatican approved': '바티칸 승인',
+    'Traditionally approved': '전통적으로 승인됨',
+    'Bishop approved': '주교 승인',
+    'Coptic approved': '콥트교 승인',
+    'Approved for faith expression': '신앙 표현으로 승인됨',
+    'Apparitions to saints': '성인들에게 발현',
+    'Dismissed': '기각됨',
+
+    // Centuries
+    'c_early': '초기 (40 - 999)',
+    'c_11': '11세기 (1000년대)',
+    'c_12': '12세기 (1100년대)',
+    'c_13': '13세기 (1200년대)',
+    'c_14': '14세기 (1300년대)',
+    'c_15': '15세기 (1400년대)',
+    'c_16': '16세기 (1500년대)',
+    'c_17': '17세기 (1600년대)',
+    'c_18': '18세기 (1700년대)',
+    'c_19': '19세기 (1800년대)',
+    'c_20': '20세기 (1900년대)',
+    'c_21': '21세기 (2000년대)'
   }
 };
 

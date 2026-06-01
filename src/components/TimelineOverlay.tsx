@@ -236,43 +236,31 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         id="timeline-closed-pill"
         className="glass-panel glass-panel-rounded animate-fade-in"
         onClick={() => setIsOpen(true)}
+        title={t('timeline', lang)}
         style={{
           position: 'fixed',
           bottom: '20px',
           right: selectedApparition ? '420px' : '20px',
           zIndex: 160,
           pointerEvents: 'auto',
-          background: 'linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,41,59,0.95))',
-          border: '1px solid rgba(56,189,248,0.35)',
-          backdropFilter: 'blur(20px)',
-          padding: '14px 28px',
+          padding: '10px 16px',
           display: 'flex',
           alignItems: 'center',
-          gap: '12px',
+          gap: '8px',
           cursor: 'pointer',
-          color: 'var(--text-color)',
-          fontSize: '15px',
-          fontWeight: 700,
-          boxShadow: '0 8px 32px rgba(0,0,0,0.6), 0 0 20px rgba(56,189,248,0.1)',
-          transition: 'all 0.25s ease',
-          letterSpacing: '0.3px'
+          transition: 'all 0.2s ease',
+          outline: 'none',
         }}
         onMouseOver={e => {
-          e.currentTarget.style.background = 'linear-gradient(135deg, rgba(56,189,248,0.2), rgba(59,130,246,0.2))';
-          e.currentTarget.style.borderColor = 'rgba(56,189,248,0.7)';
-          e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.6), 0 0 30px rgba(56,189,248,0.25)';
-          e.currentTarget.style.transform = 'translateY(-2px)';
+          e.currentTarget.style.background = 'var(--glass-border)';
         }}
         onMouseOut={e => {
-          e.currentTarget.style.background = 'linear-gradient(135deg, rgba(15,23,42,0.95), rgba(30,41,59,0.95))';
-          e.currentTarget.style.borderColor = 'rgba(56,189,248,0.35)';
-          e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.6), 0 0 20px rgba(56,189,248,0.1)';
-          e.currentTarget.style.transform = 'translateY(0)';
+          e.currentTarget.style.background = 'var(--glass-bg)';
         }}
       >
-        <BarChart2 size={20} color="var(--accent-color)" />
-        <span>{t('timeline', lang)}</span>
-        <ChevronUp size={16} style={{ opacity: 0.7, color: 'var(--accent-color)' }} />
+        <span style={{ fontSize: '18px' }}>📅</span>
+        <span className="timeline-text" style={{ fontSize: '13px', fontWeight: 600, whiteSpace: 'nowrap' }}>{t('timeline', lang)}</span>
+        <ChevronUp size={15} className="timeline-chevron" style={{ opacity: 0.7 }} />
       </button>
     );
   }
@@ -293,8 +281,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         left: '20px',
         width: (selectedApparition && !isCinemaMode) ? 'calc(100vw - 440px)' : 'calc(100vw - 40px)',
         maxWidth: '1400px',
-        backgroundColor: 'rgba(15, 23, 42, 0.98)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backgroundColor: 'var(--timeline-bg)',
+        border: '1px solid var(--timeline-border)',
         backdropFilter: 'blur(20px)',
         boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
         padding: isCinemaMode ? '6px 20px' : '10px 20px',
@@ -305,7 +293,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       }}
     >
       {/* Top hover tooltip pill over cursor */}
-      {hoverYear !== null && hoverX !== null && (
+      {(isCinemaMode && hoverYear !== null && hoverX !== null) && (
         <div style={{
           position: 'absolute',
           left: `${hoverX}px`,
@@ -374,21 +362,21 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               if (isPlaying) onTogglePlay();
             }}
             style={{
-              background: 'rgba(255,255,255,0.06)',
-              border: '1px solid rgba(255,255,255,0.15)',
+              background: 'var(--timeline-btn-bg)',
+              border: '1px solid var(--timeline-btn-border)',
               borderRadius: '16px',
               padding: '6px 12px',
               display: 'flex',
               alignItems: 'center',
               gap: '6px',
-              color: '#e2e8f0',
+              color: 'var(--timeline-btn-text)',
               cursor: 'pointer',
               fontSize: '12px',
               fontWeight: 600,
               transition: 'all 0.2s'
             }}
             onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
-            onMouseOut={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.color = '#e2e8f0'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)'; }}
+            onMouseOut={e => { e.currentTarget.style.background = 'var(--timeline-btn-bg)'; e.currentTarget.style.color = 'var(--timeline-btn-text)'; e.currentTarget.style.borderColor = 'var(--timeline-btn-border)'; }}
           >
             <span>{t('close', lang)}</span>
             <X size={13} />
@@ -439,7 +427,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         <div style={{
           marginBottom: '16px',
           paddingTop: '6px',
-          borderTop: '1px solid rgba(255, 255, 255, 0.06)'
+          borderTop: '1px solid var(--timeline-border)'
         }}>
           <div style={{ 
             fontSize: '10px', 
@@ -479,7 +467,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           pointerEvents: 'none', display: 'flex', flexDirection: 'column', gap: '3px', minWidth: '200px'
         }}>
           <div style={{ fontSize: '13px', fontWeight: 700, display: 'flex', justifyContent: 'space-between', gap: '16px' }}>
-            <span>{hoveredApp.title}</span>
+            <span>{hoveredApp.title} {hoveredApp.approvalStatus === 'Dismissed' && '⚠️'}</span>
             <span style={{ color: '#fbbf24' }}>{hoveredApp.year}</span>
           </div>
           <div style={{ fontSize: '11px', opacity: 0.8 }}>{hoveredApp.location}, {hoveredApp.country}</div>
@@ -676,7 +664,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                       border: '1px solid rgba(255,255,255,0.2)',
                       transition: 'transform 0.1s ease-out'
                     }}>
-                      {activeApp.year}: {activeApp.title}
+                      {activeApp.year}: {activeApp.title} {activeApp.approvalStatus === 'Dismissed' && '⚠️'}
                     </div>
                   );
                 })()}
@@ -701,7 +689,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                     y1={300 - c.bottomPx}
                     x2={`${lineX2}%`}
                     y2={300 - (c.bottomPx + c.offset)}
-                    stroke="rgba(255, 255, 255, 0.45)"
+                    stroke="var(--timeline-line)"
                     strokeWidth="1.2"
                   />
                 );
@@ -757,7 +745,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
 
       {/* Year axis */}
       <div style={{ position: 'relative', height: '26px', width: '100%', marginTop: '2px' }}>
-        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'rgba(255,255,255,0.25)' }} />
+        <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'var(--timeline-axis)' }} />
         {Array.from({ length: Math.ceil(range / tickStep) + 1 }).map((_, i) => {
           const tickYear = Math.floor(startY / tickStep) * tickStep + i * tickStep;
           if (tickYear < startY || tickYear > endY) return null;
@@ -768,8 +756,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               transform: 'translateX(-50%)', display: 'flex', flexDirection: 'column',
               alignItems: 'center', pointerEvents: 'none'
             }}>
-              <div style={{ width: '2px', height: '5px', background: 'rgba(255,255,255,0.45)' }} />
-              <div style={{ fontSize: '10px', color: 'rgba(255,255,255,0.65)', fontWeight: 600, marginTop: '2px' }}>
+              <div style={{ width: '2px', height: '5px', background: 'var(--timeline-tick)' }} />
+              <div style={{ fontSize: '10px', color: 'var(--timeline-text)', fontWeight: 600, marginTop: '2px' }}>
                 {tickYear}
               </div>
             </div>

@@ -5,7 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "dev:mary": "vite --mode mary",
+    "dev:eucharist": "vite --mode eucharist",
+    "build:mary": "tsc -b && vite build --mode mary",
+    "build:eucharist": "tsc -b && vite build --mode eucharist",
     "lint": "eslint .",
     "preview": "vite preview"
   },

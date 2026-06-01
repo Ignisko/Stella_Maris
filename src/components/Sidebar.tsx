@@ -116,9 +116,9 @@ const Sidebar: React.FC<SidebarProps> = ({
       if (url.includes('miraclehunter.com')) {
         label = t('viewSource', lang);
       } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
-        label = url.includes('transmisja') ? 'Live Stream' : 'Sanktuarium Leżajsk';
+        label = url.includes('transmisja') ? t('liveStream', lang) : 'Sanktuarium Leżajsk';
       } else if (url.includes('youtube.com') || url.includes('youtu.be')) {
-        label = (url.includes('ESNa1vdHcYY') || url.includes('GENH9mWlvb4') || url.includes('/live')) ? 'Live Stream' : 'Video';
+        label = (url.includes('ESNa1vdHcYY') || url.includes('GENH9mWlvb4') || url.includes('/live')) ? t('liveStream', lang) : 'Video';
       } else {
         try {
           const parsed = new URL(url);
@@ -165,7 +165,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
           <h2 style={{ fontSize: '26px', fontWeight: 600, margin: 0, color: 'var(--gold-accent)', lineHeight: 1.2, userSelect: 'text', WebkitUserSelect: 'text' }}>
-            {displayApp.title}
+            {displayApp.title} {displayApp.approvalStatus === 'Dismissed' && '⚠️'}
           </h2>
           <button
             onClick={handleCopy}
@@ -228,7 +228,7 @@ const Sidebar: React.FC<SidebarProps> = ({
                   title={app.title}
                 >
                   <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, flexShrink: 0 }} />
-                  <span>{app.year} • {app.title}</span>
+                  <span>{app.year} • {app.title} {app.approvalStatus === 'Dismissed' && '⚠️'}</span>
                 </button>
               );
             })}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronDown, ChevronUp, Filter, Clock, Award } from 'lucide-react';
+import { ChevronUp, Filter, Clock, Award } from 'lucide-react';
 import { STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -85,7 +85,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
     <div 
       ref={filterRef}
       style={{
-        width: '100%',
+        width: isExpanded ? '100%' : 'auto',
         position: 'relative', // Ensures absolute children position correctly
         transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)'
       }}
@@ -94,39 +94,54 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
         /* Small trigger button */
         <button
           onClick={() => onToggleExpanded(true)}
-          title="Filters"
-          style={{
+          title={t('filters', lang)}
+          style={absolute ? {
+            width: '100%',
+            padding: '10px 16px',
+            background: 'var(--glass-bg)',
+            border: '1px solid var(--glass-border)',
+            borderRadius: '8px',
+            color: 'var(--text-color)',
+            cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
+            justifyContent: 'center',
             gap: '8px',
-            padding: '10px 16px',
-            background: 'rgba(15, 23, 42, 0.8)',
-            border: '1px solid var(--glass-border)',
-            borderRadius: '12px',
-            backdropFilter: 'blur(12px)',
-            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-            cursor: 'pointer',
-            color: 'var(--text-color)',
-            fontSize: '13px',
+            fontSize: '14px',
             fontWeight: 600,
             transition: 'all 0.2s ease',
-            whiteSpace: 'nowrap',
-            width: '100%',
-            height: '42px',
-            justifyContent: 'center'
+            outline: 'none'
+          } : {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '0',
+            background: 'var(--glass-bg)',
+            border: '1px solid var(--glass-border)',
+            borderRadius: '50%',
+            boxShadow: 'var(--box-shadow)',
+            cursor: 'pointer',
+            width: '46px',
+            height: '46px',
+            fontSize: '22px',
+            transition: 'all 0.2s ease',
+            outline: 'none'
           }}
           onMouseOver={e => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
-            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
+            e.currentTarget.style.background = 'var(--glass-border)';
           }}
           onMouseOut={e => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
-            e.currentTarget.style.borderColor = 'var(--glass-border)';
+            e.currentTarget.style.background = 'var(--glass-bg)';
           }}
         >
-          <Filter size={15} color="var(--accent-color)" />
-          <span>{t('filters', lang)}</span>
-          <ChevronDown size={13} style={{ opacity: 0.7 }} />
+          {absolute ? (
+            <>
+              <span style={{ fontSize: '16px' }}>🎚️</span>
+              <span>{t('filters', lang)}</span>
+            </>
+          ) : (
+            '🎚️'
+          )}
         </button>
       ) : (
         /* Expanded Unified Box */
@@ -136,7 +151,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             width: absolute ? '280px' : '100%',
             position: absolute ? 'absolute' : 'relative',
             top: absolute ? 'calc(100% + 8px)' : undefined,
-            left: absolute ? 0 : undefined,
+            right: absolute ? 0 : undefined,
             background: 'rgba(15, 23, 42, 0.95)',
             border: '1px solid rgba(56, 189, 248, 0.45)',
             boxShadow: '0 16px 48px rgba(0,0,0,0.6)',

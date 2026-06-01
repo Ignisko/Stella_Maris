@@ -110,7 +110,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition, 
               onMouseOut={e => e.currentTarget.style.background = 'transparent'}
             >
               <div style={{ fontSize: '13px', fontWeight: 600, color: 'var(--gold-accent)' }}>
-                {app.title}
+                {app.title} {app.approvalStatus === 'Dismissed' && '⚠️'}
               </div>
               <div style={{ fontSize: '11px', opacity: 0.8, color: 'var(--text-color)' }}>
                 {app.location}, {app.country} ({app.year})

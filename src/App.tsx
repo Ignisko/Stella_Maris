@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-import { useState, useMemo, useEffect } from 'react';
-import { List, Play, Pause, X, HelpCircle, ArrowLeft, ArrowRight, Rewind, FastForward } from 'lucide-react';
+import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
+import { Play, Pause, X, HelpCircle, ArrowLeft, ArrowRight, Rewind, FastForward, Search, Bug } from 'lucide-react';
+
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
 import TimelineOverlay from './components/TimelineOverlay';
@@ -10,8 +11,11 @@ import SearchBar from './components/SearchBar';
 import DirectoryModal from './components/DirectoryModal';
 import LanguagePicker from './components/LanguagePicker';
 import TutorialModal from './components/TutorialModal';
-import { apparitionsData } from './data/apparitions';
+import BugReportModal from './components/BugReportModal';
+import { config } from './config';
 import type { Apparition } from './data/apparitions';
+
+const apparitionsData = config.getData();
 import { t, translateApparitionsList, loadLanguageTranslations } from './utils/i18n';
 import type { Language } from './utils/i18n';
 
@@ -75,17 +79,42 @@ function App() {
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
   const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
   const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
+  const [isBugModalOpen, setIsBugModalOpen] = useState(false);
+
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
+    const saved = localStorage.getItem('stellamaris_theme');
+    return saved !== 'light';
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.remove('light-theme');
+      localStorage.setItem('stellamaris_theme', 'dark');
+    } else {
+      document.body.classList.add('light-theme');
+      localStorage.setItem('stellamaris_theme', 'light');
+    }
+  }, [isDarkMode]);
 
   const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
     return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
   });
   const [tutorialStep, setTutorialStep] = useState<number>(0);
 
+  // Mobile: which toolbar button tooltip is showing
+  const [mobileTooltip, setMobileTooltip] = useState<string | null>(null);
+  const tooltipTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const showTooltip = useCallback((id: string) => {
+    setMobileTooltip(id);
+    if (tooltipTimerRef.current) clearTimeout(tooltipTimerRef.current);
+    tooltipTimerRef.current = setTimeout(() => setMobileTooltip(null), 1800);
+  }, []);
+
   const handleTutorialStepChange = (newStep: number) => {
     setTutorialStep(newStep);
-    
-    // If we advance to step 4 (Search & filters), ensure the apparition infobox is closed
-    if (newStep === 4) {
+    // Advancing TO step 5 (Search & filters) — close the apparition sidebar
+    if (newStep === 5) {
       setSelectedApparition(null);
     }
   };
@@ -101,21 +130,23 @@ function App() {
       setIsFiltersExpanded(false);
     }
 
-    if (tutorialStep === 8) {
+    if (tutorialStep === 7) {
       setIsDirectoryOpen(true);
     } else {
       setIsDirectoryOpen(false);
     }
 
-    if (tutorialStep === 5) {
-      // Step 5 = "Apparition details" — always ensure Guadalupe sidebar is open
+    if (tutorialStep === 4) {
+      // Step 4 = "Apparition details" — always ensure target sidebar is open
       if (!selectedApparition) {
-        const guadalupe = translatedApparitionsData.find(app => app.id === 'guadalupe_mexico');
-        if (guadalupe) {
-          setSelectedApparition(guadalupe);
+        const targetId = config.projectId === 'eucharist' ? 'lanciano_italy' : 'guadalupe_mexico';
+        const target = translatedApparitionsData.find(app => app.id === targetId) || translatedApparitionsData[0];
+        if (target) {
+          setSelectedApparition(target);
         }
       }
     } else {
+      // For all other steps, ensure the sidebar is closed
       setSelectedApparition(null);
     }
   }, [tutorialStep, isTutorialActive, translatedApparitionsData]);
@@ -141,8 +172,8 @@ function App() {
       if (idx !== -1) {
         setPlaybackIndex(idx);
       }
-      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4 || tutorialStep === 5)) {
-        setTutorialStep(5);
+      if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4)) {
+        setTutorialStep(4);
       }
     }
     if (!isCinemaMode && isPlayingTimeline) {
@@ -283,15 +314,20 @@ function App() {
   // Sliced data for GlobeViewer during playback
   const displayedApparitions = useMemo(() => {
     if (isTutorialActive) {
-      const guadalupe = translatedApparitionsData.find(a => a.id === 'guadalupe_mexico');
-      return guadalupe ? [guadalupe] : [];
+      if (tutorialStep === 4) {
+        // Return only target for step 4
+        const targetId = config.projectId === 'eucharist' ? 'lanciano_italy' : 'guadalupe_mexico';
+        const target = translatedApparitionsData.find(a => a.id === targetId) || translatedApparitionsData[0];
+        return target ? [target] : [];
+      }
+      return translatedApparitionsData;
     }
     if (!isCinemaMode || !currentSelectedApparition) return filteredApparitions;
     return filteredApparitions.filter(a => a.year <= currentSelectedApparition.year);
-  }, [isCinemaMode, currentSelectedApparition, filteredApparitions, isTutorialActive, translatedApparitionsData]);
+  }, [isCinemaMode, currentSelectedApparition, filteredApparitions, isTutorialActive, translatedApparitionsData, tutorialStep]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
-  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition && !(isTutorialActive && (tutorialStep === 3 || tutorialStep === 4));
+  const isSidebarOpen = isSidebarVisible && !!currentSelectedApparition && !(isTutorialActive && tutorialStep === 3);
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -456,7 +492,7 @@ function App() {
         </div>
       )}
       {/* Left Control Panel */}
-      <div style={{
+      <div className="desktop-left-panel" style={{
         position: 'absolute',
         top: '20px',
         left: '20px',
@@ -465,8 +501,8 @@ function App() {
         display: 'flex',
         flexDirection: 'column',
         gap: isTimelineOpen ? '0px' : '10px',
-        pointerEvents: isTutorialActive && tutorialStep < 6 ? 'none' : 'none',
-        opacity: isTutorialActive && tutorialStep < 6 ? 0.35 : 1,
+        pointerEvents: isTutorialActive && tutorialStep < 5 ? 'none' : 'none',
+        opacity: isTutorialActive && tutorialStep < 5 ? 0.35 : 1,
         transform: (hasPopups || isCinemaMode) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
         transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), gap 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease'
       }}>
@@ -481,7 +517,7 @@ function App() {
           pointerEvents: 'auto'
         }}>
           <h1 style={{ fontSize: '24px', fontWeight: 700, margin: 0, letterSpacing: '0.5px', color: 'var(--text-color)' }}>
-            Stella Maris
+            {config.title}
           </h1>
           <p style={{ fontSize: '13px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
             {t('subtitle', lang)}
@@ -509,8 +545,8 @@ function App() {
             />
           </div>
 
-          {/* Action Row: Filters and Browse Directory */}
-          <div id="action-row-container" style={{ display: 'flex', gap: '8px', pointerEvents: 'auto', width: '100%' }}>
+          {/* Action Row: Filters, Catalogue and Play/Pause */}
+          <div id="action-row-container" style={{ display: 'flex', gap: '10px', pointerEvents: 'auto', width: '100%', alignItems: 'center' }}>
             <FilterMenu 
               activeFilters={activeFilters} 
               onChange={setActiveFilters} 
@@ -523,95 +559,119 @@ function App() {
             />
 
             {!isFiltersExpanded && (
-              <button
-                id="browse-directory-button"
-                onClick={() => setIsDirectoryOpen(true)}
-                className="glass-panel glass-panel-rounded animate-fade-in"
-                style={{
-                  flex: 1,
-                  height: '42px',
-                  padding: '0 12px',
-                  background: 'rgba(15, 23, 42, 0.8)',
-                  color: 'var(--text-color)',
-                  border: '1px solid var(--glass-border)',
-                  fontSize: '13px',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '8px',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-                  transition: 'all 0.2s ease',
-                  whiteSpace: 'nowrap'
-                }}
-                onMouseOver={e => {
-                  e.currentTarget.style.background = 'rgba(59, 130, 246, 0.2)';
-                  e.currentTarget.style.borderColor = 'var(--accent-color)';
-                }}
-                onMouseOut={e => {
-                  e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
-                  e.currentTarget.style.borderColor = 'var(--glass-border)';
-                }}
-              >
-                <List size={15} color="var(--accent-color)" />
-                <span>{t('browseDirectory', lang, { count: filteredApparitions.length })}</span>
-              </button>
+              <>
+                <button
+                  id="browse-directory-button"
+                  onClick={() => setIsDirectoryOpen(true)}
+                  className="glass-panel glass-panel-rounded animate-fade-in"
+                  style={{
+                    width: '46px',
+                    height: '46px',
+                    borderRadius: '50%',
+                    background: 'var(--glass-bg)',
+                    color: 'var(--text-color)',
+                    border: '1px solid var(--glass-border)',
+                    cursor: 'pointer',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    boxShadow: 'var(--box-shadow)',
+                    transition: 'all 0.2s ease',
+                    fontSize: '22px',
+                    outline: 'none',
+                    padding: '0'
+                  }}
+                  title={t('browseDirectory', lang, { count: filteredApparitions.length })}
+                  onMouseOver={e => {
+                    e.currentTarget.style.background = 'var(--glass-border)';
+                  }}
+                  onMouseOut={e => {
+                    e.currentTarget.style.background = 'var(--glass-bg)';
+                  }}
+                >
+                  📋
+                </button>
+
+                {!isTutorialActive && (
+                  <button
+                    onClick={togglePlayTimeline}
+                    className="glass-panel glass-panel-rounded animate-fade-in"
+                    style={{
+                      width: '46px',
+                      height: '46px',
+                      borderRadius: '50%',
+                      background: 'var(--glass-bg)',
+                      color: 'var(--text-color)',
+                      border: '1px solid var(--glass-border)',
+                      cursor: 'pointer',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      boxShadow: 'var(--box-shadow)',
+                      transition: 'all 0.2s ease',
+                      fontSize: '22px',
+                      outline: 'none',
+                      padding: '0'
+                    }}
+                    title={isPlayingTimeline ? (lang === 'pl' ? 'Wstrzymaj prezentację' : 'Pause Presentation') : (playPresentationTranslations[lang] || 'Play Presentation')}
+                    onMouseOver={e => {
+                      e.currentTarget.style.background = 'var(--glass-border)';
+                    }}
+                    onMouseOut={e => {
+                      e.currentTarget.style.background = 'var(--glass-bg)';
+                    }}
+                  >
+                    {isPlayingTimeline ? '⏸️' : '▶️'}
+                  </button>
+                )}
+              </>
             )}
           </div>
-
-          {/* Play Presentation Button */}
-          {!isFiltersExpanded && !isTutorialActive && (
-            <button
-              onClick={togglePlayTimeline}
-              className="glass-panel glass-panel-rounded"
-              style={{
-                pointerEvents: 'auto',
-                width: '100%',
-                height: '42px',
-                padding: '0 16px',
-                background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.8))',
-                color: '#ffffff',
-                border: 'none',
-                fontSize: '13px',
-                fontWeight: 700,
-                cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '8px',
-                boxShadow: '0 4px 16px rgba(56, 189, 248, 0.3)',
-                transition: 'all 0.2s ease',
-                letterSpacing: '0.3px'
-              }}
-              onMouseOver={e => {
-                e.currentTarget.style.transform = 'translateY(-1px)';
-                e.currentTarget.style.boxShadow = '0 6px 20px rgba(56, 189, 248, 0.45)';
-                e.currentTarget.style.filter = 'brightness(1.1)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = '0 4px 16px rgba(56, 189, 248, 0.3)';
-                e.currentTarget.style.filter = 'none';
-              }}
-            >
-              <Play size={15} fill="#ffffff" />
-              <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
-            </button>
-          )}
         </div>
       </div>
+
+      {/* Theme Toggle Button (Desktop) */}
+      {false && !isCinemaMode && !isSidebarOpen && !isTutorialActive && (
+        <button
+          className="desktop-theme-btn glass-panel glass-panel-rounded animate-fade-in"
+          onClick={() => setIsDarkMode(!isDarkMode)}
+          style={{
+            position: 'absolute',
+            top: '20px',
+            right: '154px',
+            zIndex: 100,
+            pointerEvents: 'auto',
+            width: '42px',
+            height: '42px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(15, 23, 42, 0.8)',
+            color: 'var(--text-color)',
+            border: '1px solid var(--glass-border)',
+            cursor: 'pointer',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            transition: 'all 0.2s ease',
+            borderRadius: '12px',
+            outline: 'none',
+            fontSize: '18px'
+          }}
+          title={isDarkMode ? t('themeLight', lang) : t('themeDark', lang)}
+        >
+          {isDarkMode ? '☀️' : '🌙'}
+        </button>
+      )}
 
       {/* Help / Onboarding Tutorial Button */}
       {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
         <button
+          className="desktop-help-btn glass-panel glass-panel-rounded animate-fade-in"
           onClick={() => {
             setIsTutorialActive(true);
             setTutorialStep(0);
             setSelectedApparition(null);
             setIsTimelineOpen(false);
           }}
-          className="glass-panel glass-panel-rounded animate-fade-in"
           style={{
             position: 'absolute',
             top: '20px',
@@ -632,7 +692,7 @@ function App() {
             borderRadius: '12px',
             outline: 'none'
           }}
-          title="Onboarding Guide / Przewodnik"
+          title={t('helpGuide', lang)}
           onMouseOver={e => {
             e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
             e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
@@ -648,12 +708,55 @@ function App() {
         </button>
       )}
 
+      {/* Bug Report Button */}
+      {false && !isCinemaMode && !isSidebarOpen && !isTutorialActive && (
+        <button
+          className="desktop-bug-btn glass-panel glass-panel-rounded animate-fade-in"
+          onClick={() => setIsBugModalOpen(true)}
+          style={{
+            position: 'absolute',
+            top: '20px',
+            right: '154px',
+            zIndex: 100,
+            pointerEvents: 'auto',
+            width: '42px',
+            height: '42px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(15, 23, 42, 0.8)',
+            color: 'var(--text-color)',
+            border: '1px solid var(--glass-border)',
+            cursor: 'pointer',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            transition: 'all 0.2s ease',
+            borderRadius: '12px',
+            outline: 'none'
+          }}
+          title="Report Bug / Feedback"
+          onMouseOver={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
+            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+            e.currentTarget.style.transform = 'none';
+          }}
+        >
+          <Bug size={20} color="#fff" />
+        </button>
+      )}
+
       {/* Top Right Language Switcher */}
       {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
-        <LanguagePicker 
-          currentLang={lang} 
-          onLanguageChange={setLang} 
-        />
+        <div className="desktop-lang-picker">
+          <LanguagePicker 
+            currentLang={lang} 
+            onLanguageChange={setLang} 
+          />
+        </div>
       )}
 
       {/* Floating Filter Menu for Cinema Mode */}
@@ -682,8 +785,8 @@ function App() {
         isOpen={isDirectoryOpen}
         onClose={() => {
           setIsDirectoryOpen(false);
-          if (isTutorialActive && tutorialStep === 8) {
-            setTutorialStep(8);
+          if (isTutorialActive && tutorialStep === 7) {
+            setTutorialStep(7);
           }
         }}
         apparitions={filteredApparitions}
@@ -695,7 +798,7 @@ function App() {
         onChangeCenturies={setActiveCenturies}
       />
 
-      <div style={{ pointerEvents: isTutorialActive && tutorialStep !== 1 && tutorialStep !== 4 ? 'none' : 'auto', width: '100%', height: '100%' }}>
+      <div style={{ pointerEvents: isTutorialActive && tutorialStep !== 1 && tutorialStep !== 3 ? 'none' : 'auto', width: '100%', height: '100%' }}>
           <GlobeViewer 
         apparitions={displayedApparitions} 
         selectedApparition={currentSelectedApparition}
@@ -706,6 +809,7 @@ function App() {
         isTutorialActive={isTutorialActive}
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
+        isDarkMode={isDarkMode}
       />
         </div>
       
@@ -715,8 +819,8 @@ function App() {
           isVisible={isSidebarVisible}
           onClose={() => {
             setSelectedApparition(null);
-            if (isTutorialActive && tutorialStep === 5) {
-              setTutorialStep(6); // Advance: "Apparition details" → "Search & filters"
+            if (isTutorialActive && tutorialStep === 4) {
+              setTutorialStep(5); // Advance: "Apparition details" → "Search & filters"
             }
           }} 
           allActiveApparitions={filteredApparitions}
@@ -727,7 +831,7 @@ function App() {
         />
       )}
 
-      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 9 && tutorialStep <= 11)) && (
+      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 8 && tutorialStep <= 10)) && (
         <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
@@ -738,10 +842,10 @@ function App() {
           isOpen={isTimelineOpen}
           setIsOpen={(open) => {
             setIsTimelineOpen(open);
-            if (open && isTutorialActive && tutorialStep === 9) {
+            if (open && isTutorialActive && tutorialStep === 8) {
+              setTutorialStep(8);
+            } else if (!open && isTutorialActive && tutorialStep === 9) {
               setTutorialStep(9);
-            } else if (!open && isTutorialActive && tutorialStep === 10) {
-              setTutorialStep(10);
             }
           }}
           lang={lang}
@@ -754,11 +858,11 @@ function App() {
           Tutorial modal zIndex is 130 — we need it above even the step-9 blocker,
           so the tutorial card style uses zIndex 170 at step 9 (see TutorialModal cardStyle).
           Disabled at steps 1 (user rotates globe) and 4 (user clicks marker). */}
-      {isTutorialActive && tutorialStep !== 1 && tutorialStep !== 4 && (
+      {isTutorialActive && tutorialStep !== 1 && tutorialStep !== 3 && (
         <div style={{
           position: 'fixed',
           inset: 0,
-          zIndex: tutorialStep === 9 ? 165 : 120,
+          zIndex: tutorialStep === 8 ? 165 : 120,
           pointerEvents: 'all',
           background: 'transparent',
           cursor: 'default'
@@ -775,6 +879,189 @@ function App() {
         isTimelineOpen={isTimelineOpen}
         setIsTimelineOpen={setIsTimelineOpen}
       />
+
+      {/* ── Mobile Toolbar (Google Earth–style) ── */}
+      {!isCinemaMode && !isTutorialActive && (
+        <div className="mob-toolbar">
+          {/* Search */}
+          <button
+            className={`mob-btn${mobileTooltip === 'search' ? ' tooltip-visible' : ''}`}
+            aria-label="Search apparitions"
+            onClick={() => {
+              showTooltip('search');
+              // Focus the search input if present
+              const inp = document.querySelector<HTMLInputElement>('input[type="text"], input[placeholder]');
+              if (inp) inp.focus();
+              // Show the desktop left panel temporarily by scrolling to it / making it visible
+              // On mobile we just reveal a search that already works. Re-use the desktop SearchBar
+              // by toggling a hidden class. For now open the directory as the search surface.
+              setIsDirectoryOpen(true);
+            }}
+          >
+            <Search size={22} color="#1a1a1a" />
+            <span className="mob-btn-tooltip">Search</span>
+          </button>
+
+          {/* Filters */}
+          <button
+            className={`mob-btn${(isFiltersExpanded || mobileTooltip === 'filters') ? ' tooltip-visible' : ''}${isFiltersExpanded ? ' mob-btn--active' : ''}`}
+            aria-label="Filters"
+            onClick={() => {
+              showTooltip('filters');
+              setIsFiltersExpanded(prev => !prev);
+            }}
+          >
+            <span style={{ fontSize: 22 }}>🎚️</span>
+            <span className="mob-btn-tooltip">Filters</span>
+          </button>
+
+          {/* Browse Directory */}
+          <button
+            className={`mob-btn${mobileTooltip === 'browse' ? ' tooltip-visible' : ''}`}
+            aria-label="Browse directory"
+            onClick={() => {
+              showTooltip('browse');
+              setIsDirectoryOpen(true);
+            }}
+          >
+            <span style={{ fontSize: 22 }}>📋</span>
+            <span className="mob-btn-tooltip">Directory</span>
+          </button>
+
+          <div className="mob-toolbar-divider" />
+
+          {/* Play Presentation */}
+          <button
+            className={`mob-btn${mobileTooltip === 'play' ? ' tooltip-visible' : ''}${isCinemaMode ? ' mob-btn--active' : ''}`}
+            aria-label="Play presentation"
+            onClick={() => {
+              showTooltip('play');
+              togglePlayTimeline();
+            }}
+          >
+            <span style={{ fontSize: 22 }}>▶️</span>
+            <span className="mob-btn-tooltip">Play Presentation</span>
+          </button>
+
+          {/* Timeline */}
+          <button
+            className={`mob-btn${(isTimelineOpen || mobileTooltip === 'timeline') ? ' tooltip-visible' : ''}${isTimelineOpen ? ' mob-btn--active' : ''}`}
+            aria-label="Timeline"
+            onClick={() => {
+              showTooltip('timeline');
+              setIsTimelineOpen(prev => !prev);
+            }}
+          >
+            <span style={{ fontSize: 22 }}>📅</span>
+            <span className="mob-btn-tooltip">Timeline</span>
+          </button>
+
+          <div className="mob-toolbar-divider" />
+
+          {/* Language */}
+          <button
+            className={`mob-btn${mobileTooltip === 'lang' ? ' tooltip-visible' : ''}`}
+            aria-label="Language"
+            onClick={() => {
+              showTooltip('lang');
+              // Cycle through common languages
+              const langs = ['en','pl','es','pt','fr','it','vi','ar','tl','tr','ko'] as const;
+              const idx = langs.indexOf(lang as typeof langs[number]);
+              const next = langs[(idx + 1) % langs.length];
+              setLang(next);
+            }}
+          >
+            <span style={{ fontSize: 22 }}>🌐</span>
+            <span className="mob-btn-tooltip">Language: {lang.toUpperCase()}</span>
+          </button>
+
+          {/* Help */}
+          <button
+            className={`mob-btn${mobileTooltip === 'help' ? ' tooltip-visible' : ''}`}
+            aria-label="Help"
+            onClick={() => {
+              showTooltip('help');
+              setIsTutorialActive(true);
+              setTutorialStep(0);
+              setSelectedApparition(null);
+              setIsTimelineOpen(false);
+            }}
+          >
+            <span style={{ fontSize: 22 }}>❓</span>
+            <span className="mob-btn-tooltip">Guide</span>
+          </button>
+
+          {/* Theme Toggle */}
+          {false && (
+            <button
+              className={`mob-btn${mobileTooltip === 'theme' ? ' tooltip-visible' : ''}`}
+              aria-label="Toggle Theme"
+              onClick={() => {
+                showTooltip('theme');
+                setIsDarkMode(prev => !prev);
+              }}
+            >
+              <span style={{ fontSize: 22 }}>{isDarkMode ? '☀️' : '🌙'}</span>
+              <span className="mob-btn-tooltip">{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+            </button>
+          )}
+        </div>
+      )}
+
+      {/* Mobile Filter Panel overlay (shown when filters expanded on mobile) */}
+      {isFiltersExpanded && (
+        <div
+          className="mob-filter-overlay"
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: 250,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'flex-end',
+          }}
+          onClick={() => setIsFiltersExpanded(false)}
+        >
+          <div
+            onClick={e => e.stopPropagation()}
+            className="animate-fade-in"
+            style={{
+              background: 'rgba(15,23,42,0.98)',
+              borderRadius: '20px',
+              padding: '24px 20px',
+              boxShadow: '0 -8px 40px rgba(0,0,0,0.6)',
+              maxHeight: '80vh',
+              overflowY: 'auto',
+              width: '90%',
+              maxWidth: '360px',
+              margin: '0 auto 20px',
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
+              <span style={{ fontSize: 16, fontWeight: 700, color: '#fff' }}>🔍 Filters</span>
+              <button onClick={() => setIsFiltersExpanded(false)} style={{ background: 'none', border: 'none', color: '#fff', cursor: 'pointer', fontSize: 20, opacity: 0.7 }}>✕</button>
+            </div>
+            <FilterMenu
+              activeFilters={activeFilters}
+              onChange={setActiveFilters}
+              activeCenturies={activeCenturies}
+              onChangeCenturies={setActiveCenturies}
+              lang={lang}
+              isExpanded={true}
+              onToggleExpanded={setIsFiltersExpanded}
+              forceTab={undefined}
+            />
+          </div>
+        </div>
+      )}
+
+      {/* Bug Report Modal */}
+      {isBugModalOpen && (
+        <BugReportModal 
+          onClose={() => setIsBugModalOpen(false)} 
+          lang={lang}
+        />
+      )}
     </div>
 
   );

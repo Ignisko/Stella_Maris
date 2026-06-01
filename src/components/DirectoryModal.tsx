@@ -59,13 +59,13 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
       justifyContent: 'center',
       padding: '20px'
     }}>
-      <div id="directory-modal-container" className="glass-panel glass-panel-rounded" style={{
+      <div id="directory-modal-container" style={{
         width: '100%',
         maxWidth: '920px',
         height: '85vh',
         display: 'flex',
         flexDirection: 'column',
-        overflow: 'hidden',
+        borderRadius: '16px',
         border: '1px solid var(--glass-border)',
         boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)',
         background: 'rgba(15, 23, 42, 0.9)'
@@ -77,7 +77,9 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          background: 'rgba(255, 255, 255, 0.03)'
+          background: 'rgba(255, 255, 255, 0.03)',
+          borderTopLeftRadius: '16px',
+          borderTopRightRadius: '16px'
         }}>
           <div>
             <h2 style={{ fontSize: '20px', fontWeight: 700, margin: 0, color: 'var(--gold-accent)', display: 'flex', alignItems: 'center', gap: '10px' }}>
@@ -175,7 +177,13 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
         </div>
 
         {/* List Content */}
-        <div style={{ flex: 1, overflowY: 'auto', padding: '10px 20px' }}>
+        <div style={{ 
+          flex: 1, 
+          overflowY: 'auto', 
+          padding: '10px 20px',
+          borderBottomLeftRadius: '16px',
+          borderBottomRightRadius: '16px'
+        }}>
           {filteredList.length === 0 ? (
             <div style={{ padding: '60px 20px', textAlign: 'center', opacity: 0.6, fontSize: '15px' }}>
               {t('directoryNoResults', lang)}
@@ -229,7 +237,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                       </div>
                       <div style={{ minWidth: 0 }}>
                         <div style={{ fontSize: '15px', fontWeight: 600, color: '#f1f5f9', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                          {app.title}
+                          {app.title} {app.approvalStatus === 'Dismissed' && '⚠️'}
                         </div>
                         <div style={{ fontSize: '13px', opacity: 0.7, color: 'var(--text-color)', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}>
                           <MapPin size={12} />
