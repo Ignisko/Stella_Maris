@@ -26,43 +26,9 @@ interface GlobeViewerProps {
 const configureOrbitControls = (controls: any) => {
   controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
   controls.maxDistance = 400;
-  controls.zoomSpeed = 3.5; // More responsive manual zooming (especially for touchpads)
+  controls.zoomSpeed = 1.5; // Standard stable zoom speed
   controls.enableDamping = true; // Premium inertial damping
   controls.dampingFactor = 0.08; // High glide inertia for premium feel
-  
-  // Custom zoom scale calculator to boost small touchpad scroll increments (deltaY is typically 1-20)
-  // while keeping physical mouse wheel scrolling (deltaY is typically 100-120 feeling natural.
-  controls._getZoomScale = function (delta: number) {
-    const absDelta = Math.abs(delta);
-    // Smooth exponential boost: up to 5x boost for small deltas, fading to ~1.2x for mouse deltas.
-    const boost = 1.0 + 4.0 * Math.exp(-absDelta / 40.0);
-    const normalizedDelta = (absDelta * boost) * 0.01;
-    return Math.pow(0.95, controls.zoomSpeed * normalizedDelta);
-  };
-
-  // Intercept dolly actions to smooth out zoom (since OrbitControls has no native zoom damping)
-  controls.targetRadius = undefined;
-  controls.lastZoomTime = 0;
-
-  controls._dollyIn = function (dollyScale: number) {
-    const currentDistance = controls.object.position.distanceTo(controls.target);
-    if (controls.targetRadius === undefined) {
-      controls.targetRadius = currentDistance;
-    }
-    controls.targetRadius *= dollyScale;
-    controls.targetRadius = Math.max(controls.minDistance, Math.min(controls.maxDistance, controls.targetRadius));
-    controls.lastZoomTime = Date.now();
-  };
-
-  controls._dollyOut = function (dollyScale: number) {
-    const currentDistance = controls.object.position.distanceTo(controls.target);
-    if (controls.targetRadius === undefined) {
-      controls.targetRadius = currentDistance;
-    }
-    controls.targetRadius /= dollyScale;
-    controls.targetRadius = Math.max(controls.minDistance, Math.min(controls.maxDistance, controls.targetRadius));
-    controls.lastZoomTime = Date.now();
-  };
 };
 
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
@@ -89,6 +55,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const [clusterPopup, setClusterPopup] = useState<{ lat: number; lng: number; items: Apparition[] } | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const latestSelectedIdRef = useRef<string | null>(null);
+  const prevPointOfViewRef = useRef<{ lat: number; lng: number; altitude: number } | null>(null);
 
   const ringConfig = useMemo(() => {
     switch (lodThreshold) {
@@ -266,26 +233,6 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           const controls = globeEl.current.controls();
           configureOrbitControls(controls);
           controlsConfigured = true;
-        }
-
-        if (globeEl.current.controls()) {
-          const controls = globeEl.current.controls();
-          const now = Date.now();
-          const currentDistance = controls.object.position.distanceTo(controls.target);
-          
-          if (controls.targetRadius === undefined) {
-            controls.targetRadius = currentDistance;
-          }
-
-          if (now - (controls.lastZoomTime || 0) > 800) {
-            controls.targetRadius = currentDistance;
-          } else {
-            const diff = controls.targetRadius - currentDistance;
-            if (Math.abs(diff) > 0.05) {
-              const nextDistance = currentDistance + diff * 0.12; // Smooth 12% glide step per frame
-              controls._scale = nextDistance / currentDistance;
-            }
-          }
         }
 
         const pov = globeEl.current.pointOfView();
@@ -545,22 +492,28 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     
     if (globeEl.current) {
       const pov = globeEl.current.pointOfView();
-      const currentAltitude = pov ? pov.altitude : 0.6;
-      
-      let targetAltitude = currentAltitude * 0.35;
-      if (targetAltitude < 0.02) {
-        targetAltitude = 0.02;
-      }
-      
-      const latOffset = (isTimelineOpen && !isCinemaMode) ? 6 : 0;
-      
-      globeEl.current.pointOfView({
-        lat: d.lat - latOffset,
-        lng: d.lng,
-        altitude: targetAltitude
-      }, 1200);
+      if (pov) {
+        // Save current POV so we can restore it if they close the popup without selecting an item
+        prevPointOfViewRef.current = {
+          lat: pov.lat,
+          lng: pov.lng,
+          altitude: pov.altitude
+        };
 
-      if (currentAltitude <= 0.08) {
+        const currentAltitude = pov.altitude;
+        let targetAltitude = currentAltitude * 0.35;
+        if (targetAltitude < 0.02) {
+          targetAltitude = 0.02;
+        }
+        
+        const latOffset = (isTimelineOpen && !isCinemaMode) ? 6 : 0;
+        
+        globeEl.current.pointOfView({
+          lat: d.lat - latOffset,
+          lng: d.lng,
+          altitude: targetAltitude
+        }, 1200);
+
         setClusterPopup({
           lat: d.lat,
           lng: d.lng,
@@ -570,9 +523,18 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     }
   };
 
+  const handleCloseClusterPopup = () => {
+    setClusterPopup(null);
+    if (prevPointOfViewRef.current && globeEl.current) {
+      globeEl.current.pointOfView(prevPointOfViewRef.current, 1200);
+    }
+    prevPointOfViewRef.current = null;
+  };
+
   const handleSelectClusterItem = (item: Apparition) => {
     onSelectApparition(item);
     setClusterPopup(null);
+    prevPointOfViewRef.current = null; // Clear it so we don't zoom back out
   };
 
   const escapeHtml = (str: string): string => {
@@ -798,7 +760,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
 
       {clusterPopup && (
         <div 
-          onClick={() => setClusterPopup(null)}
+          onClick={handleCloseClusterPopup}
           style={{
             position: 'fixed',
             top: 0,
@@ -836,7 +798,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
                 {t('otherApparitions', lang, { count: clusterPopup.items.length })}
               </h3>
               <button 
-                onClick={() => setClusterPopup(null)}
+                onClick={handleCloseClusterPopup}
                 style={{
                   background: 'transparent',
                   border: 'none',
