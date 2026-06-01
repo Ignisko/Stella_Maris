@@ -828,6 +828,7 @@ function App() {
           lang={lang}
           isTimelineOpen={isTimelineOpen}
           isCinemaMode={isCinemaMode}
+          projectId={config.projectId}
         />
       )}
 

@@ -14,6 +14,7 @@ interface SidebarProps {
   lang: Language;
   isTimelineOpen?: boolean;
   isCinemaMode?: boolean;
+  projectId?: 'mary' | 'eucharist';
 }
 
 const getCategoryIcon = (category: string, color: string) => {
@@ -43,7 +44,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   allActiveApparitions = [], 
   onSelectApparition, 
   lang,
-  isCinemaMode = false
+  isCinemaMode = false,
+  projectId = 'mary'
 }) => {
   const [copied, setCopied] = useState(false);
   const [localApparition, setLocalApparition] = useState<Apparition | null>(apparition);
@@ -74,32 +76,36 @@ const Sidebar: React.FC<SidebarProps> = ({
     const raw = displayApp.sourceUrl;
     if (!raw) {
       let fallbackUrl: string;
-      if (displayApp.year < 1000) {
-        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
-      } else if (displayApp.year < 1500) {
-        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1000-1499.html";
-      } else if (displayApp.year < 1800) {
-        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1500-1799.html";
-      } else if (displayApp.year < 1900) {
-        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1800-1899.html";
+      if (projectId === 'eucharist') {
+        fallbackUrl = "https://www.miracolieucaristici.org/";
       } else {
-        // Post-1900 categories
-        const cat = getApparitionStatusCategory(displayApp.approvalStatus);
-        if (cat === "Vatican approved") {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
-        } else if (cat === "Bishop approved") {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
-        } else if (cat === "Coptic approved") {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
-        } else if (cat === "Approved for faith expression") {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
-        } else if (cat === "Traditionally approved") {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
+        if (displayApp.year < 1000) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
+        } else if (displayApp.year < 1500) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1000-1499.html";
+        } else if (displayApp.year < 1800) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1500-1799.html";
+        } else if (displayApp.year < 1900) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1800-1899.html";
         } else {
-          if (displayApp.year < 2000) {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
+          // Post-1900 categories
+          const cat = getApparitionStatusCategory(displayApp.approvalStatus);
+          if (cat === "Vatican approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
+          } else if (cat === "Bishop approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
+          } else if (cat === "Coptic approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
+          } else if (cat === "Approved for faith expression") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
+          } else if (cat === "Traditionally approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
           } else {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
+            if (displayApp.year < 2000) {
+              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
+            } else {
+              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
+            }
           }
         }
       }
@@ -129,7 +135,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       }
       return { url, label };
     });
-  }, [displayApp, lang]);
+  }, [displayApp, lang, projectId]);
 
   if (!displayApp) return null;
 
