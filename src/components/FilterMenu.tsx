@@ -162,6 +162,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             display: 'flex',
             flexDirection: 'column',
             zIndex: absolute ? 50 : undefined,
+            userSelect: 'none',
+            WebkitUserSelect: 'none'
           }}
         >
           {/* Unified Header */}
@@ -180,7 +182,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               cursor: 'pointer',
               fontWeight: 600,
               fontSize: '14px',
-              transition: 'all 0.2s ease'
+              transition: 'all 0.2s ease',
+              userSelect: 'none',
+              WebkitUserSelect: 'none'
             }}
             onMouseOver={e => {
               e.currentTarget.style.background = 'rgba(56, 189, 248, 0.2)';
@@ -189,7 +193,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
             }}
           >
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', userSelect: 'none', WebkitUserSelect: 'none' }}>
               <Filter size={15} color="var(--accent-color)" />
               <span>{t('filters', lang)}</span>
             </div>
@@ -197,9 +201,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
           </button>
 
           {/* Tabs and Checkboxes Wrapper for tutorial highlight */}
-          <div id="filter-tabs-content-container" style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+          <div id="filter-tabs-content-container" style={{ display: 'flex', flexDirection: 'column', width: '100%', userSelect: 'none', WebkitUserSelect: 'none' }}>
             {/* Tabs */}
-            <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)' }}>
+            <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)', userSelect: 'none', WebkitUserSelect: 'none' }}>
               <button
                 onClick={() => setActiveTab('status')}
                 style={{ 
@@ -216,7 +220,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                   alignItems: 'center', 
                   fontSize: '13px', 
                   fontWeight: 600, 
-                  transition: 'all 0.2s ease' 
+                  transition: 'all 0.2s ease',
+                  userSelect: 'none',
+                  WebkitUserSelect: 'none'
                 }}
               >
                 <Award size={15} /> {t('status', lang)}
@@ -237,7 +243,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                   alignItems: 'center', 
                   fontSize: '13px', 
                   fontWeight: 600, 
-                  transition: 'all 0.2s ease' 
+                  transition: 'all 0.2s ease',
+                  userSelect: 'none',
+                  WebkitUserSelect: 'none'
                 }}
               >
                 <Clock size={15} /> {t('centuries', lang)}
@@ -251,10 +259,12 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               flexDirection: 'column', 
               gap: '12px', 
               maxHeight: '320px', 
-              overflowY: 'auto' 
+              overflowY: 'auto',
+              userSelect: 'none',
+              WebkitUserSelect: 'none'
             }}>
               {/* Switched Buttons: Clear all on left, Select all on right */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px', userSelect: 'none', WebkitUserSelect: 'none' }}>
                 <button 
                   onClick={clearAll} 
                   style={{ 
@@ -265,7 +275,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                     fontSize: '12px', 
                     cursor: 'pointer', 
                     fontFamily: 'inherit',
-                    transition: 'opacity 0.2s'
+                    transition: 'opacity 0.2s',
+                    userSelect: 'none',
+                    WebkitUserSelect: 'none'
                   }}
                   onMouseOver={e => e.currentTarget.style.opacity = '1'}
                   onMouseOut={e => e.currentTarget.style.opacity = '0.7'}
@@ -282,7 +294,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                     cursor: 'pointer', 
                     fontWeight: 600, 
                     fontFamily: 'inherit',
-                    transition: 'filter 0.2s'
+                    transition: 'filter 0.2s',
+                    userSelect: 'none',
+                    WebkitUserSelect: 'none'
                   }}
                   onMouseOver={e => e.currentTarget.style.filter = 'brightness(1.2)'}
                   onMouseOut={e => e.currentTarget.style.filter = 'none'}
@@ -292,7 +306,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               </div>
 
               {activeTab === 'status' && (
-                <div id="status-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%' }}>
+                <div id="status-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%', userSelect: 'none', WebkitUserSelect: 'none' }}>
                   {FILTER_CATEGORIES.map(category => {
                     const isActive = activeFilters.includes(category);
                     const color = STATUS_COLORS[category] || '#94a3b8';
@@ -306,7 +320,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                           cursor: 'pointer', 
                           fontSize: '13px', 
                           opacity: isActive ? 1 : 0.55, 
-                          transition: 'all 0.2s' 
+                          transition: 'all 0.2s',
+                          userSelect: 'none',
+                          WebkitUserSelect: 'none'
                         }}
                         onMouseOver={e => e.currentTarget.style.opacity = '1'}
                         onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
@@ -334,7 +350,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               )}
 
               {activeTab === 'time' && (
-                <div id="century-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%' }}>
+                <div id="century-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%', userSelect: 'none', WebkitUserSelect: 'none' }}>
                   {CENTURY_FILTERS.map(century => {
                     const isActive = activeCenturies.includes(century.id);
                     return (
@@ -347,7 +363,9 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                           cursor: 'pointer', 
                           fontSize: '13px', 
                           opacity: isActive ? 1 : 0.55, 
-                          transition: 'all 0.2s' 
+                          transition: 'all 0.2s',
+                          userSelect: 'none',
+                          WebkitUserSelect: 'none'
                         }}
                         onMouseOver={e => e.currentTarget.style.opacity = '1'}
                         onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}

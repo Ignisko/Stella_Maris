@@ -190,5 +190,125 @@
     "location": "Roma",
     "country": "İtalya",
     "description": "Meryem Ana, sıcak ağustos ayında Roma'ya kar yağdırarak Santa Maria Maggiore Bazilikası'nın inşa edileceği yeri göstermiştir."
+  },
+  "lanciano_italy": {
+    "title": "Lanciano Efkaristiya Mucizesi",
+    "location": "Lanciano",
+    "country": "İtalya",
+    "description": "8. yüzyılda, Efkaristiya'daki Gerçek Varlığı sorgulayan Basilyan bir keşiş, Kutsal Ekmek'in (Hostia) et ve Şarap'ın kan haline geldiğini gördü. 1970'lerde yapılan kapsamlı bilimsel testler, bunun kalp kası dokusu (miyokard) ve Torino Kefeni ile aynı olan AB grubu kan olduğunu doğruladı."
+  },
+  "bolsena_italy": {
+    "title": "Bolsena Efkaristiya Mucizesi",
+    "location": "Bolsena",
+    "country": "İtalya",
+    "description": "1263 yılında, Praglı Peter adında şüpheci bir rahip Mass ayinini yönetti. Kutsal Ekmek'i böldüğünde, üzerinden kan sızmaya başladı ve korporali lekeledi. Bu mucize, Papa IV. Urbanus'un Corpus Christi (Mesih'in Bedeni ve Kanı) bayramını ilan etmesini sağladı."
+  },
+  "buenos_aires_argentina": {
+    "title": "Buenos Aires Efkaristiya Mucizesi",
+    "location": "Buenos Aires",
+    "country": "Arjantin",
+    "description": "1992, 1994 ve 1996 yıllarında, terk edilmiş Kutsal Ekmekler kanamaya başladı. Kardinal Jorge Bergoglio (daha sonra 2025'te vefat eden Papa Franciscus) yönetiminde doku bilimsel olarak analiz edildi ve aşırı derecede zarar görmüş kalp kası dokusu ile yaşayan insan akyuvarları içerdiği tespit edildi."
+  },
+  "sokolka_poland": {
+    "title": "Sokółka Efkaristiya Mucizesi",
+    "location": "Sokółka",
+    "country": "Polonya",
+    "description": "2008 yılında, yere düşen kutsanmış bir Ekmek çözünmesi için suya konuldu. Bir hafta sonra üzerinde kırmızı bir leke belirdi. Patologlar, bu maddenin ölmek üzere olan bir kişinin kalp kası (miyokard) dokusuyla tamamen aynı olduğunu doğruladı."
+  },
+  "legnica_poland": {
+    "title": "Legnica Efkaristiya Mucizesi",
+    "location": "Legnica",
+    "country": "Polonya",
+    "description": "2013 yılında, düşen bir Ekmek suya konuldu. Üzerinde kırmızı lekeler oluştu ve yapılan bilimsel analizler, bunun aşırı stres ve can çekişme belirtileri gösteren insan kalp kası lifi parçaları içerdiğini doğruladı."
+  },
+  "tixtla_mexico": {
+    "title": "Tixtla Efkaristiya Mucizesi",
+    "location": "Tixtla",
+    "country": "Meksika",
+    "description": "2006 yılındaki bir inziva sırasında, Kutsal Ekmek kırmızımsı bir sıvı salgılamaya başladı. Bilimsel araştırmalar, kanın Ekmeğin içinden dışına doğru geldiğini, AB grubu kan olduğunu ve sağlam insan DNA'sı ile aktif beyaz kan hücreleri içerdiğini ortaya koydu."
+  },
+  "santarem_portugal": {
+    "title": "Santarém Efkaristiya Mucizesi",
+    "location": "Santarém",
+    "country": "Portekiz",
+    "description": "Bir iksir için kutsanmış bir Ekmeği çalmaya çalışan kadın, Ekmeğin bol miktarda kanadığını fark etti. Kutsal Ekmek, 750 yılı aşkın süredir bozulmamış halini koruyarak bugün de Aziz Stephen Kilisesi'nde muhafaza edilmektedir."
+  },
+  "cascia_italy": {
+    "title": "Cascia Efkaristiya Mucizesi",
+    "location": "Cascia",
+    "country": "İtalya",
+    "description": "Bir rahip saygısızca kutsanmış bir Ekmeği dua kitabının sayfaları arasına koydu. Ekmek kan haline gelerek her iki sayfayı da lekeledi ve İsa'nın yüzünün profilini oluşturdu."
+  },
+  "siena_italy": {
+    "title": "Siena Efkaristiya Mucizesi",
+    "location": "Siena",
+    "country": "İtalya",
+    "description": "1730 yılında hırsızlar, içinde 351 adet kutsanmış Ekmek bulunan bir kadehi çaldılar. Üç gün sonra bulunan Ekmekler, doğal bozulmaya direnerek günümüze kadar tamamen taze ve bozulmamış halde kalmıştır."
+  },
+  "daroca_spain": {
+    "title": "Daroca Efkaristiya Mucizesi",
+    "location": "Daroca",
+    "country": "İspanya",
+    "description": "Mağribilere karşı yapılan bir savaş sırasında, korunması için altı kutsanmış Ekmek bir korporale saklandı. Çıkarıldıklarında kanla kaplı oldukları görüldü. Kan lekeli korporal, kutsal bir emanet olarak korunmaktadır."
+  },
+  "chirattakonam_india": {
+    "title": "Chirattakonam Efkaristiya Mucizesi",
+    "location": "Chirattakonam",
+    "country": "Hindistan",
+    "description": "Efkaristiya tapınması sırasında Kutsal Ekmek üzerinde üç kırmızı leke belirdi. Sonraki birkaç gün içinde lekeler, dikenli taç takmış İsa'nın yüzünün net bir görüntüsünü oluşturdu."
+  },
+  "tumaco_colombia": {
+    "title": "Tumaco Efkaristiya Mucizesi",
+    "location": "Tumaco",
+    "country": "Kolombiya",
+    "description": "1906 yılında büyük bir tsunami Tumaco adasını tehdit etti. Peder Gerardo Larrondo, Kutsal Efkaristiya'yı kıyıya taşıdı. Dev dalga yaklaşırken Efkaristiya'ya ulaştığı anda anında geri çekilerek adayı kurtardı."
+  },
+  "amsterdam_holland": {
+    "title": "Amsterdam Efkaristiya Mucizesi",
+    "location": "Amsterdam",
+    "country": "Hollanda",
+    "description": "Ölmek üzere olan bir adam kutsal Ekmeği kabul etti ancak kustu. Kusmuk harlı bir ateşe atıldı, ancak Ekmek mucizevi bir şekilde yanmadı ve alevlerin arasında asılı kaldı."
+  },
+  "avignon_france": {
+    "title": "Avignon Efkaristiya Mucizesi",
+    "location": "Avignon",
+    "country": "Fransa",
+    "description": "Şiddetli bir sel felaketinin ardından, Gri Tövbekarlar derneği üyeleri kutsal Ekmeğin yok olduğunu düşünerek şapellerine kürek çektiler. Ancak suların mucizevi bir şekilde yarıldığını, mihrabı ve Ekmeği tamamen kuru bıraktığını gördüler."
+  },
+  "krakow_poland": {
+    "title": "Krakov Efkaristiya Mucizesi",
+    "location": "Krakov",
+    "country": "Polonya",
+    "description": "Hırsızlar, içinde kutsanmış Ekmekler olan kadehi çalıp bir bataklığa attılar. Gizemli bir ışık, arayanları çamura rağmen tamamen zarar görmemiş olan Ekmeklere ulaştırdı."
+  },
+  "poznan_poland": {
+    "title": "Poznań Efkaristiya Mucizesi",
+    "location": "Poznań",
+    "country": "Polonya",
+    "description": "Üç Ekmek çalındı ve delinerek saygısızlık edildi, bu da kanamalarına neden oldu. Daha sonra yakınlardaki bir çayırda, etraflarını saran mucizevi bir ışık eşliğinde havada asılı dururken bulundular."
+  },
+  "betania_venezuela": {
+    "title": "Betania Efkaristiya Mucizesi",
+    "location": "Betania",
+    "country": "Venezuela",
+    "description": "Peder Oti tarafından yönetilen Mass ayininde, kutsanmış Ekmek bir tarafından bolca kanamaya başladı. Tıbbi testler, maddenin insan kanı olduğunu doğruladı."
+  },
+  "ludbreg_croatia": {
+    "title": "Ludbreg Efkaristiya Mucizesi",
+    "location": "Ludbreg",
+    "country": "Hırvatistan",
+    "description": "Gerçek Varlığı sorgulayan bir rahip, kutsama esnasında şarabın kadehte gerçek kana dönüştüğünü gördü. Değerli Kan kalıntısı bugün hâlâ korunmakta ve saygı görmektedir."
+  },
+  "walldurn_germany": {
+    "title": "Walldürn Efkaristiya Mucizesi",
+    "location": "Walldürn",
+    "country": "Almanya",
+    "description": "Mass ayini sırasında bir rahip yanlışlıkla kadehi devirdi. Kutsanmış şarap korporale döküldü ve çarmıha gerilmiş Mesih'in görüntüsünü ve dikenli taç giymiş İsa'nın on bir özdeş başını oluşturdu."
+  },
+  "blanot_france": {
+    "title": "Blanot Efkaristiya Mucizesi",
+    "location": "Blanot",
+    "country": "Fransa",
+    "description": "Komünyon esnasında kutsanmış Ekmeğin bir parçası yere düştü. Rahip onu almaya çalıştı ancak parça, örtüye sızan ve kalıcı olarak lekeleyen bir kan damlasına dönüşmüştü."
   }
 }
