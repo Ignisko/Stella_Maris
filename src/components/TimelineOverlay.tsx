@@ -264,7 +264,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           e.currentTarget.style.color = 'var(--text-color)';
         }}
       >
-        <ChartBar size={16} weight="regular" />
+        <Clock size={20} weight="bold" />
         <span className="timeline-text" style={{ fontSize: '11px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>{t('timeline', lang)}</span>
         <CaretUp size={16} className="timeline-chevron" weight="bold" />
       </button>
