@@ -594,6 +594,7 @@ function App() {
 
                 {!isTutorialActive && (
                   <button
+                    id="play-presentation-button"
                     onClick={togglePlayTimeline}
                     className="glass-panel glass-panel-rounded animate-fade-in"
                     style={{
