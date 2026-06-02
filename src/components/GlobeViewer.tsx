@@ -378,6 +378,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       spacingBase = spacingBase * 1.0;
     }
 
+    if (appConfig.projectId === 'eucharist') {
+      maxPriority = 5;
+      effectivePerRegion = Math.max(effectivePerRegion, 45);
+      spacingBase = spacingBase * 0.55;
+    }
+
     const filtered = apparitions.filter(app => {
       if (selectedApparition?.id === app.id) return true;
       
