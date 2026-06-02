@@ -694,7 +694,7 @@ body[data-tutorial-step="3"] #sidebar-close-button {
    ===================================================== */
 @media (min-width: 601px) {
   /* Title card, Sidebar, Help button, Theme button, Language picker trigger, filter containers, and modals */
-  .desktop-left-panel > div,
+  .desktop-left-panel > div:first-child,
   #apparition-sidebar,
   .desktop-help-btn,
   .desktop-theme-btn,

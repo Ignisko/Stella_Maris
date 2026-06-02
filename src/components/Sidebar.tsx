@@ -144,7 +144,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       top: '0',
       bottom: '0',
       right: isVisible ? '0' : '-100%',
-      width: '400px',
+      width: '340px',
       maxWidth: '100vw',
       maxHeight: '100vh',
       overflowY: 'auto',
