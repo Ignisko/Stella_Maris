@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { CaretDown } from '@phosphor-icons/react';
 import { languageNames, t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
@@ -97,7 +97,7 @@ const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguage
             display: 'block'
           }} 
         />
-        <ChevronDown 
+        <CaretDown 
           size={13} 
           style={{ 
             opacity: 0.7, 

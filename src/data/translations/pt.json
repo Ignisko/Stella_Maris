@@ -3250,5 +3250,449 @@
     "location": "Assiut",
     "country": "Egito",
     "description": "Homenageando a histórica última parada da fuga da Sagrada Família para o Egito. Centenas de milhares de pessoas se reúnem anualmente no antigo Mosteiro da Caverna de Durunka, onde a maior estátua de bronze de Maria no Egito foi erguida em 2023 para comemorar seu aniversário, apoiada pela cunhagem comemorativa oficial do governo egípcio."
+  },
+  "fiecht_austria": {
+    "title": "Milagre Eucarístico de Fiecht",
+    "description": "Em 1310, um padre que duvidou da Presença Real durante a Missa viu o vinho consagrado ferver e transformar-se em sangue, que ainda se conserva como relíquia no mosteiro de Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Milagre Eucarístico de Seefeld",
+    "description": "Em 1384, um cavaleiro exigiu receber uma Hóstia maior durante a Missa. Ao recebê-la, o chão afundou sob ele e a Hóstia transformou-se em carne sangrenta. A relíquia está guardada na igreja paroquial de São Osvaldo."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Milagre Eucarístico de Weiten-Raxendorf",
+    "description": "Em 1411, uma Hóstia Consagrada roubada foi escondida debaixo de uma ponte. Ao ser recuperada, a Hóstia havia se transformado em carne sangrenta e emitia uma luz sobrenatural, levando à construção de uma capela."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Milagre Eucarístico de Bois-Seigneur-Isaac",
+    "description": "Em 1405, um padre teve uma visão de Cristo durante a Missa, e a Hóstia começou a sangrar no corporal, deixando uma mancha de sangue permanente que ainda hoje é venerada."
+  },
+  "bruges_belgium": {
+    "title": "Milagre Eucarístico de Bruges",
+    "description": "Em 1203, a relíquia do Preciosíssimo Sangue de Jesus, trazida da Segunda Cruzada, foi testemunhada transformando-se em sangue líquido, que é preservado na Basílica do Sangue Sagrado."
+  },
+  "brussels_belgium": {
+    "title": "Milagre Eucarístico de Bruxelas",
+    "description": "Em 1370, várias Hóstias consagradas foram roubadas e profanadas ao serem esfaqueadas. As Hóstias sangraram milagrosamente, levando à recuperação e veneração das relíquias."
+  },
+  "herentals_belgium": {
+    "title": "Milagre Eucarístico de Herentals",
+    "description": "Em 1412, Hóstias roubadas foram escondidas num campo. Foram encontrados semanas depois completamente intactos, protegidos por animais selvagens e emitindo uma luz suave."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Milagre Eucarístico de Herkenrode-Hasselt",
+    "description": "Em 1317, um sacerdote tocou uma Hóstia consagrada com as mãos sujas e esta começou a sangrar, manchando a toalha do altar. A relíquia está guardada na Catedral de São Quentin."
+  },
+  "liege_belgium": {
+    "title": "Milagre Eucarístico de Liège",
+    "description": "O milagre de Liège inspirou Santa Juliana a defender a festa de Corpus Christi. Hóstias consagradas sangraram durante a adoração, levando ao estabelecimento da solenidade."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Milagre Eucarístico de Middleburg-Leuven",
+    "description": "Em 1374, um servo recebeu a comunhão de forma irreverente, e a Hóstia se transformou em carne sangrenta, grudada no céu da boca. A relíquia é mantida em Leuven."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Milagre Eucarístico de Santa Maria do Egito",
+    "description": "Nos séculos IV e V, a arrependida Santa Maria do Egito foi milagrosamente capaz de cruzar o rio Jordão para receber a Sagrada Eucaristia do Abade Zózima, sobrevivendo por décadas no deserto."
+  },
+  "scete_egypt": {
+    "title": "Milagre Eucarístico de Scete",
+    "description": "Nos primeiros mosteiros do deserto de Scete, um monge que duvidava da Presença Real viu a Hóstia se transformando em uma criança sangrando, confirmando a realidade de Cristo\\"
+  },
+  "bordeaux_france": {
+    "title": "Milagre Eucarístico de Bordéus",
+    "description": "Em 1822, durante a adoração eucarística, Jesus apareceu dentro do ostensório por mais de vinte minutos, abençoando a congregação reunida na capela."
+  },
+  "dijon_france": {
+    "title": "Milagre Eucarístico de Dijon",
+    "description": "Em 1430, uma Hóstia consagrada foi esfaqueada com uma faca e começou a sangrar. A Hóstia foi posteriormente apresentada ao Papa Júlio II e tornou-se um símbolo de devoção em Dijon."
+  },
+  "douai_france": {
+    "title": "Milagre Eucarístico de Douai",
+    "description": "Em 1254, um padre viu uma linda criança aparecer na Hóstia durante a Missa. O milagre foi testemunhado por centenas de paroquianos que viram Jesus na Eucaristia."
+  },
+  "faverney_france": {
+    "title": "Milagre Eucarístico de Faverney",
+    "description": "Em 1608, ocorreu um incêndio na capela, mas o ostensório contendo o Santíssimo Sacramento permaneceu suspenso no ar sobre as chamas por 33 horas até que o fogo fosse extinto."
+  },
+  "la_rochelle_france": {
+    "title": "Milagre Eucarístico de La Rochelle",
+    "description": "Em 1461, uma criança muda foi curada da sua mudez depois de receber a comunhão na catedral de La Rochelle, demonstrando o poder do Santíssimo Sacramento."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Milagre Eucarístico do Santo Sepulcro de Neuvy",
+    "description": "Em 1257, uma Hóstia consagrada sangrou quando um padre a deixou cair durante a Missa. A pedra e a Hóstia manchadas de sangue foram preservadas na igreja."
+  },
+  "les_ulmes_france": {
+    "title": "Milagre Eucarístico de Les Ulmes",
+    "description": "Em 1668, o rosto de Jesus apareceu dentro da Hóstia durante a adoração na festa de Corpus Christi. A aparição durou várias horas em frente à paróquia."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Milagre Eucarístico de Marseille-en-Beauvaisis",
+    "description": "Em 1533, ladrões roubaram um ostensório, mas deixaram a Hóstia consagrada escondida num campo. O Host foi encontrado emitindo uma luz brilhante e foi recuperado em perfeitas condições."
+  },
+  "paris_france_1290": {
+    "title": "Milagre Eucarístico de Paris",
+    "description": "Em 1290, um profanador esfaqueou uma Hóstia consagrada com uma faca, jogando-a em água fervente. A Hóstia flutuou no ar e sangrou, levando à construção de uma igreja no local."
+  },
+  "pressac_france": {
+    "title": "Milagre Eucarístico de Pressac",
+    "description": "Em 1643, um incêndio destruiu o altar paroquial, mas a Hóstia consagrada permaneceu completamente intacta e suspensa sobre as cinzas, intocada pelas chamas."
+  },
+  "augsburg_germany": {
+    "title": "Milagre Eucarístico de Augsburgo",
+    "description": "Em 1194, uma mulher manteve a Hóstia na boca e levou-a para casa. Anos depois, descobriu-se que a Hóstia havia se transformado em carne sangrenta e estava preservada."
+  },
+  "benningen_germany": {
+    "title": "Milagre Eucarístico de Benningen",
+    "description": "Em 1216, uma Hóstia sangrando foi encontrada na igreja de Benningen. A Hóstia sangrou no altar e a relíquia ainda é venerada na igreja paroquial."
+  },
+  "bettbrunn_germany": {
+    "title": "Milagre Eucarístico de Bettbrunn",
+    "description": "Em 1125, um pastor roubou uma Hóstia para proteger seu rebanho. Ao deixá-la cair, a Hóstia ficou presa a uma pedra e não pôde ser movida até a chegada do bispo, provocando uma peregrinação."
+  },
+  "erding_germany": {
+    "title": "Milagre Eucarístico de Erding",
+    "description": "Em 1417, um camponês roubou uma Hóstia. Ao tentar escapar, a Hóstia escorregou de sua mão e pairou no ar, irradiando luz até ser recuperada pelo clero."
+  },
+  "kranenburg_germany": {
+    "title": "Milagre Eucarístico de Kranenburg",
+    "description": "Em 1280, um sacerdote deixou cair uma Hóstia consagrada no buraco de uma árvore. Anos mais tarde, um crucifixo de madeira esculpido na árvore começou a sangrar, provocando uma grande peregrinação."
+  },
+  "regensburg_germany": {
+    "title": "Milagre Eucarístico de Regensburg",
+    "description": "Em 1255, um padre duvidou da Presença Real. Durante a missa, o crucifixo de madeira no altar ganhou vida e Jesus pegou o cálice das mãos do padre\\"
+  },
+  "wilsnack_germany": {
+    "title": "Milagre Eucarístico de Wilsnack",
+    "description": "Em 1383, uma igreja foi destruída por um incêndio, mas três Hóstias consagradas sobreviveram completamente intactas no altar, cobertas de gotas de sangue fresco."
+  },
+  "weingarten_germany": {
+    "title": "Milagre Eucarístico de Weingarten",
+    "description": "O mosteiro de Weingarten preserva a relíquia do Preciosíssimo Sangue de Jesus, que foi verificada por vários milagres e é venerada desde o século XI."
+  },
+  "morne_rouge_martinique": {
+    "title": "Milagre Eucarístico de Morne-Rouge",
+    "description": "Em 1902, durante a erupção vulcânica do Monte Pelée, a Hóstia sagrada dentro do ostensório mostrou o rosto de Jesus coroado de espinhos diante da população em fuga."
+  },
+  "saint_andre_reunion": {
+    "title": "Milagre Eucarístico de Santo André",
+    "description": "Em 1902, durante a adoração ao Santíssimo Sacramento, o rosto de Jesus e uma coroa de espinhos apareceram dentro da Hóstia, testemunhados pelo pároco e pela congregação."
+  },
+  "alatri_italy": {
+    "title": "Milagre Eucarístico de Alatri",
+    "description": "Em 1228, uma jovem levou a Hóstia para casa envolta num pano. Três dias depois, ela descobriu que a Hóstia havia se transformado em carne sangrenta, que está preservada na Catedral de Alatri."
+  },
+  "assisi_clara_italy": {
+    "title": "Milagre Eucarístico de Assis",
+    "description": "Em 1240, Santa Clara de Assis repeliu os soldados sarracenos invasores, segurando o ostensório contendo o Santíssimo Sacramento nos portões do convento."
+  },
+  "asti_italy_1535": {
+    "title": "Milagre Eucarístico de Asti",
+    "description": "Em 1535, um padre celebrando a Missa quebrou a Hóstia, e o sangue começou a escorrer da ruptura, enchendo o cálice e manchando o corporal e o altar."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Milagre Eucarístico de Bagno di Romagna",
+    "description": "Em 1412, um sacerdote que duvidava da Presença Real viu o vinho consagrado ferver e transbordar do cálice como sangue, manchando o corporal, que permanece preservado."
+  },
+  "canosio_italy": {
+    "title": "Milagre Eucarístico de Canosio",
+    "description": "Em 1630, um padre deteve uma inundação devastadora da torrente Maira abençoando as águas ascendentes com o Santíssimo Sacramento, que recuou instantaneamente."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Milagre Eucarístico de Cava de\\",
+    "description": "Em 1656, uma praga devastadora foi interrompida quando o abade carregou o Santíssimo Sacramento em procissão, abençoando a cidade a partir da colina do Castelo Santo Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Milagre Eucarístico de Dronero",
+    "description": "Em 1631, um grande incêndio ameaçou consumir a cidade de Dronero. Um padre ergueu o Santíssimo Sacramento e as chamas apagaram-se imediatamente, salvando a cidade."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Milagre Eucarístico de San Mauro La Bruca",
+    "description": "Em 1969, ladrões roubaram um cibório, mas jogaram fora 63 Hóstias consagradas. Os Hosts foram recuperados em perfeitas condições e permanecem incorruptos desde então."
+  },
+  "ferrara_italy": {
+    "title": "Milagre Eucarístico de Ferrara",
+    "description": "Em 1171, um padre celebrando a Missa viu a Hóstia transformar-se em sangue, salpicando a abóbada acima do altar com gotas vermelhas, que ainda são visíveis hoje."
+  },
+  "florence_italy_1230": {
+    "title": "Milagre Eucarístico de Florença",
+    "description": "Em 1230, um padre deixou algumas gotas de vinho consagrado no cálice. No dia seguinte, o vinho se transformou em sangue. A relíquia está preservada na igreja de Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Milagre Eucarístico de Gruaro",
+    "description": "Em 1294, uma mulher que lavava o linho do altar da igreja de Gruaro encontrou-o manchado com o sangue proveniente de uma Hóstia consagrada, que está preservada em Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Milagre Eucarístico de Macerata",
+    "description": "Em 1356, um sacerdote que duvidava da Presença Real viu o sangue jorrar da Hóstia quando a quebrou, manchando o corporal, que ainda é venerado em Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Milagre Eucarístico de Mogoro",
+    "description": "Em 1604, dois pecadores receberam a comunhão, mas cuspiram as Hóstias no chão de pedra, onde as Hóstias deixaram marcas profundas e sangrentas que ainda podem ser vistas hoje."
+  },
+  "morrovalle_italy": {
+    "title": "Milagre Eucarístico de Morrovalle",
+    "description": "Em 1560, um incêndio destruiu completamente a igreja, mas a Hóstia Consagrada foi encontrada intacta sob as cinzas dez dias depois, irradiando uma luz suave."
+  },
+  "offida_italy": {
+    "title": "Milagre Eucarístico de Offida",
+    "description": "Em 1273, uma mulher jogou uma Hóstia no fogo. A Hóstia transformou-se em carne sangrenta e permaneceu intocada pelas chamas. A relíquia está guardada na igreja de Santo Agostinho."
+  },
+  "patierno_naples_italy": {
+    "title": "Milagre Eucarístico de Patierno",
+    "description": "Em 1772, Hóstias roubadas foram escondidas num campo. Eles foram encontrados emitindo uma luz brilhante e foram recuperados em perfeitas condições, acompanhados de vários milagres."
+  },
+  "rimini_italy": {
+    "title": "Milagre Eucarístico de Rimini",
+    "description": "Em 1227, Santo Antônio de Pádua provou a Presença Real a um herege quando uma mula faminta se ajoelhou para adorar o Santíssimo Sacramento em vez de comer aveia."
+  },
+  "rome_italy_600": {
+    "title": "Milagre Eucarístico de Roma",
+    "description": "No século VI, o Papa Gregório, o Grande, viu uma Hóstia consagrada transformar-se em carne visível para curar a dúvida de uma mulher que assou o pão."
+  },
+  "rosano_italy": {
+    "title": "Milagre Eucarístico de Rosano",
+    "description": "Em 1948, o rosto de Jesus apareceu dentro da Hóstia durante a adoração no mosteiro de Rosano, testemunhado pelas freiras e paroquianos."
+  },
+  "peter_damian_italy": {
+    "title": "Milagre Eucarístico de São Pedro Damião",
+    "description": "No século XI, São Pedro Damião documentou um milagre em que uma mulher roubou uma Hóstia. O Anfitrião sangrou no pano e, quando lhe foi mostrado, verificou sua autenticidade."
+  },
+  "salzano_italy": {
+    "title": "Milagre Eucarístico de Salzano",
+    "description": "Em 1517, um sacerdote celebrando a Missa viu a Hóstia sangrar, manchando o corporal e o altar, demonstrando a Presença Real a toda a congregação."
+  },
+  "scala_italy": {
+    "title": "Milagre Eucarístico de Scala",
+    "description": "Em 1732, durante a adoração ao Santíssimo Sacramento, os instrumentos da Paixão (cruz, coroa de espinhos, pregos) apareceram dentro da Hóstia, testemunhados por Santo Afonso de Ligório."
+  },
+  "trani_italy": {
+    "title": "Milagre Eucarístico de Trani",
+    "description": "No século XI, uma mulher herege fritou uma Hóstia consagrada em óleo. A hóstia começou a sangrar muito, transbordando da panela e caindo no chão."
+  },
+  "turin_italy_1453": {
+    "title": "Milagre Eucarístico de Turim (1453)",
+    "description": "Em 1453, um ostensório roubado contendo uma Hóstia caiu de um burro. A Hóstia ergueu-se no ar, irradiando luz, e permaneceu suspensa até a chegada do bispo."
+  },
+  "veroli_italy": {
+    "title": "Milagre Eucarístico de Veroli",
+    "description": "Em 1570, durante a adoração, o rosto de Jesus e uma cruz apareceram dentro da Hóstia, testemunhados por muitos habitantes da cidade e verificados pelas autoridades eclesiásticas."
+  },
+  "volterra_italy": {
+    "title": "Milagre Eucarístico de Volterra",
+    "description": "Em 1472, um soldado roubou um píxide contendo uma Hóstia. Ao tentar jogá-la fora, a Hóstia pairou no ar e sangrou, levando à conversão do soldado."
+  },
+  "alkmaar_netherlands": {
+    "title": "Milagre Eucarístico de Alkmaar",
+    "description": "Em 1429, um padre derramou vinho consagrado em suas vestes. O vinho transformou-se em sangue e não pôde ser lavado. As vestimentas manchadas de sangue estão preservadas."
+  },
+  "bergen_netherlands": {
+    "title": "Milagre Eucarístico de Bergen",
+    "description": "Em 1421, uma inundação destruiu a igreja e as Hóstias consagradas foram arrastadas. Mais tarde, foram encontrados intactos, com a água à sua volta a mantê-los secos."
+  },
+  "boxmeer_netherlands": {
+    "title": "Milagre Eucarístico de Boxmeer",
+    "description": "Em 1400, um padre duvidou da Presença Real. Durante a Missa, uma gota de sangue caiu da Hóstia para o cálice e o vinho transformou-se em sangue e transbordou."
+  },
+  "boxtel_netherlands": {
+    "title": "Milagre Eucarístico de Boxtel",
+    "description": "Em 1380, um padre derrubou o cálice, derramando vinho consagrado na toalha do altar. O vinho se transformou em sangue e formou a imagem de Cristo."
+  },
+  "breda_netherlands": {
+    "title": "Milagre Eucarístico de Breda",
+    "description": "Em 1300, uma Hóstia consagrada foi escondida num campo para evitar profanação. Foi encontrado anos depois completamente intacto e irradiando uma luz suave."
+  },
+  "meerssen_netherlands": {
+    "title": "Milagre Eucarístico de Meerssen",
+    "description": "Em 1222, um sacerdote celebrante viu a Hóstia sangrar durante a Missa. Em 1465, um incêndio destruiu a igreja, mas a Hóstia foi encontrada intacta no altar, intocada."
+  },
+  "stiphout_netherlands": {
+    "title": "Milagre Eucarístico de Stiphout",
+    "description": "Em 1342, um incêndio destruiu a igreja, mas um camponês local entrou correndo e recuperou o Santíssimo Sacramento, que permaneceu intocado pelas chamas."
+  },
+  "eten_peru": {
+    "title": "Milagre Eucarístico de Eten",
+    "description": "Em 1649, o rosto do Menino Jesus e três corações brancos apareceram dentro da Hóstia durante a adoração, testemunhada pelo sacerdote e pela congregação."
+  },
+  "glotowo_poland": {
+    "title": "Milagre Eucarístico de Glotowo",
+    "description": "Em 1290, uma Hóstia roubada foi enterrada num campo. Foi encontrado anos depois, quando bois se ajoelharam diante dele e a Hóstia foi encontrada emitindo uma luz brilhante."
+  },
+  "alboraya_spain": {
+    "title": "Milagre Eucarístico de Alboraya-Almácera",
+    "description": "Em 1348, um sacerdote que levava a comunhão aos enfermos caiu num rio, perdendo as Hóstias. As Hóstias foram encontradas na boca de peixes que as seguravam, esperando para devolvê-las."
+  },
+  "alcala_spain": {
+    "title": "Milagre Eucarístico de Alcalá",
+    "description": "Em 1597, um penitente devolveu Hóstias roubadas. As Hóstias foram guardadas numa gaveta durante anos e permaneceram completamente frescas e incorruptas, verificadas pelos teólogos."
+  },
+  "alcoy_spain": {
+    "title": "Milagre Eucarístico de Alcoy",
+    "description": "Em 1568, um ladrão roubou um cibório. Os Hosts foram recuperados depois que um residente local teve uma visão de onde eles estavam escondidos e foram encontrados intactos."
+  },
+  "caravaca_spain": {
+    "title": "Milagre Eucarístico de Caravaca de la Cruz",
+    "description": "Em 1231, dois anjos apareceram carregando uma cruz de dois braços (a Cruz de Caravaca) durante a missa celebrada por um padre diante dos captores mouros."
+  },
+  "cimballa_spain": {
+    "title": "Milagre Eucarístico de Cimballa",
+    "description": "Em 1370, um sacerdote duvidou da Presença Real. Durante a Missa, a Hóstia começou a sangrar no corporal, deixando uma mancha permanente de sangue que ainda é venerada."
+  },
+  "gerona_spain": {
+    "title": "Milagre Eucarístico de Gerona",
+    "description": "Em 1297, um padre que celebrava a Missa viu a Hóstia sangrar. O sangue manchou o corporal e a relíquia foi preservada e venerada na Catedral de Girona."
+  },
+  "escorial_spain": {
+    "title": "Milagre Eucarístico de Gorkum-El Escorial",
+    "description": "Em 1572, soldados protestantes profanaram uma Hóstia consagrada ao pisar nela. A Hóstia sangrou e a relíquia foi posteriormente entregue ao rei Filipe II e mantida em El Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Milagre Eucarístico de Guadalupe",
+    "description": "Em 1420, durante a Missa, a Hóstia foi vista transformando-se em carne sangrenta, e o vinho transformou-se em sangue, enchendo o cálice, testemunhado por D. João II de Castela."
+  },
+  "ivorra_spain": {
+    "title": "Milagre Eucarístico de Ivorra",
+    "description": "Em 1010, um padre celebrando a Missa duvidou da Presença Real. O vinho virou sangue, transbordando o cálice e manchando a toalha do altar, que está preservada."
+  },
+  "moncada_spain": {
+    "title": "Milagre Eucarístico de Moncada",
+    "description": "Em 1392, um sacerdote viu o Menino Jesus aparecer na Hóstia durante a Missa, e a Hóstia sangrou, confirmando a Presença Real à congregação."
+  },
+  "montserrat_spain_1657": {
+    "title": "Milagre Eucarístico de Montserrat",
+    "description": "Em 1657, durante a Missa, o rosto de Jesus apareceu dentro da Hóstia, e uma série de milagres ocorreram no mosteiro, levando a uma maior devoção."
+  },
+  "cebreiro_spain": {
+    "title": "Milagre Eucarístico de O\\",
+    "description": "Em 1300, um camponês subiu a montanha durante uma tempestade de neve para assistir à missa. O padre duvidoso viu a Hóstia transformar-se em carne e o vinho em sangue, manchando o corporal."
+  },
+  "onil_spain": {
+    "title": "Milagre Eucarístico de Onil",
+    "description": "Em 1824, uma Hóstia roubada foi recuperada depois que uma mulher viu uma luz misteriosa em um campo. O Host foi encontrado intacto e permanece incorrupto desde então."
+  },
+  "ponferrada_spain": {
+    "title": "Milagre Eucarístico de Ponferrada",
+    "description": "Em 1533, um ladrão roubou um tabernáculo com Hóstias. O tabernáculo foi encontrado escondido num campo e as Hóstias foram encontradas intactas e emitindo uma luz suave."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Milagre Eucarístico de Sant Joan de les Abadesses",
+    "description": "Em 1251, durante uma cerimônia litúrgica, a Hóstia dentro da ostensória foi vista sangrando, manchando a ostensória, que foi preservada."
+  },
+  "silla_spain": {
+    "title": "Milagre Eucarístico de Silla",
+    "description": "Em 1907, um sacerdote deixou cair uma Hóstia consagrada. A Hóstia foi recuperada e colocada em uma gaveta. Anos mais tarde, foi encontrado completamente intacto e incorrupto."
+  },
+  "valencia_spain": {
+    "title": "Milagre Eucarístico de Valência",
+    "description": "A Catedral de Valência preserva o Santo Cálice da Última Ceia, o que foi comprovado por numerosos registros históricos e visitas papais."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Milagre Eucarístico de Saragoça",
+    "description": "Em 1427, uma Hóstia consagrada foi roubada e escondida numa casa. O Host foi encontrado emitindo uma luz brilhante e foi recuperado em perfeitas condições."
+  },
+  "ettiswil_switzerland": {
+    "title": "Milagre Eucarístico de Ettiswil",
+    "description": "Em 1447, uma Hóstia roubada foi enterrada num campo. Foi encontrado quando bois se recusaram a pisar no local e a Hóstia foi encontrada pairando acima do solo."
+  },
+  "lanciano_italy": {
+    "title": "Milagre Eucarístico de Lanciano",
+    "description": "No século VIII, um monge basiliano que duvidava da Presença Real viu a Hóstia transformar-se em carne real e o vinho em sangue real durante a Missa. Extensos testes científicos na década de 1970 concluíram que se trata de tecido cardíaco humano (miocárdio) e tipo sanguíneo AB, idêntico ao Sudário de Turim."
+  },
+  "bolsena_italy": {
+    "title": "Milagre Eucarístico de Bolsena",
+    "description": "Em 1263, um padre duvidoso chamado Pedro de Praga celebrou a Missa. Ao quebrar a Hóstia, o sangue começou a escorrer dela, manchando o corporal. Este milagre levou o Papa Urbano IV a instituir a festa de Corpus Christi."
+  },
+  "buenos_aires_argentina": {
+    "title": "Milagre Eucarístico de Buenos Aires",
+    "description": "Em 1992, 1994 e 1996, hóstias descartadas começaram a sangrar. Sob a direção do Cardeal Jorge Bergoglio (mais tarde Papa Francisco, que morreu em 2025), o tecido foi analisado cientificamente e descobriu-se que continha glóbulos brancos humanos vivos e tecido muscular cardíaco em grave sofrimento."
+  },
+  "sokolka_poland": {
+    "title": "Milagre Eucarístico de Sokółka",
+    "description": "Em 2008, uma Hóstia consagrada que havia caído foi colocada em água para se dissolver. Uma semana depois, apareceu uma mancha vermelha. Os patologistas concluíram que a substância é idêntica ao tecido miocárdico (coração) de uma pessoa à beira da morte."
+  },
+  "legnica_poland": {
+    "title": "Milagre Eucarístico de Legnica",
+    "description": "Em 2013, uma Hóstia caída foi colocada na água. Desenvolveu manchas vermelhas, que a análise científica confirmou conter fibras musculares cardíacas humanas fragmentadas, exibindo sinais de extremo estresse e agonia."
+  },
+  "tixtla_mexico": {
+    "title": "Milagre Eucarístico de Tixtla",
+    "description": "Durante um retiro em 2006, uma hóstia começou a expelir uma substância avermelhada. Investigações científicas descobriram que o sangue vinha do interior do hospedeiro para fora, possuía tipo sanguíneo AB e continha DNA humano intacto e glóbulos brancos ativos."
+  },
+  "santarem_portugal": {
+    "title": "Milagre Eucarístico de Santarém",
+    "description": "Uma mulher que procurava usar uma hóstia consagrada para fazer uma poção encontrou-a sangrando profusamente. A Hóstia ainda hoje se conserva na Igreja de Santo Estêvão, tendo mantido o seu estado incorrupto durante mais de 750 anos."
+  },
+  "cascia_italy": {
+    "title": "Milagre Eucarístico de Cássia",
+    "description": "Um sacerdote colocou irreverentemente uma Hóstia consagrada entre as páginas do seu breviário. A Hóstia virou sangue, manchando ambas as páginas, formando o perfil do rosto de Cristo."
+  },
+  "siena_italy": {
+    "title": "Milagre Eucarístico de Siena",
+    "description": "Em 1730, ladrões roubaram um cibório contendo 351 Hóstias consagradas. Eles foram recuperados três dias depois e desde então permaneceram perfeitamente incorruptos e frescos, desafiando a deterioração natural."
+  },
+  "daroca_spain": {
+    "title": "Milagre Eucarístico de Daroca",
+    "description": "Durante uma batalha contra os Mouros, seis Hóstias consagradas foram escondidas num cabo. Quando recuperados, eles foram encontrados encharcados de sangue. O cabo manchado de sangue permanece preservado como uma relíquia."
+  },
+  "chirattakonam_india": {
+    "title": "Milagre Eucarístico de Chirattakonam",
+    "description": "Durante a adoração eucarística, três manchas vermelhas apareceram na Hóstia. Nos dias seguintes, as manchas formaram a imagem nítida do rosto de Jesus coroado de espinhos."
+  },
+  "tumaco_colombia": {
+    "title": "Milagre Eucarístico de Tumaco",
+    "description": "Em 1906, um enorme tsunami ameaçou a ilha de Tumaco. Padre Gerardo Larrondo levou o Santíssimo Sacramento até a praia. À medida que uma onda enorme se aproximava, ela recuou instantaneamente ao chegar à Eucaristia, salvando a ilha."
+  },
+  "amsterdam_holland": {
+    "title": "Milagre Eucarístico de Amsterdã",
+    "description": "Um homem moribundo recebeu a Eucaristia, mas a vomitou. O vômito foi jogado no fogo crepitante, mas a Hóstia milagrosamente permaneceu sem queimar e suspensa nas chamas."
+  },
+  "avignon_france": {
+    "title": "Milagre Eucarístico de Avignon",
+    "description": "Após fortes enchentes, membros dos Penitentes Cinzentos remaram até sua capela esperando que o Santíssimo Sacramento fosse destruído. Em vez disso, encontraram as águas milagrosamente divididas, deixando o altar e a Hóstia completamente secos."
+  },
+  "krakow_poland": {
+    "title": "Milagre Eucarístico de Cracóvia",
+    "description": "Os ladrões roubaram um cibório contendo Hóstias consagradas e jogaram-nas num pântano. Uma luz misteriosa levou os pesquisadores até as Hostes, que estavam completamente intactas apesar da lama."
+  },
+  "poznan_poland": {
+    "title": "Milagre Eucarístico de Poznań",
+    "description": "Três hóstias foram roubadas e profanadas ao serem perfuradas, causando-lhes sangramento. Mais tarde, foram descobertos flutuando num prado próximo, rodeados por uma luz milagrosa."
+  },
+  "betania_venezuela": {
+    "title": "Milagre Eucarístico de Betânia",
+    "description": "Durante a Missa celebrada pelo Padre Oti, a Hóstia consagrada começou a sangrar profusamente de um lado. Testes médicos confirmaram que a substância era sangue humano."
+  },
+  "ludbreg_croatia": {
+    "title": "Milagre Eucarístico de Ludbreg",
+    "description": "Um sacerdote que duvidou da Presença Real viu o vinho transformar-se em sangue real no cálice. A relíquia do Preciosíssimo Sangue ainda é preservada e venerada hoje."
+  },
+  "walldurn_germany": {
+    "title": "Milagre Eucarístico de Walldürn",
+    "description": "Um sacerdote derrubou acidentalmente o cálice durante a missa. O vinho consagrado derramou sobre o corporal, formando a imagem de Cristo crucificado e onze cabeças idênticas de Jesus coroadas de espinhos."
+  },
+  "blanot_france": {
+    "title": "Milagre Eucarístico de Blanot",
+    "description": "Durante a comunhão, um fragmento da Hóstia caiu no chão. O padre tentou recuperá-lo, mas ele se transformou em uma gota de sangue que encharcou o pano e o manchou permanentemente."
+  },
+  "oak_cliff_us": {
+    "title": "Hóstia sangrando de Oak Cliff",
+    "description": "Uma hóstia consagrada parecia sangrar. A diocese determinou, após uma investigação, que nenhum milagre ocorreu."
+  },
+  "south_st_paul_us": {
+    "title": "Hóstia Descolorida de South St. Paul",
+    "description": "No processo de dissolução de uma hóstia consagrada descartada em água, foi notada uma coloração vermelha. A Arquidiocese descobriu que a causa era um fungo."
+  },
+  "kearns_us": {
+    "title": "Hóstia Sangrenta de Kearns",
+    "description": "Uma hóstia consagrada parecia sangrar. Uma investigação da Diocese de Salt Lake City concluiu que o mofo vermelho do pão causava naturalmente a coloração."
+  },
+  "buffalo_us": {
+    "title": "Coloração vermelha do hospedeiro em Buffalo",
+    "description": "Uma coloração vermelha foi observada em um hospedeiro. Os bispos da Diocese de Buffalo recusaram-se explicitamente a investigar."
+  },
+  "morris_us": {
+    "title": "Hóstias de Morris manchadas",
+    "description": "Manchas que se pensava serem sangue foram encontradas em duas hóstias consagradas descartadas. A análise laboratorial mostrou que estes foram causados ​​por bactérias naturais."
   }
 }

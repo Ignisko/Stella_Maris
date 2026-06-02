@@ -3250,5 +3250,449 @@
     "location": "Assiut",
     "country": "Egitto",
     "description": "In onore dell'ultima storica tappa della fuga della Sacra Famiglia in Egitto. Centinaia di migliaia di persone si riuniscono ogni anno presso l'antico Monastero della Grotta di Durunka, dove nel 2023 è stata eretta la più grande statua in bronzo di Maria in Egitto per celebrarne il compleanno, con il supporto del conio commemorativo ufficiale del governo egiziano."
+  },
+  "fiecht_austria": {
+    "title": "Miracolo eucaristico di Fiecht",
+    "description": "Nel 1310, un sacerdote dubitando della Reale Presenza durante la Messa vide il vino consacrato bollire e trasformarsi in sangue, che è ancora conservato come reliquia nel monastero di Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Miracolo eucaristico di Seefeld",
+    "description": "Nel 1384, un cavaliere chiese di ricevere un'Ostia più grande durante la messa. Mentre la riceveva, il terreno cedette sotto di lui e l'Ostia si trasformò in carne sanguinante. La reliquia è conservata nella chiesa parrocchiale di Sant'Osvaldo."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Miracolo eucaristico di Weiten-Raxendorf",
+    "description": "Nel 1411 un'Ostia consacrata rubata fu nascosta sotto un ponte. Quando fu recuperata, l'Ostia si era trasformata in carne sanguinante ed emetteva una luce soprannaturale, portando alla costruzione di una cappella."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Miracolo eucaristico di Bois-Seigneur-Isaac",
+    "description": "Nel 1405, un sacerdote ebbe una visione di Cristo durante la messa e l'Ostia cominciò a sanguinare sul corporale, lasciando una macchia permanente di sangue venerata ancora oggi."
+  },
+  "bruges_belgium": {
+    "title": "Miracolo eucaristico di Bruges",
+    "description": "Nel 1203, si vide che la reliquia del Prezioso Sangue di Gesù, riportata dalla Seconda Crociata, si trasformò in sangue liquido, che è conservato nella Basilica del Sacro Sangue."
+  },
+  "brussels_belgium": {
+    "title": "Miracolo eucaristico di Bruxelles",
+    "description": "Nel 1370 diverse ostie consacrate furono rubate e profanate mediante coltellate. Le Ostie sanguinarono miracolosamente, determinando il recupero e la venerazione delle reliquie."
+  },
+  "herentals_belgium": {
+    "title": "Miracolo eucaristico di Herentals",
+    "description": "Nel 1412, le ostie rubate furono nascoste in un campo. Sono stati ritrovati settimane dopo completamente intatti, protetti da animali selvatici, ed emettevano una luce soffusa."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Miracolo eucaristico di Herkenrode-Hasselt",
+    "description": "Nel 1317, un sacerdote toccò un'Ostia consacrata con le mani sporche e questa cominciò a sanguinare, macchiando la tovaglia dell'altare. La reliquia è conservata nella Cattedrale di San Quintino."
+  },
+  "liege_belgium": {
+    "title": "Miracolo eucaristico di Liegi",
+    "description": "Il miracolo di Liegi ispirò Santa Giuliana a sostenere la festa del Corpus Domini. Le Ostie consacrate sanguinavano durante l'adorazione, determinando l'istituzione della solennità."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Miracolo eucaristico di Middleburg-Leuven",
+    "description": "Nel 1374, un servo ricevette la comunione in modo irriverente e l'Ostia si trasformò in carne sanguinante, attaccata al palato. La reliquia è conservata a Lovanio."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Miracolo eucaristico di Santa Maria d'Egitto",
+    "description": "Nel IV/V secolo, la pentita Santa Maria d'Egitto riuscì miracolosamente ad attraversare il fiume Giordano per ricevere la Santa Eucaristia dall'abate Zosima, sopravvivendo per decenni nel deserto."
+  },
+  "scete_egypt": {
+    "title": "Miracolo eucaristico di Scete",
+    "description": "Nei primi monasteri nel deserto di Scete, a un monaco che dubitava della reale presenza fu mostrata l'Ostia trasformarsi in un bambino sanguinante, confermando la realtà di Cristo\\"
+  },
+  "bordeaux_france": {
+    "title": "Miracolo eucaristico di Bordeaux",
+    "description": "Nel 1822, durante l'adorazione eucaristica, Gesù apparve all'interno dell'ostensorio per oltre venti minuti, benedicendo la congregazione riunita nella cappella."
+  },
+  "dijon_france": {
+    "title": "Miracolo eucaristico di Digione",
+    "description": "Nel 1430, un'Ostia consacrata fu trafitta da un coltello e cominciò a sanguinare. L'Ostia fu successivamente donata a Papa Giulio II e divenne un simbolo di devozione a Digione."
+  },
+  "douai_france": {
+    "title": "Miracolo eucaristico di Douai",
+    "description": "Nel 1254, un sacerdote vide un bellissimo bambino apparire nell'Ostia durante la Messa. Il miracolo fu testimoniato da centinaia di parrocchiani che videro Gesù nell'Eucaristia."
+  },
+  "faverney_france": {
+    "title": "Miracolo eucaristico di Faverney",
+    "description": "Nel 1608 scoppiò un incendio nella cappella, ma l'ostensorio contenente il Santissimo Sacramento rimase sospeso a mezz'aria sopra le fiamme per 33 ore fino allo spegnimento dell'incendio."
+  },
+  "la_rochelle_france": {
+    "title": "Miracolo eucaristico di La Rochelle",
+    "description": "Nel 1461, un bambino muto fu guarito dal suo mutismo dopo aver ricevuto la comunione nella cattedrale di La Rochelle, dimostrando il potere del Santissimo Sacramento."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Miracolo eucaristico del Santo Sepolcro di Neuvy",
+    "description": "Nel 1257, un'Ostia consacrata sanguinò quando un sacerdote la lasciò cadere durante la Messa. La pietra macchiata di sangue e l'Ostia sono state conservate nella chiesa."
+  },
+  "les_ulmes_france": {
+    "title": "Miracolo eucaristico di Les Ulmes",
+    "description": "Nel 1668, il volto di Gesù apparve all'interno dell'Ostia durante l'adorazione nella festa del Corpus Domini. L'apparizione durò diverse ore davanti alla parrocchia."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Miracolo eucaristico di Marsiglia-en-Beauvaisis",
+    "description": "Nel 1533, dei ladri rubarono un ostensorio ma lasciarono l'Ostia consacrata nascosta in un campo. L'Ostia è stata trovata emettere una luce brillante ed è stata recuperata in perfette condizioni."
+  },
+  "paris_france_1290": {
+    "title": "Miracolo eucaristico di Parigi",
+    "description": "Nel 1290, un profanatore trafisse con un coltello un'Ostia consacrata, gettandola nell'acqua bollente. L'Ostia fluttuò nell'aria e sanguinò, determinando la costruzione di una chiesa sul sito."
+  },
+  "pressac_france": {
+    "title": "Miracolo eucaristico di Pressac",
+    "description": "Nel 1643 un incendio distrusse l'altare parrocchiale, ma l'Ostia consacrata rimase completamente intatta e sospesa sopra le ceneri, non toccata dalle fiamme."
+  },
+  "augsburg_germany": {
+    "title": "Miracolo eucaristico di Augusta",
+    "description": "Nel 1194, una donna tenne in bocca l'Ostia e la portò a casa. Anni dopo, si scoprì che l'Ostia si era trasformata in carne sanguinante ed era stata preservata."
+  },
+  "benningen_germany": {
+    "title": "Miracolo eucaristico di Benningen",
+    "description": "Nel 1216, nella chiesa di Benningen fu ritrovata un'ostia sanguinante. L'Ostia sanguinò sull'altare e la reliquia è ancora venerata nella chiesa parrocchiale."
+  },
+  "bettbrunn_germany": {
+    "title": "Miracolo eucaristico di Bettbrunn",
+    "description": "Nel 1125, un pastore rubò un'Ostia per proteggere il suo gregge. Quando la lasciò cadere, l'Ostia si attaccò a una pietra e non poté essere spostata fino all'arrivo del vescovo, dando luogo a un pellegrinaggio."
+  },
+  "erding_germany": {
+    "title": "Miracolo eucaristico di Erding",
+    "description": "Nel 1417, un contadino rubò un'ostia. Mentre cercava di scappare, l'Ostia gli scivolò di mano e rimase sospesa nell'aria, irradiando luce finché non fu recuperata dal clero."
+  },
+  "kranenburg_germany": {
+    "title": "Miracolo eucaristico di Kranenburg",
+    "description": "Nel 1280, un sacerdote lasciò cadere un'Ostia consacrata nella cavità di un albero. Anni dopo, un crocifisso di legno scolpito dall'albero cominciò a sanguinare, provocando un importante pellegrinaggio."
+  },
+  "regensburg_germany": {
+    "title": "Miracolo eucaristico di Ratisbona",
+    "description": "Nel 1255, un prete dubitava della Presenza Reale. Durante la Messa il crocifisso ligneo sull'altare prese vita e Gesù prese il calice dalle mani del sacerdote\\"
+  },
+  "wilsnack_germany": {
+    "title": "Miracolo eucaristico di Wilsnack",
+    "description": "Nel 1383, una chiesa fu distrutta da un incendio, ma tre ostie consacrate sopravvissero completamente intatte sull'altare, coperte di gocce di sangue fresco."
+  },
+  "weingarten_germany": {
+    "title": "Miracolo eucaristico di Weingarten",
+    "description": "Il monastero di Weingarten conserva la reliquia del Preziosissimo Sangue di Gesù, verificato da numerosi miracoli ed è venerato fin dall'XI secolo."
+  },
+  "morne_rouge_martinique": {
+    "title": "Miracolo eucaristico di Morne-Rouge",
+    "description": "Nel 1902, durante l'eruzione vulcanica della Montagna Pelée, la sacra Ostia contenuta nell'ostensorio mostrò davanti alla popolazione in fuga il volto di Gesù coronato di spine."
+  },
+  "saint_andre_reunion": {
+    "title": "Miracolo eucaristico di Sant'Andrea",
+    "description": "Nel 1902, durante l'adorazione del Santissimo Sacramento, all'interno dell'Ostia apparvero il volto di Gesù e una corona di spine, testimoniati dal parroco e dai fedeli."
+  },
+  "alatri_italy": {
+    "title": "Miracolo eucaristico di Alatri",
+    "description": "Nel 1228, una giovane donna portò a casa l'Ostia avvolta in un panno. Tre giorni dopo, scoprì che l'Ostia si era trasformata in carne sanguinante, conservata nella Cattedrale di Alatri."
+  },
+  "assisi_clara_italy": {
+    "title": "Miracolo eucaristico di Assisi",
+    "description": "Nel 1240, Santa Chiara d'Assisi respinse l'invasione dei soldati saraceni sollevando l'ostensorio contenente il Santissimo Sacramento alle porte del convento."
+  },
+  "asti_italy_1535": {
+    "title": "Miracolo eucaristico di Asti",
+    "description": "Nel 1535, un sacerdote che celebrava la messa spezzò l'Ostia e dalla rottura cominciò a sgorgare sangue, riempiendo il calice e macchiando il corporale e l'altare."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Miracolo eucaristico di Bagno di Romagna",
+    "description": "Nel 1412, un sacerdote dubitando della Reale Presenza vide bollire il vino consacrato e traboccare come sangue il calice, macchiando il corporale, che rimane conservato."
+  },
+  "canosio_italy": {
+    "title": "Miracolo eucaristico di Canosio",
+    "description": "Nel 1630 un sacerdote fermò la devastante piena del torrente Maira benedicendo con il Santissimo Sacramento le acque che si sollevavano, le quali si ritirarono all'istante."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Miracolo eucaristico di Cava de\\",
+    "description": "Nel 1656, una devastante pestilenza venne fermata quando l'abate portò in processione il Santissimo Sacramento, benedicendo il paese dal colle di Castello Sant'Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Miracolo eucaristico di Dronero",
+    "description": "Nel 1631 un vasto incendio minacciò di consumare la città di Dronero. Un sacerdote sollevò il Santissimo Sacramento e le fiamme si spensero immediatamente, salvando il paese."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Miracolo eucaristico di San Mauro La Bruca",
+    "description": "Nel 1969 i ladri rubarono una pisside ma gettarono via 63 Ostie consacrate. Le ostie sono state recuperate in perfette condizioni e da allora sono rimaste incorrotte."
+  },
+  "ferrara_italy": {
+    "title": "Miracolo eucaristico di Ferrara",
+    "description": "Nel 1171 un sacerdote che celebrava la messa vide l'Ostia trasformarsi in sangue, spruzzando la volta sopra l'altare con gocce rosse, visibili ancora oggi."
+  },
+  "florence_italy_1230": {
+    "title": "Miracolo eucaristico di Firenze",
+    "description": "Nel 1230, un sacerdote lasciò nel calice alcune gocce di vino consacrato. Il giorno successivo, il vino si era trasformato in sangue. La reliquia è conservata nella chiesa di Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Miracolo eucaristico di Gruaro",
+    "description": "Nel 1294 una donna che lavava la tela dell'altare della chiesa di Gruaro la trovò macchiata del sangue proveniente da un'Ostia consacrata, che è conservata a Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Miracolo eucaristico di Macerata",
+    "description": "Nel 1356, un sacerdote, dubitando della Presenza Reale, vide sgorgare sangue dall'Ostia quando la ruppe, macchiando il corporale, tuttora venerato a Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Miracolo eucaristico di Mogoro",
+    "description": "Nel 1604, due peccatori ricevettero la comunione ma sputarono le Particole sul pavimento di pietra, dove le Particole lasciarono impronte profonde e sanguinanti che possono essere viste ancora oggi."
+  },
+  "morrovalle_italy": {
+    "title": "Miracolo eucaristico di Morrovalle",
+    "description": "Nel 1560 un incendio distrusse completamente la chiesa, ma l'Ostia consacrata fu ritrovata intatta sotto la cenere dieci giorni dopo, irradiante una morbida luce."
+  },
+  "offida_italy": {
+    "title": "Miracolo eucaristico di Offida",
+    "description": "Nel 1273, una donna gettò un'Ostia nel fuoco. L'Ostia si trasformò in carne sanguinante e rimase inviolata dalle fiamme. La reliquia è conservata nella chiesa di Sant'Agostino."
+  },
+  "patierno_naples_italy": {
+    "title": "Miracolo eucaristico di Patierno",
+    "description": "Nel 1772, le Ostie rubate furono nascoste in un campo. Sono stati trovati emettere una luce brillante e sono stati recuperati in perfette condizioni, accompagnati da molteplici miracoli."
+  },
+  "rimini_italy": {
+    "title": "Miracolo eucaristico di Rimini",
+    "description": "Nel 1227, Sant'Antonio da Padova dimostrò la presenza reale a un eretico quando un mulo affamato si inginocchiò per adorare il Santissimo Sacramento invece di mangiare l'avena."
+  },
+  "rome_italy_600": {
+    "title": "Miracolo eucaristico di Roma",
+    "description": "Nel VI secolo, papa Gregorio Magno vide un'Ostia consacrata trasformarsi in carne visibile per dissipare i dubbi di una donna che aveva cotto il pane."
+  },
+  "rosano_italy": {
+    "title": "Miracolo eucaristico di Rosano",
+    "description": "Nel 1948, il volto di Gesù apparve all'interno dell'Ostia durante l'adorazione nel monastero di Rosano, testimoniato dalle suore e dai parrocchiani."
+  },
+  "peter_damian_italy": {
+    "title": "Miracolo eucaristico di San Pietro Damiano",
+    "description": "Nell'XI secolo, San Pietro Damiano documentò un miracolo in cui una donna rubò un'ostia. L'Ostia ha sanguinato sul tessuto e, quando gli è stata mostrata, ne ha verificato l'autenticità."
+  },
+  "salzano_italy": {
+    "title": "Miracolo eucaristico di Salzano",
+    "description": "Nel 1517, un sacerdote che celebrava la Messa vide l'Ostia sanguinare, macchiando il corporale e l'altare, dimostrando la Presenza Reale all'intera congregazione."
+  },
+  "scala_italy": {
+    "title": "Miracolo eucaristico della Scala",
+    "description": "Nel 1732, durante l'adorazione del Santissimo Sacramento, apparvero all'interno dell'Ostia gli strumenti della Passione (croce, corona di spine, chiodi), testimoniato da Sant'Alfonso dei Liguori."
+  },
+  "trani_italy": {
+    "title": "Miracolo eucaristico di Trani",
+    "description": "Nell'XI secolo, una donna eretica frisse nell'olio un'Ostia consacrata. L'Ostia cominciò a sanguinare copiosamente, traboccando dalla padella e rovesciandosi sul pavimento."
+  },
+  "turin_italy_1453": {
+    "title": "Miracolo eucaristico di Torino (1453)",
+    "description": "Nel 1453, un ostensorio rubato contenente un'Ostia cadde da un asino. L'Ostia si alzò in aria irradiando luce e rimase sospesa fino all'arrivo del vescovo."
+  },
+  "veroli_italy": {
+    "title": "Miracolo eucaristico di Veroli",
+    "description": "Nel 1570, durante l'adorazione, all'interno dell'Ostia apparvero il volto di Gesù e una croce, testimoniati da molti paesani e verificati dalle autorità ecclesiastiche."
+  },
+  "volterra_italy": {
+    "title": "Miracolo eucaristico di Volterra",
+    "description": "Nel 1472, un soldato rubò una pisside contenente un'Ostia. Mentre cercava di gettarla via, l'Ostia si librava in aria e sanguinava, provocando la conversione del soldato."
+  },
+  "alkmaar_netherlands": {
+    "title": "Miracolo eucaristico di Alkmaar",
+    "description": "Nel 1429, un sacerdote versò vino consacrato sui suoi paramenti. Il vino si trasformò in sangue e non poteva essere lavato via. I paramenti macchiati di sangue sono conservati."
+  },
+  "bergen_netherlands": {
+    "title": "Miracolo eucaristico di Bergen",
+    "description": "Nel 1421 un'alluvione distrusse la chiesa e le ostie consacrate furono spazzate via. Successivamente furono ritrovati intatti, con l'acqua attorno che li teneva asciutti."
+  },
+  "boxmeer_netherlands": {
+    "title": "Miracolo eucaristico di Boxmeer",
+    "description": "Nel 1400, un prete dubitava della presenza reale. Durante la Messa, una goccia di sangue cadde dall'Ostia nel calice e il vino si trasformò in sangue e traboccò."
+  },
+  "boxtel_netherlands": {
+    "title": "Miracolo eucaristico di Boxtel",
+    "description": "Nel 1380, un sacerdote rovesciò il calice, versando il vino consacrato sulla tovaglia dell'altare. Il vino si trasformò in sangue e formò l'immagine di Cristo."
+  },
+  "breda_netherlands": {
+    "title": "Miracolo eucaristico di Breda",
+    "description": "Nel 1300 un'Ostia consacrata venne nascosta in un campo per impedirne la profanazione. Fu ritrovato anni dopo completamente intatto e irradiava una luce soffusa."
+  },
+  "meerssen_netherlands": {
+    "title": "Miracolo eucaristico di Meerssen",
+    "description": "Nel 1222, un sacerdote celebrante vide l'Ostia sanguinare durante la Messa. Nel 1465, un incendio distrusse la chiesa, ma l'Ostia fu ritrovata intatta sull'altare, intatta."
+  },
+  "stiphout_netherlands": {
+    "title": "Miracolo eucaristico di Stiphout",
+    "description": "Nel 1342, un incendio distrusse la chiesa, ma un contadino locale si precipitò all'interno e recuperò il Santissimo Sacramento, che non era stato toccato dalle fiamme."
+  },
+  "eten_peru": {
+    "title": "Miracolo eucaristico di Eten",
+    "description": "Nel 1649, il volto di Gesù Bambino e tre cuori bianchi apparvero all'interno dell'Ostia durante l'adorazione, testimoniati dal sacerdote e dai fedeli."
+  },
+  "glotowo_poland": {
+    "title": "Miracolo eucaristico di Glotowo",
+    "description": "Nel 1290, un'Ostia rubata fu sepolta in un campo. Fu ritrovata anni dopo, quando dei buoi si inginocchiarono davanti ad essa, e si trovò l'Ostia che emetteva una luce brillante."
+  },
+  "alboraya_spain": {
+    "title": "Miracolo eucaristico di Alboraya-Almácera",
+    "description": "Nel 1348, un sacerdote che portava la comunione ai malati cadde in un fiume, perdendo le ostie. Le Ostie furono ritrovate nella bocca dei pesci che le sorressero in attesa di restituirle."
+  },
+  "alcala_spain": {
+    "title": "Miracolo eucaristico di Alcalá",
+    "description": "Nel 1597, un penitente restituì le Ostie rubate. Le Particole furono conservate per anni in un cassetto e rimasero completamente fresche e incorrotte, verificate dai teologi."
+  },
+  "alcoy_spain": {
+    "title": "Miracolo eucaristico di Alcoy",
+    "description": "Nel 1568, un ladro rubò un ciborio. Le ostie furono recuperate dopo che un residente locale ebbe una visione di dove erano nascoste e furono ritrovate intatte."
+  },
+  "caravaca_spain": {
+    "title": "Miracolo eucaristico di Caravaca de la Cruz",
+    "description": "Nel 1231, due angeli apparvero portando una croce a due bracci (la croce di Caravaca) durante la messa celebrata da un sacerdote davanti ai rapitori moreschi."
+  },
+  "cimballa_spain": {
+    "title": "Miracolo eucaristico di Cimballa",
+    "description": "Nel 1370, un sacerdote dubitava della Presenza Reale. Durante la Messa, l'Ostia cominciò a sanguinare sul corporale, lasciando una macchia di sangue permanente che ancora oggi viene venerata."
+  },
+  "gerona_spain": {
+    "title": "Miracolo eucaristico di Gerona",
+    "description": "Nel 1297, un sacerdote che celebrava la messa vide sanguinare l'Ostia. Il sangue macchiò il corporale e la reliquia fu conservata e venerata nella Cattedrale di Girona."
+  },
+  "escorial_spain": {
+    "title": "Miracolo eucaristico di Gorkum-El Escorial",
+    "description": "Nel 1572, i soldati protestanti profanarono un'Ostia consacrata calpestandola. L'Ostia sanguinò e la reliquia fu successivamente donata al re Filippo II e conservata a El Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Miracolo eucaristico di Guadalupe",
+    "description": "Nel 1420, durante la messa, si vide l'Ostia trasformarsi in carne sanguinante e il vino trasformarsi in sangue, riempiendo il calice, come testimonia il re Giovanni II di Castiglia."
+  },
+  "ivorra_spain": {
+    "title": "Miracolo eucaristico di Ivorra",
+    "description": "Nel 1010, un sacerdote che celebrava la Messa dubitava della Presenza Reale. Il vino si trasformò in sangue, facendo traboccare il calice e macchiando la tovaglia dell'altare, che è conservata."
+  },
+  "moncada_spain": {
+    "title": "Miracolo eucaristico di Moncada",
+    "description": "Nel 1392, un sacerdote vide il Bambino Gesù apparire nell'Ostia durante la Messa e l'Ostia sanguinare, confermando la Presenza Reale alla congregazione."
+  },
+  "montserrat_spain_1657": {
+    "title": "Miracolo eucaristico di Montserrat",
+    "description": "Nel 1657, durante la messa, il volto di Gesù apparve all'interno dell'Ostia e nel monastero avvennero una serie di miracoli che fecero aumentare la devozione."
+  },
+  "cebreiro_spain": {
+    "title": "Miracolo eucaristico di O\\",
+    "description": "Nel 1300, un contadino salì sulla montagna in una tempesta di neve per assistere alla Messa. Il sacerdote dubbioso vide l'Ostia trasformarsi in carne e il vino in sangue, macchiando il corporale."
+  },
+  "onil_spain": {
+    "title": "Miracolo eucaristico di Onil",
+    "description": "Nel 1824, un'ostia rubata fu recuperata dopo che una donna vide una luce misteriosa in un campo. L'Host è stato trovato intatto e da allora è rimasto incorrotto."
+  },
+  "ponferrada_spain": {
+    "title": "Miracolo eucaristico di Ponferrada",
+    "description": "Nel 1533, un ladro rubò un tabernacolo con le Ostie. Il tabernacolo fu ritrovato nascosto in un campo e le Ostie furono ritrovate intatte ed emananti una luce soffusa."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Miracolo eucaristico di Sant Joan de les Abadesses",
+    "description": "Nel 1251, durante una cerimonia liturgica, si vide sanguinare l'Ostia contenuta nell'ostensorio, macchiando l'ostensorio, che era conservato."
+  },
+  "silla_spain": {
+    "title": "Miracolo eucaristico di Silla",
+    "description": "Nel 1907, un sacerdote lasciò cadere un'Ostia consacrata. L'Ostia fu recuperata e riposta in un cassetto. Anni dopo, fu ritrovato completamente intatto e incorrotto."
+  },
+  "valencia_spain": {
+    "title": "Miracolo eucaristico di Valencia",
+    "description": "La Cattedrale di Valencia conserva il Santo Calice dell'Ultima Cena, che è stato verificato da numerosi documenti storici e visite papali."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Miracolo eucaristico di Saragozza",
+    "description": "Nel 1427 un'Ostia consacrata fu rubata e nascosta in una casa. L'Ostia è stata trovata emettere una luce intensa ed è stata recuperata in perfette condizioni."
+  },
+  "ettiswil_switzerland": {
+    "title": "Miracolo eucaristico di Ettiswil",
+    "description": "Nel 1447, un'Ostia rubata fu sepolta in un campo. È stata trovata quando i buoi si sono rifiutati di calpestare il posto e l'Ostia è stata trovata sospesa sopra il terreno."
+  },
+  "lanciano_italy": {
+    "title": "Miracolo eucaristico di Lanciano",
+    "description": "Nell'VIII secolo, un monaco basiliano che dubitava della Presenza Reale vide l'Ostia trasformarsi in vera carne e il vino in vero sangue durante la Messa. Approfonditi test scientifici negli anni '70 hanno concluso che si tratta di tessuto cardiaco umano (miocardio) e di gruppo sanguigno AB, identico alla Sindone di Torino."
+  },
+  "bolsena_italy": {
+    "title": "Miracolo eucaristico di Bolsena",
+    "description": "Nel 1263, un sacerdote dubbioso di nome Pietro di Praga celebrò la Messa. Dopo aver rotto l'Ostia, il sangue cominciò a fuoriuscire da essa, macchiando il corporale. Questo miracolo spinse Papa Urbano IV a istituire la festa del Corpus Domini."
+  },
+  "buenos_aires_argentina": {
+    "title": "Miracolo eucaristico di Buenos Aires",
+    "description": "Nel 1992, 1994 e 1996, le ostie scartate iniziarono a sanguinare. Sotto la direzione del cardinale Jorge Bergoglio (poi papa Francesco, morto nel 2025), il tessuto fu analizzato scientificamente e si scoprì che conteneva globuli bianchi umani viventi e tessuto muscolare cardiaco in grave sofferenza."
+  },
+  "sokolka_poland": {
+    "title": "Miracolo eucaristico di Sokółka",
+    "description": "Nel 2008 un'Ostia consacrata caduta fu messa nell'acqua per dissolverla. Una settimana dopo è apparsa una macchia rossa. I patologi hanno concluso che la sostanza è identica al tessuto miocardico (cuore) di una persona prossima alla morte."
+  },
+  "legnica_poland": {
+    "title": "Miracolo eucaristico di Legnica",
+    "description": "Nel 2013 un'Ostia caduta fu messa nell'acqua. Ha sviluppato macchie rosse, che l'analisi scientifica ha confermato contenevano fibre muscolari cardiache umane frammentate che mostravano segni di stress estremo e agonia."
+  },
+  "tixtla_mexico": {
+    "title": "Miracolo eucaristico di Tixtla",
+    "description": "Durante un ritiro nel 2006, un'Ostia iniziò a effondere una sostanza rossastra. Indagini scientifiche hanno scoperto che il sangue proveniva dall'interno dell'ospite verso l'esterno, possedeva il gruppo sanguigno AB e conteneva DNA umano intatto e globuli bianchi attivi."
+  },
+  "santarem_portugal": {
+    "title": "Miracolo eucaristico di Santarém",
+    "description": "Una donna che cercava di usare un'Ostia consacrata per una pozione la trovò sanguinante. L'Ostia è conservata ancora oggi nella Chiesa di Santo Stefano, avendo mantenuto il suo stato incorrotto per oltre 750 anni."
+  },
+  "cascia_italy": {
+    "title": "Miracolo eucaristico di Cascia",
+    "description": "Un sacerdote depose con irriverenza un'Ostia consacrata tra le pagine del suo breviario. L'Ostia si è trasformata in sangue, macchiando entrambe le pagine, formando il profilo del volto di Cristo."
+  },
+  "siena_italy": {
+    "title": "Miracolo eucaristico di Siena",
+    "description": "Nel 1730 dei ladri rubarono una pisside contenente 351 Ostie consacrate. Sono stati recuperati tre giorni dopo e da allora sono rimasti perfettamente incorrotti e freschi, sfidando il deterioramento naturale."
+  },
+  "daroca_spain": {
+    "title": "Miracolo Eucaristico di Daroca",
+    "description": "Durante una battaglia contro i Mori, sei Particole consacrate furono nascoste in un corporale. Quando furono recuperati, furono trovati inzuppati di sangue. Il corporale macchiato di sangue resta conservato come reliquia."
+  },
+  "chirattakonam_india": {
+    "title": "Miracolo eucaristico di Chirattakonam",
+    "description": "Durante l'adorazione eucaristica, sull'Ostia sono apparse tre macchie rosse. Nei giorni successivi le macchie formarono l'immagine nitida del volto di Gesù coronato di spine."
+  },
+  "tumaco_colombia": {
+    "title": "Miracolo eucaristico di Tumaco",
+    "description": "Nel 1906, un enorme tsunami minacciò l'isola di Tumaco. Padre Gerardo Larrondo portò a riva il Santissimo Sacramento. Quando un'onda massiccia si avvicinò, si ritirò immediatamente non appena raggiunse l'Eucaristia, salvando l'isola."
+  },
+  "amsterdam_holland": {
+    "title": "Miracolo eucaristico di Amsterdam",
+    "description": "Un uomo morente ricevette l'Eucaristia ma la vomitò. Il vomito fu gettato in un fuoco ruggente, ma l'Ostia rimase miracolosamente incombusta e sospesa tra le fiamme."
+  },
+  "avignon_france": {
+    "title": "Miracolo eucaristico di Avignone",
+    "description": "In seguito a una grave inondazione, i membri dei Penitenti Grigi remarono verso la loro cappella aspettandosi che il Santissimo Sacramento venisse distrutto. Trovarono invece che le acque si separarono miracolosamente, lasciando l'altare e l'Ostia completamente asciutti."
+  },
+  "krakow_poland": {
+    "title": "Miracolo eucaristico di Cracovia",
+    "description": "I ladri hanno rubato una pisside contenente le Ostie consacrate e le hanno gettate in una palude. Una luce misteriosa condusse gli esploratori alle Ostie, che nonostante il fango erano completamente intatte."
+  },
+  "poznan_poland": {
+    "title": "Miracolo eucaristico di Poznań",
+    "description": "Tre ostie furono rubate e profanate mediante trafitture, facendole sanguinare. Successivamente furono scoperti fluttuare in un prato vicino, circondati da una luce miracolosa."
+  },
+  "betania_venezuela": {
+    "title": "Miracolo eucaristico di Betania",
+    "description": "Durante la Messa celebrata da Padre Oti, l'Ostia consacrata cominciò a sanguinare copiosamente da un lato. I test medici hanno confermato che la sostanza è sangue umano."
+  },
+  "ludbreg_croatia": {
+    "title": "Miracolo eucaristico di Ludbreg",
+    "description": "Un sacerdote che dubitava della presenza reale vide il vino trasformarsi in vero sangue nel calice. La reliquia del Preziosissimo Sangue è ancora oggi conservata e venerata."
+  },
+  "walldurn_germany": {
+    "title": "Miracolo eucaristico di Walldürn",
+    "description": "Un sacerdote rovesciò accidentalmente il calice durante la messa. Il vino consacrato si rovesciò sul corporale, formando l'immagine di Cristo crocifisso e undici teste identiche di Gesù coronate di spine."
+  },
+  "blanot_france": {
+    "title": "Miracolo eucaristico di Blanot",
+    "description": "Durante la comunione, un frammento dell'Ostia cadde a terra. Il prete tentò di recuperarlo, ma si era trasformato in una goccia di sangue che imbevve il tessuto macchiandolo permanentemente."
+  },
+  "oak_cliff_us": {
+    "title": "Ostia sanguinante della scogliera di quercia",
+    "description": "Un'ostia consacrata sembrava sanguinare. Dopo un'indagine la diocesi ha stabilito che non si era verificato alcun miracolo."
+  },
+  "south_st_paul_us": {
+    "title": "Ostia scolorita di San Paolo Sud",
+    "description": "Durante il processo di dissoluzione nell'acqua di un'ostia consacrata scartata, è stata notata una colorazione rossa. L'arcidiocesi ha riscontrato che la causa era un fungo."
+  },
+  "kearns_us": {
+    "title": "Ostia sanguinante di Kearns",
+    "description": "Un'ostia consacrata sembrava sanguinare. Un'indagine condotta dalla diocesi di Salt Lake City ha concluso che la muffa rossa del pane ha causato naturalmente la colorazione."
+  },
+  "buffalo_us": {
+    "title": "Colorazione rossa dell'host a Buffalo",
+    "description": "È stata notata una colorazione rossa su un host. I vescovi della diocesi di Buffalo hanno esplicitamente rifiutato di indagare."
+  },
+  "morris_us": {
+    "title": "Ostie di Morris macchiate",
+    "description": "Macchie ritenute sangue sono state trovate su due ostie consacrate scartate. Analisi di laboratorio hanno dimostrato che questi erano causati da batteri naturali."
   }
 }

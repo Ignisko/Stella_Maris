@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, HelpCircle, ArrowLeft, ArrowRight, Rewind, FastForward, Search, Bug } from 'lucide-react';
+import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, Bug } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -297,7 +297,7 @@ function App() {
     if (sortedFilteredApparitions.length === 0) return;
     setPlaybackIndex(prev => {
       const next = prev - 1;
-      if (next < 0) return sortedFilteredApparitions.length - 1;
+      if (next < 0) return 0;
       return next;
     });
   };
@@ -306,7 +306,7 @@ function App() {
     if (sortedFilteredApparitions.length === 0) return;
     setPlaybackIndex(prev => {
       const next = prev + 1;
-      if (next >= sortedFilteredApparitions.length) return 0;
+      if (next >= sortedFilteredApparitions.length) return sortedFilteredApparitions.length - 1;
       return next;
     });
   };
@@ -323,7 +323,7 @@ function App() {
       return translatedApparitionsData;
     }
     if (!isCinemaMode || !currentSelectedApparition) return filteredApparitions;
-    return filteredApparitions.filter(a => a.year <= currentSelectedApparition.year);
+    return [currentSelectedApparition];
   }, [isCinemaMode, currentSelectedApparition, filteredApparitions, isTutorialActive, translatedApparitionsData, tutorialStep]);
 
   const hasPopups = isDirectoryOpen || !!currentSelectedApparition;
@@ -340,7 +340,7 @@ function App() {
             left: '20px',
             zIndex: 40,
             padding: '16px 20px',
-            background: 'rgba(15, 23, 42, 0.95)',
+            background: 'rgba(28, 28, 30, 0.95)',
             border: '1px solid var(--glass-border)',
             display: 'flex',
             flexDirection: 'column',
@@ -366,9 +366,10 @@ function App() {
                 <button
                   onClick={handlePrevPresentation}
                   title="Previous Apparition"
-                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: 0.8, padding: '6px', transition: 'opacity 0.2s' }}
-                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                  onMouseOut={e => e.currentTarget.style.opacity = '0.8'}
+                  style={{ pointerEvents: playbackIndex <= 0 ? 'none' : 'auto', background: 'transparent', border: 'none', color: '#fff', cursor: playbackIndex <= 0 ? 'default' : 'pointer', opacity: playbackIndex <= 0 ? 0.3 : 0.8, padding: '6px', transition: 'opacity 0.2s' }}
+                  onMouseOver={e => { if (playbackIndex > 0) e.currentTarget.style.opacity = '1'; }}
+                  onMouseOut={e => { if (playbackIndex > 0) e.currentTarget.style.opacity = '0.8'; }}
+                  disabled={playbackIndex <= 0}
                 >
                   <ArrowLeft size={24} />
                 </button>
@@ -399,9 +400,10 @@ function App() {
                 <button
                   onClick={handleNextPresentation}
                   title="Next Apparition"
-                  style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', opacity: 0.8, padding: '6px', transition: 'opacity 0.2s' }}
-                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                  onMouseOut={e => e.currentTarget.style.opacity = '0.8'}
+                  style={{ pointerEvents: playbackIndex >= sortedFilteredApparitions.length - 1 ? 'none' : 'auto', background: 'transparent', border: 'none', color: '#fff', cursor: playbackIndex >= sortedFilteredApparitions.length - 1 ? 'default' : 'pointer', opacity: playbackIndex >= sortedFilteredApparitions.length - 1 ? 0.3 : 0.8, padding: '6px', transition: 'opacity 0.2s' }}
+                  onMouseOver={e => { if (playbackIndex < sortedFilteredApparitions.length - 1) e.currentTarget.style.opacity = '1'; }}
+                  onMouseOut={e => { if (playbackIndex < sortedFilteredApparitions.length - 1) e.currentTarget.style.opacity = '0.8'; }}
+                  disabled={playbackIndex >= sortedFilteredApparitions.length - 1}
                 >
                   <ArrowRight size={24} />
                 </button>
@@ -555,7 +557,6 @@ function App() {
               lang={lang}
               isExpanded={isFiltersExpanded}
               onToggleExpanded={setIsFiltersExpanded}
-              forceTab={undefined}
             />
 
             {!isFiltersExpanded && (
@@ -705,7 +706,7 @@ function App() {
             e.currentTarget.style.transform = 'none';
           }}
         >
-          <HelpCircle size={20} color="var(--accent-color)" />
+          <Question size={20} color="var(--accent-color)" />
         </button>
       )}
 
@@ -767,7 +768,6 @@ function App() {
           top: '210px',
           left: '20px',
           zIndex: 150,
-          width: '280px'
         }}>
           <FilterMenu 
             activeFilters={activeFilters} 
@@ -777,7 +777,6 @@ function App() {
             lang={lang}
             isExpanded={isFiltersExpanded}
             onToggleExpanded={setIsFiltersExpanded}
-            absolute={true}
           />
         </div>
       )}
@@ -828,7 +827,6 @@ function App() {
           onSelectApparition={handleSelectApparition}
           lang={lang}
           isTimelineOpen={isTimelineOpen}
-          isCinemaMode={isCinemaMode}
           projectId={config.projectId}
         />
       )}
@@ -900,7 +898,7 @@ function App() {
               setIsDirectoryOpen(true);
             }}
           >
-            <Search size={22} color="#1a1a1a" />
+            <MagnifyingGlass size={22} color="#1a1a1a" />
             <span className="mob-btn-tooltip">Search</span>
           </button>
 

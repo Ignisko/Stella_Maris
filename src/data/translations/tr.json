@@ -310,5 +310,369 @@
     "location": "Blanot",
     "country": "Fransa",
     "description": "Komünyon esnasında kutsanmış Ekmeğin bir parçası yere düştü. Rahip onu almaya çalıştı ancak parça, örtüye sızan ve kalıcı olarak lekeleyen bir kan damlasına dönüşmüştü."
+  },
+  "fiecht_austria": {
+    "title": "Fiecht'in Efkaristiya Mucizesi",
+    "description": "1310'da, Ayin sırasında Gerçek Varlık'tan şüphe eden bir rahip, Fiecht manastırında hâlâ bir kutsal emanet olarak korunan kutsanmış şarabın kaynayıp kana dönüştüğünü gördü."
+  },
+  "seefeld_austria": {
+    "title": "Seefeld'in Efkaristiya Mucizesi",
+    "description": "1384'te bir şövalye, Ayin sırasında daha büyük bir Ordunun kabul edilmesini talep etti. Bu talebi kabul ettiğinde, yer altındaki çöktü ve Ordu kanayan ete dönüştü. Kutsal emanet, St. Oswald bölge kilisesinde saklanıyor."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Weiten-Raxendorf'un Efkaristiya Mucizesi",
+    "description": "1411'de çalıntı, kutsanmış bir Sunucu bir köprünün altında saklanmıştı. Kurtarıldığında, Ev Sahibi kanayan bir ete dönüşmüştü ve doğaüstü bir ışık yayarak bir şapelin inşasına yol açıyordu."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Bois-Seigneur-Isaac'ın Efkaristiya Mucizesi",
+    "description": "1405'te, bir rahip Ayin sırasında İsa'yı gördü ve Ev Sahibi onbaşının üzerine kan akıtmaya başladı ve bugün hâlâ saygı duyulan kalıcı bir kan lekesi bıraktı."
+  },
+  "bruges_belgium": {
+    "title": "Bruges Efkaristiya Mucizesi",
+    "description": "1203 yılında, İkinci Haçlı Seferi'nden getirilen İsa'nın Kıymetli Kanı'nın kutsal emanetinin, Kutsal Kan Bazilikası'nda saklanan sıvı kana dönüştüğüne tanık olundu."
+  },
+  "brussels_belgium": {
+    "title": "Brüksel'in Efkaristiya Mucizesi",
+    "description": "1370 yılında, birkaç kutsanmış Ev sahibi çalındı ​​ve bıçaklarla bıçaklanarak saygısızlığa uğratıldı. Ev Sahiplerinin mucizevi bir şekilde kanaması, kutsal emanetlerin kurtarılmasına ve saygıyla anılmasına yol açtı."
+  },
+  "herentals_belgium": {
+    "title": "Herentallerin Efkaristiya Mucizesi",
+    "description": "1412'de çalınan Hostlar bir tarlada saklanmıştı. Haftalar sonra tamamen sağlam, vahşi hayvanlar tarafından korunan ve yumuşak bir ışık yayan bir halde bulundular."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Herkenrode-Hasselt'in Efkaristiya Mucizesi",
+    "description": "1317'de bir rahip, kutsanmış bir Ev sahibine kirli elleriyle dokundu ve kan akmaya başladı ve sunak örtüsünü lekeledi. Kutsal emanet St. Quentin Katedrali'nde saklanıyor."
+  },
+  "liege_belgium": {
+    "title": "Liège'in Efkaristiya Mucizesi",
+    "description": "Liège mucizesi, St. Juliana'ya Corpus Christi bayramını savunma konusunda ilham verdi. Kutsanmış Ev Sahiplerinin tapınma sırasında kanları aktı ve bu da törenlerin oluşmasına yol açtı."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Middleburg-Leuven'in Efkaristiya Mucizesi",
+    "description": "1374'te bir hizmetçi saygısız bir şekilde komünyon aldı ve Ev Sahibi ağzının damağına yapışan kanayan bir ete dönüştü. Kutsal emanet Leuven'de saklanıyor."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Mısırlı Aziz Meryem'in Efkaristiya Mucizesi",
+    "description": "4./5. yüzyılda Mısırlı Aziz Meryem'in mucizevi bir şekilde Ürdün Nehri'ni geçerek Başrahip Zosimas'tan Kutsal Efkaristiya'yı alması sağlandı ve çölde onlarca yıl hayatta kaldı."
+  },
+  "scete_egypt": {
+    "title": "Scete'nin Efkaristiya Mucizesi",
+    "description": "Scete'nin ilk çöl manastırlarında, Gerçek Mevcudiyet'ten şüphe eden bir keşiş, Ev Sahibi'nin İsa'nın gerçekliğini doğrulayacak şekilde kanayan bir çocuğa dönüştüğü gösterildi\\"
+  },
+  "bordeaux_france": {
+    "title": "Bordeaux'nun Efkaristiya Mucizesi",
+    "description": "1822'de, Efkaristiya tapınması sırasında İsa, şapelde toplanan cemaati kutsayarak yirmi dakikadan fazla bir süre boyunca canavarın içinde göründü."
+  },
+  "dijon_france": {
+    "title": "Dijon'un Efkaristiya Mucizesi",
+    "description": "1430'da, kutsanmış bir Ev sahibi bıçakla bıçaklandı ve kanamaya başladı. Ev sahibi daha sonra Papa II. Julius'a sunuldu ve Dijon'da bağlılığın sembolü haline geldi."
+  },
+  "douai_france": {
+    "title": "Douai'nin Efkaristiya Mucizesi",
+    "description": "1254'te bir rahip, Ayin sırasında Ev sahibinde güzel bir çocuğun belirdiğini gördü. Bu mucizeye, İsa'yı Efkaristiya'da gören yüzlerce cemaatçi tanık oldu."
+  },
+  "faverney_france": {
+    "title": "Faverney Efkaristiya Mucizesi",
+    "description": "1608'de şapelde bir yangın çıktı, ancak Kutsal Ayini içeren canavar, yangın söndürülene kadar 33 saat boyunca alevlerin üzerinde havada asılı kaldı."
+  },
+  "la_rochelle_france": {
+    "title": "La Rochelle'in Efkaristiya Mucizesi",
+    "description": "1461'de dilsiz bir çocuk, La Rochelle katedralinde komünyon aldıktan sonra dilsizliğinden kurtuldu ve bu Kutsal Ayinin gücünü gösterdi."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Neuvy Saint Sepulcre'nin Efkaristiya Mucizesi",
+    "description": "1257'de, kutsanmış bir Ev sahibi, bir rahip ayin sırasında onu düşürdüğünde kanadı. Kan lekeli taş ve Ev sahibi kilisede muhafaza edildi."
+  },
+  "les_ulmes_france": {
+    "title": "Les Ulmes'in Efkaristiya Mucizesi",
+    "description": "1668'de, Corpus Christi bayramındaki tapınma sırasında Ev Sahibinin içinde İsa'nın yüzü belirdi. Bu hayalet cemaatin önünde birkaç saat sürdü."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Marsilya-en-Beauvaisis'in Efkaristiya Mucizesi",
+    "description": "1533'te hırsızlar bir canavarı çaldılar ancak kutsanmış Ev Sahibini bir tarlada saklı bıraktılar. Sunucunun parlak bir ışık yaydığı tespit edildi ve mükemmel durumda kurtarıldı."
+  },
+  "paris_france_1290": {
+    "title": "Paris'in Efkaristiya Mucizesi",
+    "description": "1290'da bir dinsiz, kutsanmış bir Ev Sahibini bıçakla bıçakladı ve onu kaynar suya attı. Ev sahibi havada süzüldü ve kan kaybından dolayı bölgede bir kilise inşa edildi."
+  },
+  "pressac_france": {
+    "title": "Eşkaristiya Pressac Mucizesi",
+    "description": "1643'te bir yangın cemaat sunağını yok etti, ancak kutsanmış Ev sahibi tamamen sağlam kaldı ve alevlerden etkilenmeden küllerin üzerinde asılı kaldı."
+  },
+  "augsburg_germany": {
+    "title": "Augsburg'un Efkaristiya Mucizesi",
+    "description": "1194'te bir kadın, Ev Sahibi'ni ağzında tuttu ve evine götürdü. Yıllar sonra Ev Sahibinin kanayan ete dönüştüğü ve korunduğu anlaşıldı."
+  },
+  "benningen_germany": {
+    "title": "Benningen'in Efkaristiya Mucizesi",
+    "description": "1216'da Benningen kilisesinde kanayan bir Ev sahibi bulundu. Ev sahibinin kanı sunağa döküldü ve kutsal emanete bölge kilisesinde hâlâ saygı duyuluyor."
+  },
+  "bettbrunn_germany": {
+    "title": "Bettbrunn'un Efkaristiya Mucizesi",
+    "description": "1125'te bir çoban, sürüsünü korumak için bir Konak çaldı. Ev sahibi onu düşürdüğünde bir taşa sıkıştı ve piskopos gelene kadar hareket ettirilemedi, bu da hac yolculuğuna yol açtı."
+  },
+  "erding_germany": {
+    "title": "Erding'in Efkaristiya Mucizesi",
+    "description": "1417'de bir köylü bir Host çaldı. Kaçmaya çalışırken Ev Sahibi elinden kaydı ve din adamları tarafından kurtarılıncaya kadar ışık yayarak havada asılı kaldı."
+  },
+  "kranenburg_germany": {
+    "title": "Kranenburg'un Efkaristiya Mucizesi",
+    "description": "1280'de bir rahip, kutsanmış bir Ev sahibini bir ağaçtaki oyuğa düşürdü. Yıllar sonra, ağaçtan oyulmuş tahta bir haç kanamaya başladı ve bu da büyük bir hac yolculuğuna yol açtı."
+  },
+  "regensburg_germany": {
+    "title": "Regensburg'un Efkaristiya Mucizesi",
+    "description": "1255'te bir rahip Gerçek Varlık'tan şüphe ediyordu. Ayin sırasında sunaktaki tahta haç canlandı ve İsa kadehi rahibin elinden aldı\\"
+  },
+  "wilsnack_germany": {
+    "title": "Wilsnack'in Efkaristiya Mucizesi",
+    "description": "1383'te bir kilise yangında yok oldu, ancak kutsanmış üç Ev sahibi, taze kan damlalarıyla kaplı olarak sunakta tamamen sağlam bir şekilde hayatta kaldı."
+  },
+  "weingarten_germany": {
+    "title": "Weingarten'in Efkaristiya Mucizesi",
+    "description": "Weingarten manastırı, birçok mucizeyle doğrulanan ve 11. yüzyıldan beri saygı duyulan İsa'nın Değerli Kanının kutsal emanetini muhafaza etmektedir."
+  },
+  "morne_rouge_martinique": {
+    "title": "Morne-Rouge'un Efkaristiya Mucizesi",
+    "description": "1902'de, Pelée Dağı'nın volkanik patlaması sırasında, canavarın içindeki kutsal Ev sahibi, kaçan halkın önünde İsa'nın dikenlerle taçlandırılmış yüzünü gösterdi."
+  },
+  "saint_andre_reunion": {
+    "title": "Saint-André'nin Efkaristiya Mucizesi",
+    "description": "1902'de, Kutsal Ayin'e tapınma sırasında, kilise rahibinin ve cemaatin şahit olduğu, Ev Sahibinin içinde İsa'nın yüzü ve dikenli bir taç belirdi."
+  },
+  "alatri_italy": {
+    "title": "Alatri'nin Efkaristiya Mucizesi",
+    "description": "1228'de genç bir kadın, Ev Sahibi'ni bir bez içinde evine götürdü. Üç gün sonra Ev Sahibi'nin Alatri Katedrali'nde saklanan kanayan ete dönüştüğünü gördü."
+  },
+  "assisi_clara_italy": {
+    "title": "Eukaristiya Assisi Mucizesi",
+    "description": "1240 yılında Assisili Aziz Clare, Kutsal Ayini içeren canavarı manastırın kapılarına kaldırarak işgalci Sarazen askerlerine geri döndü."
+  },
+  "asti_italy_1535": {
+    "title": "Asti'nin Efkaristiya Mucizesi",
+    "description": "1535'te Ayini kutlayan bir rahip Ev Sahibi'ni kırdı ve aralıktan kan akmaya başladı, kadehi doldurdu ve onbaşı ile sunağı lekeledi."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Bagno di Romagna'nın Efkaristiya Mucizesi",
+    "description": "1412'de, Gerçek Mevcudiyet'ten şüphe eden bir rahip, kutsanmış şarabın kaynadığını ve kadehten kan olarak taştığını ve korunmuş olan onbaşıyı lekelediğini gördü."
+  },
+  "canosio_italy": {
+    "title": "Canosio'nun Efkaristiya Mucizesi",
+    "description": "1630'da bir rahip, Maira nehrinin yıkıcı selini, yükselen suları, anında geri çekilen Kutsal Ayin ile kutsayarak durdurdu."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Cava de Efkaristiya Mucizesi\\",
+    "description": "1656'da, başrahip Kutsal Ayini geçit töreninde taşıyarak kasabayı Saint Adiutore Kalesi'nin tepesinden kutsadığında yıkıcı bir veba durduruldu."
+  },
+  "dronero_italy": {
+    "title": "Dronero'nun Efkaristiya Mucizesi",
+    "description": "1631'de büyük bir yangın, Dronero kasabasını yok etme tehlikesiyle karşı karşıya kaldı. Bir rahip Kutsal Ayini kaldırdı ve alevler anında sönerek kasabayı kurtardı."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "San Mauro La Bruca'nın Efkaristiya Mucizesi",
+    "description": "1969'da hırsızlar bir ciborium çaldı ancak 63 kutsanmış Ev Sahibini çöpe attı. Ana Bilgisayarlar mükemmel durumda kurtarıldı ve o zamandan beri bozulmadan kaldı."
+  },
+  "ferrara_italy": {
+    "title": "Ferrara'nın Efkaristiya Mucizesi",
+    "description": "1171'de Ayini kutlayan bir rahip, Ev Sahibinin kana dönüştüğünü ve sunağın üzerindeki tonoza bugün hala görülebilen kırmızı damlalar sıktığını gördü."
+  },
+  "florence_italy_1230": {
+    "title": "Floransa'nın Efkaristiya Mucizesi",
+    "description": "1230'da bir rahip kadehin içine birkaç damla kutsanmış şarap bıraktı. Ertesi gün şarap kana dönmüştü. Kutsal emanet Sant kilisesinde muhafaza ediliyor\\"
+  },
+  "gruaro_italy": {
+    "title": "Gruaro'nun Efkaristiya Mucizesi",
+    "description": "1294'te Gruaro kilisesinin sunak çarşaflarını yıkayan bir kadın, bunun Valvasone'de saklanan kutsanmış bir Ev sahibinden gelen kanla lekelenmiş olduğunu buldu."
+  },
+  "macerata_italy": {
+    "title": "Macerata'nın Efkaristiya Mucizesi",
+    "description": "1356'da, Gerçek Varlık'tan şüphe eden bir rahip, Ev Sahibi'ni kırdığında kan fışkırdığını ve Macerata'da hâlâ saygı duyulan onbaşının lekelendiğini gördü."
+  },
+  "mogoro_italy": {
+    "title": "Mogoro'nun Efkaristiya Mucizesi",
+    "description": "1604'te iki günahkar komünyon aldı ancak Ev Sahiplerini taş zemine tükürdü; Ev Sahipleri bugün hala görülebilen derin, kanayan izler bıraktı."
+  },
+  "morrovalle_italy": {
+    "title": "Morrovalle Efkaristiya Mucizesi",
+    "description": "1560 yılında bir yangın kiliseyi tamamen yok etti, ancak kutsanmış Ev sahibi on gün sonra küllerin altında yumuşak bir ışık yayarak sağlam bir şekilde bulundu."
+  },
+  "offida_italy": {
+    "title": "Offida'nın Efkaristiya Mucizesi",
+    "description": "1273'te bir kadın, bir Host'u ateşe attı. Ev Sahibi kanayan bir ete dönüştü ve alevlerden etkilenmeden kaldı. Kutsal emanet St. Augustine kilisesinde saklanıyor."
+  },
+  "patierno_naples_italy": {
+    "title": "Patierno'nun Efkaristiya Mucizesi",
+    "description": "1772'de çalınan Sunucular bir tarlada saklanmıştı. Parlak bir ışık yaydıkları görüldü ve birçok mucize eşliğinde mükemmel durumda kurtarıldılar."
+  },
+  "rimini_italy": {
+    "title": "Rimini'nin Efkaristiya Mucizesi",
+    "description": "1227'de, Padua'lı Aziz Anthony, aç bir katır yulaf yemek yerine Kutsal Ayin'e tapmak için diz çöktüğünde bir kafir için Gerçek Mevcudiyeti kanıtladı."
+  },
+  "rome_italy_600": {
+    "title": "Roma'nın Efkaristiya Mucizesi",
+    "description": "6. yüzyılda Papa Büyük Gregory, kutsanmış bir Ev sahibinin, ekmeği pişiren bir kadının şüphesini gidermek için görünür bir ete dönüştüğünü gördü."
+  },
+  "rosano_italy": {
+    "title": "Rosano'nun Efkaristiya Mucizesi",
+    "description": "1948'de, Rosano manastırındaki tapınma sırasında, rahibeler ve cemaat mensuplarının şahit olduğu Ev Sahibinin içinde İsa'nın yüzü belirdi."
+  },
+  "peter_damian_italy": {
+    "title": "Aziz Peter Damian'ın Efkaristiya Mucizesi",
+    "description": "11. yüzyılda Aziz Peter Damian, bir kadının Host'u çaldığı bir mucizeyi belgeledi. Sunucunun kumaşın üzerine kan aktı ve kendisine gösterildiğinde kumaşın gerçekliğini doğruladı."
+  },
+  "salzano_italy": {
+    "title": "Salzano'nun Efkaristiya Mucizesi",
+    "description": "1517'de Ayini kutlayan bir rahip, Ev Sahibinin kanadığını, onbaşıyı ve sunağı lekeleyerek Gerçek Varlığı tüm cemaate gösterdiğini gördü."
+  },
+  "scala_italy": {
+    "title": "Scala'nın Efkaristiya Mucizesi",
+    "description": "1732'de, Kutsal Ayin'e tapınma sırasında, Aziz Alphonsus Liguori'nin şahitliğinde, Çile aletleri (haç, dikenli taç, çiviler) Ev Sahibinin içinde ortaya çıktı."
+  },
+  "trani_italy": {
+    "title": "Trani'nin Efkaristiya Mucizesi",
+    "description": "11. yüzyılda kafir bir kadın, kutsanmış bir Ev Sahibini yağda kızarttı. Sunucu çok fazla kanamaya başladı, tavadan taştı ve yere döküldü."
+  },
+  "turin_italy_1453": {
+    "title": "Torino'nun Efkaristiya Mucizesi (1453)",
+    "description": "1453'te, içinde bir Host'un bulunduğu çalıntı bir canavar eşekten düştü. Sunucu ışık yayarak havaya yükseldi ve piskopos gelene kadar havada asılı kaldı."
+  },
+  "veroli_italy": {
+    "title": "Veroli'nin Efkaristiya Mucizesi",
+    "description": "1570 yılında, tapınma sırasında, Ev Sahibinin içinde İsa'nın yüzü ve bir haç belirdi; bu, birçok kasaba halkının şahit olduğu ve dini otoriteler tarafından doğrulandığı bir olaydı."
+  },
+  "volterra_italy": {
+    "title": "Volterra'nın Efkaristiya Mucizesi",
+    "description": "1472'de bir asker, içinde Host bulunan bir pyx'i çaldı. Onu atmaya çalışırken, Ordu havada asılı kaldı ve kanadı, bu da askerin dönüşüme uğramasına yol açtı."
+  },
+  "alkmaar_netherlands": {
+    "title": "Alkmaar'ın Efkaristiya Mucizesi",
+    "description": "1429'da bir rahip, cübbesinin üzerine kutsanmış şarabı döktü. Şarap kana dönüştü ve yıkanamadı. Kan lekeli cüppeler korunmuştur."
+  },
+  "bergen_netherlands": {
+    "title": "Bergen Efkaristiya Mucizesi",
+    "description": "1421'de bir sel kiliseyi yok etti ve kutsanmış Ev Sahipleri süpürüldü. Daha sonra etraflarındaki su onları kuru tuttuğu için sağlam halde bulundu."
+  },
+  "boxmeer_netherlands": {
+    "title": "Boxmeer'in Efkaristiya Mucizesi",
+    "description": "1400 yılında bir rahip Gerçek Varlık'tan şüphe ediyordu. Ayin sırasında Ev Sahibi'nden kadehin içine bir damla kan düştü ve şarap kana dönüşüp taştı."
+  },
+  "boxtel_netherlands": {
+    "title": "Boxtel'in Efkaristiya Mucizesi",
+    "description": "1380'de bir rahip kadehi devirdi ve kutsanmış şarabı sunak örtüsüne döktü. Şarap kana dönüştü ve Mesih'in suretini oluşturdu."
+  },
+  "breda_netherlands": {
+    "title": "Breda'nın Efkaristiya Mucizesi",
+    "description": "1300 yılında, kutsal sayılan bir Sunucu, küfürü önlemek için bir alanda saklanmıştı. Yıllar sonra tamamen sağlam bir şekilde bulundu ve yumuşak bir ışık saçıyordu."
+  },
+  "meerssen_netherlands": {
+    "title": "Meerssen'in Efkaristiya Mucizesi",
+    "description": "1222'de bir rahip, Ayin sırasında Ev Sahibi'nin kanadığını gördü. 1465'te bir yangın kiliseyi yok etti, ancak Ev Sahibi sunakta dokunulmadan sağlam bir şekilde bulundu."
+  },
+  "stiphout_netherlands": {
+    "title": "Stiphout'un Efkaristiya Mucizesi",
+    "description": "1342'de bir yangın kiliseyi yok etti, ancak yerel bir köylü içeri daldı ve alevlerin dokunmadığı Kutsal Ayini aldı."
+  },
+  "eten_peru": {
+    "title": "Eten'in Efkaristiya Mucizesi",
+    "description": "1649'da, rahip ve cemaatin tanık olduğu tapınma sırasında Ev Sahibinin içinde Çocuk İsa'nın yüzü ve üç beyaz kalp belirdi."
+  },
+  "glotowo_poland": {
+    "title": "Glotowo'nun Efkaristiya Mucizesi",
+    "description": "1290'da çalıntı bir Sunucu bir tarlaya gömüldü. Yıllar sonra öküzler önünde diz çöktüğünde bulundu ve Ev Sahibinin parlak bir ışık yaydığı görüldü."
+  },
+  "alboraya_spain": {
+    "title": "Alboraya-Almácera'nın Efkaristiya Mucizesi",
+    "description": "1348'de hastalara cemaat taşıyan bir rahip, Ev Sahiplerini kaybederek nehre düştü. Ev sahipleri, onları havaya kaldırıp geri dönmeyi bekleyen balıkların ağzında bulundu."
+  },
+  "alcala_spain": {
+    "title": "Alcalá'nın Efkaristiya Mucizesi",
+    "description": "1597'de bir tövbekar, çalınan Ev Sahiplerini iade etti. Sunucular yıllarca bir çekmecede saklandı ve ilahiyatçılar tarafından da doğrulandığı üzere tamamen yeni ve bozulmadan kaldı."
+  },
+  "alcoy_spain": {
+    "title": "Alcoy'un Efkaristiya Mucizesi",
+    "description": "1568'de bir hırsız bir ciborium çaldı. Ev sahipleri, yerel bir sakinin onların nerede saklandığını görmesiyle kurtarıldı ve sağlam bir şekilde bulundu."
+  },
+  "caravaca_spain": {
+    "title": "Caravaca de la Cruz'un Efkaristiya Mucizesi",
+    "description": "1231'de, Mağribileri esir alan kişilerin önünde bir rahip tarafından kutlanan ayin sırasında çift kollu bir haç (Caravaca Haçı) taşıyan iki melek ortaya çıktı."
+  },
+  "cimballa_spain": {
+    "title": "Cimballa'nın Efkaristiya Mucizesi",
+    "description": "1370 yılında bir rahip Gerçek Varlık'tan şüphe ediyordu. Ayin sırasında Ev Sahibi onbaşının üzerindeki kanamaya başladı ve hâlâ saygı duyulan kalıcı bir kan lekesi bıraktı."
+  },
+  "gerona_spain": {
+    "title": "Gerona'nın Efkaristiya Mucizesi",
+    "description": "1297'de Ayini kutlayan bir rahip Ev Sahibinin kanadığını gördü. Onbaşının kanı lekelendi ve kutsal emanet Girona Katedrali'nde korundu ve saygıyla karşılandı."
+  },
+  "escorial_spain": {
+    "title": "Gorkum-El Escorial'in Efkaristiya Mucizesi",
+    "description": "1572'de Protestan askerler, kutsanmış bir Ev sahibinin üzerine basarak kutsallığını bozdular. Ev sahibinin kanı aktı ve kutsal emanet daha sonra Kral II. Philip'e verildi ve El Escorial'da saklandı."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Guadalupe Efkaristiya Mucizesi",
+    "description": "1420'de, Kastilya Kralı II. John'un tanık olduğu gibi, Ayin sırasında Ev Sahibinin kanayan ete dönüştüğü ve şarabın kadehi doldurarak kana dönüştüğü görüldü."
+  },
+  "ivorra_spain": {
+    "title": "Ivorra'nın Efkaristiya Mucizesi",
+    "description": "1010'da Ayini kutlayan bir rahip Gerçek Varlık'tan şüphe ediyordu. Şarap kana dönüştü, kadehi taştı ve korunmuş olan sunak örtüsünü lekeledi."
+  },
+  "moncada_spain": {
+    "title": "Moncada'nın Efkaristiya Mucizesi",
+    "description": "1392'de bir rahip, Çocuk İsa'nın Ayin sırasında Ev Sahibi'nde göründüğünü gördü ve Ev Sahibinin kanadığı, cemaatin Gerçek Mevcudiyetini doğruladığıydı."
+  },
+  "montserrat_spain_1657": {
+    "title": "Monserrat Efkaristiya Mucizesi",
+    "description": "1657'de, Ayin sırasında, Ev Sahibinin içinde İsa'nın yüzü belirdi ve manastırda bir dizi mucize meydana geldi ve bu da bağlılığın artmasına yol açtı."
+  },
+  "cebreiro_spain": {
+    "title": "O'nun Efkaristiya Mucizesi\\",
+    "description": "1300 yılında, bir köylü Ayine katılmak için kar fırtınasında dağa tırmandı. Şüphe duyan rahip, Ev sahibinin ete, şarabın da kana dönüştüğünü ve onbaşının lekelendiğini gördü."
+  },
+  "onil_spain": {
+    "title": "Onil'in Efkaristiya Mucizesi",
+    "description": "1824'te, çalınan bir Sunucu, bir kadının tarlada gizemli bir ışık görmesinin ardından kurtarıldı. Ana Bilgisayar sağlam bulundu ve o zamandan beri bozulmadan kaldı."
+  },
+  "ponferrada_spain": {
+    "title": "Ponferrada'nın Efkaristiya Mucizesi",
+    "description": "1533'te bir hırsız Ev Sahipleriyle birlikte bir çadırı çaldı. Tapınak bir alanda saklı olarak bulundu ve Ev Sahipleri sağlam bir şekilde bulundu ve yumuşak bir ışık yayıyordu."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Sant Joan de les Abadesses'in Efkaristiya Mucizesi",
+    "description": "1251'de, bir ayin töreni sırasında, canavarın içindeki Ev Sahibinin, korunmuş olan canavarı lekeleyerek kanadığı görüldü."
+  },
+  "silla_spain": {
+    "title": "Silla'nın Efkaristiya Mucizesi",
+    "description": "1907'de bir rahip, kutsanmış bir Ev sahibini düşürdü. Sunucu kurtarıldı ve bir çekmeceye yerleştirildi. Yıllar sonra tamamen sağlam ve bozulmamış halde bulundu."
+  },
+  "valencia_spain": {
+    "title": "Valencia'nın Efkaristiya Mucizesi",
+    "description": "Valensiya Katedrali, çok sayıda tarihi kayıt ve papalık ziyaretleriyle doğrulanan Son Akşam Yemeği Kutsal Kadehi'ni koruyor."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Zagoza'nın Efkaristiya Mucizesi",
+    "description": "1427'de, kutsanmış bir Sunucu çalındı ​​ve bir evde saklandı. Sunucunun parlak bir ışık yaydığı tespit edildi ve mükemmel durumda kurtarıldı."
+  },
+  "ettiswil_switzerland": {
+    "title": "Ettiswil'in Efkaristiya Mucizesi",
+    "description": "1447'de çalıntı bir Sunucu bir tarlaya gömüldü. Öküzlerin yere basmayı reddetmesi sonucu bulundu ve Ev Sahibi yerin üzerinde asılı dururken bulundu."
+  },
+  "oak_cliff_us": {
+    "title": "Meşe Kayalıklarının Kanayan Konağı",
+    "description": "Kutsanmış bir konağın kanadığı görüldü. Piskoposluk, yaptığı inceleme sonrasında hiçbir mucizenin gerçekleşmediğini belirledi."
+  },
+  "south_st_paul_us": {
+    "title": "Güney St. Paul'un Rengi Bozulmuş Konak",
+    "description": "Atılmış kutsanmış bir konağın suda eritilmesi sürecinde, kırmızı renk fark edildi. Başpiskoposluk sebebin mantar olduğunu buldu."
+  },
+  "kearns_us": {
+    "title": "Kearns'in Kanayan Konağı",
+    "description": "Kutsanmış bir konağın kanadığı görüldü. Salt Lake City Piskoposluğu tarafından yapılan bir araştırma, kırmızı ekmek küfünün doğal olarak renklenmeye neden olduğu sonucuna vardı."
+  },
+  "buffalo_us": {
+    "title": "Buffalo'daki Konakçının Kırmızı Rengi",
+    "description": "Bir konakçıda kırmızı bir renklenme fark edildi. Buffalo Piskoposluğunun piskoposları araştırmayı açıkça reddettiler."
+  },
+  "morris_us": {
+    "title": "Morris'in Benekli Konakçıları",
+    "description": "Atılmış iki kutsanmış konakçının üzerinde kan olduğu düşünülen noktalar bulundu. Laboratuvar analizleri bunların doğal bakterilerden kaynaklandığını gösterdi."
   }
 }

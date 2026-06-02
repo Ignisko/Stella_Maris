@@ -3250,5 +3250,449 @@
     "location": "Asiut",
     "country": "Egipto",
     "description": "En honor a la histórica última parada de la huida de la Sagrada Familia a Egipto. Cientos de miles de personas se reúnen anualmente en el antiguo Monasterio de la Cueva de Durunka, donde se erigió en 2023 la estatua de bronce de María más grande de Egipto para celebrar su cumpleaños, respaldada por la acuñación conmemorativa oficial del gobierno de Egipto."
+  },
+  "fiecht_austria": {
+    "title": "Milagro Eucarístico de Fiecht",
+    "description": "En 1310, un sacerdote que dudaba de la Presencia Real durante la Misa vio hervir el vino consagrado y convertirse en sangre, que aún se conserva como reliquia en el monasterio de Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Milagro Eucarístico de Seefeld",
+    "description": "En 1384, un caballero exigió recibir una Hostia más grande durante la Misa. Cuando la recibió, el suelo se hundió bajo sus pies y la Hostia se convirtió en carne sangrante. La reliquia se conserva en la iglesia parroquial de St. Oswald."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Milagro eucarístico de Weiten-Raxendorf",
+    "description": "En 1411, una hostia consagrada robada fue escondida debajo de un puente. Cuando fue recuperada, la Hostia se había convertido en carne sangrante y emitía una luz sobrenatural, lo que llevó a la construcción de una capilla."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Milagro Eucarístico de Bois-Seigneur-Isaac",
+    "description": "En 1405, un sacerdote tuvo una visión de Cristo durante la Misa y la Hostia comenzó a sangrar sobre el corporal, dejando una mancha permanente de sangre que todavía se venera hoy."
+  },
+  "bruges_belgium": {
+    "title": "Milagro Eucarístico de Brujas",
+    "description": "En 1203, se vio cómo la reliquia de la Preciosa Sangre de Jesús, traída de la Segunda Cruzada, se convertía en sangre líquida, que se conserva en la Basílica de la Santa Sangre."
+  },
+  "brussels_belgium": {
+    "title": "Milagro Eucarístico de Bruselas",
+    "description": "En 1370, varias Hostias consagradas fueron robadas y profanadas apuñaladas con cuchillos. Las Hostias sangraron milagrosamente, lo que llevó a la recuperación y veneración de las reliquias."
+  },
+  "herentals_belgium": {
+    "title": "Milagro eucarístico de Herentals",
+    "description": "En 1412, se escondieron hostias robadas en un campo. Fueron encontrados semanas después completamente intactos, protegidos por animales salvajes y emitiendo una luz suave."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Milagro eucarístico de Herkenrode-Hasselt",
+    "description": "En 1317, un sacerdote tocó una hostia consagrada con las manos sucias y ésta empezó a sangrar, manchando el mantel del altar. La reliquia se guarda en la Catedral de San Quintín."
+  },
+  "liege_belgium": {
+    "title": "Milagro Eucarístico de Lieja",
+    "description": "El milagro de Lieja inspiró a Santa Juliana a abogar por la fiesta del Corpus Christi. Las Hostias Consecadas sangraron durante la adoración, lo que llevó al establecimiento de la solemnidad."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Milagro eucarístico de Middleburg-Leuven",
+    "description": "En 1374, un sirviente recibió la comunión de manera irreverente y la Hostia se convirtió en carne sangrante y se le pegó al paladar. La reliquia se guarda en Lovaina."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Milagro eucarístico de Santa María de Egipto",
+    "description": "En los siglos IV y V, la arrepentida Santa María de Egipto pudo cruzar milagrosamente el río Jordán para recibir la Sagrada Eucaristía del abad Zosimas, sobreviviendo durante décadas en el desierto."
+  },
+  "scete_egypt": {
+    "title": "Milagro Eucarístico de Scete",
+    "description": "En los primeros monasterios del desierto de Scete, a un monje que dudaba de la Presencia Real se le mostró la Hostia convirtiéndose en un niño sangrante, confirmando la realidad de Cristo\\"
+  },
+  "bordeaux_france": {
+    "title": "Milagro Eucarístico de Burdeos",
+    "description": "En 1822, durante la adoración eucarística, Jesús apareció dentro de la custodia durante más de veinte minutos, bendiciendo a la congregación reunida en la capilla."
+  },
+  "dijon_france": {
+    "title": "Milagro Eucarístico de Dijon",
+    "description": "En 1430, una Hostia consagrada fue apuñalada con un cuchillo y comenzó a sangrar. Posteriormente, la Hostia fue presentada al Papa Julio II y se convirtió en un símbolo de devoción en Dijon."
+  },
+  "douai_france": {
+    "title": "Milagro Eucarístico de Douai",
+    "description": "En 1254, un sacerdote vio aparecer a un hermoso niño en la Hostia durante la Misa. El milagro fue presenciado por cientos de feligreses que vieron a Jesús en la Eucaristía."
+  },
+  "faverney_france": {
+    "title": "Milagro Eucarístico de Faverney",
+    "description": "En 1608, se produjo un incendio en la capilla, pero la custodia que contenía el Santísimo Sacramento permaneció suspendida en el aire sobre las llamas durante 33 horas hasta que se extinguió el fuego."
+  },
+  "la_rochelle_france": {
+    "title": "Milagro Eucarístico de La Rochelle",
+    "description": "En 1461, un niño mudo fue sanado de su mudez después de recibir la comunión en la catedral de La Rochelle, demostrando el poder del Santísimo Sacramento."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Milagro eucarístico del Santo Sepulcro de Neuvy",
+    "description": "En 1257, una Hostia consagrada sangró cuando un sacerdote la dejó caer durante la Misa. La piedra manchada de sangre y la Hostia se conservan en la iglesia."
+  },
+  "les_ulmes_france": {
+    "title": "Milagro Eucarístico de Les Ulmes",
+    "description": "En 1668, el rostro de Jesús apareció dentro de la Hostia durante la adoración en la fiesta del Corpus Christi. La aparición duró varias horas frente a la parroquia."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Milagro eucarístico de Marseille-en-Beauvaisis",
+    "description": "En 1533, unos ladrones robaron una custodia pero dejaron la Hostia consagrada escondida en un campo. Se encontró que la Hostia emitía una luz brillante y se recuperó en perfectas condiciones."
+  },
+  "paris_france_1290": {
+    "title": "Milagro Eucarístico de París",
+    "description": "En 1290, un profanador apuñaló una Hostia consagrada con un cuchillo y la arrojó a agua hirviendo. La Hostia flotó en el aire y sangró, lo que llevó a la construcción de una iglesia en el lugar."
+  },
+  "pressac_france": {
+    "title": "Milagro Eucarístico de Pressac",
+    "description": "En 1643, un incendio destruyó el altar parroquial, pero la Hostia consagrada permaneció completamente intacta y suspendida sobre las cenizas, intacta por las llamas."
+  },
+  "augsburg_germany": {
+    "title": "Milagro Eucarístico de Augsburgo",
+    "description": "En 1194, una mujer guardó la Hostia en la boca y se la llevó a casa. Años más tarde, se descubrió que la Hostia se había transformado en carne sangrante y se había conservado."
+  },
+  "benningen_germany": {
+    "title": "Milagro eucarístico de Benningen",
+    "description": "En 1216, se encontró una hostia sangrante en la iglesia de Benningen. La Hostia sangró sobre el altar y la reliquia aún se venera en la iglesia parroquial."
+  },
+  "bettbrunn_germany": {
+    "title": "Milagro Eucarístico de Bettbrunn",
+    "description": "En 1125, un pastor robó una Hostia para proteger a su rebaño. Cuando la dejó caer, la Hostia se pegó a una piedra y no pudo moverse hasta que llegó el obispo, lo que dio lugar a una peregrinación."
+  },
+  "erding_germany": {
+    "title": "Milagro eucarístico de Erding",
+    "description": "En 1417, un campesino robó una hostia. Mientras intentaba escapar, la Hostia se le escapó de la mano y flotó en el aire, irradiando luz hasta que el clero la recuperó."
+  },
+  "kranenburg_germany": {
+    "title": "Milagro Eucarístico de Kranenburg",
+    "description": "En 1280, un sacerdote dejó caer una Hostia consagrada en el hueco de un árbol. Años más tarde, un crucifijo de madera tallado en el árbol comenzó a sangrar, lo que dio lugar a una importante peregrinación."
+  },
+  "regensburg_germany": {
+    "title": "Milagro Eucarístico de Ratisbona",
+    "description": "En 1255, un sacerdote dudó de la Presencia Real. Durante la Misa, el crucifijo de madera sobre el altar cobró vida y Jesús tomó el cáliz de manos del sacerdote\\"
+  },
+  "wilsnack_germany": {
+    "title": "Milagro Eucarístico de Wilsnack",
+    "description": "En 1383, una iglesia fue destruida por un incendio, pero tres Hostias consagradas sobrevivieron completamente intactas en el altar, cubiertas de gotas de sangre fresca."
+  },
+  "weingarten_germany": {
+    "title": "Milagro Eucarístico de Weingarten",
+    "description": "El monasterio de Weingarten conserva la reliquia de la Preciosa Sangre de Jesús, que fue verificada por varios milagros y es venerada desde el siglo XI."
+  },
+  "morne_rouge_martinique": {
+    "title": "Milagro Eucarístico de Morne-Rouge",
+    "description": "En 1902, durante la erupción volcánica del Monte Pelée, la Sagrada Hostia dentro de la custodia mostró el rostro de Jesús coronado de espinas frente a la población que huía."
+  },
+  "saint_andre_reunion": {
+    "title": "Milagro Eucarístico de Saint-André",
+    "description": "En 1902, durante la adoración del Santísimo Sacramento, el rostro de Jesús y una corona de espinas aparecieron dentro de la Hostia, ante la presencia del párroco y la congregación."
+  },
+  "alatri_italy": {
+    "title": "Milagro Eucarístico de Alatri",
+    "description": "En 1228, una joven llevó la Hostia envuelta en un paño a su casa. Tres días después, descubrió que la Hostia se había transformado en carne sangrante, que se conserva en la Catedral de Alatri."
+  },
+  "assisi_clara_italy": {
+    "title": "Milagro Eucarístico de Asís",
+    "description": "En 1240, Santa Clara de Asís hizo retroceder a los soldados sarracenos invasores sosteniendo la custodia que contenía el Santísimo Sacramento a las puertas del convento."
+  },
+  "asti_italy_1535": {
+    "title": "Milagro Eucarístico de Asti",
+    "description": "En 1535, un sacerdote que celebraba la Misa rompió la Hostia y la sangre empezó a manar de la rotura, llenando el cáliz y manchando el corporal y el altar."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Milagro Eucarístico de Bagno di Romagna",
+    "description": "En 1412, un sacerdote que dudaba de la Presencia Real vio hervir el vino consagrado y desbordar el cáliz como sangre, manchando el corporal, que permanece conservado."
+  },
+  "canosio_italy": {
+    "title": "Milagro Eucarístico de Canosio",
+    "description": "En 1630, un sacerdote detuvo una devastadora inundación del torrente Maira bendiciendo las aguas crecientes con el Santísimo Sacramento, que retrocedió instantáneamente."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Milagro Eucarístico de la Cava de\\",
+    "description": "En 1656, una plaga devastadora se detuvo cuando el abad llevó en procesión el Santísimo Sacramento, bendiciendo la ciudad desde la colina del Castillo de San Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Milagro Eucarístico de Dronero",
+    "description": "En 1631, un gran incendio amenazó con consumir la ciudad de Dronero. Un sacerdote levantó el Santísimo Sacramento y las llamas se extinguieron inmediatamente, salvando la ciudad."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Milagro Eucarístico de San Mauro La Bruca",
+    "description": "En 1969, unos ladrones robaron un copón pero tiraron 63 Hostias consagradas. Las Hostias fueron recuperadas en perfectas condiciones y permanecen incorruptas desde entonces."
+  },
+  "ferrara_italy": {
+    "title": "Milagro Eucarístico de Ferrara",
+    "description": "En 1171, un sacerdote que celebraba la Misa vio la Hostia convertirse en sangre, rociando la bóveda sobre el altar con gotas rojas, que todavía son visibles hoy."
+  },
+  "florence_italy_1230": {
+    "title": "Milagro Eucarístico de Florencia",
+    "description": "En 1230, un sacerdote dejó unas gotas de vino consagrado en el cáliz. Al día siguiente, el vino se había convertido en sangre. La reliquia se conserva en la iglesia de Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Milagro Eucarístico de Gruaro",
+    "description": "En 1294, una mujer que lavaba el mantel del altar de la iglesia de Gruaro lo encontró manchado con la sangre procedente de una Hostia consagrada, que se conserva en Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Milagro Eucarístico de Macerata",
+    "description": "En 1356, un sacerdote que dudaba de la Presencia Real vio brotar sangre de la Hostia cuando la rompió, manchando el corporal, que todavía se venera en Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Milagro Eucarístico de Mogoro",
+    "description": "En 1604, dos pecadores recibieron la comunión pero escupieron las Hostias al suelo de piedra, donde las Hostias dejaron huellas profundas y sangrantes que aún se pueden ver hoy en día."
+  },
+  "morrovalle_italy": {
+    "title": "Milagro Eucarístico de Morrovalle",
+    "description": "En 1560, un incendio destruyó completamente la iglesia, pero la Hostia consagrada fue encontrada intacta bajo las cenizas diez días después, irradiando una suave luz."
+  },
+  "offida_italy": {
+    "title": "Milagro Eucarístico de Offida",
+    "description": "En 1273, una mujer arrojó una Hostia al fuego. La Hostia se transformó en carne sangrante y permaneció intacta por las llamas. La reliquia se guarda en la iglesia de San Agustín."
+  },
+  "patierno_naples_italy": {
+    "title": "Milagro Eucarístico de Patierno",
+    "description": "En 1772, se escondieron Hostias robadas en un campo. Fueron encontrados emitiendo una luz brillante y fueron recuperados en perfecto estado, acompañados de múltiples milagros."
+  },
+  "rimini_italy": {
+    "title": "Milagro Eucarístico de Rimini",
+    "description": "En 1227, San Antonio de Padua demostró la Presencia Real a un hereje cuando una mula hambrienta se arrodilló para adorar el Santísimo Sacramento en lugar de comer avena."
+  },
+  "rome_italy_600": {
+    "title": "Milagro Eucarístico de Roma",
+    "description": "En el siglo VI, el Papa Gregorio Magno vio una Hostia consagrada convertirse en carne visible para curar las dudas de una mujer que había horneado el pan."
+  },
+  "rosano_italy": {
+    "title": "Milagro Eucarístico de Rosano",
+    "description": "En 1948, el rostro de Jesús apareció dentro de la Hostia durante la adoración en el monasterio de Rosano, presenciada por las monjas y feligreses."
+  },
+  "peter_damian_italy": {
+    "title": "Milagro Eucarístico de San Pedro Damián",
+    "description": "En el siglo XI, San Pedro Damián documentó un milagro en el que una mujer robó una Hostia. La Hostia sangró sobre la tela y, cuando se la mostró, verificó su autenticidad."
+  },
+  "salzano_italy": {
+    "title": "Milagro Eucarístico de Salzano",
+    "description": "En 1517, un sacerdote que celebraba la Misa vio sangrar la Hostia, manchando el corporal y el altar, demostrando la Presencia Real a toda la congregación."
+  },
+  "scala_italy": {
+    "title": "Milagro Eucarístico de Scala",
+    "description": "En 1732, durante la adoración del Santísimo Sacramento, los instrumentos de la Pasión (cruz, corona de espinas, clavos) aparecieron dentro de la Hostia, ante la presencia de San Alfonso de Ligorio."
+  },
+  "trani_italy": {
+    "title": "Milagro Eucarístico de Trani",
+    "description": "En el siglo XI, una mujer hereje frió una Hostia consagrada en aceite. La Hostia comenzó a sangrar profusamente, desbordando el recipiente y derramándose al suelo."
+  },
+  "turin_italy_1453": {
+    "title": "Milagro Eucarístico de Turín (1453)",
+    "description": "En 1453, una custodia robada que contenía una Hostia se cayó de un burro. La Hostia se elevó en el aire, irradiando luz, y permaneció suspendida hasta que llegó el obispo."
+  },
+  "veroli_italy": {
+    "title": "Milagro Eucarístico de Veroli",
+    "description": "En 1570, durante la adoración, apareció en el interior de la Hostia el rostro de Jesús y una cruz, presenciado por muchos habitantes del pueblo y verificado por las autoridades eclesiásticas."
+  },
+  "volterra_italy": {
+    "title": "Milagro Eucarístico de Volterra",
+    "description": "En 1472, un soldado robó una píxide que contenía una Hostia. Mientras intentaba tirarlo, la Hostia flotó en el aire y sangró, lo que provocó la conversión del soldado."
+  },
+  "alkmaar_netherlands": {
+    "title": "Milagro Eucarístico de Alkmaar",
+    "description": "En 1429, un sacerdote derramó vino consagrado sobre sus vestiduras. El vino se convirtió en sangre y no se pudo lavar. Se conservan las vestimentas manchadas de sangre."
+  },
+  "bergen_netherlands": {
+    "title": "Milagro Eucarístico de Bergen",
+    "description": "En 1421, una inundación destruyó la iglesia y las Hostias consagradas fueron arrasadas. Más tarde fueron encontrados intactos, con el agua a su alrededor manteniéndolos secos."
+  },
+  "boxmeer_netherlands": {
+    "title": "Milagro Eucarístico de Boxmeer",
+    "description": "En 1400, un sacerdote dudó de la Presencia Real. Durante la Misa, una gota de sangre cayó de la Hostia al cáliz y el vino se convirtió en sangre y se desbordó."
+  },
+  "boxtel_netherlands": {
+    "title": "Milagro eucarístico de Boxtel",
+    "description": "En 1380, un sacerdote derribó el cáliz y derramó vino consagrado sobre el mantel del altar. El vino se convirtió en sangre y formó la imagen de Cristo."
+  },
+  "breda_netherlands": {
+    "title": "Milagro Eucarístico de Breda",
+    "description": "En 1300, se escondió una Hostia consagrada en un campo para evitar la profanación. Fue encontrada años después completamente intacta e irradiando una luz suave."
+  },
+  "meerssen_netherlands": {
+    "title": "Milagro Eucarístico de Meerssen",
+    "description": "En 1222, un sacerdote celebrante vio la Hostia sangrar durante la Misa. En 1465, un incendio destruyó la iglesia, pero la Hostia se encontró intacta en el altar, intacta."
+  },
+  "stiphout_netherlands": {
+    "title": "Milagro Eucarístico de Stiphout",
+    "description": "En 1342, un incendio destruyó la iglesia, pero un campesino local entró corriendo y recuperó el Santísimo Sacramento, que no había sido tocado por las llamas."
+  },
+  "eten_peru": {
+    "title": "Milagro Eucarístico de Eten",
+    "description": "En 1649, el rostro del Niño Jesús y tres corazones blancos aparecieron dentro de la Hostia durante la adoración, presenciada por el sacerdote y la congregación."
+  },
+  "glotowo_poland": {
+    "title": "Milagro Eucarístico de Glotowo",
+    "description": "En 1290, una Hostia robada fue enterrada en un campo. Fue encontrada años más tarde, cuando los bueyes se arrodillaron frente a ella y se encontró que la Hostia emitía una luz brillante."
+  },
+  "alboraya_spain": {
+    "title": "Milagro Eucarístico de Alboraya-Almácera",
+    "description": "En 1348, un sacerdote que llevaba la comunión a los enfermos cayó a un río perdiendo las Hostias. Las Hostias fueron encontradas en la boca de peces que las sostenían esperando devolverlas."
+  },
+  "alcala_spain": {
+    "title": "Milagro Eucarístico de Alcalá",
+    "description": "En 1597, un penitente devolvió las Hostias robadas. Las Hostias estuvieron guardadas en un cajón durante años y permanecieron completamente frescas e incorruptas, verificadas por los teólogos."
+  },
+  "alcoy_spain": {
+    "title": "Milagro Eucarístico de Alcoy",
+    "description": "En 1568, un ladrón robó un copón. Las Hostias fueron recuperadas después de que un residente local tuvo una visión de dónde estaban escondidas y las encontró intactas."
+  },
+  "caravaca_spain": {
+    "title": "Milagro Eucarístico de Caravaca de la Cruz",
+    "description": "En 1231, dos ángeles aparecieron cargando una cruz de dos brazos (la Cruz de Caravaca) durante la Misa celebrada por un sacerdote frente a sus captores moros."
+  },
+  "cimballa_spain": {
+    "title": "Milagro Eucarístico de Cimballa",
+    "description": "En 1370, un sacerdote dudó de la Presencia Real. Durante la Misa, la Hostia comenzó a sangrar sobre el corporal, dejando una mancha permanente de sangre que aún se venera."
+  },
+  "gerona_spain": {
+    "title": "Milagro Eucarístico de Gerona",
+    "description": "En 1297, un sacerdote que celebraba misa vio sangrar la Hostia. La sangre tiñó el corporal, y la reliquia fue conservada y venerada en la Catedral de Girona."
+  },
+  "escorial_spain": {
+    "title": "Milagro Eucarístico de Gorkum-El Escorial",
+    "description": "En 1572, los soldados protestantes profanaron una Hostia consagrada pisándola. La Hostia sangró y la reliquia fue posteriormente entregada al rey Felipe II y guardada en El Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Milagro Eucarístico de Guadalupe",
+    "description": "En 1420, durante la Misa, se vio que la Hostia se convertía en carne sangrante y el vino se convertía en sangre, llenando el cáliz, ante el testimonio del rey Juan II de Castilla."
+  },
+  "ivorra_spain": {
+    "title": "Milagro Eucarístico de Ivorra",
+    "description": "En 1010, un sacerdote que celebraba Misa dudó de la Presencia Real. El vino se convirtió en sangre, desbordando el cáliz y manchando el mantel del altar, que se conserva."
+  },
+  "moncada_spain": {
+    "title": "Milagro Eucarístico del Moncada",
+    "description": "En 1392, un sacerdote vio aparecer al Niño Jesús en la Hostia durante la Misa, y la Hostia sangró, confirmando la Presencia Real a la congregación."
+  },
+  "montserrat_spain_1657": {
+    "title": "Milagro Eucarístico de Montserrat",
+    "description": "En 1657, durante la Misa, el rostro de Jesús apareció dentro de la Hostia y ocurrieron una serie de milagros en el monasterio, lo que llevó a una mayor devoción."
+  },
+  "cebreiro_spain": {
+    "title": "Milagro Eucarístico de O\\",
+    "description": "En 1300, un campesino subió a la montaña en medio de una tormenta de nieve para asistir a Misa. El sacerdote dubitativo vio cómo la Hostia se convertía en carne y el vino en sangre, manchando el corporal."
+  },
+  "onil_spain": {
+    "title": "Milagro Eucarístico de Onil",
+    "description": "En 1824, se recuperó una Hostia robada después de que una mujer viera una luz misteriosa en un campo. El anfitrión se encontró intacto y ha permanecido incorrupto desde entonces."
+  },
+  "ponferrada_spain": {
+    "title": "Milagro Eucarístico de Ponferrada",
+    "description": "En 1533, un ladrón robó un sagrario con Hostias. El tabernáculo fue encontrado escondido en un campo y las Hostias se encontraron intactas y emitiendo una luz suave."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Milagro Eucarístico de Sant Joan de les Abadesses",
+    "description": "En 1251, durante una ceremonia litúrgica, se vio sangrar la Hostia dentro de la custodia, manchando la custodia, que se conservó."
+  },
+  "silla_spain": {
+    "title": "Milagro Eucarístico de Silla",
+    "description": "En 1907, un sacerdote dejó caer una Hostia consagrada. La Hostia fue recuperada y colocada en un cajón. Años más tarde, fue encontrado completamente intacto e incorrupto."
+  },
+  "valencia_spain": {
+    "title": "Milagro Eucarístico de Valencia",
+    "description": "La Catedral de Valencia conserva el Santo Cáliz de la Última Cena, lo cual ha sido constatado por numerosos registros históricos y visitas papales."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Milagro Eucarístico de Zaragoza",
+    "description": "En 1427, una Hostia consagrada fue robada y escondida en una casa. Se encontró que la Hostia emitía una luz brillante y se recuperó en perfectas condiciones."
+  },
+  "ettiswil_switzerland": {
+    "title": "Milagro eucarístico de Ettiswil",
+    "description": "En 1447, una hostia robada fue enterrada en un campo. Se encontró cuando los bueyes se negaron a pisar el lugar y se encontró la Hostia flotando sobre el suelo."
+  },
+  "lanciano_italy": {
+    "title": "Milagro Eucarístico de Lanciano",
+    "description": "En el siglo VIII, un monje Basiliano que dudaba de la Presencia Real vio la Hostia convertirse en carne real y el vino en sangre real durante la Misa. Amplias pruebas científicas realizadas en la década de 1970 concluyeron que se trata de tejido cardíaco humano (miocardio) y tipo de sangre AB, idéntico a la Sábana Santa de Turín."
+  },
+  "bolsena_italy": {
+    "title": "Milagro Eucarístico de Bolsena",
+    "description": "En 1263, un sacerdote incrédulo llamado Pedro de Praga celebró misa. Al romper la Hostia, la sangre empezó a salir de ella, manchando el corporal. Este milagro impulsó al Papa Urbano IV a instituir la fiesta del Corpus Christi."
+  },
+  "buenos_aires_argentina": {
+    "title": "Milagro Eucarístico de Buenos Aires",
+    "description": "En 1992, 1994 y 1996, las Hostias desechadas comenzaron a sangrar. Bajo la dirección del cardenal Jorge Bergoglio (más tarde Papa Francisco, quien murió en 2025), el tejido se analizó científicamente y se encontró que contenía glóbulos blancos humanos vivos y tejido de músculo cardíaco en grave peligro."
+  },
+  "sokolka_poland": {
+    "title": "Milagro Eucarístico de Sokółka",
+    "description": "En 2008, una Hostia consagrada que había caído fue colocada en agua para que se disolviera. Una semana después, apareció una mancha roja. Los patólogos concluyeron que la sustancia es idéntica al tejido miocárdico (corazón) de una persona que está a punto de morir."
+  },
+  "legnica_poland": {
+    "title": "Milagro Eucarístico de Legnica",
+    "description": "En 2013, una Hostia caída fue colocada en agua. Desarrolló manchas rojas, que el análisis científico confirmó que contenían fibras musculares del corazón humano fragmentadas que mostraban signos de estrés y agonía extremos."
+  },
+  "tixtla_mexico": {
+    "title": "Milagro Eucarístico de Tixtla",
+    "description": "Durante un retiro en 2006, una Hostia comenzó a derramar una sustancia rojiza. Las investigaciones científicas descubrieron que la sangre procedía del interior del huésped hacia afuera, poseía el tipo de sangre AB y contenía ADN humano intacto y glóbulos blancos activos."
+  },
+  "santarem_portugal": {
+    "title": "Milagro Eucarístico de Santarém",
+    "description": "Una mujer que buscaba usar una Hostia consagrada para una poción la encontró sangrando profusamente. La Hostia todavía se conserva hoy en la Iglesia de San Esteban, habiendo mantenido su estado incorrupto durante más de 750 años."
+  },
+  "cascia_italy": {
+    "title": "Milagro Eucarístico de Casia",
+    "description": "Un sacerdote colocó irreverentemente una Hostia consagrada entre las páginas de su breviario. La Hostia se convirtió en sangre, manchando ambas páginas, formando el perfil del rostro de Cristo."
+  },
+  "siena_italy": {
+    "title": "Milagro Eucarístico de Siena",
+    "description": "En 1730, los ladrones robaron un copón que contenía 351 Hostias consagradas. Fueron recuperados tres días después y desde entonces permanecen perfectamente incorruptos y frescos, desafiando el deterioro natural."
+  },
+  "daroca_spain": {
+    "title": "Milagro Eucarístico de Daroca",
+    "description": "Durante una batalla contra los moros, se escondieron seis Hostias consagradas en un corporal. Cuando los recuperaron, los encontraron empapados de sangre. Los restos corporales manchados de sangre se conservan como reliquia."
+  },
+  "chirattakonam_india": {
+    "title": "Milagro Eucarístico de Chirattakonam",
+    "description": "Durante la adoración eucarística, aparecieron tres manchas rojas en la Hostia. Durante los días siguientes, las manchas formaron la imagen clara del rostro de Jesús coronado de espinas."
+  },
+  "tumaco_colombia": {
+    "title": "Milagro Eucarístico de Tumaco",
+    "description": "En 1906, un enorme tsunami amenazó la isla de Tumaco. El Padre Gerardo Larrondo llevó el Santísimo Sacramento hasta la orilla. Cuando se acercó una ola enorme, retrocedió instantáneamente al llegar a la Eucaristía, salvando la isla."
+  },
+  "amsterdam_holland": {
+    "title": "Milagro Eucarístico de Ámsterdam",
+    "description": "Un moribundo recibió la Eucaristía pero la vomitó. El vómito fue arrojado a un fuego crepitante, pero la Hostia milagrosamente permaneció sin quemarse y suspendida en las llamas."
+  },
+  "avignon_france": {
+    "title": "Milagro Eucarístico de Aviñón",
+    "description": "Tras una grave inundación, los miembros de los Penitentes Grises remaron hasta su capilla esperando que el Santísimo Sacramento fuera destruido. En cambio, encontraron que las aguas se separaron milagrosamente, dejando el altar y la Hostia completamente secos."
+  },
+  "krakow_poland": {
+    "title": "Milagro eucarístico de Cracovia",
+    "description": "Los ladrones robaron un copón que contenía hostias consagradas y las arrojaron a un pantano. Una luz misteriosa guió a los buscadores hasta las Hostias, que estaban completamente intactas a pesar del barro."
+  },
+  "poznan_poland": {
+    "title": "Milagro Eucarístico de Poznań",
+    "description": "Tres Hostias fueron robadas y profanadas al ser traspasadas, haciéndolas sangrar. Más tarde fueron descubiertos flotando en un prado cercano, rodeados por una luz milagrosa."
+  },
+  "betania_venezuela": {
+    "title": "Milagro Eucarístico de Betania",
+    "description": "Durante la Misa celebrada por el Padre Oti, la Hostia consagrada comenzó a sangrar profusamente por un lado. Las pruebas médicas confirmaron que la sustancia era sangre humana."
+  },
+  "ludbreg_croatia": {
+    "title": "Milagro Eucarístico de Ludbreg",
+    "description": "Un sacerdote que dudaba de la Presencia Real vio el vino convertirse en sangre real en el cáliz. La reliquia de la Preciosa Sangre todavía se conserva y venera hoy."
+  },
+  "walldurn_germany": {
+    "title": "Milagro Eucarístico de Walldürn",
+    "description": "Un sacerdote volcó accidentalmente el cáliz durante la Misa. El vino consagrado se derramó sobre el corporal, formando la imagen de Cristo crucificado y once cabezas idénticas de Jesús coronadas de espinas."
+  },
+  "blanot_france": {
+    "title": "Milagro Eucarístico de Blanot",
+    "description": "Durante la comunión, un fragmento de la Hostia cayó al suelo. El sacerdote intentó recuperarlo, pero se había convertido en una gota de sangre que empapó la tela y la manchó permanentemente."
+  },
+  "oak_cliff_us": {
+    "title": "Anfitrión sangrante de Oak Cliff",
+    "description": "Una hostia consagrada parecía sangrar. Después de una investigación, la diócesis determinó que no se había producido ningún milagro."
+  },
+  "south_st_paul_us": {
+    "title": "Hostia descolorida de South St. Paul",
+    "description": "En el proceso de disolver en agua una hostia consagrada desechada, se notó una coloración roja. La Arquidiócesis determinó que la causa eran hongos."
+  },
+  "kearns_us": {
+    "title": "Anfitrión sangrante de Kearns",
+    "description": "Una hostia consagrada parecía sangrar. Una investigación realizada por la Diócesis de Salt Lake City concluyó que el moho rojo del pan causaba naturalmente la coloración."
+  },
+  "buffalo_us": {
+    "title": "Coloración roja de una hostia en Búfalo",
+    "description": "Se notó una coloración roja en una hostia. Los obispos de la Diócesis de Buffalo se negaron explícitamente a investigar."
+  },
+  "morris_us": {
+    "title": "Manchas de Morris manchadas",
+    "description": "Se encontraron manchas que se cree que son sangre en dos hostias consagradas desechadas. Los análisis de laboratorio mostraron que estos fueron causados ​​por bacterias naturales."
   }
 }

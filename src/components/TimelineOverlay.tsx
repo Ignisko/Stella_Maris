@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { BarChart2, Clock, ChevronUp, X, MapPin, Play } from 'lucide-react';
+import { ChartBar, Clock, CaretUp, X, MapPin, Play } from '@phosphor-icons/react';
 import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -18,6 +18,7 @@ interface TimelineOverlayProps {
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
+  "last_supper": { label: "The Last Supper", year: 33, modernOffset: -1, fullHistoryOffset: 45 },
   "guadalupe_mexico": { label: "Our Lady of Guadalupe", year: 1531, modernOffset: -1, fullHistoryOffset: 30 },
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 6, fullHistoryOffset: -1 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: -55, fullHistoryOffset: -1 },
@@ -234,33 +235,37 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
     return (
       <button
         id="timeline-closed-pill"
-        className="glass-panel glass-panel-rounded animate-fade-in"
+        className="glass-panel animate-fade-in"
         onClick={() => setIsOpen(true)}
         title={t('timeline', lang)}
         style={{
           position: 'fixed',
-          bottom: '20px',
-          right: selectedApparition ? '420px' : '20px',
+          bottom: '44px',
+          right: selectedApparition ? '440px' : '20px',
           zIndex: 160,
           pointerEvents: 'auto',
-          padding: '10px 16px',
+          padding: '12px 16px',
           display: 'flex',
           alignItems: 'center',
-          gap: '8px',
+          gap: '12px',
           cursor: 'pointer',
+          background: 'var(--bg-color)',
+          border: '1px solid var(--glass-border)',
           transition: 'all 0.2s ease',
           outline: 'none',
         }}
         onMouseOver={e => {
-          e.currentTarget.style.background = 'var(--glass-border)';
+          e.currentTarget.style.background = 'var(--text-color)';
+          e.currentTarget.style.color = 'var(--bg-color)';
         }}
         onMouseOut={e => {
-          e.currentTarget.style.background = 'var(--glass-bg)';
+          e.currentTarget.style.background = 'var(--bg-color)';
+          e.currentTarget.style.color = 'var(--text-color)';
         }}
       >
-        <span style={{ fontSize: '18px' }}>📅</span>
-        <span className="timeline-text" style={{ fontSize: '13px', fontWeight: 600, whiteSpace: 'nowrap' }}>{t('timeline', lang)}</span>
-        <ChevronUp size={15} className="timeline-chevron" style={{ opacity: 0.7 }} />
+        <ChartBar size={16} weight="regular" />
+        <span className="timeline-text" style={{ fontSize: '11px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', whiteSpace: 'nowrap' }}>{t('timeline', lang)}</span>
+        <CaretUp size={16} className="timeline-chevron" weight="bold" />
       </button>
     );
   }
@@ -273,19 +278,17 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       onMouseDown={handleMouseDown}
       onMouseMove={handleContainerMouseMove}
       onMouseLeave={handleContainerMouseLeave}
-      className="glass-panel glass-panel-rounded animate-fade-in"
+      className="glass-panel animate-fade-in"
       style={{
         cursor: 'pointer',
         position: 'fixed',
-        bottom: '12px',
-        left: '20px',
-        width: (selectedApparition && !isCinemaMode) ? 'calc(100vw - 440px)' : 'calc(100vw - 40px)',
-        maxWidth: '1400px',
+        bottom: '24px',
+        left: '0',
+        width: (selectedApparition && !isCinemaMode) ? 'calc(100vw - 420px)' : '100vw',
         backgroundColor: 'var(--timeline-bg)',
-        border: '1px solid var(--timeline-border)',
-        backdropFilter: 'blur(20px)',
-        boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
-        padding: isCinemaMode ? '6px 20px' : '10px 20px',
+        borderTop: '1px solid var(--timeline-border)',
+        borderRight: (selectedApparition && !isCinemaMode) ? '1px solid var(--timeline-border)' : 'none',
+        padding: isCinemaMode ? '6px 32px' : '16px 32px',
         zIndex: 160,
         boxSizing: 'border-box',
         transition: 'all 0.3s ease',
@@ -319,8 +322,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       {!isCinemaMode && (
         <div style={{
           position: 'absolute',
-          top: '10px',
-          right: '20px',
+          top: '16px',
+          right: '32px',
           display: 'flex',
           gap: '8px',
           zIndex: 35
@@ -329,30 +332,30 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             id="timeline-play-presentation-button"
             onClick={onTogglePlay}
             style={{
-              background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
+              background: 'linear-gradient(135deg, #d4af37, #3b82f6)',
               color: '#ffffff',
               border: 'none',
-              borderRadius: '16px',
-              padding: '6px 14px',
+              borderRadius: '20px',
+              padding: '8px 18px',
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
+              gap: '8px',
               cursor: 'pointer',
               fontSize: '12px',
               fontWeight: 700,
-              boxShadow: '0 4px 12px rgba(56, 189, 248, 0.25)',
+              boxShadow: '0 4px 12px rgba(59, 130, 246, 0.4)',
               transition: 'all 0.2s'
             }}
             onMouseOver={e => {
-              e.currentTarget.style.transform = 'scale(1.03)';
-              e.currentTarget.style.boxShadow = '0 6px 16px rgba(56, 189, 248, 0.4)';
+              e.currentTarget.style.transform = 'scale(1.05)';
+              e.currentTarget.style.boxShadow = '0 6px 16px rgba(59, 130, 246, 0.6)';
             }}
             onMouseOut={e => {
-              e.currentTarget.style.transform = 'none';
-              e.currentTarget.style.boxShadow = '0 4px 12px rgba(56, 189, 248, 0.25)';
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = '0 4px 12px rgba(59, 130, 246, 0.4)';
             }}
           >
-            <Play size={13} fill="#ffffff" />
+            <Play size={12} weight="fill" />
             <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
           </button>
 
@@ -364,57 +367,59 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             style={{
               background: 'var(--timeline-btn-bg)',
               border: '1px solid var(--timeline-btn-border)',
-              borderRadius: '16px',
-              padding: '6px 12px',
+              borderRadius: '20px',
+              padding: '8px 16px',
               display: 'flex',
               alignItems: 'center',
-              gap: '6px',
-              color: 'var(--timeline-btn-text)',
+              gap: '8px',
+              color: 'var(--text-color)',
               cursor: 'pointer',
-              fontSize: '12px',
+              fontSize: '11px',
               fontWeight: 600,
               transition: 'all 0.2s'
             }}
             onMouseOver={e => { e.currentTarget.style.background = 'rgba(239,68,68,0.2)'; e.currentTarget.style.color = '#fca5a5'; e.currentTarget.style.borderColor = 'rgba(239,68,68,0.4)'; }}
-            onMouseOut={e => { e.currentTarget.style.background = 'var(--timeline-btn-bg)'; e.currentTarget.style.color = 'var(--timeline-btn-text)'; e.currentTarget.style.borderColor = 'var(--timeline-btn-border)'; }}
+            onMouseOut={e => { e.currentTarget.style.background = 'var(--timeline-btn-bg)'; e.currentTarget.style.color = 'var(--text-color)'; e.currentTarget.style.borderColor = 'var(--timeline-btn-border)'; }}
           >
             <span>{t('close', lang)}</span>
-            <X size={13} />
+            <X size={14} weight="bold" />
           </button>
         </div>
       )}
 
       {/* Top bar: title + controls */}
       {!isCinemaMode && (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap', marginBottom: '8px', paddingRight: '100px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexWrap: 'wrap', marginBottom: '16px', paddingRight: '200px' }}>
 
           {/* Title */}
           <h3 style={{
-            fontSize: '13px', textTransform: 'uppercase', letterSpacing: '1.5px',
-            opacity: 0.85, margin: 0, fontWeight: 700,
+            fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.05em',
+            margin: 0, fontWeight: 600, color: 'var(--text-color)',
             display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0
           }}>
-            <BarChart2 size={16} color="var(--accent-color)" /> {t('timeline', lang)}
+            <ChartBar size={16} weight="regular" /> {t('timeline', lang)}
           </h3>
 
           {/* Time mode toggle */}
           <div style={{
-            display: 'flex', background: 'rgba(0,0,0,0.4)', padding: '3px',
-            borderRadius: '20px', border: '1px solid rgba(255,255,255,0.12)'
+            display: 'flex', background: 'transparent',
+            border: '1px solid var(--timeline-border)'
           }}>
             {(['modern', 'all'] as const).map(mode => (
               <button
                 key={mode}
                 onClick={() => setTimeMode(mode)}
                 style={{
-                  background: timeMode === mode ? 'var(--accent-color)' : 'transparent',
-                  color: timeMode === mode ? '#ffffff' : '#94a3b8',
-                  border: 'none', padding: '4px 14px', borderRadius: '18px',
-                  fontSize: '11px', fontWeight: 700, cursor: 'pointer',
-                  transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '5px'
+                  background: timeMode === mode ? 'var(--text-color)' : 'transparent',
+                  color: timeMode === mode ? 'var(--bg-color)' : 'var(--text-color)',
+                  border: 'none', padding: '6px 16px',
+                  fontSize: '9px', fontWeight: 600, cursor: 'pointer',
+                  textTransform: 'uppercase', letterSpacing: '0.05em',
+                  transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '6px',
+                  borderRight: mode === 'modern' ? '1px solid var(--timeline-border)' : 'none'
                 }}
               >
-                <Clock size={11} />
+                <Clock size={12} weight={timeMode === mode ? 'fill' : 'regular'} />
                 {mode === 'modern' ? t('modernEra', lang) : t('fullHistory', lang)}
               </button>
             ))}
@@ -719,22 +724,27 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   bottom: `${bottomPx}px`,
                   transform: `translateX(${translateX}%)`,
                   zIndex: 50,
-                  fontSize: '11px',
-                  fontWeight: 700,
-                  color: '#fff',
+                  fontSize: '10px',
+                  fontWeight: 600,
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.05em',
+                  color: 'var(--text-color)',
                   whiteSpace: 'nowrap',
-                  backgroundColor: 'rgba(15, 23, 42, 0.97)',
-                  padding: '4px 10px',
-                  borderRadius: '14px',
-                  border: '1px solid var(--accent-color)',
-                  backdropFilter: 'blur(8px)',
-                  boxShadow: '0 6px 20px rgba(0,0,0,0.8)',
+                  backgroundColor: 'var(--bg-color)',
+                  padding: '6px 12px',
+                  border: '1px solid var(--text-color)',
                   pointerEvents: 'auto',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'
                 }}
-                onMouseOver={e => { e.currentTarget.style.backgroundColor = 'var(--accent-color)'; }}
-                onMouseOut={e => { e.currentTarget.style.backgroundColor = 'rgba(15, 23, 42, 0.97)'; }}
+                onMouseOver={e => { 
+                  e.currentTarget.style.backgroundColor = 'var(--text-color)'; 
+                  e.currentTarget.style.color = 'var(--bg-color)'; 
+                }}
+                onMouseOut={e => { 
+                  e.currentTarget.style.backgroundColor = 'var(--bg-color)'; 
+                  e.currentTarget.style.color = 'var(--text-color)'; 
+                }}
               >
                 {c.label}
               </div>

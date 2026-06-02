@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react';
-import { Info, ArrowRight, ArrowLeft, Globe, Sliders, Calendar, Sparkles, HelpCircle } from 'lucide-react';
+import { Info, ArrowRight, ArrowLeft, Globe, SlidersHorizontal, Calendar, Sparkle, Question } from '@phosphor-icons/react';
 import type { Language } from '../utils/i18n';
 import { languageNames } from '../utils/i18n';
 import { config } from '../config';
@@ -434,17 +434,17 @@ const getStepsContent = (lang: Language): StepContent[] => {
   const selectedDescs = descriptions[lang] || descriptions['en'];
 
   const icons = [
-      <HelpCircle size={40} color="var(--gold-accent)" />,
+      <Question size={40} color="var(--gold-accent)" />,
       <Globe size={40} color="var(--accent-color)" />,
       <Globe size={40} color="var(--accent-color)" />,
       <Globe size={40} color="var(--accent-color)" />,
       <Info size={40} color="var(--accent-color)" />,
-      <Sliders size={40} color="var(--accent-color)" />,
-      <Sliders size={40} color="var(--accent-color)" />,
+      <SlidersHorizontal size={40} color="var(--accent-color)" />,
+      <SlidersHorizontal size={40} color="var(--accent-color)" />,
       <Calendar size={40} color="var(--accent-color)" />,
       <Calendar size={40} color="var(--accent-color)" />,
       <Globe size={40} color="var(--accent-color)" />,
-      <Sparkles size={40} color="var(--gold-accent)" />
+      <Sparkle size={40} color="var(--gold-accent)" />
     ];
 
   return selectedTitles.map((title, i) => {
@@ -932,26 +932,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           </div>
         )}
 
-        {step === 0 && config.projectId === 'eucharist' && (
-          <div style={{ marginTop: '14px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-            <span style={{ fontSize: '13px', fontWeight: 600, color: 'var(--gold-accent)' }}>
-              {currentLang === 'pl' ? 'Wprowadzenie wideo (Cuda Eucharystyczne):' : 'Video Introduction (Eucharistic Miracles):'}
-            </span>
-            <iframe
-              width="100%"
-              height="225"
-              src="https://www.youtube.com/embed/wKJWrXGOqoc"
-              title="Eucharistic Miracles Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              style={{
-                borderRadius: '12px',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                boxShadow: '0 8px 24px rgba(0, 0, 0, 0.5)'
-              }}
-            />
-          </div>
-        )}
+        {/* Video introduction temporarily removed due to broken link */}
+
 
         {/* Footer Navigation */}
         <div style={{ 

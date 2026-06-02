@@ -3283,6 +3283,10 @@
     "title": "Cud Eucharystyczny w Cascii",
     "description": "W 1330 roku ksiądz umieścił konsekrowaną Hostię w brewiarzu zamiast w bursie. Kiedy otworzył księgę w domu chorego, Hostia krwawiła, pozostawiając na stronach plamę w kształcie twarzy, co zachowało się do dziś."
   },
+  "last_supper": {
+    "title": "Ostatnia Wieczerza",
+    "description": "Ustanowienie Najświętszej Eucharystii przez Jezusa Chrystusa, wyznaczające początek wszystkich cudów eucharystycznych."
+  },
   "siena_italy": {
     "title": "Cud Eucharystyczny w Sienie",
     "description": "W 1730 roku złodzieje ukradli 351 konsekrowanych Hostii z bazyliki w Sienie. Później znaleziono je porzucone w skrzynce na ofiary. W niewytłumaczalny sposób Hostie te do dziś pozostały całkowicie nienaruszone i świeże, całkowicie opierając się naturalnemu rozkładowi."
@@ -3330,5 +3334,369 @@
   "blanot_france": {
     "title": "Cud Eucharystyczny w Blanot",
     "description": "W 1331 roku fragment konsekrowanej Hostii upadł na płótno trzymane przez kobietę podczas Komunii. Fragment zamienił się w kroplę krwi, która głęboko wniknęła w płótno. Plama krwi pozostała do dziś."
+  },
+  "fiecht_austria": {
+    "title": "Cud eucharystyczny w Fiecht",
+    "description": "W 1310 roku ksiądz wątpiący w rzeczywistą obecność podczas Mszy św. widział, jak konsekrowane wino wrze i zamienia się w krew, która do dziś jest przechowywana jako relikwia w klasztorze w Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Cud eucharystyczny w Seefeld",
+    "description": "W 1384 r. rycerz zażądał przyjęcia podczas Mszy świętej większej Hostii. Gdy ją otrzymał, ziemia zapadła się pod nim, a Hostia zamieniła się w krwawiące ciało. Relikwia przechowywana jest w kościele parafialnym św. Oswalda."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Cud eucharystyczny w Weiten-Raxendorf",
+    "description": "W 1411 roku pod mostem ukryto skradzioną konsekrowaną Hostię. Kiedy ją odzyskano, Hostia zamieniła się w krwawiące ciało i emitowała nadprzyrodzone światło, co doprowadziło do budowy kaplicy."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Cud eucharystyczny Bois-Seigneur-Isaac",
+    "description": "W 1405 roku ksiądz miał wizję Chrystusa podczas Mszy św., a Hostia zaczęła krwawić na korporał, pozostawiając trwałą plamę krwi, która nadal jest czczona."
+  },
+  "bruges_belgium": {
+    "title": "Cud eucharystyczny w Brugii",
+    "description": "W 1203 roku relikwia Najdroższej Krwi Jezusa, sprowadzona z drugiej krucjaty, zamieniła się w płynną krew, która jest przechowywana w Bazylice Świętej Krwi."
+  },
+  "brussels_belgium": {
+    "title": "Cud eucharystyczny w Brukseli",
+    "description": "W 1370 roku kilka konsekrowanych Hostii zostało skradzionych i zbezczeszczonych poprzez dźgnięcie nożami. Hostie w cudowny sposób wykrwawiły się, co doprowadziło do odzyskania relikwii i oddania im czci."
+  },
+  "herentals_belgium": {
+    "title": "Cud eucharystyczny w Herentals",
+    "description": "W 1412 roku skradzione Hostie ukryto na polu. Znaleziono je kilka tygodni później, całkowicie nienaruszone, chronione przez dzikie zwierzęta i emitujące delikatne światło."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Cud eucharystyczny w Herkenrode-Hasselt",
+    "description": "W 1317 roku ksiądz dotknął konsekrowanej Hostii brudnymi rękami, która zaczęła krwawić, plamiąc obrus ołtarzowy. Relikwia przechowywana jest w katedrze św. Quentina."
+  },
+  "liege_belgium": {
+    "title": "Cud eucharystyczny w Liège",
+    "description": "Cud w Liège zainspirował św. Julianę do propagowania święta Bożego Ciała. Konsekrowane Hostie podczas adoracji krwawiły, co doprowadziło do ustanowienia uroczystości."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Cud eucharystyczny w Middleburg-Leuven",
+    "description": "W 1374 roku sługa przyjął komunię bez szacunku, a Hostia zamieniła się w krwawiące ciało, przyklejone do podniebienia. Relikwia jest przechowywana w Leuven."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Cud eucharystyczny Najświętszej Marii Panny Egipcjanki",
+    "description": "W IV/V wieku pokutującej Marii Egipskiej udało się w cudowny sposób przekroczyć rzekę Jordan, aby przyjąć Najświętszą Eucharystię od opata Zosima, który przetrwał dziesięciolecia na pustyni."
+  },
+  "scete_egypt": {
+    "title": "Cud eucharystyczny w Scete",
+    "description": "We wczesnych pustynnych klasztorach w Scete mnichowi wątpiącemu w rzeczywistą obecność ukazano Hostię zamieniającą się w krwawiące dziecko, co potwierdziło realność Chrystusa\\"
+  },
+  "bordeaux_france": {
+    "title": "Cud eucharystyczny w Bordeaux",
+    "description": "W 1822 roku podczas adoracji eucharystycznej Jezus ukazał się wewnątrz monstrancji na ponad dwadzieścia minut, błogosławiąc zgromadzonych w kaplicy wiernych."
+  },
+  "dijon_france": {
+    "title": "Cud eucharystyczny w Dijon",
+    "description": "W 1430 roku konsekrowana Hostia została dźgnięta nożem i zaczęła krwawić. Hostia została później przedstawiona papieżowi Juliuszowi II i stała się symbolem pobożności w Dijon."
+  },
+  "douai_france": {
+    "title": "Cud eucharystyczny w Douai",
+    "description": "W 1254 roku ksiądz ujrzał piękne dziecko pojawiające się w Hostii podczas Mszy św. Cud był świadkiem setek parafian, którzy widzieli Jezusa w Eucharystii."
+  },
+  "faverney_france": {
+    "title": "Cud eucharystyczny w Faverney",
+    "description": "W 1608 roku w kaplicy wybuchł pożar, ale monstrancja zawierająca Najświętszy Sakrament wisiała w powietrzu nad płomieniami przez 33 godziny, aż do ugaszenia pożaru."
+  },
+  "la_rochelle_france": {
+    "title": "Cud eucharystyczny w La Rochelle",
+    "description": "W 1461 r. nieme dziecko zostało uzdrowione z niemowy po przyjęciu komunii w katedrze w La Rochelle, co zademonstrowało moc Najświętszego Sakramentu."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Cud eucharystyczny w Neuvy Saint Sepulcre",
+    "description": "W 1257 r. konsekrowana Hostia krwawiła, gdy ksiądz upuścił ją podczas Mszy. Zakrwawiony kamień i Hostia zachowały się w kościele."
+  },
+  "les_ulmes_france": {
+    "title": "Cud eucharystyczny Les Ulmes",
+    "description": "W 1668 roku podczas adoracji w święto Bożego Ciała w Hostii ukazała się twarz Jezusa. Objawienie trwało kilka godzin przed parafią."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Cud eucharystyczny w Marsylii-en-Beauvaisis",
+    "description": "W 1533 roku złodzieje ukradli monstrancję, ale pozostawili konsekrowaną Hostię ukrytą na polu. Stwierdzono, że Hostia emituje jasne światło i została odnaleziona w idealnym stanie."
+  },
+  "paris_france_1290": {
+    "title": "Cud eucharystyczny w Paryżu",
+    "description": "W 1290 r. profanator dźgnął konsekrowaną Hostię nożem i wrzucił ją do wrzącej wody. Hostia unosiła się w powietrzu i krwawiła, co doprowadziło do budowy w tym miejscu kościoła."
+  },
+  "pressac_france": {
+    "title": "Cud eucharystyczny w Pressac",
+    "description": "W 1643 r. pożar zniszczył ołtarz parafialny, ale konsekrowana Hostia pozostała całkowicie nienaruszona i zawieszona nad popiołami, nietknięta płomieniami."
+  },
+  "augsburg_germany": {
+    "title": "Cud eucharystyczny w Augsburgu",
+    "description": "W 1194 roku pewna kobieta trzymała Hostię w ustach i zabierała ją do domu. Wiele lat później odkryto, że Hostia przekształciła się w krwawiące ciało i została zachowana."
+  },
+  "benningen_germany": {
+    "title": "Cud eucharystyczny w Benningen",
+    "description": "W 1216 roku w kościele w Benningen odnaleziono krwawiącą Hostię. Hostia została wylana na ołtarz, a relikwia jest nadal czczona w kościele parafialnym."
+  },
+  "bettbrunn_germany": {
+    "title": "Cud eucharystyczny w Bettbrunn",
+    "description": "W 1125 roku pasterz ukradł Hostię, aby chronić swoją trzodę. Kiedy ją upuścił, Hostia przykleiła się do kamienia i nie mogła się ruszyć, dopóki nie przybył biskup, co doprowadziło do pielgrzymki."
+  },
+  "erding_germany": {
+    "title": "Cud eucharystyczny w Erding",
+    "description": "W 1417 r. chłop ukradł hostię. Kiedy próbował uciec, Hostia wyślizgnęła mu się z dłoni i zawisła w powietrzu, promieniując światłem, dopóki duchowni nie odzyskali jej."
+  },
+  "kranenburg_germany": {
+    "title": "Cud eucharystyczny w Kranenburgu",
+    "description": "W 1280 roku ksiądz wrzucił konsekrowaną Hostię do zagłębienia w drzewie. Wiele lat później drewniany krucyfiks wyrzeźbiony w drzewie zaczął krwawić, co doprowadziło do wielkiej pielgrzymki."
+  },
+  "regensburg_germany": {
+    "title": "Cud eucharystyczny w Regensburgu",
+    "description": "W 1255 roku ksiądz zwątpił w rzeczywistą obecność. Podczas Mszy ożył drewniany krucyfiks na ołtarzu, a Jezus wziął od księdza kielich\\"
+  },
+  "wilsnack_germany": {
+    "title": "Cud eucharystyczny w Wilsnack",
+    "description": "W 1383 roku kościół strawił pożar, ale trzy konsekrowane Hostie przetrwały na ołtarzu w całości, pokryte kroplami świeżej krwi, w nienaruszonym stanie."
+  },
+  "weingarten_germany": {
+    "title": "Cud eucharystyczny w Weingarten",
+    "description": "W klasztorze Weingarten przechowywana jest relikwia Najdroższej Krwi Jezusa, która została potwierdzona kilkoma cudami i jest czczona od XI wieku."
+  },
+  "morne_rouge_martinique": {
+    "title": "Cud eucharystyczny w Morne-Rouge",
+    "description": "W 1902 roku, podczas erupcji wulkanu na górze Pelée, święta Hostia wewnątrz monstrancji ukazała przed uciekającą ludnością twarz Jezusa w koronie cierniowej."
+  },
+  "saint_andre_reunion": {
+    "title": "Cud eucharystyczny św. André",
+    "description": "W 1902 r. podczas adoracji Najświętszego Sakramentu, w Hostii ukazało się oblicze Jezusa i korona cierniowa, czego świadkiem był proboszcz parafii i wierni."
+  },
+  "alatri_italy": {
+    "title": "Cud eucharystyczny w Alatri",
+    "description": "W 1228 roku młoda kobieta zabrała Hostię do domu w obrusie. Trzy dni później odkryła, że ​​Hostia przemieniła się w krwawiące ciało, które jest przechowywane w katedrze Alatri."
+  },
+  "assisi_clara_italy": {
+    "title": "Cud eucharystyczny w Asyżu",
+    "description": "W 1240 roku św. Klara z Asyżu odpowiedziała najeżdżającym żołnierzom Saracenów, podtrzymując przy bramach klasztoru monstrancję zawierającą Najświętszy Sakrament."
+  },
+  "asti_italy_1535": {
+    "title": "Cud eucharystyczny w Asti",
+    "description": "W 1535 roku ksiądz odprawiający Mszę złamał Hostię, a z przerwy zaczęła płynąć krew, napełniając kielich oraz plamiąc korporał i ołtarz."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Cud eucharystyczny w Bagno di Romagna",
+    "description": "W 1412 roku ksiądz wątpiący w rzeczywistą obecność widział, jak konsekrowane wino wrze i przelewa się przez kielich niczym krew, plamiąc cielesność, która pozostaje zachowana."
+  },
+  "canosio_italy": {
+    "title": "Cud eucharystyczny w Canosio",
+    "description": "W 1630 roku kapłan powstrzymał niszczycielską powódź potoku Maira, błogosławiąc Najświętszym Sakramentem wznoszące się wody, które natychmiast opadły."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Cud eucharystyczny w Cava de\\",
+    "description": "W 1656 roku wyniszczająca zaraza została powstrzymana, gdy opat w procesji niósł Najświętszy Sakrament, błogosławiąc miasto ze wzgórza zamku Saint Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Cud eucharystyczny w Dronero",
+    "description": "W 1631 r. potężny pożar groził zniszczeniem miasta Dronero. Ksiądz podniósł Najświętszy Sakrament, a płomienie natychmiast zgasły, ratując miasto."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Cud eucharystyczny w San Mauro La Bruca",
+    "description": "W 1969 roku złodzieje ukradli cyborium, ale wyrzucili 63 konsekrowane Hostie. Hosty zostały odzyskane w idealnym stanie i od tego czasu pozostają nienaruszone."
+  },
+  "ferrara_italy": {
+    "title": "Cud eucharystyczny w Ferrarze",
+    "description": "W 1171 r. ksiądz odprawiający Mszę św. widział, jak Hostia zamienia się w krew, spryskując sklepienie nad ołtarzem czerwonymi kroplami, które są widoczne do dziś."
+  },
+  "florence_italy_1230": {
+    "title": "Cud eucharystyczny we Florencji",
+    "description": "W 1230 roku ksiądz pozostawił w kielichu kilka kropel konsekrowanego wina. Następnego dnia wino zamieniło się w krew. Relikwia przechowywana jest w kościele Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Cud eucharystyczny w Gruaro",
+    "description": "W 1294 roku kobieta piorąca obrusy ołtarza kościoła Gruaro odkryła, że ​​jest ono poplamione krwią konsekrowanej Hostii, która jest przechowywana w Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Cud eucharystyczny w Macerata",
+    "description": "W 1356 roku kapłan wątpiący w rzeczywistą obecność, zobaczył, jak z Hostii wytryskała krew, plamiąc korporał, który nadal jest czczony w Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Cud eucharystyczny w Mogoro",
+    "description": "W 1604 roku dwóch grzeszników przyjęło komunię, ale splunęło Hostie na kamienną podłogę, gdzie Hostie pozostawiły głębokie, krwawiące ślady, które można zobaczyć do dziś."
+  },
+  "morrovalle_italy": {
+    "title": "Cud eucharystyczny w Morrovalle",
+    "description": "W 1560 r. pożar doszczętnie zniszczył kościół, ale dziesięć dni później pod popiołami odnaleziono nienaruszoną Hostię, promieniującą delikatnym światłem."
+  },
+  "offida_italy": {
+    "title": "Cud eucharystyczny w Offidzie",
+    "description": "W 1273 roku kobieta wrzuciła Hostię do ognia. Hostia przemieniła się w krwawiące ciało i pozostała nietknięta płomieniami. Relikwia przechowywana jest w kościele św. Augustyna."
+  },
+  "patierno_naples_italy": {
+    "title": "Cud eucharystyczny w Patierno",
+    "description": "W 1772 roku skradzione Hostie ukryto na polu. Znaleziono je, które emitowały jasne światło i zostały odzyskane w idealnym stanie, czemu towarzyszyły liczne cuda."
+  },
+  "rimini_italy": {
+    "title": "Cud eucharystyczny w Rimini",
+    "description": "W 1227 r. św. Antoni z Padwy udowodnił heretykowi rzeczywistą obecność, gdy głodny muł uklęknął, aby adorować Najświętszy Sakrament, zamiast jeść owies."
+  },
+  "rome_italy_600": {
+    "title": "Cud eucharystyczny w Rzymie",
+    "description": "W VI wieku papież Grzegorz Wielki był świadkiem przemiany konsekrowanej Hostii w widzialne ciało, aby rozwiać wątpliwości kobiety, która upiekła chleb."
+  },
+  "rosano_italy": {
+    "title": "Cud eucharystyczny w Rosano",
+    "description": "W 1948 r. w Hostii podczas adoracji w klasztorze w Rosano w obecności sióstr zakonnych i parafian ukazała się twarz Jezusa."
+  },
+  "peter_damian_italy": {
+    "title": "Cud eucharystyczny św. Piotra Damiana",
+    "description": "W XI wieku św. Piotr Damian udokumentował cud, w wyniku którego kobieta ukradła Hostię. Hostia spłynęła na obrus, a kiedy mu go pokazano, potwierdził jego autentyczność."
+  },
+  "salzano_italy": {
+    "title": "Cud eucharystyczny w Salzano",
+    "description": "W 1517 r. ksiądz odprawiający Mszę św. widział krwawiącą Hostię, plamiąc korporał i ołtarz, demonstrując tym samym rzeczywistą obecność całemu zgromadzeniu."
+  },
+  "scala_italy": {
+    "title": "Cud eucharystyczny w Scala",
+    "description": "W 1732 roku, podczas adoracji Najświętszego Sakramentu, w Hostii ukazały się narzędzia Męki Pańskiej (krzyż, korona cierniowa, gwoździe), czego świadkiem był św. Alfons Liguori."
+  },
+  "trani_italy": {
+    "title": "Cud eucharystyczny w Trani",
+    "description": "W XI wieku heretyczka smażyła na oleju konsekrowaną Hostię. Hostia zaczęła obficie krwawić, przepełniając patelnię i rozlewając się na podłogę."
+  },
+  "turin_italy_1453": {
+    "title": "Cud eucharystyczny w Turynie (1453)",
+    "description": "W 1453 roku z osła spadła skradziona monstrancja zawierająca Hostię. Hostia wzniosła się w powietrze, promieniując światłem, i pozostała zawieszona aż do przybycia biskupa."
+  },
+  "veroli_italy": {
+    "title": "Cud eucharystyczny w Veroli",
+    "description": "W 1570 r. podczas adoracji w Hostii ukazało się oblicze Jezusa i krzyż, czego świadkiem było wielu mieszczan i zostało potwierdzone przez władze kościelne."
+  },
+  "volterra_italy": {
+    "title": "Cud eucharystyczny w Volterrze",
+    "description": "W 1472 roku żołnierz ukradł pyx zawierający Hostię. Kiedy próbował go wyrzucić, Hostia unosiła się w powietrzu i krwawiła, co doprowadziło do nawrócenia żołnierza."
+  },
+  "alkmaar_netherlands": {
+    "title": "Cud eucharystyczny w Alkmaar",
+    "description": "W 1429 roku ksiądz wylał na szaty konsekrowane wino. Wino zamieniło się w krew i nie dało się go zmyć. Zakrwawione szaty zostały zachowane."
+  },
+  "bergen_netherlands": {
+    "title": "Cud eucharystyczny w Bergen",
+    "description": "W 1421 r. powódź zniszczyła kościół, a konsekrowane Hostie zostały zmiecione. Później znaleziono je nienaruszone, a otaczająca je woda sprawiała, że ​​były suche."
+  },
+  "boxmeer_netherlands": {
+    "title": "Cud eucharystyczny Boxmeera",
+    "description": "W 1400 roku ksiądz zwątpił w rzeczywistą obecność. Podczas Mszy kropla krwi z Hostii spadła do kielicha, a wino zamieniło się w krew i przelało się."
+  },
+  "boxtel_netherlands": {
+    "title": "Cud eucharystyczny w Boxtel",
+    "description": "W 1380 roku ksiądz przewrócił kielich, rozlewając konsekrowane wino na obrus ołtarzowy. Wino zamieniło się w krew i utworzyło obraz Chrystusa."
+  },
+  "breda_netherlands": {
+    "title": "Cud eucharystyczny w Bredzie",
+    "description": "W 1300 roku konsekrowaną Hostię ukryto na polu, aby zapobiec profanacji. Znaleziono go wiele lat później w stanie nienaruszonym i promieniującym delikatnym światłem."
+  },
+  "meerssen_netherlands": {
+    "title": "Cud eucharystyczny w Meerssen",
+    "description": "W 1222 r. celebrans widział, jak Hostia krwawiła podczas Mszy św.. W 1465 r. pożar zniszczył kościół, ale Hostia została znaleziona nienaruszona na ołtarzu i nietknięta."
+  },
+  "stiphout_netherlands": {
+    "title": "Cud eucharystyczny w Stiphout",
+    "description": "W 1342 r. pożar zniszczył kościół, ale miejscowy chłop wbiegł do środka i odzyskał Najświętszy Sakrament, który nie został dotknięty płomieniami."
+  },
+  "eten_peru": {
+    "title": "Cud eucharystyczny w Eten",
+    "description": "W 1649 r. podczas adoracji w Hostii ukazała się twarz Dzieciątka Jezus i trzy białe serca, czego świadkiem był kapłan i zgromadzenie."
+  },
+  "glotowo_poland": {
+    "title": "Cud eucharystyczny w Głotowie",
+    "description": "W 1290 r. na polu pochowano skradzioną Hostię. Znaleziono go wiele lat później, gdy woły uklękły przed nim, a Hostia emitowała jasne światło."
+  },
+  "alboraya_spain": {
+    "title": "Cud eucharystyczny w Alboraya-Almácera",
+    "description": "W 1348 roku ksiądz niosący komunię chorym wpadł do rzeki, gubiąc Hostie. Hostie znaleziono w ustach ryb, które je trzymały i czekały, aż je zwrócą."
+  },
+  "alcala_spain": {
+    "title": "Cud eucharystyczny w Alcalá",
+    "description": "W 1597 r. pewien penitent zwrócił skradzione hostie. Hostie przez lata leżały w szufladzie i pozostały całkowicie świeże i niezniszczalne, co zostało potwierdzone przez teologów."
+  },
+  "alcoy_spain": {
+    "title": "Cud eucharystyczny w Alcoy",
+    "description": "W 1568 roku złodziej ukradł cyborium. Hostie odnaleziono po tym, jak miejscowy mieszkaniec zobaczył, gdzie są ukryte, i znaleziono je nienaruszone."
+  },
+  "caravaca_spain": {
+    "title": "Cud eucharystyczny w Caravaca de la Cruz",
+    "description": "W 1231 roku podczas Mszy św. odprawianej przez księdza przed mauretańskimi porywaczami pojawili się dwaj aniołowie niosący dwuramienny krzyż (Krzyż Caravaca)."
+  },
+  "cimballa_spain": {
+    "title": "Cud eucharystyczny Cimballi",
+    "description": "W 1370 roku ksiądz zwątpił w rzeczywistą obecność. Podczas Mszy Hostia zaczęła krwawić na korporał, pozostawiając trwałą plamę krwi, która nadal jest czczona."
+  },
+  "gerona_spain": {
+    "title": "Cud eucharystyczny w Geronie",
+    "description": "W 1297 roku ksiądz odprawiający Mszę św. widział krwawiącą Hostię. Korporał splamił się krwią, a relikwię przechowano i czczono w katedrze w Gironie."
+  },
+  "escorial_spain": {
+    "title": "Cud eucharystyczny w Gorkum-El Escorial",
+    "description": "W 1572 roku żołnierze protestanccy zbezcześcili konsekrowaną Hostię, nadepnąwszy na nią. Hostia krwawiła, a relikwia została później przekazana królowi Filipowi II i przechowywana w El Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Cud eucharystyczny w Guadalupe",
+    "description": "W 1420 roku podczas Mszy św. Hostia zamieniła się w krwawiące ciało, a wino zamieniło się w krew, wypełniając kielich, czego świadkiem był król Kastylii Jan II."
+  },
+  "ivorra_spain": {
+    "title": "Cud eucharystyczny w Ivorrze",
+    "description": "W 1010 roku ksiądz odprawiający Mszę zwątpił w rzeczywistą obecność Jezusa. Wino zamieniło się w krew, wylewając się z kielicha i plamiąc zachowane obrusy ołtarzowe."
+  },
+  "moncada_spain": {
+    "title": "Cud eucharystyczny w Moncada",
+    "description": "W 1392 roku ksiądz widział, jak Dzieciątko Jezus pojawiło się w Hostii podczas Mszy św., a Hostia krwawiła, potwierdzając tym samym rzeczywistą obecność wiernych."
+  },
+  "montserrat_spain_1657": {
+    "title": "Cud eucharystyczny w Montserrat",
+    "description": "W 1657 r. podczas Mszy św. w Hostii ukazała się twarz Jezusa, a w klasztorze wydarzyła się seria cudów, które doprowadziły do ​​wzrostu pobożności."
+  },
+  "cebreiro_spain": {
+    "title": "Cud eucharystyczny O\\",
+    "description": "W 1300 roku wieśniak wspiął się na górę podczas burzy śnieżnej, aby wziąć udział we Mszy św. Wątpiący ksiądz zobaczył, jak Hostia zamienia się w ciało, a wino w krew, plamiąc cielesność."
+  },
+  "onil_spain": {
+    "title": "Cud eucharystyczny w Onil",
+    "description": "W 1824 roku odnaleziono skradzioną Hostię, gdy pewna kobieta zobaczyła na polu tajemnicze światło. Host został znaleziony nienaruszony i od tamtej pory pozostaje nienaruszony."
+  },
+  "ponferrada_spain": {
+    "title": "Cud eucharystyczny w Ponferradzie",
+    "description": "W 1533 roku złodziej ukradł tabernakulum z Hostiami. Znaleziono przybytek ukryty na polu, a Hostie nienaruszone i emitujące delikatne światło."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Cud eucharystyczny św. Joanny de les Abadesses",
+    "description": "W 1251 r. podczas ceremonii liturgicznej zauważono, że Hostia wewnątrz monstrancji krwawiła, plamiąc zakonserwowaną monstrancję."
+  },
+  "silla_spain": {
+    "title": "Cud eucharystyczny w Silla",
+    "description": "W 1907 roku ksiądz upuścił konsekrowaną Hostię. Hostię odzyskano i umieszczono w szufladzie. Wiele lat później odnaleziono go w stanie nienaruszonym i niezniszczonym."
+  },
+  "valencia_spain": {
+    "title": "Cud eucharystyczny w Walencji",
+    "description": "W katedrze w Walencji przechowywany jest Święty Kielich Ostatniej Wieczerzy, co potwierdzają liczne źródła historyczne i wizyty papieskie."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Cud eucharystyczny w Saragossie",
+    "description": "W 1427 r. skradziono konsekrowaną Hostię i ukryto ją w domu. Stwierdzono, że Host emituje jasne światło i został odzyskany w idealnym stanie."
+  },
+  "ettiswil_switzerland": {
+    "title": "Cud eucharystyczny w Ettiswil",
+    "description": "W 1447 r. na polu pochowano skradzioną Hostię. Znaleziono go, gdy woły nie chciały nadepnąć na miejscu, a Hostię unosiła się nad ziemią."
+  },
+  "oak_cliff_us": {
+    "title": "Krwawiąca Hostia z Dębowego Klifu",
+    "description": "Poświęcona Hostia zdawała się krwawić. Po dochodzeniu diecezja ustaliła, że ​​nie wydarzył się żaden cud."
+  },
+  "south_st_paul_us": {
+    "title": "Przebarwiona Hostia św. Pawła z południa",
+    "description": "W procesie rozpuszczania w wodzie wyrzuconej konsekrowanej hostii zauważono czerwone zabarwienie. Archidiecezja ustaliła, że ​​przyczyną był grzyb."
+  },
+  "kearns_us": {
+    "title": "Krwawiąca Hostia Kearnsa",
+    "description": "Poświęcona Hostia zdawała się krwawić. Dochodzenie przeprowadzone przez diecezję Salt Lake City wykazało, że czerwona pleśń chlebowa w naturalny sposób spowodowała przebarwienie."
+  },
+  "buffalo_us": {
+    "title": "Czerwone zabarwienie żywiciela u bawoła",
+    "description": "Zauważono czerwone zabarwienie żywiciela. Biskupi diecezji Buffalo wyraźnie odmówili zbadania tej sprawy."
+  },
+  "morris_us": {
+    "title": "Cętkowane Hostie Morrisa",
+    "description": "Plamki uważane za krew znaleziono na dwóch odrzuconych konsekrowanych hostiach. Analiza laboratoryjna wykazała, że ​​były one spowodowane przez naturalne bakterie."
   }
 }

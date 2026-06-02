@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { Search, X } from 'lucide-react';
+import { MagnifyingGlass, X } from '@phosphor-icons/react';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
@@ -37,7 +37,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition, 
         height: '42px',
         borderRadius: '12px'
       }}>
-        <Search size={16} color="var(--accent-color)" />
+        <MagnifyingGlass size={16} color="var(--accent-color)" />
         <input
           type="text"
           placeholder={t('searchPlaceholder', lang)}

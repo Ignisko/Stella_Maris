@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState, useMemo } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
-import { Play, Pause, X } from 'lucide-react';
+import { Play, Pause, X } from '@phosphor-icons/react';
 import { getStatusColor, hexToRgb } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -27,9 +27,9 @@ interface GlobeViewerProps {
 const configureOrbitControls = (controls: any) => {
   controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
   controls.maxDistance = 400;
-  controls.zoomSpeed = 4.5; // Faster responsive zoom
+  controls.zoomSpeed = 6.0; // Faster responsive zoom
   controls.enableDamping = true; // Premium inertial damping
-  controls.dampingFactor = 0.18; // Smoother and quicker glide
+  controls.dampingFactor = 0.05; // Smoother and quicker glide
 };
 
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
@@ -46,10 +46,14 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [telemetry, setTelemetry] = useState<{ lat: number; lng: number; altitude: number }>({ lat: 0, lng: 0, altitude: 2.5 });
+  const [isInteracting, setIsInteracting] = useState(false);
+  const interactionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [isAutoRotate, setIsAutoRotate] = useState(false);
   const [lodThreshold, setLodThreshold] = useState<number>(6);
   const lodRef = useRef<number>(6);
   const lastClickTimeRef = useRef<number>(0);
+  const elementCacheRef = useRef<Map<string, HTMLDivElement>>(new Map());
 
   const [ringApparition, setRingApparition] = useState<Apparition | null>(null);
   const [ringProgress, setRingProgress] = useState(1);
@@ -226,6 +230,20 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         if (!controlsConfigured && globeEl.current.controls()) {
           const controls = globeEl.current.controls();
           configureOrbitControls(controls);
+          controls.addEventListener('change', () => {
+            if (globeEl.current) {
+              const pov = globeEl.current.pointOfView();
+              setTelemetry({ lat: pov.lat, lng: pov.lng, altitude: pov.altitude });
+              
+              setIsInteracting(true);
+              if (interactionTimeoutRef.current) {
+                clearTimeout(interactionTimeoutRef.current);
+              }
+              interactionTimeoutRef.current = setTimeout(() => {
+                setIsInteracting(false);
+              }, 100);
+            }
+          });
           controlsConfigured = true;
         }
 
@@ -472,12 +490,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     return clusters;
   }, [apparitions, lodThreshold, selectedApparition]);
 
-  const handlePointClick = (point: object) => {
+  const handlePointClick = React.useCallback((point: object) => {
     lastClickTimeRef.current = Date.now();
     const app = point as Apparition;
     onSelectApparition(app);
     setIsAutoRotate(false); 
-  };
+  }, [onSelectApparition]);
 
   const handleGlobeClick = () => {
     if (Date.now() - lastClickTimeRef.current < 400) {
@@ -486,7 +504,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     onSelectApparition(null);
   };
 
-  const handleBadgeClick = (d: Apparition & { clusterCount?: number; clusteredItems?: Apparition[] }, e: Event) => {
+  const handleBadgeClick = React.useCallback((d: Apparition & { clusterCount?: number; clusteredItems?: Apparition[] }, e: Event) => {
     e.stopPropagation();
     lastClickTimeRef.current = Date.now();
     
@@ -532,7 +550,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         }
       }
     }
-  };
+  }, [isTimelineOpen, isCinemaMode]);
 
   const handleCloseClusterPopup = () => {
     setClusterPopup(null);
@@ -554,6 +572,160 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       .replace(/'/g, "&#039;");
   };
 
+  const htmlElementCallback = React.useCallback((dRaw: unknown) => {
+    const d = dRaw as Apparition & { clusterCount?: number; labelOffset?: string };
+    const isSelected = selectedApparition?.id === d.id;
+    const count = d.clusterCount || 1;
+    const isTutorialTarget = isTutorialActive && tutorialStep === 3 && d.id === 'guadalupe_mexico';
+    
+    let el = elementCacheRef.current.get(d.id);
+    if (!el) {
+      el = document.createElement('div');
+      el.className = 'globe-html-label';
+      elementCacheRef.current.set(d.id, el);
+    }
+    
+    // Check if we need to update the DOM content
+    const prevSelected = el.getAttribute('data-selected') === 'true';
+    const prevCount = parseInt(el.getAttribute('data-count') || '0', 10);
+    const prevTutorial = el.getAttribute('data-tutorial') === 'true';
+    const prevLang = el.getAttribute('data-lang');
+    
+    if (prevSelected !== isSelected || prevCount !== count || prevTutorial !== isTutorialTarget || prevLang !== lang) {
+      el.setAttribute('data-selected', isSelected ? 'true' : 'false');
+      el.setAttribute('data-count', count.toString());
+      el.setAttribute('data-tutorial', isTutorialTarget ? 'true' : 'false');
+      el.setAttribute('data-lang', lang);
+      
+      el.dataset.id = d.id;
+      el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
+      el.dataset.selected = isSelected ? 'true' : 'false';
+      if (d.labelOffset) {
+        el.dataset.offset = d.labelOffset;
+      } else {
+        el.removeAttribute('data-offset');
+      }
+      el.style.zIndex = isSelected ? '9999' : '1';
+      
+      const statusColor = getStatusColor(d.approvalStatus);
+      const rgb = hexToRgb(statusColor);
+      el.style.setProperty('--marker-color', statusColor);
+      el.style.setProperty('--marker-bg-selected', `rgba(${rgb}, 0.4)`);
+      el.style.setProperty('--marker-glow-selected', `rgba(${rgb}, 0.8)`);
+      
+      const titleText = d.title + (d.approvalStatus === 'Dismissed' ? ' ⚠️' : '');
+      const safeTitle = escapeHtml(titleText || '');
+      const badge = (count > 1 && !isSelected) ? `<span class="cluster-badge" style="background: rgba(0,0,0,0.6); color: #fff; padding: 2px 6px; border-radius: 12px; font-size: 11px; margin-left: 6px; font-weight: 700; cursor: pointer; pointer-events: auto;">+${count - 1}</span>` : '';
+      
+      const formatTitle = (title: string) => {
+        const openParenIdx = title.indexOf(' (');
+        if (openParenIdx !== -1 && title.endsWith(')')) {
+          const mainTitle = title.substring(0, openParenIdx);
+          const subtitle = title.substring(openParenIdx + 1);
+          return `<span class="label-title-main">${mainTitle}${badge}</span><span class="label-subtitle">${subtitle}</span>`;
+        }
+        return `<span class="label-title-main">${title}${badge}</span>`;
+      };
+      const displayTitleHtml = formatTitle(safeTitle);
+      const pulseHtml = isSelected ? '<div class="marker-pulse"></div>' : '';
+      const tutorialPointerHtml = isTutorialTarget ? `
+        <div class="tutorial-click-pointer">
+          <div style="width: 0; height: 0; border-left: 12px solid transparent; border-right: 12px solid transparent; border-top: 16px solid var(--accent-color); filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5))"></div>
+        </div>
+      ` : '';
+      
+      el.innerHTML = `
+        <div class="marker-container">
+          <div class="marker-dot"></div>
+          ${pulseHtml}
+          ${tutorialPointerHtml}
+          <div class="label-content${isSelected ? ' selected' : ''}">${displayTitleHtml}</div>
+        </div>
+      `;
+      
+      // Wire event listeners
+      const dot = el.querySelector('.marker-dot') as HTMLElement;
+      if (dot) {
+        dot.onpointerdown = (e) => {
+          e.stopPropagation();
+          lastClickTimeRef.current = Date.now();
+          handlePointClick(d);
+        };
+        dot.onclick = (e) => {
+          e.stopPropagation();
+          lastClickTimeRef.current = Date.now();
+          handlePointClick(d);
+        };
+      }
+
+      const content = el.querySelector('.label-content') as HTMLElement;
+      if (content) {
+        content.onpointerdown = (e) => {
+          e.stopPropagation();
+          lastClickTimeRef.current = Date.now();
+          handlePointClick(d);
+        };
+        content.onclick = (e) => {
+          e.stopPropagation();
+          lastClickTimeRef.current = Date.now();
+          handlePointClick(d);
+        };
+      }
+
+      const badgeEl = el.querySelector('.cluster-badge') as HTMLElement;
+      if (badgeEl) {
+        badgeEl.onpointerdown = (e) => {
+          e.stopPropagation();
+        };
+        badgeEl.onclick = (e) => {
+          e.stopPropagation();
+          handleBadgeClick(d as Apparition & { clusterCount?: number; clusteredItems?: Apparition[] }, e);
+        };
+      }
+
+      el.onwheel = (e) => {
+        if (globeEl.current) {
+          const renderer = globeEl.current.renderer();
+          if (renderer) {
+            const canvas = renderer.domElement;
+            if (canvas) {
+              const clonedEvent = new WheelEvent('wheel', {
+                clientX: e.clientX,
+                clientY: e.clientY,
+                deltaX: e.deltaX,
+                deltaY: e.deltaY,
+                deltaZ: e.deltaZ,
+                deltaMode: e.deltaMode,
+                bubbles: true,
+                cancelable: true,
+                ctrlKey: e.ctrlKey,
+                shiftKey: e.shiftKey,
+                altKey: e.altKey,
+                metaKey: e.metaKey
+              });
+              canvas.dispatchEvent(clonedEvent);
+            }
+          }
+        }
+      };
+    }
+    
+    return el;
+  }, [selectedApparition, isTutorialActive, tutorialStep, lang, handlePointClick, handleBadgeClick]);
+
+  const formatCoord = (val: number, isLat: boolean) => {
+    const dir = val < 0 ? (isLat ? 'S' : 'W') : (isLat ? 'N' : 'E');
+    let abs = Math.abs(val);
+    const deg = Math.floor(abs);
+    const minFloat = (abs - deg) * 60;
+    const min = Math.floor(minFloat);
+    const sec = Math.floor((minFloat - min) * 60);
+    return `${deg}°${min.toString().padStart(2, '0')}'${sec.toString().padStart(2, '0')}"${dir}`;
+  };
+
+  const cameraKm = Math.round(telemetry.altitude * 6371).toLocaleString();
+  const scaleKm = Math.max(1, Math.round(telemetry.altitude * 1200)).toLocaleString();
+
   return (
     <>
       <div 
@@ -563,7 +735,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         }}
         onPointerDown={() => setIsDragging(true)}
         onPointerUp={() => setIsDragging(false)}
-        onPointerLeave={() => setIsDragging(false)}
+        onPointerLeave={() => {
+          setIsDragging(false);
+          setIsInteracting(false);
+          if (interactionTimeoutRef.current) {
+            clearTimeout(interactionTimeoutRef.current);
+          }
+        }}
         onPointerEnter={() => {
           const active = document.activeElement as HTMLElement;
           if (active && active.tagName !== 'INPUT' && active.tagName !== 'TEXTAREA') {
@@ -591,132 +769,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           ringRepeatPeriod={ringConfig.repeatPeriod}
           onGlobeClick={handleGlobeClick}
           htmlElementsData={visibleHtmlLabels}
-          htmlElement={(dRaw: unknown) => {
-            const d = dRaw as Apparition & { clusterCount?: number; labelOffset?: string };
-            const isSelected = selectedApparition?.id === d.id;
-            const titleText = d.title + (d.approvalStatus === 'Dismissed' ? ' ⚠️' : '');
-            const safeTitle = escapeHtml(titleText || '');
-            
-            const count = d.clusterCount || 1;
-            const badge = count > 1 ? `<span class="cluster-badge" style="background: rgba(255,255,255,0.25); padding: 2px 6px; border-radius: 10px; font-size: 11px; margin-left: 6px; font-weight: 700; cursor: pointer; pointer-events: auto;">+${count - 1}</span>` : '';
-
-            // Format title by separating parenthetical subtitles (like "(Filipov)") onto a new line,
-            // placing the cluster count badge on the main title line to save vertical space.
-            const formatTitle = (title: string) => {
-              const openParenIdx = title.indexOf(' (');
-              if (openParenIdx !== -1 && title.endsWith(')')) {
-                const mainTitle = title.substring(0, openParenIdx);
-                const subtitle = title.substring(openParenIdx + 1);
-                return `<span class="label-title-main">${mainTitle}${badge}</span><span class="label-subtitle">${subtitle}</span>`;
-              }
-              return `<span class="label-title-main">${title}${badge}</span>`;
-            };
-            const displayTitleHtml = formatTitle(safeTitle);
-            const statusColor = getStatusColor(d.approvalStatus);
-            const rgb = hexToRgb(statusColor);
-            
-            const el = document.createElement('div');
-            el.className = 'globe-html-label';
-            el.dataset.id = d.id;
-            el.dataset.priority = isSelected ? '0' : (d.priority || 3).toString();
-            el.dataset.selected = isSelected ? 'true' : 'false';
-            if (d.labelOffset) {
-              el.dataset.offset = d.labelOffset;
-            }
-            el.style.zIndex = isSelected ? '9999' : '1';
-            
-            // Pass values to CSS variables for dynamic rendering
-            el.style.setProperty('--marker-color', statusColor);
-            el.style.setProperty('--marker-bg-selected', `rgba(${rgb}, 0.4)`);
-            el.style.setProperty('--marker-glow-selected', `rgba(${rgb}, 0.8)`);
-
-            const pulseHtml = isSelected ? '<div class="marker-pulse"></div>' : '';
-
-            const isTutorialTarget = isTutorialActive && tutorialStep === 3 && d.id === 'guadalupe_mexico';
-            const tutorialPointerHtml = isTutorialTarget ? `
-              <div class="tutorial-click-pointer">
-                <div style={{width: 0, height: 0, borderLeft: "12px solid transparent", borderRight: "12px solid transparent", borderTop: "16px solid var(--accent-color)", filter: "drop-shadow(0 2px 4px rgba(0,0,0,0.5))"}}></div>
-              </div>
-            ` : '';
-
-            el.innerHTML = `
-              <div class="marker-container">
-                <div class="marker-dot"></div>
-                ${pulseHtml}
-                ${tutorialPointerHtml}
-                <div class="label-content${isSelected ? ' selected' : ''}">${displayTitleHtml}</div>
-              </div>
-            `;
-
-            // Attach event handlers to both dot and label content for zoom levels <= 4
-            const dot = el.querySelector('.marker-dot') as HTMLElement;
-            if (dot) {
-              dot.onpointerdown = (e) => {
-                e.stopPropagation();
-                lastClickTimeRef.current = Date.now();
-                handlePointClick(d);
-              };
-              dot.onclick = (e) => {
-                e.stopPropagation();
-                lastClickTimeRef.current = Date.now();
-                handlePointClick(d);
-              };
-            }
-
-            const content = el.querySelector('.label-content') as HTMLElement;
-            if (content) {
-              content.onpointerdown = (e) => {
-                e.stopPropagation();
-                lastClickTimeRef.current = Date.now();
-                handlePointClick(d);
-              };
-              content.onclick = (e) => {
-                e.stopPropagation();
-                lastClickTimeRef.current = Date.now();
-                handlePointClick(d);
-              };
-            }
-
-            // Attach event handler specifically for the cluster badge to avoid triggering normal dot click
-            const badgeEl = el.querySelector('.cluster-badge') as HTMLElement;
-            if (badgeEl) {
-              badgeEl.onpointerdown = (e) => {
-                e.stopPropagation();
-              };
-              badgeEl.onclick = (e) => {
-                e.stopPropagation();
-                handleBadgeClick(d as Apparition & { clusterCount?: number; clusteredItems?: Apparition[] }, e);
-              };
-            }
-
-            el.onwheel = (e) => {
-              if (globeEl.current) {
-                const renderer = globeEl.current.renderer();
-                if (renderer) {
-                  const canvas = renderer.domElement;
-                  if (canvas) {
-                    const clonedEvent = new WheelEvent('wheel', {
-                      clientX: e.clientX,
-                      clientY: e.clientY,
-                      deltaX: e.deltaX,
-                      deltaY: e.deltaY,
-                      deltaZ: e.deltaZ,
-                      deltaMode: e.deltaMode,
-                      bubbles: true,
-                      cancelable: true,
-                      ctrlKey: e.ctrlKey,
-                      shiftKey: e.shiftKey,
-                      altKey: e.altKey,
-                      metaKey: e.metaKey
-                    });
-                    canvas.dispatchEvent(clonedEvent);
-                  }
-                }
-              }
-            };
-
-            return el;
-          }}
+          htmlElement={htmlElementCallback}
         />
       </div>
 
@@ -730,13 +783,13 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           }}
           style={{
             position: 'fixed',
-            bottom: isTimelineOpen ? '268px' : '20px',
+            bottom: isTimelineOpen ? '268px' : '52px',
             left: '20px',
             zIndex: 200,
             pointerEvents: 'auto',
-            background: 'rgba(15, 23, 42, 0.75)',
+            background: 'rgba(30, 30, 30, 0.8)',
             backdropFilter: 'blur(12px)',
-            border: '1px solid rgba(255, 255, 255, 0.15)',
+            border: 'none',
             borderRadius: '22px',
             padding: '0 20px',
             height: '44px',
@@ -750,11 +803,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             transition: 'all 0.2s ease'
           }}
           onMouseOver={(e) => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
+            e.currentTarget.style.background = 'rgba(45, 45, 45, 0.95)';
             e.currentTarget.style.transform = 'scale(1.02)';
           }}
           onMouseOut={(e) => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.75)';
+            e.currentTarget.style.background = 'rgba(30, 30, 30, 0.8)';
             e.currentTarget.style.transform = 'none';
           }}
           title={isAutoRotate ? t('autoRotateOn', lang) : t('autoRotateOff', lang)}
@@ -793,7 +846,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
               maxHeight: '80%',
               overflowY: 'auto',
               padding: '24px',
-              backgroundColor: 'rgba(15, 23, 42, 0.95)',
+              backgroundColor: 'rgba(28, 28, 30, 0.95)',
               border: '1px solid var(--glass-border)',
               boxShadow: '0 20px 50px rgba(0,0,0,0.7)',
               display: 'flex',
@@ -834,7 +887,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
                       padding: '12px 16px',
                       borderRadius: '10px',
                       background: 'rgba(255, 255, 255, 0.03)',
-                      border: '1px solid rgba(255, 255, 255, 0.08)',
+                      border: 'none',
                       color: 'var(--text-color)',
                       textAlign: 'left',
                       cursor: 'pointer',
@@ -865,6 +918,53 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
                   </button>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Telemetry Bottom Bar */}
+      {(!isAutoRotate && !isTutorialActive) && (
+        <div style={{
+          position: 'fixed',
+          bottom: 0,
+          left: 0,
+          right: 0,
+          height: '32px',
+          backgroundColor: '#0f0f11',
+          zIndex: 99999,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          padding: '0 24px',
+          fontFamily: 'var(--font-sans)',
+          fontSize: '11px',
+          color: '#e8eaed',
+          pointerEvents: 'none'
+        }}>
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '24px',
+            opacity: isInteracting ? 0 : 1,
+            transition: 'opacity 0.4s ease'
+          }}>
+          {/* Scale Bar */}
+          <div style={{ display: 'flex', alignItems: 'flex-end', gap: '8px', height: '12px' }}>
+            <div style={{
+              width: '100px',
+              borderBottom: '1px solid #e8eaed',
+              borderLeft: '1px solid #e8eaed',
+              borderRight: '1px solid #e8eaed',
+              height: '6px',
+              position: 'relative'
+            }}>
+              <span style={{ position: 'absolute', top: '-14px', right: 0, whiteSpace: 'nowrap' }}>{scaleKm} km</span>
+            </div>
+          </div>
+            <div title="Camera">{cameraKm} km</div>
+            <div style={{ letterSpacing: '0.05em' }}>
+              {formatCoord(telemetry.lat, true)} {formatCoord(telemetry.lng, false)}
             </div>
           </div>
         </div>

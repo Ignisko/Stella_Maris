@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ChevronUp, Filter, Clock, Award } from 'lucide-react';
+import { CaretUp, Funnel, Clock, Medal, Check } from '@phosphor-icons/react';
 import { STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -99,17 +99,18 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
           title={t('filters', lang)}
           style={absolute ? {
             width: '100%',
-            padding: '10px 16px',
+            padding: '12px 16px',
             background: 'var(--glass-bg)',
             border: '1px solid var(--glass-border)',
-            borderRadius: '8px',
             color: 'var(--text-color)',
             cursor: 'pointer',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             gap: '8px',
-            fontSize: '14px',
+            fontSize: '12px',
+            textTransform: 'uppercase',
+            letterSpacing: '0.05em',
             fontWeight: 600,
             transition: 'all 0.2s ease',
             outline: 'none'
@@ -120,44 +121,41 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             padding: '0',
             background: 'var(--glass-bg)',
             border: '1px solid var(--glass-border)',
-            borderRadius: '50%',
-            boxShadow: 'var(--box-shadow)',
             cursor: 'pointer',
-            width: '46px',
-            height: '46px',
-            fontSize: '22px',
+            width: '40px',
+            height: '40px',
             transition: 'all 0.2s ease',
             outline: 'none'
           }}
           onMouseOver={e => {
-            e.currentTarget.style.background = 'var(--glass-border)';
+            e.currentTarget.style.background = 'var(--text-color)';
+            e.currentTarget.style.color = 'var(--bg-color)';
           }}
           onMouseOut={e => {
             e.currentTarget.style.background = 'var(--glass-bg)';
+            e.currentTarget.style.color = 'var(--text-color)';
           }}
         >
           {absolute ? (
             <>
-              <Filter size={16} />
+              <Funnel size={16} weight="regular" />
               <span>{t('filters', lang)}</span>
             </>
           ) : (
-            <Filter size={22} />
+            <Funnel size={20} weight="regular" />
           )}
         </button>
       ) : (
         /* Expanded Unified Box */
         <div
-          className="glass-panel glass-panel-rounded animate-fade-in"
+          className="glass-panel animate-fade-in"
           style={{
             width: absolute ? '280px' : '100%',
             position: absolute ? 'absolute' : 'relative',
             top: absolute ? 'calc(100% + 8px)' : undefined,
             right: absolute ? 0 : undefined,
-            background: 'rgba(15, 23, 42, 0.95)',
-            border: '1px solid rgba(56, 189, 248, 0.45)',
-            boxShadow: '0 16px 48px rgba(0,0,0,0.6)',
-            borderRadius: '16px',
+            background: 'var(--glass-bg)',
+            border: '1px solid var(--glass-border)',
             overflow: 'hidden',
             display: 'flex',
             flexDirection: 'column',
@@ -174,8 +172,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               alignItems: 'center',
               justifyContent: 'space-between',
               width: '100%',
-              padding: '12px 20px',
-              background: 'rgba(56, 189, 248, 0.12)',
+              padding: '16px 20px',
+              background: '#1e293b',
               border: 'none',
               borderBottom: '1px solid var(--glass-border)',
               color: 'var(--text-color)',
@@ -187,17 +185,17 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               WebkitUserSelect: 'none'
             }}
             onMouseOver={e => {
-              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.2)';
+              e.currentTarget.style.background = '#2d3748';
             }}
             onMouseOut={e => {
-              e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
+              e.currentTarget.style.background = '#1e293b';
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', userSelect: 'none', WebkitUserSelect: 'none' }}>
-              <Filter size={15} color="var(--accent-color)" />
+              <Funnel size={16} weight="regular" />
               <span>{t('filters', lang)}</span>
             </div>
-            <ChevronUp size={15} style={{ opacity: 0.8, color: 'var(--accent-color)' }} />
+            <CaretUp size={16} weight="bold" />
           </button>
 
           {/* Tabs and Checkboxes Wrapper for tutorial highlight */}
@@ -208,11 +206,11 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                 onClick={() => setActiveTab('status')}
                 style={{ 
                   flex: 1, 
-                  padding: '12px 0', 
-                  background: activeTab === 'status' ? 'rgba(255,255,255,0.06)' : 'transparent', 
+                  padding: '16px 0', 
+                  background: activeTab === 'status' ? 'var(--text-color)' : 'transparent', 
                   border: 'none', 
-                  color: 'var(--text-color)', 
-                  opacity: activeTab === 'status' ? 1 : 0.5, 
+                  color: activeTab === 'status' ? 'var(--bg-color)' : 'var(--text-color)', 
+                  opacity: activeTab === 'status' ? 1 : 0.6, 
                   cursor: 'pointer', 
                   display: 'flex', 
                   justifyContent: 'center', 
@@ -225,17 +223,17 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                   WebkitUserSelect: 'none'
                 }}
               >
-                <Award size={15} /> {t('status', lang)}
+                <Medal size={16} weight={activeTab === 'status' ? 'fill' : 'regular'} /> {t('status', lang)}
               </button>
               <button
                 onClick={() => setActiveTab('time')}
                 style={{ 
                   flex: 1, 
-                  padding: '12px 0', 
-                  background: activeTab === 'time' ? 'rgba(255,255,255,0.06)' : 'transparent', 
+                  padding: '16px 0', 
+                  background: activeTab === 'time' ? 'var(--text-color)' : 'transparent', 
                   border: 'none', 
-                  color: 'var(--text-color)', 
-                  opacity: activeTab === 'time' ? 1 : 0.5, 
+                  color: activeTab === 'time' ? 'var(--bg-color)' : 'var(--text-color)', 
+                  opacity: activeTab === 'time' ? 1 : 0.6, 
                   cursor: 'pointer', 
                   display: 'flex', 
                   justifyContent: 'center', 
@@ -248,7 +246,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                   WebkitUserSelect: 'none'
                 }}
               >
-                <Clock size={15} /> {t('centuries', lang)}
+                <Clock size={16} weight={activeTab === 'time' ? 'fill' : 'regular'} /> {t('centuries', lang)}
               </button>
             </div>
 
@@ -264,44 +262,41 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               WebkitUserSelect: 'none'
             }}>
               {/* Switched Buttons: Clear all on left, Select all on right */}
-              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '2px', userSelect: 'none', WebkitUserSelect: 'none' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', userSelect: 'none', WebkitUserSelect: 'none' }}>
                 <button 
                   onClick={clearAll} 
                   style={{ 
-                    background: 'none', 
+                    background: 'transparent', 
                     border: 'none', 
-                    color: 'var(--text-color)', 
-                    opacity: 0.7, 
+                    color: 'rgba(255,255,255,0.6)', 
+                    padding: '4px 8px',
                     fontSize: '12px', 
                     cursor: 'pointer', 
                     fontFamily: 'inherit',
-                    transition: 'opacity 0.2s',
-                    userSelect: 'none',
-                    WebkitUserSelect: 'none'
+                    transition: 'all 0.2s',
                   }}
-                  onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                  onMouseOut={e => e.currentTarget.style.opacity = '0.7'}
+                  onMouseOver={e => e.currentTarget.style.color = '#fff'}
+                  onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.6)'}
                 >
-                  {t('clearAll', lang)}
+                  Wyczyść wszystko
                 </button>
                 <button 
                   onClick={selectAll} 
                   style={{ 
-                    background: 'none', 
+                    background: 'transparent', 
                     border: 'none', 
-                    color: 'var(--accent-color)', 
+                    color: '#3b82f6', 
+                    padding: '4px 8px',
                     fontSize: '12px', 
                     cursor: 'pointer', 
                     fontWeight: 600, 
                     fontFamily: 'inherit',
-                    transition: 'filter 0.2s',
-                    userSelect: 'none',
-                    WebkitUserSelect: 'none'
+                    transition: 'all 0.2s',
                   }}
-                  onMouseOver={e => e.currentTarget.style.filter = 'brightness(1.2)'}
-                  onMouseOut={e => e.currentTarget.style.filter = 'none'}
+                  onMouseOver={e => e.currentTarget.style.color = '#60a5fa'}
+                  onMouseOut={e => e.currentTarget.style.color = '#3b82f6'}
                 >
-                  {t('selectAll', lang)}
+                  Zaznacz wszystko
                 </button>
               </div>
 
@@ -313,36 +308,45 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                     return (
                       <label 
                         key={category} 
+                        onClick={(e) => { e.preventDefault(); toggleFilter(category); }}
                         style={{ 
                           display: 'flex', 
                           alignItems: 'center', 
-                          gap: '10px', 
+                          gap: '12px', 
                           cursor: 'pointer', 
-                          fontSize: '13px', 
-                          opacity: isActive ? 1 : 0.55, 
+                          fontSize: '12px', 
+                          fontWeight: 500,
+                          opacity: isActive ? 1 : 0.6, 
                           transition: 'all 0.2s',
                           userSelect: 'none',
                           WebkitUserSelect: 'none'
                         }}
                         onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                        onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                        onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.6'; }}
                       >
-                        <input
-                          type="checkbox"
-                          checked={isActive}
-                          onChange={() => toggleFilter(category)}
-                          style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
-                        />
-                        <span style={{ 
-                          width: '10px', 
-                          height: '10px', 
-                          borderRadius: '50%', 
-                          backgroundColor: color, 
-                          display: 'inline-block', 
-                          flexShrink: 0, 
-                          boxShadow: `0 0 6px ${color}` 
+                        <div style={{ 
+                          width: '16px', 
+                          height: '16px', 
+                          borderRadius: '4px',
+                          border: `1px solid ${isActive ? '#3b82f6' : 'rgba(255,255,255,0.3)'}`, 
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          background: isActive ? '#3b82f6' : 'transparent',
+                          transition: 'all 0.2s',
+                          flexShrink: 0
+                        }}>
+                          {isActive && <Check size={12} weight="bold" color="#fff" />}
+                        </div>
+                        <div style={{ 
+                          width: '12px', 
+                          height: '12px', 
+                          borderRadius: '50%',
+                          backgroundColor: color,
+                          boxShadow: `0 0 8px ${color}`,
+                          flexShrink: 0
                         }} />
-                        <span>{t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
+                        <span style={{ color: 'var(--text-color)' }}>{t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
                       </label>
                     );
                   })}
@@ -356,27 +360,45 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
                     return (
                       <label 
                         key={century.id} 
+                        onClick={(e) => { e.preventDefault(); toggleCentury(century.id); }}
                         style={{ 
                           display: 'flex', 
                           alignItems: 'center', 
-                          gap: '10px', 
+                          gap: '12px', 
                           cursor: 'pointer', 
-                          fontSize: '13px', 
-                          opacity: isActive ? 1 : 0.55, 
+                          fontSize: '12px', 
+                          fontWeight: 500,
+                          opacity: isActive ? 1 : 0.6, 
                           transition: 'all 0.2s',
                           userSelect: 'none',
                           WebkitUserSelect: 'none'
                         }}
                         onMouseOver={e => e.currentTarget.style.opacity = '1'}
-                        onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.55'; }}
+                        onMouseOut={e => { if (!isActive) e.currentTarget.style.opacity = '0.6'; }}
                       >
-                        <input
-                          type="checkbox"
-                          checked={isActive}
-                          onChange={() => toggleCentury(century.id)}
-                          style={{ cursor: 'pointer', accentColor: 'var(--accent-color)', width: '15px', height: '15px', flexShrink: 0 }}
-                        />
-                        <span>{t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
+                        <div style={{ 
+                          width: '16px', 
+                          height: '16px', 
+                          borderRadius: '4px',
+                          border: `1px solid ${isActive ? '#3b82f6' : 'rgba(255,255,255,0.3)'}`, 
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          background: isActive ? '#3b82f6' : 'transparent',
+                          transition: 'all 0.2s',
+                          flexShrink: 0
+                        }}>
+                          {isActive && <Check size={12} weight="bold" color="#fff" />}
+                        </div>
+                        <div style={{ 
+                          width: '12px', 
+                          height: '12px', 
+                          borderRadius: '50%',
+                          backgroundColor: 'var(--text-color)',
+                          boxShadow: `0 0 8px rgba(255,255,255,0.3)`,
+                          flexShrink: 0
+                        }} />
+                        <span style={{ color: 'var(--text-color)' }}>{t(century.id as keyof typeof import('../utils/i18n').translations['en'], lang)}</span>
                       </label>
                     );
                   })}

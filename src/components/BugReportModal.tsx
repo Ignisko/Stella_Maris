@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bug, X } from 'lucide-react';
+import { Bug, X } from '@phosphor-icons/react';
 import type { Language } from '../utils/i18n';
 
 interface BugReportModalProps {

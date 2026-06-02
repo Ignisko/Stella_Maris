@@ -3250,5 +3250,449 @@
     "location": "Assiout",
     "country": "Égypte",
     "description": "En l'honneur de la dernière étape historique de la fuite de la Sainte Famille en Égypte. Des centaines de milliers de personnes se rassemblent chaque année dans l'ancien monastère troglodyte de Durunka, où la plus grande statue de bronze de Marie en Égypte a été érigée en 2023 pour célébrer son anniversaire, avec le soutien de la frappe commémorative officielle du gouvernement égyptien."
+  },
+  "fiecht_austria": {
+    "title": "Miracle eucharistique de Fiecht",
+    "description": "En 1310, un prêtre doutant de la présence réelle pendant la messe vit le vin consacré bouillir et se transformer en sang, qui est encore conservé comme relique dans le monastère de Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Miracle eucharistique de Seefeld",
+    "description": "En 1384, un chevalier demanda à recevoir une hostie plus grande pendant la messe. Au fur et à mesure qu'il la recevait, le sol s'affaissa sous lui et l'hostie se transforma en chair saignante. La relique est conservée dans l'église paroissiale de Saint-Oswald."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Miracle eucharistique de Weiten-Raxendorf",
+    "description": "En 1411, une Hostie consacrée volée fut cachée sous un pont. Lorsqu'elle fut récupérée, l'Hostie s'était transformée en chair saignante et émettait une lumière surnaturelle, conduisant à la construction d'une chapelle."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Miracle eucharistique de Bois-Seigneur-Isaac",
+    "description": "En 1405, un prêtre eut une vision du Christ pendant la messe, et l'hostie commença à saigner sur le corporal, laissant une tache de sang permanente qui est encore vénérée aujourd'hui."
+  },
+  "bruges_belgium": {
+    "title": "Miracle eucharistique de Bruges",
+    "description": "En 1203, on a vu la relique du Précieux Sang de Jésus, rapportée de la Deuxième Croisade, se transformer en sang liquide, conservé dans la Basilique du Saint-Sang."
+  },
+  "brussels_belgium": {
+    "title": "Miracle eucharistique de Bruxelles",
+    "description": "En 1370, plusieurs Hosties consacrées furent volées et profanées à coups de couteau. Les Hosties ont miraculeusement saigné, ce qui a permis la récupération et la vénération des reliques."
+  },
+  "herentals_belgium": {
+    "title": "Miracle eucharistique d'Herentals",
+    "description": "En 1412, des Hosties volées étaient cachées dans un champ. Ils ont été retrouvés quelques semaines plus tard, complètement intacts, protégés par des animaux sauvages et émettant une douce lumière."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Miracle eucharistique d'Herkenrode-Hasselt",
+    "description": "En 1317, un prêtre toucha une hostie consacrée avec les mains sales, et celle-ci commença à saigner, tachant la nappe de l'autel. La relique est conservée dans la cathédrale Saint-Quentin."
+  },
+  "liege_belgium": {
+    "title": "Miracle eucharistique de Liège",
+    "description": "Le miracle de Liège a inspiré sainte Julienne à plaider en faveur de la fête de la Fête-Dieu. Les hosties consacrées saignaient pendant l'adoration, conduisant à l'établissement de la solennité."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Miracle eucharistique de Middleburg-Louvain",
+    "description": "En 1374, un serviteur communia de manière irrévérencieuse et l'hostie se transforma en chair saignante, collant au palais. La relique est conservée à Louvain."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Miracle eucharistique de Sainte Marie d'Égypte",
+    "description": "Au IVe/Ve siècle, Sainte Marie d'Égypte repentante a miraculeusement pu traverser le Jourdain pour recevoir la Sainte Eucharistie de l'abbé Zosime, survivant pendant des décennies dans le désert."
+  },
+  "scete_egypt": {
+    "title": "Miracle eucharistique de Scete",
+    "description": "Dans les premiers monastères du désert de Scete, un moine doutant de la Présence réelle a vu l'Hostie se transformer en un enfant ensanglanté, confirmant la réalité du Christ\\"
+  },
+  "bordeaux_france": {
+    "title": "Miracle eucharistique de Bordeaux",
+    "description": "En 1822, lors de l'adoration eucharistique, Jésus apparaît à l'intérieur de l'ostensoir pendant plus de vingt minutes, bénissant la congrégation rassemblée dans la chapelle."
+  },
+  "dijon_france": {
+    "title": "Miracle eucharistique de Dijon",
+    "description": "En 1430, une Hostie consacrée fut poignardée avec un couteau et commença à saigner. L'hostie fut ensuite présentée au pape Jules II et devint un symbole de dévotion à Dijon."
+  },
+  "douai_france": {
+    "title": "Miracle eucharistique de Douai",
+    "description": "En 1254, un prêtre vit apparaître un bel enfant dans l'hostie pendant la messe. Le miracle fut observé par des centaines de paroissiens qui virent Jésus dans l'Eucharistie."
+  },
+  "faverney_france": {
+    "title": "Miracle eucharistique de Faverney",
+    "description": "En 1608, un incendie se déclare dans la chapelle, mais l'ostensoir contenant le Saint-Sacrement reste suspendu en l'air au-dessus des flammes pendant 33 heures jusqu'à ce que l'incendie soit éteint."
+  },
+  "la_rochelle_france": {
+    "title": "Miracle eucharistique de La Rochelle",
+    "description": "En 1461, un enfant muet fut guéri de sa mutisme après avoir communié à la cathédrale de La Rochelle, démontrant la puissance du Saint-Sacrement."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Miracle eucharistique du Saint-Sépulcre de Neuvy",
+    "description": "En 1257, une hostie consacrée saignait lorsqu'un prêtre la laissait tomber pendant la messe. La pierre et l'hostie tachées de sang ont été conservées dans l'église."
+  },
+  "les_ulmes_france": {
+    "title": "Miracle eucharistique des Ulmes",
+    "description": "En 1668, le visage de Jésus apparaît à l'intérieur de l'hostie lors de l'adoration de la fête de la Fête-Dieu. L'apparition a duré plusieurs heures devant la paroisse."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Miracle eucharistique de Marseille-en-Beauvaisis",
+    "description": "En 1533, des voleurs volent un ostensoir mais laissent l'Hostie consacrée cachée dans un champ. L'hostie émettait une lumière brillante et a été retrouvée en parfait état."
+  },
+  "paris_france_1290": {
+    "title": "Miracle eucharistique de Paris",
+    "description": "En 1290, un profanateur poignarda une Hostie consacrée avec un couteau et la jeta dans l'eau bouillante. L'Armée a flotté dans les airs et a saigné, ce qui a conduit à la construction d'une église sur le site."
+  },
+  "pressac_france": {
+    "title": "Miracle eucharistique de Pressac",
+    "description": "En 1643, un incendie détruisit l'autel paroissial, mais l'hostie consacrée resta complètement intacte et suspendue au-dessus des cendres, épargnée par les flammes."
+  },
+  "augsburg_germany": {
+    "title": "Miracle eucharistique d'Augsbourg",
+    "description": "En 1194, une femme gardait l'hostie dans sa bouche et l'emportait chez elle. Des années plus tard, on a découvert que l'Hostie s'était transformée en chair saignante et qu'elle avait été préservée."
+  },
+  "benningen_germany": {
+    "title": "Miracle eucharistique de Benningen",
+    "description": "En 1216, une Hostie sanglante fut trouvée dans l'église de Benningen. L'hostie a été versée sur l'autel et la relique est toujours vénérée dans l'église paroissiale."
+  },
+  "bettbrunn_germany": {
+    "title": "Miracle eucharistique de Bettbrunn",
+    "description": "En 1125, un berger vola une hostie pour protéger son troupeau. Lorsqu'il la laissa tomber, l'hostie resta collée à une pierre et ne put être déplacée jusqu'à l'arrivée de l'évêque, ce qui conduisit à un pèlerinage."
+  },
+  "erding_germany": {
+    "title": "Miracle eucharistique d'Erding",
+    "description": "En 1417, un paysan vola une hostie. Alors qu'il tentait de s'échapper, l'Hostie lui glissa des mains et plana dans les airs, rayonnant de lumière jusqu'à ce qu'elle soit récupérée par le clergé."
+  },
+  "kranenburg_germany": {
+    "title": "Miracle eucharistique de Kranenburg",
+    "description": "En 1280, un prêtre laissa tomber une hostie consacrée dans le creux d'un arbre. Des années plus tard, un crucifix en bois sculpté dans l'arbre a commencé à saigner, conduisant à un pèlerinage majeur."
+  },
+  "regensburg_germany": {
+    "title": "Miracle eucharistique de Ratisbonne",
+    "description": "En 1255, un prêtre doutait de la présence réelle. Pendant la messe, le crucifix en bois sur l'autel s'est animé et Jésus a pris le calice des mains du prêtre\\"
+  },
+  "wilsnack_germany": {
+    "title": "Miracle eucharistique de Wilsnack",
+    "description": "En 1383, une église fut détruite par un incendie, mais trois Hosties consacrées survécurent complètement intactes sur l'autel, couvertes de gouttes de sang frais."
+  },
+  "weingarten_germany": {
+    "title": "Miracle eucharistique de Weingarten",
+    "description": "Le monastère de Weingarten conserve la relique du Précieux Sang de Jésus, vérifiée par plusieurs miracles et vénérée depuis le XIe siècle."
+  },
+  "morne_rouge_martinique": {
+    "title": "Miracle eucharistique du Morne-Rouge",
+    "description": "En 1902, lors de l'éruption volcanique de la Montagne Pelée, l'Hostie sacrée à l'intérieur de l'ostensoir montra le visage de Jésus couronné d'épines devant la population en fuite."
+  },
+  "saint_andre_reunion": {
+    "title": "Miracle eucharistique de Saint-André",
+    "description": "En 1902, lors de l'adoration du Saint-Sacrement, le visage de Jésus et une couronne d'épines apparaissent à l'intérieur de l'hostie, en présence du curé et de la congrégation."
+  },
+  "alatri_italy": {
+    "title": "Miracle eucharistique d'Alatri",
+    "description": "En 1228, une jeune femme emporta chez elle l'Hostie enveloppée dans un linge. Trois jours plus tard, elle découvrit que l'Hostie s'était transformée en chair saignante, conservée dans la cathédrale d'Alatri."
+  },
+  "assisi_clara_italy": {
+    "title": "Miracle eucharistique d'Assise",
+    "description": "En 1240, Sainte Claire d'Assise repoussa les envahisseurs sarrasins en brandissant l'ostensoir contenant le Saint-Sacrement aux portes du couvent."
+  },
+  "asti_italy_1535": {
+    "title": "Miracle eucharistique d'Asti",
+    "description": "En 1535, un prêtre célébrant la messe brisa l'hostie, et le sang commença à couler de la cassure, remplissant le calice et tachant le corporal et l'autel."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Miracle eucharistique de Bagno di Romagna",
+    "description": "En 1412, un prêtre doutant de la Présence Réelle vit le vin consacré bouillir et déborder du calice comme du sang, tachant le corporal, qui reste conservé."
+  },
+  "canosio_italy": {
+    "title": "Miracle eucharistique de Canosio",
+    "description": "En 1630, un prêtre arrêta une crue dévastatrice du torrent Maira en bénissant la montée des eaux avec le Saint-Sacrement, qui recula instantanément."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Miracle eucharistique de Cava de\\",
+    "description": "En 1656, une épidémie dévastatrice fut stoppée lorsque l'abbé porta en procession le Saint-Sacrement et bénit la ville depuis la colline du château Saint-Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Miracle eucharistique de Dronero",
+    "description": "En 1631, un incendie massif menaçait de consumer la ville de Dronero. Un prêtre a brandi le Saint-Sacrement et les flammes se sont immédiatement éteintes, sauvant ainsi la ville."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Miracle eucharistique de San Mauro La Bruca",
+    "description": "En 1969, des voleurs ont volé un ciboire mais ont jeté 63 hosties consacrées. Les Hosties ont été retrouvées en parfait état et sont restées intactes depuis."
+  },
+  "ferrara_italy": {
+    "title": "Miracle eucharistique de Ferrare",
+    "description": "En 1171, un prêtre célébrant la messe vit l'hostie se transformer en sang, aspergeant la voûte au-dessus de l'autel de gouttes rouges, encore visibles aujourd'hui."
+  },
+  "florence_italy_1230": {
+    "title": "Miracle eucharistique de Florence",
+    "description": "En 1230, un prêtre laissa quelques gouttes de vin consacré dans le calice. Le lendemain, le vin s'était transformé en sang. La relique est conservée dans l'église de Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Miracle eucharistique de Gruaro",
+    "description": "En 1294, une femme lavant le linge de l'autel de l'église de Gruaro le trouva taché de sang provenant d'une hostie consacrée, conservé à Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Miracle eucharistique de Macerata",
+    "description": "En 1356, un prêtre doutant de la Présence Réelle vit le sang jaillir de l'Hostie lorsqu'il la brisa, tachant le corporal, toujours vénéré à Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Miracle eucharistique de Mogoro",
+    "description": "En 1604, deux pécheurs ont communié mais ont craché les Hosties sur le sol en pierre, où les Hosties ont laissé des empreintes profondes et saignantes qui peuvent encore être vues aujourd'hui."
+  },
+  "morrovalle_italy": {
+    "title": "Miracle eucharistique de Morrovalle",
+    "description": "En 1560, un incendie détruisit complètement l'église, mais l'Hostie consacrée fut retrouvée intacte sous les cendres dix jours plus tard, rayonnant d'une douce lumière."
+  },
+  "offida_italy": {
+    "title": "Miracle eucharistique d'Offida",
+    "description": "En 1273, une femme jeta une hostie dans le feu. L'Hostie s'est transformée en chair saignante et est restée épargnée par les flammes. La relique est conservée dans l'église Saint-Augustin."
+  },
+  "patierno_naples_italy": {
+    "title": "Miracle eucharistique de Patierno",
+    "description": "En 1772, des Hosties volées étaient cachées dans un champ. Ils ont été retrouvés émettant une lumière vive et ont été récupérés en parfait état, accompagnés de multiples miracles."
+  },
+  "rimini_italy": {
+    "title": "Miracle eucharistique de Rimini",
+    "description": "En 1227, saint Antoine de Padoue prouva la présence réelle à un hérétique lorsqu'un mulet affamé s'agenouilla pour adorer le Saint-Sacrement au lieu de manger de l'avoine."
+  },
+  "rome_italy_600": {
+    "title": "Miracle eucharistique de Rome",
+    "description": "Au VIe siècle, le pape Grégoire le Grand a vu une hostie consacrée se transformer en chair visible pour guérir le doute d'une femme qui avait cuit le pain."
+  },
+  "rosano_italy": {
+    "title": "Miracle eucharistique de Rosano",
+    "description": "En 1948, le visage de Jésus est apparu à l'intérieur de l'hostie lors de l'adoration au monastère de Rosano, en présence des religieuses et des paroissiens."
+  },
+  "peter_damian_italy": {
+    "title": "Miracle eucharistique de saint Pierre Damien",
+    "description": "Au XIe siècle, saint Pierre Damien a documenté un miracle au cours duquel une femme a volé une hostie. L'Hostie a saigné sur le tissu et, lorsqu'on lui a montré, il a vérifié son authenticité."
+  },
+  "salzano_italy": {
+    "title": "Miracle eucharistique de Salzano",
+    "description": "En 1517, un prêtre célébrant la messe vit l'hostie saigner, tachant le corporal et l'autel, démontrant ainsi la présence réelle à toute la congrégation."
+  },
+  "scala_italy": {
+    "title": "Miracle eucharistique de Scala",
+    "description": "En 1732, lors de l'adoration du Saint-Sacrement, les instruments de la Passion (croix, couronne d'épines, clous) apparurent à l'intérieur de l'hostie, en présence de saint Alphonse de Liguori."
+  },
+  "trani_italy": {
+    "title": "Miracle eucharistique de Trani",
+    "description": "Au XIe siècle, une femme hérétique faisait frire une hostie consacrée dans l'huile. L'hostie a commencé à saigner abondamment, débordant de la casserole et se répandant sur le sol."
+  },
+  "turin_italy_1453": {
+    "title": "Miracle eucharistique de Turin (1453)",
+    "description": "En 1453, un ostensoir volé contenant une hostie tomba d'un âne. L'hostie s'est élevée dans les airs, rayonnant de lumière, et est restée suspendue jusqu'à l'arrivée de l'évêque."
+  },
+  "veroli_italy": {
+    "title": "Miracle eucharistique de Véroli",
+    "description": "En 1570, lors de l'adoration, le visage de Jésus et une croix sont apparus à l'intérieur de l'hostie, attestés par de nombreux habitants et vérifiés par les autorités ecclésiastiques."
+  },
+  "volterra_italy": {
+    "title": "Miracle eucharistique de Volterra",
+    "description": "En 1472, un soldat vola une custode contenant une hostie. Alors qu'il tentait de le jeter, l'Hostie flottait dans les airs et saignait, entraînant la conversion du soldat."
+  },
+  "alkmaar_netherlands": {
+    "title": "Miracle eucharistique d'Alkmaar",
+    "description": "En 1429, un prêtre renversa du vin consacré sur ses vêtements. Le vin s'est transformé en sang et n'a pas pu être lavé. Les vêtements tachés de sang sont préservés."
+  },
+  "bergen_netherlands": {
+    "title": "Miracle eucharistique de Bergen",
+    "description": "En 1421, une inondation détruisit l'église et les Hosties consacrées furent emportées. Ils ont ensuite été retrouvés intacts, l'eau qui les entoure les gardant au sec."
+  },
+  "boxmeer_netherlands": {
+    "title": "Miracle eucharistique de Boxmeer",
+    "description": "En 1400, un prêtre doutait de la présence réelle. Pendant la messe, une goutte de sang tombait de l'hostie dans le calice, et le vin se transformait en sang et débordait."
+  },
+  "boxtel_netherlands": {
+    "title": "Miracle eucharistique de Boxtel",
+    "description": "En 1380, un prêtre renversa le calice, renversant du vin consacré sur la nappe de l'autel. Le vin s'est transformé en sang et a formé l'image du Christ."
+  },
+  "breda_netherlands": {
+    "title": "Miracle eucharistique de Breda",
+    "description": "En 1300, une Hostie consacrée était cachée dans un champ pour empêcher toute profanation. Il a été retrouvé des années plus tard, complètement intact et rayonnant d'une douce lumière."
+  },
+  "meerssen_netherlands": {
+    "title": "Miracle eucharistique de Meerssen",
+    "description": "En 1222, un prêtre célébrant vit l'hostie saigner pendant la messe. En 1465, un incendie détruisit l'église, mais l'hostie fut retrouvée intacte sur l'autel, intacte."
+  },
+  "stiphout_netherlands": {
+    "title": "Miracle eucharistique de Stiphout",
+    "description": "En 1342, un incendie détruit l'église, mais un paysan local se précipite à l'intérieur et récupère le Saint-Sacrement, qui n'est pas touché par les flammes."
+  },
+  "eten_peru": {
+    "title": "Miracle eucharistique d'Eten",
+    "description": "En 1649, le visage de l'Enfant Jésus et trois cœurs blancs apparaissent à l'intérieur de l'hostie lors de l'adoration, en présence du prêtre et de la congrégation."
+  },
+  "glotowo_poland": {
+    "title": "Miracle eucharistique de Glotowo",
+    "description": "En 1290, une Hostie volée fut enterrée dans un champ. On l'a retrouvé des années plus tard, alors que des bœufs s'agenouillaient devant lui, et on a découvert que l'hostie émettait une lumière vive."
+  },
+  "alboraya_spain": {
+    "title": "Miracle eucharistique d'Alboraya-Almácera",
+    "description": "En 1348, un prêtre apportant la communion aux malades tomba dans une rivière, perdant les hosties. Les hosties ont été trouvées dans la gueule de poissons qui les soutenaient en attendant de les rendre."
+  },
+  "alcala_spain": {
+    "title": "Miracle eucharistique d'Alcalá",
+    "description": "En 1597, un pénitent rendit les Hosties volées. Les hosties ont été conservées dans un tiroir pendant des années et sont restées complètement fraîches et intactes, comme l'ont vérifié les théologiens."
+  },
+  "alcoy_spain": {
+    "title": "Miracle eucharistique d'Alcoy",
+    "description": "En 1568, un voleur a volé un ciboire. Les Hosties ont été récupérées après qu'un résident local ait eu une vision de l'endroit où elles étaient cachées, et elles ont été retrouvées intactes."
+  },
+  "caravaca_spain": {
+    "title": "Miracle eucharistique de Caravaca de la Cruz",
+    "description": "En 1231, deux anges apparurent portant une croix à deux bras (la Croix de Caravaca) lors de la messe célébrée par un prêtre devant les ravisseurs maures."
+  },
+  "cimballa_spain": {
+    "title": "Miracle eucharistique de Cimballa",
+    "description": "En 1370, un prêtre doutait de la présence réelle. Pendant la messe, l'hostie a commencé à saigner sur le corporal, laissant une tache de sang permanente qui est toujours vénérée."
+  },
+  "gerona_spain": {
+    "title": "Miracle eucharistique de Gérone",
+    "description": "En 1297, un prêtre célébrant la messe vit l'hostie saigner. Le sang a taché le corporal et la relique a été conservée et vénérée dans la cathédrale de Gérone."
+  },
+  "escorial_spain": {
+    "title": "Miracle eucharistique de Gorkum-El Escorial",
+    "description": "En 1572, des soldats protestants profanèrent une hostie consacrée en marchant dessus. L'hostie a saigné et la relique a ensuite été donnée au roi Philippe II et conservée à l'Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Miracle eucharistique de Guadalupe",
+    "description": "En 1420, pendant la messe, on a vu l'hostie se transformer en chair saignante et le vin se transformer en sang, remplissant le calice, en présence du roi Jean II de Castille."
+  },
+  "ivorra_spain": {
+    "title": "Miracle eucharistique d'Ivorra",
+    "description": "En 1010, un prêtre célébrant la messe doutait de la présence réelle. Le vin s'est transformé en sang, débordant du calice et tachant la nappe de l'autel, qui est conservée."
+  },
+  "moncada_spain": {
+    "title": "Miracle eucharistique de Moncada",
+    "description": "En 1392, un prêtre vit l'Enfant Jésus apparaître dans l'hostie pendant la messe, et l'hostie saignait, confirmant la présence réelle à la congrégation."
+  },
+  "montserrat_spain_1657": {
+    "title": "Miracle eucharistique de Montserrat",
+    "description": "En 1657, pendant la messe, le visage de Jésus apparut à l'intérieur de l'hostie et une série de miracles se produisirent dans le monastère, conduisant à une dévotion accrue."
+  },
+  "cebreiro_spain": {
+    "title": "Miracle eucharistique de O\\",
+    "description": "En 1300, un paysan gravit la montagne dans une tempête de neige pour assister à la messe. Le prêtre, incrédule, vit l'hostie se transformer en chair et le vin en sang, tachant le corporal."
+  },
+  "onil_spain": {
+    "title": "Miracle eucharistique d'Onil",
+    "description": "En 1824, une hostie volée a été retrouvée après qu'une femme ait vu une lumière mystérieuse dans un champ. L'Hôte a été retrouvé intact et est resté intact depuis."
+  },
+  "ponferrada_spain": {
+    "title": "Miracle eucharistique de Ponferrada",
+    "description": "En 1533, un voleur a volé un tabernacle avec des hosties. Le tabernacle a été retrouvé caché dans un champ, et les hosties ont été retrouvées intactes et émettant une douce lumière."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Miracle eucharistique de Sant Joan de les Abadesses",
+    "description": "En 1251, lors d'une cérémonie liturgique, on vit l'hostie à l'intérieur de l'ostensoir saigner, tachant l'ostensoir, qui fut conservé."
+  },
+  "silla_spain": {
+    "title": "Miracle eucharistique de Silla",
+    "description": "En 1907, un prêtre laissa tomber une hostie consacrée. L'Hostie a été récupérée et placée dans un tiroir. Des années plus tard, il a été retrouvé complètement intact et intact."
+  },
+  "valencia_spain": {
+    "title": "Miracle eucharistique de Valence",
+    "description": "La cathédrale de Valence conserve le Saint Calice de la Dernière Cène, qui a été vérifié par de nombreux documents historiques et visites papales."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Miracle eucharistique de Saragosse",
+    "description": "En 1427, une Hostie consacrée fut volée et cachée dans une maison. L'hôte a été découvert en train d'émettre une lumière vive et a été retrouvé en parfait état."
+  },
+  "ettiswil_switzerland": {
+    "title": "Miracle eucharistique d'Ettiswil",
+    "description": "En 1447, une Hostie volée fut enterrée dans un champ. Il a été retrouvé lorsque les bœufs ont refusé de marcher sur place, et l'Hostie a été trouvée planant au-dessus du sol."
+  },
+  "lanciano_italy": {
+    "title": "Miracle eucharistique de Lanciano",
+    "description": "Au VIIIe siècle, un moine basilien qui doutait de la présence réelle a vu l'hostie se transformer en vraie chair et le vin en vrai sang pendant la messe. Des tests scientifiques approfondis dans les années 1970 ont conclu qu'il s'agissait de tissu cardiaque humain (myocarde) et de groupe sanguin AB, identique au Suaire de Turin."
+  },
+  "bolsena_italy": {
+    "title": "Miracle eucharistique de Bolsena",
+    "description": "En 1263, un prêtre sceptique nommé Pierre de Prague célébra la messe. En brisant l'hostie, du sang commença à en couler, tachant le corporal. Ce miracle a incité le pape Urbain IV à instituer la fête du Corpus Christi."
+  },
+  "buenos_aires_argentina": {
+    "title": "Miracle eucharistique de Buenos Aires",
+    "description": "En 1992, 1994 et 1996, les hosties abandonnées ont commencé à saigner. Sous la direction du cardinal Jorge Bergoglio (plus tard pape François, décédé en 2025), le tissu a été analysé scientifiquement et il a été découvert qu'il contenait des globules blancs humains vivants et du tissu musculaire cardiaque en grave détresse."
+  },
+  "sokolka_poland": {
+    "title": "Miracle eucharistique de Sokółka",
+    "description": "En 2008, une Hostie consacrée tombée a été placée dans l'eau pour se dissoudre. Une semaine plus tard, une tache rouge est apparue dessus. Les pathologistes ont conclu que la substance était identique au tissu myocardique (cœur) d'une personne proche de la mort."
+  },
+  "legnica_poland": {
+    "title": "Miracle eucharistique de Legnica",
+    "description": "En 2013, une hostie tombée a été placée dans l'eau. Il a développé des taches rouges qui, selon une analyse scientifique, contenaient des fibres musculaires cardiaques humaines fragmentées présentant des signes de stress et d'agonie extrêmes."
+  },
+  "tixtla_mexico": {
+    "title": "Miracle eucharistique de Tixtla",
+    "description": "Lors d'une retraite en 2006, une Hostie a commencé à épancher une substance rougeâtre. Des investigations scientifiques ont révélé que le sang provenait de l'intérieur de l'hôte vers l'extérieur, possédait le groupe sanguin AB et contenait de l'ADN humain intact et des globules blancs actifs."
+  },
+  "santarem_portugal": {
+    "title": "Miracle eucharistique de Santarém",
+    "description": "Une femme cherchant à utiliser une hostie consacrée pour une potion a trouvé qu'elle saignait abondamment. L'Hostie est encore conservée aujourd'hui dans l'église Saint-Étienne, après avoir conservé son état incorruptible pendant plus de 750 ans."
+  },
+  "cascia_italy": {
+    "title": "Miracle eucharistique de Cascia",
+    "description": "Un prêtre plaçait irrévérencieusement une Hostie consacrée entre les pages de son bréviaire. L’Hostie s’est transformée en sang, tachant les deux pages, formant le profil du visage du Christ."
+  },
+  "siena_italy": {
+    "title": "Miracle eucharistique de Sienne",
+    "description": "En 1730, des voleurs volèrent un ciboire contenant 351 hosties consacrées. Ils ont été récupérés trois jours plus tard et sont depuis restés parfaitement intacts et frais, défiant la détérioration naturelle."
+  },
+  "daroca_spain": {
+    "title": "Miracle eucharistique de Daroca",
+    "description": "Au cours d'une bataille contre les Maures, six Hosties consacrées furent cachées dans un caporal. Une fois récupérés, ils ont été retrouvés trempés de sang. Le corporel taché de sang reste conservé comme une relique."
+  },
+  "chirattakonam_india": {
+    "title": "Miracle eucharistique de Chirattakonam",
+    "description": "Pendant l'adoration eucharistique, trois taches rouges sont apparues sur l'hostie. Au cours des jours suivants, les taches formèrent l'image claire du visage de Jésus couronné d'épines."
+  },
+  "tumaco_colombia": {
+    "title": "Miracle eucharistique de Tumaco",
+    "description": "En 1906, un énorme tsunami menaçait l'île de Tumaco. Le Père Gerardo Larrondo a porté le Saint-Sacrement jusqu'au rivage. À l'approche d'une vague massive, elle s'est immédiatement retirée une fois atteinte l'Eucharistie, sauvant ainsi l'île."
+  },
+  "amsterdam_holland": {
+    "title": "Miracle eucharistique d'Amsterdam",
+    "description": "Un mourant a reçu l'Eucharistie mais l'a vomi. Le vomi fut jeté dans un feu crépitant, mais l'Hostie resta miraculeusement intacte et suspendue dans les flammes."
+  },
+  "avignon_france": {
+    "title": "Miracle eucharistique d'Avignon",
+    "description": "Après de graves inondations, les membres des Pénitents Gris ont ramé jusqu'à leur chapelle en s'attendant à ce que le Saint-Sacrement soit détruit. Au lieu de cela, ils trouvèrent les eaux miraculeusement séparées, laissant l'autel et l'hostie complètement secs."
+  },
+  "krakow_poland": {
+    "title": "Miracle eucharistique de Cracovie",
+    "description": "Des voleurs ont volé un ciboire contenant des hosties consacrées et les ont jetées dans un marais. Une lumière mystérieuse a conduit les chercheurs vers les Hosts, qui n'ont subi aucun dommage malgré la boue."
+  },
+  "poznan_poland": {
+    "title": "Miracle eucharistique de Poznań",
+    "description": "Trois Hosties ont été volées et profanées en étant percées, les faisant saigner. Ils ont ensuite été découverts flottant dans une prairie voisine, entourés d'une lumière miraculeuse."
+  },
+  "betania_venezuela": {
+    "title": "Miracle eucharistique de Betania",
+    "description": "Pendant la messe célébrée par le Père Oti, l'hostie consacrée a commencé à saigner abondamment d'un côté. Des tests médicaux ont confirmé qu'il s'agissait bien de sang humain."
+  },
+  "ludbreg_croatia": {
+    "title": "Miracle eucharistique de Ludbreg",
+    "description": "Un prêtre doutant de la présence réelle a vu le vin se transformer en véritable sang dans le calice. La relique du Précieux Sang est encore préservée et vénérée aujourd'hui."
+  },
+  "walldurn_germany": {
+    "title": "Miracle eucharistique de Walldürn",
+    "description": "Un prêtre a accidentellement renversé le calice pendant la messe. Le vin consacré s'est répandu sur le corporal, formant l'image du Christ crucifié et onze têtes identiques de Jésus couronnées d'épines."
+  },
+  "blanot_france": {
+    "title": "Miracle eucharistique de Blanot",
+    "description": "Pendant la communion, un fragment de l'Hostie tomba à terre. Le prêtre a tenté de le récupérer, mais il s'est transformé en une goutte de sang qui a imprégné le tissu et l'a taché de façon permanente."
+  },
+  "oak_cliff_us": {
+    "title": "Host saignante d'Oak Cliff",
+    "description": "Une hostie consacrée semblait saigner. Le diocèse a déterminé après enquête qu'aucun miracle ne s'était produit."
+  },
+  "south_st_paul_us": {
+    "title": "Hôte décolorée de South St. Paul",
+    "description": "Lors du processus de dissolution d'une hostie consacrée abandonnée dans l'eau, une coloration rouge a été remarquée. L'archidiocèse a trouvé que la cause était un champignon."
+  },
+  "kearns_us": {
+    "title": "Host saignante de Kearns",
+    "description": "Une hostie consacrée semblait saigner. Une enquête menée par le diocèse de Salt Lake City a conclu que la moisissure du pain rouge était naturellement à l'origine de la coloration."
+  },
+  "buffalo_us": {
+    "title": "Coloration rouge d'une hôte chez un buffle",
+    "description": "Une coloration rouge a été observée sur une hôte. Les évêques du diocèse de Buffalo ont explicitement refusé d'enquêter."
+  },
+  "morris_us": {
+    "title": "Hôtes tachetées de Morris",
+    "description": "Des taches présumées être du sang ont été trouvées sur deux hosties consacrées abandonnées. Des analyses en laboratoire ont montré que ces problèmes étaient causés par des bactéries naturelles."
   }
 }

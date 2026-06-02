@@ -3250,5 +3250,449 @@
     "location": "Assiut",
     "country": "Ehipto",
     "description": "Pagpupugay sa makasaysayang huling hantungan ng pagtakas ng Banal na Pamilya sa Ehipto. Daan-daang libo ang nagtitipon taun-taon sa sinaunang Cave Monastery ng Durunka, kung saan itinayo ang pinakamalaking tansong estatwa ni Maria sa Ehipto noong 2023 upang ipagdiwang ang kanyang kaarawan, na sinuportahan ng opisyal na pag-isyu ng mga commemorative coins ng pamahalaan ng Ehipto."
+  },
+  "fiecht_austria": {
+    "title": "Eucharistic Miracle of Fiecht",
+    "description": "Noong 1310, nakita ng isang pari na nagdududa sa Tunay na Presensya habang nagmimisa ang consecrated wine na kumulo at naging dugo, na iniingatan pa rin bilang relic sa monasteryo ng Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Eucharistic Miracle of Seefeld",
+    "description": "Noong 1384, hiniling ng isang kabalyero na tumanggap ng mas malaking Host sa panahon ng Misa. Nang tanggapin niya ito, lumubog ang lupa sa ilalim niya, at ang Host ay naging duguan na laman. Ang relic ay itinatago sa simbahan ng parokya ng St. Oswald."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Eucharistic Miracle of Weiten-Raxendorf",
+    "description": "Noong 1411, isang ninakaw na consecrated Host ang itinago sa ilalim ng tulay. Nang ito ay mabawi, ang Host ay naging dumudugong laman at naglalabas ng supernatural na liwanag, na humahantong sa pagtatayo ng isang kapilya."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Eucharistic Miracle of Bois-Seigneur-Isaac",
+    "description": "Noong 1405, nagkaroon ng pangitain kay Kristo ang isang pari habang nagmimisa, at nagsimulang dumugo ang Host sa corporal, na nag-iwan ng permanenteng mantsa ng dugo na hanggang ngayon ay iginagalang."
+  },
+  "bruges_belgium": {
+    "title": "Eucharistic Miracle of Bruges",
+    "description": "Noong 1203, ang relic ng Precious Blood of Jesus, na ibinalik mula sa Ikalawang Krusada, ay nasaksihan na naging likidong dugo, na napanatili sa Basilica of the Holy Blood."
+  },
+  "brussels_belgium": {
+    "title": "Eucharistic Miracle of Brussels",
+    "description": "Noong 1370, ilang consecrated Host ang ninakaw at nilapastangan sa pamamagitan ng pananaksak ng mga kutsilyo. Ang mga Host ay mahimalang dumugo, na humantong sa pagbawi at pagsamba sa mga labi."
+  },
+  "herentals_belgium": {
+    "title": "Eucharistic Miracle of Herentals",
+    "description": "Noong 1412, ang mga ninakaw na Host ay itinago sa isang field. Natagpuan ang mga ito pagkaraan ng ilang linggo na ganap na buo, protektado ng mga ligaw na hayop, at naglalabas ng malambot na liwanag."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Eucharistic Miracle of Herkenrode-Hasselt",
+    "description": "Noong 1317, hinawakan ng isang pari ang isang consecrated Host na may maruruming kamay, at nagsimula itong dumugo, na nabahiran ng tela ng altar. Ang relic ay itinatago sa Cathedral of St. Quentin."
+  },
+  "liege_belgium": {
+    "title": "Eucharistic Miracle of Liège",
+    "description": "Ang himala ng Liège ay nagbigay inspirasyon kay St. Juliana na isulong ang kapistahan ng Corpus Christi. Dumugo ang Consecated Host sa panahon ng pagsamba, na humahantong sa pagtatatag ng solemnity."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Eucharistic Miracle of Middleburg-Leuven",
+    "description": "Noong 1374, isang alipin ang tumanggap ng komunyon nang walang paggalang, at ang Host ay naging dumudugo na laman, dumikit sa bubong ng kanyang bibig. Ang relic ay itinatago sa Leuven."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Eucharistic Miracle of St. Mary of Egypt",
+    "description": "Noong 4th/5th century, ang nagsisisi na St. Mary of Egypt ay mahimalang nakatawid sa Ilog Jordan upang matanggap ang Banal na Eukaristiya mula kay Abbot Zosimas, na nabuhay ng mga dekada sa disyerto."
+  },
+  "scete_egypt": {
+    "title": "Eucharistic Miracle of Scete",
+    "description": "Sa mga unang monasteryo sa disyerto ng Scete, isang monghe na nag-aalinlangan sa Tunay na Presensya ay ipinakita sa Host na nagiging isang duguan na bata, na nagpapatunay sa katotohanan ni Kristo\\"
+  },
+  "bordeaux_france": {
+    "title": "Eucharistic Miracle of Bordeaux",
+    "description": "Noong 1822, sa panahon ng Eucharistic adoration, nagpakita si Jesus sa loob ng monstrance sa loob ng mahigit dalawampung minuto, binasbasan ang kongregasyong nagtipon sa chapel."
+  },
+  "dijon_france": {
+    "title": "Eucharistic Miracle of Dijon",
+    "description": "Noong 1430, isang consecrated Host ang sinaksak ng kutsilyo at nagsimulang duguan. Ang Host ay iniharap kay Pope Julius II at naging simbolo ng debosyon sa Dijon."
+  },
+  "douai_france": {
+    "title": "Eucharistic Miracle of Douai",
+    "description": "Noong 1254, nakita ng isang pari ang isang magandang bata na lumitaw sa Host sa panahon ng Misa. Ang himala ay nasaksihan ng daan-daang mga parokyano na nakakita kay Jesus sa Eukaristiya."
+  },
+  "faverney_france": {
+    "title": "Eucharistic Miracle of Faverney",
+    "description": "Noong 1608, sumiklab ang apoy sa chapel, ngunit ang monstrance na naglalaman ng Blessed Sacrament ay nanatiling nakasuspinde sa hangin sa ibabaw ng apoy sa loob ng 33 oras hanggang sa maapula ang apoy."
+  },
+  "la_rochelle_france": {
+    "title": "Eucharistic Miracle of La Rochelle",
+    "description": "Noong 1461, isang piping bata ang gumaling sa kanyang pagiging pipi matapos makatanggap ng komunyon sa katedral ng La Rochelle, na nagpapakita ng kapangyarihan ng Blessed Sacrament."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Eucharistic Miracle of Neuvy Saint Sepulcre",
+    "description": "Noong 1257, dumugo ang isang consecrated Host nang ibinagsak ito ng isang pari sa misa. Ang bato at Host na may bahid ng dugo ay napanatili sa simbahan."
+  },
+  "les_ulmes_france": {
+    "title": "Eucharistic Miracle of Les Ulmes",
+    "description": "Noong 1668, ang mukha ni Jesus ay nagpakita sa loob ng Host sa panahon ng pagsamba sa kapistahan ng Corpus Christi. Ang aparisyon ay tumagal ng ilang oras sa harap ng parokya."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Eucharistic Miracle of Marseille-en-Beauvaisis",
+    "description": "Noong 1533, nagnakaw ang mga magnanakaw ng isang monstrance ngunit iniwan ang nakatalagang Host na nakatago sa isang field. Natagpuan ang Host na naglalabas ng napakatingkad na liwanag at na-recover sa perpektong kondisyon."
+  },
+  "paris_france_1290": {
+    "title": "Eucharistic Miracle of Paris",
+    "description": "Noong 1290, sinaksak ng isang profaner ang isang consecrated Host gamit ang isang kutsilyo, itinapon ito sa kumukulong tubig. Ang Host ay lumutang sa hangin at dumugo, na humantong sa pagtatayo ng isang simbahan sa site."
+  },
+  "pressac_france": {
+    "title": "Eucharistic Miracle of Pressac",
+    "description": "Noong 1643, sinira ng apoy ang altar ng parokya, ngunit ang itinalagang Host ay nanatiling ganap na buo at nakabitin sa itaas ng abo, na hindi tinatablan ng apoy."
+  },
+  "augsburg_germany": {
+    "title": "Eucharistic Miracle of Augsburg",
+    "description": "Noong 1194, itinago ng isang babae ang Host sa kanyang bibig at iniuwi ito. Makalipas ang ilang taon, nalaman na ang Host ay nagbagong anyo sa dumudugong laman at napanatili."
+  },
+  "benningen_germany": {
+    "title": "Eucharistic Miracle of Benningen",
+    "description": "Noong 1216, natagpuan ang isang dumudugong Host sa simbahan ng Benningen. Dumugo ang Host sa altar, at ang relic ay iginagalang pa rin sa simbahan ng parokya."
+  },
+  "bettbrunn_germany": {
+    "title": "Eucharistic Miracle of Bettbrunn",
+    "description": "Noong 1125, ninakaw ng isang pastol ang isang Host upang protektahan ang kanyang kawan. Nang ihulog niya ito, dumikit ang Host sa isang bato at hindi maigalaw hanggang sa dumating ang obispo, na humahantong sa isang pilgrimage."
+  },
+  "erding_germany": {
+    "title": "Eucharistic Miracle of Erding",
+    "description": "Noong 1417, isang magsasaka ang nagnakaw ng isang Host. Habang sinusubukan niyang tumakas, ang Host ay nadulas mula sa kanyang kamay at lumipad sa himpapawid, nagpapalabas ng liwanag hanggang sa mabawi ng klero."
+  },
+  "kranenburg_germany": {
+    "title": "Eucharistic Miracle of Kranenburg",
+    "description": "Noong 1280, ibinagsak ng isang pari ang isang consecrated Host sa isang guwang sa isang puno. Makalipas ang ilang taon, nagsimulang dumugo ang isang kahoy na krusipiho na inukit mula sa puno, na humahantong sa isang malaking paglalakbay."
+  },
+  "regensburg_germany": {
+    "title": "Eucharistic Miracle of Regensburg",
+    "description": "Noong 1255, isang pari ang nag-alinlangan sa Tunay na Presensya. Sa panahon ng Misa, nabuhay ang kahoy na krusipiho sa altar, at kinuha ni Jesus ang kalis mula sa pari\\"
+  },
+  "wilsnack_germany": {
+    "title": "Eucharistic Miracle of Wilsnack",
+    "description": "Noong 1383, isang simbahan ang nasira ng apoy, ngunit tatlong consecrated Host ang nakaligtas na buo sa altar, na nababalot ng mga patak ng sariwang dugo."
+  },
+  "weingarten_germany": {
+    "title": "Eucharistic Miracle of Weingarten",
+    "description": "Pinapanatili ng monasteryo ng Weingarten ang relic ng Precious Blood of Jesus, na napatunayan ng ilang mga himala at pinarangalan mula noong ika-11 siglo."
+  },
+  "morne_rouge_martinique": {
+    "title": "Eucharistic Miracle of Morne-Rouge",
+    "description": "Noong 1902, sa panahon ng pagsabog ng bulkan ng Mount Pelée, ipinakita ng sagradong Host sa loob ng monstrance ang mukha ni Jesus na nakoronahan ng mga tinik sa harap ng tumatakas na populasyon."
+  },
+  "saint_andre_reunion": {
+    "title": "Eucharistic Miracle of Saint-André",
+    "description": "Noong 1902, sa panahon ng pagsamba sa Banal na Sakramento, ang mukha ni Hesus at isang koronang tinik ay lumitaw sa loob ng Host, na sinaksihan ng kura paroko at ng kongregasyon."
+  },
+  "alatri_italy": {
+    "title": "Eucharistic Miracle of Alatri",
+    "description": "Noong 1228, inuwi ng isang kabataang babae ang Host na nakasuot ng tela. Pagkalipas ng tatlong araw, nalaman niyang ang Host ay nagbagong-anyo sa dumudugong laman, na napanatili sa Alatri Cathedral."
+  },
+  "assisi_clara_italy": {
+    "title": "Eucharistic Miracle of Assisi",
+    "description": "Noong 1240, si St. Clare ng Assisi ay tumalikod sa pagsalakay sa mga sundalo ng Saracen sa pamamagitan ng pagtataas ng monstrance na naglalaman ng Banal na Sakramento sa mga pintuan ng kumbento."
+  },
+  "asti_italy_1535": {
+    "title": "Eucharistic Miracle of Asti",
+    "description": "Noong 1535, sinira ng isang pari na nagdiwang ng Misa ang Host, at nagsimulang dumaloy ang dugo mula sa break, napuno ang kalis at nabahiran ang corporal at altar."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Eucharistic Miracle of Bagno di Romagna",
+    "description": "Noong 1412, nakita ng isang pari na nag-aalinlangan sa Tunay na Presensya ang konsagradong alak na kumulo at umapaw sa kalis bilang dugo, na nagmantsa sa corporal, na nananatiling napanatili."
+  },
+  "canosio_italy": {
+    "title": "Eucharistic Miracle of Canosio",
+    "description": "Noong 1630, pinahinto ng isang pari ang mapangwasak na baha ng Maira torrent sa pamamagitan ng pagbabasbas sa tumataas na tubig ng Banal na Sakramento, na agad na umatras."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Eucharistic Miracle of Cava de\\",
+    "description": "Noong 1656, natigil ang isang mapangwasak na salot nang dalhin ng abbot ang Blessed Sacrament sa prusisyon, na binasbasan ang bayan mula sa burol ng Castle Saint Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Eucharistic Miracle of Dronero",
+    "description": "Noong 1631, isang napakalaking apoy ang nagbanta na tutupok sa bayan ng Dronero. Itinaas ng isang pari ang Banal na Sakramento, at agad na namatay ang apoy, na nagligtas sa bayan."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Eucharistic Miracle of San Mauro La Bruca",
+    "description": "Noong 1969, ang mga magnanakaw ay nagnakaw ng isang ciborium ngunit itinapon ang 63 consecrated Host. Nabawi ang mga Host sa perpektong kondisyon at nanatiling hindi sira mula noon."
+  },
+  "ferrara_italy": {
+    "title": "Eucharistic Miracle of Ferrara",
+    "description": "Noong 1171, nakita ng isang pari na nagdiwang ng Misa na naging dugo ang Host, na nag-spray ng mga pulang patak sa vault sa itaas ng altar, na nakikita pa rin hanggang ngayon."
+  },
+  "florence_italy_1230": {
+    "title": "Eucharistic Miracle of Florence",
+    "description": "Noong 1230, isang pari ang nag-iwan ng ilang patak ng consecrated wine sa kalis. Kinabukasan, ang alak ay naging dugo. Ang relic ay iniingatan sa simbahan ng Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Eucharistic Miracle of Gruaro",
+    "description": "Noong 1294, nakita ng isang babaeng naghuhugas ng altar linen ng simbahan ng Gruaro na may bahid ito ng dugo na nagmumula sa isang consecrated Host, na napanatili sa Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Eucharistic Miracle of Macerata",
+    "description": "Noong 1356, nakita ng isang pari na nagdududa sa Tunay na Presensya ang dugong bumulwak mula sa Host nang sirain niya ito, na nagmantsa sa corporal, na pinarangalan pa rin sa Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Eucharistic Miracle of Mogoro",
+    "description": "Noong 1604, dalawang makasalanan ang tumanggap ng komunyon ngunit dinuraan ang mga Host sa sahig na bato, kung saan ang mga Host ay nag-iwan ng malalim, dumudugong mga imprint na makikita pa rin hanggang ngayon."
+  },
+  "morrovalle_italy": {
+    "title": "Eucharistic Miracle of Morrovallet",
+    "description": "Noong 1560, ganap na nawasak ng apoy ang simbahan, ngunit ang itinalagang Host ay natagpuang buo sa ilalim ng abo makalipas ang sampung araw, na nagliliwanag ng malambot na liwanag."
+  },
+  "offida_italy": {
+    "title": "Eucharistic Miracle of Offida",
+    "description": "Noong 1273, isang babae ang nagtapon ng isang Host sa apoy. Ang Host ay nagbagong anyo sa dumudugong laman at nanatiling hindi ginalaw ng apoy. Ang relic ay itinatago sa simbahan ng St. Augustine."
+  },
+  "patierno_naples_italy": {
+    "title": "Eucharistic Miracle of Patierno",
+    "description": "Noong 1772, itinago ang mga ninakaw na Host sa isang field. Natagpuan ang mga ito na naglalabas ng maliwanag na liwanag at nabawi sa perpektong kondisyon, na sinamahan ng maraming mga himala."
+  },
+  "rimini_italy": {
+    "title": "Eucharistic Miracle of Rimini",
+    "description": "Noong 1227, pinatunayan ni St. Anthony ng Padua ang Tunay na Presensya sa isang erehe nang lumuhod ang isang gutom na mule upang sambahin ang Banal na Sakramento sa halip na kumain ng oats."
+  },
+  "rome_italy_600": {
+    "title": "Eucharistic Miracle of Rome",
+    "description": "Noong ika-6 na siglo, nakita ni Pope Gregory the Great ang isang consecrated Host na naging nakikitang laman upang gamutin ang pagdududa ng isang babae na naghurno ng tinapay."
+  },
+  "rosano_italy": {
+    "title": "Eucharistic Miracle of Rosano",
+    "description": "Noong 1948, ang mukha ni Hesus ay nagpakita sa loob ng Host sa panahon ng pagsamba sa monasteryo ng Rosano, na sinaksihan ng mga madre at parokyano."
+  },
+  "peter_damian_italy": {
+    "title": "Eucharistic Miracle of St. Peter Damian",
+    "description": "Noong ika-11 siglo, si St. Peter Damian ay nagdokumento ng isang himala kung saan isang babae ang nagnakaw ng isang Host. Dumugo ang Host sa tela, at nang ipakita sa kanya, na-verify niya ang pagiging tunay nito."
+  },
+  "salzano_italy": {
+    "title": "Eucharistic Miracle of Salzano",
+    "description": "Noong 1517, nakita ng isang pari na nagdiwang ng Misa ang Host na duguan, nabahiran ang corporal at ang altar, na nagpapakita ng Tunay na Presensya sa buong kongregasyon."
+  },
+  "scala_italy": {
+    "title": "Eucharistic Miracle of Scala",
+    "description": "Noong 1732, sa panahon ng pagsamba sa Banal na Sakramento, ang mga instrumento ng Pasyon (krus, korona ng mga tinik, mga pako) ay lumitaw sa loob ng Host, na sinaksihan ni St. Alphonsus Liguori."
+  },
+  "trani_italy": {
+    "title": "Eucharistic Miracle of Trani",
+    "description": "Noong ika-11 siglo, isang erehe na babae ang nagprito ng isang consecrated Host sa mantika. Nagsimulang dumugo nang husto ang Host, umapaw sa kawali at tumalsik sa sahig."
+  },
+  "turin_italy_1453": {
+    "title": "Eucharistic Miracle of Turin (1453)",
+    "description": "Noong 1453, isang ninakaw na monstrance na naglalaman ng Host ay nahulog mula sa isang asno. Ang Host ay bumangon sa hangin, nagpapalabas ng liwanag, at nanatiling suspendido hanggang sa dumating ang obispo."
+  },
+  "veroli_italy": {
+    "title": "Eucharistic Miracle of Veroli",
+    "description": "Noong 1570, sa panahon ng pagsamba, lumitaw ang mukha ni Jesus at isang krus sa loob ng Host, na nasaksihan ng maraming taong-bayan at na-verify ng mga awtoridad ng simbahan."
+  },
+  "volterra_italy": {
+    "title": "Eucharistic Miracle of Volterra",
+    "description": "Noong 1472, isang sundalo ang nagnakaw ng isang pyx na naglalaman ng isang Host. Habang sinusubukan niyang itapon ito, ang Host ay nag-hover sa hangin at dumugo, na humantong sa conversion ng sundalo."
+  },
+  "alkmaar_netherlands": {
+    "title": "Eucharistic Miracle of Alkmaar",
+    "description": "Noong 1429, isang pari ang nagbuhos ng consecrated wine sa kanyang mga damit. Ang alak ay naging dugo at hindi mahugasan. Ang mga damit na may bahid ng dugo ay napanatili."
+  },
+  "bergen_netherlands": {
+    "title": "Eucharistic Miracle of Bergen",
+    "description": "Noong 1421, winasak ng baha ang simbahan, at tinangay ang mga consecrated Host. Nang maglaon, natagpuan ang mga ito na buo, kasama ang tubig sa kanilang paligid na pinananatiling tuyo."
+  },
+  "boxmeer_netherlands": {
+    "title": "Eucharistic Miracle of Boxmeer",
+    "description": "Noong 1400, isang pari ang nag-alinlangan sa Tunay na Presensya. Sa panahon ng Misa, isang patak ng dugo ang nahulog mula sa Host papunta sa kalis, at ang alak ay naging dugo at umapaw."
+  },
+  "boxtel_netherlands": {
+    "title": "Eucharistic Miracle of Boxtel",
+    "description": "Noong 1380, ibinagsak ng isang pari ang kalis, na nagbuhos ng consecrated wine sa tela ng altar. Ang alak ay naging dugo at naging larawan ni Kristo."
+  },
+  "breda_netherlands": {
+    "title": "Eucharistic Miracle of Breda",
+    "description": "Noong 1300, isang consecrated Host ang itinago sa isang field upang maiwasan ang paglapastangan. Natagpuan ito pagkalipas ng ilang taon na ganap na buo at naglalabas ng malambot na liwanag."
+  },
+  "meerssen_netherlands": {
+    "title": "Eucharistic Miracle of Meerssen",
+    "description": "Noong 1222, nakita ng isang pari celebrant na duguan ang Host habang nagmimisa. Noong 1465, sinira ng apoy ang simbahan, ngunit ang Host ay natagpuang buo sa altar, hindi nagalaw."
+  },
+  "stiphout_netherlands": {
+    "title": "Eucharistic Miracle of Stiphout",
+    "description": "Noong 1342, sinira ng apoy ang simbahan, ngunit isang lokal na magsasaka ang sumugod sa loob at kinuha ang Banal na Sakramento, na hindi ginalaw ng apoy."
+  },
+  "eten_peru": {
+    "title": "Eucharistic Miracle of Eten",
+    "description": "Noong 1649, ang mukha ng Batang Hesus at tatlong puting puso ay lumitaw sa loob ng Host sa panahon ng pagsamba, na sinaksihan ng pari at ng kongregasyon."
+  },
+  "glotowo_poland": {
+    "title": "Eucharistic Miracle of Glotowo",
+    "description": "Noong 1290, isang ninakaw na Host ang inilibing sa isang field. Natagpuan ito pagkaraan ng ilang taon nang lumuhod ang mga baka sa harap nito, at ang Host ay natagpuang naglalabas ng maliwanag na liwanag."
+  },
+  "alboraya_spain": {
+    "title": "Eucharistic Miracle of Alboraya-Almácera",
+    "description": "Noong 1348, nahulog sa ilog ang isang pari na nagdadala ng komunyon sa mga maysakit, na nawala ang mga Host. Natagpuan ang mga Host sa bibig ng mga isda na humawak sa kanila, naghihintay na ibalik sila."
+  },
+  "alcala_spain": {
+    "title": "Eucharistic Miracle of Alcalá",
+    "description": "Noong 1597, isang nagsisisi ang nagbalik ng mga ninakaw na Host. Ang mga Host ay itinago sa isang drawer sa loob ng maraming taon at nanatiling ganap na sariwa at hindi sira, na na-verify ng mga teologo."
+  },
+  "alcoy_spain": {
+    "title": "Eucharistic Miracle of Alcoy",
+    "description": "Noong 1568, isang magnanakaw ang nagnakaw ng isang ciborium. Nabawi ang mga Host matapos makita ng isang lokal na residente kung saan sila nakatago, at sila ay natagpuang buo."
+  },
+  "caravaca_spain": {
+    "title": "Eucharistic Miracle of Caravaca de la Cruz",
+    "description": "Noong 1231, dalawang anghel ang nagpakita na may dalang double-armed cross (ang Krus ng Caravaca) sa panahon ng Misa na ipinagdiriwang ng isang pari sa harap ng mga Moorish na bihag."
+  },
+  "cimballa_spain": {
+    "title": "Eucharistic Miracle of Cimballa",
+    "description": "Noong 1370, isang pari ang nag-alinlangan sa Tunay na Presensya. Sa panahon ng Misa, nagsimulang dumugo ang Host sa corporal, na nag-iiwan ng permanenteng mantsa ng dugo na pinarangalan pa rin."
+  },
+  "gerona_spain": {
+    "title": "Eucharistic Miracle of Gerona",
+    "description": "Noong 1297, nakita ng isang pari na nagdiriwang ng Misa ang Host na duguan. Nabahiran ng dugo ang korporal, at ang relic ay napanatili at pinarangalan sa Cathedral of Girona."
+  },
+  "escorial_spain": {
+    "title": "Eucharistic Miracle of Gorkum-El Escorial",
+    "description": "Noong 1572, nilapastangan ng mga sundalong Protestante ang isang consecrated Host sa pamamagitan ng pagtapak dito. Dumugo ang Host, at ang relic ay ibinigay kay King Philip II at itinago sa El Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Eucharistic Miracle of Guadalupe",
+    "description": "Noong 1420, sa panahon ng Misa, ang Host ay nakitang naging dumudugong laman, at ang alak ay naging dugo, pinupuno ang kalis, na sinaksihan ni Haring John II ng Castile."
+  },
+  "ivorra_spain": {
+    "title": "Eucharistic Miracle of Ivorra",
+    "description": "Noong 1010, isang pari na nagdiriwang ng Misa ang nag-alinlangan sa Tunay na Presensya. Ang alak ay naging dugo, umapaw sa kalis at nabahiran ang tela ng altar, na iniingatan."
+  },
+  "moncada_spain": {
+    "title": "Eucharistic Miracle of Moncada",
+    "description": "Noong 1392, nakita ng isang pari ang Batang Hesus na nagpakita sa Host habang nagmimisa, at dumugo ang Host, na nagkukumpirma ng Tunay na Presensya sa kongregasyon."
+  },
+  "montserrat_spain_1657": {
+    "title": "Eucharistic Miracle of Montserrat",
+    "description": "Noong 1657, sa panahon ng Misa, ang mukha ni Jesus ay nagpakita sa loob ng Host, at isang serye ng mga himala ang naganap sa monasteryo, na humahantong sa pagtaas ng debosyon."
+  },
+  "cebreiro_spain": {
+    "title": "Eucharistic Miracle of O\\",
+    "description": "Noong 1300, isang magsasaka ang umakyat sa bundok sa isang bagyo ng niyebe upang dumalo sa Misa. Nakita ng nag-aalinlangang pari na ang Host ay naging laman at ang alak ay naging dugo, na nadungisan ang corporal."
+  },
+  "onil_spain": {
+    "title": "Eucharistic Miracle of Onil",
+    "description": "Noong 1824, isang ninakaw na Host ang narekober matapos makita ng isang babae ang isang mahiwagang liwanag sa isang field. Natagpuang buo ang Host at nanatiling hindi sira mula noon."
+  },
+  "ponferrada_spain": {
+    "title": "Eucharistic Miracle of Ponferrada",
+    "description": "Noong 1533, isang magnanakaw ang nagnakaw ng tabernakulo kasama ng mga Host. Ang tabernakulo ay natagpuang nakatago sa isang bukid, at ang mga Host ay natagpuang buo at naglalabas ng malambot na liwanag."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Eucharistic Miracle of Sant Joan de les Abadesses",
+    "description": "Noong 1251, sa panahon ng isang liturgical ceremony, ang Host sa loob ng monstrance ay nakitang duguan, na nabahiran ng monstrance, na napanatili."
+  },
+  "silla_spain": {
+    "title": "Eucharistic Miracle of Silla",
+    "description": "Noong 1907, ibinaba ng isang pari ang isang consecrated Host. Ang Host ay nakuhang muli at inilagay sa isang drawer. Makalipas ang mga taon, natagpuan itong ganap na buo at hindi sira."
+  },
+  "valencia_spain": {
+    "title": "Eucharistic Miracle of Valencia",
+    "description": "Pinapanatili ng Cathedral of Valencia ang Holy Chalice of the Last Supper, na napatunayan ng maraming makasaysayang rekord at pagbisita ng papa."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Eucharistic Miracle of Zaragoza",
+    "description": "Noong 1427, isang consecrated Host ang ninakaw at itinago sa isang bahay. Natagpuan ang Host na nagpapalabas ng maliwanag na liwanag at na-recover sa perpektong kondisyon."
+  },
+  "ettiswil_switzerland": {
+    "title": "Eucharistic Miracle of Ettiswil",
+    "description": "Noong 1447, isang ninakaw na Host ang inilibing sa isang field. Natagpuan ito nang tumanggi ang mga baka na tumapak sa lugar, at ang Host ay natagpuang umaaligid sa ibabaw ng lupa."
+  },
+  "lanciano_italy": {
+    "title": "Eucharistic Miracle of Lanciano",
+    "description": "Noong ika-8 siglo, nakita ng isang Basilian na monghe na nag-alinlangan sa Tunay na Presensya na ang Host ay naging tunay na laman at ang alak ay naging tunay na dugo sa panahon ng Misa. Ang malawak na siyentipikong pagsusuri noong 1970s ay nagpasiya na ito ay human cardiac tissue (myocardium) at AB na uri ng dugo, na kapareho ng Shroud ng Turin."
+  },
+  "bolsena_italy": {
+    "title": "Eucharistic Miracle of Bolsena",
+    "description": "Noong 1263, isang nagdududa na pari na nagngangalang Peter ng Prague ang nagdiwang ng Misa. Nang masira ang Host, nagsimulang tumulo ang dugo mula rito, nabahiran ang corporal. Ang himalang ito ang nag-udyok kay Pope Urban IV na itatag ang kapistahan ng Corpus Christi."
+  },
+  "buenos_aires_argentina": {
+    "title": "Eucharistic Miracle of Buenos Aires",
+    "description": "Noong 1992, 1994, at 1996, nagsimulang dumugo ang mga itinapon na Host. Sa ilalim ng direksyon ni Cardinal Jorge Bergoglio (na kalaunan ay Pope Francis, na namatay noong 2025), ang tissue ay sinuri ayon sa siyensiya at natagpuang naglalaman ng mga buhay na white blood cell ng tao at tissue ng kalamnan sa puso sa matinding pagkabalisa."
+  },
+  "sokolka_poland": {
+    "title": "Eucharistic Miracle of Sokółka",
+    "description": "Noong 2008, isang consecrated Host na nahulog ang inilagay sa tubig upang matunaw. Pagkalipas ng isang linggo, lumitaw ang isang pulang mantsa. Napagpasyahan ng mga pathologist na ang substansiya ay kapareho ng myocardial (puso) tissue ng isang taong malapit nang mamatay."
+  },
+  "legnica_poland": {
+    "title": "Eucharistic Miracle of Legnica",
+    "description": "Noong 2013, isang nahulog na Host ang inilagay sa tubig. Nagkaroon ito ng mga pulang mantsa, na kinumpirma ng siyentipikong pagsusuri na naglalaman ng mga pira-pirasong fibers ng kalamnan sa puso ng tao na nagpapakita ng mga palatandaan ng matinding stress at paghihirap."
+  },
+  "tixtla_mexico": {
+    "title": "Eucharistic Miracle of Tixtla",
+    "description": "Sa isang retreat noong 2006, isang Host ang nagsimulang maglabas ng mamula-mula na substance. Natuklasan ng mga siyentipikong pagsisiyasat na ang dugo ay nagmula sa loob ng Host palabas, nagtataglay ng uri ng dugong AB, at naglalaman ng buo na DNA ng tao at mga aktibong white blood cell."
+  },
+  "santarem_portugal": {
+    "title": "Eucharistic Miracle of Santarém",
+    "description": "Isang babaeng gustong gumamit ng consecrated Host para sa isang gayuma ay natagpuang dumudugo ito nang husto. Ang Host ay napanatili pa rin ngayon sa Church of St. Stephen, na napanatili ang incorrupt na estado nito sa loob ng mahigit 750 taon."
+  },
+  "cascia_italy": {
+    "title": "Eucharistic Miracle of Cascia",
+    "description": "Ang isang pari ay walang galang na naglagay ng isang consecrated Host sa pagitan ng mga pahina ng kanyang breviary. Ang Host ay naging dugo, nabahiran ang magkabilang pahina, na nabuo ang profile ng mukha ni Kristo."
+  },
+  "siena_italy": {
+    "title": "Eucharistic Miracle of Siena",
+    "description": "Noong 1730, ninakaw ng mga magnanakaw ang isang ciborium na naglalaman ng 351 consecrated Host. Nabawi ang mga ito pagkaraan ng tatlong araw at mula noon ay nanatiling ganap na hindi sira at sariwa, na lumalaban sa natural na pagkasira."
+  },
+  "daroca_spain": {
+    "title": "Eucharistic Miracle of Daroca",
+    "description": "Sa isang labanan laban sa Moors, anim na consecrated Host ang itinago sa isang corporal. Nang makuha, nakita silang basang-basa sa dugo. Ang korporal na may bahid ng dugo ay nananatiling napanatili bilang isang relic."
+  },
+  "chirattakonam_india": {
+    "title": "Eucharistic Miracle of Chirattakonam",
+    "description": "Sa panahon ng Eucharistic adoration, tatlong pulang mantsa ang lumitaw sa Host. Sa mga sumunod na araw, ang mga mantsa ay nabuo ang malinaw na imahe ng mukha ni Jesus na nakoronahan ng mga tinik."
+  },
+  "tumaco_colombia": {
+    "title": "Eucharistic Miracle of Tumaco",
+    "description": "Noong 1906, isang napakalaking tsunami ang nagbanta sa isla ng Tumaco. Dinala ni Padre Gerardo Larrondo ang Banal na Sakramento sa dalampasigan. Habang papalapit ang napakalaking alon, agad itong umatras nang marating ang Eukaristiya, na iniligtas ang isla."
+  },
+  "amsterdam_holland": {
+    "title": "Eucharistic Miracle of Amsterdam",
+    "description": "Isang naghihingalong lalaki ang tumanggap ng Eukaristiya ngunit isinuka ito. Ang suka ay itinapon sa umaaapoy na apoy, ngunit ang Host ay mahimalang nanatiling hindi nasusunog at nasuspinde sa apoy."
+  },
+  "avignon_france": {
+    "title": "Eucharistic Miracle of Avignon",
+    "description": "Kasunod ng matinding pagbaha, ang mga miyembro ng Grey Penitents ay nagsagwan sa kanilang kapilya na umaasang mawawasak ang Banal na Sakramento. Sa halip, nakita nilang mahimalang nahati ang tubig, na iniwang ganap na tuyo ang altar at ang Host."
+  },
+  "krakow_poland": {
+    "title": "Eucharistic Miracle of Kraków",
+    "description": "Ninakaw ng mga magnanakaw ang isang ciborium na naglalaman ng mga consecrated Host at itinapon sila sa isang latian. Isang mahiwagang liwanag ang humantong sa mga naghahanap sa Host, na ganap na hindi nasira sa kabila ng putik."
+  },
+  "poznan_poland": {
+    "title": "Eucharistic Miracle of Poznań",
+    "description": "Tatlong Host ang ninakaw at nilapastangan sa pamamagitan ng pagbubutas, na naging sanhi ng pagdugo sa kanila. Nang maglaon, natuklasan ang mga ito na lumulutang sa isang kalapit na parang, na napapaligiran ng isang mahimalang liwanag."
+  },
+  "betania_venezuela": {
+    "title": "Eucharistic Miracle of Betania",
+    "description": "Sa panahon ng misa na ipinagdiwang ni Padre Oti, nagsimulang dumugo nang husto ang consecrated Host mula sa isang tabi. Kinumpirma ng mga medikal na pagsusuri ang substance bilang dugo ng tao."
+  },
+  "ludbreg_croatia": {
+    "title": "Eucharistic Miracle of Ludbreg",
+    "description": "Nakita ng isang pari na nagdududa sa Tunay na Presensya ang alak na naging aktwal na dugo sa kalis. Ang relic ng Precious Blood ay napanatili at pinarangalan pa rin ngayon."
+  },
+  "walldurn_germany": {
+    "title": "Eucharistic Miracle of Walldürn",
+    "description": "Isang pari ang aksidenteng nabaligtad ang kalis sa misa. Ang consecrated wine ay tumilapon sa corporal, na naging imahe ni Kristong napako sa krus at labing-isang magkatulad na ulo ni Jesus na nakoronahan ng mga tinik."
+  },
+  "blanot_france": {
+    "title": "Eucharistic Miracle of Blanot",
+    "description": "Sa panahon ng komunyon, isang fragment ng Host ang nahulog sa lupa. Sinubukan itong kunin ng pari, ngunit ito ay naging isang patak ng dugo na bumabad sa tela at permanenteng nabahiran ito."
+  },
+  "oak_cliff_us": {
+    "title": "Bleeding Host of Oak Cliff",
+    "description": "Mukhang dumugo ang isang consecrated host. Natukoy ng diyosesis pagkatapos ng pagsisiyasat na walang milagrong nangyari."
+  },
+  "south_st_paul_us": {
+    "title": "Discolored Host ng South St. Paul",
+    "description": "Sa proseso ng pagtunaw ng isang itinapon na consecrated host sa tubig, napansin ang pulang kulay. Natagpuan ng Archdiocese na fungus ang sanhi."
+  },
+  "kearns_us": {
+    "title": "Bleeding Host of Kearns",
+    "description": "Mukhang dumudugo ang isang consecrated host. Napagpasyahan ng pagsisiyasat ng Diocese of Salt Lake City na ang amag ng pulang tinapay ay natural na sanhi ng kulay."
+  },
+  "buffalo_us": {
+    "title": "Pulang Kulay ng Host sa Buffalo",
+    "description": "Napansin ang isang pulang kulay sa isang host. Ang mga obispo ng Diocese of Buffalo ay tahasang tumanggi na mag-imbestiga."
+  },
+  "morris_us": {
+    "title": "Mga batik-batik na Host ni Morris",
+    "description": "Nakita ang mga batik na inaakalang dugo sa dalawang itinapon na consecrated host. Ipinakita ng pagsusuri sa laboratoryo na ang mga ito ay sanhi ng natural na bacteria."
   }
 }

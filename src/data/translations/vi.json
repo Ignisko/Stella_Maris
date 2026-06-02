@@ -3250,5 +3250,449 @@
     "location": "Assiut",
     "country": "Ai Cập",
     "description": "Tôn vinh điểm dừng chân lịch sử cuối cùng trong cuộc lánh nạn của Thánh Gia sang Ai Cập. Hàng trăm ngàn người quy tụ hàng năm tại Tu viện Hang động Durunka cổ kính, nơi bức tượng Đức Maria bằng đồng lớn nhất Ai Cập được dựng lên vào năm 2023 để mừng sinh nhật của Mẹ, được hỗ trợ bởi việc đúc tiền xu lưu niệm chính thức của chính phủ Ai Cập."
+  },
+  "fiecht_austria": {
+    "title": "Phép lạ Thánh Thể ở Fiecht",
+    "description": "Năm 1310, một linh mục nghi ngờ về Sự Hiện diện Thực sự trong Thánh lễ đã nhìn thấy rượu thánh sôi lên và biến thành máu, máu này vẫn được bảo tồn như một thánh tích trong tu viện Fiecht."
+  },
+  "seefeld_austria": {
+    "title": "Phép lạ Thánh Thể ở Seefeld",
+    "description": "Năm 1384, một hiệp sĩ yêu cầu được nhận một Mình Thánh Chúa lớn hơn trong Thánh lễ. Khi anh ta nhận được Thánh Thể, mặt đất chìm xuống dưới chân anh ta và Mình Thánh trở thành thịt đang chảy máu. Thánh tích được lưu giữ tại nhà thờ giáo xứ St. Oswald."
+  },
+  "weiten_raxendorf_austria": {
+    "title": "Phép lạ Thánh Thể ở Weiten-Raxendorf",
+    "description": "Năm 1411, một Mình Thánh Chúa bị đánh cắp đã được giấu dưới một cây cầu. Khi được tìm thấy, Mình Thánh đã biến thành thịt chảy máu và phát ra ánh sáng siêu nhiên, dẫn đến việc xây dựng một nhà nguyện."
+  },
+  "bois_seigneur_isaac_belgium": {
+    "title": "Phép lạ Thánh Thể của Bois-Seigneur-Isaac",
+    "description": "Năm 1405, một linh mục nhìn thấy Chúa Kitô trong Thánh lễ và Mình Thánh bắt đầu chảy máu trên khăn thánh, để lại một vết máu vĩnh viễn vẫn được tôn kính cho đến ngày nay."
+  },
+  "bruges_belgium": {
+    "title": "Phép lạ Thánh Thể ở Bruges",
+    "description": "Năm 1203, thánh tích Máu Châu Báu của Chúa Giêsu, được mang về từ Cuộc Thập tự chinh thứ hai, đã được chứng kiến ​​biến thành máu lỏng, được bảo quản trong Vương cung Thánh đường Máu Thánh."
+  },
+  "brussels_belgium": {
+    "title": "Phép lạ Thánh Thể ở Brussels",
+    "description": "Vào năm 1370, một số Mình Thánh đã được truyền phép đã bị đánh cắp và bị xúc phạm bằng cách đâm bằng dao. Thánh Thể chảy máu một cách kỳ diệu, dẫn đến việc phục hồi và tôn kính thánh tích."
+  },
+  "herentals_belgium": {
+    "title": "Phép lạ Thánh Thể Herentals",
+    "description": "Vào năm 1412, Mình Thánh Chúa bị đánh cắp được giấu trong một cánh đồng. Nhiều tuần sau, chúng được tìm thấy hoàn toàn nguyên vẹn, được bảo vệ bởi động vật hoang dã và phát ra ánh sáng dịu nhẹ."
+  },
+  "herkenrode_hasselt_belgium": {
+    "title": "Phép lạ Thánh Thể Herkenrode-Hasselt",
+    "description": "Năm 1317, một linh mục chạm vào Mình Thánh Chúa bằng bàn tay bẩn thỉu, và Bánh Thánh bắt đầu chảy máu, làm vấy bẩn khăn bàn thờ. Thánh tích được lưu giữ tại Nhà thờ St. Quentin."
+  },
+  "liege_belgium": {
+    "title": "Phép lạ Thánh Thể Liège",
+    "description": "Phép lạ Liège đã truyền cảm hứng cho Thánh Juliana ủng hộ lễ Mình Máu Thánh Chúa Kitô. Mình Thánh Chúa chảy máu trong khi chầu, dẫn đến việc bắt đầu nghi lễ trọng thể."
+  },
+  "middleburg_lovanio_belgium": {
+    "title": "Phép lạ Thánh Thể ở Middleburg-Leuven",
+    "description": "Năm 1374, một người hầu được rước lễ một cách bất kính, và Mình Thánh Chúa biến thành thịt chảy máu, dính vào vòm miệng anh ta. Di tích được lưu giữ ở Leuven."
+  },
+  "st_mary_of_egypt_egypt": {
+    "title": "Phép lạ Thánh Thể của Thánh Mary ở Ai Cập",
+    "description": "Vào thế kỷ thứ 4/5, Thánh Mary của Ai Cập ăn năn đã được phép vượt sông Jordan để nhận Bí tích Thánh Thể từ Tu viện trưởng Zosimas, sống sót qua nhiều thập kỷ trong sa mạc."
+  },
+  "scete_egypt": {
+    "title": "Phép lạ Thánh Thể ở Scete",
+    "description": "Trong các tu viện sa mạc đầu tiên ở Scete, một tu sĩ nghi ngờ về Sự Hiện diện Thực sự đã được cho thấy Mình Thánh biến thành một đứa trẻ chảy máu, xác nhận sự thật về Chúa Kitô\\"
+  },
+  "bordeaux_france": {
+    "title": "Phép lạ Thánh Thể ở Bordeaux",
+    "description": "Năm 1822, trong khi chầu Thánh Thể, Chúa Giêsu hiện ra bên trong mặt nhật trong hơn 20 phút, ban phép lành cho cộng đoàn tập hợp trong nhà nguyện."
+  },
+  "dijon_france": {
+    "title": "Phép lạ Thánh Thể ở Dijon",
+    "description": "Năm 1430, một Mình Thánh Chúa đã được truyền phép bị dao đâm và bắt đầu chảy máu. Bánh Thánh sau đó được dâng lên Giáo hoàng Julius II và trở thành biểu tượng của lòng sùng kính ở Dijon."
+  },
+  "douai_france": {
+    "title": "Phép lạ Thánh Thể ở Douai",
+    "description": "Năm 1254, một linh mục nhìn thấy một em bé xinh đẹp xuất hiện trong Bánh Thánh trong Thánh lễ. Phép lạ được chứng kiến ​​bởi hàng trăm giáo dân đã nhìn thấy Chúa Giêsu trong Bí tích Thánh Thể."
+  },
+  "faverney_france": {
+    "title": "Phép lạ Thánh Thể ở Faverney",
+    "description": "Năm 1608, một trận hỏa hoạn xảy ra trong nhà nguyện, nhưng mặt nhật chứa Mình Thánh Chúa vẫn lơ lửng giữa không trung trong ngọn lửa trong 33 giờ cho đến khi ngọn lửa được dập tắt."
+  },
+  "la_rochelle_france": {
+    "title": "Phép lạ Thánh Thể ở La Rochelle",
+    "description": "Năm 1461, một đứa trẻ câm đã được chữa lành bệnh câm sau khi được rước lễ tại nhà thờ La Rochelle, thể hiện quyền năng của Bí tích Thánh Thể."
+  },
+  "neuvy_saint_sepulcre_france": {
+    "title": "Phép lạ Thánh Thể tại Mộ Thánh Neuvy",
+    "description": "Năm 1257, một Mình Thánh Chúa đã truyền phép bị chảy máu khi một linh mục đánh rơi nó trong Thánh lễ. Hòn đá và Mình Thánh Chúa dính máu đã được bảo quản trong nhà thờ."
+  },
+  "les_ulmes_france": {
+    "title": "Phép lạ Thánh Thể Les Ulmes",
+    "description": "Năm 1668, khuôn mặt của Chúa Giêsu hiện ra bên trong Bánh Thánh khi chầu vào ngày lễ Mình Máu Thánh Chúa Kitô. Cuộc hiện ra kéo dài vài giờ trước giáo xứ."
+  },
+  "marseille_en_beauvais_france": {
+    "title": "Phép lạ Thánh Thể ở Marseille-en-Beauvaisis",
+    "description": "Năm 1533, kẻ trộm đã lấy trộm một mặt nhật nhưng lại giấu Mình Thánh Chúa đã được truyền phép trong một cánh đồng. Thánh Thể được tìm thấy đang phát ra ánh sáng rực rỡ và đã được phục hồi trong tình trạng hoàn hảo."
+  },
+  "paris_france_1290": {
+    "title": "Phép lạ Thánh Thể ở Paris",
+    "description": "Năm 1290, một kẻ phạm tội tục dùng dao đâm Mình Thánh Chúa đã truyền phép, ném vào nước sôi. Thánh Thể bay lơ lửng trên không và chảy máu, dẫn đến việc xây dựng một nhà thờ trên địa điểm."
+  },
+  "pressac_france": {
+    "title": "Phép lạ Thánh Thể của Pressac",
+    "description": "Năm 1643, một trận hỏa hoạn đã phá hủy bàn thờ của giáo xứ, nhưng Mình Thánh Chúa vẫn hoàn toàn nguyên vẹn và lơ lửng trên đống tro, không bị ngọn lửa chạm đến."
+  },
+  "augsburg_germany": {
+    "title": "Phép lạ Thánh Thể ở Augsburg",
+    "description": "Năm 1194, một người phụ nữ ngậm Mình Thánh Chúa trong miệng và mang về nhà. Nhiều năm sau, người ta phát hiện Mình Thánh đã biến thành thịt chảy máu và được bảo quản."
+  },
+  "benningen_germany": {
+    "title": "Phép lạ Thánh Thể ở Benningen",
+    "description": "Năm 1216, một Mình Thánh Chúa chảy máu được tìm thấy trong nhà thờ Benningen. Mình Thánh chảy máu trên bàn thờ và thánh tích vẫn được tôn kính trong nhà thờ giáo xứ."
+  },
+  "bettbrunn_germany": {
+    "title": "Phép lạ Thánh Thể ở Bettbrunn",
+    "description": "Năm 1125, một người chăn cừu đã đánh cắp Thánh Thể để bảo vệ đàn chiên của mình. Khi ông đánh rơi nó, Mình Thánh Chúa bị mắc kẹt vào một hòn đá và không thể di chuyển được cho đến khi vị giám mục đến, dẫn đến một cuộc hành hương."
+  },
+  "erding_germany": {
+    "title": "Phép lạ Thánh Thể ở Erding",
+    "description": "Năm 1417, một người nông dân đã đánh cắp Thánh Thể. Khi anh cố gắng trốn thoát, Mình Thánh Chúa trượt khỏi tay anh và bay lơ lửng trên không, tỏa ra ánh sáng cho đến khi được giáo sĩ nhặt lại."
+  },
+  "kranenburg_germany": {
+    "title": "Phép lạ Thánh Thể ở Kranenburg",
+    "description": "Vào năm 1280, một linh mục đã thả Mình Thánh Chúa vào một hốc cây. Nhiều năm sau, cây thánh giá bằng gỗ được chạm khắc trên cây bắt đầu chảy máu, dẫn đến một cuộc hành hương lớn."
+  },
+  "regensburg_germany": {
+    "title": "Phép lạ Thánh Thể ở Regensburg",
+    "description": "Năm 1255, một linh mục nghi ngờ về Sự Hiện diện Thực sự. Trong Thánh lễ, cây thánh giá bằng gỗ trên bàn thờ trở nên sống động và Chúa Giêsu đã lấy chén thánh từ linh mục\\"
+  },
+  "wilsnack_germany": {
+    "title": "Phép lạ Thánh Thể ở Wilsnack",
+    "description": "Năm 1383, một nhà thờ bị hỏa hoạn thiêu rụi, nhưng ba Mình Thánh Chúa đã được truyền phép vẫn tồn tại hoàn toàn nguyên vẹn trên bàn thờ, phủ đầy những giọt máu tươi."
+  },
+  "weingarten_germany": {
+    "title": "Phép lạ Thánh Thể Weingarten",
+    "description": "Tu viện Weingarten lưu giữ thánh tích Máu Châu Báu Chúa Giêsu, thánh tích đã được xác nhận bằng một số phép lạ và đã được tôn kính từ thế kỷ 11."
+  },
+  "morne_rouge_martinique": {
+    "title": "Phép lạ Thánh Thể ở Morne-Rouge",
+    "description": "Năm 1902, trong vụ phun trào núi lửa của Núi Pelée, Mình Thánh bên trong Mặt nhật cho thấy khuôn mặt của Chúa Giêsu đội vòng gai trước đám đông đang chạy trốn."
+  },
+  "saint_andre_reunion": {
+    "title": "Phép lạ Thánh Thể của Thánh André",
+    "description": "Năm 1902, trong khi chầu Mình Thánh Chúa, khuôn mặt của Chúa Giêsu và một mão gai xuất hiện bên trong Mình Thánh, dưới sự chứng kiến ​​của linh mục giáo xứ và cộng đoàn."
+  },
+  "alatri_italy": {
+    "title": "Phép lạ Thánh Thể Alatri",
+    "description": "Năm 1228, một phụ nữ trẻ mang Mình Thánh Chúa trong tấm vải về nhà. Ba ngày sau, cô phát hiện Mình Thánh Chúa đã biến thành thịt chảy máu, được bảo quản trong Nhà thờ Alatri."
+  },
+  "assisi_clara_italy": {
+    "title": "Phép lạ Thánh Thể ở Assisi",
+    "description": "Năm 1240, Thánh Clare thành Assisi đã quay trở lại xâm lược quân lính Saracen bằng cách giơ Mặt nhật có Mình Thánh Chúa ở cổng tu viện."
+  },
+  "asti_italy_1535": {
+    "title": "Phép lạ Thánh Thể ở Asti",
+    "description": "Năm 1535, một linh mục cử hành Thánh lễ đã bẻ Mình Thánh và máu bắt đầu chảy ra từ chỗ vỡ, tràn đầy chén thánh và làm vấy bẩn khăn thánh và bàn thờ."
+  },
+  "bagno_di_romagna_italy": {
+    "title": "Phép lạ Thánh Thể ở Bagno di Romagna",
+    "description": "Vào năm 1412, một linh mục nghi ngờ về Sự Hiện diện Thực sự đã nhìn thấy rượu truyền phép sôi lên và tràn ra chén thánh như máu, làm vấy bẩn khăn thánh vẫn được bảo quản."
+  },
+  "canosio_italy": {
+    "title": "Phép lạ Thánh Thể Canosio",
+    "description": "Năm 1630, một linh mục đã ngăn chặn trận lũ tàn khốc của dòng Maira bằng cách ban phép lành cho nước dâng cao với Mình Thánh Chúa, Thánh Thể đã rút ngay lập tức."
+  },
+  "cava_dei_tirreni_italy": {
+    "title": "Phép lạ Thánh Thể Cava de\\",
+    "description": "Năm 1656, một trận dịch tàn khốc đã được ngăn chặn khi tu viện trưởng rước Mình Thánh Chúa, ban phép lành cho thị trấn từ ngọn đồi của Lâu đài Saint Adiutore."
+  },
+  "dronero_italy": {
+    "title": "Phép lạ Thánh Thể của Dronero",
+    "description": "Năm 1631, một trận hỏa hoạn lớn đe dọa thiêu rụi thị trấn Dronero. Một linh mục giơ Mình Thánh Chúa lên và ngọn lửa tắt ngay lập tức, cứu được thị trấn."
+  },
+  "san_mauro_la_bruca_italy": {
+    "title": "Phép lạ Thánh Thể ở San Mauro La Bruca",
+    "description": "Năm 1969, những tên trộm đã lấy trộm một bình thánh nhưng đã vứt đi 63 Thánh Thể đã được truyền phép. Máy chủ đã được khôi phục ở tình trạng hoàn hảo và vẫn không bị hỏng kể từ đó."
+  },
+  "ferrara_italy": {
+    "title": "Phép lạ Thánh Thể ở Ferrara",
+    "description": "Năm 1171, một linh mục cử hành Thánh lễ đã nhìn thấy Mình Thánh Chúa biến thành máu, phun những giọt màu đỏ lên vòm phía trên bàn thờ, những giọt màu đỏ vẫn còn nhìn thấy cho đến ngày nay."
+  },
+  "florence_italy_1230": {
+    "title": "Phép lạ Thánh Thể ở Florence",
+    "description": "Năm 1230, một linh mục đã để một vài giọt rượu thánh trong chén thánh. Ngày hôm sau, rượu đã biến thành máu. Thánh tích được bảo tồn tại nhà thờ Sant\\"
+  },
+  "gruaro_italy": {
+    "title": "Phép lạ Thánh Thể ở Gruaro",
+    "description": "Năm 1294, một người phụ nữ đang giặt khăn bàn thờ của nhà thờ Gruaro phát hiện nó dính máu từ Mình Thánh Chúa đã được truyền phép, được bảo quản ở Valvasone."
+  },
+  "macerata_italy": {
+    "title": "Phép lạ Thánh Thể Macerata",
+    "description": "Năm 1356, một linh mục nghi ngờ về Sự Hiện Diện Thực Sự đã nhìn thấy máu chảy ra từ Mình Thánh khi ông bẻ ra, làm vấy bẩn khăn thánh vẫn được tôn kính ở Macerata."
+  },
+  "mogoro_italy": {
+    "title": "Phép lạ Thánh Thể ở Mogoro",
+    "description": "Năm 1604, hai tội nhân được rước lễ nhưng nhổ Mình Thánh xuống sàn đá, nơi Mình Thánh để lại những dấu vết chảy máu sâu mà ngày nay vẫn còn thấy."
+  },
+  "morrovalle_italy": {
+    "title": "Phép lạ Thánh Thể ở Morrovalle",
+    "description": "Năm 1560, một trận hỏa hoạn đã thiêu rụi hoàn toàn nhà thờ, nhưng Mình Thánh Chúa đã được truyền phép được tìm thấy nguyên vẹn dưới đống tro tàn mười ngày sau đó, tỏa ra ánh sáng dịu nhẹ."
+  },
+  "offida_italy": {
+    "title": "Phép lạ Thánh Thể Offida",
+    "description": "Năm 1273, một người phụ nữ ném Mình Thánh Chúa vào lửa. Mình Thánh biến thành thịt chảy máu và không bị ngọn lửa chạm đến. Thánh tích được lưu giữ tại nhà thờ Thánh Augustinô."
+  },
+  "patierno_naples_italy": {
+    "title": "Phép lạ Thánh Thể Patierno",
+    "description": "Vào năm 1772, Mình Thánh Chúa bị đánh cắp được giấu trong một cánh đồng. Người ta tìm thấy chúng phát ra ánh sáng rực rỡ và được phục hồi trong tình trạng hoàn hảo, kèm theo nhiều điều kỳ diệu."
+  },
+  "rimini_italy": {
+    "title": "Phép lạ Thánh Thể ở Rimini",
+    "description": "Năm 1227, Thánh Anthony thành Padua đã chứng minh sự Hiện diện Thực sự cho một kẻ dị giáo khi một con la đói quì xuống để thờ lạy Mình Thánh Chúa thay vì ăn yến mạch."
+  },
+  "rome_italy_600": {
+    "title": "Phép lạ Thánh Thể ở Rome",
+    "description": "Vào thế kỷ thứ 6, Giáo hoàng Gregory Đại đế đã nhìn thấy Mình Thánh Chúa đã được truyền phép biến thành thịt hữu hình để chữa lành mối nghi ngờ của một người phụ nữ đã nướng bánh."
+  },
+  "rosano_italy": {
+    "title": "Phép lạ Thánh Thể Rosano",
+    "description": "Năm 1948, khuôn mặt Chúa Giêsu hiện ra bên trong Mình Thánh Chúa khi chầu Thánh Thể ở tu viện Rosano, dưới sự chứng kiến ​​của các nữ tu và giáo dân."
+  },
+  "peter_damian_italy": {
+    "title": "Phép lạ Thánh Thể của Thánh Phêrô Damian",
+    "description": "Vào thế kỷ 11, Thánh Phêrô Damian đã ghi lại một phép lạ trong đó một người phụ nữ lấy trộm Thánh Thể. Mình Thánh chảy máu lên miếng vải và khi được cho anh xem, anh đã xác minh tính xác thực của nó."
+  },
+  "salzano_italy": {
+    "title": "Phép lạ Thánh Thể ở Salzano",
+    "description": "Năm 1517, một linh mục cử hành Thánh lễ đã nhìn thấy Mình Thánh chảy máu, làm vấy bẩn khăn thánh và bàn thờ, chứng tỏ sự Hiện diện Thực sự cho toàn thể cộng đoàn."
+  },
+  "scala_italy": {
+    "title": "Phép lạ Thánh Thể ở Scala",
+    "description": "Năm 1732, trong khi chầu Mình Thánh Chúa, các dụng cụ của Cuộc Khổ nạn (thập giá, vương miện gai, đinh) xuất hiện bên trong Mình Thánh, dưới sự chứng kiến ​​của Thánh Alphonsus Liguori."
+  },
+  "trani_italy": {
+    "title": "Phép lạ Thánh Thể Trani",
+    "description": "Vào thế kỷ 11, một phụ nữ dị giáo đã chiên Mình Thánh trong dầu. Bánh Thánh bắt đầu chảy máu đầm đìa, tràn ra chảo và tràn ra sàn."
+  },
+  "turin_italy_1453": {
+    "title": "Phép lạ Thánh Thể ở Turin (1453)",
+    "description": "Vào năm 1453, một mặt nhật bị đánh cắp chứa Mình Thánh đã rơi từ một con lừa. Bánh Thánh bay lên không trung, tỏa ra ánh sáng và lơ lửng cho đến khi giám mục đến."
+  },
+  "veroli_italy": {
+    "title": "Phép lạ Thánh Thể Veroli",
+    "description": "Năm 1570, trong khi tôn thờ, khuôn mặt Chúa Giêsu và một cây thánh giá xuất hiện bên trong Mình Thánh Chúa, được nhiều người dân thị trấn chứng kiến ​​và được chính quyền giáo hội xác nhận."
+  },
+  "volterra_italy": {
+    "title": "Phép lạ Thánh Thể ở Volterra",
+    "description": "Năm 1472, một người lính đã đánh cắp một chiếc hộp đựng Thánh Thể. Khi anh ta cố gắng ném nó đi, Thánh Thể bay lơ lửng trong không trung và chảy máu, dẫn đến việc người lính phải cải đạo."
+  },
+  "alkmaar_netherlands": {
+    "title": "Phép lạ Thánh Thể của Alkmaar",
+    "description": "Năm 1429, một linh mục đã đổ rượu thánh lên lễ phục của ông. Rượu biến thành máu và không thể rửa sạch được. Những lễ phục dính máu được bảo tồn."
+  },
+  "bergen_netherlands": {
+    "title": "Phép lạ Thánh Thể ở Bergen",
+    "description": "Năm 1421, một trận lụt đã phá hủy nhà thờ và Mình Thánh Chúa đã bị cuốn trôi. Sau đó người ta tìm thấy chúng còn nguyên vẹn, với nước xung quanh giữ cho chúng khô ráo."
+  },
+  "boxmeer_netherlands": {
+    "title": "Phép lạ Thánh Thể của Boxmeer",
+    "description": "Năm 1400, một linh mục nghi ngờ về Sự Hiện diện Thực sự. Trong thánh lễ, một giọt máu từ Mình Thánh rơi xuống chén thánh, rượu biến thành máu và tràn ra."
+  },
+  "boxtel_netherlands": {
+    "title": "Phép lạ Thánh Thể ở Boxtel",
+    "description": "Năm 1380, một linh mục làm đổ chén thánh, làm đổ rượu thánh lên khăn bàn thờ. Rượu biến thành máu và tạo thành hình ảnh của Chúa Kitô."
+  },
+  "breda_netherlands": {
+    "title": "Phép lạ Thánh Thể Breda",
+    "description": "Vào năm 1300, một Mình Thánh Chúa đã được truyền phép được giấu trong một cánh đồng để ngăn chặn sự xúc phạm. Nhiều năm sau, nó được tìm thấy hoàn toàn nguyên vẹn và tỏa ra ánh sáng dịu nhẹ."
+  },
+  "meerssen_netherlands": {
+    "title": "Phép lạ Thánh Thể ở Meerssen",
+    "description": "Năm 1222, một linh mục chủ tế nhìn thấy Mình Thánh Chúa chảy máu trong Thánh lễ. Năm 1465, một trận hỏa hoạn đã thiêu rụi nhà thờ, nhưng Mình Thánh Chúa được tìm thấy còn nguyên vẹn trên bàn thờ, chưa bị chạm tới."
+  },
+  "stiphout_netherlands": {
+    "title": "Phép lạ Thánh Thể Stiphout",
+    "description": "Năm 1342, một trận hỏa hoạn đã thiêu rụi nhà thờ, nhưng một nông dân địa phương đã lao vào bên trong và lấy Mình Thánh Chúa vẫn còn nguyên vẹn trong ngọn lửa."
+  },
+  "eten_peru": {
+    "title": "Phép lạ Thánh Thể ở Eten",
+    "description": "Năm 1649, khuôn mặt của Hài nhi Giêsu và ba trái tim trắng xuất hiện bên trong Bánh Thánh trong giờ chầu, dưới sự chứng kiến ​​của linh mục và cộng đoàn."
+  },
+  "glotowo_poland": {
+    "title": "Phép lạ Thánh Thể Glotowo",
+    "description": "Năm 1290, Mình Thánh Chúa bị đánh cắp đã được chôn trên một cánh đồng. Nó được tìm thấy nhiều năm sau đó khi con bò quỳ xuống trước nó và người ta thấy Mình Thánh đang phát ra ánh sáng rực rỡ."
+  },
+  "alboraya_spain": {
+    "title": "Phép lạ Thánh Thể ở Alboraya-Almácera",
+    "description": "Năm 1348, một linh mục rước lễ cho người bệnh bị rơi xuống sông, làm mất Mình Thánh Chúa. Các Thánh Thể được tìm thấy trong miệng những con cá đang giữ chúng lại, chờ trả chúng lại."
+  },
+  "alcala_spain": {
+    "title": "Phép lạ Thánh Thể ở Alcalá",
+    "description": "Năm 1597, một hối nhân đã trả lại Mình Thánh Chúa bị đánh cắp. Các Thánh Thể được cất trong ngăn kéo nhiều năm và vẫn hoàn toàn mới và không bị hư hỏng, đã được các nhà thần học xác minh."
+  },
+  "alcoy_spain": {
+    "title": "Phép lạ Thánh Thể của Alcoy",
+    "description": "Năm 1568, một tên trộm đã lấy trộm bình thánh. Các Thánh Thể đã được tìm thấy sau khi một người dân địa phương nhìn thấy nơi chúng được cất giấu và chúng được tìm thấy nguyên vẹn."
+  },
+  "caravaca_spain": {
+    "title": "Phép lạ Thánh Thể ở Caravaca de la Cruz",
+    "description": "Năm 1231, hai thiên thần xuất hiện mang cây thánh giá hai tay (Thánh giá Caravaca) trong Thánh lễ do một linh mục cử hành trước mặt những kẻ bắt giữ người Moor."
+  },
+  "cimballa_spain": {
+    "title": "Phép lạ Thánh Thể ở Cimballa",
+    "description": "Năm 1370, một linh mục nghi ngờ về Sự Hiện diện Thực sự. Trong Thánh lễ, Mình Thánh bắt đầu chảy máu trên khăn thánh, để lại một vết máu vĩnh viễn mà người ta vẫn tôn kính."
+  },
+  "gerona_spain": {
+    "title": "Phép lạ Thánh Thể Gerona",
+    "description": "Năm 1297, một linh mục cử hành Thánh lễ nhìn thấy Mình Thánh Chúa chảy máu. Máu đã nhuộm khăn thánh và thánh tích được bảo quản và tôn kính trong Nhà thờ Girona."
+  },
+  "escorial_spain": {
+    "title": "Phép lạ Thánh Thể Gorkum-El Escorial",
+    "description": "Năm 1572, binh lính Tin Lành đã làm ô uế Mình Thánh Chúa bằng cách giẫm lên Bánh Thánh. Bánh Thánh bị chảy máu và thánh tích sau đó được trao cho Vua Philip II và được lưu giữ tại El Escorial."
+  },
+  "guadalupe_spain_1420": {
+    "title": "Phép lạ Thánh Thể ở Guadalupe",
+    "description": "Năm 1420, trong Thánh lễ, Người ta thấy Mình Thánh Chúa biến thành thịt chảy máu, và rượu biến thành máu, đổ đầy chén thánh, dưới sự chứng kiến ​​của Vua John II của Castile."
+  },
+  "ivorra_spain": {
+    "title": "Phép lạ Thánh Thể ở Ivorra",
+    "description": "Năm 1010, một linh mục cử hành Thánh lễ nghi ngờ về Sự Hiện diện Thực sự. Rượu biến thành máu, tràn ra chén thánh và làm vấy bẩn tấm vải bàn thờ vẫn được bảo quản."
+  },
+  "moncada_spain": {
+    "title": "Phép lạ Thánh Thể ở Moncada",
+    "description": "Năm 1392, một linh mục nhìn thấy Chúa Giêsu Hài Đồng xuất hiện trong Bánh Thánh trong Thánh lễ, và Bánh Thánh chảy máu, xác nhận sự Hiện diện Thực sự trong cộng đoàn."
+  },
+  "montserrat_spain_1657": {
+    "title": "Phép lạ Thánh Thể ở Montserrat",
+    "description": "Năm 1657, trong Thánh lễ, khuôn mặt của Chúa Giêsu hiện ra bên trong Bánh Thánh, và một loạt phép lạ xảy ra trong tu viện, dẫn đến lòng sùng kính ngày càng gia tăng."
+  },
+  "cebreiro_spain": {
+    "title": "Phép lạ Thánh Thể O\\",
+    "description": "Năm 1300, một người nông dân leo núi trong cơn bão tuyết để tham dự Thánh lễ. Vị linh mục nghi ngờ đã nhìn thấy Mình Thánh Chúa biến thành thịt và rượu biến thành máu, làm vấy bẩn khăn thánh."
+  },
+  "onil_spain": {
+    "title": "Phép lạ Thánh Thể Onil",
+    "description": "Năm 1824, Mình Thánh Chúa bị đánh cắp đã được tìm lại sau khi một người phụ nữ nhìn thấy ánh sáng huyền bí trên cánh đồng. Máy chủ được tìm thấy nguyên vẹn và không bị hỏng kể từ đó."
+  },
+  "ponferrada_spain": {
+    "title": "Phép lạ Thánh Thể ở Ponferrada",
+    "description": "Năm 1533, một tên trộm đã đánh cắp một Nhà tạm có Mình Thánh Chúa. Nhà tạm được tìm thấy khuất trong một cánh đồng và Mình Thánh Chúa được tìm thấy còn nguyên vẹn và phát ra ánh sáng dịu nhẹ."
+  },
+  "sant_joan_de_les_abadesses_spain": {
+    "title": "Phép lạ Thánh Thể của Sant Joan de les Abadesses",
+    "description": "Vào năm 1251, trong một nghi lễ phụng vụ, Mình Thánh Chúa bên trong Mặt nhật được nhìn thấy chảy máu, làm vấy bẩn Mặt nhật và vẫn được bảo tồn."
+  },
+  "silla_spain": {
+    "title": "Phép lạ Thánh Thể ở Silla",
+    "description": "Năm 1907, một linh mục đã đánh rơi Mình Thánh Chúa. Mình Thánh Chúa đã được thu hồi và đặt trong ngăn kéo. Nhiều năm sau, người ta tìm thấy nó hoàn toàn nguyên vẹn và không bị hỏng."
+  },
+  "valencia_spain": {
+    "title": "Phép lạ Thánh Thể Valencia",
+    "description": "Nhà thờ lớn Valencia bảo tồn Chén Thánh Bữa Tiệc Ly, đã được xác minh bởi nhiều ghi chép lịch sử và các chuyến viếng thăm của Giáo hoàng."
+  },
+  "zaragoza_spain_1427": {
+    "title": "Phép lạ Thánh Thể ở Zaragoza",
+    "description": "Năm 1427, một Mình Thánh Chúa đã được truyền phép đã bị đánh cắp và giấu trong một ngôi nhà. Máy chủ được tìm thấy đang phát ra ánh sáng rực rỡ và đã được phục hồi trong tình trạng hoàn hảo."
+  },
+  "ettiswil_switzerland": {
+    "title": "Phép lạ Thánh Thể Ettiswil",
+    "description": "Năm 1447, một Thánh Thể bị đánh cắp đã được chôn trên một cánh đồng. Nó được tìm thấy khi con bò không chịu bước lên tại chỗ, và Mình Thánh Chúa được tìm thấy lơ lửng trên mặt đất."
+  },
+  "lanciano_italy": {
+    "title": "Phép lạ Thánh Thể ở Lanciano",
+    "description": "Vào thế kỷ thứ 8, một tu sĩ Basilian nghi ngờ về Sự Hiện diện Thực sự đã thấy Mình Thánh biến thành thịt thật và rượu thành máu thật trong Thánh lễ. Thử nghiệm khoa học mở rộng vào những năm 1970 đã kết luận rằng đó là mô tim (cơ tim) của con người và nhóm máu AB, giống hệt với Khăn liệm thành Turin."
+  },
+  "bolsena_italy": {
+    "title": "Phép lạ Thánh Thể ở Bolsena",
+    "description": "Năm 1263, một linh mục nghi ngờ tên là Peter ở Praha đã cử hành Thánh lễ. Khi bẻ Mình Thánh, máu bắt đầu rỉ ra từ đó, làm vấy bẩn khăn thánh. Phép lạ này đã thúc đẩy Giáo hoàng Urban IV thiết lập lễ Mình Máu Thánh Chúa Kitô."
+  },
+  "buenos_aires_argentina": {
+    "title": "Phép lạ Thánh Thể ở Buenos Aires",
+    "description": "Vào năm 1992, 1994 và 1996, Mình Thánh bị vứt bỏ bắt đầu chảy máu. Dưới sự chỉ đạo của Hồng y Jorge Bergoglio (sau này là Giáo hoàng Francis, người qua đời vào năm 2025), mô này đã được phân tích một cách khoa học và phát hiện có chứa các tế bào bạch cầu còn sống của con người và mô cơ tim đang bị hư hỏng nghiêm trọng."
+  },
+  "sokolka_poland": {
+    "title": "Phép lạ Thánh Thể Sokółka",
+    "description": "Vào năm 2008, một Mình Thánh Chúa đã được truyền phép rơi xuống đã được ngâm vào nước cho tan. Một tuần sau, một vết đỏ xuất hiện trên đó. Các nhà nghiên cứu bệnh học kết luận chất này giống hệt với mô cơ tim (tim) của một người sắp chết."
+  },
+  "legnica_poland": {
+    "title": "Phép lạ Thánh Thể ở Legnica",
+    "description": "Vào năm 2013, một Bánh Thánh rơi xuống được đặt trong nước. Nó phát triển các vết màu đỏ mà phân tích khoa học xác nhận có chứa các sợi cơ tim người bị phân mảnh có dấu hiệu căng thẳng và đau đớn tột độ."
+  },
+  "tixtla_mexico": {
+    "title": "Phép lạ Thánh Thể Tixtla",
+    "description": "Trong một khóa tu năm 2006, một Mình Thánh bắt đầu chảy ra một chất màu đỏ. Các cuộc điều tra khoa học phát hiện ra rằng máu chảy từ bên trong Thánh Thể ra bên ngoài, có nhóm máu AB và chứa DNA người nguyên vẹn cũng như các tế bào bạch cầu đang hoạt động."
+  },
+  "santarem_portugal": {
+    "title": "Phép lạ Thánh Thể ở Santarém",
+    "description": "Một người phụ nữ tìm cách sử dụng Mình Thánh đã truyền phép để làm thuốc uống đã thấy máu chảy rất nhiều. Thánh Thể vẫn còn được bảo tồn cho đến ngày nay trong Nhà thờ Thánh Stephen, đã duy trì trạng thái không bị hư hỏng trong hơn 750 năm."
+  },
+  "cascia_italy": {
+    "title": "Phép lạ Thánh Thể ở Cascia",
+    "description": "Một linh mục đã đặt Thánh Thể đã truyền phép vào giữa các trang kinh nhật ký của mình một cách bất kính. Bánh Thánh chuyển sang màu máu, nhuộm cả hai trang, tạo thành khuôn mặt của Chúa Kitô."
+  },
+  "siena_italy": {
+    "title": "Phép lạ Thánh Thể ở Siena",
+    "description": "Năm 1730, kẻ trộm đã lấy trộm một bình đựng 351 Thánh Thể đã được truyền phép. Chúng được phục hồi ba ngày sau đó và kể từ đó vẫn hoàn toàn không bị hư hỏng và tươi mới, bất chấp sự xuống cấp của tự nhiên."
+  },
+  "daroca_spain": {
+    "title": "Phép lạ Thánh Thể ở Daroca",
+    "description": "Trong trận chiến chống lại người Moor, sáu Thánh Thể đã được truyền phép được giấu trong một khăn thánh. Khi vớt lên, người ta thấy chúng ướt đẫm máu. Chiếc khăn thánh dính đầy máu vẫn được bảo tồn như một di vật."
+  },
+  "chirattakonam_india": {
+    "title": "Phép lạ Thánh Thể Chirattakonam",
+    "description": "Trong khi chầu Thánh Thể, ba vết đỏ xuất hiện trên Mình Thánh. Trong vài ngày tiếp theo, các vết bẩn đã hình thành nên hình ảnh rõ ràng về khuôn mặt của Chúa Giêsu đội vòng gai."
+  },
+  "tumaco_colombia": {
+    "title": "Phép lạ Thánh Thể ở Tumaco",
+    "description": "Năm 1906, một trận sóng thần lớn đe dọa đảo Tumaco. Cha Gerardo Larrondo mang Mình Thánh Chúa vào bờ. Khi một làn sóng lớn đến gần, nó lập tức rút đi khi đến được Thánh Thể, cứu lấy hòn đảo."
+  },
+  "amsterdam_holland": {
+    "title": "Phép lạ Thánh Thể ở Amsterdam",
+    "description": "Một người sắp chết đã nhận Mình Thánh Chúa nhưng đã nôn ra. Chất nôn mửa được ném vào ngọn lửa bùng cháy, nhưng Thánh Thể vẫn không cháy một cách kỳ diệu và lơ lửng trong ngọn lửa."
+  },
+  "avignon_france": {
+    "title": "Phép lạ Thánh Thể ở Avignon",
+    "description": "Sau trận lụt nghiêm trọng, các thành viên của Grey Sám hối chèo thuyền đến nhà nguyện của họ với hy vọng Mình Thánh Chúa sẽ bị phá hủy. Thay vào đó, họ nhận thấy nước đã tách ra một cách kỳ diệu, khiến bàn thờ và Mình Thánh Chúa hoàn toàn khô ráo."
+  },
+  "krakow_poland": {
+    "title": "Phép lạ Thánh Thể ở Kraków",
+    "description": "Kẻ trộm đã lấy trộm một bình đựng Mình Thánh Chúa đã truyền phép và vứt chúng xuống một đầm lầy. Một ánh sáng bí ẩn đã dẫn những người tìm kiếm đến với các Thánh thể, hoàn toàn không bị hư hại dù bị dính bùn."
+  },
+  "poznan_poland": {
+    "title": "Phép lạ Thánh Thể ở Poznań",
+    "description": "Ba Mình Thánh đã bị đánh cắp và bị xúc phạm do bị đâm xuyên qua, khiến chúng chảy máu. Sau đó, chúng được phát hiện đang trôi nổi trên một đồng cỏ gần đó, được bao quanh bởi ánh sáng kỳ diệu."
+  },
+  "betania_venezuela": {
+    "title": "Phép lạ Thánh Thể ở Betania",
+    "description": "Trong thánh lễ do Cha Oti cử hành, Mình Thánh Chúa bắt đầu chảy máu đầm đìa từ một bên. Các xét nghiệm y tế đã xác nhận chất này là máu người."
+  },
+  "ludbreg_croatia": {
+    "title": "Phép lạ Thánh Thể ở Ludbreg",
+    "description": "Một linh mục nghi ngờ về Sự Hiện diện Thực sự đã nhìn thấy rượu biến thành máu thật trong chén thánh. Thánh tích Máu Châu Báu vẫn được bảo tồn và tôn kính cho đến ngày nay."
+  },
+  "walldurn_germany": {
+    "title": "Phép lạ Thánh Thể ở Walldürn",
+    "description": "Một linh mục đã vô tình làm đổ chén thánh trong Thánh lễ. Rượu thánh đổ tràn lên khăn thánh, tạo thành hình ảnh Chúa Kitô bị đóng đinh và mười một đầu giống hệt nhau của Chúa Giêsu đội vương miện bằng gai."
+  },
+  "blanot_france": {
+    "title": "Phép lạ Thánh Thể Blanot",
+    "description": "Trong khi rước lễ, một mảnh Mình Thánh rơi xuống đất. Vị linh mục đã cố gắng lấy lại nó nhưng nó đã biến thành một giọt máu thấm vào tấm vải và làm ố nó vĩnh viễn."
+  },
+  "oak_cliff_us": {
+    "title": "Mình Thánh Chúa đang chảy máu ở Oak Cliff",
+    "description": "Một Mình Thánh Chúa đã truyền phép dường như đã chảy máu. Giáo phận xác định sau cuộc điều tra rằng không có phép lạ nào xảy ra."
+  },
+  "south_st_paul_us": {
+    "title": "Mình Thánh Chúa bị đổi màu của Thánh Paul",
+    "description": "Trong quá trình hòa tan Mình Thánh Chúa đã truyền phép bị vứt bỏ trong nước, người ta nhận thấy có màu đỏ. Tổng giáo phận đã tìm ra nguyên nhân là do nấm."
+  },
+  "kearns_us": {
+    "title": "Mình Thánh Chúa Kearns đang chảy máu",
+    "description": "Một Mình Thánh đã được truyền phép dường như đã chảy máu. Một cuộc điều tra của Giáo phận Thành phố Salt Lake đã kết luận rằng nấm mốc bánh mì đỏ gây ra màu sắc này một cách tự nhiên."
+  },
+  "buffalo_us": {
+    "title": "Màu đỏ của vật chủ ở Buffalo",
+    "description": "Đã nhận thấy vật chủ có màu đỏ trên vật chủ. Các giám mục của Giáo phận Buffalo đã từ chối điều tra một cách rõ ràng."
+  },
+  "morris_us": {
+    "title": "Các Mình Thánh có đốm của Morris",
+    "description": "Các vết được cho là máu đã được tìm thấy trên hai Mình Thánh đã truyền phép bị loại bỏ. Phân tích trong phòng thí nghiệm cho thấy những điều này là do vi khuẩn tự nhiên gây ra."
   }
 }

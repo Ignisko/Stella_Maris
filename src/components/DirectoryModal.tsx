@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { X, MapPin, Calendar, ChevronRight, Search } from 'lucide-react';
+import { X, MapPin, CaretRight, MagnifyingGlass } from '@phosphor-icons/react';
 import { getStatusColor, getApparitionStatusCategory } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -65,69 +65,91 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
         height: '85vh',
         display: 'flex',
         flexDirection: 'column',
-        borderRadius: '16px',
         border: '1px solid var(--glass-border)',
-        boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)',
-        background: 'rgba(15, 23, 42, 0.9)'
+        background: 'var(--bg-color)',
+        borderRadius: 0,
+        boxShadow: 'none'
       }}>
         {/* Modal Header */}
         <div style={{
-          padding: '20px 28px',
+          padding: '32px',
           borderBottom: '1px solid var(--glass-border)',
           display: 'flex',
-          alignItems: 'center',
+          alignItems: 'flex-start',
           justifyContent: 'space-between',
-          background: 'rgba(255, 255, 255, 0.03)',
-          borderTopLeftRadius: '16px',
-          borderTopRightRadius: '16px'
+          background: 'transparent'
         }}>
           <div>
-            <h2 style={{ fontSize: '20px', fontWeight: 700, margin: 0, color: 'var(--gold-accent)', display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <h2 style={{ 
+              fontFamily: 'var(--font-sans)', 
+              fontSize: '24px', 
+              fontWeight: 600, 
+              margin: 0, 
+              color: 'var(--text-color)', 
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '16px' 
+            }}>
               <span>{t('directoryTitle', lang)}</span>
-              <span style={{ fontSize: '13px', padding: '2px 8px', borderRadius: '12px', background: 'rgba(255, 255, 255, 0.1)', color: 'var(--text-color)', fontWeight: 500 }}>
+              <span style={{ 
+                fontFamily: 'var(--font-sans)', 
+                fontSize: '11px', 
+                padding: '6px 12px', 
+                border: '1px solid var(--glass-border)', 
+                color: 'var(--text-color)', 
+                fontWeight: 600,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
+              }}>
                 {t('directoryListed', lang, { count: filteredList.length })}
               </span>
             </h2>
-            <p style={{ fontSize: '13px', opacity: 0.7, margin: '4px 0 0 0', color: 'var(--text-color)' }}>
+            <p style={{ 
+              fontSize: '12px', 
+              opacity: 0.6, 
+              margin: '8px 0 0 0', 
+              color: 'var(--text-color)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.05em'
+            }}>
               {t('directorySubtitle', lang)}
             </p>
           </div>
           <button
             onClick={onClose}
             style={{
-              background: 'rgba(255, 255, 255, 0.08)',
+              background: 'transparent',
               border: '1px solid var(--glass-border)',
-              borderRadius: '50%',
-              width: '36px',
-              height: '36px',
+              width: '40px',
+              height: '40px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              color: '#f1f5f9',
+              color: 'var(--text-color)',
               cursor: 'pointer',
               transition: 'all 0.2s'
             }}
-            onMouseOver={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.18)'}
-            onMouseOut={e => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)'}
+            onMouseOver={e => { e.currentTarget.style.background = 'var(--text-color)'; e.currentTarget.style.color = 'var(--bg-color)'; }}
+            onMouseOut={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--text-color)'; }}
           >
-            <X size={18} />
+            <X size={16} weight="regular" />
           </button>
         </div>
 
         {/* Local Search and Filters Row inside modal */}
         <div style={{ 
-          padding: '16px 28px', 
+          padding: '24px 32px', 
           borderBottom: '1px solid var(--glass-border)', 
           display: 'flex', 
           alignItems: 'center', 
           justifyContent: 'space-between',
-          gap: '20px', 
-          background: 'rgba(0,0,0,0.2)',
+          gap: '24px', 
+          background: 'transparent',
           position: 'relative',
           zIndex: 40
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0 }}>
-            <Search size={16} color="var(--accent-color)" />
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0, border: '1px solid var(--glass-border)', padding: '12px 16px' }}>
+            <MagnifyingGlass size={16} weight="regular" style={{ opacity: 0.6 }} />
             <input
               type="text"
               placeholder={t('directoryQuickFilter', lang)}
@@ -136,12 +158,14 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
               style={{
                 background: 'transparent',
                 border: 'none',
-                color: '#f1f5f9',
-                fontSize: '14px',
+                color: 'var(--text-color)',
+                fontSize: '12px',
                 width: '100%',
                 outline: 'none',
                 fontFamily: 'inherit',
-                fontWeight: 500
+                fontWeight: 500,
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em'
               }}
             />
             {localQuery && (
@@ -180,16 +204,15 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
         <div style={{ 
           flex: 1, 
           overflowY: 'auto', 
-          padding: '10px 20px',
-          borderBottomLeftRadius: '16px',
-          borderBottomRightRadius: '16px'
+          padding: '0',
+          background: 'transparent'
         }}>
           {filteredList.length === 0 ? (
             <div style={{ padding: '60px 20px', textAlign: 'center', opacity: 0.6, fontSize: '15px' }}>
               {t('directoryNoResults', lang)}
             </div>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column' }}>
               {filteredList.map(app => {
                 const color = getStatusColor(app.approvalStatus);
                 const category = getApparitionStatusCategory(app.approvalStatus);
@@ -204,64 +227,63 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'space-between',
-                      padding: '14px 20px',
-                      borderRadius: '12px',
-                      background: 'rgba(255, 255, 255, 0.03)',
-                      border: '1px solid rgba(255, 255, 255, 0.05)',
+                      padding: '20px 32px',
+                      background: 'transparent',
+                      borderBottom: '1px solid var(--glass-border)',
                       cursor: 'pointer',
                       transition: 'all 0.2s',
                       gap: '16px'
                     }}
                     onMouseOver={e => {
-                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
-                      e.currentTarget.style.borderColor = color;
+                      e.currentTarget.style.background = 'var(--text-color)';
+                      e.currentTarget.style.color = 'var(--bg-color)';
                     }}
                     onMouseOut={e => {
-                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
-                      e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.05)';
+                      e.currentTarget.style.background = 'transparent';
+                      e.currentTarget.style.color = 'var(--text-color)';
                     }}
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '20px', minWidth: 0, flex: 1 }}>
                       <div style={{
-                        fontSize: '15px',
-                        fontWeight: 700,
-                        color: 'var(--gold-accent)',
-                        width: '56px',
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '12px',
+                        fontWeight: 600,
+                        width: '48px',
                         flexShrink: 0,
                         display: 'flex',
                         alignItems: 'center',
                         gap: '6px'
                       }}>
-                        <Calendar size={14} opacity={0.6} />
                         <span>{app.year}</span>
                       </div>
                       <div style={{ minWidth: 0 }}>
-                        <div style={{ fontSize: '15px', fontWeight: 600, color: '#f1f5f9', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                          {app.title} {app.approvalStatus === 'Dismissed' && '⚠️'}
+                        <div style={{ fontFamily: 'var(--font-sans)', fontSize: '16px', fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                          {app.title} {(app.approvalStatus === 'Dismissed' || app.approvalStatus === 'Unapproved apparitions') && '⚠️'}
                         </div>
-                        <div style={{ fontSize: '13px', opacity: 0.7, color: 'var(--text-color)', display: 'flex', alignItems: 'center', gap: '6px', marginTop: '2px' }}>
-                          <MapPin size={12} />
+                        <div style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6, display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
+                          <MapPin size={12} weight="regular" />
                           <span>{app.location}, {app.country}</span>
                         </div>
                       </div>
                     </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px', flexShrink: 0 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '24px', flexShrink: 0 }}>
                       <div style={{
                         display: 'flex',
                         alignItems: 'center',
                         gap: '8px',
                         padding: '6px 12px',
-                        borderRadius: '20px',
-                        background: 'rgba(0,0,0,0.3)',
+                        background: `${color}15`,
                         border: `1px solid ${color}40`,
+                        boxShadow: `0 0 10px ${color}30, inset 0 0 5px ${color}20`,
+                        borderRadius: '20px'
                       }}>
-                        <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, boxShadow: `0 0 8px ${color}` }} />
-                        <span style={{ fontSize: '12px', fontWeight: 600, color: '#f1f5f9' }}>
+                        <span style={{ width: '6px', height: '6px', backgroundColor: color, borderRadius: '50%' }} />
+                        <span style={{ fontFamily: 'var(--font-sans)', fontSize: '10px', color: color, fontWeight: 600 }}>
                           {t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}
                         </span>
                       </div>
-                      <ChevronRight size={16} opacity={0.5} />
+                      <CaretRight size={16} weight="bold" />
                     </div>
                   </div>
                 );

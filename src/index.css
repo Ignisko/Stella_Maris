@@ -1,49 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
+  --font-serif: 'Outfit', sans-serif;
+  --font-sans: 'Outfit', sans-serif;
   --font-family: 'Outfit', sans-serif;
-  --bg-color: #0a0b10;
-  --text-color: #e8eaed;
-  --glass-bg: #1c1d22;
-  --glass-border: #2e3035;
-  --accent-color: #1a73e8;
+  
+  /* Strict 8px Grid */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-5: 40px;
+  --space-6: 48px;
+
+  /* Monochrome Dark Palette */
+  --bg-color: #050505;
+  --text-color: #EAEAEA;
+  --glass-bg: #1A1A1A;
+  --glass-border: transparent;
+  --accent-color: #3b82f6;
   --accent-glow: transparent;
-  --gold-accent: #fbc02d;
-  --panel-radius: 8px;
-  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  --gold-accent: #d4af37;
+  --panel-radius: 16px;
+  --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
 
   /* Timeline variables for Dark Mode */
-  --timeline-bg: rgba(15, 23, 42, 0.98);
+  --timeline-bg: #0A0A0A;
   --timeline-border: rgba(255, 255, 255, 0.2);
-  --timeline-line: rgba(255, 255, 255, 0.45);
-  --timeline-axis: rgba(255, 255, 255, 0.25);
-  --timeline-tick: rgba(255, 255, 255, 0.45);
-  --timeline-text: rgba(255, 255, 255, 0.65);
-  --timeline-btn-bg: rgba(255, 255, 255, 0.06);
-  --timeline-btn-border: rgba(255, 255, 255, 0.15);
-  --timeline-btn-text: #e2e8f0;
+  --timeline-line: rgba(255, 255, 255, 0.3);
+  --timeline-axis: rgba(255, 255, 255, 0.2);
+  --timeline-tick: rgba(255, 255, 255, 0.4);
+  --timeline-text: rgba(255, 255, 255, 0.8);
+  --timeline-btn-bg: transparent;
+  --timeline-btn-border: rgba(255, 255, 255, 0.2);
+  --timeline-btn-text: #EAEAEA;
 }
 
 body.light-theme {
-  --bg-color: #f8f9fa;
-  --text-color: #202124;
-  --glass-bg: #ffffff;
-  --glass-border: #dadce0;
-  --accent-color: #1a73e8;
+  --bg-color: #F8F8F8;
+  --text-color: #111111;
+  --glass-bg: #FFFFFF;
+  --glass-border: transparent;
+  --accent-color: #2563eb;
   --accent-glow: transparent;
-  --gold-accent: #f57f17;
-  --box-shadow: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
+  --gold-accent: #b48600;
+  --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 
   /* Timeline variables for Light Mode */
-  --timeline-bg: #cbd5e1;
-  --timeline-border: #64748b;
-  --timeline-line: rgba(15, 23, 42, 0.65);
-  --timeline-axis: rgba(15, 23, 42, 0.6);
-  --timeline-tick: rgba(15, 23, 42, 0.7);
-  --timeline-text: rgba(15, 23, 42, 0.95);
-  --timeline-btn-bg: rgba(0, 0, 0, 0.1);
-  --timeline-btn-border: rgba(0, 0, 0, 0.25);
-  --timeline-btn-text: #0f172a;
+  --timeline-bg: #F8F8F8;
+  --timeline-border: rgba(0, 0, 0, 0.2);
+  --timeline-line: rgba(0, 0, 0, 0.3);
+  --timeline-axis: rgba(0, 0, 0, 0.2);
+  --timeline-tick: rgba(0, 0, 0, 0.4);
+  --timeline-text: rgba(0, 0, 0, 0.8);
+  --timeline-btn-bg: transparent;
+  --timeline-btn-border: rgba(0, 0, 0, 0.2);
+  --timeline-btn-text: #111111;
 }
 
 * {
@@ -102,14 +114,13 @@ input, button, textarea, select {
   overflow: hidden;
 }
 
-/* Glassmorphism Utilities (Replaced with Solid Minimal Modern panels) */
+/* Editorial Panels */
 .glass-panel {
   background: var(--glass-bg) !important;
-  border: 1px solid var(--glass-border) !important;
+  border: none !important;
   box-shadow: var(--box-shadow) !important;
-  backdrop-filter: none !important;
-  -webkit-backdrop-filter: none !important;
-  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  border-radius: var(--panel-radius) !important;
+  transition: background 0.4s ease, border-color 0.4s ease;
 }
 
 .glass-panel-rounded {
@@ -191,7 +202,6 @@ input, button, textarea, select {
   left: 0;
   top: 0;
   transform: translate(-50%, -50%);
-  z-index: 2;
 }
 
 .marker-dot:hover {
@@ -246,6 +256,16 @@ input, button, textarea, select {
   -webkit-backdrop-filter: none;
 }
 
+/* Invisible bridge to prevent cursor flashing between dot and label */
+.label-content::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+}
+
 .label-title-main {
   white-space: nowrap;
 }
@@ -265,8 +285,8 @@ input, button, textarea, select {
   color: #ffffff;
   background: var(--marker-bg-selected, rgba(59, 130, 246, 0.4));
   padding: 6px 12px;
-  border: 2px solid var(--marker-color, #3b82f6);
-  border-radius: 8px;
+  border: none;
+  border-radius: 24px;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 0 20px var(--marker-glow-selected, rgba(59, 130, 246, 0.8));
@@ -286,13 +306,15 @@ input, button, textarea, select {
   font-size: 12px;
   font-weight: 600;
   background: transparent;
+  color: #ffffff;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
+  border-radius: 0;
   border: none;
-  padding: 2px 6px;
+  padding: 0;
   box-shadow: none;
-  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.85);
-  transform: translate(-50%, -100%) translateY(-12px) scale(var(--globe-label-scale, 1));
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.8), 0px 0px 2px rgba(0,0,0,0.8);
+  transform: translate(-50%, -100%) translateY(-10px) scale(var(--globe-label-scale, 1));
   transform-origin: bottom center;
   opacity: var(--globe-label-opacity, 1);
   display: flex;
@@ -304,7 +326,9 @@ input, button, textarea, select {
 }
 
 .label-content:not(.selected):hover {
-  transform: translate(-50%, -100%) translateY(-12px) scale(1.05);
+  background: transparent;
+  box-shadow: none;
+  text-shadow: 0px 2px 6px rgba(0,0,0,1), 0px 0px 3px rgba(0,0,0,1);
   z-index: 10000;
 }
 
@@ -326,19 +350,7 @@ input, button, textarea, select {
   transform-origin: top center;
 }
 
-.globe-html-label[data-offset="left"] .label-content:not(.selected):hover {
-  transform: translate(-100%, -50%) translateX(-12px) scale(1.05);
-}
-.globe-html-label[data-offset="right"] .label-content:not(.selected):hover {
-  transform: translate(0, -50%) translateX(12px) scale(1.05);
-}
-.globe-html-label[data-offset="top"] .label-content:not(.selected):hover {
-  transform: translate(-50%, -100%) translateY(-12px) scale(1.05);
-}
-.globe-html-label[data-offset="bottom"] .label-content:not(.selected):hover {
-  transform: translate(-50%, 0) translateY(12px) scale(1.05);
-}
-
+/* Removed custom offset hovers to prevent transform overrides */
 /* Selected state with custom offsets */
 .globe-html-label[data-offset="left"] .label-content.selected {
   transform: translate(-100%, -50%) translateX(-16px) scale(1.15);
@@ -459,6 +471,41 @@ body[data-tutorial-step="3"] #sidebar-close-button {
 }
 
 /* --- White solid button base (replaces glassmorphic dark) --- */
+.checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: transparent;
+  border: 1px solid var(--glass-border);
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-container:hover input ~ .checkbox-custom {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.checkbox-container input:checked ~ .checkbox-custom {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.checkbox-custom:after {
+  content: "";
+  display: none;
+  width: 4px;
+  height: 8px;
+  border: solid var(--bg-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-bottom: 2px;
+}
+
 .mob-btn {
   position: relative;
   width: 54px;
@@ -597,7 +644,7 @@ body[data-tutorial-step="3"] #sidebar-close-button {
 
   /* Timeline closed pill → compact icon */
   #timeline-closed-pill {
-    bottom: 20px !important;
+    bottom: 52px !important;
     right: 20px !important;
     padding: 0 !important;
     width: 48px !important;
@@ -647,7 +694,7 @@ body[data-tutorial-step="3"] #sidebar-close-button {
    ===================================================== */
 @media (min-width: 601px) {
   /* Title card, Sidebar, Help button, Theme button, Language picker trigger, filter containers, and modals */
-  .desktop-left-panel > div:first-child,
+  .desktop-left-panel > div,
   #apparition-sidebar,
   .desktop-help-btn,
   .desktop-theme-btn,
@@ -749,10 +796,16 @@ body[data-tutorial-step="3"] #sidebar-close-button {
   #search-filters-container > div > div.glass-panel:nth-child(2),
   .desktop-lang-picker > div > div.glass-panel,
   #action-row-container > div > div.glass-panel {
-    background: var(--glass-bg) !important;
-    color: var(--text-color) !important;
-    border: 1px solid var(--glass-border) !important;
-    box-shadow: var(--box-shadow) !important;
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+  }
+
+  .glass-panel-rounded {
+    border-radius: 16px;
   }
 
   /* Suggestions hover states */
