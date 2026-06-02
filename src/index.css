@@ -306,6 +306,18 @@ input, button, textarea, select {
 .label-content:not(.selected):hover {
   transform: translate(-50%, -100%) translateY(-12px) scale(1.05);
   z-index: 10000;
+  background: #ffffff !important;
+  color: #111827 !important;
+  border-radius: 6px !important;
+  padding: 4px 10px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+  text-shadow: none !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.label-content:not(.selected):hover .cluster-badge {
+  background: #f3f4f6 !important;
+  color: #111827 !important;
 }
 
 /* Custom offsets for label contents (not selected and selected) */
