@@ -1,7 +1,7 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { MapPin, Calendar, Info, X, ArrowUpRight, Medal, BookOpen, CheckCircle, Sparkle, Handshake, XCircle, Copy, Check } from '@phosphor-icons/react';
-import { getStatusColor, getSingleStatusCategory, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
+import { MapPin, Calendar, Info, X, ExternalLink, Award, BookOpen, CheckCircle2, Sparkles, HeartHandshake, XCircle, Copy, Check } from 'lucide-react';
+import { getStatusColor, hexToRgb, getSingleStatusCategory, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
 
@@ -13,26 +13,27 @@ interface SidebarProps {
   onSelectApparition?: (apparition: Apparition) => void;
   lang: Language;
   isTimelineOpen?: boolean;
+  isCinemaMode?: boolean;
   projectId?: 'mary' | 'eucharist';
 }
 
 const getCategoryIcon = (category: string, color: string) => {
   switch (category) {
     case "Vatican approved":
-      return <Medal size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <Award size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Traditionally approved":
-      return <BookOpen size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <BookOpen size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Bishop approved":
-      return <CheckCircle size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <CheckCircle2 size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Coptic approved":
-      return <Sparkle size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <Sparkles size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Approved for faith expression":
-      return <Handshake size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <HeartHandshake size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Apparitions to saints":
-      return <Sparkle size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <Sparkles size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Dismissed":
     default:
-      return <XCircle size={20} color={color} weight="fill" style={{ flexShrink: 0 }} />;
+      return <XCircle size={20} color={color} style={{ flexShrink: 0 }} />;
   }
 };
 
@@ -43,6 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   allActiveApparitions = [], 
   onSelectApparition, 
   lang,
+  isCinemaMode = false,
   projectId = 'mary'
 }) => {
   const [copied, setCopied] = useState(false);
@@ -139,107 +141,69 @@ const Sidebar: React.FC<SidebarProps> = ({
   };
 
   return (
-    <div id="apparition-sidebar" className="glass-panel selectable" style={{
+    <div id="apparition-sidebar" className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
-      top: '0',
-      bottom: '0',
-      right: isVisible ? '0' : '-100%',
-      width: '340px',
-      maxWidth: '100vw',
-      maxHeight: '100vh',
+      top: '20px',
+      bottom: 'auto',
+      maxHeight: isCinemaMode ? 'calc(100vh - 115px)' : 'calc(100vh - 40px)',
+      right: '20px',
+      width: '380px',
       overflowY: 'auto',
-      border: 'none',
       zIndex: 110,
-      padding: '24px',
+      padding: '24px 28px',
+      backgroundColor: 'rgba(15, 23, 42, 0.95)',
+      backdropFilter: 'blur(25px)',
+      boxShadow: '0 20px 50px rgba(0,0,0,0.8)',
       display: 'flex',
       flexDirection: 'column',
-      gap: '24px',
-      transition: 'right 0.4s ease',
+      gap: '16px',
+      transform: isVisible ? 'translateX(0)' : 'translateX(calc(100% + 40px))',
+      opacity: isVisible ? 1 : 0,
+      transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), max-height 0.3s ease-in-out, top 0.3s ease-in-out',
       pointerEvents: isVisible ? 'auto' : 'none'
     }}>
 
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '16px' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px', flex: 1 }}>
-          <h2 style={{ 
-            fontFamily: 'var(--font-sans)',
-            fontSize: '18px', 
-            fontWeight: 600, 
-            margin: 0, 
-            color: 'var(--text-color)',
-            letterSpacing: '-0.5px',
-            lineHeight: 1.2,
-            userSelect: 'text', 
-            WebkitUserSelect: 'text' 
-          }}>
-            {displayApp.title} {(displayApp.approvalStatus === 'Dismissed' || displayApp.approvalStatus === 'Unapproved apparitions') && '⚠️'}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
+          <h2 style={{ fontSize: '26px', fontWeight: 600, margin: 0, color: 'var(--gold-accent)', lineHeight: 1.2, userSelect: 'text', WebkitUserSelect: 'text' }}>
+            {displayApp.title} {displayApp.approvalStatus === 'Dismissed' && '⚠️'}
           </h2>
-        </div>
-        <div style={{ display: 'flex', gap: '8px' }}>
           <button
             onClick={handleCopy}
             title="Copy Title"
             style={{
               background: 'transparent',
-              border: '1px solid var(--glass-border)',
-              color: copied ? 'var(--text-color)' : 'var(--text-color)',
+              border: 'none',
+              color: copied ? '#10b981' : 'var(--text-color)',
               cursor: 'pointer',
-              padding: '8px',
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
+              padding: '6px',
+              opacity: copied ? 1 : 0.6,
               transition: 'all 0.2s',
-            }}
-            onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'var(--text-color)'; e.currentTarget.style.color = 'var(--bg-color)'; }}
-            onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'var(--text-color)'; }}
-          >
-            {copied ? <Check size={16} weight="bold" /> : <Copy size={16} weight="regular" />}
-          </button>
-          <button 
-            id="sidebar-close-button"
-            onClick={onClose}
-            style={{ 
-              background: 'transparent', 
-              border: '1px solid var(--glass-border)', 
-              color: 'var(--text-color)', 
-              cursor: 'pointer', 
-              padding: '8px', 
               display: 'inline-flex',
               alignItems: 'center',
-              justifyContent: 'center',
-              transition: 'all 0.2s' 
+              borderRadius: '6px',
+              backgroundColor: 'rgba(255, 255, 255, 0.05)',
             }}
-            onMouseOver={(e) => { e.currentTarget.style.backgroundColor = 'var(--text-color)'; e.currentTarget.style.color = 'var(--bg-color)'; }}
-            onMouseOut={(e) => { e.currentTarget.style.backgroundColor = 'transparent'; e.currentTarget.style.color = 'var(--text-color)'; }}
+            onMouseOver={(e) => { if (!copied) { e.currentTarget.style.opacity = '1'; e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.12)'; } }}
+            onMouseOut={(e) => { if (!copied) { e.currentTarget.style.opacity = '0.6'; e.currentTarget.style.backgroundColor = 'rgba(255, 255, 255, 0.05)'; } }}
           >
-            <X size={16} weight="regular" />
+            {copied ? <Check size={14} /> : <Copy size={14} />}
           </button>
         </div>
+        <button 
+          id="sidebar-close-button"
+          onClick={onClose}
+          style={{ background: 'transparent', border: 'none', color: 'var(--text-color)', cursor: 'pointer', padding: '4px', opacity: 0.7, transition: 'opacity 0.2s', flexShrink: 0 }}
+          onMouseOver={(e) => e.currentTarget.style.opacity = '1'}
+          onMouseOut={(e) => e.currentTarget.style.opacity = '0.7'}
+        >
+          <X size={24} />
+        </button>
       </div>
 
-      {(displayApp.approvalStatus === 'Dismissed' || displayApp.approvalStatus === 'Unapproved apparitions') && (
-        <div style={{
-          padding: '16px',
-          backgroundColor: 'rgba(239, 68, 68, 0.15)',
-          border: '1px solid rgba(239, 68, 68, 0.4)',
-          borderRadius: '12px',
-          color: '#fca5a5',
-          fontSize: '14px',
-          display: 'flex',
-          gap: '12px',
-          alignItems: 'flex-start',
-          boxShadow: '0 4px 20px rgba(239, 68, 68, 0.1)'
-        }}>
-          <div style={{ fontSize: '20px' }}>⚠️</div>
-          <div>
-            <strong style={{ display: 'block', marginBottom: '4px' }}>{t('dismissedWarningTitle', lang)}</strong>
-            <span style={{ opacity: 0.9 }}>{t('dismissedWarningText', lang)}</span>
-          </div>
-        </div>
-      )}
-
       {clusteredApps.length > 1 && onSelectApparition && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '16px 0', borderTop: '1px solid var(--glass-border)' }}>
-          <span style={{ fontSize: '12px', opacity: 0.6, fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>{t('otherApparitions', lang, { count: clusteredApps.length })}</span>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', background: 'rgba(255, 255, 255, 0.03)', padding: '12px 14px', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
+          <span style={{ fontSize: '13px', opacity: 0.7, fontWeight: 500 }}>{t('otherApparitions', lang, { count: clusteredApps.length })}:</span>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
             {clusteredApps.map(app => {
               const isCurrent = app.id === displayApp.id;
@@ -249,12 +213,13 @@ const Sidebar: React.FC<SidebarProps> = ({
                   key={app.id}
                   onClick={() => onSelectApparition(app)}
                   style={{
-                    padding: '8px 12px',
-                    background: isCurrent ? 'var(--text-color)' : 'transparent',
-                    border: '1px solid var(--glass-border)',
-                    color: isCurrent ? 'var(--bg-color)' : 'var(--text-color)',
-                    fontSize: '12px',
-                    fontWeight: 500,
+                    padding: '6px 12px',
+                    borderRadius: '8px',
+                    background: isCurrent ? `rgba(${hexToRgb(color)}, 0.3)` : 'rgba(255, 255, 255, 0.05)',
+                    border: `1px solid ${isCurrent ? color : 'rgba(255, 255, 255, 0.1)'}`,
+                    color: isCurrent ? '#ffffff' : 'rgba(255, 255, 255, 0.7)',
+                    fontSize: '13px',
+                    fontWeight: isCurrent ? 700 : 500,
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
@@ -263,8 +228,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                   }}
                   title={app.title}
                 >
-                  <span style={{ width: '6px', height: '6px', backgroundColor: isCurrent ? 'var(--bg-color)' : color, flexShrink: 0 }} />
-                  <span>{app.year}</span>
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, flexShrink: 0 }} />
+                  <span>{app.year} • {app.title} {app.approvalStatus === 'Dismissed' && '⚠️'}</span>
                 </button>
               );
             })}
@@ -272,36 +237,36 @@ const Sidebar: React.FC<SidebarProps> = ({
         </div>
       )}
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', padding: '16px 0', borderTop: '1px solid var(--glass-border)' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', fontSize: '14px', fontWeight: 500 }}>
-          <MapPin size={16} weight="regular" style={{ marginTop: '2px', opacity: 0.6 }} />
-          <span style={{ userSelect: 'text', WebkitUserSelect: 'text', letterSpacing: '0.02em' }}>{displayApp.location}, {displayApp.country}</span>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
+          <MapPin size={18} color="var(--accent-color)" />
+          <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.location}, {displayApp.country}</span>
         </div>
         
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '14px', fontWeight: 500 }}>
-          <Calendar size={16} weight="regular" style={{ opacity: 0.6 }} />
-          <span style={{ userSelect: 'text', WebkitUserSelect: 'text', letterSpacing: '0.02em' }}>{displayApp.year}</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
+          <Calendar size={18} color="var(--accent-color)" />
+          <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.year}</span>
         </div>
 
         {displayApp.approvalStatus.split(/[/,;]/).map(s => s.trim()).filter(Boolean).map((part, index) => {
           const cat = getSingleStatusCategory(part);
           const color = STATUS_COLORS[cat] || "#94a3b8";
+          const rgb = hexToRgb(color);
           return (
             <div key={index} style={{ 
-              display: 'inline-flex', 
+              display: 'flex', 
               alignItems: 'center', 
-              gap: '8px', 
-              fontSize: '12px', 
-              marginTop: '8px', 
-              background: `${color}15`,
-              border: `1px solid ${color}40`,
-              boxShadow: `0 0 10px ${color}30, inset 0 0 5px ${color}20`,
-              padding: '6px 12px', 
-              borderRadius: '20px',
-              fontWeight: 500
+              gap: '12px', 
+              fontSize: '15px', 
+              marginTop: '4px', 
+              background: `rgba(${rgb}, 0.15)`, 
+              padding: '10px 14px', 
+              borderRadius: '8px', 
+              border: `1px solid rgba(${rgb}, 0.4)`,
+              boxShadow: `0 0 15px rgba(${rgb}, 0.15)`
             }}>
               {getCategoryIcon(cat, color)}
-              <span style={{ color: color, fontWeight: 600, userSelect: 'text', WebkitUserSelect: 'text' }}>
+              <span style={{ color: color, fontWeight: 700, letterSpacing: '0.3px', lineHeight: 1.3, userSelect: 'text', WebkitUserSelect: 'text' }}>
                 {t(cat as keyof typeof import('../utils/i18n').translations['en'], lang)}
               </span>
             </div>
@@ -311,24 +276,16 @@ const Sidebar: React.FC<SidebarProps> = ({
 
       <div style={{ height: '1px', background: 'var(--glass-border)', margin: '4px 0' }}></div>
 
-      <div style={{ padding: '16px 0', borderTop: '1px solid var(--glass-border)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
-          <Info size={16} weight="regular" style={{ opacity: 0.6 }} />
-          <h3 style={{ fontSize: '12px', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', margin: 0, opacity: 0.6 }}>{t('description', lang)}</h3>
+      <div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', color: 'var(--accent-color)' }}>
+          <Info size={18} />
+          <h3 style={{ fontSize: '16px', fontWeight: 600, margin: 0 }}>{t('description', lang)}</h3>
         </div>
-        <p style={{ 
-          fontFamily: 'var(--font-sans)',
-          fontSize: '15px', 
-          lineHeight: 1.6, 
-          color: 'var(--text-color)', 
-          margin: 0, 
-          userSelect: 'text', 
-          WebkitUserSelect: 'text' 
-        }}>
+        <p style={{ fontSize: '15px', lineHeight: 1.65, opacity: 0.9, letterSpacing: '0.2px', margin: 0, userSelect: 'text', WebkitUserSelect: 'text' }}>
           {displayApp.description}
         </p>
         
-        <div style={{ marginTop: '32px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+        <div style={{ marginTop: '18px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
           {sources.map((src, i) => (
             <a
               key={i}
@@ -339,28 +296,30 @@ const Sidebar: React.FC<SidebarProps> = ({
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '8px',
-                fontSize: '12px',
-                fontWeight: 500,
-                color: 'var(--text-color)',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
+                fontSize: '13px',
+                fontWeight: 600,
+                color: '#38bdf8',
                 textDecoration: 'none',
-                background: 'transparent',
-                border: '1px solid var(--glass-border)',
-                padding: '12px 16px',
-                transition: 'all 0.2s'
+                background: 'rgba(56, 189, 248, 0.12)',
+                border: '1px solid rgba(56, 189, 248, 0.3)',
+                padding: '8px 16px',
+                borderRadius: '8px',
+                transition: 'all 0.2s',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
               }}
               onMouseOver={(e) => {
-                e.currentTarget.style.background = 'var(--text-color)';
-                e.currentTarget.style.color = 'var(--bg-color)';
+                e.currentTarget.style.background = 'rgba(56, 189, 248, 0.22)';
+                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)';
+                e.currentTarget.style.transform = 'translateY(-1px)';
               }}
               onMouseOut={(e) => {
-                e.currentTarget.style.background = 'transparent';
-                e.currentTarget.style.color = 'var(--text-color)';
+                e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
+                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.3)';
+                e.currentTarget.style.transform = 'none';
               }}
             >
+              <ExternalLink size={14} />
               <span>{src.label}</span>
-              <ArrowUpRight size={14} weight="bold" />
             </a>
           ))}
         </div>
