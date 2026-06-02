@@ -117,7 +117,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     
     const parsedSources = raw.split(';').map(urlStr => {
       const url = urlStr.trim();
-      let label = t('viewSource', lang);
+      let label: string;
       
       if (url.includes('wikipedia.org')) {
         label = 'Wikipedia';
