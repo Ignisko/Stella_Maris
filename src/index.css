@@ -320,6 +320,11 @@ input, button, textarea, select {
   color: #111827 !important;
 }
 
+.label-content:not(.selected):hover span {
+  color: #111827 !important;
+  text-shadow: none !important;
+}
+
 /* Custom offsets for label contents (not selected and selected) */
 .globe-html-label[data-offset="left"] .label-content:not(.selected) {
   transform: translate(-100%, -50%) translateX(-12px) scale(var(--globe-label-scale, 1));

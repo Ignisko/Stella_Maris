@@ -515,7 +515,7 @@ function App() {
         display: 'flex',
         flexDirection: 'column',
         gap: isTimelineOpen ? '0px' : '10px',
-        pointerEvents: isTutorialActive && tutorialStep < 5 ? 'none' : 'none',
+        pointerEvents: isTutorialActive && tutorialStep < 5 ? 'none' : 'auto',
         opacity: isTutorialActive && tutorialStep < 5 ? 0.35 : 1,
         transform: (hasPopups || isCinemaMode) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
         transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), gap 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease'
