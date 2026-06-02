@@ -138,11 +138,11 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
         >
           {absolute ? (
             <>
-              <span style={{ fontSize: '16px' }}>🎚️</span>
+              <Filter size={16} />
               <span>{t('filters', lang)}</span>
             </>
           ) : (
-            '🎚️'
+            <Filter size={22} />
           )}
         </button>
       ) : (

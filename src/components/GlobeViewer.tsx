@@ -6,6 +6,7 @@ import { Play, Pause, X } from 'lucide-react';
 import { getStatusColor, hexToRgb } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
+import { config as appConfig } from '../config';
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoiaWduaW1icml0ZSIsImEiOiJjbXBtOHFucHgwMTg2MnBzYnl1cXVqdjU0In0' + '.' + '9F99qXNcy8GchCFtd7JKWw';
 
@@ -397,7 +398,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
         }
       }
 
-      const pri = app.priority ?? 3;
+      const pri = app.priority ?? (appConfig.projectId === 'eucharist' ? 1 : 3);
       return pri <= allowedPriority;
     });
 
