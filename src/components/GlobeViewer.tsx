@@ -27,9 +27,9 @@ interface GlobeViewerProps {
 const configureOrbitControls = (controls: any) => {
   controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
   controls.maxDistance = 400;
-  controls.zoomSpeed = 1.5; // Standard stable zoom speed
+  controls.zoomSpeed = 4.5; // Faster responsive zoom
   controls.enableDamping = true; // Premium inertial damping
-  controls.dampingFactor = 0.08; // High glide inertia for premium feel
+  controls.dampingFactor = 0.18; // Smoother and quicker glide
 };
 
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
@@ -487,7 +487,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     if (globeEl.current) {
       const pov = globeEl.current.pointOfView();
       if (pov) {
-        // Save current POV so we can restore it if they close the popup without selecting an item
+        // Save current POV
         prevPointOfViewRef.current = {
           lat: pov.lat,
           lng: pov.lng,
@@ -508,20 +508,28 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           altitude: targetAltitude
         }, 1200);
 
-        setClusterPopup({
-          lat: d.lat,
-          lng: d.lng,
-          items: d.clusteredItems || [d]
-        });
+        // Check if all items in the cluster are in the same town
+        const items = d.clusteredItems || [d];
+        const sameLocationName = items.every(item => item.location === items[0].location);
+        const sameCoords = items.every(item => Math.abs(item.lat - items[0].lat) < 0.01 && Math.abs(item.lng - items[0].lng) < 0.01);
+        const isSameTown = sameLocationName || sameCoords;
+
+        if (isSameTown && items.length > 1) {
+          // Zoom in first, then show the popup after the zoom completes
+          setTimeout(() => {
+            setClusterPopup({
+              lat: d.lat,
+              lng: d.lng,
+              items: items
+            });
+          }, 1200);
+        }
       }
     }
   };
 
   const handleCloseClusterPopup = () => {
     setClusterPopup(null);
-    if (prevPointOfViewRef.current && globeEl.current) {
-      globeEl.current.pointOfView(prevPointOfViewRef.current, 1200);
-    }
     prevPointOfViewRef.current = null;
   };
 
