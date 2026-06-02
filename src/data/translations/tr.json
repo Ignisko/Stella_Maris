@@ -674,5 +674,2105 @@
   "morris_us": {
     "title": "Morris'in Benekli Konakçıları",
     "description": "Atılmış iki kutsanmış konakçının üzerinde kan olduğu düşünülen noktalar bulundu. Laboratuvar analizleri bunların doğal bakterilerden kaynaklandığını gösterdi."
+  },
+  "patmos": {
+    "title": "Güneş Giyinmiş Kadın",
+    "description": "Efsaneye göre, Evangelist Aziz John, Vahiy Kitabı'nı yazmadan önce Meryem Ana'nın bir görümünü görmüştü."
+  },
+  "kuravilangad": {
+    "title": "Kuravilangad Meryem Ana",
+    "description": "Leydimiz sürülerini güden çocuklara göründü ve onlardan mucizevi bir sonsuz baharın filizlendiği bir kilise inşa etmelerini istedi."
+  },
+  "neocaesarea": {
+    "title": "Meryem Ana'dan Aziz Gregory'ye",
+    "description": "Meryem Ana ve Havari Yuhanna, Kutsal Üçleme ile ilgili teolojik gizemleri açıklığa kavuşturmak için Wonderworker Aziz Gregory'ye göründü."
+  },
+  "lepuy": {
+    "title": "Le Puy Meryem Ana",
+    "description": "Meryem Ana, ciddi bir hastalıktan mustarip olan Vila adında yeni din değiştiren birine göründü. Tamamen iyileşti ve bölgeye küçük bir şapel inşa etti."
+  },
+  "alexandria": {
+    "title": "Meryem Ana'dan Aziz Catherine'e",
+    "description": "Aziz Catherine, Meryem Ana ve Kutsal Çocuk vizyonuyla din değiştirdi ve bu da onun bir imparatorla evlenmeyi reddetmesine yol açtı."
+  },
+  "myra": {
+    "title": "Meryem Ana'dan Aziz Nicholas'a",
+    "description": "Bari Aziz Nicholas, kendisini manevi görevini yerine getirmeye teşvik eden iki hayaletle karşılaştı; ikincisi İznik Konsili sırasında meydana geldi."
+  },
+  "caesarea": {
+    "title": "Egemen Mediatrix",
+    "description": "Meryem, Aziz Basil'e göründü ve onu Roma imparatoru Mürted Julian'ın kilisesini yok etme planından koruyacağına söz verdi."
+  },
+  "tagaste": {
+    "title": "Meryem Ana'dan St. Monica'ya",
+    "description": "Meryem Ana, Aziz Augustine'in annesi Aziz Monica'ya göründü ve onu sıkıntılarında teselli etti."
+  },
+  "boulogne": {
+    "title": "Boulogne Meryem Ana",
+    "description": "Meryem heykelini taşıyan dümensiz bir gemi Boulogne'a yanaştı. Mary kalabalığa göründü ve şehri bir lütuf yeri olarak seçtiğini duyurdu."
+  },
+  "toledo": {
+    "title": "Meryem Ana'dan St. Ildefonso'ya",
+    "description": "Mary, Piskopos Ildefonso'nun dini coşkusunu övdü ve korumasının sembolü olarak ona değerli bir giysi verdi."
+  },
+  "benevento": {
+    "title": "Meryem Ana'dan Aziz Barabatus'a",
+    "description": "Meryem Ana, kuşatılmış II. Konstantin şehrinin surları altında Aziz Barabatus'a göründü."
+  },
+  "covadonga": {
+    "title": "Covadonga Meryem Ana",
+    "description": "Meryem Ana, Asturias'ın ilk Kralı Dom Pelayo'ya arkasında bir heykel bırakarak göründü. Daha sonra Hıristiyanlar, inanılmaz zorluklara rağmen Moors'u yendiler."
+  },
+  "mainz": {
+    "title": "Meşe Meryem Ana",
+    "description": "Aziz Boniface, bir meşe ağacına asılı mucizevi bir ikonadan Meryem'in sesini duydu: 'Bu meşe ağacının gövdesi sonsuza kadar benim portrem olarak kalacak.'"
+  },
+  "canterbury": {
+    "title": "Meryem Ana'dan Aziz Dustin'e",
+    "description": "Aziz Dustin katedralde dua ederken, Meryem Ana ona cennetten bir koroyla göründü."
+  },
+  "montefortino": {
+    "title": "Özgür Meryem Ana",
+    "description": "Kutsal Bakire, göksel Anneyi görünce mucizevi bir şekilde konuşma yeteneği verilen dilsiz çoban Santina'ya göründü."
+  },
+  "incoronata": {
+    "title": "Tanrı'nın Annesi taç giydi",
+    "description": "Meryem Ana, Cervaro ormanındaki bir meşe ağacının üzerinde Kont Irpino ve bir çobana göründü ve onlardan bir kilise inşa etmelerini istedi."
+  },
+  "valenciennes": {
+    "title": "Kordon Meryem Ana",
+    "description": "Meryem, vebayı durdurmak için şehrin etrafına bir ip geren ve sakinlerden bir geçit töreni düzenlemelerini isteyen birçok Melekle birlikte ortaya çıktı."
+  },
+  "montserrat": {
+    "title": "Montserrat Meryem Ana",
+    "description": "Daha sonra Montserrat'ın ünlü kutsal alanı haline gelecek olan bölgedeki bir annenin erken dönem Marian hayaleti."
+  },
+  "chartres": {
+    "title": "Meryem Ana'dan St. Fulbert'e",
+    "description": "Aziz Fulbert, Kutsal Bakire'nin hayaletinin ardından ciddi bir hastalıktan kurtuldu. Minnettarlıkla ünlü Chartres Katedrali'ni kurdu."
+  },
+  "nocera": {
+    "title": "Santa Maria di Materdomini",
+    "description": "Meryem, köylü bir kadına köylüleri meşe ağacının altını kazmaya ikna etmesini emretti ve burada değerli bir Bizans ikonu buldular."
+  },
+  "palermo": {
+    "title": "Çare Leydimiz",
+    "description": "Hastalığın birlikleri arasında yayıldığı uzun bir kuşatma sırasında, Normanlar'dan I. Roger, çare sağlayan Madonna'nın hayaletini gördü."
+  },
+  "conche": {
+    "title": "Maddona di Conche",
+    "description": "Aziz Constantius, mucizevi bir şekilde beyaz bir güvercinle işaretlenmiş bir binanın çevresinde, kucağında Çocuk olan bir Hanımın kaldırıldığını gördü."
+  },
+  "liege": {
+    "title": "Meryem Ana'dan Başrahip Rupert'a",
+    "description": "Meryem Ana, mücadele eden öğrenci Rupert de Deutz'a göründü ve ona Tanrı'nın onuruna adanacak bilgi armağanını vaat etti."
+  },
+  "oudenburg": {
+    "title": "Meryem Ana'dan St. Arnulfo'ya",
+    "description": "Tanrı'nın Annesi, Aziz Arnulfo Arnold'a görünerek ölümünü duyurdu ve Meryem'in Göğe Kabulü arifesinde ölme isteğini yerine getirdi."
+  },
+  "arras": {
+    "title": "Ardent'li Meryem Ana",
+    "description": "Meryem bulutların üzerinde 'Evrenin Kraliçesi' olarak sakinlere göründü, onlardan kefaret etmelerini istedi ve mucizevi bir çeşme yaptırdı."
+  },
+  "turin": {
+    "title": "Maria Consolata",
+    "description": "Kör bir adam, ona Saracen istilalarından bu yana saklanan kayıp bir portresini ortaya çıkarması talimatını veren Kutsal Anne aracılığıyla görüşünü yeniden kazandı."
+  },
+  "reguengo": {
+    "title": "Eğrelti Otlarının Leydisi",
+    "description": "Bir çoban kız ekmek ve Meryem Ana tarafından yönlendirildiği mucizevi bir pınar buldu."
+  },
+  "citeaux": {
+    "title": "Meryem Ana'dan St. Alberico'ya",
+    "description": "Mary, Citeaux Başrahibine kalıcı koruma garantisi verdi ve Sistersiyenlerin beyaz kıyafetlerine ilham verdi."
+  },
+  "gargano_1120": {
+    "title": "Meryem Ana'dan Matera'lı Aziz John'a",
+    "description": "Meryem Ana, Aziz Michael mağarasını ziyaret ederken Materalı Aziz John'a göründü ve ona yeni bir manastırın nerede kurulacağını gösterdi."
+  },
+  "liesse": {
+    "title": "Liesse Meryem Ana",
+    "description": "Tutuklu üç Fransız şövalyesi, zindanlarında Meryem'den mucizevi, ışıltılı bir heykel aldılar ve bu heykel, padişahın kızı İsmenia'yı dönüştürdü."
+  },
+  "bingen": {
+    "title": "Meryem Ana'dan St. Hildegard'a",
+    "description": "Aziz Hildegard von Bingen, 'yaşayan ışık' ve Tanrı'nın Annesi hakkında derin vizyonlar deneyimledi ve bu onun inanılmaz teolojik ve bilimsel yazılarına yol açtı."
+  },
+  "becket": {
+    "title": "Meryem Ana'dan Aziz Thomas'a Becket",
+    "description": "Madonna, genç Thomas'a, Canterbury Başpiskoposu ve bir şehit olarak gelecekteki kaderini simgeleyen kırmızı bir cüppe gösterdi."
+  },
+  "schonau": {
+    "title": "Meryem Ana'dan Aziz Elizabeth'e",
+    "description": "Schönau'lu Aziz Elizabeth, Ayin ve İlahi Makam sırasında Mesih ve Kutsal Annesinin coşkuları ve vizyonlarıyla ödüllendirildi."
+  },
+  "mariazell": {
+    "title": "Maria Zell'in Madonna'sı",
+    "description": "Magnus adında bir keşiş, sık ağaçların kendisine yer açmak için aralandığı vahşi doğaya küçük bir heykel götürdü. Orta Avrupa'nın en ünlü tapınaklarından biri haline geldi."
+  },
+  "tortosa": {
+    "title": "La Santa Cinta",
+    "description": "Kutsal Bakire, gece vakti bir hayaletle kutsal kurdelesini veya kuşağını (La Santa Cinta) katedralin ana sunağına bıraktı."
+  },
+  "pochaiv": {
+    "title": "Pochaiv Meryem Ana",
+    "description": "Kutsal Bakire Meryem tüm ihtişamıyla ortaya çıktı, kayada bir ayak izi bıraktı ve bir dizi mucize yaratarak Lavra'nın kurulmasına yol açtı."
+  },
+  "ransom": {
+    "title": "Fidye Meryem Ana / Merhamet",
+    "description": "Kutsal Bakire, Hıristiyan tutsakları Mağribi esaretinden kurtarmak için Mercedarian dini tarikatını kuran üç adama göründü."
+  },
+  "gorodetsk": {
+    "title": "Meryem Ana'dan Aziz İbrahim'e",
+    "description": "Meryem Ana, Rus keşiş Aziz Abraham de Gorodetsk'e göründü ve ondan vahşi doğada bir inziva yeri inşa etmesini talep etti."
+  },
+  "roverano": {
+    "title": "Roverano Meryem Ana",
+    "description": "Meryem Ana iki çobana görünerek doğuştan dilsiz olanı iyileştirmiş ve bir zeytin ağacına Bizans tarzı mucizevi bir ikon bırakmıştır."
+  },
+  "laurignano": {
+    "title": "Laurignano Meryem Ana",
+    "description": "Kör bir dilenci olan Simone Adami, Mary rüyasında onunla konuştuktan sonra yakındaki bir pınarda yıkandı: 'Pınarda yıkayın ve görün.' Görüşü düzeldi."
+  },
+  "proceno_agnes": {
+    "title": "Meryem Ana'dan St. Agnes'e",
+    "description": "Montepulciano'lu Aziz Agnes, Meryem'den, onun onuruna bir kilise ve Dominik manastırı inşa etme talimatı içeren üç küçük taş aldı."
+  },
+  "santagata": {
+    "title": "Madonna del Soccorso",
+    "description": "Genç bir anne öfkeyle çocuğuna bağırdı; Bir iblis ortaya çıktığında ışık saçan bir kadın çocuğu kurtardı. Tapınak bölgesel hac ziyaretleriyle meşhur oldu."
+  },
+  "spoleto_clare": {
+    "title": "Meryem Ana'dan St. Clare'e",
+    "description": "Montefalco'lu Aziz Clare, ölümünden kısa bir süre önce Kutsal Meryem'in önünde Melekler'in muhteşem bir görüntüsünü aldı. Kalbi ve bedeni bozulmadan kalır."
+  },
+  "bridget_sweden": {
+    "title": "Meryem Ana'dan St. Bridget'e",
+    "description": "Mary, hayatı boyunca İsveçli St. Bridget'e birçok vahiy ile eşlik etti ve ona manastır Brigidine Tarikatı'nı kurmasında rehberlik etti."
+  },
+  "bergamo_castagno": {
+    "title": "Kestane Madonnası",
+    "description": "Meryem Ana, Bergamo civarındaki kestane korularında bir köylüye göründü."
+  },
+  "florence_servites": {
+    "title": "Meryem Ana'dan Aziz Alexis Falconieri'ye",
+    "description": "Alexis ve arkadaşları, Tanrı'nın Annesinin hayaletiyle ödüllendirildi ve bu onlara Hizmet Tarikatı'nı kurma konusunda ilham verdi."
+  },
+  "pisa_jordan": {
+    "title": "Meryem Ana'dan Bl'ye. Pisa Ürdün",
+    "description": "Ünlü Dominikli vaiz Bl. Ürdün, Meryem Ana'nın keşişlerin yemekhanesine girip onlara masada hizmet ettiği vizyonuyla beğenildi."
+  },
+  "avignon_favier": {
+    "title": "Günahkarların Sığınağı",
+    "description": "Carthus'lu keşiş Peter Favier, Mary ortaya çıkıp onu rahatlatana kadar ölümden korkuyordu: 'Merhametimin seni kurtaracağını düşünmüyor musun?'"
+  },
+  "avignon_john22": {
+    "title": "Sabbatine Ayrıcalığı",
+    "description": "Azizler Kraliçesi, Papa XXII. John'a göründü ve Carmel'in çocukları için Araf'tan hızlı bir şekilde kurtuluş sözü verdi (Sabahat Ayrıcalığı)."
+  },
+  "constance": {
+    "title": "Meryem Ana'dan Bl'ye. Henry Suso",
+    "description": "Alman Dominikli mistik, ünlü 'Küçük Ebedi Bilgelik Kitabı'nı şekillendiren Meryem ve Meleklerin birçok görüntüsünü aldı."
+  },
+  "montserrat_1325": {
+    "title": "Montserrat Meryem Ana",
+    "description": "Tutsak oğlu için ağlayan bir anne, serbest bırakılacağına söz veren Meryem'i gördü; günler sonra çocuk geri döndü, zincirleri mucizevi bir şekilde çözüldü."
+  },
+  "asti": {
+    "title": "Meryem Ana'dan Piskopos Guido'ya",
+    "description": "Madonna, feodal beyler arasında amansız barışı sağlama çabalarıyla tanınan Asti Piskoposu Guido'ya mucizevi bir şekilde göründü."
+  },
+  "guadalupe_spain": {
+    "title": "Guadalupe Meryem Ana (İspanya)",
+    "description": "Çoban Gil Cordero, Meryem'in 600 yıl önce Papa Büyük Gregory tarafından verilen mucizevi bir heykeli ortaya çıkarması yönünde talimat veren bir hayaletiyle karşılaştı."
+  },
+  "moscow_peter": {
+    "title": "Meryem Ana'dan Aziz Petrus'a",
+    "description": "Kutsal Bakire, Moskova'daki Aziz Petrus'tan çalan kıskanç bir başrahibin karşısına çıktı ve onu tövbe edip Meryem'in ikonasını iade etmeye yöneltti."
+  },
+  "fiesole_corsini": {
+    "title": "Meryem Ana'dan Aziz Andrew Corsini'ye",
+    "description": "Meryem tören gününde şöyle dedi: 'Seni hizmetkarım olarak seçtim.' Yıllar sonra, Noel gecesi onun İsa'nın Doğuşu'ndaki cennetteki ölümünü önceden bildirmek için ortaya çıktı."
+  },
+  "bergerac": {
+    "title": "Meryem Ana'dan Aziz Peter Thomasius'a",
+    "description": "Meryem, Aziz Peter Thomasius'a yoğun havarisel faaliyeti ve Yunan ve Roma kiliseleri arasındaki barış arabuluculuğunu teşvik ederek göründü."
+  },
+  "estremoz": {
+    "title": "Meryem Ana'dan Aziz Elizabeth'e",
+    "description": "Ölümünden kısa bir süre önce, dul Portekiz Kraliçesi Elizabeth, Meryem'i, onu kutsal bir yolculuğa hazırlayan harika 'Cennetin Kraliçesi' olarak gördü."
+  },
+  "pistoia": {
+    "title": "Pistoia Meryem Ana",
+    "description": "Mary hasta bir kıza göründü ve ondan Augustinian'cı bir rahipten mesajını Lenten vaazlarında yaymasını söylemesini istedi; görüntüsü mucizevi bir şekilde duvara basıldı."
+  },
+  "bra": {
+    "title": "Çiçeklerin Madonnası",
+    "description": "Meryem Ana bebek bekleyen bir anneyi paralı askerlerden kurtarıyormuş gibi göründü; yakındaki karadiken çalıları kışın ortasında mucizevi bir şekilde çiçek açmıştı."
+  },
+  "paris_franciscans": {
+    "title": "Meryem Ana'dan Fransiskenlere",
+    "description": "Meryem Ana, Müjde bayramında Kutsal Ayin sırasında Çocuk İsa ile birlikte tüm Fransiskan manastır topluluğunun önünde göründü."
+  },
+  "radonezh": {
+    "title": "Meryem Ana'dan Aziz Sergius'a",
+    "description": "Meryem, Havari Peter ve Yuhanna ile birlikte Radonezh'li Aziz Sergius'a göründü ve ona, manastırı üzerindeki daimi himayesi konusunda güvence verdi."
+  },
+  "tournai": {
+    "title": "Tournai Meryem Ana",
+    "description": "Kuşatma sırasında halk sembolik olarak şehrin anahtarlarını Meryem'e verdi. Düşman kampındaki mucizevi hayaletler, kuşatan askerlerin kaçmasına neden oldu."
+  },
+  "cairo_livini": {
+    "title": "Meryem Ana'dan Bl'ye. Livini",
+    "description": "Meryem, Fransisken misyoneri Livini'ye şöyle göründü: 'İşinizi tamamlayın, böylece İsa'yı göreceksiniz.' Aynı yılın sonlarında şehit oldu."
+  },
+  "montenero": {
+    "title": "Madonna di Montenero",
+    "description": "Sakat bir çoban çocuğu mucizevi bir görüntü buldu; talimat verildiği gibi onu dağa taşıdıktan sonra tamamen iyileşti."
+  },
+  "siena_catherine": {
+    "title": "Meryem Ana'dan Aziz Catherine'e",
+    "description": "Siena'lı Aziz Catherine, Kutsal Bakire'nin onu mistik evliliği için İsa'ya sunduğu derin mistik vizyonlar deneyimledi."
+  },
+  "basella": {
+    "title": "Zeytin Madonnası",
+    "description": "Cennetin Kraliçesi, kucağında bebek İsa ile 15 yaşındaki Marina Cassone'ye göründü ve piskoposu büyük bir sığınak inşa etmeye teşvik etti."
+  },
+  "naples_prisoners": {
+    "title": "Mahkumların Kurtarıcısı",
+    "description": "Veronalı Kont Charles, Türkler tarafından hapsedildi; Meryem'e çaresizce dua ettikten sonra mucizevi bir şekilde Napoli'deki bir Karmelit kilisesine nakledildi."
+  },
+  "dovera": {
+    "title": "Beata Vergine del Pilastrello",
+    "description": "Meryem Ana, Lombardiya'da sağır-dilsiz genç bir çoban kadına göründü."
+  },
+  "pribram": {
+    "title": "Glatz Meryem Ana / Svatá Hora",
+    "description": "Başpiskopos Ernest Pardubitz, Meryem'in heykelinin mucizevi bir şekilde dünyevi yaşamını onaylamayan bir şekilde başını çevirdiğini ve onun derin bir dönüşüme yol açtığını gördü."
+  },
+  "valencia_vincent": {
+    "title": "Meryem Ana'dan St. Vincent Ferrer'e",
+    "description": "Manevi şüphelerle kafası karışan genç Vincent, Mary'den anlayış istedi. Görünüşe göre ona güven veriyor, tarihi vaazını güçlendiriyordu."
+  },
+  "aljubarrota": {
+    "title": "Aljubarrota Meryem Ana",
+    "description": "Catarina Anes adlı fakir bir kadın, Valle de Deus dağında mucizevi bir şifalı pınarı ortaya çıkarmak için Mary tarafından yönlendirildi."
+  },
+  "mariastein": {
+    "title": "Meryem Ana Mariastein",
+    "description": "Sarp bir uçurumdan düşen küçük bir çocuk, harika bir bayan tarafından mucizevi bir şekilde yakalanıp kurtarıldı ve bu, ünlü manastırın inşasına yol açtı."
+  },
+  "segovia": {
+    "title": "Segovia Meryem Ana",
+    "description": "Meryem bir çobana göründü ve piskoposa, Tanrı'nın Annesinin bir taht üzerinde gömülü, birinci yüzyıldan kalma ahşap bir ikonasını ortaya çıkarması talimatını verdi."
+  },
+  "garaballa": {
+    "title": "Garaballa Meryem Ana",
+    "description": "Göğe Yükseliş arifesinde genç bir çoban, bir ağacı aydınlatan parlak bir ışık gördü ve dalların arasında güzel bir Meryem heykeli keşfetti."
+  },
+  "valverde": {
+    "title": "Valverde Meryem Ana",
+    "description": "Meryem Ana 1399 yılının Temmuz ayında bir köylüye göründü."
+  },
+  "santagadea": {
+    "title": "Virgen del Espino",
+    "description": "İki çoban, üzerinde Meryem Ana'nın durduğu, güneşten daha parlak parlayan bir çalı keşfetti ve bu, kasabanın noteri tarafından kaydedildi."
+  },
+  "avila": {
+    "title": "Avila Meryem Ana",
+    "description": "Tarihsel kayıtlar, Meryem Ana'nın yüzyılın başında Avila'nın ortaçağ duvarlarının dışında göründüğünü kaydeder."
+  },
+  "almonacid": {
+    "title": "Almonasit Meryem Ana",
+    "description": "Bakire ortaya çıktı ve Almonacid de Toledo'da bir kutsal alan inşa edilmesini istedi."
+  },
+  "dolni_dvoriste": {
+    "title": "Karların Leydisi Kutsal Taş'ta",
+    "description": "Meryem, parçalanan bir kayanın tepesinde çobanlara göründü. Clarissa rahibeleri Kutsal Taş'ın üzerine Karlı Aziz Meryem Kilisesi'ni inşa ettiler. Onlarca yıl süren komünist yıkımın ardından, uluslararası inananlar kutsal alanı yeniden inşa etti."
+  },
+  "vedano": {
+    "title": "Merhamet Hanımefendimiz",
+    "description": "Şiddetli bir veba salgını sırasında insanlar ormana kaçtı ama bela onları ele geçirdi. Madonna, teselli eden Çocuğu tutan bir ağaçta belirdi ve ateş hızla kayboldu."
+  },
+  "pannesi": {
+    "title": "Ormanlık Meryem Ana",
+    "description": "Kutsal Bakire Lumarzo'nun ormanlarında ortaya çıktı ve yerel köylüler arasında bağlılık uyandırdı."
+  },
+  "sansosti": {
+    "title": "Pettoruto Meryem Ana",
+    "description": "1500 yılının baharında, Felice Olcese adında sağır-dilsiz bir çoban, Meryem Ana'yı gördü ve ondan bir rahibe onun onuruna bir kilise inşa etmesini söylemesini istedi."
+  },
+  "werthenstein": {
+    "title": "Gökyüzünün Kraliçesi",
+    "description": "Dindar bir çiftçi ve keşiş, Meryem'i çok sayıda melek tarafından çevrelenen Gökyüzünün Kraliçesi olarak gördü. Mucizeler Marian'ın hayaletini doğruladı ve bir şapelin kutsanmasına yol açtı."
+  },
+  "villarrasa": {
+    "title": "Virgen de los Remedios",
+    "description": "18 Aralık 1503'te Çareler Bakiresi ortaya çıktı ve Huelva'da önemli bir bölgesel bayram ve kutsal alan kurdu."
+  },
+  "trino": {
+    "title": "Meryem Ana'dan Bl'ye. Maddalena",
+    "description": "Kutsanmış Maddalena Panattieri, Meryem Ana'yı 1503'te kutsal ölümünden kısa bir süre önce gördü. Daha sonra Papa Leo XII tarafından aziz ilan edildi."
+  },
+  "tirano": {
+    "title": "Madonna di Tirano",
+    "description": "Genç bir adam hasta kardeşi için hararetle dua etti. Mary 29 Eylül'de ortaya çıktı ve iyileşme sözü verdi. Minnettarlıkla ünlü Madonna di Tirano Tapınağı'nı inşa etti."
+  },
+  "sanpolo": {
+    "title": "Ceviz Meryem Ana",
+    "description": "9 Haziran 1505'te Meryem Ana, bir ceviz ağacının yanında Giovanna adında bir kadına göründü."
+  },
+  "virgendelcamino": {
+    "title": "Virgen del Camino",
+    "description": "2 Temmuz 1505'te Mary, Camino de Santiago hac yolunda çoban Alvar Simón Fernández'e ışık saçıyor gibi göründü. Sapanıyla mucizevi bir şekilde büyüyerek kutsal alanı işaretleyen bir taşı fırlattı."
+  },
+  "chioggia": {
+    "title": "Küçük Geminin Kutsal Bakiresi",
+    "description": "Meryem Ana, Chioggia kıyılarında Carlo Baldissera Zanon'a göründü ve yerel denizcilerin ve balıkçı teknelerinin koruyucusu oldu."
+  },
+  "villefranche": {
+    "title": "Notre-Dame de Treize-Pierres",
+    "description": "19 Mart 1509'da On Üç Taşlı Meryem Ana ortaya çıktı ve Aveyron'da kalıcı bir sığınak kurdu."
+  },
+  "motta_livenza": {
+    "title": "Madonna dei Miracoli",
+    "description": "9 Mart 1510'da Meryem, yeşil buğdayın üzerinde sessizce otururken yaşlı çiftçi Giovanni Cigana'ya göründü ve günahların bağışlanması için oruç tutmayı ve tövbe etmeyi emretti."
+  },
+  "bergamo_chestnuts": {
+    "title": "Kestane Madonnası",
+    "description": "28 Nisan 1510'da Meryem, yaprak toplayan bir baba ve oğluna göründü. Onun gerçek varlığını ve bir sığınak arzusunu doğrulamak için büyük bir kestane ağacı aniden mevsimi dışında tamamen olgunlaşmış meyveler verdi."
+  },
+  "aviano": {
+    "title": "Dağın Meryem Ana'sı",
+    "description": "8 Eylül 1510'da Meryem Ana dağın yamacında Antonio Zampara'nın yanına göründü."
+  },
+  "castelleone": {
+    "title": "Merhametli Kutsal Meryem",
+    "description": "Mayıs 1511'de Mary, üzüm hasatçısı Domenica Zanenga'ya göründü ve daha sonra Augustinian rahiplerine emanet edilecek bir kutsal alanın inşası konusunda ısrar etti."
+  },
+  "treviso_jerome": {
+    "title": "Mahkumların Kurtuluşu",
+    "description": "Bir kale zindanında hapsedilen Aziz Jerome Emiliani, Meryem'e dua etti. Hafifçe ortaya çıktı, mucizevi bir şekilde onu ağır demir zincirlerinden kurtardı ve onu güvenli bir şekilde düşman savaş hatlarından geçerek Treviso'daki tapınağına götürdü."
+  },
+  "albendorf": {
+    "title": "Albendorf Meryem Ana / Wambierzyce",
+    "description": "Kör bir adam, bir hayaletin ortaya çıkmasının ardından bir şövalye tarafından oyulmuş ahşap bir heykelin önünde dua etti ve mucizevi bir şekilde görüşünü yeniden kazandı. Kutsal alan, 'Silezya Kudüs'ü' olarak bilinen muhteşem bir bazilikaya dönüştü."
+  },
+  "oneta": {
+    "title": "Kül Madonnası",
+    "description": "2 Temmuz 1512'de Meryem Ana, dişbudak ağacının yanında Petruccia Carobbio'ya göründü."
+  },
+  "strugnano": {
+    "title": "Vizyonun Madonna'sı",
+    "description": "14 Ağustos 1512'de Mary, Strunjan'ın kapılarında bekçi Piero Zagabria ve Giovanni Grandi'ye göründü."
+  },
+  "angels_lucerne": {
+    "title": "Meleklerin Leydisi",
+    "description": "Belediye meclisi üyesi Maurice von Mettenwyl, Meryem Ana'nın göksel bir ışıkla çevrelendiğini gördü ve onun onuruna bir şapel inşa etme sözü verdi."
+  },
+  "liveri": {
+    "title": "Santa Maria a Parete",
+    "description": "12 Nisan 1514'te Mary, genç köylü Autilia Scala'ya göründü ve ona Kont Orsini'yi bir çalının altına gömülü 13. yüzyıldan kalma bir Bizans ikonu ve çanını ortaya çıkarması için yönlendirmesi talimatını verdi."
+  },
+  "garaison": {
+    "title": "Notre Dame de Garaison",
+    "description": "Meryem, Cier'in kaynağının yakınında genç çoban Angleze Sagazan'ı üç kez ziyaret ederek şunları rica etti: 'Burada bir şapel inşa edilmesini istiyorum.'"
+  },
+  "rome_cajetan": {
+    "title": "Meryem Ana'dan St. Cajetan'a",
+    "description": "Noel gecesi, Santa Maria Maggiore'de, Thiene'li Aziz Cajetan, Meryem'in Bebek İsa'yı doğrudan onun kollarına verdiği muhteşem bir görüntü yaşadı."
+  },
+  "camogli": {
+    "title": "Dağın Meryem Ana'sı",
+    "description": "2 Temmuz 1518'de Mary, Angela Schiaffino'ya göründü ve Ligurya denizine bakan dağda bir kilise ve manastır istedi."
+  },
+  "adro": {
+    "title": "Günahkarların Avukatı",
+    "description": "Meryem, sağır-dilsiz bir çoban olan Battista Comino Bajoni'ye görünerek ona bir konuşma yaptı ve bölgeyi ahlaksızlıktan uzaklaştıran bir mesaj verdi. Bir işaret olarak ona mucizevi bir şekilde rengi değişen bir kaya verdi."
+  },
+  "cotignac": {
+    "title": "Meryem Ana",
+    "description": "10 ve 11 Ağustos'ta Meryem, Çocuk İsa, Aziz Mikail ve Aziz Bernard ile birlikte oduncu Jean de la Baume'un yanına göründü. Kutsal alan daha sonra Kral Louis XIV'in mucizevi doğumuyla ün kazandı."
+  },
+  "aberdeen": {
+    "title": "Meryem Ana'dan Piskopos Dumbar'a",
+    "description": "Meryem ikonunun önünde dua ederken Piskopos Gavan Dumbar'a göründü ve yaygın dini kargaşaya rağmen sadakatinin korunacağını önceden bildirdi."
+  },
+  "tarbes": {
+    "title": "Şifa Aşkı Leydimiz",
+    "description": "Meryem kilise isteyen genç bir çobana göründü. Kız, Meryem'den babasını getirirken sürüsüne göz kulak olmasını istediğinde, Meryem mucizevi bir şekilde koyunlara göz kulak oldu."
+  },
+  "cori": {
+    "title": "Kurtuluş Meryem Ana / Süpürge",
+    "description": "Şiddetli bir fırtına sırasında Mary, üç yaşındaki Oliva Lannese'yi kurtardı. Kasaba alay halinde dağa gitti ve tahtında Meryem Ana'nın eski bir freskini ortaya çıkardı."
+  },
+  "loyola": {
+    "title": "Meryem Ana'dan Aziz Ignatius'a",
+    "description": "St. Ignatius, Loyola'daki savaş yaralarının iyileşmesi sırasında Meryem Ana ve Çocuk'un derin bir gece görüşünü deneyimledi ve bu onun tamamen din değiştirmesini ve Cizvitlerin kuruluşunu başlattı."
+  },
+  "quintanar": {
+    "title": "Francisca La Brava",
+    "description": "Francisca la Brava, Meryem Ana'nın meleklerle çevrili olduğunu ve bir mum aldığını gördüğünü bildirdi. Daha sonra Engizisyon tarafından incelendi ve mahkum edildi."
+  },
+  "bovegno": {
+    "title": "Merhamet Hanımefendimiz",
+    "description": "Meryem, 22 yaşındaki yetim Maria Amadini'ye göründü ve yaklaşan felaketleri önlemek için oruç tutma ve tövbe etme çağrısında bulundu. Maria'nın erkek kardeşini iyileştirerek varlığını doğruladı."
+  },
+  "sens": {
+    "title": "Sens Meryem Ana",
+    "description": "Yıkıcı bir veba salgını sırasında Meryem, Kutsal Ayin sırasında yoğun mavi bir ışıkta göründü. Kısa süre sonra salgın mucizevi bir şekilde durdu."
+  },
+  "gubel": {
+    "title": "Gubel Meryem Ana",
+    "description": "11 ve 23 Ekim'de Meryem, Gubel Dağı'ndaki Katolik askerlere göründü, onların savunmasına ilham verdi ve sayıca çok fazla olmasına rağmen mucizevi bir zafere yol açtı."
+  },
+  "naples_constantinople": {
+    "title": "Konstantinopolis'in Kutsal Meryemi",
+    "description": "Meryem Ana, 1529 yılının Haziran ayında Napoli'de yaşlı bir kadına göründü."
+  },
+  "guadalupe_mexico": {
+    "title": "Guadalupe Meryem Ana",
+    "description": "Meryem, Tepeyac Tepesi'nde St. Juan Diego'ya göründü ve mucizevi, solmayan imajını doğrudan onun tilma pelerininin üzerine kazıdı. Dünyanın en çok ziyaret edilen Marian tapınağıdır."
+  },
+  "paitone": {
+    "title": "Madonna di Paitone",
+    "description": "Ağustos 1532'de Mary, sağır-dilsiz köylü çocuk Filippo Viotti'ye göründü, onu mucizevi bir şekilde iyileştirdi ve dağda bir sığınak talep etti."
+  },
+  "ipswich": {
+    "title": "Our Lady of Grace Ipswich'te",
+    "description": "Korkunç şeytani nöbetler geçiren Anne Wentworth, St. Thomas More tarafından belgelenen bir olay olan Meryem Ana'nın imajının önünde mucizevi bir şekilde ve anında kendine geldi."
+  },
+  "peru_rosary": {
+    "title": "Tespih Meryem Ana",
+    "description": "Lima'da göze çarpan erken sömürge hayaletleri ve Marian bağlılığı oluştu."
+  },
+  "altkirch": {
+    "title": "Altkirch Meryem Ana",
+    "description": "Meryem Ana, bölgesel dini çatışmalar sırasında sakinleri korumak için şehir kalesinin üzerinde göründü."
+  },
+  "savona": {
+    "title": "Merhametin Annesi",
+    "description": "18 Mart 1536'da Mary göz kamaştırıcı bir ışıkla çiftçi Antonio Botta'ya bir derede göründü ve dua, merhamet ve dönüşüm çağrısında bulundu. Savona'nın resmi hamisi."
+  },
+  "cuzco": {
+    "title": "Bizim İniş Leydimiz",
+    "description": "23 Mayıs 1536'da Meryem, kundakçı yangınları nedeniyle kuşatılmış Hıristiyanlara çatının üzerinden göründü. Alevler mucizevi bir şekilde sönerek halkı kurtardı."
+  },
+  "montestella": {
+    "title": "Yıldız Madonnası",
+    "description": "31 Mayıs 1536'da Mary, Monte Stella'da Antonio de' Antoni'ye göründü."
+  },
+  "combarbio": {
+    "title": "Carmel Dağı'ndaki Madonna",
+    "description": "Mary, 12 yaşındaki bir çoban kıza göründü ve bu, büyük dükalık mimarları tarafından güzel bir Rönesans Karmelit tapınağının inşasına yol açtı."
+  },
+  "farigliano": {
+    "title": "Vergine delle Grazie",
+    "description": "Meryem Ana'nın 20 Mayıs 1537'de Piedmont'ta ortaya çıkışı."
+  },
+  "svetagora": {
+    "title": "Meryem Ana Sveta Gora",
+    "description": "Meryem, Skalnica Dağı'nda çoban Ursula Ferligoj'a göründü: 'İnsanlara burada bir tapınak inşa etmelerini ve benden lütuf istemelerini söyle.' Şüpheci yetkililer tarafından hapsedilmesine rağmen Ursula her seferinde mucizevi bir şekilde kaçtı."
+  },
+  "gorizia": {
+    "title": "Gorizia Meryem Ana",
+    "description": "Meryem, insanları duaya ve barışmaya çağıran bir çobana göründü."
+  },
+  "ocotlan_1541": {
+    "title": "Ocotlán Meryem Ana",
+    "description": "Leydimiz bir salgın sırasında Juan Diego Bernardino'ya göründü, onu şifalı bir su kaynağına götürdü ve yanan bir çam ağacının içindeki mucizevi bir ahşap heykeli ortaya çıkardı."
+  },
+  "leuven_wischaven": {
+    "title": "Meryem Ana'dan Fr. Wischaven",
+    "description": "Mary, Cornelius Wischaven'a görünerek onu St. Peter Faber ve Loyola'lı St. Ignatius'a ilk Flaman Cizvit olarak katılmaya yönlendirdi."
+  },
+  "ameno": {
+    "title": "Madonna della Bocciola",
+    "description": "28 Mayıs 1543'te Mary, çiçek açan bir karadiken çalısında sağır-dilsiz çoban kız Giulia Manfredi'ye göründü, konuşmasını yaptı ve Şabat dinlenmesine uyulmasını istedi."
+  },
+  "cantu": {
+    "title": "Andacollo Meryem Ana",
+    "description": "Marian'ın hayaleti 1543 yılının Mayıs ayında Cantu'da kaydedildi."
+  },
+  "andacollo": {
+    "title": "Andacollo Meryem Ana",
+    "description": "Yerli madenciler Şili dağlarında mucizevi bir Meryem heykeli keşfettiler ve Güney Amerika'nın en saygın ulusal tapınaklarından birini oluşturdular."
+  },
+  "montegridolfo": {
+    "title": "Beata Vergine delle Grazie",
+    "description": "25 Haziran 1548'de Rimini tepelerinde Kutsal Meryem Ana ortaya çıktı."
+  },
+  "poggio_bologna": {
+    "title": "Beata Vergine di Poggio",
+    "description": "22 Şubat 1550'de Mary kör dilenci Antonia Bedini'ye göründü ve dolabının hayatının geri kalanında ekmek sağlayacağına söz verdi."
+  },
+  "granada_john": {
+    "title": "Meryem Ana'dan Tanrı'nın Aziz Yahya'sına",
+    "description": "Meryem, atından şiddetli bir düşüşün ardından Aziz John'a yardım etmek ve iyileştirmek için basit bir köylü kadın olarak ortaya çıktı ve ömür boyu hastane havariliğini başlattı."
+  },
+  "lisbon_barradda": {
+    "title": "Meryem Ana'dan Sebastian Barradda'ya",
+    "description": "Mary, Sebastian Barradda'ya göründü ve onu Cizvit tarikatına girmeye teşvik etti."
+  },
+  "weissenstein": {
+    "title": "Pietralba'lı Madonna",
+    "description": "Mary, Dolomite ormanlarında Leonhard Weissensteiner'a göründü, hastalığını iyileştirdi ve onu mucizevi bir Pietà heykeli ortaya çıkarmaya yönlendirdi. Kutsal alan Papa I. John Paul ve St. John Paul II tarafından ziyaret edildi."
+  },
+  "vailankanni_1580": {
+    "title": "Sağlıklı Meryem Anamız",
+    "description": "Meryem, Çocuk İsa'ya süt sunan bir çoban çocuğa göründü ve daha sonra ayran satan sakat bir çocuğu mucizevi bir şekilde iyileştirdi. Milyonlarca kişi tarafından 'Doğu'nun Lourde'ları' olarak büyük saygı duyuldu."
+  },
+  "azay": {
+    "title": "Diz çöken Meryem Ana",
+    "description": "8 Eylül 1550'de Mary, yolda diz çökmüş dul Louise Estivalle'ye göründü ve ona Kutsal Kitle Kurbanının millerce ötesinden mucizevi bir görüntü verdi."
+  },
+  "corbetta": {
+    "title": "Kutsal Mucizeler Bakiresi",
+    "description": "17 Nisan 1555'te, Meryem Ana'yı geri çağırmadan önce, freskteki Çocuk İsa mucizevi bir şekilde üç çocukla oynamak için aşağıya indi."
+  },
+  "civitella": {
+    "title": "Meryem Ana'dan Pasquino'ya",
+    "description": "1556'da 10 yaşındaki Pasquino da Vignale'nin hayaleti."
+  },
+  "arcola": {
+    "title": "Meleklerin Kraliçesi",
+    "description": "21 Mayıs 1556'da beş Fiamberti kız kardeş, zeytinliklerde tespih okurken Meryem'in meleklerle çevrili olduğunu gördüler."
+  },
+  "giulianova": {
+    "title": "Görkemli Madonna",
+    "description": "22 Nisan 1557'de Mary, göz kamaştırıcı bir ışıkla çiftçi Bertolino'ya bir zeytin ağacının yanında göründü. Şüpheciler onu dövdüğünde Meryem, tövbe edene kadar onların kollarını felç etti ve mucizevi bir pınarın akmasına neden oldu."
+  },
+  "rapallo": {
+    "title": "Montallegro Meryem Ana",
+    "description": "2 Temmuz 1557'de Meryem köylü Giovanni Chichizola'ya göründü ve her hareket ettiğinde gizemli bir şekilde dağa geri dönen Dormition'ın mucizevi bir Bizans ikonunu bıraktı."
+  },
+  "brescia_ledesma": {
+    "title": "Meryem Ana'dan Fr. Ledesma",
+    "description": "Meryem, Aziz Mary Magdalene ve Aziz Catherine ile birlikte Cizvit ilahiyatçısı Giacomo Ledesma'ya göründü ve manevi denemeler sırasında ona koruma sözü verdi."
+  },
+  "gerosa": {
+    "title": "Madonna della Foppa",
+    "description": "2 Temmuz 1558'de Meryem, çayırlarda susuzluktan ölen iki çobana göründü ve ayaklarının altına mucizevi bir saf su kaynağı açtı."
+  },
+  "monomotapa": {
+    "title": "Rodezya'daki Meryem Ana",
+    "description": "Cizvit misyoneri Fr. Gonçalo da Silveira, Monomotapa İmparatoru'na bir Meryem ikonası hediye etti; gece gökyüzü, Cennetin Kraliçesi tarafından art arda beş gece boyunca mucizevi bir şekilde aydınlatıldı."
+  },
+  "cordoba_font": {
+    "title": "Fontun Leydisi",
+    "description": "Meryem umutsuz bir işçiye göründü ve onu şifalı bir pınarın yakınındaki gizli bir ahşap heykele yönlendirdi."
+  },
+  "petrella": {
+    "title": "Petrella Meryem Ana",
+    "description": "31 Mayıs 1562'de Meryem, Persiana adında bir kadına göründü."
+  },
+  "moncrivello": {
+    "title": "Vergine del Trompone",
+    "description": "26 Haziran 1562'de Mary, Domenica di Miglianotto'ya göründü ve sakatlığını iyileştirdi."
+  },
+  "arenas_alcantara": {
+    "title": "Meryem Ana'dan Aziz Petrus'a",
+    "description": "Meryem, büyük Fransisken münzevi ve reformcu Alcantara'lı Aziz Peter'e göründü ve onun göksel ölümünü önceden bildirdi."
+  },
+  "avila_teresa": {
+    "title": "Meryem Ana'dan Aziz Teresa'ya",
+    "description": "Büyük Kilise Doktoru ve Karmelit reformcusu Ávila'lı Aziz Teresa, Meryem'in kendisine tertemiz saflıkta bir giysi giydirdiği yüce mistik vizyonlar yaşadı."
+  },
+  "torrehermosa": {
+    "title": "Meryem Ana'dan Aziz Paschal'a",
+    "description": "Mary, St. Francis ve St. Clare ile birlikte koyun otlatırken St. Paschal Baylón'a göründü ve onu Fransisken Tarikatı'na girmeye çağırdı."
+  },
+  "forli_jerome": {
+    "title": "Meryem Ana'dan Fr. Jerome",
+    "description": "Meryem parlak ışıkta Capuchin rahibi Jerome'a ​​göründü ve Angelus çanları çalarken onun cennete kesin geçişini tahmin etti."
+  },
+  "vienna_stanislaus": {
+    "title": "Meryem Ana'dan Aziz Stanislaus'a",
+    "description": "Genç Aziz Stanislaus Kostka Viyana'da ağır hasta yatarken, Meryem meleklerle birlikte ortaya çıktı ve Bebek İsa'yı onun kollarına yerleştirerek mucizevi bir şekilde sağlığına kavuştu."
+  },
+  "amendolara": {
+    "title": "Amendolara Meryem Ana",
+    "description": "Rahip Giuliano di Camerino, kutsal ölümünden kısa bir süre önce Cennetin Kraliçesi'nin görkemli bir vizyonunu yaşadı."
+  },
+  "ancona_novice": {
+    "title": "Ancona Meryem Ana",
+    "description": "Şeytani ayartmalara katlanan bir Capuchin acemi, ruhuna derin huzuru geri getiren Meryem'in hayaletini deneyimledi."
+  },
+  "faenza_alexander": {
+    "title": "Faenza Meryem Ana",
+    "description": "Kapuçin keşişi Butrium'lu İskender ruhsal sınavlar sırasında hararetle dua etti. Meryem ortaya çıktı ve onu bir zafer çelengiyle taçlandırdı."
+  },
+  "mariagyud": {
+    "title": "Máriagyűd Meryem Ana",
+    "description": "Kalvinistler tarihi tapınağı ele geçirdiğinde, Mary kilisenin penceresinde Thomas Mathinicz'e ve daha sonra portalda göründü. Mucizeden haberdar olan İmparator Leopold I, kutsal alanı Katoliklere iade etti."
+  },
+  "pistoia_jerome": {
+    "title": "Pistoia Meryem Ana",
+    "description": "Mary birçok kez Capuchin keşişi Jerome'a ​​göründü, bir kez onun ölümünü tahmin etti ve başka bir kez geceleri kırsal yollarda kaybolduğunda ona mucizevi bir şekilde rehberlik etti."
+  },
+  "seville_rodriguez": {
+    "title": "Meryem Ana'dan Aziz Alphonsus'a",
+    "description": "Sevilla'daki çırakların Cizvit ustası Aziz Alphonsus Rodriguez, dua ederken Meryem'le annesiyle bir çocuğun şefkatli yakınlığıyla konuştu."
+  },
+  "sancho_abarca": {
+    "title": "Nuestra Señora de Sancho Abarca",
+    "description": "7 Nisan 1569'da, Aragon'da Meryem Ana Sancho Abarca'nın mucizevi bir hayaleti ve keşfi meydana geldi."
+  },
+  "virgendelapaz": {
+    "title": "Virgen de la Paz",
+    "description": "Gizemli, ışıltılı bir bakire, ışıltılı bir kaya mağarasında kaybolmadan önce 'Tanrı, güneş ve yıldızlarla' yürüdüğünü söyleyerek dağ pazarlarında yürüdü. Bugün kutsal mabedi 154 metrelik devasa bir anıt işaret ediyor."
+  },
+  "caltagirone": {
+    "title": "Köprünün Kutsal Meryemi",
+    "description": "15 Ağustos 1572'de Mary köprüde sağır-dilsiz bir kıza göründü ve mucizevi bir şekilde işitme duyusunu ve sesini geri kazandı."
+  },
+  "monsummano": {
+    "title": "Fontenuova'nın En Kutsal Meryemi",
+    "description": "9 Haziran 1573'te çoban Jacopina Mariotti, yol kenarındaki bir ikonanın önünde dua etti ve Meryem'in hayaletini gördü. 1602'deki Kutsal Ayin sırasında kuru zeminden mucizevi bir şifa çeşmesi fışkırdı."
+  },
+  "languedoc_gutierrez": {
+    "title": "Meryem Ana'dan Fr. Gutierrez",
+    "description": "Cizvit Fr. Martin Gutierrez, Meryem'i İsa Cemiyeti'ni barındıran kar beyazı bir pelerin içinde gördü. Mary, Languedoc'taki kırsal bir şapeli ziyaret ederken, yaklaşan şehitliğini önceden bildirdi."
+  },
+  "casalpusterlengo": {
+    "title": "Capuchin'lerin Leydisi",
+    "description": "Mayıs 1574'te, toplanan 4.000 sadık kişinin önünde Meryem Ana'nın toplu bir hayaleti meydana geldi."
+  },
+  "gubbio_pacifico": {
+    "title": "Meryem Ana'dan Fr. Pasifiko",
+    "description": "Lekesiz Doğum Bayramı'nda, Capuchin rahibi Pacifico, Meryem'i koroda gördü ve gül kokuları arasında onun Lekesiz Hamileliğinin derin gizemini açığa çıkardı."
+  },
+  "casalbordino": {
+    "title": "Madonna dei Miracoli",
+    "description": "Mayıs 1576'da Mary, şiddetli bir dolu fırtınasının ardından köylü Alessandro Muzio'ya göründü ve tarlalarını yıkımdan korudu."
+  },
+  "norcia_giacomo": {
+    "title": "Norcia Meryem Ana",
+    "description": "Capuchin keşişi Giacomo, ölüm döşeğindeki Meryem'in neşeli bir görüntüsünü yaşadı: 'Cennetin Muzaffer Kraliçesi burada! Beni almaya geliyor.\""
+  },
+  "lezajsk_1578": {
+    "title": "Leżajsk Meryem Ana",
+    "description": "Meryem Ana ve Aziz Joseph, ormanda mütevazı oduncu Tomasz Michałek'e göz kamaştırıcı bir ışıkla birlikte göründüler ve sadıkların ilahi lütufları alacağı bir kilise istediler. Resmi kanonik araştırmaların ve belgelenen mucizelerin ardından Vatikan, muhteşem hac bazilikasını onayladı."
+  },
+  "conflenti": {
+    "title": "Madonna della Quercia",
+    "description": "7 Haziran'da Mary, Lorenzo Folino'ya çobanlık yapmak için büyük bir meşe ağacının tepesinde göründü ve Visora'da bir sığınak istedi. Doğuştan kör ve topal bir çocuğu mucizevi bir şekilde iyileştirerek varlığını doğruladı."
+  },
+  "poggio_roio": {
+    "title": "Haçlı Kutsal Meryem",
+    "description": "Aralık 1578'de Mary, Felice Calcagno'ya çobanlık yaparak ona kardaki mucizevi ahşap ikonasını keşfetmesi için rehberlik etti."
+  },
+  "madrid_mendoza": {
+    "title": "Meryem Ana'dan Fr. Mendoza",
+    "description": "Bakire, Cizvit Fr.'ye göründü. Didacus Mendoza ölüm döşeğindeyken ruhunu cennetsel bir rahatlıkla dolduruyordu."
+  },
+  "trivento": {
+    "title": "Trivento Meryem Ana",
+    "description": "Şiddetli bir fırtınaya yakalanan iki Capuchin rahibi, tarif edilemez güzelliğe sahip bir anne tarafından gizemli bir kulübede barındırıldı. Onlar ayrılıp geriye baktıklarında ev ortadan kaybolmuştu."
+  },
+  "ziteil": {
+    "title": "Ziteil Meryem Ana",
+    "description": "16 Temmuz'da Mary, yüksek dağ meralarında 18 yaşındaki çoban Dietegen Giategen'e göründü ve bölgesel tövbe çağrısında bulundu. 2.434 metreyle Avrupa'nın en yüksek Marian tapınağıdır."
+  },
+  "leuven_calstro": {
+    "title": "Meryem Ana'dan Fr. Kalstro",
+    "description": "Dominik Fr. Henry Calstro, denemeler sırasında kendisini teselli eden ve kutsal ölümünde onu güçlendiren Mary ile sayısız karşılaşmayla kutsanmıştı."
+  },
+  "flochberg": {
+    "title": "Flochberg Meryem Ana",
+    "description": "30 Haziran 1582'de Mary, bir mısır tarlasında ağır hasta yatan 10 yaşındaki William Wintzerer'e parlak bir ışıltıyla göründü, onu anında iyileştirdi ve dindar bir Hıristiyan yaşamı teşvik etti."
+  },
+  "plouguerneau": {
+    "title": "Meryem Ana'dan Fr. Le Nobletz",
+    "description": "Ünlü Breton misyoneri Fr. Michel Le Nobletz, Mary'nin kilitli şapel kapılarını onun için açtığı çocukluktan kutsal ölümüne kadar ona rehberlik etti."
+  },
+  "madrid_gonzaga": {
+    "title": "Meryem Ana'dan Aziz Aloysius'a",
+    "description": "Madrid'deki Cizvit kilisesindeki Göğe Kabul Bayramı'nda genç St. Aloysius Gonzaga, derin düşüncelere dalmış haldeki Meryem'in sesini net bir şekilde duydu: 'Oğlumun hakkı olan Tarikata girin.'"
+  },
+  "florence_pazzi": {
+    "title": "Meryem Ana'dan Aziz Mary Magdalene de' Pazzi'ye",
+    "description": "Büyük Karmelit mistik, Cennetteki Meryem'in insanlığa süt çeşmeleri ve İsa'nın değerli kanını dağıttığını gördüğünde derin bir coşku yaşadı."
+  },
+  "pumenengo": {
+    "title": "Madonna della Rotonda",
+    "description": "24 Mayıs 1585'te Mary, sağır-dilsiz köylü Francesco Zamboni'ye göründü, anında konuşmasını geri kazandı ve Kont Barbò'dan güzel, dairesel bir sığınak inşa etmesini istedi."
+  },
+  "montevarchi": {
+    "title": "Santa Maria al Giglio",
+    "description": "29 Ağustos 1585'te, Aziz Meryem'in Lily'de mucizevi görüntüleri birden fazla tanığın önünde meydana geldi."
+  },
+  "stezzano": {
+    "title": "Tarlaların Kutsal Bakiresi",
+    "description": "12 Temmuz 1586'da Mary, 10 yaşındaki Bartolomea Bucanelli ve 11 yaşındaki Dorotea Battistoni'ye küçük bir kitap okuyan, beyaz peçeli siyahlar içindeki bir kadın olarak ortaya çıktı."
+  },
+  "angola": {
+    "title": "Angola'daki Meryem Ana",
+    "description": "Ezici güçlere karşı yapılan savaş sırasında Meryem, Hıristiyan birliklerini savunmak için alevli bir kılıçla ortaya çıktı."
+  },
+  "cologne": {
+    "title": "Köln Meryem Ana",
+    "description": "Cizvit kolejinde Meryem'in ikonalarını sevgiyle boyayan genç bir sanatçı, onun ölüm döşeğindeki hayaleti ve koruyucu meleğiyle teselli buldu."
+  },
+  "rome_felix": {
+    "title": "Meryem Ana'dan Aziz Felix'e",
+    "description": "'Kardeş Deo Gratias' olarak bilinen sevilen Capuchin sadakacı Cantalice'li Aziz Felix, Meryem'in Bebek İsa'yı kollarına yerleştirdiği hayaletlerle beğenildi."
+  },
+  "rome_philip": {
+    "title": "Meryem Ana'dan Aziz Philip Neri'ye",
+    "description": "'Neşe Azizi' ve Oratory'nin kurucusu, hastalık sırasında kendisini teselli eden ve onu tehlikelerden koruyan Meryem'in birden fazla görüntüsünü yaşadı."
+  },
+  "medous": {
+    "title": "Notre-Dame de Médoux",
+    "description": "Mary, topluluğu yıkıcı bir veba salgınından koruyan mucizevi bir pınarın yakınında Domenge Liloye'ye göründü."
+  },
+  "naples_1588": {
+    "title": "Napoli Meryem Ana",
+    "description": "Ağır hasta olan önde gelen bir Napolili kadın dua etmek için Meryem'e döndü ve Meryem'in hastalığını ortadan kaldırdığı bir hayalet gördü."
+  },
+  "costa_folgaria": {
+    "title": "Our Lady of Graces Costa'da",
+    "description": "Ocak 1588'de Mary, 1.230 metre yükseklikte keşiş Pietro dal Dosso'nun huzuruna çıktı. 1955'te Papa Pius XII, Costa'daki Our Lady of Grace'i İtalya'daki tüm kayakçıların resmi hamisi ilan etti."
+  },
+  "itati": {
+    "title": "Itatí'nin Bakiresi",
+    "description": "Yerli Guarani din değiştirenler arasında Meryem Ana'nın ahşap heykelinin mucizevi hayaletleri ve korunması, Arjantin'in en büyük hac bazilikalarından birini oluşturuyor."
+  },
+  "lima_portyllo": {
+    "title": "Meryem Ana'dan Fr. Portillo",
+    "description": "Cizvit misyoneri Ruys de Portyllo, zorlu sömürge havariliği boyunca Meryem Ana'nın vizyonları tarafından yönlendirildi."
+  },
+  "proceno_orozco": {
+    "title": "Meryem Ana'dan Bl'ye. Alphonsus de Orozco",
+    "description": "Madrid'deki ünlü Augustinusçu mistik ve saray vaizi, manevi incelemelerine ilham veren Meryem'in yüce vizyonlarını deneyimledi."
+  },
+  "morbio": {
+    "title": "Santa Maria dei Miracoli",
+    "description": "29 Temmuz 1594'te Mary, yamaçta şeytani mülkiyete maruz kalan iki genç kıza göründü ve onları tamamen iyileştirerek İtalya sınırında bir sığınak talep etti."
+  },
+  "acquasparta": {
+    "title": "Acquasparta Meryem Ana",
+    "description": "Capuchin tarihçisi Bernardino di Colpetrazzo, Meryem'in saf ruhunun ve gayretli manastır geçmişinin bir ödülü olarak muhteşem bir çiçek tacıyla cennetten indiğini gördü."
+  },
+  "quito": {
+    "title": "İyi Başarı Leydimiz",
+    "description": "Meryem, Quito'daki Konseptist manastırında Rahibe Mariana de Jesus Torres'e görünerek mucizevi bir heykel sipariş etti ve 20. yüzyıldaki inanç ve meslek krizlerini önceden bildirdi."
+  },
+  "dijon": {
+    "title": "Dijon Meryem Ana",
+    "description": "Yıllardır yatalak durumdaki genç, hasta bir kız, sonsuzluğa kutsal geçişinde Meryem ve melekler tarafından ziyaret edildi."
+  },
+  "monte_bonicca": {
+    "title": "Bonica Dağı Meryem Ana",
+    "description": "11 Eylül 1595'te Mary, sonunda uzlaşmalarını pekiştiren bir barış anlaşması imzaladıktan sonra Campo Ligure ve Masone'nin kavgalı sakinlerine dağın üzerinden göründü."
+  },
+  "arona_sa": {
+    "title": "Meryem Ana'dan Fr. Emmanuel Sa",
+    "description": "Mary, Portekizli Cizvit ahlak ilahiyatçısı Fr.'ye birçok kez göründü. Emmanuel Sa, bir zamanlar Loyola'lı Aziz Ignatius'un yanında kutsal ölüm gününü tahmin etmek için eşlik ediyordu."
+  },
+  "fribourg_canisius": {
+    "title": "Meryem Ana'dan Aziz Peter Canisius'a",
+    "description": "Büyük Kilise Doktoru ve 'Almanya'nın İkinci Havarisi', hayatı boyunca ve Fribourg'daki kutsal ölüm döşeğinde sık sık coşkular ve Marian hayaletleri tarafından tercih edildi."
+  },
+  "lepuy_1598": {
+    "title": "Le Puy Meryem Ana",
+    "description": "İmanı azalan genç bir adam, ruhunu derin bir bağlılık ve hayırseverliğe uyandıran Meryem'in hayaletini yaşadı."
+  },
+  "molare": {
+    "title": "Kayalıkların Leydisi",
+    "description": "Mary, yüzyılın başında Molare'deki kayaların arasında Clarice'e göründü."
+  },
+  "bruges_greef": {
+    "title": "Meryem Ana'dan Fr. de Greef",
+    "description": "Anton de Greef, SJ, Cennetteki Meryem'in portresinin önünde mesleki bir yemin etti. Ertesi gece, harika bir hayalet onun mesleki çağrısını doğruladı. 1636'da Nijmegen'de veba kurbanlarına bakım yaparak hayatını verdi."
+  },
+  "concepcion_araucani": {
+    "title": "Our Lady of Concepcion",
+    "description": "Concepcion çevresindeki Araukanyalı savaşçıların düşmanca kuşatması sırasında, Madonna mucizevi bir şekilde şapel resminden çıktı ve kampların üzerindeki bir bulutun üzerinde yürüyüp kuşatanları göksel ışık ışınlarıyla dağıttı."
+  },
+  "mariahilf_passau": {
+    "title": "Mariahilf Passau'da",
+    "description": "Baron Marquard von Schwendi, Tanrı'nın Annesinin özelliklerini taşıyan görkemli tepeleri aydınlatan parlak bir ışık gördü. 1620'de, 1363'ün mucizevi ikonuna saygı gösteren ünlü Mariahilf hac kilisesini inşa etti."
+  },
+  "palma_rodriguez": {
+    "title": "Meryem Ana'dan Aziz Alphonsus'a",
+    "description": "Mount Zion Koleji'ndeki mütevazı Cizvit temizlikçisi St. Alphonsus Rodriguez, Meryem'in sık sık neşeli görüntülerinden keyif alıyordu. Bir keresinde ona şöyle demişti: 'Tüm annelerin sevgisi benimkiyle karşılaştırılamaz!'"
+  },
+  "aljubarrota_light": {
+    "title": "Işığın Leydisi",
+    "description": "Meryem, Aziz Martha ile birlikte yakacak odun toplayan yaşlı Catarina Anes'e göründü. Meryem Ana kayıp anahtarı mucizevi bir şekilde ona geri verdi ve şifalı kristal su kaynağının kazılmasına yardım etti."
+  },
+  "san_severino": {
+    "title": "San Severino Meryem Ana",
+    "description": "16 Ekim 1601'de, Meryem Ana'ya adanan yol kenarındaki bir tapınağın çevresinde mucizevi ışıklar gözlendi."
+  },
+  "beaune_jesuit": {
+    "title": "Leydimiz bir Cizvit Rahibine",
+    "description": "Meryem Ana, Aziz Yakup ve Vaftizci Aziz Yahya'nın eşlik ettiği genç bir Cizvit rahibine bir vizyonda göründü."
+  },
+  "aleth_youth": {
+    "title": "Aleth Meryem Ana",
+    "description": "Üzücü şeytani bir görüntünün ardından Meryem, güpegündüz beyazlar içinde genç bir adamın karşısına çıktı ve onu davranışını değiştirmesi ve dini hayata girmesi konusunda uyardı."
+  },
+  "lampedusa": {
+    "title": "Nostra Signora di Lampedusa",
+    "description": "Lampedusa'da Türk korsanlar tarafından köleleştirilen Andrea Anfossi, kör edici bir ışıkta mucizevi bir Marian tablosu keşfetti. Tuvali içi boş bir ağaç gövdesi üzerinde yelken olarak kullanarak açık denizde Liguria'ya doğru ilerledi. Castellaro'daki kutsal alan 1619'da tamamlandı."
+  },
+  "rome_benedict": {
+    "title": "Meryem Ana'dan Rahip Benedict'e",
+    "description": "Kutsal ölümünden kısa bir süre önce, Capuchin rahibi Benedict, Meryem'in İlahi Bebeği kollarına bıraktığı hassas bir hayaletle karşılaştı."
+  },
+  "verdun_youth": {
+    "title": "Verdun Meryem Ana",
+    "description": "Meryem genç bir adama dini mesleğine ilham vermek için değerli bir göksel taç gösterdi. Daha sonra duruşmalar sırasında ona taze cesaret aşılamak için tekrar ortaya çıktı."
+  },
+  "monsummano_fontenova": {
+    "title": "Maria Santissima della Fontenova",
+    "description": "10 Haziran 1602'de kasabanın rektörü önünde bir gösteri düzenlendi. Şiddetli bir kuraklığın ardından Kutsal Ayin sırasında aniden mucizevi bir bahar akmaya başladı ve bu da Büyük Dük Ferdinando I de' Medici'nin büyük tapınağı inşa etmesine yol açtı."
+  },
+  "bergamo_sorrows": {
+    "title": "Acıların annesi",
+    "description": "18 Ağustos 1602'de Borgo Santa Caterina'daki kasaba halkı güpegündüz parlayan bir yıldız gördü ve Mary'nin parlak oklarla çevrili kederli bir yüzle ortaya çıktığı ve derin bir tövbeye ilham verdiği."
+  },
+  "lenola": {
+    "title": "Madonna del Colle",
+    "description": "15 Eylül 1602'de Mary, Gabriele Mattei'nin yamacında göründü, onu dönüştürdü ve ünlü Tepedeki Meryem Ana Tapınağının temeline öncülük etti."
+  },
+  "ingolstadt_rem": {
+    "title": "Anne üç kez takdire şayan",
+    "description": "6 Nisan 1604'te Mary, Cizvit Fr.'ye ışıltılı bir ihtişamla göründü. Jakob Rem, Loreto Litany'sini söylerken. Ona en hoş unvanını sorduğunda, ünlü Üç Kez Takdire Değer bağlılığın ortaya çıkmasına neden olan 'Mater admirabilis'i açıkladı."
+  },
+  "lepuy_1605": {
+    "title": "Le Puy Meryem Ana",
+    "description": "Marian derneğinin yaşlı bir üyesi, ölüm döşeğinde ruhsal savaşla karşı karşıya kaldığında, Meryem ortaya çıktı ve muzaffer varlığıyla karanlığı kovdu."
+  },
+  "heiligwasser": {
+    "title": "Heiligwasser Meryem Ana",
+    "description": "Meryem mavi bir cüppeli genç çoban kardeşler Johann ve Paulus Mayr'a bir dağ pınarının yakınında göründü ve bir kilise istedi. Yıllar sonra Johann'ın dilsiz oğlu baharda verdiği sözü yerine getirerek konuşmasını yaptı."
+  },
+  "argenta_celletta": {
+    "title": "Madonna della Celletta",
+    "description": "5 Haziran 1606'da Meryem köylü kadın Sigismonda Conti'ye göründü ve oruç tutan ve imanla isteyenler için duaya yanıtlar vaat etti. 1619'a gelindiğinde türbede 150.000'den fazla altın ve gümüş adak sunusu bulunuyordu."
+  },
+  "ardesio_graces": {
+    "title": "Kutsal Meryem Ana",
+    "description": "23 Haziran 1607'de, uğursuz bir fırtına yaklaşırken, küçük kız kardeşler Maria (11) ve Caterina Salerno (7), Meryem'in Bebek İsa ile birlikte altın bir sandalyede otururken ortaya çıkmasından önce, Çarmıha Gerilme'yi gösteren bir duvar resminin parlak bir şekilde aydınlandığını gördüler."
+  },
+  "bamberg_guttrie": {
+    "title": "Meryem Ana'dan Frederick Guttrie'ye",
+    "description": "Mary, Frederick Guttrie'ye görünerek onu Katolik inancına dönmeye teşvik etti ve 1608 Noel Arifesinde kutsal vefatının kesin tarihini önceden bildirdi."
+  },
+  "florence_medici": {
+    "title": "Meryem Ana'dan Alessandro de' Medici'ye",
+    "description": "Genç Alessandro de' Medici, meleklerin eşlik ettiği Marian hayaletlerini kabul etti. On beş yaşındayken ölüm döşeğinde Meryem ve Aziz Meryem Magdalene de' Pazzi gözle görülür bir şekilde onun yanında duruyordu."
+  },
+  "paris_berulle": {
+    "title": "Meryem Ana'dan Kardinal Bérulle'ye",
+    "description": "Fransız Oratory'nin kurucusu Kardinal Pierre de Bérulle, Kutsal Ayin sırasında Mary'nin kendisine Fransa'da Discalced Carmelite tarikatını kurması talimatını verdiği bir hayalet yaşadı."
+  },
+  "sanlucar": {
+    "title": "Sanlúcar Meryem Ana",
+    "description": "1608'de Napoliten asker Pedro Rivera'nın hayaleti."
+  },
+  "san_bartolomeo_rovere": {
+    "title": "Nostra Signora della Rovere",
+    "description": "Temmuz 1608'de Mary, meşe tapınağın yeni inşa edilen çan kulesinin penceresinde belirdi; bu olay Piskopos Luca Fieschi tarafından resmi olarak araştırıldı ve belgelendi."
+  },
+  "bordeaux_healing": {
+    "title": "Bordeaux Meryem Ana",
+    "description": "Mary, ağır hasta bir dernek üyesine göründü ve hayatını onun Immaculate Conception'a olan bağlılığını yaymaya adayacağına söz verdikten sonra onu iyileştirdi."
+  },
+  "rome_benevolence": {
+    "title": "Sevgili Hayırsever Hanımefendimiz",
+    "description": "Karmelit Fr. Domenico Maria Ruzzola molozların altında gömülü bir ikon keşfetti. Meryem birçok kez ortaya çıktı ve Araf'taki ruhlar için dua çağrısında bulundu. Simge daha sonra İmparator tarafından Viyana'da kutsandı."
+  },
+  "lepuy_ponceot": {
+    "title": "Meryem Ana'dan Fr. Ponceot",
+    "description": "Cizvit Rektörü Fr. Claudio Ponceot, ölüm döşeğindeyken üç melek tarafından teselli edildi, ardından Meryem'in, St. Claude ve St. Ignatius'un eşlik ettiği hayaleti geldi."
+  },
+  "fribourg_youth": {
+    "title": "Fribourg Meryem Ana",
+    "description": "Genç bir adam, hasta yatağında samimi bir şekilde din değiştirmesinin ardından, Meryem, Aziz Petrus Canisius ve Aziz Ignatius'un gece vakti görünmesiyle kutsanmıştı."
+  },
+  "manaoag": {
+    "title": "Manaoag Meryem Ana",
+    "description": "Yerel bir adam gizemli bir ses duydu ve Meryem'in bir ağacın tepesindeki bir bulutun üzerinde Tesbih ve Çocuğu tutarken durduğunu gördü. Dünyaca ünlü küçük bazilikanın çevresinde gelişen kasabaya Manaoag ('Çağrıyor') adı verildi."
+  },
+  "caysasay": {
+    "title": "Caysasay Meryem Ana / Misericordia",
+    "description": "Filipinler'de kaydedilen ilk Marian hayaleti. Mary, Juana Tangu ve Catalina Talayn'a giden bir derenin yakınındaki kayalık bir oyuktan parlak bir ışıkta göründü. Kutsal alanda mucizevi şifalı sular akmaya devam ediyor."
+  },
+  "saragossa_agnes": {
+    "title": "Meryem Ana'dan İsa'nın Sr. Agnes'ine",
+    "description": "Kireçsiz Karmelit acemi metresi Agnes de Casanate, İsa'nın Tutkusu'nu paylaştığı sırada Meryem'in sayısız coşkusunu ve hayaletini aldı."
+  },
+  "malta_conversion": {
+    "title": "Malta'daki Meryem Ana",
+    "description": "Aylarca hazırlık yapmak ve dua etmekle uğraşan tövbekar bir günahkar, Meryem Ana'nın dönüştürücü bir hayaletini deneyimledi ve bu onun sevinçli bir şekilde affedilmesine yol açtı."
+  },
+  "rome_calasanzio": {
+    "title": "Meryem Ana'dan Aziz Joseph Calasanz'a",
+    "description": "Meryem Ana, Piarist Tarikatı'nın ve Avrupa'daki yoksul çocuklar için ilk ücretsiz devlet okullarının kurulmasında St. Joseph Calasanz'ı kutsamak ve ona rehberlik etmek için birçok kez ortaya çıktı."
+  },
+  "lublin_lutheran": {
+    "title": "Lublin Meryem Ana",
+    "description": "Meryem, seçkin bir Macar Lüteriyen bilim adamına göksel mavi bir ışıkla sarılmış olarak göründü; bu, onun Protestan incelemelerini onaylamadığını gösteriyor ve onun Katolik Kilisesi'ne dönmesini teşvik ediyordu."
+  },
+  "nuremberg_girl": {
+    "title": "Nürnberg Meryem Ana",
+    "description": "Selam Meryem'i sadakatle okuyan genç bir Protestan kız, Meryem Ana'nın onu Katolik Kilisesi'ne girmesi için Bamberg'e yönlendirdiği bir hayalet yaşadı."
+  },
+  "paris_acarie": {
+    "title": "Cennetin Kraliçesi",
+    "description": "Fransız Carmel'in kurucu ortağı Kutsanmış Barbara Acarie (Enkarnasyonun Sr. Mary'si), Meryem'in Cennetin Kraliçesi olduğuna dair yüce vizyonlardan sık sık keyif alıyordu."
+  },
+  "chioggia_donkey": {
+    "title": "Küçük Eşek Meryem Ana",
+    "description": "5 Temmuz 1615'te Meryem Ana, Chioggia yakınında Kardeş Adam'a göründü."
+  },
+  "philippines_otazo": {
+    "title": "Meryem Ana'dan Fr. Otazo",
+    "description": "Cizvit misyoneri Fr. Francis Otazo, zulüm sırasında Mary'nin hayaletinin kendisine şu güvenceyi vermesiyle teselli edildi: 'Francis, endişelenme ben seni koruyacağım!' Daha sonra ona Hayat Kitabı'nı gösterdi."
+  },
+  "stans_nocker": {
+    "title": "Stans Meryem Ana",
+    "description": "Mary, büyük bir dağ kayasının yanında Georg Nocker'a göründü ve daha sonra Bressanone Prensi Piskoposu tarafından kutlanacak bir şapelin inşası konusunda teşvik etti."
+  },
+  "berzo_inferiore": {
+    "title": "Berzo Meryem Ana",
+    "description": "24 Eylül 1616'da Meryem, gözlerinde yaşlarla Marta Damioli Polentini'ye havada göründü, onu manevi baskıdan kurtardı ve bir kilise istedi."
+  },
+  "naples_benincasa": {
+    "title": "Mavi Kürek kemiği Görünümü",
+    "description": "2 Şubat 1617'de Ven. Orsola Benincasa, Meryem ve İsa'yı, Lekesiz Hamileliğin Mavi Kürek kemiği için olağanüstü lütufların vahiyini ve vaadini alırken gördü."
+  },
+  "imbersago_bosco": {
+    "title": "Madonna del Bosco",
+    "description": "9 Mayıs 1617'de üç çoban, Meryem'in mevsimi dışında mucizevi bir şekilde tamamen olgun meyve veren bir kestane ağacının üzerinde ışıklar içinde uçtuğunu gördü. Papa St. John XXIII tarafından ziyaret edilen güzel bir bazilika içinde yer almaktadır."
+  },
+  "lima_rose": {
+    "title": "Tespih Kraliçesi",
+    "description": "Amerika kıtasının ilk kanonlaştırılmış azizi olan St. Rose of Lima, Tespih kilisesi resminden önce Meryem ile sık sık muhteşem iletişimler yaşadı ve Tanrı'nın Annesi için muhteşem işlemeli elbiseler dikti."
+  },
+  "ribordone_prascondu": {
+    "title": "Madonna di Prascondù",
+    "description": "27 Ağustos 1619'da genç Giovannino Berrardi, Meryem Ana'nın Loreto'nun dağlık çayırlarında büyük tapınağa ilham veren ışıltılı hayaletinin ardından kaybettiği konuşmasına yeniden kavuştu."
+  },
+  "alessandria_rocca": {
+    "title": "Madonna della Rocca",
+    "description": "Mary, Angelina ve annesi Rosa'yı kör etmiş gibi görünerek kıza görme yeteneğini kazandırdı ve kasaba halkını kayaya gizlenmiş 6. yüzyıldan kalma eski bir heykeli ortaya çıkarmaya yönlendirdi."
+  },
+  "alcoy_nun": {
+    "title": "Meryem Ana'dan Sr. Maria de Jesus'a",
+    "description": "1620 ile 1630 yılları arasında, manastırda yaşayan Augustinian rahibesi Maria de Jesus Martin, manastırında derin Marian hayaletleri yaşadı."
+  },
+  "castel_san_pietro_1623": {
+    "title": "Lato di Monte Calderaro'nun Kutsal Bakiresi",
+    "description": "Şubat 1623'te Meryem genç çoban Zenobia'ya göründü."
+  },
+  "bosentino_feles": {
+    "title": "Feles'li Madonna",
+    "description": "21 Haziran 1623'te Mary, Janesel adında genç bir köylüye göründü."
+  },
+  "ozegna": {
+    "title": "Ormanın Kutsal Bakiresi",
+    "description": "21 Haziran 1623'te Mary, Orco nehri boyunca saman yapımı sırasında 15 yaşındaki Giovanni Petro'ya sağır-dilsiz göründü ve anında ona konuşmasını yaptı."
+  },
+  "paris_catherine": {
+    "title": "Koruma Mantosu",
+    "description": "Karmelit rahibesi Catherine of Jesus, Meryem'in Karmelit tarikatını tertemiz kar beyazı mantosunun altında barındırdığını gördü."
+  },
+  "goa_andrade": {
+    "title": "Meryem Ana'dan Fr. Andrade",
+    "description": "Cizvit misyoneri Fr. Tibet'in ilk Avrupalı ​​kaşifi Antonio Andrade gemisinde zehirlendi. Meryem ölüm döşeğinde belirdi ve mucizevi bir şekilde onu Asya görevine devam etmesi için iyileştirdi."
+  },
+  "quimper_danielou": {
+    "title": "Meryem Ana'dan Catherine Danielou'ya",
+    "description": "Mary, yol kenarındaki bir heykelin yanında Catherine Danielou'ya göründü: 'Catherine, sen fakirsin, ben de... Cennette yaşıyorum ama Dünya'da evsizim.' Catherine ünlü, damgalanmış bir mistik oldu."
+  },
+  "santa_fe_conquistadora": {
+    "title": "Barış Meryem Ana / La Conquistadora",
+    "description": "Assisili St. Francis Katedral Bazilikası'nda yer alan La Conquistadora, Amerika Birleşik Devletleri'ndeki en eski ahşap Meryem Ana heykelidir ve yüzyıllar boyunca güneybatı tarihi boyunca derin saygı görmüştür."
+  },
+  "paris_maunoir": {
+    "title": "Meryem Ana'dan Fr. Maunoir",
+    "description": "Ünlü Breton misyoneri Fr. Giuliano Maunoir, kendisini tehlikelerden koruyan ve derin tövbe havarisine rehberlik eden Meryem'in sık sık hayaletlerini görüyordu."
+  },
+  "langeac_agnes": {
+    "title": "Meryem Ana'dan Ven'e. Agnes",
+    "description": "Dominikli başrahibe ve damgalanmış Ven. İsa'nın Anne Agnes'i, Meryem'in onu Jean-Jacques Olier ile ilişkilendirdiği ve onu Sulpisyen ruhban okulu reformunun ruhani koruyucusu haline getirdiği hayaletler aldı."
+  },
+  "maria_bildstein": {
+    "title": "Meryem Ana Maria Bildstein",
+    "description": "Mary, veba sırasında ettiği yemini ihmal eden bir çiftçinin küçük oğulları olan Martin ve John Hofle'a göründü ve bu güzel Avusturya tapınağının inşasına yol açtı."
+  },
+  "aljubarrota_sands": {
+    "title": "Kumların Leydisi",
+    "description": "Mary ağlayan bir köy kadınına bir kayanın üzerinde oturmuş göründü, kayıp anahtarlarını buldu ve bir kilise istedi. Şüpheci piskopos kayayı saray odasına kilitlediğinde kaya mucizevi bir şekilde ortadan kayboldu ve iki kez tarlaya geri döndü."
+  },
+  "lure_shepherd": {
+    "title": "Cazibeli Leydimiz",
+    "description": "Meryem bir çobana göründü ve eski bir Benedictine manastırının kalıntıları üzerine bir kilisenin yeniden inşa edilmesini istedi."
+  },
+  "leini_grazie": {
+    "title": "Madonna delle Grazie",
+    "description": "1 Haziran 1630'da Meryem sağır-dilsiz bir adama göründü, ona bir tespih verdi ve veba salgınının tamamen durdurulduğunu duyurdu."
+  },
+  "forno_alpi_graie": {
+    "title": "Our Lady of Loreto Forno'da",
+    "description": "30 Eylül 1630'da Mary büyük bir kayanın üzerinde Pietro Garino'ya göründü ve bölgenin tövbe etmesi halinde vebanın sona ereceğine söz verdi. Kayanın altında mucizevi bir şekilde kayıp iki kutsal tablo bulundu."
+  },
+  "gandos_galleno": {
+    "title": "Galleno Meryem Ana",
+    "description": "Meryem, sağır-dilsiz Margherita Lazzaroni'ye bir melekle göründü, konuşmasını yaptı ve köye vebayı durdurmak için tespih duası yapma talimatını verdi. Kasaba mucizevi bir şekilde korunmuştu."
+  },
+  "naples_vesuvius": {
+    "title": "Napoli'deki Meryem Ana",
+    "description": "Vezüv Yanardağı'nın korkunç bir volkanik patlaması sırasında, Meryem kül yağmurunun ortasında şehrin üzerinde belirdi ve dua eden sadıkları yıkımdan kurtardı."
+  },
+  "cavite_porta_vaga": {
+    "title": "Reina de Cavite / Porta Vaga",
+    "description": "Bir İspanyol nöbetçi, fırtına sırasında körfezde değişen bir ışık halesini durdurdu ve tatlı bir ses duydu: 'Küçük Asker... bana yol ver. Meryem'i tanımıyor musun?' 1692 tarihli mucizevi ikon, Filipinler'de günümüze ulaşan en eski Marian tablosu ve Kalyon'un Patronesi'dir."
+  },
+  "japan_martyr": {
+    "title": "Japonya'daki Meryem Ana",
+    "description": "Mary, Hıristiyanlık karşıtı zulümler altında şiddetli işkence sırasında Japon Hıristiyan şehidi Kegan Fucinanga Nicholas'ı teselli ediyormuş gibi göründü."
+  },
+  "constance_loreto": {
+    "title": "Konstanz Meryem Ana",
+    "description": "Meryem, Augustinian kilisesinin çan kulesinde göründü ve düşmanca bir askeri kuşatma sırasında vatandaşlara ilham verdi. Minnettarlığın göstergesi olarak şehir bir Loreto şapeli inşa etti."
+  },
+  "lake_huron_brebeuf": {
+    "title": "Meryem Ana'dan St. Jean de Brébeuf'a",
+    "description": "Kuzey Amerika'nın büyük Cizvit şehidi, kendisini Huronlar arasındaki kahramanca şehitliğine hazırlayan, kalbi üç okla delinmiş Meryem'in görkemli bir vizyonunu deneyimledi."
+  },
+  "guiclan_picard": {
+    "title": "Meryem Ana'dan Marie-Amice Picard'a",
+    "description": "19 Mayıs 1634'te Mary ve St. John, Marie-Amice Picard'ı bir saldırgandan kurtarmak için göründüler. O derinden damgalanmış bir kurban ruhu haline geldi."
+  },
+  "quito_1634": {
+    "title": "İyi Başarı Leydimiz",
+    "description": "2 Şubat 1634'te, Our Lady of Good Success, Kraliyet Kraliyet Manastırı'nda Rahibe Mariana de Jesus Torres'e göründü ve 20. yüzyıldaki derin ahlaki krizler ve inanç kaybı konusunda uyarıda bulundu."
+  },
+  "bargemon": {
+    "title": "Notre Dame de Bargemon",
+    "description": "17 Mart 1635'te Mary, gece görüşünde yatalak Elizabeth Caille'e yeşil kadife içinde, altın taçlı güzel bir hacı olarak göründü, onu mucizevi bir şekilde iyileştirdi ve bir tapınak istedi."
+  },
+  "sinopoli_lactans": {
+    "title": "Maria Laktanlar",
+    "description": "Kutsal Meryem iki kez göründü ve ikonuna 'Maria Lactans' (Çocuğu emziren Tanrı'nın Annesi) olarak saygı gösterilmesini istedi."
+  },
+  "ajaccio_peace": {
+    "title": "Korsika'daki Meryem Ana",
+    "description": "Kavga eden iki düşman mucizevi bir hayaletle karşılaştı ve Meryem Ana'dan onlara barış yapmalarını emreden bir mesaj aldı."
+  },
+  "frejus_cotignac": {
+    "title": "Meryem Ana'dan Kardeş Fiacre'a",
+    "description": "3 Kasım 1637'de Mary, yıldızlı mavi cüppelerle manastır hücresinde Kardeş Fiacre'ye göründü, ona Cotignac'taki türbesini gösterdi ve üç novenadan sonra gelecekteki Kral Louis XIV'in mucizevi doğumunu vaat etti."
+  },
+  "prague_infant": {
+    "title": "Zafer Meryem Ana / Prag",
+    "description": "Immaculate Conception'un arifesinde Mary, kilise korosundan Fr. Cyril, Prag'ın Bebek İsa'sının dünyaca ünlü mucizevi heykelinin restore edilip tahta oturtulacağı kesin yeri gösteriyor."
+  },
+  "savigliano": {
+    "title": "Savigliano Meryem Ana",
+    "description": "Marian'ın hayaleti 1639'da Tesio Petrina'ya kaydedildi."
+  },
+  "beaune_infant": {
+    "title": "Grace Kralı",
+    "description": "Karmelit Ven. Kutsal Ayinin Margaret'i, daha sonra Papa Pius IX tarafından yükseltilen Bebek İsa Kardeşliği'nin kurulmasında Meryem tarafından yönlendirildi."
+  },
+  "montagnolo_pinocchio": {
+    "title": "Montagnolo Meryem Ana",
+    "description": "1640 yılında Meryem Ana'nın bölgeyi etkisi altına alacak korkunç bir salgının önüne geçtiği ortaya çıktı."
+  },
+  "cast_le_goff": {
+    "title": "Meryem Ana'dan Yves Le Goff'a",
+    "description": "Mary, çiftçi Yves Le Goff'a göründü, sağ eline kırmızı bir çarpı işareti koydu ve ondan günahkarların din değiştirmesi için sıvılar olmadan on beş yıllık katı bir Lenten orucu yapmasını istedi."
+  },
+  "kevelaer": {
+    "title": "Mağdurların Yorganı",
+    "description": "1641 Noelinde Hendrik Busman, Mary'nin sesini kırlarda duydu: 'Bu yerde bir şapel ayırmana ihtiyacım var.' Lüksemburg'un Mucizevi Meryem Ana'sını barındıran bu tapınak, yılda 600.000 hacı tarafından ziyaret edilen Almanya'nın en büyük Marian tapınağıdır."
+  },
+  "palizi_moscow": {
+    "title": "Acıların Leydisi / Strastnaya",
+    "description": "Meryem, hasta bir kadına göründü, onu iyileştirdi ve ona bir ikonanın boyanması talimatını verdi. Mucizevi görüntü ciddiyetle alayla Moskova'ya taşındı."
+  },
+  "cursi_abbondanza": {
+    "title": "Santa Maria dell'Abbondanza",
+    "description": "1641 baharında Mary, genç çoban Biagio Orlando Natali'ye göründü: 'Ben Cennetin Kraliçesiyim ve insanların sefil koşullarının acısını çekiyorum.' Bir şapel ve geçit töreni istedi."
+  },
+  "uruguay_reduction": {
+    "title": "Müjde Meryem Ana",
+    "description": "Cizvit misyoner indirilmesinde Meryem, on yaşındaki dindar bir yerli kıza, onu sonsuzluğa neşeli geçişine hazırlamak için iki kez göründü."
+  },
+  "maria_taferl": {
+    "title": "Meryem Ana Maria Taferl",
+    "description": "Alexander Schinnagl meşe oyuğuna ahşap bir Pietà yerleştirdi ve iyileştirildi. 1658 ile 1661 yılları arasında yeminli elli yedi tanık, ağacın çevresinde parlayan melek figürleri ve göksel ışıklar gördüklerini doğruladı. Avusturya'nın en büyük ulusal tapınaklarından biridir."
+  },
+  "lake_huron_hurons": {
+    "title": "Huron Gölü'ndeki Meryem Ana",
+    "description": "Düşman Iroquois tarafından kazığa bağlanan iki Hıristiyan Huron, dua ederek Meryem'e döndü ve kaçmak için mucizevi bir şekilde zincirlerinden kurtuldular."
+  },
+  "buenos_aires_1647": {
+    "title": "Buenos Aires'teki Meryem Ana",
+    "description": "Meryem genç bir köylü kızına ve meslekten olmayan bir erkek kardeşe göründü ve insanları samimi bir şekilde kefaret etmeye çağırdı."
+  },
+  "ponzano_magra": {
+    "title": "Our Lady of Schiavonea Ponzano'da",
+    "description": "10 Temmuz 1647'de Mary, Antonio Ruffio'ya göründü."
+  },
+  "corigliano_schiavonea": {
+    "title": "Santa Maria ad Nives / Schiavonea",
+    "description": "23 Ağustos 1648'de mucizevi bir hayaletin ardından Schiavonea'daki Kara Madonna'nın büyük tapınağı dikildi."
+  },
+  "naples_carafa": {
+    "title": "Meryem Ana'dan Fr. Karafa",
+    "description": "Mary, Cizvit Generali Fr. Vincenzo Carafa, münzevi ve mistik yazılarını aydınlatıyor."
+  },
+  "paris_olier": {
+    "title": "Meryem Ana'dan Fr. Olier",
+    "description": "Sulpician ilahiyat reformunun kurucusu Jean-Jacques Olier, gençliğinde Mary tarafından mucizevi bir şekilde körlükten iyileştirildi. 1649'da onun derin rahip maneviyatını yeniden canlandırmak için yeniden ortaya çıktı."
+  },
+  "plounevez_quintin": {
+    "title": "Plounevez Meryem Ana",
+    "description": "Mary, iyi bir ölüm için tespih dua ederken Louise Le Comec'e göründü ve cennete geçişinin tam saatini önceden bildirdi."
+  },
+  "turin_1651": {
+    "title": "Torino'daki Meryem Ana",
+    "description": "20 Mart 1651'de Mary, Andreeta Pendigliona'ya göründü ve kutsal alanda bir adamın sakat uzuvlarını mucizevi bir şekilde onardı."
+  },
+  "coromoto_venezuela": {
+    "title": "Coromoto Meryem Ana",
+    "description": "8 Eylül 1652'de Mary bakir ormanda Cospes kabilesinden Şef Coromoto'ya göründü: 'Beyaz Saray'a gidin ve cennete gitmek için başınıza su dökmelerini isteyin.' Mucizevi görüntüsünü ahşabın liflerine basılmış olarak bıraktı. Venezuela'nın resmi hamisi."
+  },
+  "campeneac_nicolas": {
+    "title": "Meryem Ana'dan Armelle Nicolas'a",
+    "description": "15 Ağustos 1652'de mütevazı hizmetkar 'İyi Armelle', Meryem'in Cennete Göğe Alınışıyla ilgili muhteşem bir vizyon aldı."
+  },
+  "querrien_courtel": {
+    "title": "Ebedi Yardım Meryem Ana",
+    "description": "15 Ağustos 1652'de Mary, 12 yaşındaki sağır-dilsiz çoban kız Jeanne Courtel'e göründü ve anında işitme duyusunu ve sesini geri kazandı. Eski bir gömülü heykeli ortaya çıkarması için ona rehberlik etti. St. Brieuc Piskoposu tarafından resmi olarak 'Küçük Breton Lourdes' olarak tanınmıştır."
+  },
+  "colere_fontane": {
+    "title": "Madonna delle Fontane",
+    "description": "2 Temmuz 1654'te tüberkülozdan ölen çoban Bartolomeo Burat, yol kenarındaki bir çeşmenin yanında kan öksürerek yere yığıldı. Mary şapelin freskinden çıktı, alnına suyla dokundu ve anında onu iyileştirdi: 'Cesaretini koru sevgili oğlum, iyileştin.'"
+  },
+  "pieve_di_rosa": {
+    "title": "Pieve di Rosa'nın Kutsal Meryemi",
+    "description": "2 Şubat 1655'te 8 yaşındaki epileptik Maria Giacomuzzi, Meryem'in duvar freskinin önünde ecstasy içinde iyileşti. Freskleri San Vito'ya çeken öküzler, St. Nicholas Kilisesi'nde bacaklarını kilitleyip hareket etmeyi reddettiklerinde, orada büyük bir kutsal alan kurulmuş oldu."
+  },
+  "notre_dame_osier": {
+    "title": "Notre Dame de l'Osier",
+    "description": "25 Mart 1649'da Pierre Port-Combet tarafından kesilen hasır dalları mucizevi bir şekilde kanadı. 1657'de Meryem çiftçilik yaparken ona göründü ve bu onun Protestanlıktan samimi bir şekilde dönmesine ve büyük bazilikanın kurulmasına yol açtı."
+  },
+  "ancienne_lorette": {
+    "title": "Quebec'teki Meryem Ana",
+    "description": "Meryem Ana, 14 yaşındaki Christian Huron'un Jeanne Ouendite'yi dönüştürmesine göründü."
+  },
+  "malta_sultan": {
+    "title": "Hanımefendimiz Sultan'a",
+    "description": "Malta Şövalyeleri tarafından esir alınan bir Fas Sultanı, hapishanede Meryem'in hayaletiyle karşılaştı. Serbest bırakıldıktan sonra Katolik oldu, Roma'da vaftiz edildi ve Loreto'ya hac yolculuğuna çıktı."
+  },
+  "trun_light": {
+    "title": "Işığın Hanımı",
+    "description": "Papaz ve topluluk, Meryem'in varlığını bildirdiği ve bir sığınak istediği tepede mucizevi bir ışığın parladığını gördü. Pek çok hasta, kutsanmış kilisede sağlığına kavuştu."
+  },
+  "mariahilfberg_gutenstein": {
+    "title": "Yardımsever Meryem Ana",
+    "description": "Mary, Sebastian Schmid Schlager'e altı kez göründü, onu iyileştirdi ve kayın ağacına asılan bir kağıda kendi resmini çizdi. Papa Clement IX, hürmet ve kutsal alanı resmen yetkilendirdi."
+  },
+  "birkenstein": {
+    "title": "Birkenstein Meryem Ana",
+    "description": "Papaz General Johann Stiglmaier, Meryem'in rüyasında ortaya çıkmasının ardından bir Loreto şapeli inşa etti: 'Bu şapelde... Beni çağıranlara şükranlarımı sunmak istiyorum.' Güzel dağ tapınağında 92 meleğin çevrelediği taçlı bir heykel bulunmaktadır."
+  },
+  "le_laus": {
+    "title": "Le Laus Meryem Ana",
+    "description": "Meryem, 54 yıllık bir süre boyunca mütevazı çoban Benoîte Rencurel'e göründü ve kokulu dağ kandillerinde günahkarlar için sürekli dua ve kefaret istedi. 2008 yılında Kilise tarafından resmi olarak onaylandı."
+  },
+  "agreda_mystic": {
+    "title": "Meryem Ana'dan Ven'e. Agredalı Meryem",
+    "description": "Ven. Agredalı İsa'nın Abbess Maria'sı, 4 ciltlik anıtsal başyapıt 'Tanrı'nın Mistik Şehri'ni kaydederken Meryem Ana'nın yüce iç vizyonlarını deneyimledi. Vücudu bozulmadan kalıyor."
+  },
+  "mary_tax_stams": {
+    "title": "Our Lady of Maria Vergisi",
+    "description": "Mary, Tirol'deki bir toprak sahibine göründü ve ormanda bir şapel istedi. 1667'de Başrahip Nicola Kraus, yolcular ve hacılar için bir sığınak haline gelen tapınağı inşa etti."
+  },
+  "citta_di_castello": {
+    "title": "Meryem Ana'dan Aziz Veronica Giuliani'ye",
+    "description": "Barok çağın en büyük mistik damgalarından biri olan Aziz Veronica Giuliani, Meryem'in derin bir vizyonunun ardından Capuchin manastırına girdi. Stigmatayı ve dikenli tacını taşıyordu."
+  },
+  "san_vito_casalbuttano": {
+    "title": "Casalbuttano Meryem Ana",
+    "description": "Marian'ın hayaleti 1668'de San Vito di Casalbuttano'da kaydedildi."
+  },
+  "pancole_providence": {
+    "title": "İlahi Takdirin Annesi",
+    "description": "1668 yılının Nisan ayında, yoksulluk içinde ağlayan sağır-dilsiz çoban kız Bartolomea Ghini, sesini geri kazanan ve ebeveynlerinin kilerini ekmek, yağ ve şarapla dolduran güzel bir bayan gördü. Köylüler tarladaki çalıları kestiklerinde onun türbesini keşfettiler."
+  },
+  "san_bartolomeo_1671": {
+    "title": "Nostra Signora della Rovere",
+    "description": "18 Nisan 1671'de Mary, bir kolu felçli olan çiftçi Giacinto Perato'ya göründü ve ona meşe tapınağına yaptığı hac ziyaretini geciktirmemesini tavsiye etti. Ertesi gün ayin sırasında anında iyileşti."
+  },
+  "paray_le_monial": {
+    "title": "Meryem Ana'dan Aziz Margaret Mary'ye",
+    "description": "Gençliğinde şiddetli romatizma nedeniyle yatalak olan St. Margaret Mary Alacoque, Mary'nin kızlarından biri olmaya yemin ettikten sonra anında iyileşti. İsa'nın Kutsal Kalbinin dünyayı dönüştüren vahiylerini aldığı Ziyaret manastırına girdi."
+  },
+  "agnie_quebec": {
+    "title": "Quebec'teki Meryem Ana",
+    "description": "Mary, genç yerli Mohawk Hristiyanı Martin Kandegonrhaksen'e göründü."
+  },
+  "bianzone_piano": {
+    "title": "Madonna del Piyano",
+    "description": "26 Mart 1675'te Meryem yerel bir adama göründü ve ondan ovada bir sunak ve tapınak inşa etmesini istedi."
+  },
+  "pochayiv": {
+    "title": "Pochayiv Meryem Ana",
+    "description": "Zbarazh Savaşı sırasında Pochayiv Lavra'yı kuşatan Türk ordusu, melekler ve Pochayiv Aziz Eyüp'ün eşliğinde göklerde Theotokos'un muhteşem hayaletini görünce dehşet içinde kaçtı. Çok sayıda kuşatmacı Hıristiyanlığa geçti."
+  },
+  "alcobendas_paz": {
+    "title": "Virgen de la Paz",
+    "description": "Meryem bir incir ağacında Fuentiduña'daki sakat bir çobanın karşısına çıktı, mucizevi bir şekilde sakat elini iyileştirdi ve annesinin göğsünü taze ekmekle doldurdu."
+  },
+  "torre_di_ruggiero": {
+    "title": "En Kutsal Meryem Ana",
+    "description": "17 Nisan 1677'de genç Isabella Cristello ve Antonia De Luca, Mary'yi yüce bir tatlılık vizyonunda Isabella'yı iyileştirirken gördüler. 1783 depremi tapınağı yerle bir ettikten sonra Mary, tapınağın yeniden inşasına ilham vermek için Pascale Luna'ya bir rüyada göründü. 1858'de çiftçi Francesco Arone'u iyileştirmek için mucizevi bir bahar geldi."
+  },
+  "saint_carr": {
+    "title": "Saint-Carr Meryem Ana",
+    "description": "Basit işçi Jean Bizier, Mary'nin ona köyünün yakınında tam olarak nerede kazacağını gösterdiğini hayal etti. Ertesi gün Meryem Ana'nın muhteşem bir ahşap heykelini ortaya çıkardı. 1696'da kutsanan bir şapelde yer almaktadır."
+  },
+  "celles_ariege": {
+    "title": "Our Lady of Celles",
+    "description": "28 Mayıs 1686'da 10 yaşındaki köylü çocuğu John Courdil, bir çeşmenin başında beyaz bir güvercinin beyazlar içindeki genç bir kıza dönüştüğünü gördü: 'Ben Kutsal Bakire'yim. İnsanları hayatlarını değiştirmeleri konusunda uyarın.' Küreğini almak için geri döndüğünde, küreğinin sapından mucizevi bir şekilde üç adet haç şekilli meşe yaprağı filizlendi."
+  },
+  "giaudet_lanrivain": {
+    "title": "Lanrivain Meryem Ana",
+    "description": "Meryem, 12 çocuklu fakir bir köylü babaya göründü ve mucizevi bir şekilde masasındaki ekmeği çoğalttı. Şüpheci kilise rahibi kör olunca, yeni keşfedilen Meryem heykelinin önünde dua ettikten sonra yeniden görmeye başladı."
+  },
+  "messina_lettera": {
+    "title": "Madonna della Lettera",
+    "description": "Ocak 1693'teki yıkıcı depremler sırasında Mary, Paola Pesce'yi hasta ederken beyazlar ve mavi bir mantoyla göründü: 'Korkma.' Katedralde Meryem Ana'nın simgesinin önünde toplananlara koruma sözü verdi. Şehir felaketten kurtuldu. Devasa bir altın liman anıtıyla kutsanmıştır."
+  },
+  "santa_rosa_ambato": {
+    "title": "Virgen de la Elevación",
+    "description": "13 Kasım 1695'te kuraklık ve sarsıntılar sırasında Meryem göz kamaştırıcı bir ışıkla yerli hizmetçi Juan Chacarin'e 3.419 metre yükseklikte bir kayanın altında göründü: 'Ben lekesiz Bakire Meryem'im... merhamet için kefaret ödeyin.' Büyük bir piskoposluk tapınağında yer almaktadır."
+  },
+  "quito_guapulo": {
+    "title": "Guapulo Meryem Ana",
+    "description": "Guadalupe Meryem Ana'nın ciddi bir geçit töreni sırasında, Cennetin Kraliçesi, ciddi bir hastalıktan anında iyileşen Quito Piskoposu'na gözle görülür bir şekilde göründü."
+  },
+  "ellwangen_jeningen": {
+    "title": "Schönenberg Meryem Ana",
+    "description": "Cizvit misyoneri Fr. Tanınmış mistik ve ruhani rehber Philip Jeningen, İsa ve Meryem'in hayaletinden kutsal damgayı aldı ve bu onu Schönenberg'deki tepedeki güzel tapınağın tanıtımını yapmaya yönlendirdi."
+  },
+  "quito_nube": {
+    "title": "Nuestra Señora de la Nube",
+    "description": "30 Aralık 1696'da, hasta Piskopos için düzenlenen büyük bir geçit töreni sırasında, toplanan 500 sadık Meryem Ana'nın bir bulutun üzerinde dinlendiğini, elinde bir zambak ve Çocuk İsa'yı tuttuğunu gördü. Görkemli görüntü, Gloria Patri'nin okunması boyunca devam etti."
+  },
+  "sumeg_sorrows": {
+    "title": "Acıların Leydisi",
+    "description": "Viyana'da tedavi edilemez bir hastalığa yakalanan Sophia Feilheim, rüyasında kendisiyle konuşan bir Pietà gördü. Sümeg'de heykelin aynısını bulduğu Macaristan'a gitti. Ona dokunduğunda anında iyileşti."
+  },
+  "castenaso": {
+    "title": "Castenaso Meryem Ana",
+    "description": "27 Ocak 1699'da genç Maria Maddalena onu kiliseye çağıran bir ses duydu. Meryem Ana heykelinin önünde diz çöktüğünde Meryem Ana sevgiyle elini uzattı."
+  },
+  "germany_holzhauser": {
+    "title": "Meryem Ana'dan Ven'e. Holzhauser",
+    "description": "Ünlü rahip, peygamber ve Apostolik Laik Rahipler Birliği'nin kurucusu saygıdeğer Bartolomeo Holzhauser, kutsal metinlerle ilgili derin yorumlarını aydınlatan Kutsal Bakire Meryem'in yüce vizyonlarından ve hayaletlerinden keyif aldı."
+  },
+  "san_severino_pollino": {
+    "title": "Madonna del Pollino",
+    "description": "Meryem Ana, Pollino Dağı'nın kuzey yamaçlarında bir çoban ve yerel bir kadına 'ışıkla yıkanmış, güneş kadar güzel' göründü ve gizli bir heykelin bulunduğu bir mağarayı işaret etti. Adanmışlar, renkli bir bahar alayında 1.537 metre yükseklikteki güzel dağ tapınağına tırmanırlar."
+  },
+  "poponguine": {
+    "title": "Poponguine Meryem Ana",
+    "description": "Yerel bir şaman, genç bir Fransız misyonerin dua kitabından Meryem Ana'nın görüntüsünün kuma düştüğüne tanık oldu. Onun önceki gün tarlalarda tanıştığı ışık saçan kadın olduğunu fark eden kendisi ve tüm köy, sevinçle Hıristiyan oldu. Senegal'in başlıca ulusal tapınağı."
+  },
+  "urkupina_bolivia": {
+    "title": "Virgen de Urkupina",
+    "description": "Çocuk taşıyan güzel bir kadın, Cota tepesinde mütevazı bir çoban kıza göründü ve akıcı bir Quechua diliyle konuşuyordu. Kasaba halkı onu görmeye koştuğunda kız şunu işaret etti: 'Jaqaypiña orqopiña' (\"O zaten tepede!\"). Büyük ulusal kutsal alan, Güney Amerika'da Ulusal Bütünleşmenin Hamisi olarak saygı görüyor."
+  },
+  "florida_cuipa": {
+    "title": "Meryem Ana'dan Antonio Cuipa'ya",
+    "description": "25 Ocak 1704'te Apalachee şefi, kateşist ve flütçü Antonio Cuipa, İngiliz baskınları sırasında çarmıha gerildi ve şehit edildi. Ayaklarının altında ateşle işkence gören Antonio, Meryem Ana'nın yanında belirdiğini gördü ve ona şanlı şehitliğine katlanmak için sakin bir cesaret verdi."
+  },
+  "capurso_pozzo": {
+    "title": "Kuyu Meryem Ana",
+    "description": "Ağustos 1705'te tedavi edilemez bir hastalıktan ölen Fr. Dominic Tanzella Meryem Ana'yı gece görüşünde gördü. Antik 'Santa Maria' kuyusundan su içip bir kilise inşa ederse anında iyileşeceğine söz verdi. İçti, anında iyileşti ve muhteşem bazilikayı dikti."
+  },
+  "kotschach": {
+    "title": "Kötschach'lı Meryem Ana",
+    "description": "Meryem genç bir din adamını, mabet ve hacılar üzerinde koruma sağlayacağına dair güvence vermeden önce on iki saat boyunca evinde diz çökerek test etti. 29 Nisan'da, tüm kilise mucizevi bir şekilde dünya dışı bir ışıkla aydınlatılırken, gece boyunca çanlar kendiliğinden çaldı."
+  },
+  "bischwind_mittnacht": {
+    "title": "Hıristiyanların Meryem Yardımı",
+    "description": "Osmanlı kuvvetleri tarafından esir alınan ve kaynar yağa mahkum edilen asker George Mittnacht, Meryem Ana'ya hararetle dua etti ve vatanını tekrar görmesi halinde bir şapel sözü verdi. Ertesi sabah mucizevi bir şekilde Frankonya'daki bir çimenliğe götürülerek uyandı. Şapeli kendi elleriyle inşa etti."
+  },
+  "foret_montfort": {
+    "title": "Meryem Ana'dan St. Louis de Montfort'a",
+    "description": "Meryem aracılığıyla İsa'ya Tam Kutsama'nın olağanüstü havarisi St. Louis Marie Grignion de Montfort'a, Fransa'daki zorlu misyonerlik yolculukları sırasında, birçok sadık kişinin şahit olduğu ışıltılı bir 'Beyazlar giymiş Leydi' eşlik ediyordu."
+  },
+  "ovada_passion": {
+    "title": "Tutkunun Leydisi",
+    "description": "Gençliğinde Meryem tarafından boğulmaktan kurtarılan Haçlı Aziz Paul, göğsünde beyaz bir haç bulunan siyah yas kıyafeti içindeki Meryem Ana'nın anıtsal bir görüntüsünü aldı. Ona dünyaca ünlü Tutku Tarikatı'nı kurma talimatını verdi."
+  },
+  "solovetsky_golgotha": {
+    "title": "Golgotha ​​Dağı'ndaki Meryem Ana",
+    "description": "18 Haziran 1712'de Meryem, Solovetsky manastırında keşiş Eyüp'e (Lova) göründü: 'Bu dağa Golgotha ​​adı verilecek... tarif edilemez bir azap yeri.' Tam olarak iki yüzyıl sonra ada, trajik bir Gulag esir kampının yeri haline geldi."
+  },
+  "peterwardein_snow": {
+    "title": "Kar Leydimiz",
+    "description": "Meryem, 5 Ağustos 1716'da Osmanlı gücüne karşı verilen kararlı savaş sırasında koruyucu örtüsünü Savoy Prensi Eugene'nin Hıristiyan kuvvetlerinin üzerine uzattı. Papa Clement XI, sonsuz şükran duygusuyla evrensel Kutsal Tespih bayramını başlattı."
+  },
+  "valverde_1711": {
+    "title": "Valverde Meryem Ana",
+    "description": "1 Ekim 1711'de, yıkıcı bir sığır vebası sırasında Meryem Ana, kutsal göletin yakınında Paolo Ogna (8) ve Francesco Pellizzari'ye (11) kestane toplarken göründü ve salgının derhal sona ereceğine söz verdi."
+  },
+  "rubiana_sorrows": {
+    "title": "Acıların Madonnası / Aşağılık Meryem Ana",
+    "description": "18 Ağustos 1713'te Lorenzo Nicol dağ sırtında bacağını kırdı ve bir pilon yemini ettikten sonra anında iyileşti. Yeminini unutarak tam bir yıl sonra 20 Ağustos 1714'te tekrar bozdu. Tövbe ederek Meryem tarafından tekrar iyileştirildi ve büyük tapınağı inşa etti."
+  },
+  "sinj_croatia": {
+    "title": "Sinj Meryem Ana",
+    "description": "14 Ağustos 1715'te 70.000 Osmanlı kuvveti Viyana'ya doğru ilerlerken Sinj'i kuşatırken, kasaba halkı mucizevi ikonanın önünde dua etti. Göğe Kabul Bayramı'nda Meryem'in figürü gökyüzünde belirerek işgalci ordunun kaçmasına neden oldu. Hırvatistan'ın büyük ulusal tapınağı."
+  },
+  "pellestrina_venice": {
+    "title": "Hayaletin Madonna'sı",
+    "description": "4 Ağustos 1716'da 14 yaşındaki Natalino Scarpa, kapalı kilisenin önünde yıldızlı mavi elbiseli görkemli bir bayan gördü: 'Buraya gel evlat... eğer savaşı kazanmak istiyorsak papaza Araf'ta ruhlar için ayinler kutlamasını söyle.' Mucizeyi doğrulamak için yavaşça bileğine dokundu."
+  },
+  "mercatello_giuliani": {
+    "title": "Meryem Ana'dan Aziz Veronica Giuliani'ye",
+    "description": "Olağanüstü Kapuçin mistik ve stigmatik olan Aziz Veronica Giuliani, manastır hayatı boyunca Meryem ve İsa ile sürekli derin iletişimler deneyimledi."
+  },
+  "lescure_paille": {
+    "title": "Ziyaretin Leydisi",
+    "description": "2 Temmuz 1717'de Mary, 13 yaşındaki çoban Jean Paillé'ye üç kez göründü ve ona gizli bir yeraltı heykelini ortaya çıkarması için rehberlik etti. Saint-Flour Piskoposu, kapsamlı kanonik soruşturmanın ardından kutsal alana resmi olarak izin verdi."
+  },
+  "aparecida_brazil": {
+    "title": "Nossa Senhora Aparecida",
+    "description": "Ekim 1717'de, Paraíba Nehri'nde verimsiz bir gece boyunca Meryem'e dua ettikten sonra, üç balıkçı Lekesiz Doğum'un nefis bir pişmiş toprak heykelinin önce cesedini, ardından da kafasını ağla ördü. Ağlarını tekrar atarak balıklara boğuldular. Brezilya'nın Baş Hamisi, dünyadaki ikinci en büyük Katolik bazilikasında yer almaktadır."
+  },
+  "altenhohenau_weigl": {
+    "title": "Meryem Ana'dan Columba Weigl'a",
+    "description": "Dominikli başrahibe Columba Weigl, 19 Ağustos 1731'de kutsal damgayı alırken Meryem ve İsa'nın tutarlı, neredeyse günlük çocukluk vizyonlarından keyif alıyordu."
+  },
+  "persquen_morbihan": {
+    "title": "Persquen Meryem Ana",
+    "description": "1722'deki mucizevi tezahürlerin ardından, her 1 Ağustos'ta yüzlerce adanmışın geleneksel Breton affı ve ciddi geçit töreni için toplandığı büyük bir şapel inşa edildi."
+  },
+  "maserada_vittorie": {
+    "title": "Madonna delle Vittorie",
+    "description": "9 Temmuz 1722'de mucizevi tezahürler, Veneto'daki Piave nehri boyunca Meryem Ana'nın Zaferlere saygı duymasına yol açtı."
+  },
+  "montagnaga_pine": {
+    "title": "Madonna di Montagnaga / Piné",
+    "description": "14 Mayıs 1729'da, sığırları damgalandığında Mary, 30 yaşındaki çoban Domenica Targa'ya altın ışıkta göründü: 'Burayı Merhametimin tahtı olarak seçtim. İmanla dua eden eli boş dönmez.' 1730'da Piskopos tarafından resmen onaylandı."
+  },
+  "neunkirchen_locatelli": {
+    "title": "Meryem Ana'dan Joseph Locatelli'ye",
+    "description": "Kutsal Bakire, şiddetli su kaybından muzdarip olan Joseph Locatelli'ye göründü ve onu mucizevi bir şekilde mükemmel sağlığına kavuşturdu."
+  },
+  "rome_divino_amore": {
+    "title": "Madonna del Divino Amore",
+    "description": "Aziz Petrus'a giderken kaybolan bir yolcu, Castel di Leva'da bir grup kuduz başıboş köpek tarafından saldırıya uğradı. Bakire ve Çocuk'u tasvir eden bir kule freskinin önünde bağırdı ve köpekler anında dağıldı. Papa Pius XII tarafından Roma'yı İkinci Dünya Savaşı'ndaki yıkımdan kurtardığı için itibar edildi."
+  },
+  "bois_de_la_roche": {
+    "title": "Meryem Ana'dan Madeleine Morice'e",
+    "description": "Meryem, yıldızlı mavi cüppeler içinde 11 yaşındaki Madeleine-Marie Morice'e göründü, Rab'bin Duasının (\"Krallığın gelsin\") derin mistik derinliğini açıkladı ve bir Providence Evi yetimhanesinin kurulmasını istedi."
+  },
+  "pochayiv_1765": {
+    "title": "Pochayiv Meryem Ana",
+    "description": "Meryem Ana'nın parlak ışıkta görkemli görünümü, tarihi Lavra manastırını Osmanlı askeri yıkımından kurtardı. 1772'de mucizevi simge 100.000 sadık kişinin önünde taçlandırıldı."
+  },
+  "chaguaya_bolivia": {
+    "title": "Virgen de Chaguaya",
+    "description": "1750'deki şiddetli kuraklık sırasında iki çoban, bir Molle ağacından yayılan çok renkli ışık ışınlarının Meryem'in güzel bir görüntüsünü ortaya çıkardığını gördü. Görüntü evlerine getirildiğinde mucizevi bir şekilde ağaca geri dönerek büyük bazilikayı harekete geçirdi."
+  },
+  "gimigliano_porto": {
+    "title": "Madonna di Porto",
+    "description": "Ekim 1753'te Mary, tövbe eden hırsız Pietro Gatto'nun bir rüyasında göründü ve yol kenarında bir tapınak istedi. 1807'de mucizevi ikonayı yağmalayan bir Fransız general, çadırında kör edici bir ışık yaydıktan sonra onu görkemli bir törenle geri getirdi. 1984 yılında Papa St. John Paul II tarafından taçlandırıldı."
+  },
+  "las_lajas_colombia": {
+    "title": "Las Lajas Meryem Ana",
+    "description": "Kanyondaki bir fırtına sırasında yerli Maria Mueses ve sağır-dilsiz kızı Rosa, Meryem Ana'nın Aziz Dominic ve Aziz Francis ile birlikte Tesbih'i tutarken doğrudan kayrak kayalığa basılmış muhteşem bir resmini gördüler. Rosa anında konuşmasını kazandı. Geçidin üzerine inşa edilmiş dünyaca ünlü Gotik mimari harikası."
+  },
+  "mariabesnyo_hungary": {
+    "title": "Máriabesnyő Meryem Ana",
+    "description": "19 Nisan 1759'da duvarcı John Fiedler rüyasında Mary'nin ona kilise kalıntılarında bir hazine bulacağını söylediğini gördü. Ertesi gün, Meryem Ana'nın 14. yüzyıldan kalma muhteşem bir fildişi heykelini ortaya çıkardı. Macaristan'ın en büyük ulusal tapınaklarından biri olduğu Kardinal Migazzi tarafından resmen onaylandı."
+  },
+  "france_lenormand": {
+    "title": "Meryem Ana'dan Marie Lenormand'a",
+    "description": "Marian tezahürleri 1769'da Fransa'da Marie Lenormand'a kaydedildi."
+  },
+  "valley_forge_washington": {
+    "title": "George Washington'un Vizyonu",
+    "description": "1859'da yayınlanan tarihsel kayıtlara göre General George Washington, Valley Forge'da Amerika Cumhuriyeti'nin karşı karşıya kalacağı üç büyük tehlikeyi açığa çıkaran gizemli bir bayan gördü ve şu sonuca vardı: 'Bu en büyük çatışmada, tüm dünya birleşerek ona karşı galip gelemeyecek... Birlik o kadar uzun sürecek ki.'"
+  },
+  "bocca_pignone_ghianda": {
+    "title": "Madonna della Ghianda",
+    "description": "1778 ve 1779'da Meryem, 12. yüzyıldan kalma kilise kalıntılarının yakınındaki bir kestane ağacının dalında üç çoban çocuğa görünerek tövbe etmeye ve kutsal metinlerle ilgili derin meditasyon yapmaya teşvik etti."
+  },
+  "sarov_seraphim": {
+    "title": "Meryem Ana'dan Aziz Seraphim'e",
+    "description": "Rus Ortodoks tarihinin en saygı duyulan keşişlerinden biri olan Sarovlu Aziz Seraphim, vahşi doğada inzivada geçirdiği 15 yıl boyunca Tanrı'nın Annesinin sayısız görkemli görünümüne maruz kaldı."
+  },
+  "dulmen_emmerich": {
+    "title": "Meryem Ana'dan Bl'ye. Anne Emmerich",
+    "description": "Augustinus'un stigmatik ve mistik kutsanmış Anne Catherine Emmerich, şair Clemens Brentano tarafından kaydedilen, Meryem'in dünyevi yaşamına ve İsa'nın kederli Çilesine ilişkin anıtsal ayrıntılı vizyonlar aldı. Onun vizyonları kurtuluş tarihi hakkındaki bilgimizi derinden zenginleştiriyor."
+  },
+  "bordeaux_chaminade": {
+    "title": "Meryem Ana'dan Bl'ye. Chaminade",
+    "description": "Fransız Devrimi yeminini etmeyi reddeden Kutsal Guillaume-Joseph Chaminade, Meryem'in hayaletleri yüzünden defalarca askerleri keşfetmekten korundu. 1817 yılında dünyaca ünlü Marianist Tarikatı'nı kurdu."
+  },
+  "doroszlo_hungary": {
+    "title": "Doroszló Meryem Ana",
+    "description": "Bir kazada kör olan Janos Zavloczki'ye Mary tarafından kutsal bir kaynakta gözlerini yıkaması talimatı verildi. Tuna havzasındaki en önemli hac bazilikalarından birini kurarak anında görüşünü yeniden kazandı."
+  },
+  "matemblewo_gdansk": {
+    "title": "Matemblewo Leydimiz",
+    "description": "1790'da dondurucu bir kış sırasında Mary, ormanda karda yürüyen 18 yaşındaki Rosina Puechner'e göründü ve derin bir barış, kefaret ve dua mesajı verdi. Gdańsk'ta çok saygı duyulan orman koruma alanı."
+  },
+  "la_vang_vietnam": {
+    "title": "La Vang Meryem Ana",
+    "description": "Zulüm gören Vietnamlı Hıristiyanlar ormanda açlık ve vahşi hayvanlarla karşı karşıya kalırken Meryem Ana, iki melekle birlikte Çocuk İsa'yı tutarken saf beyaz ışıkta göründü. Onlara ilaç olarak yaprakların nasıl kaynatılacağını gösterdi ve koruma sözü verdi. Vietnam Ulusal Marian Tapınağı."
+  },
+  "villanova-d-asti-1803": {
+    "title": "Siperlerin Madonna'sı",
+    "description": "Meryem Ana, sığır otlatırken 18 yaşındaki Maria Baj'a göründü ve 'Tanrı'nın Oğlu'nun Annesi burada onurlandırılmaya karar verdi' dedi. Bunu, özellikle sıtma ateşinden kaynaklanan iyileşme raporları takip etti. Mucizevi vadi kaynağına 'Meryem Suyu' adı verildi."
+  },
+  "rome-canori-mora-1807": {
+    "title": "Meryem Ana, Elizabeth Canori Mora'yı Kutsadı",
+    "description": "Bakire ve bebek İsa, Roma'da Kutsal Elizabeth Canori Mora'ya göründü. 1816 Noelinde Meryem Ana son derece üzgün göründü ve büyük bir dinsizlik ve dinden dönme uyarısı yaptı. Yazıları Vatikan tarafından titizlikle incelendi ve doktrinsel hatalardan tamamen arınmış olduğu görüldü."
+  },
+  "grushev-1806": {
+    "title": "Grushev Meryem Ana",
+    "description": "Mary, birden fazla görgü tanığının da doğruladığı gibi, Grushev'de alışılmadık koşullar altında ortaya çıktı. 1856'da kutsal mekana güzel bir anıt türbe dikildi."
+  },
+  "leipzig-lichen-1813": {
+    "title": "Liken Meryem Ana (Leipzig Savaşı)",
+    "description": "Leipzig Muharebesi sırasında yaralı Polonyalı asker Tomasz Klossowski, Meryem'e dua etti. Altın bir cüppeli, taçlı ve beyaz kartallı bir şekilde ortaya çıktı, iyileşme sözü verdi ve ondan bir portresini bulmasını istedi. Liken'e döndü ve mucizevi portreyi bir orman şapeline astı."
+  },
+  "lescouet-1820": {
+    "title": "Lescouët Meryem Ana",
+    "description": "On yedi yaşındaki çoban Jean Poulli bir ses duydu ve bir şapel yapılmasını isteyen Meryem Ana'yı gördü. Mahalle rahibi araştırdı, ilahi şarkılar duydu ve mucizevi bir pınar keşfetti. Piskopos De La Romagère tarafından 1829'da onaylandı."
+  },
+  "tinos-1821": {
+    "title": "Panagia Megalochare",
+    "description": "Meryem Ana, Aziz Pelagia ve erkek kardeşine yoğun ilahi ışıkta bir rüyada göründü ve Megalochare'nin (Lütuf Dolu) mucizevi ikonunu ortaya çıkaran kazılara rehberlik etti. Tinos, Yunanistan'ın kutsal ulusal Marian tapınağı oldu."
+  },
+  "vallecorsa-1821": {
+    "title": "Meryem Ana'dan St. Maria De Mattias'a",
+    "description": "Kutsal Anne, bir aynanın içinden ona bakan genç Maria'ya göründü. Leydimiz ona mucizevi bir şekilde okumayı öğretti, böylece ruhani kitaplar çalışabildi, hayatını Tanrı'ya adamaya yönlendirdi ve İsa'nın Kanının Hayranları Kız Kardeşler'i buldu."
+  },
+  "sallent-1829": {
+    "title": "Meryem Ana'dan St. Anthony Mary Claret'e",
+    "description": "St. Anthony Mary Claret, Meryem'in defalarca görülmesine tanık oldu ve ciddi bir hastalıktan mucizevi bir şekilde iyileşti. Dünyaca ünlü Meryem'in Lekesiz Kalbinin Misyoner Oğulları'nı (Claretians) kurmaya devam etti."
+  },
+  "mimbaste-1830": {
+    "title": "Meryem Ana'dan Marie Lataste'ye",
+    "description": "Mistik Marie Lataste, Rennes'in Kutsal Kalbi Manastırı'nda sıradan bir kız kardeş olarak kahramanca erdemine ilham veren Kutsal Bakire Meryem ve Kutsal Kalbin sayısız hayaletini gördü."
+  },
+  "rue-du-bac-1830": {
+    "title": "Mucizevi Madalya Meryem Ana",
+    "description": "Mary, Charity'nin Kızları'nın şapelinde, mücevherlerle süslenmiş ellerinden ışık ışınları akan bir kürenin üzerinde duran acemi Catherine Labouré'ye göründü. Mucizevi Madalyayı görevlendirdi ve onu güvenle takan herkese muazzam lütuflar vaat etti."
+  },
+  "laurignano-1831": {
+    "title": "Zincirin Hanımı (Madonna della Catena)",
+    "description": "Fra Benedetto Falcone, Laurignano'nun ıssız inziva yerine ulaştı. Meryem Ana'nın birkaç kez görülmesinin ardından Madonna della Catena'ya olan bağlılığı yeniden canlandırdı ve şu anda Tutkulu Misyonerler tarafından bakılan güzel bir sığınak inşa etti."
+  },
+  "guadalajara-1831": {
+    "title": "Meryem Ana'dan Rahibe Patrocinio'ya",
+    "description": "Meryem Ana, İspanya genelinde kutsal damgayı taşıyan otuz manastırın Fransisken kurucusu Dolores Quiroga'ya göründü. St. Anthony Mary Claret onun ruhani direktörü olarak görev yaptı."
+  },
+  "bous-1833": {
+    "title": "Meryem Ana'dan Anne Marie Claire Dominic'e",
+    "description": "Mary, Bous'taki çocukluğu sırasında mistik Anna Moes'a göründü. Yıllarca süren şüpheciliğe ve derin bir alçakgönüllülükle iftiralara rağmen, bir piskoposun mahkemesi 1884'te onun doğaüstü vizyonlarını tamamen doğruladı."
+  },
+  "capriana-1833": {
+    "title": "Meryem Ana'dan Domenica Lazzeri'ye",
+    "description": "Tarlada çalışırken 18 yaşındaki Domenica Lazzeri'nin karşısına Meryem Ana'nın görkemli figürü çıktı. Daha sonra kutsal damgayı aldı ve 1848'deki ölümüne kadar kefaret acılarına büyük bir sabırla katlandı."
+  },
+  "valmala-1834": {
+    "title": "Merhametin Annesi (Valmala Meryem Ana)",
+    "description": "Beş genç çoban, altın düğmeli mavi bir duvaklı, uzun kırmızımsı bir elbise giymiş, bir taş levhanın üzerinde duran güzel bir Hanım gördü. 50 gün boyunca elleri açık gözyaşları içinde ortaya çıktı. Resmi olarak Saluzzo Piskoposu tarafından taçlandırıldı."
+  },
+  "trinitapoli-1835": {
+    "title": "Meryem Ana'dan Giuseppe Maria Leone'ye",
+    "description": "Kutsal Meryem Ana, derin bir çukura düşen 6 yaşındaki Joseph Leone'yi mucizevi bir şekilde kurtardı ve ona dindar bir yaşam ilham etti. Daha sonra ilahiyat okulunda Mary ona görünerek 'Sen bana aitsin' dedi."
+  },
+  "paris-victories-1836": {
+    "title": "Zafer Meryem Ana",
+    "description": "Fr. Paris'teki Our Lady of Victories'deki sonuçsuz hizmetinden dolayı umutsuzluğa kapılan Desgenettes, Meryem Ana'dan, cemaatini onun Lekesiz Kalbine adaması talimatını veren derin bir içsel konuşma aldı. Ortaya çıkan Baş Kardeşlik, dünya çapında mucizevi dönüşümleri ateşledi."
+  },
+  "siena-taigi-1836": {
+    "title": "Meryem Ana, Kutsanmış Anna Maria Taigi'ye",
+    "description": "Roma ve Siena'da sadık bir anne ve mistik olan kutsanmış Anna Maria Taigi, doğaüstü hayaletler yaşadı ve içinde önemli dünya tarihi olaylarını öngördüğü mucizevi bir güneş küresi gördü."
+  },
+  "rome-del-bufalo-1837": {
+    "title": "Meryem Ana'dan St. Gaspar del Bufalo'ya",
+    "description": "Kıymetli Kanın Havarisi St. Gaspar del Bufalo, Değerli Kan Misyonerlerini kurarak İtalya boyunca yaptığı zorlu misyonerlik seyahatleri boyunca derin Marian ilhamını ve mistik rehberliğini deneyimledi."
+  },
+  "casnigo-1839": {
+    "title": "Erbia Meryem Ana",
+    "description": "Şiddetli bir fırtına sırasında, sığınmak isteyen genç bir çocuk Madonna tarafından güvenli bir şekilde kilitlenmiş bir ahırda karşılandı ve ona ekmek ve sıcak bir yatak sağladı. 1873 yılında Bergamo Piskoposu tarafından araştırıldı ve resmi olarak onaylandı."
+  },
+  "versailles-green-scapular-1840": {
+    "title": "Yeşil Skapular Meryem Ana",
+    "description": "Mary, Vincent'ın kız kardeşi Justine Bisqueyburu'ya, bir kılıçla delinmiş ve ilahi ışıkla alev almış Lekesiz Kalbini tutarken göründü. Yeşil Kürek kemiğini ona emanet etti ve onu giyen herkese mucizevi fiziksel iyileşmeler ve ölüm döşeğindeki dönüşümler vaat etti."
+  },
+  "ars-vianney-1840": {
+    "title": "Meryem Ana'dan St. John Vianney'e",
+    "description": "Bayan. Durie, Aziz John Vianney'nin odasına girdi ve altın güllerle göz kamaştırıcı beyazlar ve parlayan yıldızlardan oluşan bir taç giymiş Kutsal Meryem Ana'nın, kutsal papazla mucizevi şifalar hakkında nazikçe sohbet ettiğine tanık oldu."
+  },
+  "nantes-ardouin-1840": {
+    "title": "Meryem Ana'dan Marie Ardouin'e",
+    "description": "Marie Ardouin beş yıl boyunca ölümcül kanser nedeniyle dayanılmaz acılar çekti. Son anları yaklaştığında Meryem Ana göz kamaştırıcı bir ışıkla ona göründü ve onu anında ve tamamen iyileştirdi."
+  },
+  "graz-lorber-1840": {
+    "title": "Meryem Ana'dan Jakob Lorber'a",
+    "description": "Mistik yazar Jakob Lorber, göksel hayata ve Kutsal Bakire Meryem'e dair derin içsel ifadeler ve mistik vizyonlar deneyimledi."
+  },
+  "montana-little-paul-1841": {
+    "title": "Dua Meryem Ana (Aziz Meryem Misyonu)",
+    "description": "11 yaşındaki Salish'li yetim bir çocuk, Meryem Ana'nın kar gibi beyaz giysiler içinde, başının üzerinde bir yıldız ve kalbinden ışık ışınları akarak yeryüzünün üzerinde uçtuğunu gördü. Fr. Pierre De Smet araştırdı ve Our Lady of Prayer'a adanmış bir heykel dikti."
+  },
+  "rome-ratisbonne-1842": {
+    "title": "Our Lady of Zion (Mucize Meryem Ana)",
+    "description": "Katolik karşıtı Yahudi bankacı Marie-Alphonse Ratisbonne, test amacıyla Mucizevi Madalyasını takarak Sant'Andrea delle Fratte'de duruyordu. Kutsal Bakire ona parlak bir görkemle göründü; anında din değiştirdi, rahip oldu ve Zion Meryem Ana Cemaatini kurdu."
+  },
+  "celles-1842": {
+    "title": "Meryem Ana'dan Rahibe Marie-Stanislas Deprez'e",
+    "description": "Meryem Ana, 'Yoksullar Salonu'nda Visitandine Rahibesi Marie-Stanislas'a yüce ruhsal öğretiler aktararak göründü. Hayalet odası daha sonra kutsal manastır şapeline dönüştürüldü."
+  },
+  "tours-holy-face-1844": {
+    "title": "Meryem Ana'dan Aziz Petrus'lu Rahibe Marie'ye",
+    "description": "Karmelit rahibesi Aziz Petrus'lu Rahibe Marie, İsa ve Meryem'in derin vizyonlarını deneyimledi ve küfür ve saygısızlığın kefareti olarak İsa'nın Kutsal Yüzüne Yönelik Altın Ok Tazminatı Yasası'nı aldı."
+  },
+  "la-salette-1846": {
+    "title": "Our Lady of La Salette (Günahkarların Uzlaştırıcısı)",
+    "description": "Fransız Alpleri'nin yükseklerinde Kutsal Bakire, iki genç çobanın, Maximin ve Mélanie'nin önünde yoğun bir şekilde ağlayan parlak bir ışıkta göründü. Çekiçli ve kerpetenli bir haç takarak kıtlığa karşı uyardı ve yürekten tövbe etmeyi, dua etmeyi ve Rab'bin Günü'nü kutlamayı teşvik etti."
+  },
+  "turin-bosco-1846": {
+    "title": "Hıristiyanların Meryem Yardımı",
+    "description": "Mistik rüyalar ve Kutsal Meryem Ana'nın doğrudan vizyonlarının rehberliğinde St. John Bosco, terk edilmiş sokak gençlerini kurtarmak ve eğitmek için Salesian Tarikatı'nı kurdu. Her zaferi Meryem Ana'ya atfederek, Torino'da Hıristiyanların muhteşem Meryem Yardım Bazilikası'nı inşa etti."
+  },
+  "la-chaudiere-1848": {
+    "title": "Meryem Ana'dan Véronique'e ve Augustin Eymieux'ye",
+    "description": "Madonna, genç çobanlar Véronique ve Augustin Eymieux'ye tam olarak Our Lady of La Salette kılığında göründü ve din değiştirme ve ilahi hükümlerle ilgili acil anne uyarılarını tekrarladı."
+  },
+  "brette-1848": {
+    "title": "Brette Meryem Ana",
+    "description": "Meryem Ana, Brette'de göründü ve 1848'deki devrimci ayaklanmalar sırasında Fransa genelinde ruhsal yenilenme ve ahlaki dönüşüm için acil çağrılarda bulundu."
+  },
+  "obermauerbach-1848": {
+    "title": "Obermauerbach Meryem Ana",
+    "description": "Meryem yeşil bir çayırda, beyaz bir peçe ve altın bir taçla pembe giyinmiş, dünyaya olan inanç eksikliğinden dolayı üzüntüyle ağlayarak göründü. Daha sonra kırk sekiz tanığın bulunduğu kalabalığın önünde göksel ihtişamla tezahür etti."
+  },
+  "montousse-1848": {
+    "title": "Nouillan Meryem Ana",
+    "description": "Kutsal Bakire Meryem, Nouillan'ın antik şapel kalıntılarının yakınında üç küçük çocuğa göründü ve ardından, dindar hacılardan oluşan muazzam kalabalıkları çeken tekrarlanan doğaüstü tezahürler izledi."
+  },
+  "chambery-1849": {
+    "title": "Meryem Ana'dan Sr. Marie-Marthe Chambon'a",
+    "description": "Visitandine rahibesi Sr. Marie-Marthe Chambon, İsa'nın ve Kutsal Meryem Ana'nın derin vizyonlarını aldı ve Mesih'in Kutsal Yaralarına adanmayı başlattı."
+  },
+  "maria-dolina-1849": {
+    "title": "Lekesiz Doğum (Madonna del Bosco)",
+    "description": "Kutsal Bakire Meryem, bir orman çayırında üç genç çobana Lekesiz Doğum olarak göründü ve sadıkları 1854'ün ciddi papalık dogması tanımına hazırladı. Ahşap bir şapel ve mucizevi bir tablo dikildi."
+  },
+  "akko-1850": {
+    "title": "Akko Meryem Ana",
+    "description": "Hıristiyanlığa geçen ve Lübnanlı bir emirin hapsedilen oğlu Habeiche Hassan, rüyasında Meryem Ana'nın, onun onuruna güzel bir türbe dikmesi halinde mucizevi kurtuluşu vaat ettiğini gördü."
+  },
+  "lichen-stary-1850": {
+    "title": "Liken Meryem Ana (Mikołaj Sikatka)",
+    "description": "Mary, Grąblin ormanında mütevazı çoban Mikołaj Sikatka'nın önünde kırmızı bir elbise ve beyaz bir mantoyla muhteşem bir taçla göründü. Her gün Tesbih duası yapılmasını teşvik etti ve yıkıcı bir kolera salgınının olacağını önceden bildirdi. Veba tam olarak önceden söylendiği gibi ortaya çıktığında, onun mucizevi şefaati binlerce kişiyi iyileştirdi. Bugün Licheń Meryem Ana Tapınağı Polonya'nın en büyük kilisesidir."
+  },
+  "vatican-city-1850": {
+    "title": "Vatikan Meryem Ana Duruşması",
+    "description": "Vatikan'da papalık dinleyicisine katılan şüpheci bir Fransız Protestan kadın, parlak bir ışık huzmesinin Kutsal Bakire Meryem figürüne üç ayrı kez dönüştüğüne tanık oldu ve bu onun Katolik inancına tamamen dönüşmesine yol açtı."
+  },
+  "savogno-guanella-1851": {
+    "title": "Meryem Ana'dan St. Luigi Guanella'ya",
+    "description": "9 yaşındaki Luigi Guanella, İlk Komünyon gününde kendisine yoksulları ve engellileri kurtarmak ve onlara değer vermek için tam olarak ne yapması gerektiğini açıklayan ve dünya çapındaki hayırsever dini tarikatlarına ilham veren güzel bir Leydi gördü."
+  },
+  "cerreto-1853": {
+    "title": "Cerreto'nun Acıları Leydimiz",
+    "description": "12 yaşındaki Veronica Nucci, koyun otlatırken, diz çökmüş, kırmızı çiçekli beyaz bir elbise ve mavi bir manto giyen bir Bayan gördü. Dünyadaki çok sayıda günah için ağlayan Meryem, tazminat duaları ve bir şapel istedi. Olağanüstü şifalar üreten mucizevi bir bahar ortaya çıktı."
+  },
+  "la-pierraz-1854": {
+    "title": "Leydimiz Kutsanmış Marguerite Bays'a",
+    "description": "Mütevazı terzi Marguerite Bays ölümcül bağırsak kanserine yakalandı. 8 Aralık 1854'te, yani Papa Pius IX'un Lekesiz Hamilelik dogmasını ilan ettiği gün Meryem Ana onu mucizevi bir şekilde ve anında iyileştirdi. Daha sonra kutsal damgayı aldı."
+  },
+  "porzus-1855": {
+    "title": "Sesule Meryem Ana (Madone de Sesule)",
+    "description": "Kutsal Bakire Meryem, güzel bir dağ çukurunda 10 yaşındaki Teresa Dush'la yerel Sloven lehçesinde nazikçe sohbet ederken göründü. Meryem Ana, çocuğun eline ölümüne kadar görülebilecek parlak bir altın haç bastı."
+  },
+  "bordeaux-1855": {
+    "title": "Karmel Dağı Meryem Ana",
+    "description": "Meryem Ana, St. Simon Stock'un öldüğü antik Karmelit manastırında, kraliyet tacı ve açık kollarıyla beyaz bir bulutun üzerinde belirerek, toplanan tüm kardeşlerin kalplerini derinden etkiledi."
+  },
+  "buu-chau-1855": {
+    "title": "Buu Chau Meryem Ana (Tra Kieu)",
+    "description": "Şiddetli kraliyet zulmü sırasında Madonna, kilisenin çatısında kuşatan 4.000 askerin önünde parıldayan bir ihtişamla göründü. Katolik sadıkları koruyan göksel Leydi'den tamamen dehşete düşen tüm ordu geri çekildi."
+  },
+  "spoleto-possenti-1856": {
+    "title": "Meryem Ana'dan Aziz Gabriel Possenti'ye",
+    "description": "Meryem Ana'nın bir ikonası, Spoleto'da Cizvit öğrencisi Francesco Possenti'nin önünde mucizevi bir şekilde canlandı ve şöyle dedi: 'Francesco, dünya sana göre değil; dini hayata girmelisiniz.' 24 yaşında ölmeden önce yüce bir kutsallığa ulaşarak Tutkucular'a katıldı."
+  },
+  "assisi-de-bray-1856": {
+    "title": "Meryem Meleklerin Kraliçesi",
+    "description": "Gece yarısı otuz yıllık ölümcül bir hastalıktan ölen M. de Bray, ilahi Anne'nin kendisine Assisi'deki Meryem Ana'ya hac yolculuğuna çıkma sözü vermesi talimatını veren sesini duydu. Yemin ettikten sonra anında ve radikal bir şekilde iyileşti."
+  },
+  "orero-1856": {
+    "title": "Orero Meryem Ana",
+    "description": "Mary, ahlaki ihmalden yakınarak ve Babamız ve Selam Kutsal Kraliçe'nin hararetle okunmasını tavsiye ederek yirmi yaşındaki Rosa Carbone'a iki kez göründü."
+  },
+  "torrazza-1857": {
+    "title": "Torrazza'lı Meryem Ana",
+    "description": "İki genç kız, Çocuk İsa'yı göğsüne sımsıkı tutarak, En Kutsal Hanım'ın beyaz bir elbise ve mavi bir pelerinle ihtişam bulutlarının arasından göründüğüne tanık oldu."
+  },
+  "alexandria-baouardy-1858": {
+    "title": "Meryem Ana'dan Aziz Mariam Baouardy'ye",
+    "description": "Genç Mariam Baouardy, Katolik inancından vazgeçmeyi reddettiği için neredeyse şehit oluyordu. İskenderiye'nin bir ara sokağında boğazı kesilmiş halde ölüme terk edilen, maviler içindeki güzel bir Hanım ortaya çıktı, onu mucizevi bir şekilde iyileştirdi ve Beytüllahim'deki muhteşem Karmelit kaderini önceden bildirdi."
+  },
+  "lourdes-1858": {
+    "title": "Our Lady of Lourdes (Lekesiz Hamilelik)",
+    "description": "Nemli Massabielle mağarasında güzel Meryem Ana, 14 yaşındaki köylü kızı Bernadette Soubirous'a 18 kez göründü. 'Lekesiz Hamilelik' kimliğini açığa vurarak, o zamandan beri sayısız tedavi edilemez hacıyı iyileştiren mucizevi bir şifa kaynağını ortaya çıkardı. Bugün Lourdes, dünyadaki en önemli kutsal tapınaklardan biridir."
+  },
+  "arnaud-guilhem-1859": {
+    "title": "Picheloup Meryem Ana",
+    "description": "Dört küçük çocuk tekrarlanan hayaletler ve mesajlar yaşadı. 2007 yılında Toulouse Başpiskoposu, Marian kültünü ve kutsal Picheloup tapınağındaki hac ziyaretlerini resmen onayladı."
+  },
+  "champion-1859": {
+    "title": "İyi Yardım Meryem Ana (Şampiyon)",
+    "description": "Kutsal Anne, iki ağacın arasında göz kamaştırıcı beyazlar içinde belirerek 28 yaşındaki Adele Brise'ye şöyle dedi: 'Ben günahkarların din değiştirmesi için dua eden Cennetin Kraliçesiyim... çocuklara kurtuluş için bilmeleri gerekenleri öğretin.' Felaket yaratan 1871 Peştigo Yangını tüm bölgeyi sardığında kutsal alanlar mucizevi bir şekilde kurtuldu."
+  },
+  "rosenau-1859": {
+    "title": "Rosenau Meryem Ana",
+    "description": "Üç yaşındaki Johann Brunnsteiner, ağır hastalık nedeniyle kör oldu. Anne ve babası Kızıl Haç Şapeli'ndeki ayazmada gözlerini yıkarken, Tanrı'nın Annesi Çocuk İsa'nın tacıyla ortaya çıktı ve anında görüşünü geri kazandı."
+  },
+  "andlau-1860": {
+    "title": "Andlau Meryem Ana",
+    "description": "Kutsal Bakire Meryem, Alsace, Andlau'da Françoise Barthel'e göründü ve yerel cemaate manevi teselli ve derin adanmışlık yenilenmesi getirdi."
+  },
+  "francoules-1860": {
+    "title": "Meryem Ana'dan Pauline Périé'ye",
+    "description": "Mistik Pauline Périé, Francoulès kilisesinde Meryem Ana'nın altın taçlı, yıldızlı bir elbiseyle, elinde küçük çiçeklerle süslenmiş olduğunu gördü. Meryem, meleklerin eşliğinde yürekten kefaret duaları etmeye başladı."
+  },
+  "montefalco-1861": {
+    "title": "Yıldızın Madonna'sı (Madonna della Stella)",
+    "description": "Meryem, St. Bartholomew'in antik şapel kalıntıları arasında 4 yaşındaki Righetto Cionchi'ye göründü. Tüberkülozdan ölen genç bir adam, Meryem'e bu unvanla dua edilerek mucizevi bir şekilde iyileştiğinde, yerel piskopos bu hayaletleri resmen tanıdı ve muhteşem Madonna della Stella Tapınağı'nı inşa etti."
+  },
+  "anglet-1863": {
+    "title": "Meryem Meleklerin Kraliçesi",
+    "description": "Kutsal Bakire Meryem, kurucu rahip Fr.'ye 'Meleklerin Kraliçesi' olarak göründü. Cestac, ona güçlü 'Cennetin Ağustos Kraliçesi' duasıyla dünya çapındaki şeytani karanlığı yenmek için melek lejyonları göndermesi talimatını veriyor."
+  },
+  "petigny-1865": {
+    "title": "Meryem Ana'dan Marie Jalhay'a",
+    "description": "Ev hanımı Marie Jalhay ciddi, zayıflatıcı omurga hastalığından muzdaripti. Leydimiz doğaüstü ışıkta beyaz bir pelerinle sarılmış olarak göründü ve 'Artık iyileştin! Kalk ve ailene göster.' Anında iyileşti."
+  },
+  "ilaca-1865": {
+    "title": "Ilača Meryem Ana (Hırvat Lourdes)",
+    "description": "Yerel bir çiftçi, Meryem Ana'nın defalarca tanık kalabalığının önüne çıktığı mucizevi bir su kaynağı keşfetti. Çok sayıda belgelenmiş fiziksel iyileşmenin ardından, piskoposluk piskoposu ünlü hac tapınağının inşasına izin verdi."
+  },
+  "philippsdorf-1866": {
+    "title": "Hıristiyanların Meryem Yardımı (Filipov)",
+    "description": "Magdalena Kade yatalak yatıyordu ve tedavisi mümkün olmayan acı verici hastalıklardan dolayı ölüyordu. Sabah saat 4:00'te, Kutsal Bakire Meryem göz kamaştırıcı beyazlar içinde, altın bir taçla ortaya çıktı ve 'Kızım, artık iyileştin!' diye fısıldadı. Anında mükemmel bir sağlıkla ayağa kalktı. Papa Leo XIII resmen mucizeyi tanıdı ve kutsal alanı küçük bir bazilikaya yükseltti."
+  },
+  "kirchdorf-1867": {
+    "title": "Meryem Ana'dan Teresa Steindl'a",
+    "description": "Mary altı kez Teresa Steindl'a göründü ve insanlığın din değiştirmeye direnmesi halinde felaket fırtınalarının ve ruhsal karanlığın yeryüzüne çökeceğine dair acil uyarılarda bulundu."
+  },
+  "bois-d-haine-1868": {
+    "title": "Meryem Ana'dan Louise Lateau'ya",
+    "description": "Veba kurbanlarını kahramanca tedavi eden genç Louise Lateau, İsa ve Meryem'in hayaletlerini gördü. Daha sonra her Cuma kutsal damgayı taşıdı ve on iki yıl boyunca Kutsal Efkaristiya'dan başka hiçbir şey yemeden yaşadı."
+  },
+  "tsuwano-1869": {
+    "title": "Tsuwano Meryem Ana (Maria Seido)",
+    "description": "Acımasız Meiji zulmü sırasında, Nagazaki'den 153 gizli Hıristiyan, Otome Toge geçidindeki dondurucu açık hava kafeslerinde hapsedildi. Kutsal Bakire Meryem her gece parlak bir sıcaklıkla ortaya çıkıyor, donmakta olan şehitleri teselli ediyor ve kutsuyordu."
+  },
+  "loigny-1870": {
+    "title": "Patay Meryem Ana",
+    "description": "Loigny'deki kanlı Fransa-Prusya Savaşı sırasında, Papalık Zouave komutanı General de Sonis dondurucu karda ağır yaralanmıştı. Kutsal Bakire Meryem, savaş alanında onun önünde belirdi ve ona yüce bir barış ve mucizevi bir metanet verdi."
+  },
+  "metz-1870": {
+    "title": "La Salette Meryem Ana (Metz)",
+    "description": "Metz'de 8 yaşında bir erkek çocuk, şehrin kuşatılması sırasında Meryem Ana'nın, La Salette'in ağlayan kılığında net bir görüntüsünü yaşadı."
+  },
+  "nancy-1870": {
+    "title": "Nancy Meryem Ana (Maison de Secours)",
+    "description": "Kutsal Bakire Meryem, birkaç yıl boyunca Maison de Secours şapelinde toplanan çok sayıda sadık kişinin önünde göksel bir görkemle sessizce göründü."
+  },
+  "walschbronn-1870": {
+    "title": "Walschbronn Meryem Ana",
+    "description": "Dokuz yaşındaki Barbara Conrad, ciddi ölümcül bir hastalıktan muzdaripti. Palmiye Pazarı'nda Meryem ışıltılı bir görkemle ortaya çıktı ve küçük çocuğu anında ve tamamen iyileştirdi."
+  },
+  "eupen-1870": {
+    "title": "Eupen Meryem Ana",
+    "description": "Tamamen dilsiz doğan bir kız, Capuchin kilisesindeki Meryem heykelinin önünde bir novena duası etti. Dokuzuncu günde Meryem heykelin yanında ilahi ışıkta belirdi ve bir hareketle onu sessizce iyileştirdi. Çocuk hayatında ilk kez mükemmel konuşuyordu."
+  },
+  "pontmain-1871": {
+    "title": "Pontmain'in Umut Leydisi",
+    "description": "İlerleyen Prusya orduları Brittany'yi tehdit ederken, güzel Meryem Ana, yıldızlı gece gökyüzünde, altın yıldızlarla süslenmiş koyu mavi bir elbiseyle göründü. Altın bir pankart açıldı ve şu yazıyordu: 'Ama dua edin çocuklarım. Allah yakında sizi duyacaktır. Oğlum Kendisinin şefkatle etkilenmesine izin veriyor.' Birkaç saat içinde Prusyalı general tüm bölgeyi koruyarak topyekün geri çekilme emrini verdi."
+  },
+  "locherboden-1871": {
+    "title": "Kurtuluş Meryem Ana (Maria Locherboden)",
+    "description": "Maria Kalb, tedavi edilemez bir hastalık nedeniyle yedi yıl boyunca yatalak ızdırap çekti. Meryem'in mucizevi bir resminin önünde kutsal bir dağ mağarasına taşınan Meryem ortaya çıktı ve anında sağlığına kavuştu. Muhteşem bir neo-Gotik tapınak inşa edildi."
+  },
+  "lausanne-1871": {
+    "title": "Meryem Ana'dan Marie-Françoise Decotterd'a",
+    "description": "Mary, Marie-Françoise Decotterd'ı ciddi şekilde hastalamış gibi göründü ve ona hayatını ruhların kurtuluşu için kefaret niteliğindeki fedakarlığa adamaya ilham verdi."
+  },
+  "paris-assumption-1871": {
+    "title": "Meryem Ana, Rahibe Marie-Eugénie ve Sr. Thérèse-Emmanuel'e",
+    "description": "Kutsal Bakire Meryem, Varsayımcı kurucu ortak Sr. Thérèse-Emmanuel'e görünerek, Immaculate Conception'ın sancağını taşıyan ruhani Marian ordusunun derin bir vizyonunu ortaya koydu."
+  },
+  "st-louis-1871": {
+    "title": "Meryem Ana'dan Therese Schaffer'a",
+    "description": "Madonna, yatalak Therese Schaffer'ın önünde parlak beyaz bir elbise ve altın yıldızlardan oluşan bir taçla göründü, onu anında iyileştirdi ve dini hayata girmesine rehberlik etti."
+  },
+  "neubois-1872": {
+    "title": "Merhametin Annesi (Neubois Meryem Ana)",
+    "description": "Mary, Frankenbourg'un ormanlık yamaçlarında bir taç ve siyah haçlı altın bir pelerin giyerek göründü. Yüzden fazla tanığın bulunduğu kalabalığın karşısına sık sık 'Merhametin Annesi' olarak çıkan o, muazzam ibadetsel hac yolculuklarına ilham verdi."
+  },
+  "pouille-1872": {
+    "title": "Pouillé Meryem Ana",
+    "description": "Meryem Ana, mavi ve pembe kurdeleli beyaz bir elbise ve çiçeklerden bir taçla Marian sunağının önünde belirdi ve Ave Maris Stella'nın hararetli bir şekilde okunmasını teşvik etti."
+  },
+  "paris-truffault-1873": {
+    "title": "Rue Truffault Meryem Ana",
+    "description": "Genç Armand Wallet ve Alfred Fontes, Paris'in Batignolles semtinde Kutsal Bakire Meryem'in net doğaüstü görüntülerini deneyimlediler."
+  },
+  "blain-jahenny-1873": {
+    "title": "Kutsal Kalbin Kürek kemiği Meryem Ana",
+    "description": "Yatalak 23 yaşındaki Marie-Julie Jahenny, Meryem Ana'nın siyahlar içinde büyük beyaz bir haç taşıdığını gördü. İki bin tanığın önünde söz verdiği gibi tam olarak 2 Mayıs'ta mucizevi bir şekilde iyileşti ve La Salette ile Fatima'yı doğrulayan kutsal damgaları ve derin kehanet vizyonlarını aldı."
+  },
+  "biding-1873": {
+    "title": "Meryem Ana'dan Catherine Filljung'a",
+    "description": "Mary defalarca mavi bir yelek ve beyaz bir mantoyla mistik Catherine Filljung'a göründü ve ona bir Dominik yetimhanesi kurması ve derin bir kefaret hayatı sürmesi için ilham verdi."
+  },
+  "walbach-1873": {
+    "title": "Ren Meryem Ana",
+    "description": "Kutsal Bakire, Cavezzale'nin Sevgili Leydisi olarak ortaya çıktı ve Fransa için dua ve kefaret çağrısında bulundu. Felçli Theresa Kaufmann daha sonra mucizevi bir şekilde iyileşti."
+  },
+  "samois-1873": {
+    "title": "Samois Meryem Ana",
+    "description": "Kutsal Meryem Ana, kucağında Çocuk İsa ile güpegündüz, yaklaşık iki saat boyunca okul bahçesindeki 25 okul çocuğunun tamamına göründü."
+  },
+  "saint-bauzille-1873": {
+    "title": "Saint-Bauzille Meryem Ana",
+    "description": "Şarap üreticisi Auguste Arnaud, Trinity Pazar günü bağında çalışırken, Mary parlak altın ışıkta göründü ve Pazar dinlenmesinin kutlanması ve büyük bir haç dikilmesi çağrısında bulundu. Tam olarak bir ay sonra yeniden kalabalığın önüne çıkıp şunu söyledi: 'Pazar günü asla çalışmamalısın! Ne mutlu iman edenlere.'"
+  },
+  "noyal-muzillac-1874": {
+    "title": "Meryem Ana'dan Jean-Pierre Le Boterff'e",
+    "description": "Çalışkan genç çiftçi Jean-Pierre Le Boterff, ormanın kenarında yıldızlı mavi bir elbise ve altın bir pelerin giymiş güzel bir figür gördü. Mary, St. Anne d'Auray'a hac ziyareti yapılmasını ve Brittany için ömür boyu dua edilmesini teşvik etti."
+  },
+  "jerusalem-ghattas-1874": {
+    "title": "Kutsal Tespih Meryem Ana (Kudüs)",
+    "description": "Kutsal Bakire Meryem, Kudüs ve Beytüllahim'deki Filistinli rahibe Marie-Alphonsine Danil Ghattas'a meleklerle çevrili ışıltılı bir ihtişamla göründü ve ona Kutsal Tesbih Dominik Rahibeleri'ni kurması için ilham verdi."
+  },
+  "pra-genoa-1874": {
+    "title": "Hıristiyanların Meryem Yardımı (Prà)",
+    "description": "Genç çobanlar Angela Berruti ve Vincenzo Scossiera, parlak bir bulutun üzerinde, onun onuruna bir tepenin zirvesinde bir şapelin inşa edilmesini isteyen güzel bir Leydi gördüler. Sivil muhalefete rağmen muhteşem bir sığınak inşa edildi."
+  },
+  "villareggia-1875": {
+    "title": "Villareggia'nın Acılarının Anası",
+    "description": "Genç hizmetçi Rosina Ferro, Acıların Annesinin temmuz ve ağustos ayları boyunca yol kenarında meleklerle çevrili sessizce durduğunu gördü. Daha sonra kutsal damgayı taşıdı."
+  },
+  "boulleret-1875": {
+    "title": "Our Lady of Boulleret (Şehitler Kraliçesi)",
+    "description": "Dayanılmaz bir ölümcül ıstırap çeken Joséphine Reverdy, onu anında iyileştiren Kutsal Bakire Meryem'in görkemli bir hayaletini yaşadı. Hayatının geri kalanını kurban bir ruh olarak kefaret niteliğindeki fedakarlığa adadı."
+  },
+  "pellevoisin-1876": {
+    "title": "Merhametli Anne (Pellevoisin)",
+    "description": "Yatak odasında ölümcül tüberkülozdan ölen 33 yaşındaki Estelle Faguette, Kutsal Bakire Meryem'in 15 görüntüsüne tanık oldu. 'Ben çok merhametliyim ve Oğlumun metresiyim' diyen Meryem, onu anında ve tamamen iyileştirdi ve Kutsal Kalbin Kürek kemiğini ona emanet etti."
+  },
+  "mettenbuch-1876": {
+    "title": "Mağdurların Yorganı (Mettenbuch)",
+    "description": "Yoğun Kulturkampf zulmü sırasında küçük çocuklar, Metten Manastırı yakınlarındaki ormanlık bir vadide Meryem Ana, Çocuk İsa ve melek korosunun muhteşem görüntülerine tanık oldular. Mucizevi kaynak suyu kayda değer, belgelenmiş şifalar üretti."
+  },
+  "gietrzwald-1877": {
+    "title": "Gietrzwald Meryem Ana (Polonyalı Fatima)",
+    "description": "Mary, Prusya'nın sert bölünmesi sırasında ana dili Lehçe konuşan iki genç kızın önünde, bir akçaağaç ağacının üzerindeki parlak altın rengi bir bulutun içinde defalarca göründü. Kim olduğu sorulduğunda şu cevabı verdi: 'Ben Kutsal Bakire Meryem'im, Lekesiz Doğum'um... Her gün Tesbih duası yapmanızı dilerim.' Kutsadığı mucizevi bahar sayısız hacıya şifa vermeye devam ediyor."
+  },
+  "knock-1879": {
+    "title": "Our Lady of Knock (İrlanda Kraliçesi)",
+    "description": "Alacakaranlıkta yağan yağmur sırasında, köy şapelinin dış güney duvarındaki meleklerle çevrili bir sunak üzerinde Kutsal Bakire Meryem, Aziz Joseph ve Evangelist Aziz Yuhanna'nın parlayan figürleri Tanrı Kuzusu'nun yanında belirdi. İki saat boyunca on beş resmi tanık sessizce hayranlıkla ayakta durdu. Bugün Knock, İrlanda'nın Ulusal Marian Tapınağıdır."
+  },
+  "lyon-diemoz-1882": {
+    "title": "Yalnızlığın Annesi (Notre-Dame de la Solitude)",
+    "description": "Ciddi ölümcül tüberküloz hastası olan hastane hastası Anne-Marie Coste, Meryem'in, elinde kırık haçlı bir küre tutan Çocuk İsa'yı tutan muhteşem bir taç taktığını gördü. Mucizevi bir şekilde iyileşti ve Yalnızlığın Annesi madalyasını terfi ettirdi."
+  },
+  "rovigo-1883": {
+    "title": "Meryem Ana'dan Maria Inglese'ye",
+    "description": "Genç terzi Maria Inglese, odasında Meryem Ana'nın Lekesiz Kalbinin Onur Kıtası'nın kurulmasına ilham veren, Kutsal Bakire'nin birkaç yüce vizyonunu deneyimledi."
+  },
+  "lisieux-therese-1883": {
+    "title": "Gülümsemenin Bakiresi (Vierge du Sourire)",
+    "description": "Korkunç ateş ve şeytani saldırılar nedeniyle 10 yaşındayken hezeyan ve ölümün eşiğine gelen küçük Thérèse Martin, Mary'nin aile heykeline doğru döndü. Aniden heykel göksel bir güzellikle canlandı ve ona anlatılamaz bir anne şefkatiyle gülümsedi. Her bir semptom tam bir neşe içinde anında yok oldu. Thérèse, en büyük modern Katolik azizlerden biri olan Küçük Çiçek olmaya devam etti."
+  },
+  "ta-pinu-gozo-1883": {
+    "title": "Ta' Pinu Meryem Ana",
+    "description": "Kırsal kesimdeki izole bir şapelin önünden geçen 45 yaşındaki Karmni Grima, içeriden yumuşak bir anne sesinin şöyle seslendiğini duydu: 'Gel, gel... bedenimin mezarda kaldığı üç günün şerefine üç Kutsal Meryem duası oku.' Ta' Pinu'yu Malta'nın muhteşem Ulusal Marian Tapınağına dönüştüren olağanüstü mucizevi iyileşmeler bunu takip etti."
+  },
+  "pompeii-1884": {
+    "title": "En Kutsal Tespih Kraliçesi (Pompeii)",
+    "description": "Ölümcül epilepsi ve kramplardan muzdarip olan 21 yaşındaki Fortuna Agrelli, Pompeii Meryem Ana'nın bir resmi önünde Tesbih novena duası yaptı. Meryem Ana çiçeklerden oluşan bir tahtta oturmuş olarak göründü ve şunları söyledi: 'Kim benden lütuf isterse üç novena Tesbih duası yapsın.' 8 Mayıs'ta anında ve tamamen iyileşti. Kutsanmış Bartolo Longo, dünyaca ünlü Pompeii Papalık Tapınağı'nı inşa etti."
+  },
+  "castelpetroso-1888": {
+    "title": "Castelpetroso'nun Acıların Leydisi",
+    "description": "Monte Patalecchia'daki engebeli bir dağ yarığında iki köylü kadın, görkemli Meryem Ana'nın, İsa'nın kanayan bedeninin önünde kollarını uzatmış, derin bir acı içinde diz çöktüğünü gördü. Piskoposluk piskoposu da dahil olmak üzere binden fazla tanık daha sonra göksel ışığa ve hayaletlere tanık oldu. Mucizevi bir bahar ortaya çıktı ve nefes kesici bir neo-Gotik bazilika inşa edildi."
+  },
+  "saint-pierre-eynac-1886": {
+    "title": "Saint-Pierre-Eynac Meryem Ana",
+    "description": "İki genç kız, Kutsal Bakire Meryem'in Blachées ormanında koyu renkli bir peçe takan on dokuz sessiz hayaletine tanık oldu. Yerel piskopos, Meryem Ana'nın anıldığı güzel bir anıt tapınağın inşasını resmen onayladı."
+  },
+  "tilly-1896": {
+    "title": "Tilly Meryem Ana",
+    "description": "Aziz Cebrail Bayramı'nda, toplanmış elli okul çocuğu ve Marie Martel, karaağaç ağaçlarının üzerindeki gökyüzünde, meleklerle çevrili ve muhteşem bir Tesbih tutan Kutsal Meryem Ana'nın parlayan, ışıltılı figürüne tanık oldular."
+  },
+  "imbersago-1896": {
+    "title": "Ormanların Kutsal Bakiresi (Madonna del Bosco)",
+    "description": "İnancını kaybeden ve kiliseye gitmeyi bırakan köylü kadın Teresa Secomandi, ormanda havada yükselen Meryem Ana ile karşılaştı. Mary nazikçe ona bir Tesbih verdi ve onunla birlikte Ormandaki Meryem Ana Tapınağının kapısına doğru yürüdü."
+  },
+  "lucca-galgani-1899": {
+    "title": "Meryem Ana'dan Aziz Gemma Galgani'ye",
+    "description": "Kutsal Kalp Bayramı nöbetinde 21 yaşındaki mistik Gemma Galgani, günahlarından dolayı derin bir üzüntü yaşadı. Kutsal Meryem Ana, koruyucu meleğinin yanında göksel bir heybetle ortaya çıktı ve 'Ben sana anne olacağım' dedi. Mantosunu açan Meryem, İsa ortaya çıktığında Gemma'yı anne kucağıyla sardı ve kutsal damgayı ilahi ateş alevleriyle donattı."
+  },
+  "gemma_galgani": {
+    "title": "Aziz Gemma Galgani",
+    "description": "Aziz Gemma Galgani, İsa'nın, Meryem Ana'nın ve onun Koruyucu Meleğinin derin mistik vizyonlarını deneyimledi, damgaları aldı ve Mesih'in Çilesine derinden katıldı."
+  },
+  "maximilian_kolbe": {
+    "title": "Aziz Maximilian Kolbe",
+    "description": "Raymond Kolbe, 10 yaşlarında genç bir çocukken, Meryem Ana'nın kendisine iki taç teklif etmesini hayal etmişti: saflık için beyaz ve şehitlik için kırmızı. Her ikisini de kabul ederek, ömür boyu Fransisken havariliğine ve Auschwitz'de nihai şehitliğine ilham verdi."
+  },
+  "berthe_petit": {
+    "title": "Berthe Petit / Kederli ve Tertemiz Kalp",
+    "description": "Fransiskan üçüncül öğrencisi Berthe Petit, Meryem'in Hüzünlü ve Lekesiz Kalbine dünya çapında bağlılık çağrısında bulunan iç mekânlar ve vizyonlar aldı. Mesajları bir imprimatur aldı ve azizlik nedeni açık."
+  },
+  "coogee-eileen-1911": {
+    "title": "Meryem Ana'dan Eileen O'Connor'a",
+    "description": "Ağır bir omurga rahatsızlığı nedeniyle yatalak olan İrlandalı-Avustralyalı Eileen O'Connor, bir dizi Marian vizyonu yaşadı. Onun derin bağlılığı onu Katolik dini tarikatı 'Yoksullar için Meryem Ana Hemşireleri'ni ('Kahverengi Hemşireler') kurmaya yöneltti. O şu anda azizlik davası devam eden bir Tanrı'nın Hizmetkarıdır."
+  },
+  "padre_pio": {
+    "title": "Pietrelcina'lı Aziz Padre Pio",
+    "description": "Kapuçin rahibi ve stigmatik St. Padre Pio, şefkatle 'Sevgili Anne' dediği Meryem Ana'dan derin vizyonlar ve teselli alarak yaşam boyu göksel iletişimler deneyimledi."
+  },
+  "elena_aiello": {
+    "title": "Bl. Elena Aiello",
+    "description": "Mistik, damgalanmış ve kurucu Bl. Elena Aiello, İsa ve Meryem'den dünya olaylarıyla ve kefaret ve tazminatın gerekliliğiyle ilgili doğaüstü vizyonlar ve uyarılar aldı."
+  },
+  "divine_tears_cernusco": {
+    "title": "İlahi Gözyaşları Meryem Ana",
+    "description": "Marcelline Rahibeleri'nin anaevinde ağır hasta olan Sr. Elisabetta Redaelli, Meryem Ana'nın dünyanın günahları için ağlayan hayaletinin ardından mucizevi bir şekilde iyileşti."
+  },
+  "faustina_divine_mercy": {
+    "title": "Aziz Faustina Kowalska",
+    "description": "Aziz Faustina, İsa'nın anıtsal İlahi Merhamet vahiylerinin yanı sıra, kendisine içsel gizli yaşam, saflık ve derin Tanrı sevgisi konusunda talimat veren Kutsal Bakire Meryem'in sayısız samimi vizyonunu deneyimledi."
+  },
+  "annibale_di_francia": {
+    "title": "Aziz Annibale Maria di Francia",
+    "description": "Meslekler için dua havarisi ve yetimlerin babası olan Aziz Annibale, temel çalışmaları boyunca Meryem Ana'nın mistik lütufları ve derin rehberliği ile lütuflandırılmıştır."
+  },
+  "amalia_tears": {
+    "title": "Gözyaşı Leydimiz",
+    "description": "Çarmıha Gerilmiş İsa'nın Misyoner Kız Kardeşleri'nin kurucu ortağı Sr. Amália Aguirre, Gözyaşı Meryem Ana'nın Çelenk'ini ortaya çıkaran İsa ve Meryem'in hayaletlerini aldı. Piskopos Francisco de Campos Barreto, 1931'de resmi piskoposluk onayını verdi."
+  },
+  "heede": {
+    "title": "Heede Meryem Ana / Evrenin Kraliçesi",
+    "description": "Dört genç kız, Heede mezarlığında Meryem Ana'nın 100'den fazla hayaletiyle karşılaştı; kefaret, Tesbih ve Kutsal Kalbe bağlılık çağrısında bulundu. Yerel piskopos, bölgede halka açık ibadet ve bağlılığa izin verdi."
+  },
+  "maria_pierina": {
+    "title": "Bl. Maria Pierina De Micheli",
+    "description": "İsa ve Meryem'in vizyonlarıyla beğenilen Bl. Maria Pierina, İsa'nın Kutsal Yüzüne bağlılığı ve Kutsal Yüz Madalyasının yaratılmasını yayma görevini aldı."
+  },
+  "natuzza_evolo": {
+    "title": "Natuzza Evolo",
+    "description": "Sevgili İtalyan mistik ve damgalayıcı Natuzza Evolo, İsa'nın, Meryem'in, meleklerin ve kutsal ruhların ömür boyu süren vizyonlarını deneyimledi. Bölgede piskoposluk tarafından onaylanan anıtsal bir kutsal alan inşa edildi."
+  },
+  "wigratzbad": {
+    "title": "Antonie Rädler / Kusursuz Hamilelik",
+    "description": "Antonie Rädler, Meryem Ana'nın vizyonları sayesinde Nazi zulmü sırasında mucizevi bir koruma yaşadı. Site artık büyük bir piskoposluk hac tapınağı ve uluslararası ilahiyat okuludur."
+  },
+  "kallikulam": {
+    "title": "Karların Leydisi",
+    "description": "Altı genç, yerel kilisenin yakınındaki kayalık bir tepede Kutsal Bakire Meryem'in mucizevi görüntüsüne tanık oldu. Site, piskoposluğun tam desteğiyle ünlü bir bölgesel tapınak haline geldi."
+  },
+  "ghiaie_di_bonate": {
+    "title": "Our Lady of Ghiaie di Bonate / Ailenin Kraliçesi",
+    "description": "İkinci Dünya Savaşı sırasında, 7 yaşındaki Adelaide Roncalli, aile birliğini ve duayı vurgulayan Kutsal Aile'nin 13 hayaletini yaşadı. Piskopos Roberto Amadei, 2002 yılında Our Lady of Ghiaie'ye ayin duası yapılmasına izin verdi."
+  },
+  "alexandrina_balasar": {
+    "title": "Bl. Alexandrina Maria da Costa",
+    "description": "Yatalak mistik ve kurban ruhu Bl. Alexandrina 13 yıl boyunca yalnızca Kutsal Efkaristiya'da yaşadı ve Mesih ve Kutsal Bakire Meryem'den derin vecd dolu iletişimler yaşadı."
+  },
+  "chandavila": {
+    "title": "Chandavila'nın Acıların Leydisi",
+    "description": "Marcelina Baroso ve Afra Blanco adlı iki genç kız, bir kestane ağacının yanında Acılar Bakiresi'nin hayaletlerine tanık oldu. 2024 yılında Vatikan DDF, 'Nihil obstat'ın resmi kanonik statüsünü verdi."
+  },
+  "amsterdam_all_nations": {
+    "title": "Tüm Milletlerin Hanımı",
+    "description": "1945 ile 1959 yılları arasında Ida Peerdeman, 'Tüm Milletlerin Hanımı' başlığı altında Meryem Ana'nın 56 vizyonunu bildirdi. Kapsamlı teolojik değerlendirmelerin ardından İnanç Doktrini Cemaati, 2020 yılında bildirilen hayaletlerin doğaüstü bir kökene sahip olmadığını doğruladı (Constat de non supernaturalitate)."
+  },
+  "marienfried": {
+    "title": "Graces'in Büyük Medyarisi",
+    "description": "Bärbel Ruess, Meryem Ana'nın kendisini Lütufların Büyük Aracısı ilan ettiği hayaletlere tanık oldu. Augsburg Piskoposu resmi bir sığınak inşa etti ve halkın adanmasına izin verdi."
+  },
+  "tre_fontane": {
+    "title": "Vahiy Bakiresi",
+    "description": "Rahip karşıtı transit işçisi Bruno Cornacchiola, Meryem Ana ona ve çocuklarına bir mağarada görünüp onu anında dönüştürdüğünde Papa XII. Pius'a suikast düzenlemeyi planlıyordu. Roma Vekili kutsal alanı onayladı."
+  },
+  "montichiari_rosa_mystica": {
+    "title": "Rosa Mystica / Kilisenin Annesi",
+    "description": "Hemşire Pierina Gilli, Meryem'in göğsünde üç gülün (duayı, fedakarlığı ve kefareti temsil eden beyaz, kırmızı ve altın) görüntüsüne tanık oldu. Vatikan DDF, 2024 yılında piskoposluk kutsal alanının ruhi meyvelerini takdir eden olumlu bir mektup yayınladı."
+  },
+  "ile_bouchard": {
+    "title": "Dua Hanımımız",
+    "description": "Dört genç kız, savaş sonrası ulusal kriz sırasında St. Giles bölge kilisesinde Meryem Ana ve Melek Cebrail'in Fransa'yı iç savaştan kurtardığına tanık oldu. Başpiskopos André Vingt-Trois 2001 yılında resmi hac ziyaretlerine izin verdi."
+  },
+  "lipa": {
+    "title": "Meryem, Tüm Lütufların Aracısı",
+    "description": "Karmelit adayı Teresita Castillo, gül yaprakları sağanaklarının eşlik ettiği hayaletler bildirdi. Soruşturmaların ardından Vatikan, olayların doğaüstü olmadığı yönündeki kararı doğruladı."
+  },
+  "heroldsbach": {
+    "title": "Heroldsbach Hayaletleri",
+    "description": "Dört genç kız Meryem Ana'nın vizyonlarını bildirdi. Başlangıçta olumsuz olarak değerlendirilse de, Başpiskopos Ludwig Schick, burayı 1998 yılında resmi bir piskoposluk dua ve Efkaristiya ibadet yeri olarak kurdu."
+  },
+  "balestrino": {
+    "title": "Balestrino Meryem Ana",
+    "description": "Caterina Richero, Monte Croce'de Our Lady'nin hayaletlerini deneyimledi. Yerel piskopos, bölgeyi 1991 yılında Marian'a bağlılık ve hac için resmi bir piskoposluk merkezi olarak kurdu."
+  },
+  "necedah": {
+    "title": "Necedah Hayaletleri",
+    "description": "Mary Ann Van Hoof'un Marian hayaleti iddiaları kapsamlı bir şekilde araştırıldı ve La Crosse Piskoposluğu ve Vatikan tarafından resmi olarak reddedildi."
+  },
+  "turzovka": {
+    "title": "Turzovka Meryem Ana",
+    "description": "Ormancı Matúš Lašut, Zivcakova Dağı'nda Our Lady of Lourdes'e tanık oldu. 2008 yılında Piskopos Tomáš Galis, bölgeyi resmi olarak Marian hac tapınağına yükseltti."
+  },
+  "san_damiano": {
+    "title": "Mucizevi Güllerin Leydisi",
+    "description": "Rosa Quattrini ('Mamma Rosa'), Meryem Ana'nın hayaletlerini bildirdi. Piskoposluk piskoposları ve Vatikan, iddiaların doğaüstü gerçeklikten yoksun olduğunu bildiren resmi bildirimler yayınladı."
+  },
+  "garabandal": {
+    "title": "Garabandal'daki Karmel Dağı Meryem Ana",
+    "description": "Dört kız öğrenci, Aziz Michael ve Meryem Ana'nın, dünya çapında yaklaşan bir uyarı ve büyük bir mucize olan Efkaristiya ile ilgili derin uyarılarla birlikte görüldüğünü bildirdi. Birbirini takip eden piskoposlar doğaüstü doğanın henüz kurulmadığını ilan ettiler."
+  },
+  "placanica_scoglio": {
+    "title": "Kayanın Leydisi (Madonna dello Scoglio)",
+    "description": "Mütevazı çiftçi Kardeş Cosimo Fragomeni, Kutsal Bakire'nin bir kayanın üzerinde olduğuna tanık oldu. Piskopos Giuseppe Fiorini Morosini, alanı 2016 yılında resmi olarak piskoposluk kutsal alanına yükseltti."
+  },
+  "bayside": {
+    "title": "Güllerin Leydisi",
+    "description": "Veronica Lueken, İsa ve Meryem'in görümlerini bildirdi. Brooklyn Piskoposu, iddiaların doğaüstü özgünlükten yoksun olduğunu doğrulayan resmi açıklamalar yayınladı."
+  },
+  "betania": {
+    "title": "Tüm Halkların Bakire ve Ana Uzlaştırıcısı",
+    "description": "Mistik Maria Esperanza de Bianchini ve 150 tanık, yemyeşil bir tropik mağarada Meryem Ana'yı gördü. Piskopos Pío Bello Ricardo, 1987'de hayaletlerin doğaüstü olduğunu resmen onayladı."
+  },
+  "el_escorial": {
+    "title": "Prado Nuevo'nun Acıları Leydimiz",
+    "description": "Luz Amparo Cuevas Meryem Ana'nın vizyonlarını bildirdi. Kardinal Antonio María Rouco Varela, 2010 yılında ayin kutlamalarına, Efkaristiya ibadetine ve alanda bir şapel inşasına izin verdi."
+  },
+  "medjugorje": {
+    "title": "Medjugorje Barış Kraliçesi",
+    "description": "Altı vizyoner barış, din değiştirme, oruç ve duayla ilgili devam eden mesajları aktarıyor. Eylül 2024'te Vatikan DDF, dünya çapındaki muazzam manevi meyveleri tanıyarak ve halkın bağlılığını onaylayarak resmi olarak 'Nihil obstat' kanonik statüsünü verdi."
+  },
+  "soufanieh": {
+    "title": "Soufanieh Meryem Ana",
+    "description": "Myrna Nazzour, Meryem'in ikonasından sızan parlak hayaletler ve mucizevi yağ deneyimledi. Hıristiyan birliğinin derin bir işareti olarak hem Katolik hem de Doğu Ortodoks hiyerarşileri tarafından benzersiz bir şekilde destekleniyor ve onaylanıyor."
+  },
+  "san_nicolas": {
+    "title": "San Nicolás Tespih Meryem Ana",
+    "description": "Gladys Quiroga de Motta, Meryem Ana'nın Çocuk İsa'yı tuttuğuna dair derin mesajlar ve vizyonlar aldı. Piskopos Héctor Sabatino Cardelli, 2016 yılında hayaletlerin doğaüstü karakterine resmen karar verdi."
+  },
+  "el_cajas_cuenca": {
+    "title": "Dinin Koruyucusu Anne",
+    "description": "Genç Patricia Talbot, Kutsal Anne'den saflık ve dönüşüm çağrısında bulunan mesajlar aldı. Başpiskopos Vicente Cisneros, yüksek rakımlı kutsal alanı resmi bir piskoposluk hac yeri olarak kanonik olarak kurdu."
+  },
+  "scottsdale": {
+    "title": "Scottsdale Gösterimleri",
+    "description": "Yerel bir mahallede olduğu iddia edilen sözler ve vizyonlar, Phoenix Piskoposluğu tarafından araştırıldı ve olayların doğaüstü temelden yoksun olduğu sonucuna vardı."
+  },
+  "litmanova": {
+    "title": "Kusursuz Saflık",
+    "description": "İki genç kız, Ivetka ve Katka, Zvir Dağı'nda hayaletler gördü. 2004 yılında Piskopos Ján Babjak, dağı resmen Marian'ın hac ve dua yeri olarak kutsal bir yer ilan etti."
+  },
+  "salta": {
+    "title": "İlahi Efkaristiya Kalbinin Lekesiz Annesi",
+    "description": "Maria Livia Galiano, her hafta on binlerce kişinin dua ve mucizevi şefaat için toplandığı bir tepenin zirvesinde Meryem Ana'nın iç mekanlarını ve vizyonlarını anlatıyor."
+  },
+  "mosul_iraq": {
+    "title": "Musul Meryem Ana",
+    "description": "Genç Dina Basher, St. Ephrem Kilisesi'nde parlak hayaletlere ve mucizevi iyileşmelere tanık oldu. Süryani Ortodoks Patriği Ignatius Zakka I, mucizevi olayları 1992 yılında resmen doğruladı."
+  },
+  "aokpe": {
+    "title": "Tüm Güzelliğin Aracısı",
+    "description": "Christiana Agbo, güneş mucizelerinin eşlik ettiği Meryem Ana'nın derin vizyonlarını deneyimledi. Piskopos Michael Apochi resmi hac ziyaretlerine izin verdi ve dualara izin verdi."
+  },
+  "itapiranga": {
+    "title": "Itapiranga Meryem Ana / Tespih ve Barış Kraliçesi",
+    "description": "Edson Glauber Kutsal Aile'nin vizyonlarını bildirdi. 2017'de Vatikan DDF ve yerel olağan, olayın doğaüstü olmadığını ilan eden bildirimler yayınladı."
+  },
+  "enugu_precious_blood": {
+    "title": "Barnabas Nwoye / Değerli Kan",
+    "description": "Barnabas Nwoye, En Değerli Kan'a bağlılığı vurgulayan İsa ve Meryem'in vizyonlarını aldı. Yerel piskopos, dualar için resmi bir izin ve nihil obstat verdi."
+  },
+  "sievernich": {
+    "title": "Lekesiz Kalpteki Yüce Anne",
+    "description": "Manuela Strack devam eden hayaletleri ve Efkaristiya mesajlarını bildiriyor. Aachen Piskoposu, bölgede pastoral gözetim altında dua toplantılarının yapılmasına izin verdi."
+  },
+  "trevignano": {
+    "title": "Trevignano Romano'nun Madonna'sı",
+    "description": "Gisella Cardia mesajlara ve ağlayan heykellere sahip çıktı. 2024 yılında, Piskopos Marco Salvi ve Vatikan DDF, olayları 'Constat de non supernaturalitate' (doğaüstü olmadığı doğrulandı) ilan eden resmi kararnameler yayınladı."
+  },
+  "ngome": {
+    "title": "Mişkan Meryem Ana",
+    "description": "Benedictine Rahibesi Reinolda May, Meryem'in bir ev sahibi ve kadehi tutarken Efkaristiya hayranlığını vurgulayan hayaletlerini deneyimledi. Piskopos Mansuet Biyase, kutsal alanı 1989 yılında resmi hac yeri olarak onayladı."
+  },
+  "our_lady_of_america": {
+    "title": "Amerika Meryem Ana",
+    "description": "Sr. Mildred Mary Neuzil, 'Amerikalı Meryem Ana' başlığı altında Meryem'in hayaletlerini bildirdi. Başpiskopos Paul F. Leibold, bağlılığın resmi olarak onaylanmasını ve aktif olarak desteklenmesini sağladı."
+  },
+  "zarvanytsia": {
+    "title": "Zarvanytsia Meryem Ana",
+    "description": "Yeraltı Sovyet zulmü sırasında, çok sayıda hacı ve genç kız, Kutsal Bakire Meryem'in antik mucizevi bahar ve yıkık türbe üzerinde mucizevi ışıklı görüntülerine tanık oldu."
+  },
+  "hrushiv": {
+    "title": "Hrushiv Meryem Ana",
+    "description": "Fatima'nın 70. yıldönümünde on binlerce Ukraynalı, Meryem'in parlak hayaletlerinin haftalarca gece gündüz görüldüğü terk edilmiş bir şapelin etrafında toplanarak KGB ablukalarına meydan okudu."
+  },
+  "cefala_diana": {
+    "title": "Cefalà Diana'nın Acıları Leydimiz",
+    "description": "Dört genç oğlan, Acıların Leydisi'nin mucizevi görüntülerine tanık oldu. Olumlu soruşturmaların ardından Kardinal Francesco Carpino, hayaletlerin olduğu yere doğrudan inşa edilen güzel bir sığınağı kutsadı."
+  },
+  "dozule": {
+    "title": "Görkemli Dozulé Haçı",
+    "description": "Madeleine Aumont, devasa, parlak bir haç inşa edilmesini talep eden İsa ve Meryem'in vizyonlarını bildirdi. Yerel piskoposluk ve Vatikan, iddiaların doğaüstü olmadığını beyan eden bildirimler yayınladı."
+  },
+  "schio": {
+    "title": "Aşk Kraliçesi",
+    "description": "Renato Baron, San Martino'daki küçük bir kilisede görülen yerleri ve vizyonları bildirdi. Piskoposluk soruşturma komisyonlarının ardından piskoposlar, olayların doğaüstü gerçeklikten yoksun olduğu sonucuna varan bildirimler yayınladı."
+  },
+  "naju": {
+    "title": "Naju'nun Ağlayan Bakiresi",
+    "description": "Julia Kim, Meryem ve Efkaristiya mucizelerinin ağlayan ve kanayan heykellerini bildirdi. Başpiskopos Victorinus Yoon Kong-hi, olayların doğaüstü olmadığını doğrulayan resmi açıklamalar yayınladı."
+  },
+  "zaro_ischia": {
+    "title": "Zaro Meryem Ana",
+    "description": "Simona ve Angela, Ischia adasındaki ormanlık bir alanda devam eden hayaletleri ve mesajları bildiriyor. Piskopos Pietro Lagnese, manevi meyveleri ve olayları ayırt etmek için resmi bir piskoposluk komisyonu kurdu."
+  },
+  "borg_in_nadur": {
+    "title": "Borg in-Nadur Gösterimleri",
+    "description": "Angelik Caruana, Borg in-Nadur'daki bir tepedeki mesajları ve vizyonları üstlendi. 2016 yılında Başpiskopos Charles Scicluna, iddia edilen olayların doğaüstü olmadığını belirten kesin bir kararname yayınladı."
+  },
+  "durunka_assiut": {
+    "title": "Durunka Meryem Ana",
+    "description": "Kutsal Ailenin Mısır'a uçuşunun tarihi son durağının anısına. Mısır hükümetinin resmi hatıra basımıyla desteklenen, Mısır'ın en büyük bronz Meryem heykelinin 2023 yılında doğum gününü kutlamak için dikildiği antik Durunka Mağara Manastırı'nda her yıl yüz binlerce kişi bir araya geliyor."
   }
 }
