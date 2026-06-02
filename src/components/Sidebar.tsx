@@ -147,7 +147,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       bottom: 'auto',
       maxHeight: isCinemaMode ? 'calc(100vh - 115px)' : 'calc(100vh - 40px)',
       right: '20px',
-      width: '380px',
+      width: '420px',
       overflowY: 'auto',
       zIndex: 110,
       padding: '24px 28px',
@@ -238,13 +238,13 @@ const Sidebar: React.FC<SidebarProps> = ({
       )}
 
       <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
-          <MapPin size={18} color="var(--accent-color)" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '18px' }}>
+          <MapPin size={24} strokeWidth={2.5} color="var(--accent-color)" />
           <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.location}, {displayApp.country}</span>
         </div>
         
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '15px' }}>
-          <Calendar size={18} color="var(--accent-color)" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '18px' }}>
+          <Calendar size={24} strokeWidth={2.5} color="var(--accent-color)" />
           <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.year}</span>
         </div>
 
@@ -259,14 +259,14 @@ const Sidebar: React.FC<SidebarProps> = ({
               gap: '12px', 
               fontSize: '15px', 
               marginTop: '4px', 
-              background: `rgba(${rgb}, 0.15)`, 
+              background: `rgba(${rgb}, 0.85)`, 
               padding: '10px 14px', 
               borderRadius: '8px', 
-              border: `1px solid rgba(${rgb}, 0.4)`,
-              boxShadow: `0 0 15px rgba(${rgb}, 0.15)`
+              border: 'none',
+              boxShadow: `0 4px 12px rgba(${rgb}, 0.3)`
             }}>
-              {getCategoryIcon(cat, color)}
-              <span style={{ color: color, fontWeight: 700, letterSpacing: '0.3px', lineHeight: 1.3, userSelect: 'text', WebkitUserSelect: 'text' }}>
+              {getCategoryIcon(cat, '#ffffff')}
+              <span style={{ color: '#ffffff', fontWeight: 700, letterSpacing: '0.3px', lineHeight: 1.3, userSelect: 'text', WebkitUserSelect: 'text', textShadow: '0 1px 2px rgba(0,0,0,0.5)' }}>
                 {t(cat as keyof typeof import('../utils/i18n').translations['en'], lang)}
               </span>
             </div>
