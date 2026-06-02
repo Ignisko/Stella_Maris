@@ -50,6 +50,22 @@ body.light-theme {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+::selection {
+  background: transparent;
+}
+::-moz-selection {
+  background: transparent;
 }
 
 html, body {
