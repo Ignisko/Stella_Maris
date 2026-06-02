@@ -331,7 +331,7 @@ function App() {
 
   return (
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-      {!isTutorialActive && (isCinemaMode || (hasPopups && !isCinemaMode)) && (
+      {!isTutorialActive && isCinemaMode && (
         <div 
           className="glass-panel glass-panel-rounded animate-fade-in" 
           style={{
@@ -517,7 +517,7 @@ function App() {
         gap: isTimelineOpen ? '0px' : '10px',
         pointerEvents: isTutorialActive && tutorialStep < 5 ? 'none' : 'auto',
         opacity: isTutorialActive && tutorialStep < 5 ? 0.35 : 1,
-        transform: (isSidebarOpen || isCinemaMode || isDirectoryOpen) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
+        transform: (isCinemaMode || isDirectoryOpen) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
         transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), gap 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease'
       }}>
         {/* Title Card */}
