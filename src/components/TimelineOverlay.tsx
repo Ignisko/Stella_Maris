@@ -25,7 +25,7 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 40, fullHistoryOffset: 45 },
   "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
   "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -1 },
-  "kibeho": { label: "Mother of the Word", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
+  "kibeho": { label: "Our Lady of Kibeho", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
 };
 
 const playPresentationTranslations: Record<string, string> = {

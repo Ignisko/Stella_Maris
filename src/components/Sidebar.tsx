@@ -20,20 +20,20 @@ interface SidebarProps {
 const getCategoryIcon = (category: string, color: string) => {
   switch (category) {
     case "Vatican approved":
-      return <Award size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <Award size={24} color={color} style={{ flexShrink: 0 }} />;
     case "Traditionally approved":
-      return <BookOpen size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <BookOpen size={24} color={color} style={{ flexShrink: 0 }} />;
     case "Bishop approved":
-      return <CheckCircle size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <CheckCircle size={24} color={color} style={{ flexShrink: 0 }} />;
     case "Coptic approved":
-      return <Sparkles size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <Sparkles size={24} color={color} style={{ flexShrink: 0 }} />;
     case "Approved for faith expression":
-      return <HeartHandshake size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <HeartHandshake size={24} color={color} style={{ flexShrink: 0 }} />;
     case "Apparitions to saints":
-      return <Sparkles size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <Sparkles size={24} color={color} style={{ flexShrink: 0 }} />;
     case "Dismissed":
     default:
-      return <XCircle size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <XCircle size={24} color={color} style={{ flexShrink: 0 }} />;
   }
 };
 
@@ -115,11 +115,13 @@ const Sidebar: React.FC<SidebarProps> = ({
       }];
     }
     
-    return raw.split(';').map(urlStr => {
+    const parsedSources = raw.split(';').map(urlStr => {
       const url = urlStr.trim();
       let label = t('viewSource', lang);
       
-      if (url.includes('miraclehunter.com')) {
+      if (url.includes('wikipedia.org')) {
+        label = 'Wikipedia';
+      } else if (url.includes('miraclehunter.com')) {
         label = t('viewSource', lang);
       } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
         label = url.includes('transmisja') ? t('liveStream', lang) : 'Sanktuarium Leżajsk';
@@ -130,6 +132,51 @@ const Sidebar: React.FC<SidebarProps> = ({
       }
       return { url, label };
     });
+
+    const hasLiveStream = parsedSources.some(src => src.label === t('liveStream', lang));
+    const hasRegularSource = parsedSources.some(src => src.label !== t('liveStream', lang) && src.label !== 'Video');
+
+    if (hasLiveStream && !hasRegularSource) {
+      let fallbackUrl: string;
+      if (projectId === 'eucharist') {
+        fallbackUrl = "https://www.miracolieucaristici.org/";
+      } else {
+        if (displayApp.year < 1000) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
+        } else if (displayApp.year < 1500) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1000-1499.html";
+        } else if (displayApp.year < 1800) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1500-1799.html";
+        } else if (displayApp.year < 1900) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1800-1899.html";
+        } else {
+          const cat = getApparitionStatusCategory(displayApp.approvalStatus);
+          if (cat === "Vatican approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
+          } else if (cat === "Bishop approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
+          } else if (cat === "Coptic approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
+          } else if (cat === "Approved for faith expression") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
+          } else if (cat === "Traditionally approved") {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
+          } else {
+            if (displayApp.year < 2000) {
+              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
+            } else {
+              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
+            }
+          }
+        }
+      }
+      parsedSources.push({
+        url: fallbackUrl,
+        label: t('viewSource', lang)
+      });
+    }
+
+    return parsedSources;
   }, [displayApp, lang, projectId]);
 
   if (!displayApp) return null;
@@ -143,20 +190,20 @@ const Sidebar: React.FC<SidebarProps> = ({
   return (
     <div id="apparition-sidebar" className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
-      top: '20px',
+      top: '16px',
       bottom: 'auto',
-      maxHeight: isCinemaMode ? 'calc(100vh - 115px)' : 'calc(100vh - 40px)',
-      right: '20px',
+      maxHeight: isCinemaMode ? 'calc(100vh - 105px)' : 'calc(100vh - 32px)',
+      right: '16px',
       width: '420px',
       overflowY: 'auto',
       zIndex: 110,
-      padding: '24px 28px',
+      padding: '20px 24px',
       backgroundColor: 'rgba(15, 23, 42, 0.95)',
       backdropFilter: 'blur(25px)',
       boxShadow: '0 20px 50px rgba(0,0,0,0.8)',
       display: 'flex',
       flexDirection: 'column',
-      gap: '16px',
+      gap: '12px',
       transform: isVisible ? 'translateX(0)' : 'translateX(calc(100% + 40px))',
       opacity: isVisible ? 1 : 0,
       transition: 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), max-height 0.3s ease-in-out, top 0.3s ease-in-out',
@@ -165,7 +212,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flex: 1 }}>
-          <h2 style={{ fontSize: '26px', fontWeight: 600, margin: 0, color: 'var(--gold-accent)', lineHeight: 1.2, userSelect: 'text', WebkitUserSelect: 'text' }}>
+          <h2 style={{ fontSize: '30px', fontWeight: 600, margin: 0, color: 'var(--gold-accent)', lineHeight: 1.2, userSelect: 'text', WebkitUserSelect: 'text' }}>
             {displayApp.title} {displayApp.approvalStatus === 'Dismissed' && '⚠️'}
           </h2>
           <button
@@ -202,9 +249,9 @@ const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {clusteredApps.length > 1 && onSelectApparition && (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', background: 'rgba(255, 255, 255, 0.03)', padding: '12px 14px', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', background: 'rgba(255, 255, 255, 0.03)', padding: '10px 12px', borderRadius: '12px', border: '1px solid var(--glass-border)' }}>
           <span style={{ fontSize: '13px', opacity: 0.7, fontWeight: 500 }}>{t('otherApparitions', lang, { count: clusteredApps.length })}:</span>
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
             {clusteredApps.map(app => {
               const isCurrent = app.id === displayApp.id;
               const color = getStatusColor(app.approvalStatus);
@@ -213,22 +260,23 @@ const Sidebar: React.FC<SidebarProps> = ({
                   key={app.id}
                   onClick={() => onSelectApparition(app)}
                   style={{
-                    padding: '6px 12px',
+                    padding: '5px 10px',
                     borderRadius: '8px',
-                    background: isCurrent ? `rgba(${hexToRgb(color)}, 0.3)` : 'rgba(255, 255, 255, 0.05)',
-                    border: `1px solid ${isCurrent ? color : 'rgba(255, 255, 255, 0.1)'}`,
-                    color: isCurrent ? '#ffffff' : 'rgba(255, 255, 255, 0.7)',
+                    background: isCurrent ? color : 'rgba(255, 255, 255, 0.12)',
+                    border: 'none',
+                    color: '#ffffff',
                     fontSize: '13px',
                     fontWeight: isCurrent ? 700 : 500,
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '6px',
-                    transition: 'all 0.2s'
+                    transition: 'all 0.2s',
+                    boxShadow: isCurrent ? `0 2px 8px rgba(${hexToRgb(color)}, 0.4)` : 'none'
                   }}
                   title={app.title}
                 >
-                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: color, flexShrink: 0 }} />
+                  <span style={{ width: '8px', height: '8px', borderRadius: '50%', backgroundColor: isCurrent ? '#ffffff' : color, flexShrink: 0 }} />
                   <span>{app.year} • {app.title} {app.approvalStatus === 'Dismissed' && '⚠️'}</span>
                 </button>
               );
@@ -237,14 +285,14 @@ const Sidebar: React.FC<SidebarProps> = ({
         </div>
       )}
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '18px' }}>
-          <MapPin size={24} strokeWidth={2.5} color="var(--accent-color)" />
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '19px' }}>
+          <MapPin size={26} weight="bold" color="var(--accent-color)" />
           <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.location}, {displayApp.country}</span>
         </div>
         
-        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '18px' }}>
-          <Calendar size={24} strokeWidth={2.5} color="var(--accent-color)" />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '19px' }}>
+          <Calendar size={26} weight="bold" color="var(--accent-color)" />
           <span style={{ userSelect: 'text', WebkitUserSelect: 'text' }}>{displayApp.year}</span>
         </div>
 
@@ -257,8 +305,8 @@ const Sidebar: React.FC<SidebarProps> = ({
               display: 'flex', 
               alignItems: 'center', 
               gap: '12px', 
-              fontSize: '15px', 
-              marginTop: '4px', 
+              fontSize: '17px', 
+              marginTop: '2px', 
               background: `rgba(${rgb}, 0.85)`, 
               padding: '10px 14px', 
               borderRadius: '8px', 
@@ -274,54 +322,63 @@ const Sidebar: React.FC<SidebarProps> = ({
         })}
       </div>
 
-      <div style={{ height: '1px', background: 'var(--glass-border)', margin: '4px 0' }}></div>
+      <div style={{ height: '1px', background: 'var(--glass-border)', margin: '0' }}></div>
 
       <div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '8px', color: 'var(--accent-color)' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '6px', color: 'var(--accent-color)' }}>
           <Info size={18} />
-          <h3 style={{ fontSize: '16px', fontWeight: 600, margin: 0 }}>{t('description', lang)}</h3>
+          <h3 style={{ fontSize: '17px', fontWeight: 600, margin: 0 }}>{t('description', lang)}</h3>
         </div>
-        <p style={{ fontSize: '15px', lineHeight: 1.65, opacity: 0.9, letterSpacing: '0.2px', margin: 0, userSelect: 'text', WebkitUserSelect: 'text' }}>
+        <p style={{ fontSize: '16px', lineHeight: 1.6, opacity: 0.9, letterSpacing: '0.2px', margin: 0, userSelect: 'text', WebkitUserSelect: 'text' }}>
           {displayApp.description}
         </p>
         
-        <div style={{ marginTop: '18px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-          {sources.map((src, i) => (
-            <a
-              key={i}
-              href={src.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '8px',
-                fontSize: '13px',
-                fontWeight: 600,
-                color: '#38bdf8',
-                textDecoration: 'none',
-                background: 'rgba(56, 189, 248, 0.12)',
-                border: '1px solid rgba(56, 189, 248, 0.3)',
-                padding: '8px 16px',
-                borderRadius: '8px',
-                transition: 'all 0.2s',
-                boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
-              }}
-              onMouseOver={(e) => {
-                e.currentTarget.style.background = 'rgba(56, 189, 248, 0.22)';
-                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.5)';
-                e.currentTarget.style.transform = 'translateY(-1px)';
-              }}
-              onMouseOut={(e) => {
-                e.currentTarget.style.background = 'rgba(56, 189, 248, 0.12)';
-                e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.3)';
-                e.currentTarget.style.transform = 'none';
-              }}
-            >
-              <ExternalLink size={14} />
-              <span>{src.label}</span>
-            </a>
-          ))}
+        <div style={{ marginTop: '14px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
+          {sources.map((src, i) => {
+            const isLive = src.label === t('liveStream', lang);
+            return (
+              <a
+                key={i}
+                href={src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                  textDecoration: 'none',
+                  background: isLive 
+                    ? 'linear-gradient(135deg, #ef4444, #b91c1c)' 
+                    : 'linear-gradient(135deg, #0284c7, #0369a1)',
+                  border: 'none',
+                  padding: '8px 16px',
+                  borderRadius: '8px',
+                  transition: 'all 0.2s',
+                  boxShadow: isLive 
+                    ? '0 4px 12px rgba(239, 68, 68, 0.35)' 
+                    : '0 4px 12px rgba(2, 132, 199, 0.35)'
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.background = isLive 
+                    ? 'linear-gradient(135deg, #f87171, #dc2626)' 
+                    : 'linear-gradient(135deg, #0ea5e9, #0284c7)';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.background = isLive 
+                    ? 'linear-gradient(135deg, #ef4444, #b91c1c)' 
+                    : 'linear-gradient(135deg, #0284c7, #0369a1)';
+                  e.currentTarget.style.transform = 'none';
+                }}
+              >
+                <ExternalLink size={14} />
+                <span>{src.label}</span>
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>

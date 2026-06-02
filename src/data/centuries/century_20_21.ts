@@ -510,13 +510,13 @@ export const century20and21Apparitions: Apparition[] = [
   },
   {
     id: "kibeho",
-    title: "Mother of the Word",
+    title: "Our Lady of Kibeho / Mother of the Word",
     location: "Kibeho",
     country: "Rwanda",
     lat: -2.6467,
     lng: 29.5853,
     year: 1981,
-    sourceUrl: "https://www.youtube.com/@SanctuaireNotre-DamedeKibeho/live",
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Kibeho;https://www.youtube.com/@SanctuaireNotre-DamedeKibeho/live",
     description: "The Blessed Virgin Mary appeared to three schoolgirls (Alphonsine, Anathalie, and Marie Claire), calling for sincere conversion and prophesying the Rwandan tragedy. Approved by Bishop Augustin Misago and the Holy See in 2001.",
     approvalStatus: "Vatican approved",
     priority: 1
