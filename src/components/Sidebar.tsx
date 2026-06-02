@@ -351,26 +351,26 @@ const Sidebar: React.FC<SidebarProps> = ({
                   color: '#ffffff',
                   textDecoration: 'none',
                   background: isLive 
-                    ? 'linear-gradient(135deg, #ef4444, #b91c1c)' 
-                    : 'linear-gradient(135deg, #0284c7, #0369a1)',
+                    ? 'linear-gradient(135deg, #10b981, #059669)' 
+                    : 'linear-gradient(135deg, #334155, #1e293b)',
                   border: 'none',
                   padding: '8px 16px',
                   borderRadius: '8px',
                   transition: 'all 0.2s',
                   boxShadow: isLive 
-                    ? '0 4px 12px rgba(239, 68, 68, 0.35)' 
-                    : '0 4px 12px rgba(2, 132, 199, 0.35)'
+                    ? '0 4px 12px rgba(16, 185, 129, 0.25)' 
+                    : '0 4px 12px rgba(51, 65, 85, 0.25)'
                 }}
                 onMouseOver={(e) => {
                   e.currentTarget.style.background = isLive 
-                    ? 'linear-gradient(135deg, #f87171, #dc2626)' 
-                    : 'linear-gradient(135deg, #0ea5e9, #0284c7)';
+                    ? 'linear-gradient(135deg, #34d399, #10b981)' 
+                    : 'linear-gradient(135deg, #475569, #334155)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }}
                 onMouseOut={(e) => {
                   e.currentTarget.style.background = isLive 
-                    ? 'linear-gradient(135deg, #ef4444, #b91c1c)' 
-                    : 'linear-gradient(135deg, #0284c7, #0369a1)';
+                    ? 'linear-gradient(135deg, #10b981, #059669)' 
+                    : 'linear-gradient(135deg, #334155, #1e293b)';
                   e.currentTarget.style.transform = 'none';
                 }}
               >
