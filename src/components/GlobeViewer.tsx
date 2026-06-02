@@ -786,7 +786,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           }}
           style={{
             position: 'fixed',
-            bottom: isTimelineOpen ? '268px' : '60px',
+            bottom: isTimelineOpen ? '268px' : '44px',
             left: '20px',
             zIndex: 200,
             pointerEvents: 'auto',
