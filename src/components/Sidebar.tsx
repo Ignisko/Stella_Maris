@@ -1,6 +1,6 @@
 import React, { useMemo, useState, useEffect } from 'react';
 import type { Apparition } from '../data/apparitions';
-import { MapPin, Calendar, Info, X, ExternalLink, Award, BookOpen, CheckCircle2, Sparkles, HeartHandshake, XCircle, Copy, Check } from 'lucide-react';
+import { MapPin, Calendar, Info, X, ArrowSquareOut as ExternalLink, Medal as Award, BookOpen, CheckCircle, Sparkle as Sparkles, Handshake as HeartHandshake, XCircle, Copy, Check } from '@phosphor-icons/react';
 import { getStatusColor, hexToRgb, getSingleStatusCategory, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -24,7 +24,7 @@ const getCategoryIcon = (category: string, color: string) => {
     case "Traditionally approved":
       return <BookOpen size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Bishop approved":
-      return <CheckCircle2 size={20} color={color} style={{ flexShrink: 0 }} />;
+      return <CheckCircle size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Coptic approved":
       return <Sparkles size={20} color={color} style={{ flexShrink: 0 }} />;
     case "Approved for faith expression":
