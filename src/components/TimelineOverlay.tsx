@@ -4,6 +4,7 @@ import { ChartBar, Clock, CaretUp, X, MapPin, Play } from '@phosphor-icons/react
 import { getStatusColor, getApparitionStatusCategory, STATUS_COLORS } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
+import { config } from '../config';
 
 interface TimelineOverlayProps {
   apparitions: Apparition[];
@@ -332,7 +333,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             id="timeline-play-presentation-button"
             onClick={onTogglePlay}
             style={{
-              background: 'linear-gradient(135deg, #d4af37, #3b82f6)',
+              background: config.projectId === 'eucharist'
+                ? 'linear-gradient(135deg, #d99726, #3b82f6)'
+                : 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
               color: '#ffffff',
               border: 'none',
               borderRadius: '20px',
@@ -343,16 +346,22 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               cursor: 'pointer',
               fontSize: '12px',
               fontWeight: 700,
-              boxShadow: '0 4px 12px rgba(59, 130, 246, 0.4)',
+              boxShadow: config.projectId === 'eucharist'
+                ? '0 4px 12px rgba(217, 151, 38, 0.25)'
+                : '0 4px 12px rgba(56, 189, 248, 0.25)',
               transition: 'all 0.2s'
             }}
             onMouseOver={e => {
               e.currentTarget.style.transform = 'scale(1.05)';
-              e.currentTarget.style.boxShadow = '0 6px 16px rgba(59, 130, 246, 0.6)';
+              e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                ? '0 6px 16px rgba(217, 151, 38, 0.4)'
+                : '0 6px 16px rgba(56, 189, 248, 0.4)';
             }}
             onMouseOut={e => {
               e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = '0 4px 12px rgba(59, 130, 246, 0.4)';
+              e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                ? '0 4px 12px rgba(217, 151, 38, 0.25)'
+                : '0 4px 12px rgba(56, 189, 248, 0.25)';
             }}
           >
             <Play size={12} weight="fill" />

@@ -33,4 +33,22 @@ The `index.html` file uses Vite's HTML environment replacement to dynamically in
 
 This ensures that when the link is shared on platforms like WhatsApp, Facebook, or Twitter, the correct title, description, and absolute image URL are scraped and displayed as a rich preview.
 
-**Note:** If the title shows up as `%VITE_APP_TITLE%` in the browser tab, it means the raw source `index.html` was served without running the Vite build process. The `vercel.json` configuration ensures Vercel properly builds the app and serves the built `dist/index.html`.
+## Multi-tenant Differences
+
+While both applications share the same codebase and structure, there are specific differences between the two modes:
+
+### 1. Data Sources
+- **Stella Maris (Mary):** Loads Marian apparitions data from `src/data/centuries/` (e.g., Kibeho, Lourdes, Fatima, Guadalupe).
+- **Idiota Jezusa (Eucharist):** Loads Eucharistic Miracles data from `src/data/eucharistic-miracles.ts` (e.g., Lanciano, Buenos Aires, Legnica).
+
+### 2. Styling and Theme
+- **Stella Maris:** Standard blue styling (`var(--accent-color)` is blue, and timeline buttons / tutorial elements are fully blue).
+- **Idiota Jezusa:** Red theme (`primaryColor: '#ef4444'`) for the main accent. The timeline play presentation button and the tutorial onboarding next/start buttons are styled with a vibrant **golden-blue** gradient (`linear-gradient(135deg, #d99726, #3b82f6)`).
+
+### 3. Onboarding Tutorial
+- **Stella Maris:** Highlight rings and pulse circles are styled in standard blue to match the theme. Tutorial translations use Marian terminology (Apparitions, Mother of God).
+- **Idiota Jezusa:** Highlight rings, pulse circles, and onboarding step icons are styled in **gold** (`#d99726`). Tutorial text content dynamically replaces Marian terms ("apparition", "Stella Maris") with Eucharistic terms ("miracle", "Idiota Jezusa", "Blessed Sacrament").
+
+### 4. Globe Label Clustering
+- **Stella Maris:** More dense dataset, so label clustering is tighter with strict priority zones to prevent label collision and clutter.
+- **Idiota Jezusa:** Smaller dataset with longer titles, using relaxed clustering constraints (`maxPriority = 5` and a spacing base multiplier of `0.55`) so more miracles remain visible on the globe.

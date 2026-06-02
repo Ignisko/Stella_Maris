@@ -433,18 +433,21 @@ const getStepsContent = (lang: Language): StepContent[] => {
   const selectedTitles = titles[lang] || titles['en'];
   const selectedDescs = descriptions[lang] || descriptions['en'];
 
+  const iconsColor = config.projectId === 'eucharist' ? '#d99726' : 'var(--accent-color)';
+  const goldColor = config.projectId === 'eucharist' ? '#d99726' : 'var(--gold-accent)';
+
   const icons = [
-      <Question size={40} color="var(--gold-accent)" />,
-      <Globe size={40} color="var(--accent-color)" />,
-      <Globe size={40} color="var(--accent-color)" />,
-      <Globe size={40} color="var(--accent-color)" />,
-      <Info size={40} color="var(--accent-color)" />,
-      <SlidersHorizontal size={40} color="var(--accent-color)" />,
-      <SlidersHorizontal size={40} color="var(--accent-color)" />,
-      <Calendar size={40} color="var(--accent-color)" />,
-      <Calendar size={40} color="var(--accent-color)" />,
-      <Globe size={40} color="var(--accent-color)" />,
-      <Sparkle size={40} color="var(--gold-accent)" />
+      <Question size={40} color={goldColor} />,
+      <Globe size={40} color={iconsColor} />,
+      <Globe size={40} color={iconsColor} />,
+      <Globe size={40} color={iconsColor} />,
+      <Info size={40} color={iconsColor} />,
+      <SlidersHorizontal size={40} color={iconsColor} />,
+      <SlidersHorizontal size={40} color={iconsColor} />,
+      <Calendar size={40} color={iconsColor} />,
+      <Calendar size={40} color={iconsColor} />,
+      <Globe size={40} color={iconsColor} />,
+      <Sparkle size={40} color={goldColor} />
     ];
 
   return selectedTitles.map((title, i) => {
@@ -585,6 +588,10 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         borderRadius: '50%',
         background: 'transparent',
+        borderColor: config.projectId === 'eucharist' ? '#d99726' : undefined,
+        boxShadow: config.projectId === 'eucharist'
+          ? '0 0 0 9999px rgba(10, 15, 30, 0.75), 0 0 30px #d99726'
+          : undefined,
       };
     }
     if (elementRect) {
@@ -606,6 +613,10 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         position: 'fixed',
         background: 'transparent',
         borderRadius: '12px',
+        borderColor: config.projectId === 'eucharist' ? '#d99726' : undefined,
+        boxShadow: config.projectId === 'eucharist'
+          ? '0 0 0 9999px rgba(10, 15, 30, 0.75), 0 0 30px #d99726'
+          : undefined,
       };
     }
     return {
@@ -801,7 +812,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
               style={{ 
                 position: 'absolute', 
                 inset: '-20px', 
-                pointerEvents: 'none' 
+                pointerEvents: 'none',
+                borderColor: config.projectId === 'eucharist' ? '#d99726' : undefined,
               }} 
             />
           )}
@@ -997,7 +1009,9 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
             <button
               onClick={handleNext}
               style={{
-                background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
+                background: config.projectId === 'eucharist'
+                  ? 'linear-gradient(135deg, #d99726, #3b82f6)'
+                  : 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
                 border: 'none',
                 color: '#ffffff',
                 cursor: 'pointer',
@@ -1008,16 +1022,22 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                 display: 'flex',
                 alignItems: 'center',
                 gap: '6px',
-                boxShadow: '0 4px 12px rgba(56, 189, 248, 0.25)',
+                boxShadow: config.projectId === 'eucharist'
+                  ? '0 4px 12px rgba(217, 151, 38, 0.25)'
+                  : '0 4px 12px rgba(56, 189, 248, 0.25)',
                 transition: 'all 0.2s'
               }}
               onMouseOver={e => {
                 e.currentTarget.style.transform = 'translateY(-1px)';
-                e.currentTarget.style.boxShadow = '0 6px 16px rgba(56, 189, 248, 0.4)';
+                e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                  ? '0 6px 16px rgba(217, 151, 38, 0.4)'
+                  : '0 6px 16px rgba(56, 189, 248, 0.4)';
               }}
               onMouseOut={e => {
                 e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = '0 4px 12px rgba(56, 189, 248, 0.25)';
+                e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                  ? '0 4px 12px rgba(217, 151, 38, 0.25)'
+                  : '0 4px 12px rgba(56, 189, 248, 0.25)';
               }}
             >
               <span>{step === 0 ? tLocal.start : step === steps.length - 1 ? tLocal.finish : tLocal.next}</span>

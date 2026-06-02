@@ -377,7 +377,9 @@ function App() {
                 <button
                   onClick={togglePlayTimeline}
                   style={{
-                    background: isPlayingTimeline ? '#ef4444' : 'var(--accent-color)',
+                    background: isPlayingTimeline 
+                      ? '#ef4444' 
+                      : (config.projectId === 'eucharist' ? 'linear-gradient(135deg, #d99726, #3b82f6)' : 'var(--accent-color)'),
                     color: '#fff',
                     border: 'none',
                     width: '52px',
@@ -387,7 +389,9 @@ function App() {
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
-                    boxShadow: isPlayingTimeline ? '0 0 15px rgba(239, 68, 68, 0.45)' : '0 0 15px rgba(56, 189, 248, 0.45)',
+                    boxShadow: isPlayingTimeline 
+                      ? '0 0 15px rgba(239, 68, 68, 0.45)' 
+                      : (config.projectId === 'eucharist' ? '0 0 15px rgba(217, 151, 38, 0.45)' : '0 0 15px rgba(56, 189, 248, 0.45)'),
                     transition: 'all 0.2s',
                     flexShrink: 0
                   }}
@@ -458,7 +462,9 @@ function App() {
             <button
               onClick={togglePlayTimeline}
               style={{
-                background: 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
+                background: config.projectId === 'eucharist'
+                  ? 'linear-gradient(135deg, #d99726, #3b82f6)'
+                  : 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
                 color: '#fff',
                 border: 'none',
                 padding: '12px 24px',
@@ -470,18 +476,24 @@ function App() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 gap: '8px',
-                boxShadow: '0 4px 20px rgba(56, 189, 248, 0.35)',
+                boxShadow: config.projectId === 'eucharist'
+                  ? '0 4px 20px rgba(217, 151, 38, 0.35)'
+                  : '0 4px 20px rgba(56, 189, 248, 0.35)',
                 transition: 'all 0.2s',
                 letterSpacing: '0.5px'
               }}
               onMouseOver={e => {
                 e.currentTarget.style.transform = 'scale(1.03)';
-                e.currentTarget.style.boxShadow = '0 6px 24px rgba(56, 189, 248, 0.55)';
+                e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                  ? '0 6px 24px rgba(217, 151, 38, 0.55)'
+                  : '0 6px 24px rgba(56, 189, 248, 0.55)';
                 e.currentTarget.style.filter = 'brightness(1.1)';
               }}
               onMouseOut={e => {
                 e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(56, 189, 248, 0.35)';
+                e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                  ? '0 4px 20px rgba(217, 151, 38, 0.35)'
+                  : '0 4px 20px rgba(56, 189, 248, 0.35)';
                 e.currentTarget.style.filter = 'none';
               }}
             >
