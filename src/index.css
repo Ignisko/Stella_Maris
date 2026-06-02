@@ -419,8 +419,9 @@ input, button, textarea, select {
   animation: tutorialFadeIn 0.4s ease-out forwards;
 }
 
-/* Highlight and elevate sidebar on Step 3 (zoom & details step 4) */
-body[data-tutorial-step="3"] #apparition-sidebar {
+/* Highlight and elevate sidebar on Step 3 and Step 4 */
+body[data-tutorial-step="3"] #apparition-sidebar,
+body[data-tutorial-step="4"] #apparition-sidebar {
   z-index: 125 !important;
 }
 

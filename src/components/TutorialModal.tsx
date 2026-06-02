@@ -522,8 +522,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     let animFrameId: number;
     const updateRect = () => {
       let selector = '';
-      if (step === 4) selector = '#apparition-sidebar';
-      else if (step === 5) selector = '#search-filters-container';
+      if (step === 5) selector = '#search-filters-container';
       else if (step === 6) selector = '#browse-directory-button';
       else if (step === 7) selector = '#directory-modal-container';
       else if (step === 8) selector = '#timeline-closed-pill';
@@ -579,7 +578,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 2 || step === 3) {
+    if (step === 1 || step === 2 || step === 3 || step === 4) {
       return {
         left: '50vw',
         top: '50vh',

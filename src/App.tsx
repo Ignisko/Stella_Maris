@@ -314,8 +314,8 @@ function App() {
   // Sliced data for GlobeViewer during playback
   const displayedApparitions = useMemo(() => {
     if (isTutorialActive) {
-      if (tutorialStep === 4) {
-        // Return only target for step 4
+      if (tutorialStep >= 1 && tutorialStep <= 4) {
+        // Return only target for steps 1 to 4 to keep the map clean
         const targetId = config.projectId === 'eucharist' ? 'lanciano_italy' : 'guadalupe_mexico';
         const target = translatedApparitionsData.find(a => a.id === targetId) || translatedApparitionsData[0];
         return target ? [target] : [];

@@ -165,21 +165,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
     // When closing infobox: keep current zoom and stop rotation (do not auto-resume)
   }, [selectedApparition, isTimelineOpen, isCinemaMode, apparitions]);
 
-  // Focus camera on Mexico (Guadalupe) during Step 2 of Onboarding Guide, and reset when closed or started
+  // Focus camera on target (Mexico for Mary, Italy for Eucharist) during Steps 1-4 of Onboarding Guide, and reset when closed or started
   const prevTutorialActiveRef = useRef(isTutorialActive);
   useEffect(() => {
-    if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3) && globeEl.current) {
+    const lat = appConfig.projectId === 'eucharist' ? 38.0 : 15.0;
+    const lng = appConfig.projectId === 'eucharist' ? 14.0 : -90.0;
+
+    if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4) && globeEl.current) {
       setIsAutoRotate(tutorialStep === 1);
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = (tutorialStep === 1);
       }
-      globeEl.current.pointOfView({ lat: 15, lng: -90, altitude: 2.2 }, 1200);
+      globeEl.current.pointOfView({ lat, lng, altitude: 2.2 }, 1200);
     } else if (isTutorialActive && tutorialStep === 0 && globeEl.current) {
       setIsAutoRotate(true);
       if (globeEl.current.controls()) {
         globeEl.current.controls().autoRotate = true;
       }
-      globeEl.current.pointOfView({ lat: 15, lng: -90, altitude: 2.2 }, 1200);
+      globeEl.current.pointOfView({ lat, lng, altitude: 2.2 }, 1200);
     } else if (prevTutorialActiveRef.current && !isTutorialActive && globeEl.current) {
       setIsAutoRotate(true);
       if (globeEl.current.controls()) {
