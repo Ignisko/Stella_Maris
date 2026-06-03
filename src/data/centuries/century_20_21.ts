@@ -684,6 +684,7 @@ export const century20and21Apparitions: Apparition[] = [
     description: "Benedictine Sister Reinolda May experienced apparitions of Mary holding a host and chalice, emphasizing Eucharistic adoration. Bishop Mansuet Biyase approved the sanctuary as an official place of pilgrimage in 1989.",
     approvalStatus: "Approved for faith expression",
     priority: 2,
+    imageUrl: "/tabernacle_favicon.svg",
     sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/ngome__kwazulu_natal/index.html;https://www.youtube.com/watch?v=bdFfPFXRZXE"
   },
   {
