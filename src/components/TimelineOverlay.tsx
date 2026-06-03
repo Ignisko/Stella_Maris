@@ -16,6 +16,7 @@ interface TimelineOverlayProps {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
   lang: Language;
+  hideTriggerButton?: boolean;
 }
 
 const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffset: number; fullHistoryOffset: number }> = {
@@ -43,7 +44,7 @@ const playPresentationTranslations: Record<string, string> = {
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
-  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isCinemaMode, isOpen, setIsOpen, lang
+  apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isCinemaMode, isOpen, setIsOpen, lang, hideTriggerButton
 }) => {
   const [timeMode, setTimeMode] = useState<'modern' | 'all'>('modern');
   const [hoveredApp, setHoveredApp] = useState<Apparition | null>(null);
@@ -233,6 +234,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
 
   // Collapsed pill
   if (!isOpen) {
+    if (hideTriggerButton) return null;
     return (
       <button
         id="timeline-closed-pill"

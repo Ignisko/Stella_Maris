@@ -11,7 +11,8 @@ export const earlyApparitions: Apparition[] = [
     year: 40,
     description: "According to legend, the Apostle James the Greater was proclaiming the Gospel when he saw Mary miraculously appearing in the flesh on a pillar calling him to return to Jerusalem. This is considered the first Marian apparition.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_the_Pillar"
   },
   {
     id: "ephesus",
@@ -59,7 +60,8 @@ export const earlyApparitions: Apparition[] = [
     year: 231,
     description: "The Virgin Mary and the Apostle John appeared to St. Gregory the Wonderworker to clarify theological mysteries regarding the Trinity.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Church_of_Our_Lady_of_the_Assumption_and_St_Gregory"
   },
   {
     id: "lepuy",
@@ -95,7 +97,8 @@ export const earlyApparitions: Apparition[] = [
     year: 325,
     description: "St. Nicholas of Bari received two apparitions urging him to fulfill his spiritual mission, the second occurring during the Council of Nicaea.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Church_of_Our_Lady_and_St_Nicholas%2C_Liverpool"
   },
   {
     id: "snows",
@@ -131,7 +134,8 @@ export const earlyApparitions: Apparition[] = [
     year: 380,
     description: "The Virgin appeared to St. Monica, mother of St. Augustine, consoling her in her afflictions.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Santa_Monica_Parish_Church_(Minalin)"
   },
   {
     id: "saydnaya",
@@ -155,7 +159,8 @@ export const earlyApparitions: Apparition[] = [
     year: 636,
     description: "A rudderless ship carrying a statue of Mary landed at Boulogne. Mary appeared to the crowd and announced she had chosen the city as a place of grace.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Basilica_of_Notre-Dame%2C_Boulogne"
   },
   {
     id: "toledo",
@@ -191,7 +196,8 @@ export const earlyApparitions: Apparition[] = [
     year: 722,
     description: "Our Lady appeared to Dom Pelayo, first King of the Asturias, leaving behind a statue. The Christians subsequently defeated the Moors against incredible odds.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Covadonga"
   },
   {
     id: "mainz",
@@ -203,7 +209,8 @@ export const earlyApparitions: Apparition[] = [
     year: 754,
     description: "St. Boniface heard Mary's voice from a miraculous icon hanging from an oak tree, saying: 'The trunk of this oak tree is to remain forever my portrait.'",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_F%C3%A1tima"
   },
   {
     id: "einsiedeln",

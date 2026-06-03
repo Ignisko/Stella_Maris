@@ -68,7 +68,7 @@ export const century20and21Apparitions: Apparition[] = [
     description: "The Blessed Virgin Mary appeared six times to shepherd children Lúcia dos Santos and saints Jacinta and Francisco Marto at Cova da Iria, delivering three secrets, a call for penance and the Rosary, culminating in the miraculous Miracle of the Sun witnessed by 70,000 people.",
     approvalStatus: "Vatican approved",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/fatima/index.html;https://www.youtube.com/watch?v=GENH9mWlvb4",
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_F%C3%A1tima",
     translations: {
       pl: {
         title: "Matka Boża Fatimska",
@@ -156,7 +156,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1930,
     description: "Sr. Amália Aguirre, co-foundress of the Missionary Sisters of Jesus Crucified, received apparitions of Jesus and Mary revealing the Chaplet of Our Lady of Tears. Bishop Francisco de Campos Barreto granted official diocesan approval in 1931.",
     approvalStatus: "Bishop approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Tears"
   },
   {
     id: "beauraing",
@@ -277,7 +278,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1945,
     description: "Two young girls, Marcelina Baroso and Afra Blanco, witnessed apparitions of the Virgin of Sorrows near a chestnut tree. In 2024, the Vatican DDF granted the official canonical status of 'Nihil obstat'.",
     approvalStatus: "Approved for faith expression",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Sorrows"
   },
   {
     id: "amsterdam_all_nations",
@@ -385,7 +387,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1949,
     description: "Claims of Marian apparitions by Mary Ann Van Hoof were thoroughly investigated and officially rejected by the Diocese of La Crosse and the Holy See.",
     approvalStatus: "Unapproved apparitions",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Necedah_Shrine"
   },
   {
     id: "turzovka",
@@ -421,7 +424,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1961,
     description: "Four schoolgirls reported apparitions of St. Michael and the Virgin Mary with profound warnings regarding the Eucharist, an impending worldwide warning, and a great miracle. Successive bishops declared the supernatural nature not established.",
     approvalStatus: "Unapproved apparitions",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Garabandal_apparitions"
   },
   {
     id: "zeitoun",
@@ -433,7 +437,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1968,
     description: "Silent, luminous apparitions of the Blessed Virgin Mary atop St. Mark's Coptic Church were witnessed by millions of Christians and Muslims, broadcast on national television, and officially approved by Coptic Pope Kyrillos VI.",
     approvalStatus: "Coptic approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Zeitoun"
   },
   {
     id: "placanica_scoglio",
@@ -470,7 +475,7 @@ export const century20and21Apparitions: Apparition[] = [
     description: "A wooden statue of the Virgin Mary wept miraculous tears 101 times and delivered grave prophetic warnings to Sr. Agnes Sasagawa. Bishop John Shojiro Ito granted official episcopal approval in 1984.",
     approvalStatus: "Bishop approved",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/akita/index.html"
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Akita"
   },
   {
     id: "betania",
@@ -506,7 +511,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1981,
     description: "Six visionaries report ongoing messages of peace, conversion, fasting, and prayer. In September 2024, the Vatican DDF officially granted the canonical status of 'Nihil obstat', recognizing the immense worldwide spiritual fruits and authorizing public devotion.",
     approvalStatus: "Approved for faith expression",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Medjugorje"
   },
   {
     id: "kibeho",
@@ -531,7 +537,8 @@ export const century20and21Apparitions: Apparition[] = [
     year: 1982,
     description: "Myrna Nazzour experienced luminous apparitions and miraculous oil exuding from an icon of Mary. Uniquely supported and approved by both Catholic and Eastern Orthodox hierarchs as a profound sign of Christian unity.",
     approvalStatus: "Bishop approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Soufanieh"
   },
   {
     id: "san_nicolas",

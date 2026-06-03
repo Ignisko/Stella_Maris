@@ -80,6 +80,7 @@ function App() {
   const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
   const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
   const [isBugModalOpen, setIsBugModalOpen] = useState(false);
+  const [isLanguagePickerOpen, setIsLanguagePickerOpen] = useState(false);
 
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = localStorage.getItem('stellamaris_theme');
@@ -95,6 +96,10 @@ function App() {
       localStorage.setItem('stellamaris_theme', 'light');
     }
   }, [isDarkMode]);
+
+  useEffect(() => {
+    document.body.setAttribute('data-project-id', config.projectId);
+  }, []);
 
   const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
     return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
@@ -145,6 +150,8 @@ function App() {
           setSelectedApparition(target);
         }
       }
+    } else if (tutorialStep === 10) {
+      // Step 10 = "Watching the presentation" — let presentation selection flow naturally
     } else {
       // For all other steps, ensure the sidebar is closed
       setSelectedApparition(null);
@@ -283,6 +290,9 @@ function App() {
       if (sortedFilteredApparitions.length > 0) {
         setSelectedApparition(sortedFilteredApparitions[0]);
       }
+      if (isTutorialActive && tutorialStep === 9) {
+        setTutorialStep(10);
+      }
     }
   };
 
@@ -291,6 +301,9 @@ function App() {
     setIsCinemaMode(false);
     setSelectedApparition(null);
     setIsTimelineOpen(false);
+    if (isTutorialActive && tutorialStep === 10) {
+      setTutorialStep(9);
+    }
   };
 
   const handlePrevPresentation = () => {
@@ -319,6 +332,10 @@ function App() {
         const targetId = config.projectId === 'eucharist' ? 'lanciano_italy' : 'guadalupe_mexico';
         const target = translatedApparitionsData.find(a => a.id === targetId) || translatedApparitionsData[0];
         return target ? [target] : [];
+      }
+      // If we are in cinema mode during tutorial, restrict to current selection to keep it clean
+      if (isCinemaMode && currentSelectedApparition) {
+        return [currentSelectedApparition];
       }
       return translatedApparitionsData;
     }
@@ -398,7 +415,7 @@ function App() {
                   onMouseOver={e => e.currentTarget.style.transform = 'scale(1.05)'}
                   onMouseOut={e => e.currentTarget.style.transform = 'none'}
                 >
-                  {isPlayingTimeline ? <Pause size={24} /> : <Play size={24} style={{ marginLeft: '2px' }} />}
+                  {isPlayingTimeline ? <Pause size={24} weight="bold" /> : <Play size={24} weight="bold" style={{ marginLeft: '2px' }} />}
                 </button>
 
                 <button
@@ -497,7 +514,7 @@ function App() {
                 e.currentTarget.style.filter = 'none';
               }}
             >
-              <Play size={16} fill="#ffffff" />
+              <Play size={16} weight="bold" fill="#ffffff" />
               <span>
                 {playPresentationTranslations[lang] || 'Play Presentation'}
               </span>
@@ -718,7 +735,7 @@ function App() {
             e.currentTarget.style.transform = 'none';
           }}
         >
-          <Question size={20} color="var(--accent-color)" />
+          <Question size={20} color="var(--accent-color)" weight="bold" />
         </button>
       )}
 
@@ -769,6 +786,7 @@ function App() {
           <LanguagePicker 
             currentLang={lang} 
             onLanguageChange={setLang} 
+            onOpenChange={setIsLanguagePickerOpen}
           />
         </div>
       )}
@@ -839,11 +857,12 @@ function App() {
           onSelectApparition={handleSelectApparition}
           lang={lang}
           isTimelineOpen={isTimelineOpen}
+          isCinemaMode={isCinemaMode}
           projectId={config.projectId}
         />
       )}
 
-      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 8 && tutorialStep <= 10)) && (
+      {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 8 && tutorialStep <= 11)) && (
         <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
@@ -861,6 +880,7 @@ function App() {
             }
           }}
           lang={lang}
+          hideTriggerButton={isLanguagePickerOpen}
         />
       )}
 

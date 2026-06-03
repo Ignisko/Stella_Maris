@@ -802,7 +802,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             gap: '10px',
             color: 'var(--text-color)',
             cursor: 'pointer',
-            boxShadow: isTutorialActive && tutorialStep === 2 ? '0 0 0 4px rgba(56, 189, 248, 0.5), 0 0 20px rgba(56, 189, 248, 0.8)' : '0 4px 12px rgba(0,0,0,0.4)',
+            boxShadow: isTutorialActive && tutorialStep === 2 
+              ? (appConfig.projectId === 'eucharist'
+                ? '0 0 0 4px rgba(217, 151, 38, 0.5), 0 0 20px rgba(217, 151, 38, 0.8)'
+                : '0 0 0 4px rgba(26, 115, 232, 0.5), 0 0 20px rgba(26, 115, 232, 0.8)')
+              : '0 4px 12px rgba(0,0,0,0.4)',
             transition: 'all 0.2s ease'
           }}
           onMouseOver={(e) => {
@@ -815,7 +819,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           }}
           title={isAutoRotate ? t('autoRotateOn', lang) : t('autoRotateOff', lang)}
         >
-          {isAutoRotate ? <Pause size={18} /> : <Play size={18} style={{ marginLeft: '1px' }} />}
+          {isAutoRotate ? <Pause size={18} weight="bold" /> : <Play size={18} weight="bold" style={{ marginLeft: '1px' }} />}
           <span style={{ fontSize: '13px', fontWeight: 600, whiteSpace: 'nowrap' }}>
             {isAutoRotate ? t('autoRotateOn', lang) : t('autoRotateOff', lang)}
           </span>

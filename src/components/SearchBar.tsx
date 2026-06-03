@@ -26,18 +26,19 @@ const SearchBar: React.FC<SearchBarProps> = ({ apparitions, onSelectApparition, 
 
   return (
     <div style={{ position: 'relative', width: '100%', zIndex: 35 }}>
-      <div className="glass-panel glass-panel-rounded" style={{ 
+      <div id="search-bar-input-container" style={{ 
         display: 'flex', 
         alignItems: 'center', 
-        padding: '10px 16px', 
+        padding: '10px 20px', 
         gap: '10px', 
-        background: 'rgba(15, 23, 42, 0.8)',
-        border: '1px solid var(--glass-border)',
+        background: 'var(--glass-bg)',
+        border: 'none',
+        borderRadius: '9999px',
+        boxShadow: 'var(--box-shadow)',
         pointerEvents: 'auto',
         height: '42px',
-        borderRadius: '12px'
       }}>
-        <MagnifyingGlass size={16} color="var(--accent-color)" />
+        <MagnifyingGlass size={16} color="var(--accent-color)" weight="bold" />
         <input
           type="text"
           placeholder={t('searchPlaceholder', lang)}

@@ -1,15 +1,11 @@
 {
-  "name": "stellamaris.help",
+  "name": "stella-maris",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "dev:mary": "vite --mode mary",
-    "dev:eucharist": "vite --mode eucharist",
-    "build": "npm run build:mary",
-    "build:mary": "tsc -b && vite build --mode mary",
-    "build:eucharist": "tsc -b && vite build --mode eucharist",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -150,6 +150,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Apparitions list",
       "Open timeline",
       "Timeline & presentation",
+      "Watching the presentation",
       "Glory to Jesus!"
     ],
     pl: [
@@ -163,6 +164,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Katalog objawień",
       "Otwórz oś czasu",
       "Oś czasu i prezentacja",
+      "Oglądanie prezentacji",
       "Chwała Jezusowi!"
     ],
     es: [
@@ -176,6 +178,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Directorio de apariciones",
       "Abrir línea de tiempo",
       "Línea de tiempo y presentación",
+      "Ver la presentación",
       "¡Gloria a Jesús!"
     ],
     pt: [
@@ -189,6 +192,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Diretório de aparições",
       "Abrir linha do tempo",
       "Linha do tempo e apresentação",
+      "Assistindo à apresentação",
       "Glória a Jesus!"
     ],
     fr: [
@@ -202,6 +206,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Répertoire des apparitions",
       "Ouvrir la frise chronologique",
       "Frise chronologique & présentation",
+      "Regarder la présentation",
       "Gloire à Jésus !"
     ],
     it: [
@@ -215,6 +220,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Elenco delle apparizioni",
       "Apri la cronologia",
       "Cronologia & presentazione",
+      "Guardare la presentazione",
       "Gloria a Gesù!"
     ],
     ko: [
@@ -228,6 +234,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "발현 목록",
       "타임라인 열기",
       "타임라인 및 프레젠테이션",
+      "프레젠테이션 시청",
       "예수님께 영광을!"
     ],
     tr: [
@@ -241,6 +248,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Görünüşler Listesi",
       "Zaman Çizelgesini Aç",
       "Zaman Çizelgesi ve Sunum",
+      "Sunumu izleme",
       "İsa'ya Yücelik Olsun!"
     ],
     ar: [
@@ -254,6 +262,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "قائمة الظهورات",
       "افتح الجدول الزمني",
       "الجدول الزمني والعرض",
+      "مشاهدة العرض التقديمي",
       "المجد ليسوع!"
     ],
     tl: [
@@ -267,6 +276,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Listahan ng mga Aparisyon",
       "Buksan ang Timeline",
       "Timeline at Presentasyon",
+      "Panoorin ang presentasyon",
       "Papurihan si Hesus!"
     ],
     vi: [
@@ -280,6 +290,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Danh sách sự hiện ra",
       "Mở dòng thời gian",
       "Dòng thời gian & trình bày",
+      "Xem trình chiếu",
       "Vinh danh Chúa Giêsu!"
     ]
   };
@@ -289,143 +300,154 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Choose your language to begin.",
       "Left-click and drag the Earth to rotate it. Scroll your mouse wheel to zoom in and out.",
       "Toggle the auto-rotation of the Earth using this button in the bottom left corner.",
-      "Now that we are zoomed in, click on the marker to open detailed information about the apparition.",
+      "Now click on the marker to open detailed information about the apparition.",
       "This sidebar contains the historical overview, the visionary's story, and details about the Church's approval.",
       "Use the left panel to search for specific shrines, filter by approval status, or filter by historical century.",
       "Click 'Browse directory' to open a complete list of all apparitions and explore them in detail.",
       "In the directory, you can quickly search and sort all recorded apparitions. Close the directory to continue.",
       "Click the timeline toggle button in the bottom right corner to show the chronological event timeline.",
       "Open the timeline at the bottom. We recommend using filters first to narrow down the events, then click 'Play Presentation' to start a chronological cinematic tour of your filtered selection!",
+      "The presentation is now running! The globe will automatically fly to each site chronologically. Use the controls on the timeline to pause, go back, or skip ahead.",
       "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus."
     ],
     pl: [
       "Wybierz język, aby rozpocząć.",
       "Kliknij lewym przyciskiem myszy i przeciągnij Ziemię, aby ją obrócić. Użyj myszy, aby przybliżyć lub oddalić.",
       "Włącz lub wyłącz automatyczne obracanie Ziemi za pomocą tego przycisku w lewym dolnym rogu.",
-      "Teraz, gdy przybliżyliśmy, kliknij znacznik, aby otworzyć szczegółowe informacje o objawieniu.",
+      "Teraz kliknij znacznik, aby otworzyć szczegółowe informacje o objawieniu.",
       "Ten panel boczny zawiera historyczny przegląd, historię wizjonera oraz szczegóły dotyczące zatwierdzenia przez Kościół.",
       "Użyj lewego panelu, aby wyszukać konkretne sanktuaria, filtrować według statusu zatwierdzenia lub stulecia historycznego.",
       "Kliknij „Przeglądaj katalog”, aby otworzyć pełną listę wszystkich objawień i szczegółowo je zbadać.",
       "W katalogu możesz szybko przeszukiwać i sortować wszystkie zarejestrowane objawienia. Zamknij katalog, aby kontynuować.",
       "Kliknij przycisk osi czasu w prawym dolnym rogu, aby wyświetlić chronologiczną linię wydarzeń.",
       "Otwórz oś czasu na dole. Zalecamy najpierw użyć filtrów, aby zawęzić listę wydarzeń, a następnie kliknąć 'Uruchom prezentację', aby rozpocząć chronologiczną, kinową podróż po wybranych objawieniach!",
+      "Prezentacja właśnie trwa! Globus automatycznie przeniesie Cię do każdego miejsca chronologicznie. Użyj przycisków na osi czasu, aby wstrzymać, cofnąć lub przejść dalej.",
       "Jesteś gotowy, aby rozpocząć. Życzymy udanej podróży przez historię Stella Maris! Maryjo Matko Boża, chwała przez Nią Jezusowi."
     ],
     es: [
       "Elija su idioma para comenzar.",
       "Haga clic izquierdo y arrastre la Tierra para rotarla. Use la rueda del mouse para acercar y alejar.",
       "Active o desactive la rotación automática de la Tierra usando este botón en la esquina inferior izquierda.",
-      "Ahora que nos hemos acercado, haga clic en el marcador para abrir información detallada sobre la aparición.",
+      "Ahora haga clic en el marcador para abrir información detallada sobre la aparición.",
       "Esta barra lateral contiene el resumen histórico, la historia del vidente y detalles sobre la aprobación de la Iglesia.",
       "Use el panel izquierdo para buscar santuarios específicos, filtrar por estado de aprobación o por siglo histórico.",
       "Haga clic en 'Explorar directorio' para abrir una lista completa de todas las apariciones y explorarlas en detalle.",
       "En el directorio, puede buscar y ordenar rápidamente todas las apariciones registradas. Cierre el directorio para continuar.",
       "Haga clic en el botón de la línea de tiempo en la esquina inferior derecha para abrir la vista cronológica.",
       "Abra la línea de tiempo en la parte inferior. Recomendamos usar filtros primero para reducir los eventos, luego haga clic en 'Iniciar presentación' para comenzar un recorrido cinematográfico cronológico de su selección filtrada.",
+      "¡La presentación ya está en marcha! El globo volará automáticamente a cada sitio de forma cronológica. Usa los controles de la línea de tiempo para pausar, retroceder o avanzar.",
       "Está listo para comenzar. ¡Disfrute de su viaje a través de la historia de Stella Maris! María Madre de Dios, gloria por Ella a Jesús."
     ],
     pt: [
       "Escolha o seu idioma para começar.",
       "Clique com o botão esquerdo e arraste a Terra para girá-la. Use a roda do mouse para aproximar e afastar.",
       "Ative ou desactive a rotação automática da Terra usando este botão no canto inferior esquerdo.",
-      "Agora que nos aproximamos, clique no marcador para abrir informações detalhadas sobre a aparição.",
+      "Agora clique no marcador para abrir informações detalhadas sobre a aparição.",
       "Esta barra lateral contém a visão geral histórica, a história do vidente e detalhes sobre a aprovação da Igreja.",
       "Use o painel esquerdo para pesquisar santuários específicos, filtrar por status de aprovação ou por século histórico.",
       "Clique em 'Navegar no diretório' to abrir uma lista completa de todas as aparições e explorá-las em detalhes.",
       "No diretório, você pode pesquisar e ordenar rapidamente todas as aparições registradas. Feche o diretório para continuar.",
       "Clique no botão da linha do tempo no canto inferior direito para abrir la visualização cronológica.",
       "Abra a linha do tempo na parte inferior. Recomendamos usar filtros primeiro para restringir os eventos, depois clique em 'Iniciar apresentação' para iniciar um tour cinematográfico cronológico de sua seleção filtrada!",
+      "A apresentação está em andamento! O globo irá voar automaticamente para cada local de forma cronológica. Use os controles na linha do tempo para pausar, voltar ou avançar.",
       "Você está pronto para começar. Aproveite a sua jornada pela história do Stella Maris! Maria Mãe de Deus, glória por Ela a Jesus."
     ],
     fr: [
       "Choisissez votre langue pour commencer.",
       "Faites un clic gauche et glissez la Terre pour la faire tourner. Faites défiler la molette de votre souris pour zoomer et dézoomer.",
       "Activez ou désactivez la rotation automatique de la Terre à l'aide de ce bouton dans le coin inférieur gauche.",
-      "Maintenant que nous avons zoomé, cliquez sur le marqueur pour ouvrir des informations détaillées.",
+      "Maintenant, cliquez sur le marqueur pour ouvrir des informations détaillées.",
       "Ce panneau latéral contient un aperçu historique, l'histoire du voyant et des détails sur l'approbation de l'Église.",
       "Utilisez le panneau de gauche pour rechercher des sanctuaires spécifiques, filtrer par statut d'approbation ou par siècle historique.",
       "Cliquez sur 'Parcourir le répertoire' pour ouvrir la liste complète de toutes les apparitions et les explorer en détail.",
       "Dans le répertoire, vous pouvez rapidement rechercher et trier toutes les apparitions enregistrées. Fermez le répertoire pour continuer.",
       "Cliquez sur le bouton de la frise chronologique en bas à droite pour l'afficher.",
       "Ouvrez la frise chronologique en bas. Nous recommandons d'utiliser d'abord des filtres pour affiner les événements, puis cliquez sur 'Lancer la présentation' pour démarrer une visite cinématographique chronologique de votre sélection filtrée !",
+      "La présentation est en cours ! Le globe se déplacera automatiquement vers chaque site par ordre chronologique. Utilisez les commandes de la frise pour mettre en pause, reculer ou avancer.",
       "Vous êtes prêt à commencer. Bon voyage à travers l'histoire de Stella Maris ! Marie Mère de Dieu, gloire par Elle à Jésus."
     ],
     it: [
       "Scegli la tua lingua per iniziare.",
       "Fai clic sinistro e trascina la Terra per ruotarla. Usa la rotellina del mouse per ingrandire e rimpicciolire.",
       "Attiva o disattiva la rotazione automatica della Terre usando questo postanel nell'angolo in basso a sinistra.",
-      "Ora che abbiamo ingrandito, clicca sul marcatore per aprire informazioni dettagliate.",
+      "Ora clicca sul marcatore per aprire informazioni dettagliate.",
       "Questo pannello laterale contiene la panoramica storica, la storia del veggente e i dettagli sull'approvazione della Chiesa.",
-      "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvazione o per secolo storico.",
+      "Usa il pannello sinistro per cercare santuari specifici, filtrare per stato di approvação o per secolo storico.",
       "Fai clic su 'Sfoglia la directory' per aprire un elenco completo di tutte le apparizioni ed esplorarle in dettaglio.",
-      "Nell'elenco, puoi cercare e ordinare rapidamente tutte le apparizioni registrate. Chiudi l'elenco per continuare.",
+      "Nell'elenco, puoi cercare e ordinare rapidamente todas le apparizioni registrate. Chiudi l'elenco per continuare.",
       "Fai clic sul pulsante della cronologia nell'angolo in basso a destra per aprirla.",
       "Apri la cronologia in basso. Ti consigliamo di usare prima i filtri per restringere gli eventi, quindi fai clic su 'Avvia presentazione' per iniziare un tour cinematografico cronologico della tua selezione filtrata!",
+      "La presentazione è ora attiva! Il globo volerà automaticamente su ogni sito in ordine cronológico. Usa i controlli sulla cronologia per mettere in pausa, tornare indietro o andare avanti.",
       "Sei pronto per iniziare. Buon viaggio attraverso la storia di Stella Maris! Maria Madre di Dio, gloria attraverso di Lei a Gesù."
     ],
     ko: [
       "시작하려면 언어를 선택하세요.",
       "마우스 왼쪽 버튼을 클릭하고 드래그하여 지구를 회전합니다. 마우스 휠을 사용하여 확대 및 축소합니다.",
       "왼쪽 하단 모서리에 있는 이 버튼을 사용하여 지구의 자동 회전을 켭니다.",
-      "이제 확대되었으므로 마커를 클릭하여 발현에 대한 자세한 정보를 엽니다.",
+      "이제 마커를 클릭하여 발현에 대한 자세한 정보를 엽니다.",
       "이 사이드바에는 역사적 개요, 환시자의 이야기, 교회의 승인에 대한 세부 정보가 포함되어 있습니다.",
       "왼쪽 패널을 사용하여 특정 성지를 검색하거나 승인 상태 또는 역사적 세기별로 필터링합니다.",
       "모든 발현의 전체 목록을 열고 자세히 탐색하려면 '디렉토리 찾아보기'를 클릭하세요.",
       "디렉토리에서 기록된 모든 발현을 빠르게 검색하고 정렬할 수 있습니다. 계속하려면 디렉토리를 닫습니다.",
       "오른쪽 하단 모서리에 있는 타임라인 버튼을 클릭하여 연대순 이벤트를 표시합니다.",
       "하단에 타임라인을 엽니다. 먼저 필터를 사용하여 이벤트를 좁힌 다음 '프레젠테이션 재생'을 클릭하여 필터링된 선택 항목의 연대순 영화 같은 투어를 시작하는 것이 좋습니다!",
+      "프레젠테이션이 진행 중입니다! 지구본이 연대순으로 각 장소로 자동 이동합니다. 타임라인의 컨트롤을 사용하여 일시 중지, 뒤로 이동 또는 건너뛰기를 하세요.",
       "시작할 준비가 되었습니다. Stella Maris의 역사를 즐겁게 여행하세요! 하느님의 어머니 마리아, 그녀를 통해 예수님께 영광을 돌립니다."
     ],
     tr: [
       "Başlamak için dilinizi seçin.",
       "Döndürmek için Dünyaya sol tıklayıp sürükleyin. Yakınlaştırmak ve uzaklaştırmak için farenizin tekerleğini kullanın.",
       "Sol alt köşedeki bu düğmeyi kullanarak Dünyanın otomatik dönmesini açın veya kapatın.",
-      "Şimdi yakınlaştırdığımıza göre, görünüş hakkında ayrıntılı bilgileri açmak için işaretçiye tıklayın.",
+      "Şimdi görünüş hakkında ayrıntılı bilgileri açmak için işaretçiye tıklayın.",
       "Bu kenar çubuğu tarihsel genel bakışı, vizyonerin hikayesini ve Kilisenin onayına ilişkin ayrıntıları içerir.",
       "Belirli türbeleri aramak, onay durumuna göre filtrelemek veya tarihi yüzyıla göre filtrelemek için sol paneli kullanın.",
       "Tüm görünüşlerin tam listesini açmak ve bunları ayrıntılı olarak incelemek için 'Dizine Göz Atın'a tıklayın.",
       "Dizinde kaydedilen tüm görünüşleri hızlıca arayabilir ve sıralayabilirsiniz. Devam etmek için dizini kapatın.",
       "Kronolojik olayları göstermek için sağ alt köşedeki zaman çizelgesi düğmesine tıklayın.",
       "Zaman çizelgesini alttan açın. Olayları daraltmak için önce filtreleri kullanmanızı, ardından filtrelenmiş seçiminizin kronolojik sinematik turunu başlatmak için 'Sunumu Oynat'a tıklamanızı öneririz!",
+      "Sunum şimdi oynatılıyor! Küre kronolojik olarak her yere otomatik olarak uçacaktır. Duraklatmak, geri gitmek veya ileri atlamak için zaman çizelgesindeki kontrolleri kullanın.",
       "Başlamaya hazırsınız. Stella Maris tarihi boyunca yapacağınız yolculuğun tadını çıkarın! Meryem Tanrı'nın Annesi, O'nun aracılığıyla İsa'ya yücelik olsun."
     ],
     ar: [
       "اختر لغتك للبدء.",
       "انقر بزر الماوس الأيسر واسحب الأرض لتدويرها. استخدم عجلة الماوس للتكبير والتصغير.",
       "قم بتشغيل أو إيقاف التدوير التلقائي للأرض باستخدام هذا الزر في الزاوية اليسرى السفلية.",
-      "الآن بعد أن قمنا بالتكبير، انقر على العلامة لفتح معلومات تفصيلية عن الظهور.",
+      "الآن انقر على العلامة لفتح معلومات تفصيلية عن الظهور.",
       "يحتوي هذا الشريط الجانبي على النظرة التاريخية العامة، وقصة الرائي، وتفاصيل عن موافقة الكنيسة.",
       "استخدم اللوحة اليسرى للبحث عن مزارات معينة، أو الفلترة حسب حالة الموافقة، أو الفلترة حسب القرن التاريخي.",
       "انقر فوق 'تصفح الدليل' لفتح قائمة كاملة بجميع الظهورات واستكشافها بالتفصيل.",
       "في الدليل، يمكنك البحث السريع وفرز جميع الظهورات المسجلة. أغلق الدليل للمتابعة.",
       "انقر فوق زر الجدول الزمني في الزاوية اليمنى السفلية لإظهار الجدول الزمني للأحداث الترتيبي.",
       "افتح الجدول الزمني في الأسفل. نوصي باستخدام الفلاتر أولاً لتضييق نطاق الأحداث، ثم انقر فوق 'تشغيل العرض التقديمي' لبدء جولة سينمائية ترتيبية لاختيارك المصفى!",
+      "العرض التقديمي قيد التشغيل الآن! ستنتقل الكرة الأرضية تلقائياً إلى كل موقع ترتيباً زمنياً. استخدم عناصر التحكم في الجدول الزمني للإيقاف المؤقت أو الرجوع أو التخطي.",
       "أنت جاهز للبدء. استمتع برحلتك عبر تاريخ ستيلا ماريس! مريم والدة الإله، المجد لها بيسوع."
     ],
     tl: [
       "Piliin ang iyong wika upang magsimula.",
       "I-click ang kaliwang button ng mouse at i-drag ang Mundo upang paikutin ito. Gamitin ang gulong ng iyong mouse upang mag-zoom in at mag-zoom out.",
       "I-toggle ang awtomatikong pag-ikot ng Mundo gamit ang button na ito sa ibabang kaliwang sulok.",
-      "Ngayong naka-zoom in na tayo, i-click ang marker para buksan ang detalyadong impormasyon tungkol sa aparisyon.",
+      "Ngayon i-click ang marker para buksan ang detalyadong impormasyon tungkol sa aparisyon.",
       "Naglalaman ang sidebar na ito ng pangkasaysayang buod, kwento ng nakakita, at mga detalye tungkol sa pag-apruba ng Simbahan.",
       "Gamitin ang kaliwang panel upang maghanap ng partikular na dambana, i-filter ayon sa estado ng pag-apruba, o i-filter ayon sa kasaysayan ng siglo.",
       "I-click ang 'I-browse ang direktoryo' para magbukas ng kumpletong listahan ng lahat ng aparisyon at galugarin ang mga ito nang detalyado.",
       "Sa direktoryo, mabilis mong mahahanap at maiuuri ang lahat ng naitalang aparisyon. Isara ang direktoryo upang magpatuloy.",
       "I-click ang button na timeline sa kanang ibabang sulok upang ipakita ang pagkakasunud-sunod na timeline ng kaganapan.",
       "Buksan ang timeline sa ibaba. Inirerekumenda namin ang paggamit ng mga filter muna upang paliitin ang mga kaganapan, pagkatapos ay i-click ang 'Simulan ang Presentasyon' upang magsimula ng isang sunud-sunod na cinematic tour ng iyong na-filter na pagpipilian!",
-      "Handa ka nang magsimula. Tangkilikin ang iyong paglalakbay sa kasaysayan ng Stella Maris! Maria Ina ng Diyos, papuri sa pamamagitan Niya kay Hesus."
+      "Gumagana na ang presentasyon! Awtomatikong lilipad ang globe sa bawat site nang sunud-sunod. Gamitin ang mga control sa timeline para i-pause, bumalik, o lumaktaw.",
+      "Handa ka nang magsimula. Tangkilikin ang iyong paglalakbay sa kasayan ng Stella Maris! Maria Ina ng Diyos, papuri sa pamamagitan Niya kay Hesus."
     ],
     vi: [
       "Chọn ngôn ngữ của bạn để bắt đầu.",
       "Nhấp chuột trái và kéo Trái Đất để xoay. Sử dụng con lăn chuột để phóng to và thu nhỏ.",
       "Bật hoặc tắt tính năng tự động xoay Trái Đất bằng nút này ở góc dưới bên trái.",
-      "Bây giờ chúng ta đã phóng to, nhấp vào điểm đánh dấu để mở thông tin chi tiết về sự hiện ra.",
+      "Bây giờ hãy nhấp vào điểm đánh dấu để mở thông tin chi tiết về sự hiện ra.",
       "Bảng điều khiển bên này chứa tổng quan lịch sử, câu chuyện của người nhìn thấy, và các chi tiết về sự chấp thuận của Giáo hội.",
       "Sử dụng bảng điều khiển bên trái để tìm kiếm các đền thánh cụ thể, lọc theo trạng thái phê duyệt, hoặc lọc theo thế kỷ.",
       "Nhấp vào 'Duyệt qua danh mục' để mở danh sách đầy đủ tất cả các sự hiện ra và khám phá chi tiết.",
       "Trong danh mục, bạn có thể nhanh chóng tìm kiếm và sắp xếp tất cả các sự hiện ra đã được ghi lại. Đóng danh mục để tiếp tục.",
       "Nhấp vào nút dòng thời gian ở góc dưới bên phải để hiển thị dòng thời gian sự kiện theo trình tự thời gian.",
       "Mở dòng thời gian ở dưới cùng. Chúng tôi khuyên bạn nên sử dụng bộ lọc trước để thu hẹp các sự kiện, sau đó nhấp vào 'Bắt đầu trình chiếu' để bắt đầu chuyến tham quan điện ảnh theo trình tự thời gian cho lựa chọn đã lọc của bạn!",
+      "Trình chiếu đang chạy! Quả địa cầu sẽ tự động bay đến từng địa điểm theo trình tự thời gian. Sử dụng các nút điều khiển trên dòng thời gian để tạm dừng, quay lại hoặc đi tiếp.",
       "Bạn đã sẵn sàng để bắt đầu. Hãy tận hưởng hành trình của bạn qua lịch sử của Stella Maris! Mẹ Maria Mẹ Thiên Chúa, vinh danh qua Mẹ đến Chúa Giêsu."
     ]
   };
@@ -437,7 +459,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
   const goldColor = config.projectId === 'eucharist' ? '#d99726' : 'var(--gold-accent)';
 
   const icons = [
-      <Question size={40} color={goldColor} />,
+      <Question size={40} color={goldColor} weight="bold" />,
       <Globe size={40} color={iconsColor} />,
       <Globe size={40} color={iconsColor} />,
       <Globe size={40} color={iconsColor} />,
@@ -447,9 +469,9 @@ const getStepsContent = (lang: Language): StepContent[] => {
       <Calendar size={40} color={iconsColor} />,
       <Calendar size={40} color={iconsColor} />,
       <Globe size={40} color={iconsColor} />,
+      <Globe size={40} color={iconsColor} />,
       <Sparkle size={40} color={goldColor} />
     ];
-
   return selectedTitles.map((title, i) => {
     let finalTitle = title;
     let finalDesc = selectedDescs[i] || descriptions['en'][i];
@@ -492,10 +514,10 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const [elementRect, setElementRect] = useState<DOMRect | null>(null);
 
   // Step 8: timeline stays CLOSED so #timeline-closed-pill is visible for the highlight
-  // Step 9: timeline auto-opens so #timeline-play-presentation-button is visible
+  // Step 9 & 10: timeline auto-opens so controls are visible
   useEffect(() => {
     if (!isOpen) return;
-    if (step === 9) {
+    if (step === 9 || step === 10) {
       setIsTimelineOpen(true);
     } else {
       setIsTimelineOpen(false);
@@ -522,7 +544,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
     let animFrameId: number;
     const updateRect = () => {
       let selector = '';
-      if (step === 5) selector = '#search-filters-container';
+      if (step === 4) selector = '#apparition-sidebar';
+      else if (step === 5) selector = '#search-filters-container';
       else if (step === 6) selector = '#browse-directory-button';
       else if (step === 7) selector = '#directory-modal-container';
       else if (step === 8) selector = '#timeline-closed-pill';
@@ -567,7 +590,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
-    if (step === 0 || step === 10) {
+    if (step === 0 || step === 11) {
       return {
         left: '-100px',
         top: '-100px',
@@ -578,7 +601,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         background: 'transparent',
       };
     }
-    if (step === 1 || step === 2 || step === 3 || step === 4) {
+    if (step === 1 || step === 2 || step === 3 || step === 4 || step === 10) {
       return {
         left: '50vw',
         top: '50vh',
@@ -636,7 +659,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       width: '360px',
       backgroundColor: 'rgba(15, 23, 42, 0.96)',
       backdropFilter: 'blur(20px)',
-      border: '1px solid var(--glass-border)',
+      border: 'none',
       borderRadius: '16px',
       boxShadow: '0 25px 60px rgba(0,0,0,0.85)',
       padding: '24px',
@@ -647,7 +670,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       pointerEvents: 'auto'
     };
 
-    if (step === 0 || step === 10) {
+    if (step === 0 || step === 11) {
       return {
         ...common,
         left: '50vw',
@@ -655,8 +678,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         width: '450px',
         maxWidth: '90vw',
-        textAlign: step === 10 ? 'center' : 'left',
-        alignItems: step === 10 ? 'center' : 'stretch'
+        textAlign: step === 11 ? 'center' : 'left',
+        alignItems: step === 11 ? 'center' : 'stretch'
       };
     }
     if (step === 1 || step === 2 || step === 3) {
@@ -666,15 +689,16 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         top: '150px',
       };
     }
+    if (step === 4 || step === 10) {
+      return {
+        ...common,
+        left: '20px',
+        top: '80px',
+      };
+    }
 
     if (elementRect) {
       switch (step) {
-        case 4:   // sidebar is on RIGHT, left side is empty → place card top-left
-          return {
-            ...common,
-            left: '20px',
-            top: '80px',
-          };
         case 5:
         case 6:
           return {
@@ -712,7 +736,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 10 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 10 || step === 11 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
@@ -894,6 +918,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
           }}>
             {(Object.keys(LANGUAGE_FLAG_CODES) as Language[]).map(lang => {
               const isSelected = currentLang === lang;
+              const accentColor = config.projectId === 'eucharist' ? 'rgba(217, 151, 38, 0.95)' : 'rgba(26, 115, 232, 0.95)';
               return (
                 <button
                   key={lang}
@@ -904,9 +929,9 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                     gap: '10px',
                     padding: '8px 12px',
                     borderRadius: '8px',
-                    border: `1px solid ${isSelected ? 'rgba(56, 189, 248, 0.6)' : 'rgba(255,255,255,0.08)'}`,
-                    background: isSelected ? 'rgba(56, 189, 248, 0.15)' : 'rgba(255,255,255,0.03)',
-                    color: isSelected ? '#ffffff' : 'rgba(255,255,255,0.75)',
+                    border: 'none',
+                    background: isSelected ? accentColor : 'rgba(255,255,255,0.15)',
+                    color: isSelected ? '#ffffff' : 'rgba(255,255,255,1)',
                     fontSize: '13px',
                     fontWeight: isSelected ? 700 : 500,
                     cursor: 'pointer',
@@ -915,14 +940,12 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                   }}
                   onMouseOver={e => {
                     if (!isSelected) {
-                      e.currentTarget.style.background = 'rgba(255,255,255,0.08)';
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.15)';
+                      e.currentTarget.style.background = 'rgba(255,255,255,0.25)';
                     }
                   }}
                   onMouseOut={e => {
                     if (!isSelected) {
-                      e.currentTarget.style.background = 'rgba(255,255,255,0.03)';
-                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+                      e.currentTarget.style.background = 'rgba(255,255,255,0.15)';
                     }
                   }}
                 >
@@ -960,17 +983,24 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
             <button
               onClick={onClose}
               style={{
-                background: 'transparent',
+                background: 'rgba(255,255,255,0.1)',
                 border: 'none',
-                color: 'rgba(255,255,255,0.5)',
+                borderRadius: '20px',
+                color: 'rgba(255,255,255,0.9)',
                 cursor: 'pointer',
                 fontSize: '13px',
                 fontWeight: 600,
-                transition: 'color 0.2s',
-                padding: '6px 0'
+                transition: 'all 0.2s',
+                padding: '8px 16px'
               }}
-              onMouseOver={e => e.currentTarget.style.color = '#ef4444'}
-              onMouseOut={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}
+              onMouseOver={e => {
+                e.currentTarget.style.color = '#ef4444';
+                e.currentTarget.style.background = 'rgba(255,255,255,0.2)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.color = 'rgba(255,255,255,0.9)';
+                e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
+              }}
             >
               {tLocal.skip}
             </button>
@@ -984,8 +1014,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
               <button
                 onClick={handleBack}
                 style={{
-                  background: 'rgba(255,255,255,0.05)',
-                  border: '1px solid rgba(255,255,255,0.1)',
+                  background: 'rgba(255,255,255,0.15)',
+                  border: 'none',
                   color: 'var(--text-color)',
                   cursor: 'pointer',
                   borderRadius: '20px',
@@ -997,51 +1027,53 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                   gap: '6px',
                   transition: 'all 0.2s'
                 }}
-                onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.12)'}
-                onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+                onMouseOver={e => e.currentTarget.style.background = 'rgba(255,255,255,0.25)'}
+                onMouseOut={e => e.currentTarget.style.background = 'rgba(255,255,255,0.15)'}
               >
                 <ArrowLeft size={14} />
                 <span>{tLocal.back}</span>
               </button>
             )}
 
-            <button
-              onClick={handleNext}
-              style={{
-                background: config.projectId === 'eucharist'
-                  ? 'linear-gradient(135deg, #d99726, #3b82f6)'
-                  : 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
-                border: 'none',
-                color: '#ffffff',
-                cursor: 'pointer',
-                borderRadius: '20px',
-                padding: '8px 20px',
-                fontSize: '13px',
-                fontWeight: 700,
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                boxShadow: config.projectId === 'eucharist'
-                  ? '0 4px 12px rgba(217, 151, 38, 0.25)'
-                  : '0 4px 12px rgba(56, 189, 248, 0.25)',
-                transition: 'all 0.2s'
-              }}
-              onMouseOver={e => {
-                e.currentTarget.style.transform = 'translateY(-1px)';
-                e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
-                  ? '0 6px 16px rgba(217, 151, 38, 0.4)'
-                  : '0 6px 16px rgba(56, 189, 248, 0.4)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.transform = 'none';
-                e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
-                  ? '0 4px 12px rgba(217, 151, 38, 0.25)'
-                  : '0 4px 12px rgba(56, 189, 248, 0.25)';
-              }}
-            >
-              <span>{step === 0 ? tLocal.start : step === steps.length - 1 ? tLocal.finish : tLocal.next}</span>
-              {step < steps.length - 1 && <ArrowRight size={14} />}
-            </button>
+            {step !== 9 && (
+              <button
+                onClick={handleNext}
+                style={{
+                  background: config.projectId === 'eucharist'
+                    ? 'linear-gradient(135deg, #d99726, #3b82f6)'
+                    : 'linear-gradient(135deg, var(--accent-color), rgba(59, 130, 246, 0.85))',
+                  border: 'none',
+                  color: '#ffffff',
+                  cursor: 'pointer',
+                  borderRadius: '20px',
+                  padding: '8px 20px',
+                  fontSize: '13px',
+                  fontWeight: 700,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px',
+                  boxShadow: config.projectId === 'eucharist'
+                    ? '0 4px 12px rgba(217, 151, 38, 0.25)'
+                    : '0 4px 12px rgba(56, 189, 248, 0.25)',
+                  transition: 'all 0.2s'
+                }}
+                onMouseOver={e => {
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                  e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                    ? '0 6px 16px rgba(217, 151, 38, 0.4)'
+                    : '0 6px 16px rgba(56, 189, 248, 0.4)';
+                }}
+                onMouseOut={e => {
+                  e.currentTarget.style.transform = 'none';
+                  e.currentTarget.style.boxShadow = config.projectId === 'eucharist'
+                    ? '0 4px 12px rgba(217, 151, 38, 0.25)'
+                    : '0 4px 12px rgba(56, 189, 248, 0.25)';
+                }}
+              >
+                <span>{step === 0 ? tLocal.start : step === steps.length - 1 ? tLocal.finish : tLocal.next}</span>
+                {step < steps.length - 1 && <ArrowRight size={14} />}
+              </button>
+            )}
           </div>
         </div>
 

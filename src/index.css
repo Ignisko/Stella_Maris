@@ -377,7 +377,7 @@ input, button, textarea, select {
 /* Onboarding Tutorial Guided Tour Styles */
 .tutorial-spotlight {
   position: fixed;
-  border: 3px solid var(--accent-color, #38bdf8);
+  border: none;
   border-radius: 16px;
   box-shadow: 0 0 0 9999px rgba(10, 15, 30, 0.75), 0 0 30px var(--accent-color, #38bdf8);
   pointer-events: none;
@@ -423,6 +423,26 @@ input, button, textarea, select {
 body[data-tutorial-step="3"] #apparition-sidebar,
 body[data-tutorial-step="4"] #apparition-sidebar {
   z-index: 125 !important;
+  border: none !important;
+  box-shadow: 0 0 20px var(--accent-color, #38bdf8) !important;
+}
+
+body[data-project-id="eucharist"][data-tutorial-step="3"] #apparition-sidebar,
+body[data-project-id="eucharist"][data-tutorial-step="4"] #apparition-sidebar {
+  border: none !important;
+  box-shadow: 0 0 20px #d99726 !important;
+}
+
+/* Highlight Auto-rotate button on Step 2 */
+body[data-tutorial-step="2"] #auto-rotate-button {
+  z-index: 125 !important;
+  box-shadow: 0 0 20px var(--accent-color, #38bdf8) !important;
+  border: none !important;
+}
+
+body[data-project-id="eucharist"][data-tutorial-step="2"] #auto-rotate-button {
+  box-shadow: 0 0 20px #d99726 !important;
+  border: none !important;
 }
 
 /* Brighter and highlighted sidebar Close button on Step 3 */
@@ -664,19 +684,12 @@ body[data-tutorial-step="3"] #sidebar-close-button {
    DESKTOP UI — Premium flat modern theme (Dark/Light responsive)
    ===================================================== */
 @media (min-width: 601px) {
-  /* Title card, Sidebar, Help button, Theme button, Language picker trigger, filter containers, and modals */
+  /* Title card, Sidebar, filter containers, and modals */
   .desktop-left-panel > div:first-child,
   #apparition-sidebar,
-  .desktop-help-btn,
-  .desktop-theme-btn,
-  .desktop-lang-picker button,
   #search-filters-container > div > div.glass-panel,
   #search-filters-container > div > div > div.glass-panel,
-  #action-row-container > button,
-  #action-row-container > div > button,
   #action-row-container > div > div.glass-panel,
-  #timeline-closed-pill,
-  #auto-rotate-button,
   #directory-modal-container {
     background: var(--glass-bg) !important;
     color: var(--text-color) !important;
@@ -685,6 +698,24 @@ body[data-tutorial-step="3"] #sidebar-close-button {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
     border-radius: var(--panel-radius) !important;
+  }
+
+  /* Circular floating buttons (Google Earth style) & Search Bar */
+  .desktop-help-btn,
+  .desktop-theme-btn,
+  .desktop-lang-picker button,
+  #action-row-container > button,
+  #action-row-container > div > button,
+  #timeline-closed-pill,
+  #auto-rotate-button,
+  #search-bar-input-container {
+    background: var(--glass-bg) !important;
+    color: var(--text-color) !important;
+    border: none !important;
+    box-shadow: var(--box-shadow) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    border-radius: 9999px !important;
   }
 
   /* Make collapsed timeline and auto-rotate buttons circular on desktop */

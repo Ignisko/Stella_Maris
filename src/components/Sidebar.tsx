@@ -44,6 +44,7 @@ const Sidebar: React.FC<SidebarProps> = ({
   allActiveApparitions = [], 
   onSelectApparition, 
   lang,
+  isTimelineOpen = false,
   isCinemaMode = false,
   projectId = 'mary'
 }) => {
@@ -75,54 +76,51 @@ const Sidebar: React.FC<SidebarProps> = ({
     if (!displayApp) return [];
     const raw = displayApp.sourceUrl;
     if (!raw) {
-      let fallbackUrl: string;
+      let fallbackUrl = "";
+      const cat = getApparitionStatusCategory(displayApp.approvalStatus);
       if (projectId === 'eucharist') {
         fallbackUrl = "https://www.miracolieucaristici.org/";
+      } else if (cat === "Vatican approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
+      } else if (cat === "Bishop approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
+      } else if (cat === "Coptic approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
+      } else if (cat === "Approved for faith expression") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
+      } else if (cat === "Traditionally approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
       } else {
         if (displayApp.year < 1000) {
           fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
         } else if (displayApp.year < 1500) {
           fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1000-1499.html";
         } else if (displayApp.year < 1800) {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1500-1799.html";
+          fallbackUrl = ""; // Broken
         } else if (displayApp.year < 1900) {
           fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1800-1899.html";
+        } else if (displayApp.year < 2000) {
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
         } else {
-          // Post-1900 categories
-          const cat = getApparitionStatusCategory(displayApp.approvalStatus);
-          if (cat === "Vatican approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
-          } else if (cat === "Bishop approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
-          } else if (cat === "Coptic approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
-          } else if (cat === "Approved for faith expression") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
-          } else if (cat === "Traditionally approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
-          } else {
-            if (displayApp.year < 2000) {
-              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
-            } else {
-              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
-            }
-          }
+          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
         }
       }
       return [{
         url: fallbackUrl,
-        label: t('viewSource', lang)
+        label: !fallbackUrl && displayApp.year >= 1500 && displayApp.year < 1800 ? "Broken Link (Needs Correction)" : t('viewSource', lang),
+        isBroken: !fallbackUrl && displayApp.year >= 1500 && displayApp.year < 1800
       }];
     }
     
     const parsedSources = raw.split(';').map(urlStr => {
       const url = urlStr.trim();
       let label: string;
+      const isBroken = url.includes('apparitions_1500-1799.html');
       
       if (url.includes('wikipedia.org')) {
         label = 'Wikipedia';
       } else if (url.includes('miraclehunter.com')) {
-        label = t('viewSource', lang);
+        label = isBroken ? 'Broken Link (Needs Correction)' : t('viewSource', lang);
       } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
         label = url.includes('transmisja') ? t('liveStream', lang) : 'Sanktuarium Leżajsk';
       } else if (url.includes('youtube.com') || url.includes('youtu.be')) {
@@ -130,49 +128,48 @@ const Sidebar: React.FC<SidebarProps> = ({
       } else {
         label = t('viewSource', lang);
       }
-      return { url, label };
+      return { url: isBroken ? "" : url, label, isBroken };
     });
 
     const hasLiveStream = parsedSources.some(src => src.label === t('liveStream', lang));
-    const hasRegularSource = parsedSources.some(src => src.label !== t('liveStream', lang) && src.label !== 'Video');
+    const hasRegularSource = parsedSources.some(src => src.label !== t('liveStream', lang) && src.label !== 'Video' && !(src as any).isBroken);
 
     if (hasLiveStream && !hasRegularSource) {
       let fallbackUrl: string;
+      const cat = getApparitionStatusCategory(displayApp.approvalStatus);
       if (projectId === 'eucharist') {
         fallbackUrl = "https://www.miracolieucaristici.org/";
+      } else if (cat === "Vatican approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
+      } else if (cat === "Bishop approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
+      } else if (cat === "Coptic approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
+      } else if (cat === "Approved for faith expression") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
+      } else if (cat === "Traditionally approved") {
+        fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
       } else {
         if (displayApp.year < 1000) {
           fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_0040-0999.html";
         } else if (displayApp.year < 1500) {
           fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1000-1499.html";
         } else if (displayApp.year < 1800) {
-          fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1500-1799.html";
+          fallbackUrl = ""; // Broken fallback
         } else if (displayApp.year < 1900) {
           fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1800-1899.html";
         } else {
-          const cat = getApparitionStatusCategory(displayApp.approvalStatus);
-          if (cat === "Vatican approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/vatican.html";
-          } else if (cat === "Bishop approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/bishop.html";
-          } else if (cat === "Coptic approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/coptic.html";
-          } else if (cat === "Approved for faith expression") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/faith-expression.html";
-          } else if (cat === "Traditionally approved") {
-            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/traditional.html";
+          if (displayApp.year < 2000) {
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
           } else {
-            if (displayApp.year < 2000) {
-              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_1900-1999.html";
-            } else {
-              fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
-            }
+            fallbackUrl = "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/apparitions_2000-present.html";
           }
         }
       }
       parsedSources.push({
         url: fallbackUrl,
-        label: t('viewSource', lang)
+        label: !fallbackUrl && displayApp.year >= 1500 && displayApp.year < 1800 ? 'Broken Link (Needs Correction)' : t('viewSource', lang),
+        isBroken: !fallbackUrl && displayApp.year >= 1500 && displayApp.year < 1800
       });
     }
 
@@ -191,8 +188,7 @@ const Sidebar: React.FC<SidebarProps> = ({
     <div id="apparition-sidebar" className="glass-panel glass-panel-rounded selectable" style={{
       position: 'absolute',
       top: '16px',
-      bottom: 'auto',
-      maxHeight: isCinemaMode ? 'calc(100vh - 105px)' : 'calc(100vh - 32px)',
+      bottom: isTimelineOpen ? (isCinemaMode ? '72px' : '180px') : '16px',
       right: '16px',
       width: '420px',
       overflowY: 'auto',
@@ -336,12 +332,20 @@ const Sidebar: React.FC<SidebarProps> = ({
         <div style={{ marginTop: '14px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
           {sources.map((src, i) => {
             const isLive = src.label === t('liveStream', lang);
+            const isBroken = (src as any).isBroken;
             return (
               <a
                 key={i}
-                href={src.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={isBroken ? undefined : src.url}
+                target={isBroken ? undefined : "_blank"}
+                rel={isBroken ? undefined : "noopener noreferrer"}
+                onClick={(e) => {
+                  if (isBroken) {
+                    e.preventDefault();
+                    navigator.clipboard.writeText(displayApp.id);
+                    alert(`This apparition (ID: "${displayApp.id}") needs a sourceUrl.\nWe copied the ID to your clipboard. Please find a valid URL and add it to the dataset.`);
+                  }
+                }}
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -350,31 +354,40 @@ const Sidebar: React.FC<SidebarProps> = ({
                   fontWeight: 700,
                   color: '#ffffff',
                   textDecoration: 'none',
-                  background: isLive 
-                    ? 'linear-gradient(135deg, #10b981, #059669)' 
-                    : 'linear-gradient(135deg, #334155, #1e293b)',
-                  border: 'none',
+                  background: isBroken
+                    ? 'linear-gradient(135deg, #ef4444, #dc2626)'
+                    : isLive 
+                      ? 'linear-gradient(135deg, #10b981, #059669)' 
+                      : 'linear-gradient(135deg, #334155, #1e293b)',
+                  border: isBroken ? '1px dashed #ffffff' : 'none',
                   padding: '8px 16px',
                   borderRadius: '8px',
+                  cursor: 'pointer',
                   transition: 'all 0.2s',
-                  boxShadow: isLive 
-                    ? '0 4px 12px rgba(16, 185, 129, 0.25)' 
-                    : '0 4px 12px rgba(51, 65, 85, 0.25)'
+                  boxShadow: isBroken
+                    ? '0 4px 12px rgba(239, 68, 68, 0.4)'
+                    : isLive 
+                      ? '0 4px 12px rgba(16, 185, 129, 0.25)' 
+                      : '0 4px 12px rgba(51, 65, 85, 0.25)'
                 }}
                 onMouseOver={(e) => {
-                  e.currentTarget.style.background = isLive 
-                    ? 'linear-gradient(135deg, #34d399, #10b981)' 
-                    : 'linear-gradient(135deg, #475569, #334155)';
+                  e.currentTarget.style.background = isBroken
+                    ? 'linear-gradient(135deg, #f87171, #ef4444)'
+                    : isLive 
+                      ? 'linear-gradient(135deg, #34d399, #10b981)' 
+                      : 'linear-gradient(135deg, #475569, #334155)';
                   e.currentTarget.style.transform = 'translateY(-1px)';
                 }}
                 onMouseOut={(e) => {
-                  e.currentTarget.style.background = isLive 
-                    ? 'linear-gradient(135deg, #10b981, #059669)' 
-                    : 'linear-gradient(135deg, #334155, #1e293b)';
+                  e.currentTarget.style.background = isBroken
+                    ? 'linear-gradient(135deg, #ef4444, #dc2626)'
+                    : isLive 
+                      ? 'linear-gradient(135deg, #10b981, #059669)' 
+                      : 'linear-gradient(135deg, #334155, #1e293b)';
                   e.currentTarget.style.transform = 'none';
                 }}
               >
-                <ExternalLink size={14} />
+                {isBroken ? <XCircle size={14} /> : <ExternalLink size={14} />}
                 <span>{src.label}</span>
               </a>
             );

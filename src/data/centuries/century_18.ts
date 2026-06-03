@@ -179,7 +179,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1715,
     description: "On August 14, 1715, as 70,000 Ottoman forces besieged Sinj on their march toward Vienna, the townspeople prayed before the miraculous icon. On the Feast of the Assumption, Mary's figure appeared in the sky, causing the invading army to flee. Major national shrine of Croatia.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Sinj"
   },
   {
     id: "pellestrina_venice",
@@ -191,7 +192,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1716,
     description: "On August 4, 1716, 14-year-old Natalino Scarpa beheld a majestic lady in a starry blue dress outside the closed church: 'Come here, son... tell the pastor to celebrate Masses for souls in Purgatory if we wish to win the war.' She gently touched his wrist to confirm the miracle.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/List_of_Marian_apparitions"
   },
   {
     id: "mercatello_giuliani",
@@ -215,7 +217,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1717,
     description: "On July 2, 1717, Mary appeared three times to 13-year-old shepherd Jean Paillé, guiding him to unearth a hidden underground statue. The Bishop of Saint-Flour formally authorized the sanctuary after thorough canonical investigation.",
     approvalStatus: "Bishop approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_the_Visitation_of_Guibang"
   },
   {
     id: "aparecida_brazil",
@@ -227,7 +230,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1717,
     description: "In October 1717, after praying to Mary during a fruitless night on the Paraíba River, three fishermen netted first the body, then the head of an exquisite terracotta statue of the Immaculate Conception. Casting their nets again, they were overwhelmed with fish. Principal Patroness of Brazil, enshrined in the second largest Catholic basilica on Earth.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Aparecida"
   },
   {
     id: "altenhohenau_weigl",
@@ -299,7 +303,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1740,
     description: "A lost wayfarer en route to St. Peter's was attacked by a pack of rabid stray dogs at Castel di Leva. He cried out before a tower fresco of the Virgin and Child, and the dogs instantly dispersed. Credited by Pope Pius XII with saving Rome from destruction in WWII.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Santuario_della_Madonna_del_Divino_Amore"
   },
   {
     id: "bois_de_la_roche",
@@ -347,7 +352,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1753,
     description: "In October 1753, Mary appeared in a dream to repentant thief Pietro Gatto, asking for a wayside shrine. In 1807, a French general who had looted the miraculous icon returned it in solemn procession after it radiated blinding light in his tent. Crowned by Pope St. John Paul II in 1984.",
     approvalStatus: "Bishop approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Madonna_Del_Porto%2C_Pesaro"
   },
   {
     id: "las_lajas_colombia",
@@ -359,7 +365,8 @@ export const century18Apparitions: Apparition[] = [
     year: 1754,
     description: "During a storm in the canyon, indigenous Maria Mueses and her deaf-mute daughter Rosa beheld a magnificent image of Our Lady holding the Rosary with St. Dominic and St. Francis imprinted directly into the slate cliff. Rosa instantly gained her speech. World-famous Gothic architectural wonder built over the gorge.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_Las_Lajas"
   },
   {
     id: "mariabesnyo_hungary",
@@ -479,6 +486,7 @@ export const century18Apparitions: Apparition[] = [
     year: 1798,
     description: "As persecuted Vietnamese Christians faced starvation and wild beasts in the jungle, Our Lady appeared in pure white light holding the Child Jesus with two angels. She showed them how to boil leaves for medicine and promised protection. National Marian Shrine of Vietnam.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_La_Vang"
   }
 ];

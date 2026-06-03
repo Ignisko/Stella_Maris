@@ -215,7 +215,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1836,
     approvalStatus: "Bishop approved",
     priority: 3,
-    description: "Blessed Anna Maria Taigi, a devoted mother and mystic in Rome and Siena, experienced supernatural apparitions and saw a miraculous sun globe in which she foresaw major world historical events."
+    description: "Blessed Anna Maria Taigi, a devoted mother and mystic in Rome and Siena, experienced supernatural apparitions and saw a miraculous sun globe in which she foresaw major world historical events.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Palmarian_Catholic_Church"
   },
   {
     id: "rome-del-bufalo-1837",
@@ -501,7 +502,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1853,
     approvalStatus: "Bishop approved",
     priority: 2,
-    description: "While tending sheep, 12-year-old Veronica Nucci saw a kneeling Lady wearing a white dress with red flowers and a blue mantle. Weeping over the multitude of sins in the world, Mary asked for prayers of reparation and a chapel. A miraculous spring emerged, producing remarkable healings."
+    description: "While tending sheep, 12-year-old Veronica Nucci saw a kneeling Lady wearing a white dress with red flowers and a blue mantle. Weeping over the multitude of sins in the world, Mary asked for prayers of reparation and a chapel. A miraculous spring emerged, producing remarkable healings.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Collegiate_Church_of_San_Martino_(Cerreto_Sannita)"
   },
   {
     id: "la-pierraz-1854",
@@ -537,7 +539,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1855,
     approvalStatus: "Traditionally approved",
     priority: 4,
-    description: "The Virgin Mary appeared on a white cloud with a royal crown and open arms inside the ancient Carmelite cloister where St. Simon Stock died, deeply touching the hearts of all the assembled brothers."
+    description: "The Virgin Mary appeared on a white cloud with a royal crown and open arms inside the ancient Carmelite cloister where St. Simon Stock died, deeply touching the hearts of all the assembled brothers.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Mount_Carmel"
   },
   {
     id: "buu-chau-1855",
@@ -561,7 +564,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1856,
     approvalStatus: "Bishop approved",
     priority: 3,
-    description: "An icon of the Virgin Mary miraculously came alive before Jesuit student Francesco Possenti in Spoleto, saying 'Francesco, the world is not for you; you must enter the religious life.' He joined the Passionists, achieving sublime sanctity before dying at age 24."
+    description: "An icon of the Virgin Mary miraculously came alive before Jesuit student Francesco Possenti in Spoleto, saying 'Francesco, the world is not for you; you must enter the religious life.' He joined the Passionists, achieving sublime sanctity before dying at age 24.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Gabriel_of_Our_Lady_of_Sorrows"
   },
   {
     id: "assisi-de-bray-1856",
@@ -621,7 +625,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1858,
     approvalStatus: "Vatican approved",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/lourdes/index.html;https://www.youtube.com/watch?v=ESNa1vdHcYY;https://www.youtube.com/watch?v=DshDkE6O9UA",
+    sourceUrl: "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_of_the_Immaculate_Conception",
     description: "At the damp Massabielle grotto, the beautiful Virgin Mary appeared 18 times to 14-year-old peasant girl Bernadette Soubirous. Revealing her identity as 'The Immaculate Conception', she uncovered a miraculous healing spring that has since cured countless incurable pilgrims. Today Lourdes is one of the premier holy shrines on Earth.",
     translations: {
       pl: {
@@ -703,7 +707,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1861,
     approvalStatus: "Bishop approved",
     priority: 2,
-    description: "Mary appeared among the ancient chapel ruins of St. Bartholomew to 4-year-old Righetto Cionchi. When a young man dying of tuberculosis was miraculously cured by invoking Mary under this title, the local bishop officially recognized the apparitions and erected the magnificent Sanctuary of Madonna della Stella."
+    description: "Mary appeared among the ancient chapel ruins of St. Bartholomew to 4-year-old Righetto Cionchi. When a young man dying of tuberculosis was miraculously cured by invoking Mary under this title, the local bishop officially recognized the apparitions and erected the magnificent Sanctuary of Madonna della Stella.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Ponte_Madonna_della_Stella"
   },
   {
     id: "anglet-1863",
@@ -859,7 +864,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1871,
     approvalStatus: "Vatican approved",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/pontmain/index.html",
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Pontmain",
     description: "As advancing Prussian armies threatened Brittany, the beautiful Virgin Mary appeared in the starry night sky wearing a dark blue robe adorned with golden stars. A golden banner unfurled reading: 'But pray my children. God will hear you in a short time. My Son allows Himself to be moved by compassion.' Within hours, the Prussian general ordered a total retreat, sparing the entire region."
   },
   {
@@ -1122,7 +1127,7 @@ export const century19Apparitions: Apparition[] = [
     year: 1879,
     approvalStatus: "Vatican approved",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/knock/index.html",
+    sourceUrl: "https://en.wikipedia.org/wiki/Knock_Shrine",
     description: "During pouring rain at twilight, the glowing figures of the Blessed Virgin Mary, St. Joseph, and St. John the Evangelist appeared alongside the Lamb of God upon an altar surrounded by angels on the outer south wall of the village chapel. For two hours, fifteen official witnesses stood in silent adoration. Today Knock is Ireland's National Marian Shrine."
   },
   {
@@ -1171,7 +1176,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1883,
     approvalStatus: "Bishop approved",
     priority: 1,
-    description: "Passing an isolated countryside chapel, 45-year-old Karmni Grima heard a gentle maternal voice calling from inside: 'Come, come... recite three Hail Marys in honor of the three days my body rested in the tomb.' Remarkable miraculous healings followed, transforming Ta' Pinu into the magnificent National Marian Shrine of Malta."
+    description: "Passing an isolated countryside chapel, 45-year-old Karmni Grima heard a gentle maternal voice calling from inside: 'Come, come... recite three Hail Marys in honor of the three days my body rested in the tomb.' Remarkable miraculous healings followed, transforming Ta' Pinu into the magnificent National Marian Shrine of Malta.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Blessed_Virgin_of_Ta'_Pinu"
   },
   {
     id: "pompeii-1884",
@@ -1183,7 +1189,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1884,
     approvalStatus: "Bishop approved",
     priority: 1,
-    description: "Suffering terminal epilepsy and cramps, 21-year-old Fortuna Agrelli prayed the Rosary novena before an image of Our Lady of Pompeii. The Virgin Mary appeared seated upon a throne of flowers, saying: 'Whoever desires graces from me should pray three novenas of the Rosary.' She was instantly and totally cured on May 8. Blessed Bartolo Longo erected the world-famous Pontifical Shrine of Pompeii."
+    description: "Suffering terminal epilepsy and cramps, 21-year-old Fortuna Agrelli prayed the Rosary novena before an image of Our Lady of Pompeii. The Virgin Mary appeared seated upon a throne of flowers, saying: 'Whoever desires graces from me should pray three novenas of the Rosary.' She was instantly and totally cured on May 8. Blessed Bartolo Longo erected the world-famous Pontifical Shrine of Pompeii.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_the_Rosary"
   },
   {
     id: "castelpetroso-1888",
@@ -1195,7 +1202,8 @@ export const century19Apparitions: Apparition[] = [
     year: 1888,
     approvalStatus: "Bishop approved",
     priority: 1,
-    description: "In a rugged mountain crevice on Monte Patalecchia, two peasant women saw the glorious Virgin Mary kneeling in profound grief with outstretched arms before the bleeding body of Jesus. Over one thousand witnesses, including the diocesan bishop, subsequently witnessed the celestial light and apparitions. A miraculous spring emerged, and a breathtaking neo-Gothic basilica was constructed."
+    description: "In a rugged mountain crevice on Monte Patalecchia, two peasant women saw the glorious Virgin Mary kneeling in profound grief with outstretched arms before the bleeding body of Jesus. Over one thousand witnesses, including the diocesan bishop, subsequently witnessed the celestial light and apparitions. A miraculous spring emerged, and a breathtaking neo-Gothic basilica was constructed.",
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Sorrows"
   },
   {
     id: "saint-pierre-eynac-1886",

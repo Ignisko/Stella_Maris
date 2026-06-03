@@ -35,7 +35,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1500,
     description: "During a severe plague epidemic, people fled to the woods but the scourge overtook them. The Madonna appeared on a tree holding the comforting Child, and the fever quickly disappeared.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Mercy"
   },
   {
     id: "pannesi",
@@ -167,7 +168,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1510,
     description: "On March 9, 1510, Mary appeared sitting quietly on the green wheat to old farmer Giovanni Cigana, ordering fasting and repentance for the forgiveness of sins.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_Madonna_dei_Miracoli"
   },
   {
     id: "bergamo_chestnuts",
@@ -191,7 +193,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1510,
     description: "On September 8, 1510, Our Lady appeared on the mountainside to Antonio Zampara.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/The_Madonna_of_the_Mountains"
   },
   {
     id: "castelleone",
@@ -263,7 +266,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1513,
     description: "City councilor Maurice von Mettenwyl saw the Virgin Mary surrounded by a heavenly light and promised to rebuild a chapel in her honor.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_the_Angels_School_fire"
   },
   {
     id: "liveri",
@@ -299,7 +303,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1516,
     description: "On Christmas night in Santa Maria Maggiore, St. Cajetan of Thiene experienced a sublime vision where Mary placed the Infant Jesus directly into his arms.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/St._Cajetan_Church"
   },
   {
     id: "camogli",
@@ -311,7 +316,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1518,
     description: "On July 2, 1518, Mary appeared to Angela Schiaffino, asking for a church and convent on the mountain overlooking the Ligurian sea.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/The_Madonna_of_the_Mountains"
   },
   {
     id: "adro",
@@ -335,7 +341,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1519,
     description: "On August 10 and 11, Mary appeared with the Child Jesus, St. Michael, and St. Bernard to woodcutter Jean de la Baume. The sanctuary later gained renown for the miraculous birth of King Louis XIV.",
     approvalStatus: "Traditionally approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Graces"
   },
   {
     id: "aberdeen",
@@ -407,7 +414,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1527,
     description: "Mary appeared to 22-year-old orphan Maria Amadini, calling for fasting and repentance to avert impending calamities. She confirmed her presence by healing Maria's brother.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Mercy"
   },
   {
     id: "sens",
@@ -480,7 +488,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1532,
     description: "Anne Wentworth, suffering from terrible demonic seizures, was miraculously and instantly restored before the image of Our Lady of Grace, an event documented by St. Thomas More.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Ipswich"
   },
   {
     id: "peru_rosary",
@@ -492,7 +501,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1535,
     description: "Prominent early colonial apparitions and Marian devotion established in Lima.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_the_Rosary"
   },
   {
     id: "altkirch",
@@ -540,7 +550,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1536,
     description: "On May 31, 1536, Mary appeared to Antonio de' Antoni on Monte Stella.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Lucky_Star_(Madonna_song)"
   },
   {
     id: "combarbio",
@@ -552,7 +563,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1536,
     description: "Mary appeared to a 12-year-old shepherdess, leading to the construction of a beautiful Renaissance Carmelite sanctuary by grand-ducal architects.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Mount_Carmel_Shrine_(Quezon_City)"
   },
   {
     id: "farigliano",
@@ -564,7 +576,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1537,
     description: "Apparition of the Virgin of Graces on May 20, 1537 in Piedmont.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_the_Beata_Vergine_delle_Grazie%2C_Curtatone"
   },
   {
     id: "svetagora",
@@ -624,7 +637,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1543,
     description: "On May 28, 1543, Mary appeared in a blooming blackthorn bush to deaf-mute shepherdess Giulia Manfredi, giving her speech and asking for the observance of Sabbath rest.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Santuario_della_Madonna_della_Bocciola"
   },
   {
     id: "cantu",
@@ -636,7 +650,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1543,
     description: "Marian apparition recorded in Cantu during May of 1543.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Andacollo"
   },
   {
     id: "andacollo",
@@ -648,7 +663,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1544,
     description: "Indigenous miners discovered a miraculous statue of Mary in the mountains of Chile, establishing one of South America's most revered national sanctuaries.",
     approvalStatus: "Traditionally approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Andacollo"
   },
   {
     id: "montegridolfo",
@@ -660,7 +676,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1548,
     description: "On June 25, 1548, the Blessed Virgin of Graces appeared in the hills of Rimini.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_the_Beata_Vergine_delle_Grazie%2C_Curtatone"
   },
   {
     id: "poggio_bologna",
@@ -720,7 +737,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1580,
     description: "Mary appeared to a shepherd boy offering milk for the Child Jesus, and later miraculously healed a crippled boy selling buttermilk. Highly revered by millions as the 'Lourdes of the East'.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Good_Health"
   },
   {
     id: "azay",
@@ -780,7 +798,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1557,
     description: "On April 22, 1557, Mary appeared in dazzling light to farmer Bertolino near an olive tree. When skeptics beat him, Mary paralyzed their arms until they repented, and caused a miraculous spring to flow.",
     approvalStatus: "Traditionally approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_Madonna_of_the_Splendor"
   },
   {
     id: "rapallo",
@@ -792,7 +811,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1557,
     description: "On July 2, 1557, Mary appeared to peasant Giovanni Chichizola, leaving a miraculous Byzantine icon of her Dormition that mysteriously returned to the mountain whenever moved.",
     approvalStatus: "Traditionally approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_Our_Lady_of_Montallegro"
   },
   {
     id: "brescia_ledesma",
@@ -876,7 +896,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1562,
     description: "Mary appeared to St. Peter of Alcantara, the great Franciscan ascetic and reformer, foretelling his heavenly passing.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_and_St_Peter's_Church%2C_Bridlington"
   },
   {
     id: "avila_teresa",
@@ -996,7 +1017,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1570,
     description: "St. Alphonsus Rodriguez, Jesuit master of novices in Seville, spoke with Mary in prayer with the tender intimacy of a child with his mother.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_and_St_Alphonsus_Church"
   },
   {
     id: "sancho_abarca",
@@ -1092,7 +1114,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1576,
     description: "In May 1576, Mary appeared to peasant Alessandro Muzio after a severe hailstorm, preserving his fields from destruction.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_Madonna_dei_Miracoli"
   },
   {
     id: "norcia_giacomo",
@@ -1165,7 +1188,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1579,
     description: "On July 8, 1579, Mary appeared in a vision to 8-year-old Matrona, revealing the exact location of her ancient holy icon buried under the ash and rubble of a burned house. It became the holy palladium of Russia.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Kazan"
   },
   {
     id: "trivento",
@@ -1285,7 +1309,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1586,
     description: "On July 12, 1586, Mary appeared as a woman in black with a white veil reading a small book to 10-year-old Bartolomea Bucanelli and 11-year-old Dorotea Battistoni.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Blessed_Virgin_of_Ta'_Pinu"
   },
   {
     id: "angola",
@@ -1381,7 +1406,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1589,
     description: "Miraculous apparitions and preservation of the wooden statue of Our Lady among indigenous Guarani converts, establishing one of Argentina's greatest pilgrimage basilicas.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Itat%C3%AD"
   },
   {
     id: "lima_portyllo",
@@ -1441,7 +1467,8 @@ export const century16Apparitions: Apparition[] = [
     year: 1594,
     description: "Mary appeared to Mother Mariana de Jesus Torres at her Conceptionist convent in Quito, ordering a miraculous statue and foretelling crises of faith and vocations in the 20th century.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Good_Success"
   },
   {
     id: "dijon",
@@ -1513,6 +1540,7 @@ export const century16Apparitions: Apparition[] = [
     year: 1599,
     description: "Mary appeared to Clarice among the rocks at Molare at the turn of the century.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_the_Rocks"
   }
 ];

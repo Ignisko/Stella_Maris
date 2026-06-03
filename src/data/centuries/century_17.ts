@@ -47,7 +47,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1600,
     description: "St. Alphonsus Rodriguez, humble Jesuit janitor at Mount Zion College, enjoyed frequent joyful apparitions of Mary. She once told him: 'The love of all mothers cannot be compared to mine!'",
     approvalStatus: "Traditionally approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_and_St_Alphonsus_Church"
   },
   {
     id: "aljubarrota_light",
@@ -155,7 +156,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1602,
     description: "On August 18, 1602, townspeople in Borgo Santa Caterina saw a shining star in broad daylight from which Mary appeared with a sorrowful face surrounded by bright arrows, inspiring profound repentance.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Sorrows"
   },
   {
     id: "lenola",
@@ -167,7 +169,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1602,
     description: "On September 15, 1602, Mary appeared to Gabriele Mattei on the hillside, converting him and leading to the foundation of the prominent Sanctuary of Our Lady of the Hill.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Madonna_del_Ghisallo"
   },
   {
     id: "ingolstadt_rem",
@@ -276,7 +279,7 @@ export const century17Apparitions: Apparition[] = [
     description: "Mary appeared on a rock holding the Infant Jesus and weeping bitterly over the loss of Catholic faith in the region. Her apparition restored the faith of the entire community, becoming one of Europe's earliest Vatican-recognized shrines.",
     approvalStatus: "Approved by the Holy See",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/siluva/index.html"
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_%C5%A0iluva"
   },
   {
     id: "sanlucar",
@@ -360,7 +363,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1610,
     description: "A local man heard a mysterious voice and beheld Mary standing on a cloud over a treetop holding the Rosary and Child. The town that flourished around the world-famous minor basilica was named Manaoag ('She Calls').",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Manaoag"
   },
   {
     id: "caysasay",
@@ -372,7 +376,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1611,
     description: "The first recorded Marian apparition in the Philippines. Mary appeared in radiant light from a rocky hollow near a stream to Juana Tangui and Catalina Talayn. Miraculous healing waters continue to flow at the sanctuary.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Archdiocesan_Shrine_of_Our_Lady_of_Caysasay"
   },
   {
     id: "saragossa_agnes",
@@ -504,7 +509,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1617,
     description: "On February 2, 1617, Ven. Orsola Benincasa beheld Mary and Jesus, receiving the revelation and promise of extraordinary graces for the Blue Scapular of the Immaculate Conception.",
     approvalStatus: "Bishop approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Marian_apparition"
   },
   {
     id: "imbersago_bosco",
@@ -516,7 +522,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1617,
     description: "On May 9, 1617, three shepherds saw Mary hovering in light over a chestnut tree that miraculously bore fully ripe fruit out of season. Enshrined in a beautiful basilica visited by Pope St. John XXIII.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_Madonna_del_Bosco%2C_Imbersago"
   },
   {
     id: "lima_rose",
@@ -768,7 +775,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1632,
     description: "A Spanish sentinel halted a shifting halo of light on the bay during a storm and heard a sweet voice: 'Little Soldier... give me passage. Dost thou not recognize Mary?' The miraculous icon, dated 1692, is the oldest extant Marian painting in the Philippines and Patroness of the Galleon.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Porta_Vaga"
   },
   {
     id: "japan_martyr",
@@ -828,7 +836,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1634,
     description: "On February 2, 1634, Our Lady of Good Success appeared to Mother Mariana de Jesus Torres at the Royal Royal Convent, warning of profound moral crises and loss of faith in the 20th century.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Good_Success"
   },
   {
     id: "bargemon",
@@ -1092,7 +1101,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1651,
     description: "On March 20, 1651, Mary appeared to Andreeta Pendigliona, miraculously restoring a man's crippled limbs in the sanctuary.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Basilica_of_Our_Lady_Help_of_Christians%2C_Turin"
   },
   {
     id: "coromoto_venezuela",
@@ -1104,7 +1114,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1652,
     description: "On September 8, 1652, Mary appeared in the virgin forest to Chief Coromoto of the Cospes tribe: 'Go to the white house and ask them to pour water into your head to go to heaven.' She left her miraculous image imprinted on wooden fibers. Official Patroness of Venezuela.",
     approvalStatus: "Bishop approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Coromoto"
   },
   {
     id: "campeneac_nicolas",
@@ -1200,7 +1211,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1660,
     description: "The pastor and community saw a miraculous light shining on the hill where Mary made her presence known, asking for a sanctuary. Many sick people regained their health at the consecrated church.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Zeitoun"
   },
   {
     id: "mariahilfberg_gutenstein",
@@ -1212,7 +1224,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1661,
     description: "Mary appeared six times to Sebastian Schmid Schlager, curing him and painting her image on a sheet hung on a beech tree. Pope Clement IX formally authorized the veneration and sanctuary.",
     approvalStatus: "Bishop approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Perpetual_Help"
   },
   {
     id: "birkenstein",
@@ -1237,7 +1250,7 @@ export const century17Apparitions: Apparition[] = [
     description: "Mary appeared to humble shepherdess Benoîte Rencurel over a period of 54 years, asking for continuous prayer and penance for sinners at the fragrant mountain oil lamps. Officially approved by the Church in 2008.",
     approvalStatus: "Approved by the Holy See",
     priority: 1,
-    sourceUrl: "https://www.miraclehunter.com/marian_apparitions/approved_apparitions/laus/index.html"
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Laus"
   },
   {
     id: "agreda_mystic",
@@ -1298,7 +1311,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1668,
     description: "In April 1668, weeping in poverty, deaf-mute shepherdess Bartolomea Ghini saw a beautiful lady who restored her voice and filled her parents' pantry with bread, oil, and wine. When villagers cut away brambles in the field, they discovered her shrine.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Providence"
   },
   {
     id: "san_bartolomeo_1671",
@@ -1346,7 +1360,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1675,
     description: "On March 26, 1675, Mary appeared to a local man asking him to raise an altar and temple on the plain.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Sanctuary_of_the_Madonna_del_Piano%2C_Ausonia"
   },
   {
     id: "pochayiv",
@@ -1382,7 +1397,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1677,
     description: "On April 17, 1677, young Isabella Cristello and Antonia De Luca saw Mary in a vision of sublime sweetness, curing Isabella. After the 1783 earthquake buried the shrine, Mary appeared in a dream to Pascale Luna to inspire its rebuilding. In 1858, a miraculous spring surged to heal farmer Francesco Arone.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Most_Holy_Name_of_the_Blessed_Virgin_Mary"
   },
   {
     id: "saint_carr",
@@ -1490,7 +1506,8 @@ export const century17Apparitions: Apparition[] = [
     year: 1698,
     description: "Sophia Feilheim, suffering from an incurable illness in Vienna, saw a Pietà in a dream that spoke to her. She traveled to Hungary where she found the exact statue in Sümeg. Upon touching it, she was instantly cured.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Sorrows"
   },
   {
     id: "castenaso",

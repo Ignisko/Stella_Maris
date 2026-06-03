@@ -11,7 +11,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1218,
     description: "The Blessed Virgin appeared to three men who established the Mercedarian religious order to redeem Christian captives from Moorish imprisonment.",
     approvalStatus: "Traditionally approved",
-    priority: 2
+    priority: 2,
+    sourceUrl: "https://en.wikipedia.org/wiki/Feast_of_Our_Lady_of_Ransom"
   },
   {
     id: "carmel",
@@ -23,7 +24,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1251,
     description: "In answer to St. Simon Stock's appeal for help, the Virgin Mary appeared to him with a scapular in her hand and the promise of safety from Hell.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Mount_Carmel"
   },
   {
     id: "gorodetsk",
@@ -83,7 +85,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1306,
     description: "A young mother shouted at her child in anger; when a demon appeared, a radiant woman saved the boy. The shrine became famous for regional pilgrimages.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Madonna_del_Soccorso%2C_Montalcino"
   },
   {
     id: "spoleto_clare",
@@ -215,7 +218,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1326,
     description: "Cowherd Gil Cordero experienced an apparition of Mary directing him to unearth a miraculous statue given by Pope Gregory the Great 600 years prior.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Guadalupe"
   },
   {
     id: "moscow_peter",
@@ -227,7 +231,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1326,
     description: "The Holy Virgin appeared to an envious abbot who had stolen from Saint Peter of Moscow, leading him to repent and return the icon of Mary.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_and_St_Peter's_Church%2C_Bridlington"
   },
   {
     id: "fiesole_corsini",
@@ -323,7 +328,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1340,
     description: "During a siege, the people symbolically gave the keys of the city to Mary. Miraculous apparitions in the enemy camp caused the besieging soldiers to flee.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Tournai_Cathedral"
   },
   {
     id: "cairo_livini",
@@ -455,7 +461,8 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1392,
     description: "Mary appeared to a shepherd directing the bishop to unearth a buried first-century wooden icon of the Mother of God on a throne.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Segovia_Cathedral"
   },
   {
     id: "candelaria",
@@ -515,6 +522,7 @@ export const century13and14Apparitions: Apparition[] = [
     year: 1399,
     description: "Historical accounts record an apparition of the Virgin Mary outside the medieval walls of Avila at the turn of the century.",
     approvalStatus: "Traditionally approved",
-    priority: 5
+    priority: 5,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Grace_and_St_Teresa_of_Avila"
   }
 ];

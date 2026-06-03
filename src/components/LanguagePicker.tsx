@@ -6,6 +6,7 @@ import type { Language } from '../utils/i18n';
 interface LanguagePickerProps {
   currentLang: Language;
   onLanguageChange: (lang: Language) => void;
+  onOpenChange?: (isOpen: boolean) => void;
 }
 
 const LANGUAGE_FLAG_CODES: Record<Language, string> = {
@@ -22,9 +23,13 @@ const LANGUAGE_FLAG_CODES: Record<Language, string> = {
   ko: 'kr'
 };
 
-const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguageChange }) => {
+const LanguagePicker: React.FC<LanguagePickerProps> = ({ currentLang, onLanguageChange, onOpenChange }) => {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    onOpenChange?.(isOpen);
+  }, [isOpen, onOpenChange]);
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

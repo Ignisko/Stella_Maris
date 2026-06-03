@@ -83,7 +83,8 @@ export const century11and12Apparitions: Apparition[] = [
     year: 1061,
     description: "Our Lady appeared to Richeldis de Faverches, presenting her with the plans of the Holy House of the Holy Family in Nazareth and asking her to build a replica as a shrine.",
     approvalStatus: "Traditionally approved",
-    priority: 1
+    priority: 1,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Walsingham"
   },
   {
     id: "palermo",
@@ -95,7 +96,8 @@ export const century11and12Apparitions: Apparition[] = [
     year: 1064,
     description: "During a long siege where disease spread among his troops, Roger I of the Normans saw an apparition of the Madonna who provided a remedy.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Our_Lady_of_Remedies"
   },
   {
     id: "conche",
@@ -191,7 +193,8 @@ export const century11and12Apparitions: Apparition[] = [
     year: 1120,
     description: "While visiting the cave of St. Michael, the Virgin appeared to St. John of Matera and showed him where to raise a new abbey.",
     approvalStatus: "Traditionally approved",
-    priority: 4
+    priority: 4,
+    sourceUrl: "https://en.wikipedia.org/wiki/Saint_John"
   },
   {
     id: "liesse",
@@ -203,7 +206,8 @@ export const century11and12Apparitions: Apparition[] = [
     year: 1134,
     description: "Three imprisoned French knights received a miraculous, radiant statue from Mary in their dungeon, which converted the Sultan's daughter Ismenia.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/Church_of_Our_Lady_of_Liesse"
   },
   {
     id: "bingen",
@@ -227,7 +231,8 @@ export const century11and12Apparitions: Apparition[] = [
     year: 1138,
     description: "The Madonna showed the young Thomas a red cassock, symbolizing his future destiny as Archbishop of Canterbury and a martyr.",
     approvalStatus: "Traditionally approved",
-    priority: 3
+    priority: 3,
+    sourceUrl: "https://en.wikipedia.org/wiki/St_Thomas_%C3%A0_Becket_Church%2C_Warblington"
   },
   {
     id: "schonau",
