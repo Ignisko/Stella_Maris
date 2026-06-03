@@ -27,9 +27,9 @@ interface GlobeViewerProps {
 const configureOrbitControls = (controls: any) => {
   controls.minDistance = 101.5; // Globe radius ~100. Allow closer zoom to ground level
   controls.maxDistance = 400;
-  controls.zoomSpeed = 6.0; // Faster responsive zoom
+  controls.zoomSpeed = 9.0; // Faster responsive zoom
   controls.enableDamping = true; // Premium inertial damping
-  controls.dampingFactor = 0.05; // Smoother and quicker glide
+  controls.dampingFactor = 0.04; // Smoother and quicker glide
 };
 
 const GlobeViewer: React.FC<GlobeViewerProps> = ({ 
@@ -213,7 +213,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   useEffect(() => {
     if (globeEl.current && globeEl.current.controls()) {
       const controls = globeEl.current.controls();
-      controls.autoRotateSpeed = 1.0;
+      controls.autoRotateSpeed = 0.5;
       configureOrbitControls(controls);
       globeEl.current.pointOfView({ lat: 20, lng: 10, altitude: 2.2 });
     }
@@ -278,7 +278,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           // Dynamically adjust auto-rotation speed based on altitude (zoom)
           if (globeEl.current.controls()) {
             const controls = globeEl.current.controls();
-            controls.autoRotateSpeed = 1.0 * Math.min(1.0, altitude / 2.0);
+            controls.autoRotateSpeed = 0.5 * Math.min(1.0, altitude / 2.0);
           }
 
           // Labels fade slightly when very far out
