@@ -10,6 +10,7 @@ export interface Apparition {
   approvalStatus: string;
   priority?: number; // 1 = highest (world shrines), 5 = lowest (historical details)
   sourceUrl?: string;
+  imageUrl?: string;
   labelOffset?: 'left' | 'right' | 'top' | 'bottom';
   translations?: Record<string, {
     title?: string;
