@@ -414,7 +414,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           {/* Time mode toggle */}
           <div style={{
             display: 'flex', background: 'transparent',
-            border: '1px solid var(--timeline-border)'
+            border: '1px solid var(--timeline-border)',
+            borderRadius: '20px',
+            overflow: 'hidden'
           }}>
             {(['modern', 'all'] as const).map(mode => (
               <button
@@ -427,7 +429,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   fontSize: '9px', fontWeight: 600, cursor: 'pointer',
                   textTransform: 'uppercase', letterSpacing: '0.05em',
                   transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '6px',
-                  borderRight: mode === 'modern' ? '1px solid var(--timeline-border)' : 'none'
+                  borderRight: mode === 'modern' ? '1px solid var(--timeline-border)' : 'none',
+                  borderRadius: mode === 'modern' ? '20px 0 0 20px' : '0 20px 20px 0'
                 }}
               >
                 <Clock size={12} weight={timeMode === mode ? 'fill' : 'regular'} />
@@ -742,8 +745,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   color: 'var(--text-color)',
                   whiteSpace: 'nowrap',
                   backgroundColor: 'var(--bg-color)',
-                  padding: '6px 12px',
+                  padding: '5px 12px',
                   border: '1px solid var(--text-color)',
+                  borderRadius: '20px',
                   pointerEvents: 'auto',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'
