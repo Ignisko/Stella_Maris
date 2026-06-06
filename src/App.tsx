@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, Bug } from '@phosphor-icons/react';
+import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -10,8 +10,8 @@ import { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './data/filt
 import SearchBar from './components/SearchBar';
 import DirectoryModal from './components/DirectoryModal';
 import LanguagePicker from './components/LanguagePicker';
-import TutorialModal from './components/TutorialModal';
-import BugReportModal from './components/BugReportModal';
+import { lazy, Suspense } from 'react';
+const TutorialModal = lazy(() => import('./components/TutorialModal'));
 import { config } from './config';
 import type { Apparition } from './data/apparitions';
 
@@ -22,33 +22,7 @@ import type { Language } from './utils/i18n';
 
 
 
-const exitTranslations: Record<string, string> = {
-  pl: 'Zakończ',
-  es: 'Salir',
-  pt: 'Sair',
-  fr: 'Quitter',
-  it: 'Esci',
-  vi: 'Thoát',
-  ar: 'إنهاء',
-  tl: 'Lumabas',
-  tr: 'Kapat',
-  en: 'Exit'
-};
-
-const playPresentationTranslations: Record<string, string> = {
-  pl: 'Uruchom prezentację',
-  es: 'Iniciar presentación',
-  pt: 'Iniciar apresentação',
-  fr: 'Lancer la présentation',
-  it: 'Avvia presentazione',
-  vi: 'Bắt đầu trình chiếu',
-  ar: 'بدء العرض التقديمي',
-  tl: 'Simulan ang Presentation',
-  tr: 'Sunumu Oynat',
-  en: 'Play Presentation'
-};
-
-
+// Translations moved to i18n.ts
 function App() {
   const [lang, setLang] = useState<Language>(() => {
     const saved = localStorage.getItem('stellamaris_lang') as Language;
@@ -59,6 +33,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('stellamaris_lang', lang);
+    document.documentElement.lang = lang;
     loadLanguageTranslations(lang).then(data => {
       setLangTranslations(data);
     });
@@ -79,23 +54,12 @@ function App() {
   const [isTimelineOpen, setIsTimelineOpen] = useState(false);
   const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
   const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
-  const [isBugModalOpen, setIsBugModalOpen] = useState(false);
-  const [isLanguagePickerOpen, setIsLanguagePickerOpen] = useState(false);
-
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    const saved = localStorage.getItem('stellamaris_theme');
-    return saved !== 'light';
-  });
+    const [isLanguagePickerOpen, setIsLanguagePickerOpen] = useState(false);
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.remove('light-theme');
-      localStorage.setItem('stellamaris_theme', 'dark');
-    } else {
-      document.body.classList.add('light-theme');
-      localStorage.setItem('stellamaris_theme', 'light');
-    }
-  }, [isDarkMode]);
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('stellamaris_theme', 'dark');
+  }, []);
 
   useEffect(() => {
     document.body.setAttribute('data-project-id', config.projectId);
@@ -128,12 +92,7 @@ function App() {
   useEffect(() => {
     if (!isTutorialActive) return;
 
-    // Filters no longer forced open by a step
-    if (false) {
-      setIsFiltersExpanded(true);
-    } else {
-      setIsFiltersExpanded(false);
-    }
+    setIsFiltersExpanded(false);
 
     if (tutorialStep === 7) {
       setIsDirectoryOpen(true);
@@ -471,7 +430,7 @@ function App() {
                 }}
               >
                 <X size={16} style={{ opacity: 0.8 }} />
-                <span>{exitTranslations[lang] || 'Exit'}</span>
+                <span>{t('exit', lang)}</span>
               </button>
             </div>
           ) : (
@@ -516,7 +475,7 @@ function App() {
             >
               <Play size={16} weight="bold" fill="#ffffff" />
               <span>
-                {playPresentationTranslations[lang] || 'Play Presentation'}
+                {t('playPresentation', lang)}
               </span>
             </button>
           )}
@@ -537,23 +496,7 @@ function App() {
         transform: (isCinemaMode || isDirectoryOpen) ? 'translateX(calc(-100% - 40px))' : 'translateX(0)',
         transition: 'transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), gap 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease'
       }}>
-        {/* Title Card */}
-        <div className="glass-panel glass-panel-rounded animate-fade-in" style={{
-          padding: '20px 24px',
-          background: 'rgba(15, 23, 42, 0.85)',
-          border: '1px solid var(--glass-border)',
-          display: 'none', // Hidden as requested
-          flexDirection: 'column',
-          gap: '6px',
-          pointerEvents: 'auto'
-        }}>
-          <h1 style={{ fontSize: '24px', fontWeight: 700, margin: 0, letterSpacing: '0.5px', color: 'var(--text-color)' }}>
-            {config.title}
-          </h1>
-          <p style={{ fontSize: '13px', opacity: 0.7, margin: 0, fontWeight: 300, letterSpacing: '0.2px' }}>
-            {config.subtitle ? (config.subtitle[lang] || config.subtitle['en']) : t('subtitle', lang)}
-          </p>
-        </div>
+        {/* Title Card removed */}
 
         {/* Collapsible interactive controls container */}
         <div id="search-filters-container" style={{
@@ -612,6 +555,7 @@ function App() {
                     padding: '0'
                   }}
                   title={t('browseDirectory', lang, { count: filteredApparitions.length })}
+                  aria-label={t('browseDirectory', lang, { count: filteredApparitions.length })}
                   onMouseOver={e => {
                     e.currentTarget.style.background = 'var(--glass-border)';
                   }}
@@ -644,7 +588,8 @@ function App() {
                       outline: 'none',
                       padding: '0'
                     }}
-                    title={isPlayingTimeline ? (lang === 'pl' ? 'Wstrzymaj prezentację' : 'Pause Presentation') : (playPresentationTranslations[lang] || 'Play Presentation')}
+                    title={isPlayingTimeline ? (lang === 'pl' ? 'Wstrzymaj prezentację' : 'Pause Presentation') : t('playPresentation', lang)}
+                    aria-label={isPlayingTimeline ? (lang === 'pl' ? 'Wstrzymaj prezentację' : 'Pause Presentation') : t('playPresentation', lang)}
                     onMouseOver={e => {
                       e.currentTarget.style.background = 'var(--glass-border)';
                     }}
@@ -660,38 +605,6 @@ function App() {
           </div>
         </div>
       </div>
-
-      {/* Theme Toggle Button (Desktop) */}
-      {false && !isCinemaMode && !isSidebarOpen && !isTutorialActive && (
-        <button
-          className="desktop-theme-btn glass-panel glass-panel-rounded animate-fade-in"
-          onClick={() => setIsDarkMode(!isDarkMode)}
-          style={{
-            position: 'absolute',
-            top: '20px',
-            right: '154px',
-            zIndex: 100,
-            pointerEvents: 'auto',
-            width: '42px',
-            height: '42px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            background: 'rgba(15, 23, 42, 0.8)',
-            color: 'var(--text-color)',
-            border: '1px solid var(--glass-border)',
-            cursor: 'pointer',
-            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-            transition: 'all 0.2s ease',
-            borderRadius: '12px',
-            outline: 'none',
-            fontSize: '18px'
-          }}
-          title={isDarkMode ? t('themeLight', lang) : t('themeDark', lang)}
-        >
-          {isDarkMode ? '☀️' : '🌙'}
-        </button>
-      )}
 
       {/* Help / Onboarding Tutorial Button */}
       {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
@@ -736,47 +649,6 @@ function App() {
           }}
         >
           <Question size={20} color="var(--accent-color)" weight="bold" />
-        </button>
-      )}
-
-      {/* Bug Report Button */}
-      {false && !isCinemaMode && !isSidebarOpen && !isTutorialActive && (
-        <button
-          className="desktop-bug-btn glass-panel glass-panel-rounded animate-fade-in"
-          onClick={() => setIsBugModalOpen(true)}
-          style={{
-            position: 'absolute',
-            top: '20px',
-            right: '154px',
-            zIndex: 100,
-            pointerEvents: 'auto',
-            width: '42px',
-            height: '42px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            background: 'rgba(15, 23, 42, 0.8)',
-            color: 'var(--text-color)',
-            border: '1px solid var(--glass-border)',
-            cursor: 'pointer',
-            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-            transition: 'all 0.2s ease',
-            borderRadius: '12px',
-            outline: 'none'
-          }}
-          title="Report Bug / Feedback"
-          onMouseOver={e => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
-            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={e => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
-            e.currentTarget.style.borderColor = 'var(--glass-border)';
-            e.currentTarget.style.transform = 'none';
-          }}
-        >
-          <Bug size={20} color="#fff" />
         </button>
       )}
 
@@ -839,7 +711,7 @@ function App() {
         isTutorialActive={isTutorialActive}
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
-        isDarkMode={isDarkMode}
+        isDarkMode={true}
       />
         </div>
       
@@ -901,7 +773,9 @@ function App() {
         }} />
       )}
 
-      <TutorialModal
+      <Suspense fallback={null}>
+        {isTutorialActive && (
+<TutorialModal
         isOpen={isTutorialActive}
         onClose={handleTutorialClose}
         currentLang={lang}
@@ -910,7 +784,8 @@ function App() {
         onStepChange={handleTutorialStepChange}
         isTimelineOpen={isTimelineOpen}
         setIsTimelineOpen={setIsTimelineOpen}
-      />
+      />        )}
+      </Suspense>
 
       {/* ── Mobile Toolbar (Google Earth–style) ── */}
       {!isCinemaMode && !isTutorialActive && (
@@ -1030,11 +905,11 @@ function App() {
               aria-label="Toggle Theme"
               onClick={() => {
                 showTooltip('theme');
-                setIsDarkMode(prev => !prev);
+// setIsDarkMode(prev => !prev);
               }}
             >
-              <span style={{ fontSize: 22 }}>{isDarkMode ? '☀️' : '🌙'}</span>
-              <span className="mob-btn-tooltip">{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+              <span style={{ fontSize: 22 }}>'🌙'</span>
+              <span className="mob-btn-tooltip">'Dark Mode'</span>
             </button>
           )}
         </div>
@@ -1087,12 +962,7 @@ function App() {
       )}
 
       {/* Bug Report Modal */}
-      {isBugModalOpen && (
-        <BugReportModal 
-          onClose={() => setIsBugModalOpen(false)} 
-          lang={lang}
-        />
-      )}
+
     </div>
 
   );

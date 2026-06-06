@@ -30,19 +30,6 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "kibeho": { label: "Our Lady of Kibeho", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
 };
 
-const playPresentationTranslations: Record<string, string> = {
-  pl: 'Uruchom prezentację',
-  es: 'Iniciar presentación',
-  pt: 'Iniciar apresentação',
-  fr: 'Lancer la présentation',
-  it: 'Avvia presentazione',
-  vi: 'Bắt đầu trình chiếu',
-  ar: 'بدء العرض التقديمي',
-  tl: 'Simulan ang Presentation',
-  tr: 'Sunumu Oynat',
-  en: 'Play Presentation'
-};
-
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
   apparitions, selectedApparition, onSelectApparition, isPlaying, onTogglePlay, isCinemaMode, isOpen, setIsOpen, lang, hideTriggerButton
 }) => {
@@ -367,7 +354,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
             }}
           >
             <Play size={12} weight="fill" />
-            <span>{playPresentationTranslations[lang] || 'Play Presentation'}</span>
+            <span>{t('playPresentation', lang)}</span>
           </button>
 
           <button
