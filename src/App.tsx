@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, Info, Sun, Moon } from '@phosphor-icons/react';
+import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, Info } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -56,20 +56,8 @@ function App() {
   const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
     const [isLanguagePickerOpen, setIsLanguagePickerOpen] = useState(false);
 
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    return localStorage.getItem('theme') !== 'light';
-  });
-
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.remove('light-theme');
-      document.body.classList.add('dark-theme');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.body.classList.remove('dark-theme');
-      document.body.classList.add('light-theme');
-      localStorage.setItem('theme', 'light');
-    }
+    document.body.classList.add('dark-theme');
     localStorage.setItem('stellamaris_theme', 'dark');
   }, []);
 
@@ -686,47 +674,6 @@ function App() {
         </div>
       </div>
 
-      {/* Theme Toggle Button */}
-      {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
-        <button
-          className="desktop-theme-btn glass-panel glass-panel-rounded animate-fade-in"
-          onClick={() => setIsDarkMode(prev => !prev)}
-          style={{
-            position: 'absolute',
-            top: '20px',
-            right: '150px',
-            zIndex: 100,
-            pointerEvents: 'auto',
-            width: '42px',
-            height: '42px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            background: 'rgba(15, 23, 42, 0.8)',
-            color: 'var(--text-color)',
-            border: '1px solid var(--glass-border)',
-            cursor: 'pointer',
-            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
-            transition: 'all 0.2s ease',
-            borderRadius: '12px',
-            outline: 'none'
-          }}
-          title={isDarkMode ? t('lightMode', lang) : t('darkMode', lang)}
-          onMouseOver={e => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
-            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
-            e.currentTarget.style.transform = 'scale(1.05)';
-          }}
-          onMouseOut={e => {
-            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
-            e.currentTarget.style.borderColor = 'var(--glass-border)';
-            e.currentTarget.style.transform = 'none';
-          }}
-        >
-          {isDarkMode ? <Sun size={20} color="var(--accent-color)" weight="bold" /> : <Moon size={20} color="var(--accent-color)" weight="bold" />}
-        </button>
-      )}
-
       {/* Help / Onboarding Tutorial Button */}
       {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
         <button
@@ -832,7 +779,7 @@ function App() {
         isTutorialActive={isTutorialActive}
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
-        isDarkMode={isDarkMode}
+        isDarkMode={true}
       />
         </div>
       
@@ -1020,17 +967,19 @@ function App() {
           </button>
 
           {/* Theme Toggle */}
-          <button
-            className={`mob-btn${mobileTooltip === 'theme' ? ' tooltip-visible' : ''}`}
-            aria-label="Toggle Theme"
-            onClick={() => {
-              showTooltip('theme');
-              setIsDarkMode(prev => !prev);
-            }}
-          >
-            <span style={{ fontSize: 22 }}>{isDarkMode ? '☀️' : '🌙'}</span>
-            <span className="mob-btn-tooltip">{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
-          </button>
+          {false && (
+            <button
+              className={`mob-btn${mobileTooltip === 'theme' ? ' tooltip-visible' : ''}`}
+              aria-label="Toggle Theme"
+              onClick={() => {
+                showTooltip('theme');
+// setIsDarkMode(prev => !prev);
+              }}
+            >
+              <span style={{ fontSize: 22 }}>'🌙'</span>
+              <span className="mob-btn-tooltip">'Dark Mode'</span>
+            </button>
+          )}
         </div>
       )}
 
