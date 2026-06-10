@@ -632,45 +632,6 @@ function App() {
               </>
             )}
           </div>
-
-          {/* Additional Info Link */}
-          {!isFiltersExpanded && (
-            <a
-              href="https://idiotajezusa.pl"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '8px 12px',
-                background: 'var(--glass-bg)',
-                color: 'var(--text-color)',
-                border: '1px solid var(--glass-border)',
-                borderRadius: '20px',
-                fontSize: '11px',
-                fontWeight: 600,
-                textDecoration: 'none',
-                textTransform: 'uppercase',
-                letterSpacing: '0.05em',
-                pointerEvents: 'auto',
-                width: 'max-content',
-                transition: 'all 0.2s',
-                boxShadow: 'var(--box-shadow)'
-              }}
-              onMouseOver={e => {
-                e.currentTarget.style.background = 'var(--text-color)';
-                e.currentTarget.style.color = 'var(--bg-color)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.background = 'var(--glass-bg)';
-                e.currentTarget.style.color = 'var(--text-color)';
-              }}
-            >
-              <Info size={14} weight="bold" />
-              <span>{lang === 'pl' ? 'Więcej od Idiota Jezusa' : 'More by Idiota Jezusa'}</span>
-            </a>
-          )}
         </div>
       </div>
 
