@@ -151,7 +151,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Open timeline",
       "Timeline & presentation",
       "Watching the presentation",
-      "Glory to Jesus!"
+      "Glory to Jesus!",
+      "Holy Mary, pray for us!"
     ],
     pl: [
       "Wprowadzenie do Stella Maris",
@@ -165,7 +166,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Otwórz oś czasu",
       "Oś czasu i prezentacja",
       "Oglądanie prezentacji",
-      "Chwała Jezusowi!"
+      "Chwała Jezusowi!",
+      "Święta Maryjo, módl się za nami!"
     ],
     es: [
       "Guía de Stella Maris",
@@ -308,7 +310,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Click the timeline toggle button in the bottom right corner to show the chronological event timeline.",
       "Open the timeline at the bottom. We recommend using filters first to narrow down the events, then click 'Play Presentation' to start a chronological cinematic tour of your filtered selection!",
       "The presentation is now running! The globe will automatically fly to each site chronologically. Use the controls on the timeline to pause, go back, or skip ahead.",
-      "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus."
+      "You are ready to begin. Enjoy your journey through the history of Stella Maris! Mary Mother of God, glory through Her to Jesus.",
+      "Holy Mary, Mother of God, pray for us!"
     ],
     pl: [
       "Wybierz język, aby rozpocząć.",
@@ -322,7 +325,8 @@ const getStepsContent = (lang: Language): StepContent[] => {
       "Kliknij przycisk osi czasu w prawym dolnym rogu, aby wyświetlić chronologiczną linię wydarzeń.",
       "Otwórz oś czasu na dole. Zalecamy najpierw użyć filtrów, aby zawęzić listę wydarzeń, a następnie kliknąć 'Uruchom prezentację', aby rozpocząć chronologiczną, kinową podróż po wybranych objawieniach!",
       "Prezentacja właśnie trwa! Globus automatycznie przeniesie Cię do każdego miejsca chronologicznie. Użyj przycisków na osi czasu, aby wstrzymać, cofnąć lub przejść dalej.",
-      "Jesteś gotowy, aby rozpocząć. Życzymy udanej podróży przez historię Stella Maris! Maryjo Matko Boża, chwała przez Nią Jezusowi."
+      "Jesteś gotowy, aby rozpocząć. Życzymy udanej podróży przez historię Stella Maris! Maryjo Matko Boża, chwała przez Nią Jezusowi.",
+      "Święta Maryjo, Matko Boża, módl się za nami!"
     ],
     es: [
       "Elija su idioma para comenzar.",
@@ -470,6 +474,7 @@ const getStepsContent = (lang: Language): StepContent[] => {
       <Calendar size={40} color={iconsColor} />,
       <Globe size={40} color={iconsColor} />,
       <Globe size={40} color={iconsColor} />,
+      <Sparkle size={40} color={goldColor} />,
       <Sparkle size={40} color={goldColor} />
     ];
   return selectedTitles.map((title, i) => {
@@ -590,7 +595,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
-    if (step === 0 || step === 11) {
+    if (step === 0 || step === steps.length - 1 || step === steps.length - 2) {
       return {
         left: '-100px',
         top: '-100px',
@@ -670,7 +675,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       pointerEvents: 'auto'
     };
 
-    if (step === 0 || step === 11) {
+    if (step === 0 || step === steps.length - 1 || step === steps.length - 2) {
       return {
         ...common,
         left: '50vw',
@@ -678,8 +683,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         width: '450px',
         maxWidth: '90vw',
-        textAlign: step === 11 ? 'center' : 'left',
-        alignItems: step === 11 ? 'center' : 'stretch'
+        textAlign: (step === steps.length - 1 || step === steps.length - 2) ? 'center' : 'left',
+        alignItems: (step === steps.length - 1 || step === steps.length - 2) ? 'center' : 'stretch'
       };
     }
     if (step === 1 || step === 2 || step === 3) {
@@ -736,7 +741,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   }, [step, elementRect]);
 
   const arrowStyle = useMemo((): React.CSSProperties | null => {
-    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 10 || step === 11 || !elementRect) return null;
+    if (step === 0 || step === 1 || step === 2 || step === 3 || step === 10 || step === steps.length - 1 || step === steps.length - 2 || !elementRect) return null;
 
     const base: React.CSSProperties = {
       position: 'absolute',
@@ -1035,7 +1040,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
               </button>
             )}
 
-            {step !== 9 && (
+            {true && (
               <button
                 onClick={handleNext}
                 style={{
@@ -1093,7 +1098,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                   style={{
                     width: isActive ? '18px' : '6px',
                     height: '6px',
-                    borderRadius: '3px',
+                    borderRadius: steps.length > 11 ? '1px' : '3px',
                     backgroundColor: isActive ? 'var(--accent-color)' : 'rgba(255,255,255,0.2)',
                     transition: 'all 0.3s ease'
                   }}

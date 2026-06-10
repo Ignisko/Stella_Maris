@@ -25,8 +25,8 @@
 }
 
 body.light-theme {
-  --bg-color: #f8f9fa;
-  --text-color: #202124;
+  --bg-color: #f1f5f9;
+  --text-color: #0f172a;
   --glass-bg: #ffffff;
   --glass-border: #dadce0;
   --accent-color: #1a73e8;
@@ -35,14 +35,14 @@ body.light-theme {
   --box-shadow: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px 3px rgba(60,64,67,0.15);
 
   /* Timeline variables for Light Mode */
-  --timeline-bg: #cbd5e1;
-  --timeline-border: #64748b;
+  --timeline-bg: #e2e8f0;
+  --timeline-border: #94a3b8;
   --timeline-line: rgba(15, 23, 42, 0.65);
   --timeline-axis: rgba(15, 23, 42, 0.6);
   --timeline-tick: rgba(15, 23, 42, 0.7);
   --timeline-text: rgba(15, 23, 42, 0.95);
-  --timeline-btn-bg: rgba(0, 0, 0, 0.1);
-  --timeline-btn-border: rgba(0, 0, 0, 0.25);
+  --timeline-btn-bg: rgba(255, 255, 255, 0.7);
+  --timeline-btn-border: rgba(0, 0, 0, 0.15);
   --timeline-btn-text: #0f172a;
 }
 
@@ -684,8 +684,7 @@ body[data-tutorial-step="3"] #sidebar-close-button {
    DESKTOP UI — Premium flat modern theme (Dark/Light responsive)
    ===================================================== */
 @media (min-width: 601px) {
-  /* Title card, Sidebar, filter containers, and modals */
-  .desktop-left-panel > div:first-child,
+  /* Sidebar, filter containers, and modals */
   #apparition-sidebar,
   #search-filters-container > div > div.glass-panel,
   #search-filters-container > div > div > div.glass-panel,

@@ -113,7 +113,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             letterSpacing: '0.05em',
             fontWeight: 600,
             transition: 'all 0.2s ease',
-            outline: 'none'
+            outline: 'none',
+            borderRadius: '24px'
           } : {
             display: 'flex',
             alignItems: 'center',
@@ -125,7 +126,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             width: '40px',
             height: '40px',
             transition: 'all 0.2s ease',
-            outline: 'none'
+            outline: 'none',
+            borderRadius: '20px'
           }}
           onMouseOver={e => {
             e.currentTarget.style.background = 'var(--text-color)';
@@ -161,7 +163,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             flexDirection: 'column',
             zIndex: absolute ? 50 : undefined,
             userSelect: 'none',
-            WebkitUserSelect: 'none'
+            WebkitUserSelect: 'none',
+            borderRadius: '24px'
           }}
         >
           {/* Unified Header */}

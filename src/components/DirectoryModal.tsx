@@ -148,7 +148,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
           position: 'relative',
           zIndex: 40
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0, border: '1px solid var(--glass-border)', padding: '12px 16px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0, border: '1px solid var(--glass-border)', padding: '12px 16px', borderRadius: '24px' }}>
             <MagnifyingGlass size={16} weight="regular" style={{ opacity: 0.6 }} />
             <input
               type="text"

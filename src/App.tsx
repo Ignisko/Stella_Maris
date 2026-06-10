@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass } from '@phosphor-icons/react';
+import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, Info, Sun, Moon } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -56,8 +56,20 @@ function App() {
   const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
     const [isLanguagePickerOpen, setIsLanguagePickerOpen] = useState(false);
 
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    return localStorage.getItem('theme') !== 'light';
+  });
+
   useEffect(() => {
-    document.body.classList.add('dark-theme');
+    if (isDarkMode) {
+      document.body.classList.remove('light-theme');
+      document.body.classList.add('dark-theme');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-theme');
+      document.body.classList.add('light-theme');
+      localStorage.setItem('theme', 'light');
+    }
     localStorage.setItem('stellamaris_theme', 'dark');
   }, []);
 
@@ -65,7 +77,33 @@ function App() {
     document.body.setAttribute('data-project-id', config.projectId);
   }, []);
 
+  useEffect(() => {
+    const handleUrlChange = () => {
+      const path = window.location.pathname.substring(1);
+      if (path && translatedApparitionsData.length > 0) {
+        const found = translatedApparitionsData.find((a: Apparition) => a.id === path);
+        if (found) {
+          setSelectedApparition(found);
+        } else {
+          setSelectedApparition(null);
+        }
+      } else if (!path) {
+        setSelectedApparition(null);
+      }
+    };
+
+    handleUrlChange();
+
+    window.addEventListener('popstate', handleUrlChange);
+    return () => window.removeEventListener('popstate', handleUrlChange);
+  }, [translatedApparitionsData]);
+
   const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
+    const path = window.location.pathname.substring(1);
+    if (path && path.length > 0) {
+      localStorage.setItem('stellamaris_tutorial_seen', 'true');
+      return false;
+    }
     return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
   });
   const [tutorialStep, setTutorialStep] = useState<number>(0);
@@ -134,6 +172,7 @@ function App() {
   const handleSelectApparition = (apparition: Apparition | null) => {
     setSelectedApparition(apparition);
     if (apparition) {
+      window.history.pushState(null, '', `/${apparition.id}`);
       const idx = sortedFilteredApparitions.findIndex(a => a.id === apparition.id);
       if (idx !== -1) {
         setPlaybackIndex(idx);
@@ -141,6 +180,8 @@ function App() {
       if (isTutorialActive && (tutorialStep === 1 || tutorialStep === 2 || tutorialStep === 3 || tutorialStep === 4)) {
         setTutorialStep(4);
       }
+    } else {
+      window.history.pushState(null, '', '/');
     }
     if (!isCinemaMode && isPlayingTimeline) {
       setIsPlayingTimeline(false);
@@ -603,8 +644,88 @@ function App() {
               </>
             )}
           </div>
+
+          {/* Additional Info Link */}
+          {!isFiltersExpanded && (
+            <a
+              href="https://idiotajezusa.pl"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '6px',
+                padding: '8px 12px',
+                background: 'var(--glass-bg)',
+                color: 'var(--text-color)',
+                border: '1px solid var(--glass-border)',
+                borderRadius: '20px',
+                fontSize: '11px',
+                fontWeight: 600,
+                textDecoration: 'none',
+                textTransform: 'uppercase',
+                letterSpacing: '0.05em',
+                pointerEvents: 'auto',
+                width: 'max-content',
+                transition: 'all 0.2s',
+                boxShadow: 'var(--box-shadow)'
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.background = 'var(--text-color)';
+                e.currentTarget.style.color = 'var(--bg-color)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.background = 'var(--glass-bg)';
+                e.currentTarget.style.color = 'var(--text-color)';
+              }}
+            >
+              <Info size={14} weight="bold" />
+              <span>{lang === 'pl' ? 'Więcej od Idiota Jezusa' : 'More by Idiota Jezusa'}</span>
+            </a>
+          )}
         </div>
       </div>
+
+      {/* Theme Toggle Button */}
+      {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
+        <button
+          className="desktop-theme-btn glass-panel glass-panel-rounded animate-fade-in"
+          onClick={() => setIsDarkMode(prev => !prev)}
+          style={{
+            position: 'absolute',
+            top: '20px',
+            right: '150px',
+            zIndex: 100,
+            pointerEvents: 'auto',
+            width: '42px',
+            height: '42px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            background: 'rgba(15, 23, 42, 0.8)',
+            color: 'var(--text-color)',
+            border: '1px solid var(--glass-border)',
+            cursor: 'pointer',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+            transition: 'all 0.2s ease',
+            borderRadius: '12px',
+            outline: 'none'
+          }}
+          title={isDarkMode ? t('lightMode', lang) : t('darkMode', lang)}
+          onMouseOver={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
+            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+            e.currentTarget.style.transform = 'none';
+          }}
+        >
+          {isDarkMode ? <Sun size={20} color="var(--accent-color)" weight="bold" /> : <Moon size={20} color="var(--accent-color)" weight="bold" />}
+        </button>
+      )}
 
       {/* Help / Onboarding Tutorial Button */}
       {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
@@ -711,7 +832,7 @@ function App() {
         isTutorialActive={isTutorialActive}
         tutorialStep={tutorialStep}
         isCinemaMode={isCinemaMode}
-        isDarkMode={true}
+        isDarkMode={isDarkMode}
       />
         </div>
       
@@ -899,19 +1020,17 @@ function App() {
           </button>
 
           {/* Theme Toggle */}
-          {false && (
-            <button
-              className={`mob-btn${mobileTooltip === 'theme' ? ' tooltip-visible' : ''}`}
-              aria-label="Toggle Theme"
-              onClick={() => {
-                showTooltip('theme');
-// setIsDarkMode(prev => !prev);
-              }}
-            >
-              <span style={{ fontSize: 22 }}>'🌙'</span>
-              <span className="mob-btn-tooltip">'Dark Mode'</span>
-            </button>
-          )}
+          <button
+            className={`mob-btn${mobileTooltip === 'theme' ? ' tooltip-visible' : ''}`}
+            aria-label="Toggle Theme"
+            onClick={() => {
+              showTooltip('theme');
+              setIsDarkMode(prev => !prev);
+            }}
+          >
+            <span style={{ fontSize: 22 }}>{isDarkMode ? '☀️' : '🌙'}</span>
+            <span className="mob-btn-tooltip">{isDarkMode ? 'Light Mode' : 'Dark Mode'}</span>
+          </button>
         </div>
       )}
 

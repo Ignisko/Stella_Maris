@@ -25,9 +25,9 @@ const FAMOUS_CALLOUTS: Record<string, { label: string; year: number; modernOffse
   "rue-du-bac-1830": { label: "Our Lady of Miraculous Medal", year: 1830, modernOffset: 6, fullHistoryOffset: -1 },
   "rome-ratisbonne-1842": { label: "Our Lady of Zion", year: 1842, modernOffset: -55, fullHistoryOffset: -1 },
   "lourdes-1858": { label: "Our Lady of Lourdes", year: 1858, modernOffset: 40, fullHistoryOffset: 45 },
-  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 65, fullHistoryOffset: 20 },
+  "fatima": { label: "Our Lady of Fatima", year: 1917, modernOffset: 80, fullHistoryOffset: 20 },
   "banneux": { label: "Virgin of the Poor", year: 1933, modernOffset: 25, fullHistoryOffset: -1 },
-  "kibeho": { label: "Our Lady of Kibeho", year: 1981, modernOffset: 50, fullHistoryOffset: -1 }
+  "kibeho": { label: "Our Lady of Kibeho", year: 1981, modernOffset: 60, fullHistoryOffset: -1 }
 };
 
 const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
@@ -200,7 +200,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
       const leftPct = bucket
         ? ((bucket.index + 0.5) / buckets.length) * 100
         : ((famous.year - startY) / range) * 100;
-      const clampedLeft = Math.max(6, Math.min(94, leftPct));
+      const clampedLeft = Math.max(10, Math.min(90, leftPct));
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const titleForLang = (famous as any).translations?.[lang]?.title || famous.title;
@@ -362,6 +362,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               setIsOpen(false);
               if (isPlaying) onTogglePlay();
             }}
+            disabled={isPlaying}
             style={{
               background: 'var(--timeline-btn-bg)',
               border: '1px solid var(--timeline-btn-border)',
@@ -371,7 +372,8 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
               alignItems: 'center',
               gap: '8px',
               color: 'var(--text-color)',
-              cursor: 'pointer',
+              cursor: isPlaying ? 'not-allowed' : 'pointer',
+              opacity: isPlaying ? 0.3 : 1,
               fontSize: '11px',
               fontWeight: 600,
               transition: 'all 0.2s'
@@ -400,10 +402,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
 
           {/* Time mode toggle */}
           <div style={{
-            display: 'flex', background: 'transparent',
-            border: '1px solid var(--timeline-border)',
-            borderRadius: '20px',
-            overflow: 'hidden'
+            display: 'flex', gap: '8px'
           }}>
             {(['modern', 'all'] as const).map(mode => (
               <button
@@ -412,12 +411,11 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                 style={{
                   background: timeMode === mode ? 'var(--text-color)' : 'transparent',
                   color: timeMode === mode ? 'var(--bg-color)' : 'var(--text-color)',
-                  border: 'none', padding: '6px 16px',
+                  border: '1px solid var(--timeline-border)', padding: '6px 16px',
                   fontSize: '9px', fontWeight: 600, cursor: 'pointer',
                   textTransform: 'uppercase', letterSpacing: '0.05em',
                   transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '6px',
-                  borderRight: mode === 'modern' ? '1px solid var(--timeline-border)' : 'none',
-                  borderRadius: mode === 'modern' ? '20px 0 0 20px' : '0 20px 20px 0'
+                  borderRadius: '25px'
                 }}
               >
                 <Clock size={12} weight={timeMode === mode ? 'fill' : 'regular'} />
@@ -682,18 +680,12 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           {!isCinemaMode && (
             <svg width="100%" height="300" style={{ position: 'absolute', left: 0, right: 0, bottom: 0, pointerEvents: 'none', zIndex: 5 }}>
               {callouts.map(c => {
-                let lineX2 = c.left;
-                if (c.originalLeft > c.left + 0.5) {
-                  lineX2 = c.left + Math.min(3.5, c.originalLeft - c.left);
-                } else if (c.originalLeft < c.left - 0.5) {
-                  lineX2 = c.left - Math.min(3.5, c.left - c.originalLeft);
-                }
                 return (
                   <line
                     key={`svg-line-${c.id}`}
                     x1={`${c.originalLeft}%`}
                     y1={300 - c.bottomPx}
-                    x2={`${lineX2}%`}
+                    x2={`${c.left}%`}
                     y2={300 - (c.bottomPx + c.offset)}
                     stroke="var(--timeline-line)"
                     strokeWidth="1.2"
@@ -706,13 +698,6 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
           {/* Callout pills */}
           {!isCinemaMode && callouts.map(c => {
             const bottomPx = c.bottomPx + c.offset;
-            // Calculate dynamic translateX to prevent edge clipping and connect beautifully
-            let translateX = -50;
-            if (c.originalLeft > 85) {
-              translateX = -50 - Math.min(40, (c.originalLeft - 85) * 4);
-            } else if (c.originalLeft < 15) {
-              translateX = -50 + Math.min(40, (15 - c.originalLeft) * 4);
-            }
 
             return (
               <div
@@ -723,7 +708,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   position: 'absolute',
                   left: `${c.left}%`,
                   bottom: `${bottomPx}px`,
-                  transform: `translateX(${translateX}%)`,
+                  transform: `translateX(-50%)`,
                   zIndex: 50,
                   fontSize: '10px',
                   fontWeight: 600,
@@ -732,9 +717,9 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   color: 'var(--text-color)',
                   whiteSpace: 'nowrap',
                   backgroundColor: 'var(--bg-color)',
-                  padding: '5px 12px',
+                  padding: '6px 14px',
                   border: '1px solid var(--text-color)',
-                  borderRadius: '20px',
+                  borderRadius: '25px',
                   pointerEvents: 'auto',
                   cursor: 'pointer',
                   transition: 'all 0.2s ease'

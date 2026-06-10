@@ -118,7 +118,7 @@ const Sidebar: React.FC<SidebarProps> = ({
       const isBroken = url.includes('apparitions_1500-1799.html');
       
       if (url.includes('wikipedia.org')) {
-        label = 'Wikipedia';
+        label = t('viewSource', lang);
       } else if (url.includes('miraclehunter.com')) {
         label = isBroken ? 'Broken Link (Needs Correction)' : t('viewSource', lang);
       } else if (url.includes('bernardyni.pl') || url.includes('lezajsk')) {
