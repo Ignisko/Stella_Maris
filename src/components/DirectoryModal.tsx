@@ -119,8 +119,8 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
           <button
             onClick={onClose}
             style={{
-              background: 'transparent',
-              border: '1px solid var(--glass-border)',
+              background: 'rgba(255, 255, 255, 0.04)',
+              border: 'none',
               width: '40px',
               height: '40px',
               display: 'flex',
@@ -131,8 +131,8 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
               transition: 'all 0.2s',
               borderRadius: '50%'
             }}
-            onMouseOver={e => { e.currentTarget.style.background = 'var(--text-color)'; e.currentTarget.style.color = 'var(--bg-color)'; }}
-            onMouseOut={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--text-color)'; }}
+            onMouseOver={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.12)'; }}
+            onMouseOut={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.04)'; }}
           >
             <X size={16} weight="regular" />
           </button>
@@ -150,7 +150,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
           position: 'relative',
           zIndex: 40
         }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0, border: '1px solid var(--glass-border)', padding: '12px 16px', borderRadius: '24px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px', flex: 1, minWidth: 0, border: 'none', background: 'rgba(255, 255, 255, 0.08)', padding: '12px 16px', borderRadius: '24px' }}>
             <MagnifyingGlass size={16} weight="regular" style={{ opacity: 0.6 }} />
             <input
               type="text"
@@ -230,8 +230,8 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                       alignItems: 'center',
                       justifyContent: 'space-between',
                       padding: '16px 24px',
-                      background: 'transparent',
-                      border: '1px solid var(--glass-border)',
+                      background: 'rgba(255, 255, 255, 0.03)',
+                      border: 'none',
                       borderRadius: '16px',
                       margin: '0 16px 8px 16px',
                       cursor: 'pointer',
@@ -239,11 +239,11 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                       gap: '16px'
                     }}
                     onMouseOver={e => {
-                      e.currentTarget.style.background = 'var(--text-color)';
-                      e.currentTarget.style.color = 'var(--bg-color)';
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
+                      e.currentTarget.style.color = 'var(--text-color)';
                     }}
                     onMouseOut={e => {
-                      e.currentTarget.style.background = 'transparent';
+                      e.currentTarget.style.background = 'rgba(255, 255, 255, 0.03)';
                       e.currentTarget.style.color = 'var(--text-color)';
                     }}
                   >
