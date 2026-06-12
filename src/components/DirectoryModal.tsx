@@ -67,7 +67,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
         flexDirection: 'column',
         border: '1px solid var(--glass-border)',
         background: 'var(--bg-color)',
-        borderRadius: 0,
+        borderRadius: '24px',
         boxShadow: 'none'
       }}>
         {/* Modal Header */}
@@ -99,7 +99,8 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                 color: 'var(--text-color)', 
                 fontWeight: 600,
                 textTransform: 'uppercase',
-                letterSpacing: '0.05em'
+                letterSpacing: '0.05em',
+                borderRadius: '20px'
               }}>
                 {t('directoryListed', lang, { count: filteredList.length })}
               </span>
@@ -127,7 +128,8 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
               justifyContent: 'center',
               color: 'var(--text-color)',
               cursor: 'pointer',
-              transition: 'all 0.2s'
+              transition: 'all 0.2s',
+              borderRadius: '50%'
             }}
             onMouseOver={e => { e.currentTarget.style.background = 'var(--text-color)'; e.currentTarget.style.color = 'var(--bg-color)'; }}
             onMouseOut={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--text-color)'; }}
@@ -227,9 +229,11 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'space-between',
-                      padding: '20px 32px',
+                      padding: '16px 24px',
                       background: 'transparent',
-                      borderBottom: '1px solid var(--glass-border)',
+                      border: '1px solid var(--glass-border)',
+                      borderRadius: '16px',
+                      margin: '0 16px 8px 16px',
                       cursor: 'pointer',
                       transition: 'all 0.2s',
                       gap: '16px'

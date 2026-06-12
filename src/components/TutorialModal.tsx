@@ -933,7 +933,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                     alignItems: 'center',
                     gap: '10px',
                     padding: '8px 12px',
-                    borderRadius: '8px',
+                    borderRadius: '20px',
                     border: 'none',
                     background: isSelected ? accentColor : 'rgba(255,255,255,0.15)',
                     color: isSelected ? '#ffffff' : 'rgba(255,255,255,1)',
@@ -1098,7 +1098,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
                   style={{
                     width: isActive ? '18px' : '6px',
                     height: '6px',
-                    borderRadius: steps.length > 11 ? '1px' : '3px',
+                    borderRadius: '8px',
                     backgroundColor: isActive ? 'var(--accent-color)' : 'rgba(255,255,255,0.2)',
                     transition: 'all 0.3s ease'
                   }}
