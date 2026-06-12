@@ -148,6 +148,8 @@ function App() {
     localStorage.setItem('stellamaris_tutorial_seen', 'true');
     setSelectedApparition(null);
     setIsTimelineOpen(false);
+    setIsCinemaMode(false);
+    setIsPlayingTimeline(false);
   };
 
 
@@ -436,7 +438,7 @@ function App() {
                 style={{
                   background: 'rgba(255, 255, 255, 0.08)',
                   color: '#fff',
-                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                  border: 'none',
                   padding: '10px 20px',
                   borderRadius: '20px',
                   fontSize: '14px',

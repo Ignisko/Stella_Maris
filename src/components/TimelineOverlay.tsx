@@ -633,7 +633,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
                   position: 'absolute',
                   top: 0,
                   left: '50%',
-                  transform: 'translate(-50%, -100%) translateY(2px)',
+                  transform: 'translate(-50%, -100%) translateY(-6px)',
                   filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.6)) drop-shadow(0 0 8px var(--accent-color))',
                   zIndex: 112,
                   display: 'flex',

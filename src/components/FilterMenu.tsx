@@ -101,7 +101,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             width: '100%',
             padding: '12px 16px',
             background: 'var(--glass-bg)',
-            border: '1px solid var(--glass-border)',
+            border: 'none',
             color: 'var(--text-color)',
             cursor: 'pointer',
             display: 'flex',
@@ -121,7 +121,8 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             justifyContent: 'center',
             padding: '0',
             background: 'var(--glass-bg)',
-            border: '1px solid var(--glass-border)',
+            border: 'none',
+            color: '#ffffff',
             cursor: 'pointer',
             width: '40px',
             height: '40px',
@@ -130,12 +131,14 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             borderRadius: '20px'
           }}
           onMouseOver={e => {
-            e.currentTarget.style.background = 'var(--text-color)';
-            e.currentTarget.style.color = 'var(--bg-color)';
+            e.currentTarget.style.background = '#ffffff';
+            e.currentTarget.style.color = '#000000';
+            e.currentTarget.style.border = 'none';
           }}
           onMouseOut={e => {
             e.currentTarget.style.background = 'var(--glass-bg)';
-            e.currentTarget.style.color = 'var(--text-color)';
+            e.currentTarget.style.color = '#ffffff';
+            e.currentTarget.style.border = 'none';
           }}
         >
           {absolute ? (
