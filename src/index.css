@@ -445,6 +445,20 @@ body[data-project-id="eucharist"][data-tutorial-step="2"] #auto-rotate-button {
   border: none !important;
 }
 
+/* Highlight Play button on Step 9 */
+body[data-tutorial-step="9"] #timeline-play-presentation-button,
+body[data-tutorial-step="9"] #play-presentation-button {
+  z-index: 125 !important;
+  box-shadow: 0 0 20px var(--accent-color, #38bdf8) !important;
+  border: none !important;
+}
+
+body[data-project-id="eucharist"][data-tutorial-step="9"] #timeline-play-presentation-button,
+body[data-project-id="eucharist"][data-tutorial-step="9"] #play-presentation-button {
+  box-shadow: 0 0 20px #d99726 !important;
+  border: none !important;
+}
+
 /* Brighter and highlighted sidebar Close button on Step 3 */
 body[data-tutorial-step="3"] #sidebar-close-button {
   color: var(--gold-accent) !important;
