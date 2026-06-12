@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, Info } from '@phosphor-icons/react';
+import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
