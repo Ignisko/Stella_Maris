@@ -15,6 +15,7 @@ interface SidebarProps {
   isTimelineOpen?: boolean;
   isCinemaMode?: boolean;
   projectId?: 'mary' | 'eucharist';
+  isTutorialActive?: boolean;
 }
 
 const getCategoryIcon = (category: string, color: string) => {
@@ -46,7 +47,8 @@ const Sidebar: React.FC<SidebarProps> = ({
   lang,
   isTimelineOpen = false,
   isCinemaMode = false,
-  projectId = 'mary'
+  projectId = 'mary',
+  isTutorialActive = false
 }) => {
   const [copied, setCopied] = useState(false);
   const [localApparition, setLocalApparition] = useState<Apparition | null>(apparition);
@@ -330,7 +332,7 @@ const Sidebar: React.FC<SidebarProps> = ({
         </p>
         
         <div style={{ marginTop: '14px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-          {sources.map((src, i) => {
+          {!isTutorialActive && sources.map((src, i) => {
             const isLive = src.label === t('liveStream', lang);
             const isBroken = (src as any).isBroken;
             return (

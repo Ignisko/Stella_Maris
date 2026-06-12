@@ -760,6 +760,7 @@ function App() {
           isTimelineOpen={isTimelineOpen}
           isCinemaMode={isCinemaMode}
           projectId={config.projectId}
+          isTutorialActive={isTutorialActive}
         />
       )}
 
