@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, List } from '@phosphor-icons/react';
+import { Play, Pause, X, Question, EnvelopeOpen, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, List } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -10,6 +10,7 @@ import { FILTER_CATEGORIES, categoryMapping, CENTURY_FILTERS } from './data/filt
 import SearchBar from './components/SearchBar';
 import DirectoryModal from './components/DirectoryModal';
 import LanguagePicker from './components/LanguagePicker';
+import MessageModal from './components/MessageModal';
 import { lazy, Suspense } from 'react';
 const TutorialModal = lazy(() => import('./components/TutorialModal'));
 import { config } from './config';
@@ -55,6 +56,7 @@ function App() {
   const [isFiltersExpanded, setIsFiltersExpanded] = useState(false);
   const [playbackSpeedMultiplier, setPlaybackSpeedMultiplier] = useState(1);
     const [isLanguagePickerOpen, setIsLanguagePickerOpen] = useState(false);
+  const [isMessageOpen, setIsMessageOpen] = useState(false);
 
   useEffect(() => {
     document.body.classList.add('dark-theme');
@@ -653,8 +655,47 @@ function App() {
         </div>
       </div>
 
-      {/* Help / Onboarding Tutorial Button */}
-      {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
+      {/* EnvelopeOpen / Message Button */}
+      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
+        <button
+          onClick={() => setIsMessageOpen(true)}
+          style={{
+            position: 'fixed',
+            top: '20px',
+            right: '124px',
+            zIndex: 100,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '42px',
+            height: '42px',
+            background: 'rgba(15, 23, 42, 0.8)',
+            backdropFilter: 'blur(12px)',
+            WebkitBackdropFilter: 'blur(12px)',
+            border: '1px solid var(--glass-border)',
+            borderRadius: '12px',
+            outline: 'none',
+            cursor: 'pointer',
+            transition: 'all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)'
+          }}
+          title={t('message', lang) || "Message"}
+          onMouseOver={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.95)';
+            e.currentTarget.style.borderColor = 'rgba(56,189,248,0.3)';
+            e.currentTarget.style.transform = 'scale(1.05)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.background = 'rgba(15, 23, 42, 0.8)';
+            e.currentTarget.style.borderColor = 'var(--glass-border)';
+            e.currentTarget.style.transform = 'none';
+          }}
+        >
+          <EnvelopeOpen size={20} color="var(--accent-color)" weight="bold" />
+        </button>
+      )}
+
+      {/* Top Right Help / Tutorial Button */}
+      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
         <button
           className="desktop-help-btn desktop-only glass-panel glass-panel-rounded animate-fade-in"
           onClick={() => {
@@ -702,6 +743,7 @@ function App() {
       {/* Top Right Language Switcher */}
       {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
         <div className="desktop-lang-picker desktop-only">
+          <MessageModal isOpen={isMessageOpen} onClose={() => setIsMessageOpen(false)} lang={lang} />
           <LanguagePicker 
             currentLang={lang} 
             onLanguageChange={setLang} 
