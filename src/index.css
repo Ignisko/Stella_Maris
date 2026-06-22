@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --font-family: 'Outfit', sans-serif;
+  --font-family: 'Inter', sans-serif;
   --bg-color: #0a0b10;
   --text-color: #e8eaed;
   --glass-bg: #1c1d22;
@@ -116,6 +116,30 @@ input, button, textarea, select {
   border-radius: var(--panel-radius) !important;
 }
 
+/* Credits Link */
+.credits-link {
+  display: none !important; /* Integrated into navbar on desktop */
+}
+
+@media (max-width: 600px) {
+  .credits-link {
+    display: inline-block !important; /* Floating pill on mobile */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: var(--glass-bg);
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    color: var(--text-color);
+    z-index: 100000;
+    font-size: 11px;
+    font-weight: 500;
+    text-decoration: none;
+    pointer-events: auto;
+  }
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
@@ -178,12 +202,16 @@ input, button, textarea, select {
 
 /* The visual bubble dot */
 .marker-dot {
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
   background-color: var(--marker-color, #3b82f6);
-  box-shadow: 0 0 10px var(--marker-color, #3b82f6), 0 0 4px rgba(0, 0, 0, 0.5);
-  border: 2px solid #ffffff;
+  border: 1.5px solid #ffffff;
+  box-shadow: 
+    inset -2px -2px 4px rgba(0, 0, 0, 0.4),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.6),
+    0 2px 6px rgba(0, 0, 0, 0.5),
+    0 0 10px var(--marker-color, #3b82f6);
   pointer-events: auto;
   cursor: pointer;
   transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
@@ -196,7 +224,11 @@ input, button, textarea, select {
 
 .marker-dot:hover {
   transform: translate(-50%, -50%) scale(1.4);
-  box-shadow: 0 0 16px var(--marker-color, #3b82f6), 0 0 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 
+    inset -2px -2px 4px rgba(0, 0, 0, 0.4),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.6),
+    0 4px 10px rgba(0, 0, 0, 0.6),
+    0 0 16px var(--marker-color, #3b82f6);
   z-index: 10;
 }
 
@@ -241,7 +273,7 @@ input, button, textarea, select {
   text-align: center;
   white-space: nowrap !important;
   width: max-content !important;
-  transition: opacity 0.3s ease-out, transform 0.2s ease-out, color 0.2s ease, text-shadow 0.2s ease;
+  transition: opacity 0.3s ease-out, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease, text-shadow 0.2s ease;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
@@ -601,6 +633,34 @@ body[data-tutorial-step="3"] #sidebar-close-button {
 
 /* Auto-rotate bottom-left button (white, mobile) */
 @media (max-width: 600px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* Mobile infobox styling */
+  #apparition-sidebar {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    max-height: 45vh !important;
+    border-radius: 20px 20px 0 0 !important;
+    padding: 16px !important;
+    z-index: 500 !important;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.5) !important;
+  }
+
+  #apparition-sidebar h2 {
+    font-size: 22px !important;
+  }
+
+  #apparition-sidebar p {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
   /* Show mobile toolbar, hide desktop left panel */
   .mob-toolbar {
     display: flex;
@@ -617,8 +677,14 @@ body[data-tutorial-step="3"] #sidebar-close-button {
     display: none !important;
   }
 
-  /* Auto-rotate pill → slim white icon button */
+  /* Auto-rotate pill → hidden on mobile to reduce buttons */
   #auto-rotate-button {
+    display: none !important;
+  }
+
+  /* Layer Switcher Button (mobile) */
+  #layer-switch-button {
+    position: fixed !important;
     bottom: 96px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
@@ -631,20 +697,7 @@ body[data-tutorial-step="3"] #sidebar-close-button {
     -webkit-backdrop-filter: none !important;
     box-shadow: 0 2px 8px rgba(0,0,0,0.28) !important;
     padding: 0 !important;
-    gap: 0 !important;
     color: #1a1a1a !important;
-    font-size: 0 !important; /* hide text */
-    justify-content: center !important;
-  }
-
-  #auto-rotate-button svg {
-    color: #1a1a1a !important;
-    width: 22px !important;
-    height: 22px !important;
-  }
-
-  #auto-rotate-button span {
-    display: none !important;
   }
 
   /* Timeline closed pill → compact icon */
@@ -733,7 +786,8 @@ body[data-tutorial-step="3"] #sidebar-close-button {
 
   /* Make collapsed timeline and auto-rotate buttons circular on desktop */
   #timeline-closed-pill,
-  #auto-rotate-button {
+  #auto-rotate-button,
+  #layer-switch-button {
     width: 42px !important;
     height: 42px !important;
     border-radius: 50% !important;
