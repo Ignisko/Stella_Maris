@@ -42,7 +42,19 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
     if (!isExpanded) return;
 
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-      if (filterRef.current && !filterRef.current.contains(event.target as Node)) {
+      if (!filterRef.current) return;
+      
+      // If this FilterMenu is hidden by CSS (e.g. mobile overlay on desktop), ignore
+      if (filterRef.current.offsetWidth === 0 && filterRef.current.offsetHeight === 0) {
+        return;
+      }
+
+      if (!filterRef.current.contains(event.target as Node)) {
+        // If the click is inside another FilterMenu, let that one handle it
+        const target = event.target as Element;
+        if (target.closest && target.closest('.filter-menu-container')) {
+          return;
+        }
         onToggleExpanded(false);
       }
     };
@@ -56,18 +68,20 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   }, [isExpanded, onToggleExpanded]);
 
   const toggleFilter = (category: string) => {
-    if (activeFilters.includes(category)) {
-      onChange(activeFilters.filter(f => f !== category));
+    const current = activeFilters || [];
+    if (current.includes(category)) {
+      onChange(current.filter(f => f !== category));
     } else {
-      onChange([...activeFilters, category]);
+      onChange([...current, category]);
     }
   };
 
   const toggleCentury = (centuryId: string) => {
-    if (activeCenturies.includes(centuryId)) {
-      onChangeCenturies(activeCenturies.filter(c => c !== centuryId));
+    const current = activeCenturies || [];
+    if (current.includes(centuryId)) {
+      onChangeCenturies(current.filter(c => c !== centuryId));
     } else {
-      onChangeCenturies([...activeCenturies, centuryId]);
+      onChangeCenturies([...current, centuryId]);
     }
   };
 
@@ -84,6 +98,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
   return (
     <div 
       ref={filterRef}
+      className="filter-menu-container"
       style={{
         width: isExpanded ? '100%' : 'auto',
         position: 'relative', // Ensures absolute children position correctly
@@ -309,7 +324,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               {activeTab === 'status' && (
                 <div id="status-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%', userSelect: 'none', WebkitUserSelect: 'none' }}>
                   {FILTER_CATEGORIES.map(category => {
-                    const isActive = activeFilters.includes(category);
+                    const isActive = (activeFilters || []).includes(category);
                     const color = STATUS_COLORS[category] || '#94a3b8';
                     return (
                       <label 
@@ -362,7 +377,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
               {activeTab === 'time' && (
                 <div id="century-filters-group" style={{ display: 'flex', flexDirection: 'column', gap: '12px', width: '100%', userSelect: 'none', WebkitUserSelect: 'none' }}>
                   {CENTURY_FILTERS.map(century => {
-                    const isActive = activeCenturies.includes(century.id);
+                    const isActive = (activeCenturies || []).includes(century.id);
                     return (
                       <label 
                         key={century.id} 
