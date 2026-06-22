@@ -662,7 +662,7 @@ function App() {
           style={{
             position: 'fixed',
             top: '20px',
-            right: '124px',
+            right: '146px',
             zIndex: 100,
             display: 'flex',
             alignItems: 'center',

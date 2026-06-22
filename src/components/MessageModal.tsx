@@ -28,11 +28,11 @@ const MessageModal: React.FC<MessageModalProps> = ({ isOpen, onClose, lang }) =>
       <div
         style={{
           width: '90%',
-          maxWidth: '600px',
+          maxWidth: '480px',
           maxHeight: '85vh',
           backgroundColor: 'var(--panel-bg, rgba(20, 20, 25, 0.85))',
           borderRadius: '16px',
-          padding: '24px',
+          padding: '20px',
           color: 'var(--text-color, #ffffff)',
           overflowY: 'auto',
           position: 'relative',
@@ -64,33 +64,33 @@ const MessageModal: React.FC<MessageModalProps> = ({ isOpen, onClose, lang }) =>
           <X size={24} weight="bold" />
         </button>
 
-        <h2 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '16px', paddingRight: '32px' }}>
+        <h2 style={{ fontSize: '22px', fontWeight: 'bold', marginBottom: '12px', paddingRight: '32px' }}>
           What the Virgin Mary asked for
         </h2>
 
-        <p style={{ marginBottom: '16px', lineHeight: '1.6', opacity: 0.9 }}>
+        <p style={{ marginBottom: '12px', fontSize: '15px', lineHeight: '1.5', opacity: 0.9 }}>
           Across various approved visitations (such as Our Lady of Guadalupe, Lourdes, and Fátima), Mary has requested:
         </p>
 
-        <ul style={{ paddingLeft: '24px', marginBottom: '24px', lineHeight: '1.6', opacity: 0.9, display: 'flex', flexDirection: 'column', gap: '12px' }}>
+        <ul style={{ paddingLeft: '24px', marginBottom: '20px', fontSize: '15px', lineHeight: '1.5', opacity: 0.9, display: 'flex', flexDirection: 'column', gap: '8px' }}>
           <li>
-            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>daily prayer:</strong> she continually asks people to pray the Rosary every day for world peace and an end to wars.
+            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>Daily prayer:</strong> she continually asks people to pray the Rosary every day for world peace and an end to wars.
           </li>
           <li>
-            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>acts of penance and sacrifice:</strong> she asks the faithful to offer up small sacrifices and perform penance to make up for the sins of the world.
+            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>Acts of penance and sacrifice:</strong> she asks the faithful to offer up small sacrifices and perform penance to make up for the sins of the world.
           </li>
           <li>
-            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>building a Church or chapel:</strong> in multiple visitations (like at Guadalupe and Beauraing), she asked that a chapel be built at the site as a place of prayer, healing, and pilgrimage.
+            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>Building a Church or chapel:</strong> in multiple visitations (like at Guadalupe and Beauraing), she asked that a chapel be built at the site as a place of prayer, healing, and pilgrimage.
           </li>
           <li>
-            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>repentance:</strong> she repeatedly warns humanity of the consequences of moral decay and begs for repentance and the conversion of sinners.
+            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>Repentance:</strong> she repeatedly warns humanity of the consequences of moral decay and begs for repentance and the conversion of sinners.
           </li>
           <li>
-            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>devotion to her Immaculate Heart:</strong> in apparitions like Fátima, she asked for the consecration of the world (and specifically Russia) to her Immaculate Heart.
+            <strong style={{ color: 'var(--accent-color, #38bdf8)' }}>Devotion to her Immaculate Heart:</strong> in apparitions like Fátima, she asked for the consecration of the world (and specifically Russia) to her Immaculate Heart.
           </li>
         </ul>
 
-        <p style={{ lineHeight: '1.6', opacity: 0.9, fontStyle: 'italic', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '16px' }}>
+        <p style={{ fontSize: '14px', lineHeight: '1.5', opacity: 0.85, fontStyle: 'italic', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '12px', margin: 0 }}>
           The underlying goal of all these requests is fundamentally the same: to lead the faithful closer to Jesus Christ. In Catholic tradition, Marian apparitions are private revelations meant to draw attention to the Gospel and serve as expressions of divine care during difficult times in history.
         </p>
       </div>
