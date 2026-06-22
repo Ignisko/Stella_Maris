@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useState, useMemo, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass } from '@phosphor-icons/react';
+import { Play, Pause, X, Question, ArrowLeft, ArrowRight, Rewind, FastForward, MagnifyingGlass, List } from '@phosphor-icons/react';
 
 import GlobeViewer from './components/GlobeViewer';
 import Sidebar from './components/Sidebar';
@@ -87,6 +87,7 @@ function App() {
   }, [translatedApparitionsData]);
 
   const [isTutorialActive, setIsTutorialActive] = useState<boolean>(() => {
+    if (window.innerWidth <= 600) return false;
     const path = window.location.pathname.substring(1);
     if (path && path.length > 0) {
       localStorage.setItem('stellamaris_tutorial_seen', 'true');
@@ -95,6 +96,15 @@ function App() {
     return localStorage.getItem('stellamaris_tutorial_seen') !== 'true';
   });
   const [tutorialStep, setTutorialStep] = useState<number>(0);
+
+  const [showMobileWelcome, setShowMobileWelcome] = useState<boolean>(() => {
+    return window.innerWidth <= 600 && localStorage.getItem('stellamaris_mobile_welcome_seen') !== 'true';
+  });
+
+  const handleDismissMobileWelcome = () => {
+    setShowMobileWelcome(false);
+    localStorage.setItem('stellamaris_mobile_welcome_seen', 'true');
+  };
 
   // Mobile: which toolbar button tooltip is showing
   const [mobileTooltip, setMobileTooltip] = useState<string | null>(null);
@@ -108,9 +118,15 @@ function App() {
 
   const handleTutorialStepChange = (newStep: number) => {
     setTutorialStep(newStep);
-    // Advancing TO step 5 (Search & filters) — close the apparition sidebar
+    // Advancing TO step 5 (Search & filters) - close the apparition sidebar
     if (newStep === 5) {
       setSelectedApparition(null);
+    }
+    // Automatically start presentation if arriving at step 10 via the Next button
+    if (newStep === 10) {
+      setIsCinemaMode(true);
+      setIsPlayingTimeline(true);
+      setPlaybackIndex(0);
     }
   };
 
@@ -135,8 +151,8 @@ function App() {
           setSelectedApparition(target);
         }
       }
-    } else if (tutorialStep === 10) {
-      // Step 10 = "Watching the presentation" — let presentation selection flow naturally
+    } else if (tutorialStep === 10 || tutorialStep === 11) {
+      // Step 10 & 11 = "Watching the presentation" and "Glory to Jesus!" — let presentation selection flow naturally
     } else {
       // For all other steps, ensure the sidebar is closed
       setSelectedApparition(null);
@@ -594,14 +610,14 @@ function App() {
                     e.currentTarget.style.background = 'var(--glass-bg)';
                   }}
                 >
-                  📋
+                  <List weight="bold" />
                 </button>
 
                 {!isTutorialActive && (
                   <button
                     id="play-presentation-button"
                     onClick={togglePlayTimeline}
-                    className="glass-panel glass-panel-rounded animate-fade-in"
+                    className="desktop-only glass-panel glass-panel-rounded animate-fade-in"
                     style={{
                       width: '46px',
                       height: '46px',
@@ -628,7 +644,7 @@ function App() {
                       e.currentTarget.style.background = 'var(--glass-bg)';
                     }}
                   >
-                    {isPlayingTimeline ? '⏸️' : '▶️'}
+                    {isPlayingTimeline ? <Pause weight="bold" /> : <Play weight="bold" />}
                   </button>
                 )}
               </>
@@ -640,7 +656,7 @@ function App() {
       {/* Help / Onboarding Tutorial Button */}
       {!isCinemaMode && !isSidebarOpen && !isTutorialActive && (
         <button
-          className="desktop-help-btn glass-panel glass-panel-rounded animate-fade-in"
+          className="desktop-help-btn desktop-only glass-panel glass-panel-rounded animate-fade-in"
           onClick={() => {
             setIsTutorialActive(true);
             setTutorialStep(0);
@@ -685,7 +701,7 @@ function App() {
 
       {/* Top Right Language Switcher */}
       {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
-        <div className="desktop-lang-picker">
+        <div className="desktop-lang-picker desktop-only">
           <LanguagePicker 
             currentLang={lang} 
             onLanguageChange={setLang} 
@@ -767,7 +783,8 @@ function App() {
       )}
 
       {filteredApparitions.length > 0 && (!isTutorialActive || (tutorialStep >= 8 && tutorialStep <= 11)) && (
-        <TimelineOverlay
+        <div className="desktop-only">
+          <TimelineOverlay
           apparitions={filteredApparitions}
           selectedApparition={currentSelectedApparition}
           onSelectApparition={handleSelectApparition}
@@ -786,6 +803,7 @@ function App() {
           lang={lang}
           hideTriggerButton={isLanguagePickerOpen}
         />
+        </div>
       )}
 
       {/* Tutorial click-blocker: transparent overlay blocks all clicks on background UI.
@@ -818,6 +836,47 @@ function App() {
         setIsTimelineOpen={setIsTimelineOpen}
       />        )}
       </Suspense>
+
+
+
+      {/* Mobile Welcome Box */}
+      {showMobileWelcome && (
+        <div className="mobile-welcome-box glass-panel glass-panel-rounded animate-fade-in" style={{
+          position: 'fixed',
+          top: '20px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '90%',
+          maxWidth: '400px',
+          zIndex: 1000,
+          padding: '20px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '12px',
+          textAlign: 'center'
+        }}>
+          <h2 style={{ fontSize: '20px', fontWeight: 600, color: 'var(--accent-color)', margin: 0 }}>Welcome to Stella Maris!</h2>
+          <p style={{ fontSize: '14px', lineHeight: 1.5, margin: 0, opacity: 0.9 }}>
+            Explore Marian apparitions around the world. To view the full interactive presentation and timeline, please visit the site on a computer.
+          </p>
+          <button 
+            onClick={handleDismissMobileWelcome}
+            style={{
+              marginTop: '8px',
+              padding: '10px',
+              borderRadius: '8px',
+              background: 'var(--accent-color)',
+              color: '#fff',
+              border: 'none',
+              fontWeight: 600,
+              fontSize: '15px',
+              cursor: 'pointer'
+            }}
+          >
+            Start Exploring
+          </button>
+        </div>
+      )}
 
       {/* ── Mobile Toolbar (Google Earth–style) ── */}
       {!isCinemaMode && !isTutorialActive && (

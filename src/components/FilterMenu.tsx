@@ -158,11 +158,11 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
         >
           {absolute ? (
             <>
-              <Funnel size={16} weight="regular" />
+              <Funnel size={16} weight="bold" />
               <span>{t('filters', lang)}</span>
             </>
           ) : (
-            <Funnel size={20} weight="regular" />
+            <Funnel size={20} weight="bold" />
           )}
         </button>
       ) : (
@@ -213,7 +213,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px', userSelect: 'none', WebkitUserSelect: 'none' }}>
-              <Funnel size={16} weight="regular" />
+              <Funnel size={16} weight="bold" />
               <span>{t('filters', lang)}</span>
             </div>
             <CaretUp size={16} weight="bold" />

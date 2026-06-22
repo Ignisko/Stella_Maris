@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/set-state-in-effect */
-import React, { useEffect, useRef, useState, useMemo } from 'react';
+import React, { useEffect, useRef, useState, useMemo, useCallback } from 'react';
 import Globe from 'react-globe.gl';
 import type { Apparition } from '../data/apparitions';
-import { Play, Pause, X } from '@phosphor-icons/react';
+import { Play, Pause, X, MapTrifold, ArrowsClockwise } from '@phosphor-icons/react';
 import { getStatusColor, hexToRgb } from '../utils/colors';
 import { t } from '../utils/i18n';
 import type { Language } from '../utils/i18n';
@@ -46,6 +46,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeEl = useRef<any>(null);
   const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [mapStyle, setMapStyle] = useState<'outdoors' | 'satellite'>('outdoors');
   const [telemetry, setTelemetry] = useState<{ lat: number; lng: number; altitude: number }>({ lat: 0, lng: 0, altitude: 2.5 });
   const [isInteracting, setIsInteracting] = useState(false);
   const interactionTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -729,6 +730,14 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
   const cameraKm = Math.round(telemetry.altitude * 6371).toLocaleString();
   const scaleKm = Math.max(1, Math.round(telemetry.altitude * 1200)).toLocaleString();
 
+  const tileEngineUrl = useCallback((x: number, y: number, l: number) => {
+    return `https://api.mapbox.com/styles/v1/mapbox/${mapStyle === 'satellite' ? 'satellite-v9' : 'outdoors-v12'}/tiles/512/${l}/${x}/${y}?access_token=${MAPBOX_TOKEN}`;
+  }, [mapStyle]);
+
+  const baseGlobeImg = mapStyle === 'satellite' 
+    ? '//unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+    : '//unpkg.com/three-globe/example/img/earth-day.jpg';
+
   return (
     <>
       <div 
@@ -756,7 +765,8 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           ref={globeEl}
           width={dimensions.width}
           height={dimensions.height}
-          globeTileEngineUrl={(x: number, y: number, l: number) => `https://api.mapbox.com/styles/v1/mapbox/outdoors-v12/tiles/512/${l}/${x}/${y}?access_token=${MAPBOX_TOKEN}`}
+          globeTileEngineUrl={tileEngineUrl}
+          globeImageUrl={baseGlobeImg}
           backgroundImageUrl="https://unpkg.com/three-globe/example/img/night-sky.png"
           pointsData={[]}
           ringsData={ringApparition ? [ringApparition] : []}
@@ -786,20 +796,20 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           }}
           style={{
             position: 'fixed',
-            bottom: isTimelineOpen ? '268px' : '44px',
-            left: '20px',
+            bottom: isTimelineOpen ? '268px' : '48px',
+            left: '24px',
             zIndex: 200,
             pointerEvents: 'auto',
             background: 'rgba(30, 30, 30, 0.8)',
             backdropFilter: 'blur(12px)',
             border: 'none',
-            borderRadius: '22px',
-            padding: '0 20px',
-            height: '44px',
+            borderRadius: '50%',
+            padding: '0',
+            width: '42px',
+            height: '42px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            gap: '10px',
             color: 'var(--text-color)',
             cursor: 'pointer',
             boxShadow: isTutorialActive && tutorialStep === 2 
@@ -819,10 +829,49 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           }}
           title={isAutoRotate ? t('autoRotateOn', lang) : t('autoRotateOff', lang)}
         >
-          {isAutoRotate ? <Pause size={18} weight="bold" /> : <Play size={18} weight="bold" style={{ marginLeft: '1px' }} />}
-          <span style={{ fontSize: '13px', fontWeight: 600, whiteSpace: 'nowrap' }}>
-            {isAutoRotate ? t('autoRotateOn', lang) : t('autoRotateOff', lang)}
-          </span>
+          {isAutoRotate ? <Pause size={20} weight="bold" /> : <ArrowsClockwise size={20} weight="bold" />}
+        </button>
+      )}
+
+      {/* Layer Toggle Button */}
+      {(!isTutorialActive || tutorialStep === 2 || tutorialStep === 9) && (
+        <button
+          id="layer-switch-button"
+          onClick={(e) => {
+            e.stopPropagation();
+            setMapStyle(prev => prev === 'outdoors' ? 'satellite' : 'outdoors');
+          }}
+          style={{
+            position: 'fixed',
+            bottom: isTimelineOpen ? '268px' : '48px',
+            left: hidePlayPause ? '24px' : '78px',
+            zIndex: 200,
+            pointerEvents: 'auto',
+            background: 'rgba(30, 30, 30, 0.8)',
+            backdropFilter: 'blur(12px)',
+            border: 'none',
+            borderRadius: '50%',
+            width: '42px',
+            height: '42px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: 'var(--text-color)',
+            cursor: 'pointer',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.4)',
+            transition: 'all 0.2s ease'
+          }}
+          title={mapStyle === 'outdoors' ? 'Switch to Satellite' : 'Switch to Map'}
+          onMouseOver={(e) => {
+            e.currentTarget.style.background = 'rgba(45, 45, 45, 0.95)';
+            e.currentTarget.style.transform = 'scale(1.02)';
+          }}
+          onMouseOut={(e) => {
+            e.currentTarget.style.background = 'rgba(30, 30, 30, 0.8)';
+            e.currentTarget.style.transform = 'none';
+          }}
+        >
+          <MapTrifold size={22} weight={mapStyle === 'outdoors' ? 'regular' : 'fill'} />
         </button>
       )}
 
@@ -937,18 +986,24 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           bottom: 0,
           left: 0,
           right: 0,
-          height: '32px',
+          height: '40px',
           backgroundColor: '#0f0f11',
           zIndex: 99999,
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'flex-end',
-          padding: '0 24px',
-          fontFamily: 'var(--font-sans)',
+          justifyContent: 'space-between',
+          padding: '0 40px',
+          fontFamily: 'var(--font-family)',
           fontSize: '11px',
           color: '#e8eaed',
           pointerEvents: 'none'
         }}>
+          {/* Left Side: Credits */}
+          <div className="desktop-only" style={{ pointerEvents: 'auto' }}>
+            <a href="https://ko-fi.com/road2wyd" target="_blank" rel="noopener noreferrer" style={{ color: '#e8eaed', textDecoration: 'none', opacity: 0.8, transition: 'opacity 0.2s' }} onMouseOver={e => e.currentTarget.style.opacity = '1'} onMouseOut={e => e.currentTarget.style.opacity = '0.8'}>
+              ☕ Support my work
+            </a>
+          </div>
           <div style={{
             display: 'flex',
             alignItems: 'center',
