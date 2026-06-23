@@ -231,7 +231,7 @@ const TimelineOverlay: React.FC<TimelineOverlayProps> = ({
         style={{
           position: 'fixed',
           bottom: '44px',
-          right: selectedApparition ? '590px' : '170px',
+          right: selectedApparition ? '590px' : '20px',
           zIndex: 160,
           pointerEvents: 'auto',
           padding: '12px 16px',
