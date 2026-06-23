@@ -595,6 +595,11 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
   const tLocal = tutorialTranslations[currentLang] || tutorialTranslations['en'];
 
   const highlightStyle = useMemo((): React.CSSProperties => {
+    const isEucharist = config.projectId === 'eucharist';
+    const accentColor = isEucharist ? '#d99726' : 'var(--accent-color)';
+    const cutoutShadow = '0 0 0 9999px rgba(10, 15, 30, 0.75)';
+    const glowShadow = `0 0 30px ${accentColor}`;
+
     if (step === 0 || step === steps.length - 1 || step === steps.length - 2) {
       return {
         left: '-100px',
@@ -615,10 +620,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         transform: 'translate(-50%, -50%)',
         borderRadius: '50%',
         background: 'transparent',
-        borderColor: config.projectId === 'eucharist' ? '#d99726' : undefined,
-        boxShadow: config.projectId === 'eucharist'
-          ? '0 0 0 9999px rgba(10, 15, 30, 0.75), 0 0 30px #d99726'
-          : undefined,
+        border: `3px solid ${accentColor}`,
+        boxShadow: `${cutoutShadow}, ${glowShadow}`,
       };
     }
     if (elementRect) {
@@ -640,10 +643,8 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
         position: 'fixed',
         background: 'transparent',
         borderRadius: '12px',
-        borderColor: config.projectId === 'eucharist' ? '#d99726' : undefined,
-        boxShadow: config.projectId === 'eucharist'
-          ? '0 0 0 9999px rgba(10, 15, 30, 0.75), 0 0 30px #d99726'
-          : undefined,
+        border: `3px solid ${accentColor}`,
+        boxShadow: `${cutoutShadow}, ${glowShadow}`,
       };
     }
     return {
@@ -654,7 +655,7 @@ export const TutorialModal: React.FC<TutorialModalProps> = ({
       border: 'none',
       background: 'transparent',
     };
-  }, [step, elementRect]);
+  }, [step, elementRect, steps.length]);
 
   const cardStyle = useMemo((): React.CSSProperties => {
     const common: React.CSSProperties = {
