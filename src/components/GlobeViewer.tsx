@@ -302,7 +302,11 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             
             const aPri = parseInt(a.dataset.priority || '3', 10);
             const bPri = parseInt(b.dataset.priority || '3', 10);
-            return aPri - bPri;
+            if (aPri !== bPri) return aPri - bPri;
+            
+            const aId = a.dataset.id || '';
+            const bId = b.dataset.id || '';
+            return aId.localeCompare(bId);
           });
 
           const keptRects: DOMRect[] = [];
@@ -310,12 +314,12 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           const padding = 2;
 
           for (const el of labelEls) {
-            const content = el.querySelector('.label-content') as HTMLElement;
-            if (!content) continue;
+            const wrapper = el.querySelector('.label-wrapper') as HTMLElement;
+            if (!wrapper) continue;
 
             // Restore visibility to measure correct size
-            content.style.visibility = 'visible';
-            const rect = content.getBoundingClientRect();
+            wrapper.style.visibility = 'visible';
+            const rect = wrapper.getBoundingClientRect();
 
             let overlaps = false;
             for (const kept of keptRects) {
@@ -328,7 +332,7 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
             }
 
             if (overlaps) {
-              content.style.visibility = 'hidden';
+              wrapper.style.visibility = 'hidden';
             } else {
               keptRects.push(rect);
             }
@@ -619,16 +623,16 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
       
       const titleText = d.title + (d.approvalStatus === 'Dismissed' ? ' ⚠️' : '');
       const safeTitle = escapeHtml(titleText || '');
-      const badge = (count > 1 && !isSelected) ? `<span class="cluster-badge" style="background: rgba(0,0,0,0.6); color: #fff; padding: 2px 6px; border-radius: 12px; font-size: 11px; margin-left: 6px; font-weight: 700; cursor: pointer; pointer-events: auto;">+${count - 1}</span>` : '';
+      const badgeHtml = (count > 1 && !isSelected) ? `<div class="cluster-badge">+${count - 1}</div>` : '';
       
       const formatTitle = (title: string) => {
         const openParenIdx = title.indexOf(' (');
         if (openParenIdx !== -1 && title.endsWith(')')) {
           const mainTitle = title.substring(0, openParenIdx);
           const subtitle = title.substring(openParenIdx + 1);
-          return `<span class="label-title-main">${mainTitle}${badge}</span><span class="label-subtitle">${subtitle}</span>`;
+          return `<span class="label-title-main">${mainTitle}</span><span class="label-subtitle">${subtitle}</span>`;
         }
-        return `<span class="label-title-main">${title}${badge}</span>`;
+        return `<span class="label-title-main">${title}</span>`;
       };
       const displayTitleHtml = formatTitle(safeTitle);
       const pulseHtml = isSelected ? '<div class="marker-pulse"></div>' : '';
@@ -643,7 +647,10 @@ const GlobeViewer: React.FC<GlobeViewerProps> = ({
           <div class="marker-dot"></div>
           ${pulseHtml}
           ${tutorialPointerHtml}
-          <div class="label-content${isSelected ? ' selected' : ''}">${displayTitleHtml}</div>
+          <div class="label-wrapper${isSelected ? ' selected' : ''}">
+            <div class="label-content${isSelected ? ' selected' : ''}">${displayTitleHtml}</div>
+            ${badgeHtml}
+          </div>
         </div>
       `;
       

@@ -220,7 +220,7 @@ const FilterMenu: React.FC<FilterMenuProps> = ({
           </button>
 
           {/* Tabs and Checkboxes Wrapper for tutorial highlight */}
-          <div id="filter-tabs-content-container" style={{ display: 'flex', flexDirection: 'column', width: '100%', userSelect: 'none', WebkitUserSelect: 'none' }}>
+          <div id="filter-tabs-content-container" style={{ display: 'flex', flexDirection: 'column', width: '100%', userSelect: 'none', WebkitUserSelect: 'none', maxHeight: absolute ? '350px' : 'none', overflowY: 'auto' }}>
             {/* Tabs */}
             <div style={{ display: 'flex', borderBottom: '1px solid var(--glass-border)', userSelect: 'none', WebkitUserSelect: 'none' }}>
               <button

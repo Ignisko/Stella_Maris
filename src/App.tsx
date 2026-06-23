@@ -166,8 +166,11 @@ function App() {
     localStorage.setItem('stellamaris_tutorial_seen', 'true');
     setSelectedApparition(null);
     setIsTimelineOpen(false);
+    setIsFiltersExpanded(false);
+    setIsDirectoryOpen(false);
     setIsCinemaMode(false);
     setIsPlayingTimeline(false);
+    setTutorialStep(0);
   };
 
 
@@ -656,7 +659,7 @@ function App() {
       </div>
 
       {/* EnvelopeOpen / Message Button */}
-      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
+      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && !isDirectoryOpen && (
         <button
           onClick={() => setIsMessageOpen(true)}
           style={{
@@ -695,7 +698,7 @@ function App() {
       )}
 
       {/* Top Right Help / Tutorial Button */}
-      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
+      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && !isDirectoryOpen && (
         <button
           className="desktop-help-btn desktop-only glass-panel glass-panel-rounded animate-fade-in"
           onClick={() => {
@@ -741,9 +744,8 @@ function App() {
       )}
 
       {/* Top Right Language Switcher */}
-      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && (
+      {!isSidebarOpen && !isCinemaMode && !isTutorialActive && !isDirectoryOpen && (
         <div className="desktop-lang-picker desktop-only">
-          <MessageModal isOpen={isMessageOpen} onClose={() => setIsMessageOpen(false)} lang={lang} />
           <LanguagePicker 
             currentLang={lang} 
             onLanguageChange={setLang} 
@@ -865,6 +867,9 @@ function App() {
         }} />
       )}
 
+      {/* Global Message Modal */}
+      <MessageModal isOpen={isMessageOpen} onClose={() => setIsMessageOpen(false)} lang={lang} />
+
       <Suspense fallback={null}>
         {isTutorialActive && (
 <TutorialModal
@@ -921,7 +926,7 @@ function App() {
       )}
 
       {/* ── Mobile Toolbar (Google Earth–style) ── */}
-      {!isCinemaMode && !isTutorialActive && (
+      {!isCinemaMode && !isTutorialActive && !isDirectoryOpen && (
         <div className="mob-toolbar">
           {/* Search */}
           <button

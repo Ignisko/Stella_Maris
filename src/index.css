@@ -250,13 +250,29 @@ input, button, textarea, select {
   }
 }
 
+/* Wrapper to hold both label and badge side by side */
+.label-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transform: translate(-50%, -100%) translateY(-12px);
+  pointer-events: none;
+  z-index: 10;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.label-wrapper.selected {
+  transform: translate(-50%, -100%) translateY(-16px) scale(1.15);
+  z-index: 9999;
+}
+
 /* Label content text box positioned next to the dot */
 .label-content {
   pointer-events: auto;
   cursor: pointer;
-  position: absolute;
-  left: 0;
-  top: 0;
   color: #ffffff;
   font-family: inherit;
   display: flex;
@@ -265,7 +281,7 @@ input, button, textarea, select {
   text-align: center;
   white-space: nowrap !important;
   width: max-content !important;
-  transition: opacity 0.3s ease-out, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease, text-shadow 0.2s ease;
+  transition: opacity 0.3s ease-out, transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.2s ease, text-shadow 0.2s ease, background 0.2s ease;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
 }
@@ -295,14 +311,7 @@ input, button, textarea, select {
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 0 20px var(--marker-glow-selected, rgba(59, 130, 246, 0.8));
   text-shadow: none;
-  transform: translate(-50%, -100%) translateY(-16px) scale(1.15);
   transform-origin: bottom center;
-  z-index: 9999;
-  width: max-content !important;
-  white-space: nowrap !important;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 /* Normal state styling for pill labels */
@@ -316,19 +325,13 @@ input, button, textarea, select {
   padding: 2px 6px;
   box-shadow: none;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.95), 0 0 2px rgba(0, 0, 0, 0.85);
-  transform: translate(-50%, -100%) translateY(-12px) scale(var(--globe-label-scale, 1));
+  transform: scale(var(--globe-label-scale, 1));
   transform-origin: bottom center;
   opacity: var(--globe-label-opacity, 1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: max-content !important;
-  white-space: nowrap !important;
 }
 
 .label-content:not(.selected):hover {
-  transform: translate(-50%, -100%) translateY(-12px) scale(1.05);
+  transform: scale(1.05);
   z-index: 10000;
   background: #ffffff !important;
   color: #111827 !important;
@@ -339,61 +342,68 @@ input, button, textarea, select {
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
-.label-content:not(.selected):hover .cluster-badge {
-  background: #f3f4f6 !important;
-  color: #111827 !important;
-}
-
 .label-content:not(.selected):hover span {
   color: #111827 !important;
   text-shadow: none !important;
 }
 
-/* Custom offsets for label contents (not selected and selected) */
-.globe-html-label[data-offset="left"] .label-content:not(.selected) {
-  transform: translate(-100%, -50%) translateX(-12px) scale(var(--globe-label-scale, 1));
+/* Cluster Badge Styling */
+.cluster-badge {
+  background: rgba(0,0,0,0.6);
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  pointer-events: auto;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform: scale(var(--globe-label-scale, 1));
+  opacity: var(--globe-label-opacity, 1);
+}
+
+.cluster-badge:hover {
+  background: #ffffff !important;
+  color: #111827 !important;
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  border-color: #ffffff;
+}
+
+/* Custom offsets for label wrappers (not selected and selected) */
+.globe-html-label[data-offset="left"] .label-wrapper:not(.selected) {
+  transform: translate(-100%, -50%) translateX(-12px);
   transform-origin: right center;
 }
-.globe-html-label[data-offset="right"] .label-content:not(.selected) {
-  transform: translate(0, -50%) translateX(12px) scale(var(--globe-label-scale, 1));
+.globe-html-label[data-offset="right"] .label-wrapper:not(.selected) {
+  transform: translate(0, -50%) translateX(12px);
   transform-origin: left center;
 }
-.globe-html-label[data-offset="top"] .label-content:not(.selected) {
-  transform: translate(-50%, -100%) translateY(-12px) scale(var(--globe-label-scale, 1));
+.globe-html-label[data-offset="top"] .label-wrapper:not(.selected) {
+  transform: translate(-50%, -100%) translateY(-12px);
   transform-origin: bottom center;
 }
-.globe-html-label[data-offset="bottom"] .label-content:not(.selected) {
-  transform: translate(-50%, 0) translateY(12px) scale(var(--globe-label-scale, 1));
+.globe-html-label[data-offset="bottom"] .label-wrapper:not(.selected) {
+  transform: translate(-50%, 0) translateY(12px);
   transform-origin: top center;
 }
 
-.globe-html-label[data-offset="left"] .label-content:not(.selected):hover {
-  transform: translate(-100%, -50%) translateX(-12px) scale(1.05);
-}
-.globe-html-label[data-offset="right"] .label-content:not(.selected):hover {
-  transform: translate(0, -50%) translateX(12px) scale(1.05);
-}
-.globe-html-label[data-offset="top"] .label-content:not(.selected):hover {
-  transform: translate(-50%, -100%) translateY(-12px) scale(1.05);
-}
-.globe-html-label[data-offset="bottom"] .label-content:not(.selected):hover {
-  transform: translate(-50%, 0) translateY(12px) scale(1.05);
-}
-
 /* Selected state with custom offsets */
-.globe-html-label[data-offset="left"] .label-content.selected {
+.globe-html-label[data-offset="left"] .label-wrapper.selected {
   transform: translate(-100%, -50%) translateX(-16px) scale(1.15);
   transform-origin: right center;
 }
-.globe-html-label[data-offset="right"] .label-content.selected {
+.globe-html-label[data-offset="right"] .label-wrapper.selected {
   transform: translate(0, -50%) translateX(16px) scale(1.15);
   transform-origin: left center;
 }
-.globe-html-label[data-offset="top"] .label-content.selected {
+.globe-html-label[data-offset="top"] .label-wrapper.selected {
   transform: translate(-50%, -100%) translateY(-16px) scale(1.15);
   transform-origin: bottom center;
 }
-.globe-html-label[data-offset="bottom"] .label-content.selected {
+.globe-html-label[data-offset="bottom"] .label-wrapper.selected {
   transform: translate(-50%, 0) translateY(16px) scale(1.15);
   transform-origin: top center;
 }

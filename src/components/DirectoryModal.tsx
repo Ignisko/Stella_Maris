@@ -67,7 +67,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
         flexDirection: 'column',
         border: '1px solid var(--glass-border)',
         background: 'var(--bg-color)',
-        borderRadius: '24px',
+        borderRadius: '32px',
         boxShadow: 'none'
       }}>
         {/* Modal Header */}
@@ -81,7 +81,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
         }}>
           <div>
             <h2 style={{ 
-              fontFamily: 'var(--font-sans)', 
+              fontFamily: 'var(--font-family)', 
               fontSize: '24px', 
               fontWeight: 600, 
               margin: 0, 
@@ -92,7 +92,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
             }}>
               <span>{t('directoryTitle', lang)}</span>
               <span style={{ 
-                fontFamily: 'var(--font-sans)', 
+                fontFamily: 'var(--font-family)', 
                 fontSize: '11px', 
                 padding: '6px 12px', 
                 border: '1px solid var(--glass-border)', 
@@ -106,12 +106,12 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
               </span>
             </h2>
             <p style={{ 
-              fontSize: '12px', 
+              fontSize: '13px', 
               opacity: 0.6, 
               margin: '8px 0 0 0', 
               color: 'var(--text-color)',
-              textTransform: 'uppercase',
-              letterSpacing: '0.05em'
+              letterSpacing: '0.02em',
+              fontWeight: 500
             }}>
               {t('directorySubtitle', lang)}
             </p>
@@ -230,13 +230,14 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                       alignItems: 'center',
                       justifyContent: 'space-between',
                       padding: '16px 24px',
-                      background: 'rgba(255, 255, 255, 0.03)',
-                      border: 'none',
-                      borderRadius: '16px',
-                      margin: '0 16px 8px 16px',
+                      background: 'var(--glass-bg)',
+                      border: '1px solid var(--glass-border)',
+                      borderRadius: '24px',
+                      margin: '0 24px 12px 24px',
                       cursor: 'pointer',
                       transition: 'all 0.2s',
-                      gap: '16px'
+                      gap: '16px',
+                      boxShadow: '0 4px 12px rgba(0,0,0,0.1)'
                     }}
                     onMouseOver={e => {
                       e.currentTarget.style.background = 'rgba(255, 255, 255, 0.08)';
@@ -249,7 +250,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                   >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '20px', minWidth: 0, flex: 1 }}>
                       <div style={{
-                        fontFamily: 'var(--font-sans)',
+                        fontFamily: 'var(--font-family)',
                         fontSize: '12px',
                         fontWeight: 600,
                         width: '48px',
@@ -261,10 +262,10 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                         <span>{app.year}</span>
                       </div>
                       <div style={{ minWidth: 0 }}>
-                        <div style={{ fontFamily: 'var(--font-sans)', fontSize: '16px', fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                        <div style={{ fontFamily: 'var(--font-family)', fontSize: '16px', fontWeight: 600, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                           {app.title} {(app.approvalStatus === 'Dismissed' || app.approvalStatus === 'Unapproved apparitions') && '⚠️'}
                         </div>
-                        <div style={{ fontFamily: 'var(--font-sans)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6, display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
+                        <div style={{ fontFamily: 'var(--font-family)', fontSize: '11px', textTransform: 'uppercase', letterSpacing: '0.05em', opacity: 0.6, display: 'flex', alignItems: 'center', gap: '6px', marginTop: '4px' }}>
                           <MapPin size={12} weight="regular" />
                           <span>{app.location}, {app.country}</span>
                         </div>
@@ -283,7 +284,7 @@ const DirectoryModal: React.FC<DirectoryModalProps> = ({
                         borderRadius: '20px'
                       }}>
                         <span style={{ width: '6px', height: '6px', backgroundColor: color, borderRadius: '50%' }} />
-                        <span style={{ fontFamily: 'var(--font-sans)', fontSize: '10px', color: color, fontWeight: 600 }}>
+                        <span style={{ fontFamily: 'var(--font-family)', fontSize: '10px', color: color, fontWeight: 600 }}>
                           {t(category as keyof typeof import('../utils/i18n').translations['en'], lang)}
                         </span>
                       </div>

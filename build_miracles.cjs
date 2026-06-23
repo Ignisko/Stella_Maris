@@ -1,24 +1,6 @@
 const fs = require('fs');
 
 const miracles = [
-  { id: 'lanciano_italy', location: 'Lanciano', country: 'Italy', year: 750, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'bolsena_italy', location: 'Bolsena', country: 'Italy', year: 1263, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'buenos_aires_argentina', location: 'Buenos Aires', country: 'Argentina', year: 1996, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'sokolka_poland', location: 'Sokółka', country: 'Poland', year: 2008, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'legnica_poland', location: 'Legnica', country: 'Poland', year: 2013, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'tixtla_mexico', location: 'Tixtla', country: 'Mexico', year: 2006, lat: , lng: , approvalStatus: 'Bishop Approved' },
-  { id: 'santarem_portugal', location: 'Santarém', country: 'Portugal', year: 1247, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'cascia_italy', location: 'Cascia', country: 'Italy', year: 1330, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'siena_italy', location: 'Siena', country: 'Italy', year: 1730, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'daroca_spain', location: 'Daroca', country: 'Spain', year: 1239, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'chirattakonam_india', location: 'Chirattakonam', country: 'India', year: 2001, lat: , lng: , approvalStatus: 'Bishop Approved' },
-  { id: 'tumaco_colombia', location: 'Tumaco', country: 'Colombia', year: 1906, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'amsterdam_holland', location: 'Amsterdam', country: 'Netherlands', year: 1345, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'avignon_france', location: 'Avignon', country: 'France', year: 1433, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'krakow_poland', location: 'Kraków', country: 'Poland', year: 1345, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'poznan_poland', location: 'Poznań', country: 'Poland', year: 1399, lat: , lng: , approvalStatus: 'Vatican Approved' },
-  { id: 'betania_venezuela', location: 'Betania', country: 'Venezuela', year: 1991, lat: , lng: , approvalStatus: 'Bishop Approved' },
-  { id: 'ludbreg_croatia', location: 'Ludbreg', country: 'Croatia', year: 1411, lat: , lng: , approvalStatus: 'Vatican Approved' },
   { id: 'walldurn_germany', location: 'Walldürn', country: 'Germany', year: 1330, lat: , lng: , approvalStatus: 'Vatican Approved' },
   { id: 'blanot_france', location: 'Blanot', country: 'France', year: 1331, lat: , lng: , approvalStatus: 'Vatican Approved' }
 ];

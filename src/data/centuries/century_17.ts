@@ -737,6 +737,7 @@ export const century17Apparitions: Apparition[] = [
     lat: 45.3667,
     lng: 7.1833,
     year: 1630,
+    sourceUrl: "https://www.youtube.com/watch?v=D_JPhmVq8O0",
     description: "On September 30, 1630, Mary appeared on a grand boulder to Pietro Garino, promising an end to the plague if the region repented. Two missing holy paintings were miraculously discovered under the rock.",
     approvalStatus: "Traditionally approved",
     priority: 3
